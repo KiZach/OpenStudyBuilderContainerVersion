@@ -1,0 +1,20 @@
+parameters:
+
+  - name: PYTHON_VERSION
+    type: string
+    default: "3"
+
+steps:
+
+  # Specify python version. The version must be manually installed beforehand so the agent has it available.
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: ${{parameters.PYTHON_VERSION}}
+      addToPath: true
+      architecture: "x64"
+
+  - script: |
+      set -ex
+      pip install --upgrade pip pipenv wheel
+      pipenv sync --dev
+    displayName: "Set up Python ${{parameters.PYTHON_VERSION}} environment"

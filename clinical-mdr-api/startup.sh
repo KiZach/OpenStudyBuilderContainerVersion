@@ -1,0 +1,1 @@
+python3 -m uvicorn clinical_mdr_api.main:app --host 0.0.0.0

@@ -1,0 +1,30 @@
+# Pipeline parameters
+parameters:
+
+  - name: SERVICE_CONN
+    type: string
+
+steps:
+
+  - script: |
+      set -x
+      
+      echo "UID=$(id -u)" | tee -a .env
+      echo "API_IMAGE=$API_IMAGE" | tee -a .env
+      echo "DEV_IMAGE=$DEV_IMAGE" | tee -a .env
+      echo "NEO4J_IMAGE=$NEO4J_IMAGE" | tee -a .env
+
+    displayName: Configure docker images
+    env:
+      API_IMAGE: $(azmd.acrname).azurecr.io/api:$(Build.SourceVersion)
+      DEV_IMAGE: $(azmd.acrname).azurecr.io/dev:$(Build.SourceVersion)
+      NEO4J_IMAGE: $(azmd.acrname).azurecr.io/novo-neo4j-5-9-0-enterprise:latest
+
+  - task: AzureCLI@2
+    displayName: Log in to container registry
+    inputs:
+      azureSubscription: ${{parameters.SERVICE_CONN}}
+      scriptType: bash
+      scriptLocation: inlineScript
+      inlineScript: >-
+        az acr login -n '$(azmd.acrname)'

@@ -1,0 +1,40 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = false
+name = "pypi"
+
+[packages]
+requests = "~=2.28.1"
+neomodel = "~=5.0.0"
+aiohttp = "~=3.8.3"
+pytest-order = "*"
+jinja2 = "~=3.1.2"
+
+[dev-packages]
+pytest = "~=7.1.2"
+pytest-cov = "~=3.0.0"
+pytest-order = "*"
+pylint = "~=2.17.0"
+isort = "~=5.10.1"
+black = "~=22.6.0"
+
+[requires]
+python_version = "3.11"
+
+[scripts]
+build-sbom = "pipelines/scripts/build-sbom.sh"
+test = "python -m pytest -s --cov-report html:test_coverage --cov-report xml:reports/coverage.xml --cov=migrations --junitxml=reports/test_report.xml tests/test_migration_006.py"
+verify = "python -m pytest -s --cov-report html:test_coverage --cov-report xml:reports/coverage.xml --cov=tests --junitxml=reports/test_report.xml verifications/verification_006.py"
+migrate = "python -m migrations.migration_006"
+test_corrections = "python -m pytest -s --cov-report html:test_coverage --cov-report xml:reports/coverage.xml --cov=migrations --junitxml=reports/test_report.xml tests/test_correction_006.py"
+verify_corrections = "python -m pytest -s --cov-report html:test_coverage --cov-report xml:reports/coverage.xml --cov=tests --junitxml=reports/test_report.xml verifications/correction_verification_006.py"
+apply_corrections = "python -m data_corrections.correction_006"
+token = "python -m migrations.auth"
+lint = "pylint migrations tests verifications"
+black = "python -m black migrations tests verifications"
+isort = "python -m isort migrations tests verifications"
+format = """sh -c "
+    python -m black migrations tests verifications \
+    && python -m isort migrations tests verifications \
+"
+"""

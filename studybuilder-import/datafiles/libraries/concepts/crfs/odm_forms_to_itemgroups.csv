@@ -1,0 +1,7 @@
+uid_form,oid_form,uid_itemgroup,oid_itemgroup,order_number,mandatory,collection_exception_condition_oid
+F.DM,F.DM,G.DM.IC,G.DM.IC,1,TRUE,
+F.DM,F.DM,G.DM.DM,G.DM.DM,2,TRUE,
+F.MH,F.MH,G.MH.NS,G.MH.NS,1,TRUE,
+F.MH,F.MH,G.MH.CM,G.MH.CM,2,TRUE,
+F.VS,F.VS,G.VS.VS,G.VS.VS,1,TRUE,
+F.VS,F.VS,G.VS.BPP,G.VS.BPP,2,TRUE,

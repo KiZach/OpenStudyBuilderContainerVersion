@@ -1,0 +1,490 @@
+"CT_CD_LIST_SUBMVAL","CT_SUBMVAL","CT_NAME","DEFINITION",ORDER,CT_CD,NCI_PREFERRED_NAME,NAME_SUBMVAL
+"FIND_CAT_DEF","24 HOUR URINE COLLECTION FIND_CAT","24 Hour Urine Collection","24 Hour Urine Collection",1,,,
+"FIND_CAT_DEF","ACCELEROMETRY DATA FIND_CAT","Accelerometry Data","Accelerometry Data",1,,,
+"FIND_CAT_DEF","ACR COMPONENTS FIND_CAT","ACR components","American College of Rheumatology (ACR)",100,,,
+"FIND_CAT_DEF","ACTIGRAPH COUNTS FIND_CAT","Actigraph Counts","Actigraph Counts",1,,,
+"FIND_CAT_DEF","ADAS-COG-13 FIND_CAT","ADAS-Cog-13","Alzheimer's Disease Assessment Scale - Cognitive Behavior Version 13 (ADAS-Cog-13). NIA Alzheimer?s Disease Cooperative Study (NIA Grant AG10483).",1,,,
+"FIND_CAT_DEF","ADCS-ADL MCI FIND_CAT","ADCS-ADL MCI","Alzheimer's Disease Cooperative Study-Activities of Daily Living Inventory (ADCS-ADL), MCI Version (Galasko, D., Bennett, D., Sano, M., Ernesto, C., Thomas, R., Grundman, M., Ferris, S., and the ADCS. An Inventory to Assess Activities of Daily Living for Clinical Trials in Alzheimer's Disease. Alzheimer's Disease and Associated Disorders, 1997. Volume 11(2): S33-S39).",1,,,
+"FIND_CAT_DEF","AE ADDITIONAL DATA FIND_CAT","AE - Do not use - Change","Sponsor-defined: Adverse Events requiring additional Data collection
+",1,,,
+"FIND_CAT_DEF","AE REQUIRING ADDITIONAL DATA FIND_CAT","AE Requiring Additional Data","AE requiring additional data - For the SHARP forms
+",1,,,
+"FIND_CAT_DEF","AIMS FIND_CAT","Abnormal Involuntary Movement Scale","Abnormal Involuntary Movement Scale (AIMS) (Guy W. Ed. ECDEU Assessment Manual for Psychopharmacology. Rockville MD: US Dept of Health, Education and Welfare. 1976, Publication No. (ADM) 76-338).",1,,,
+"FIND_CAT_DEF","ALCOHOL BREATH TEST FIND_CAT","Alcohol breath test","Finding category, Alcohol breath test",112,,,
+"FIND_CAT_DEF","ALCOHOL HABITS FIND_CAT","Alcohol habits","Alcohol habits",241,,,
+"FIND_CAT_DEF","AMYLOID POSITIVITY FIND_CAT","Amyloid Positivity","Amyloid Positivity",1,,,
+"FIND_CAT_DEF","ANTIBODIES FIND_CAT","Antibodies","Antibodies",114,,,
+"FIND_CAT_DEF","APGAR SCORE FIND_CAT","Apgar Score","Category for APGAR score (Appearance, Pulse, Grimace, Activity, and Respiration)",1,,,
+"FIND_CAT_DEF","APPEAL VAS FIND_CAT","Appeal VAS","Appeal VAS
+",1,,,
+"FIND_CAT_DEF","APPETITE VAS FIND_CAT","Appetite VAS","Appetite VAS
+",1,,,
+"FIND_CAT_DEF","ASCQ-ME EMOTIONAL IMPACT V2.0 FIND_CAT","ASCQ-Me Emotional Impact V2.0","ASCQ-Me Emotional Impact. Adult Sickle Cell Quality of Life Measurement. 2010-2016 American Institutes for Research 1 V2.0",1,,,
+"FIND_CAT_DEF","ASCQ-ME PAIN IMPACT V2.0 FIND_CAT","ASCQ-Me Pain Impact V2.0","ASCQ-Me Pain Impact. Adult Sickle Cell Quality of Life Measurement. 2010-2016 American Institutes for Research 1 V2.0",1,,,
+"FIND_CAT_DEF","ASCQ-ME SOCIAL FUNCTIONING V2.0 FIND_CAT","ASCQ-Me Social Functioning Impact V2.0","ASCQ-Me Social Functioning Impact. Adult Sickle Cell Quality of Life Measurement. 2010-2016 American Institutes for Research 1 V2.0",1,,,
+"FIND_CAT_DEF","ATHEROSCLEROTIC INFLAMMATION FIND_CAT","Atherosclerotic Inflammation","Atherosclerotic
+Inflammation.",1,,,
+"FIND_CAT_DEF","AUDIT-I FIND_CAT","Audit-I","The Alcohol Use Disorders Identification Test: Interview Version. 
+Ref: Maristela G. Monteiro, et al;
+AUDIT ? The Alcohol Use Disorders Identification Test, Guidelines for Use in Primary Care?, Second Edition, World Health Organization, Department of Mental Health and Substance Dependence (WHO/MSD/MSB/01.6a)",1,,,
+"FIND_CAT_DEF","AUDIT-SR FIND_CAT","Audit-SR","Alcohol Use Disorder Identification Test Self-Report Version Questionnaire
+
+Code:C119097
+CDISC Submission Value: AUDIT-SR
+CDISC Synonym(s): ADT01
+CDISC Definition: Alcohol Use Disorder Identification Test: Self-Report Version (AUDIT) (Saunders JB, Aasland, OG, Babor, TF, De La Fuente JR, Grant M. Development of the Alcohol Use Disorders Identification Test (AUDIT): WHO Collaborative Project on Early Detection of Persons with harmful Alcohol Consumption-II. Addiction (1993) 88:791-804).
+NCI Preferred Term: Alcohol Use Disorder Identification Test Self-Report Version Questionnaire
+",1,,,
+"FIND_CAT_DEF","BHQ FIND_CAT","Baseline Hypoglycaemia Questionnaire","Baseline Hypoglycaemia Questionnaire
+",1,,,
+"FIND_CAT_DEF","BIOCHEMISTRY FIND_CAT","Biochemistry","Finding category, Biochemistry",209,,,
+"FIND_CAT_DEF","BIOMARKER FIND_CAT","Biomarker","Finding category, Biomarker",1,,,
+"FIND_CAT_DEF","BLEEDING EPISODE FIND_CAT","Bleeding episode","Bleeding episode in haemophilia",1,,,
+"FIND_CAT_DEF","BODY MEASUREMENT FIND_CAT","Body Measurements","Finding category, Body measurements",215,,,
+"FIND_CAT_DEF","BONE METABOLISM FIND_CAT","Bone Metabolism","Finding category, Bone metabolism",1,,,
+"FIND_CAT_DEF","BREAST NEOPLASMS FIND_CAT","Breast Neoplasms","Breast Neoplasms
+History of Breast Neoplasms",20,,,
+"FIND_CAT_DEF","C-SSRS BASELINE  FIND_CAT","C-SSRS Baseline","Columbia-Suicide Severity Rating Scale Baseline Questionnaire
+",216,,,
+"FIND_CAT_DEF","C-SSRS BASELINE EVALUATION FIND_CAT","C-SSRS Baseline Evaluation","C-SSRS Baseline Evaluation",1,,,
+"FIND_CAT_DEF","C-SSRS BASELINE/SCREENING FIND_CAT","C-SSRS Baseline/Screening","Columbia-Suicide Severity Rating Scale (C-SSRS), Baseline/Screening Version, Version 1/14/09 (Posner, K.; Brent, D.; Lucas, C.; Gould, M.; Stanley, B.; Brown, G.; Fisher, P.; Zelazny, J.; Burke, A.; Oquendo, M.; Mann, J.)",1,,,
+"FIND_CAT_DEF","C-SSRS CHILDREN'S BASELINE FIND_CAT","C-SSRS Children's Baseline","Columbia-Suicide Severity Rating Scale (C-SSRS) Children's Baseline Version 6/23/2010 (Posner, K.; Brent, D.; Lucas, C.; Gould, M.; Stanley, B.; Brown, G.; Fisher, P.; Zelazny, J.; Burke, A.; Oquendo, M.; Mann, J.; copyright 2008 The Research Foundation for Mental Hygiene, Inc.).
+",1,,,
+"FIND_CAT_DEF","C-SSRS CHILDREN'S SINCE LAST VISIT FIND_CAT","C-SSRS Children's Since Last Visit",,1,,,
+"FIND_CAT_DEF","C-SSRS SINCE LAST VISIT  FIND_CAT","C-SSRS Since Last Visit","Columbia-Suicide Severity Rating Scale Since Last Visit Questionnaire
+",217,,,
+"FIND_CAT_DEF","C-SSRS SINCE LAST VISIT EVALUATION FIND_CAT","C-SSRS Since Last Visit Evaluation","C-SSRS Since Last Visit Evaluation",1,,,
+"FIND_CAT_DEF","CALORIC AND NUTRIENT INTAKE FIND_CAT","Caloric and nutrient intake","Caloric and nutrient intake",301,,,
+"FIND_CAT_DEF","CARDIAC ASSESSMENT FIND_CAT","Cardiac Assessment","Cardiac assessment",1,,,
+"FIND_CAT_DEF","CARDIAC MONITORING FIND_CAT","Cardiac Monitoring","Cardiac monitoring generally refers to continuous or intermittent monitoring of heart activity.
+Monitoring: constant checking on a patient's condition, either personally or by means of a mechanical monitor.",1,,,
+"FIND_CAT_DEF","CCTA IMAGING FIND_CAT","CCTA Imaging","Coronary computed tomography angiography (CCTA) imaging.",1,,,
+"FIND_CAT_DEF","CDR FIND_CAT","Clinical Dementia Rating","Clinical Dementia Rating",1,,,
+"FIND_CAT_DEF","CGI FIND_CAT","CGI","Clinical Global Impression",1,,,
+"FIND_CAT_DEF","CGM FIND_CAT","CGM","CGM - Continuous Glucose Monitoring System
+",307,,,
+"FIND_CAT_DEF","CHECK QUESTION FIND_CAT","Check Question","Check Question
+",308,,,
+"FIND_CAT_DEF","CHILD PUGH CLASSIFICATION FIND_CAT","Child Pugh Classification","Child-Pugh Classification",1,,,
+"FIND_CAT_DEF","CHILD TREATMENT BURDEN FIND_CAT","Child Treatment Burden","Growth Hormone Injection - Child Treatment Burden Measure (GH-INJ-CTB), Version 1.0, 28Sep2021 (Novo Nordisk)",1,,,
+"FIND_CAT_DEF","CHILD TREATMENT BURDEN SELF REPORT FIND_CAT","Child Treatment Burden Self Report","Growth Hormone Injection - Child Treatment Burden Measure - Child (GH-INJ-CTB-Child), 13 May 2022 Self Report",1,,,
+"FIND_CAT_DEF","CHILD TURCOTTE FIND_CAT","Child Turcotte","Child Turcotte measurements
+",308,,,
+"FIND_CAT_DEF","CHILD-PUGH CLASSIFICATION FIND_CAT","Child-Pugh Clinical Classification","Child-Pugh Classification (Guidance for Industry Pharmacokinetics in Patients with Impaired Hepatic Function: Study Design, Data Analysis, and Impact on Dosing and Labeling. U.S. Department of Health and Human Services; Food and Drug Administration; Center for Drug Evaluation and Research (CDER); Center for Biologics Evaluation and Research (CBER). May 2003, Clinical Pharmacology. http://www.fda.gov/downloads/Drugs/GuidanceComplianceRegulatoryInformation/Guidances/UCM072123.pdf; http://www.halaven.com/sites/default/files/ChildPugh_FlashCard.pdf).
+",1,,,
+"FIND_CAT_DEF","CLAMP FIND_CAT","Clamp","Clamp Procedure",312,,,
+"FIND_CAT_DEF","CLDQ NAFLD-NASH FIND_CAT","CLDQ NAFLD-NASH","Chronic Liver Disease Questionnaire for NAFLD NASH (CLDQ NAFLD-NASH) ? 2016 LPRO, LLC
+",1,,,
+"FIND_CAT_DEF","CLINICAL DIAGNOSIS OF NOONAN SYNDROME FIND_CAT","Clinical Diagnosis of Noonan Syndrome","Clinical Diagnosis of Noonan Syndrome (van der Burgt score list)",1,,,
+"FIND_CAT_DEF","COAGULATION PARAMETER FIND_CAT","Coagulation Parameter","Coagulation Parameter
+",315,,,
+"FIND_CAT_DEF","COEQ FIND_CAT","COEQ","Control of Eating Questionnaire (COEQ), 19 items, 0-10 categorical response version.
+",1,,,
+"FIND_CAT_DEF","COEQ VAS FIND_CAT","COEQ VAS","Control of Eating Questionnaire (COEQ), 19 items, visual analogue scale (VAS) version
+",1,,,
+"FIND_CAT_DEF","COLLECTION OF SAMPLES FIND_CAT","Collection of Samples","Collection of Samples, e.g. for Laboratory tests",35,,,
+"FIND_CAT_DEF","COMMENTS FIND_CAT","Comments","The Comments dataset accommodates two sources of comments: 1) those collected alongside other data on topical case report form (CRF) pages such as Adverse Events and 2) those collected on a separate page specifically dedicated to comments.",315,,,
+"FIND_CAT_DEF","COMPLAINT FIND_CAT","Complaint","Complaint",35,,,
+"FIND_CAT_DEF","COMPLIANCE FIND_CAT","Compliance","Compliance",315,,,
+"FIND_CAT_DEF","CONCOMITANT ILLNESS FIND_CAT","Concomitant Illness","Concomitant Illness",316,,,
+"FIND_CAT_DEF","CONTRACEPTIVE COUNSELLING FIND_CAT","Contraceptive Counselling","Contraceptive Counselling
+",1,,,
+"FIND_CAT_DEF","COVID-19 VAC PRIOR SCREENING FIND_CAT","COVID-19 Vaccine Prior Screening","COVID-19 Vaccine Prior Screening",1,,,
+"FIND_CAT_DEF","CSSRS PARENTAL CARD FIND_CAT","CSSRS Parental Card","CSSRS Parental Card",1,,,
+"FIND_CAT_DEF","CT SCAN FIND_CAT","CT Scanning","CT scan",320,,,
+"FIND_CAT_DEF","CUT POINTS FIND_CAT","Cut Points","Cut Points",1,,,
+"FIND_CAT_DEF","DAS28 COMPONENTS FIND_CAT","DAS28 components","Disease Activity Score, 28-joint (DAS28)",400,,,
+"FIND_CAT_DEF","DEMOGRAPHY FIND_CAT","Demography","Finding category, Demography",405,,,
+"FIND_CAT_DEF","DETAILS OF HAEMOPHILIA FIND_CAT","Details of Haemophilia","Details of Haemophilia",1,,,
+"FIND_CAT_DEF","DEVICE TRAINING QUESTIONNAIRE FIND_CAT","Device Training Questionnaire","Device training questionnaire",1,,,
+"FIND_CAT_DEF","DEVICE TRAINING QUESTIONNAIRE V2.0 FIND_CAT","Device Training Questionnaire V2.0","Device Training Questionnaire V2.0",1,,,
+"FIND_CAT_DEF","DEVICE USE FIND_CAT","Device Use","Device Use",1,,,
+"FIND_CAT_DEF","DEVICE USE ERROR FIND_CAT","Device Use Error","Device use error",1,,,
+"FIND_CAT_DEF","DEVU FIND_CAT","Device Usability","Category for the Device usability questionnaire-like form (Device usability 1, 2 and 3). 1, 2 and 3 defines the three visits where the form is used. This information is placed in SCAT's",1,,,
+"FIND_CAT_DEF","DEXA FIND_CAT","DEXA","DEXA
+",405,,,
+"FIND_CAT_DEF","DIABETES HISTORY FIND_CAT","Diabetes History","Diabetes history i.e. Duration of diabetes, type of diabetes, start of diabetes",409,,,
+"FIND_CAT_DEF","DIAB_RISK_SCORE FIND_CAT","Diabetes Risk Score","Diabetes Risk Score",409,,,
+"FIND_CAT_DEF","DMSES FIND_CAT","DMSES","Diabetes Management Self-Efficacy Scale (DMSES). J. J. Van Der Bijl, A. Van Poelgeest-Eeltink, and L. Shortridge-Baggett, ?The psychometric properties of the diabetes management self-efficacy scale for patients with type 2 diabetes mellitus,? Journal of Advanced Nursing, vol. 30, no. 2, pp. 352?359, 1999.",1,,,
+"FIND_CAT_DEF","DN4 FIND_CAT","DN4","DN4 (Douleur Neuropathique 4 Questions) Questionnaire. Neuropathic pain screening tool. 2005. Bouhassira D. All rights reserved.",1,,,
+"FIND_CAT_DEF","DOPPLER ULTRASONOGRAPHY FIND_CAT","Doppler Ultrasonography","Finding category, Doppler ultrasonography",415,,,
+"FIND_CAT_DEF","DOSING CONDITIONS FIND_CAT","Dosing Conditions","Dosing Conditions Questionnaire",1,,,
+"FIND_CAT_DEF","DOSING DAY CRITERIA FIND_CAT","Dosing day criteria","Dosing day criteria
+",415,,,
+"FIND_CAT_DEF","DOSING INFORMATION FIND_CAT","Dosing Information","Dosing Information - Category used for general information regarding dosing, that does not fit in any other category",415,,,
+"FIND_CAT_DEF","DPEM V2.0 FIND_CAT","Diabetes Pen Experience Measure V2.0","Diabetes Pen Experience Measure V2.0. The Brod Group, Inc. Version 2.0 (post cognitive debriefing including PGIS, 15 March 2017). United Stated/English",1,,,
+"FIND_CAT_DEF","DPEM V3.0 FIND_CAT","Diabetes Pen Experience Measure V3.0","Diabetes Pen Experience Measure V3.0. The Brod Group
+Version 3.0 (post-adaptation, 12 August 2019)",1,,,
+"FIND_CAT_DEF","DPEM V4.0 FIND_CAT","Diabetes Pen Experience Measure V4.0","Diabetes Pen Experience Measure V4.0.
+The Brod Group, Inc. and Novo Nordisk A/S
+Diabetes Pen Experience Measure (DPEM) Version 4.0 (post-validation, 8 Sept. 2020)",1,,,
+"FIND_CAT_DEF","DQLCTQ-R FIND_CAT","DQLCTQ-R","Diabetes Quality of Life Clinical Trial Questionnaire - Revised version (DQLCTQ-R)",1,,,
+"FIND_CAT_DEF","DTPQ FIND_CAT","DTPQ","Diabetes Treatment Preference Questionnaire",1,,,
+"FIND_CAT_DEF","DTQSS FIND_CAT","DTQSS","Device training questionnaire for site staff",1,,,
+"FIND_CAT_DEF","DTR_QOL FIND_CAT","DTR-QOL","Sponsor defined: Diabetes Therapy Related - Quality of Life - Questionnaire",1,,,
+"FIND_CAT_DEF","DTSQC FIND_CAT","DTSQc","Diabetes Treatment Satisfaction Questionnaire Change Version",1,,,
+"FIND_CAT_DEF","DTSQS FIND_CAT","DTSQs","Diabetes Treatment Satisfaction Questionnaire Status Version
+DTSQs ? Prof Clare Bradley 9/93 English for UK & USA (rev. 7/94)Health Psychology Research, Dept of Psychology, Royal Holloway,University of London, Egham, Surrey, TW20 0EX, UK.
+",1,,,
+"FIND_CAT_DEF","DYSLIPIDAEMIA HISTORY FIND_CAT","Dyslipidaemia History","Dyslipidaemia History",1,,,
+"FIND_CAT_DEF","ECG FIND_CAT","ECG","ECG",503,,,
+"FIND_CAT_DEF","ECHOCARDIOGRAPHY FIND_CAT","Echocardiography","Finding category, Echocardiography",503,,,
+"FIND_CAT_DEF","EDUCATION FIND_CAT","Education","Education
+",504,,,
+"FIND_CAT_DEF","EMPLOYMENT FIND_CAT","Employment","Employment",1,,,
+"FIND_CAT_DEF","EOTR FIND_CAT","Ease of Training Rating","Category for the Ease of Training Rating questionnaire-like form",1,,,
+"FIND_CAT_DEF","EQ-5D-3L FIND_CAT","EQ-5D-3L","European Quality of Life Five Dimension Three Level Scale (EQ-5D-3L) (Copyright 1990 EuroQol Group. EQ-5D is a trade mark of the EuroQol Group).
+",1,,,
+"FIND_CAT_DEF","EQ-5D-5L FIND_CAT","EQ-5D-5L","European Quality of Life Five Dimension Five Level Scale (EQ-5D-5L) (Copyright 2009 EuroQol Group. EQ-5D is a trade mark of the EuroQol Group).
+",1,,,
+"FIND_CAT_DEF","EQ-5D-5L PROXY FIND_CAT","EQ-5D-5L PROXY","European Quality of Life Five Dimension Five Level Scale (EQ-5D-5L). UK Digital Proxy 1 Tablet Version. (Copyright 2009 EuroQol Group. EQ-5D is a trade mark of the EuroQol Group).",1,,,
+"FIND_CAT_DEF","ETBB FIND_CAT","Experience of Trt Benefits and Barriers","Experience of Treatment Benefits and Barriers Questionnaire",1,,,
+"FIND_CAT_DEF","EVALUATION OF COMORBIDITIES FIND_CAT","Evaluation of Comorbidities","Medical history evaluation of weight related comorbidities",1,,,
+"FIND_CAT_DEF","EVALUATION OF TREATMENT FIND_CAT","Evaluation of Treatment","Evaluation of treatment",1,,,
+"FIND_CAT_DEF","EVENT ADJUDICATION FIND_CAT","Event Adjudication","Event Adjudication",1,,,
+"FIND_CAT_DEF","EXCLUSION CRITERIA FIND_CAT","Exclusion Criteria","Exclusion criteria
+<CodeLists>
+<CodeList Value=""IECAT"" Code=""C25370X""></CodeList>
+</CodeLists>",524,,,
+"FIND_CAT_DEF","EXPOSURE FIND_CAT","Exposure","Number of subject years of exposure
+",524,,,
+"FIND_CAT_DEF","EYE EXAMINATION FIND_CAT","Eye Examination","Finding category, Eye examination",525,,,
+"FIND_CAT_DEF","EYE IMAGING FIND_CAT","Eye Imaging","Eye Imaging",1,,,
+"FIND_CAT_DEF","FAECES SAMPLING FIND_CAT","Faeces sampling","Faeces sampling
+",601,,,
+"FIND_CAT_DEF","FAMILY HISTORY FIND_CAT","Family history","Family history
+",601,,,
+"FIND_CAT_DEF","FGM FIND_CAT","FGM","Flash Glucose Monitoring",1,,,
+"FIND_CAT_DEF","GDAT FIND_CAT","Growth Hormone Device Assessment Tool","Growth Hormone ? Device Assessment Tool (GDAT), U.S. English 22 Feb 2018 (Novo Nordisk)",1,,,
+"FIND_CAT_DEF","GENOTYPE FIND_CAT","Genotype","The genotype is the specific genetic makeup (the specific genome) of an individual, in the form of DNA.",705,,,
+"FIND_CAT_DEF","GHPPQ FIND_CAT","GH Patient Preference Questionnaire","GH Patient Preference Questionnaire",1,,,
+"FIND_CAT_DEF","GHPPQ SELF REPORT FIND_CAT","GHPPQ Self Report","Growth Hormone Patient Preference Questionnaire - Child (GHPPQ-Child), Novo Nordisk, Version 1.0, 13 May 2022
+English (UK) Self Report",1,,,
+"FIND_CAT_DEF","GHPPQ V0.1 FIND_CAT","GH Patient Preference Questionnaire V0.1","Growth Hormone Patient Preference Questionnaire V0.1",1,,,
+"FIND_CAT_DEF","GLUCOSE METABOLISM FIND_CAT","Glucose Metabolism","Finding category, Glucose metabolism",712,,,
+"FIND_CAT_DEF","GLYCAEMIC OPTIMISATION FIND_CAT","Glycaemic Optimisation Plan","Glycaemic Optimisation Plan",1,,,
+"FIND_CAT_DEF","GROWTH HORMONE FIND_CAT","Growth Hormone","Growth Hormone",1,,,
+"FIND_CAT_DEF","GROWTH HORMONE STATUS FIND_CAT","Growth Hormone Status","Growth hormone status",1,,,
+"FIND_CAT_DEF","H-DAT V2.0 SUBJECT/CAREGIVER REPORT FIND_CAT","H-DAT V2.0 Subject/Caregiver Report","Hemophilia - Device Assessment Tool version 2.0, subject or caregiver report",1,,,
+"FIND_CAT_DEF","HAEM-A-QOL FIND_CAT","HAEM-A-QOL","Hemophilia Quality of Life for Adults (HAEMO-A-QOL)
+",1,,,
+"FIND_CAT_DEF","HAEMATOLOGY FIND_CAT","Haematology","Finding category, Haematology",801,,,
+"FIND_CAT_DEF","HAEMO-QOL CHILDRENS'S LONG VERSION AGE GROUP II FIND_CAT","HAEMO-QOL Childrens Long V Age Group II","Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Childrens's Long Version Age Group II (8-12 years).
+",1,,,
+"FIND_CAT_DEF","HAEMO-QOL CHILDRENS'S LONG VERSION AGE GROUP III FIND_CAT","HAEMO-QOL Childrens Long V Age Group III","Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Childrens's Long Version Age Group III (13-16 years).
+",1,,,
+"FIND_CAT_DEF","HAEMO-QOL PARENT'S LONG VERSION AGE GROUP I FIND_CAT","HAEMO-QOL Parents Long Ver Age Group I","Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group I (4-7 years).
+",1,,,
+"FIND_CAT_DEF","HAEMO-QOL PARENT'S LONG VERSION AGE GROUP II FIND_CAT","HAEMO-QOL Parents Long Ver Age Group II","Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group II (8-12 years).
+",1,,,
+"FIND_CAT_DEF","HAEMO-QOL PARENT'S LONG VERSION AGE GROUP III FIND_CAT","HAEMO-QOL Parents Long Ver Age Group III","Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group III (13-16 years).
+",1,,,
+"FIND_CAT_DEF","HAEMOPHILIA PATIENT PREFERENCE QUESTIONNAIRE FIND_CAT","Haem Patient Preference Questionnaire","Haemophilia Patient Preference Questionnaire (HPPQ), Novo Nordisk, Version FINAL, 07 December 2018 English",1,,,
+"FIND_CAT_DEF","HAEMOPHILIA PATIENT PREFERENCE QUESTIONNAIRE V2.0 FIND_CAT","Haem Patient Preference Questionnaire V2","Haemophilia Patient Preference Questionnaire (HPPQ), Novo Nordisk, Version FINAL, 23 August 2018",1,,,
+"FIND_CAT_DEF","HAL V2.0 FIND_CAT","HAL V2.0","Hemophilia Activities List. V2.0",1,,,
+"FIND_CAT_DEF","HEALTHCARE UTILISATION PATIENT SURVEY FIND_CAT","Healthcare Utilisation Patient Survey","Healthcare Utilisation Patient Survey
+",1,,,
+"FIND_CAT_DEF","HEMO-SAT ADULTS FIND_CAT","Hemo-Sat Adults","Hemo-Sat A - Haemophilia treatment satisfaction questionnaire (ENGLISH version adults) 01.09.11.  Not to be reproduced without permission, Copyright ? Hemo-Sat Group. All rights reserved.",1,,,
+"FIND_CAT_DEF","HEMO-SAT PARENTS FIND_CAT","Hemo-Sat Parents","Hemo-Sat (Parents) ? Sylvia Mackensen. 2002. Standard UK English. Institute and Clinic for Medical Psychology. Centre of Psychosocial Medicine. University Hospital Hamburg-Eppendorf. Martinistr. 52, S 35. 20246 Hamburg. Germany.",1,,,
+"FIND_CAT_DEF","HEMO-TEM CAREGIVER REPORT FIND_CAT","HEMO-TEM Caregiver Report","Child Hemophilia Treatment Experience Measure (Child Hemo-TEM) - Caregiver Report ObsRO. 19-NOV-2018",1,,,
+"FIND_CAT_DEF","HEMO-TEM V2.0 FIND_CAT","Hemo-Tem V2.0","Hemophilia Treatment Experience Measure (Hemo-TEM)
+Hemo-TEM (USA English) version 2.0 (Post-Adolescent Cognitive Debriefing with PGIS Item) 23 May 2018",1,,,
+"FIND_CAT_DEF","HEPATIC IMPAIRMENT FIND_CAT","Hepatic Impairment","Hepatic Impairment",1,,,
+"FIND_CAT_DEF","HEPATITIS FIND_CAT","Hepatitis","Hepatitis
+",805,,,
+"FIND_CAT_DEF","HISTORY OF ATTR FIND_CAT","History of ATTR","Transthyretin amyloid cardiomyopathy (ATTR CM) is an increasingly recognised cause of heart failure in older adults worldwide, resulting from extracellular deposition of misfolded transthyretin protein (amyloid) in the myocardium.",1,,,
+"FIND_CAT_DEF","HISTORY OF EYE DISEASE FIND_CAT","History of eye disease","History of eye disease
+Indicate which condition(s) the subject has experienced prior to randomisation, including conditions identified as part of Eye Examination screening assessment",1,,,
+"FIND_CAT_DEF","HISTORY OF EYE TREATMENT FIND_CAT","History of Eye Treatment","History of Eye Treatment
+",1,,,
+"FIND_CAT_DEF","HISTORY OF PANCREATITIS FIND_CAT","History of Pancreatitis","The History of Pancreatitis form Indicate which conditions/illnesses/procedures the subject has experienced prior to randomisation",1,,,
+"FIND_CAT_DEF","HIV FIND_CAT","HIV","HIV
+",809,,,
+"FIND_CAT_DEF","HJHS FIND_CAT","Haemophilia Joint Health Score","Haemophilia Joint Health Score (HJHS). Version 2.1. Clinician reported outcome (ClinRo). World Federation of Hemophilia.",1,,,
+"FIND_CAT_DEF","HLC FIND_CAT","Healthy Lifestyle Counselling","Healthy Lifestyle Counselling. Has the patient received healthy lifestyle counselling in connection with this visit?",1,,,
+"FIND_CAT_DEF","HORMONES FIND_CAT","Hormones","Finding category, Hormones",815,,,
+"FIND_CAT_DEF","HPPQ CAREGIVER REPORT FIND_CAT","HPPQ Caregiver Report","Haemophilia Patient Preference Questionnaire (HPPQ) Caregiver report. Novo Nordisk, 27 JUL 2020 English (UK)",1,,,
+"FIND_CAT_DEF","HPPQ PARENT REPORT FIND_CAT","HPPQ Parent Report","Hemophilia Patient Preference Questionnaire Parent report (HPPQ Parent report)",1,,,
+"FIND_CAT_DEF","HTEM FIND_CAT","HTEM","Haemophilia Treatment Experience Measure (Hemo-TEM) (UK English) version 1.0 16 Dec 2016. 
+
+NOTE: This updated version has a changed item 2 (this version has two questions in item 2) and different response values compared to an earlier version that is no longer in use but has the same name.",1,,,
+"FIND_CAT_DEF","HYPERGLYCAEMIC EPISODES FIND_CAT","Hyperglycaemic episodes","Hyperglycaemic episodes",826,,,
+"FIND_CAT_DEF","HYPERPHAGIA IN PRADER-WILLI SYNDROME FIND_CAT","Hyperphagia in Prader-Willi Syndrome","Hyperphagia in Prader-Willi Syndrome",1,,,
+"FIND_CAT_DEF","HYPOGLYCAEMIC EPISODES FIND_CAT","Hypoglycaemic episodes","Hypoglycaemic episodes",825,,,
+"FIND_CAT_DEF","HYPOGLYCAEMIC INDUCTION FIND_CAT","Hypoglycaemic Induction","Hypoglycaemic Induction",1,,,
+"FIND_CAT_DEF","HYPOGLYCAEMIC UNAWARENESS FIND_CAT","Hypoglycaemic unawareness","Sponsor defined:
+Hypoglycaemic unawareness",1,,,
+"FIND_CAT_DEF","H_DAT FIND_CAT","HDAT","Hemophilia ? Device Assessment Questionnaire (H-DAT), U.S. English 06 April 2016 (Novo Nordisk).",1,,,
+"FIND_CAT_DEF","ICIQ-UI-SF FIND_CAT","ICIQ-UI-SF","Short form of International Consultation on Urine Incontinence Questionnaire (ICIQ-UI-SF)
+",1,,,
+"FIND_CAT_DEF","IDEA V1.0 FIND_CAT","IDEA V1.0","Injection Device Experience and Acceptance (IDEA) Questionnaire V1.0",1,,,
+"FIND_CAT_DEF","IDQ V1.0 FIND_CAT","IDQ V1.0","Injection Device Questionnaire 31-Jan-2022 V1.0",1,,,
+"FIND_CAT_DEF","INCLUSION CRITERIA FIND_CAT","Inclusion Criteria","Inclusion Criteria
+<CodeLists>
+<CodeList Value=""IECAT"" Code=""C25532X""></CodeList>
+</CodeLists>",913,,,
+"FIND_CAT_DEF","INJECTION FIND_CAT","Injection","Injection",914,,,
+"FIND_CAT_DEF","INJECTION SITE FIND_CAT","Injection site","Injection site",914,,,
+"FIND_CAT_DEF","INTENSITY OF INJECTION SITE PAIN FIND_CAT","Intensity of Injection Site Pain","Intensity of Injection Site Pain. Version 1.0. Novo Nordisk. 29 July 2020.",1,,,
+"FIND_CAT_DEF","IPAQ-LF SELF-ADMINISTERED VERSION FIND_CAT","IPAQ-LF Self-Administered version","International Physical Activity Questionnaire (October 2002) Long Last 7 Days Self-Administered Format (IPAQ-LF SELF-ADMINISTERED VERSION) (Booth, M.L. (2000). Assessment of Physical Activity: An International Perspective. Research Quarterly for Exercise and Sport, 71 (2): s114-20. Retrieved from the International Physical Activity Questionnaire website: http://www.ipaq.ki.se).",1,,,
+"FIND_CAT_DEF","IPAQ-SF SELF-ADMINISTERED VERSION FIND_CAT","IPAQ-SF Self-Administered Version","International Physical Activity Questionnaire Short Form Self-Administered Version",1,,,
+"FIND_CAT_DEF","IPQ FIND_CAT","Insulin Preference Questionnaire","Insulin Preference Questionnaire",1,,,
+"FIND_CAT_DEF","ISRQ FIND_CAT","ISRQ","Injection Site Reactions Questionnaire (ISRQ) ? English (US) ? Final version ? June 2008
+Adapted from the SIAQ?. ? Copyright: UCB, Braine L?Alleud, Belgium (2006). Any further use or copying of this questionnaire must be authorized by a separate licensing
+agreement. Please contact UCB Global Health Outcomes Research Department.",1,,,
+"FIND_CAT_DEF","ISS-CIM OBSERVER FIND_CAT","ISS-Child Impact Measure Observer","Idiopathic Short Stature - Child Impact Measure - Observer (ISS-CIM-O). Version 1.0. Novo Nordisk. 28Sep2021.",1,,,
+"FIND_CAT_DEF","IWDAQ V1.0 FIND_CAT","IWDAQ V1.0","Impact of Weight on Daily Activities Questionnaire (IWDAQ). RTI Health Solutions V1.0",1,,,
+"FIND_CAT_DEF","IWQOL LITE CT V1 23 ITEMS FIND_CAT","IWQOL-Lite CT V1 23 items","IWQOL Lite CT V1 23 items
+Impact of Weight Quality of Life -Lite - Clinical Trials version 1, 23 items",1,,,
+"FIND_CAT_DEF","IWQOL LITE CT V2 22 ITEMS FIND_CAT","IWQOL-Lite CT V2 22 items","IWQOL Lite CT V2 22 items
+Impact of Weight Quality of Life - Lite - Clinical Trials version 2, 22 items",1,,,
+"FIND_CAT_DEF","IWQOL LITE CT V3 20 ITEMS FIND_CAT","IWQOL-Lite CT V3 20 items","IWQOL Lite CT V3 20 items
+Impact of Weight Quality of Life - Lite - Clinical Trials version 1, 20 items",1,,,
+"FIND_CAT_DEF","IWQOL-KIDS FIND_CAT","IWQOL-Kids","Impact of Weight on Quality of Life Kids Questionnaire",1,,,
+"FIND_CAT_DEF","JOINT PAIN RATING SCALE V1.0 FIND_CAT","Joint Pain Rating Scale V1.0","Joint Pain Rating Scale V1.0",1,,,
+"FIND_CAT_DEF","KARYOTYPE DETERMINATION FIND_CAT","Karyotype Determination","Karyotype Determination",1,,,
+"FIND_CAT_DEF","KCCQ FIND_CAT","KC Cardiomyopathy Questionnaire","KC Cardiomyopathy Questionnaire",1,,,
+"FIND_CAT_DEF","KCCQ SCORES FIND_CAT","KC Cardiomyopathy Questionnaire Scores","KC Cardiomyopathy Questionnaire Scores",1,,,
+"FIND_CAT_DEF","KNEE RADIOGRAPHIC EXAMINATION FIND_CAT","Knee Radiographic Examination","Knee Radiographic Examination",1,,,
+"FIND_CAT_DEF","LIFE'S SIMPLE 7 FIND_CAT","Life's Simple 7","American Heart Association's Life's Simple 7 Health Factors. Lloyd-Jones DM, Hong Y, Labarthe D et al. American Heart Association Strategic Planning Task Force and Statistics Committee. Defining and setting national goals for cardiovascular health promotion and disease reduction: the American Heart Association's strategic Impact Goal through 2020 and beyond. Circulation. 2010 Feb 2;121(4):586-613.",1,,,
+"FIND_CAT_DEF","LIFESTYLE ASSESSMENT FIND_CAT","Lifestyle Assessment","Category for Lifestyle Assessments",1,,,
+"FIND_CAT_DEF","LIPID LOWERING THERAPY FIND_CAT","Lipid Lowering Therapy","Lipid Lowering Therapy",1,,,
+"FIND_CAT_DEF","LIPIDS FIND_CAT","Lipids","Finding category, Lipids",1209,,,
+"FIND_CAT_DEF","LOCAL TOLERABILITY FIND_CAT","Local Tolerability","Local Tolerability
+",1215,,,
+"FIND_CAT_DEF","MADRS FIND_CAT","Montgomery-Asberg Depression Ratin Scale","Category for the Montgomery-Asberg Depression Rating Scale (MADRS) (Copyright Stuart Montgomery 1978, Measures of Depression, Fulcrum Press, London. Stuart A. Montgomery and Marie Asberg. A new depression scale designed to be sensitive to change. Br. J. Psychiat. (1979), 134:382-389).",1,,,
+"FIND_CAT_DEF","MAGNETIC RESONANCE IMAGING FIND_CAT","Magnetic Resonance Imaging","Imaging that uses radiofrequency waves and a strong magnetic field rather than x-rays to provide amazingly clear and detailed pictures of internal organs and tissues. The technique is valuable for the diagnosis of many pathologic conditions, including cancer, heart and vascular disease, stroke, and joint and musculoskeletal disorders.",1,,,
+"FIND_CAT_DEF","MATERNAL FACTORS FIND_CAT","Maternal Factors","Maternal factors",1,,,
+"FIND_CAT_DEF","MAX STATIN DOSE FIND_CAT","Max Statin Dose","Max Statin Dose",1,,,
+"FIND_CAT_DEF","MDS-UPDRS FIND_CAT","MDS-UPDRS","The Movement Disorder Society (MDS)-sponsored Revision of the Unified Parkinson's Disease Rating Scale (UPDRS)",1,,,
+"FIND_CAT_DEF","MEAL TEST FIND_CAT","Meal Test","Meal Test",1305,,,
+"FIND_CAT_DEF","MEDICAL CONTACTS FIND_CAT","Medical Contacts","Medical Contacts",1,,,
+"FIND_CAT_DEF","MEDICATION RECEIVED FIND_CAT","Medication Received","NN internal questionnaire about which medication subject think they received.",1,,,
+"FIND_CAT_DEF","MELD FIND_CAT","Model for End Stage Liver Disease","Model for End Stage Liver Disease (MELD) (Malinchoc M, Kamath PS, Gordon FD, Peine CJ, Rank J, ter Borg PC (April 2000). A model to predict poor survival in patients undergoing transjugular intrahepatic portosystemic shunts. Hepatology 31 (4): 864-71).",1,,,
+"FIND_CAT_DEF","MENSTRUAL PERIOD FIND_CAT","Menstrual Period","The length of time of the menses cycle, measured from the beginning of one menstrual period to the beginning of the next.
+",1,,,
+"FIND_CAT_DEF","MENTAL HEALTH EVALUATION FIND_CAT","Mental Health Evaluation","Mental Health Evaluation",1,,,
+"FIND_CAT_DEF","METABOLIC RATE FIND_CAT","Metabolic rate","Metabolic rate
+",1305,,,
+"FIND_CAT_DEF","MMSE FIND_CAT","Mini-Mental State Examination","Mini-Mental State Examination (MMSE) (MMSE Copyright 1975, 1998, 2001 by MiniMental, LLC All rights reserved. Published 2001 by Psychological Assessment Resources, Inc. May not be reproduced in whole or in part in any form or by any means without written permission of Psychological Assessment Resources, Inc.).",1,,,
+"FIND_CAT_DEF","MNSI FIND_CAT","MNSI","Michigan Neuropathy Screening Instrument (MNSI) (copyright University of Michigan, 2000, All rights reserved). Patient Version",1,,,
+"FIND_CAT_DEF","MOCA VERSION 7.1 FIND_CAT","MOCA VERSION 7.1","Montreal Cognitive Assessment Version 7.1 (MOCA VERSION 7.1) (Copyright Z. Nasreddine MD. Ziad S. Nasreddine, Natalie A. Phillips, Valerie Bedirian, Simon Charbonneau, Victor Whitehead, Isabelle Collin, Jeffrey L. Cummings and Howard Chertkow. The Montreal Cognitive Assessment, MoCA: A Brief Screening Tool For Mild Cognitive Impairment. J Am Geriatr Soc. 2005 Apr;53(4):695-9).
+",1,,,
+"FIND_CAT_DEF","MODIFIED TSQM-9 PARENT REPORT FIND_CAT","Modified TSQM-9 Parent Report","Modified Abbreviated Treatment Satisfaction Questionnaire for Medication Parent Reported (Modified TSQM-9)",1,,,
+"FIND_CAT_DEF","MOLECULAR GENETIC PANEL TESTING FIND_CAT","Molecular Genetic Panel Testing","Molecular Genetic Panel Testing",1,,,
+"FIND_CAT_DEF","MONTHLY DIARY FIND_CAT","Monthly Diary","Monthly diary",1,,,
+"FIND_CAT_DEF","MONTREAL COGNITIVE ASSESSMENT V 7.1 FIND_CAT","Montreal Cognitive Assessment vers 7.1","Montreal Cognitive Assessment (MoCA) version 7.1
+The MoCA is a cognitive screening test designed to assist Health Professionals in the detection of mild cognitive impairment and Alzheimer's disease. The test is 12 questions.",1,,,
+"FIND_CAT_DEF","MRS FIND_CAT","Modified Rankin Scale","The Wilson mRS structured interview (mRS-SI) is copyright protected - ? 2002 Lindsay Wilson, University of Stirling, Stirling, FK9 4LA, UK and Asha Hareendran, OutcomesResearch, Pfizer Ltd. Sandwich, CT13 9NJ, UK. Copies of the mRS-SI and accompanying notes can be obtained from the author.  Additional information about the mRS-SI can be found at http://www.psychology.stir.ac.uk/staff/lwilson/documents/.",1,,,
+"FIND_CAT_DEF","MYOCARDIAL PERFUSION RESERVE FIND_CAT","Myocardial Perfusion Reserve","Myocardial Perfusion Reserve.",1,,,
+"FIND_CAT_DEF","NASH-CHECK V1.0 FIND_CAT","NASH-CHECK V1.0","Assessment of symptoms and health-related quality of life in non-alcoholic steatohepatitis (NASH). NASH-CHECK V1.0",1,,,
+"FIND_CAT_DEF","NEUROLOGICAL EXAMINATION FIND_CAT","Neurological Examination","Neurological examination",1,,,
+"FIND_CAT_DEF","NEUROPATHY IMPAIRMENT SCORE (NIS) FIND_CAT","Neuropathy Impairment Score (NIS)","Clinical Neuropathy Assessment. Neuropathy Impairment Score (NIS). Dyck et al: Ann Neurol 8:590-596, 1980; Revised, Neurol 41:799-807, 1991 and Neurol 45:1115-1121, 1995",1,,,
+"FIND_CAT_DEF","NMSS FIND_CAT","Non-Motor Symptom Assessment Scal for PD","Non-Motor Symptom Assessment Scale for Parkinson's Disease. The Non-Motor Symptoms Scale (NMSS) is a 30-item rater-based scale to assess a wide range of non-motor symptoms in patients with Parkinson's disease (PD). The NMSS measures the severity and frequency of non-motor symptoms across nine dimensions. The scale can be used for patients at all stages of PD. 2007",1,,,
+"FIND_CAT_DEF","NPI FIND_CAT","NPI","Neuropsychiatric Inventory (NPI) (copyright JL Cummings, 1994, all rights reserved; permission for commercial use required; npiTEST.net)",1,,,
+"FIND_CAT_DEF","NYHA CLASS FIND_CAT","NYHA Class","NYHA classification
+",1,,,
+"FIND_CAT_DEF","OCCUPATION FIND_CAT","Occupation","Occupation",1,,,
+"FIND_CAT_DEF","OCCUPATION AND INCOME GROUP FIND_CAT","OCCUPATION AND INCOME GROUP","Occupation and Income Group
+Questions asked to identify subjects Occupation and Income Group
+Can be used in connection with other questionnaires, e.g. WPAI:SHP
+",1,,,
+"FIND_CAT_DEF","OCTANOATE BREATH TEST FIND_CAT","Octanoate Breath Test","Octanoate Breath Test",1503,,,
+"FIND_CAT_DEF","OTHER PK ASSESSMENTS FIND_CAT","Other PK assessments","Other PK assessments",1520,,,
+"FIND_CAT_DEF","PAIN RATING FIND_CAT","Pain Rating","Pain rating questionnaire",1,,,
+"FIND_CAT_DEF","PARENT TREATMENT BURDEN FIND_CAT","Parent Treatment Burden","Growth Hormone Injection - Parent Treatment Burden Measure (GH-INJ-PTB), Version 1.0, 28Sep2021 (Novo Nordisk)",1,,,
+"FIND_CAT_DEF","PARKINSON'S DISEASE HOME DIARY FIND_CAT","Parkinson's Disease Home Diary","Parkinson's Disease Home Diary also known as Hauser Diary. Hauser et al. J Clin Neuropharmacol 2000;23:75?81; 2. Hauser et al, Movement Disorders 2004;19(12):1409?1413.",1,,,
+"FIND_CAT_DEF","PARKINSONS DISEASE FIND_CAT","Parkinson's Disease","Parkinson's Disease
+",1,,,
+"FIND_CAT_DEF","PATHOLOGY FIND_CAT","Pathology","NCI Thesaurus: The medical science, and specialty practice, concerned with all aspects of disease, but with special reference to the essential nature, causes, and development of abnormal conditions, as well as the structural and functional changes that result from the disease processes. Informally used to mean the result of such an examination.
+",1,,,
+"FIND_CAT_DEF","PATIENT INTEREST ASSESSMENT FIND_CAT","Patient Interest Assessment","Patient Interest Assessment",1,,,
+"FIND_CAT_DEF","PATIENT REPORTED EXERCISE V1.0 FIND_CAT","Patient Reported Exercise V1.0","Patient Reported Exercise V1.0",1,,,
+"FIND_CAT_DEF","PD AFTER MULTIPLE DOSE FIND_CAT","PD after multiple dose","PD after multiple dose",1604,,,
+"FIND_CAT_DEF","PD AFTER SINGLE DOSE FIND_CAT","PD after single dose","PD after single dose",1604,,,
+"FIND_CAT_DEF","PDQ-39 FIND_CAT","PDQ-39","Parkinson's Disease Questionnaire (PDQ-39). Peto V, Jenkinson C, Fitzpatrick R et al. The development and validation of a short measure of functioning and well being for individuals with Parkinson's disease. Qual Life Res. 1995; 4: 241?248.",1,,,
+"FIND_CAT_DEF","PDSS-2 FIND_CAT","Parkinson's Disease Sleep Scale (PDSS-2)","Parkinson's Disease Sleep Scale (PDSS-2). The PDSS-2 is a revised version of the Parkinson's Disease Sleep Scale. PDSS-2 ? Ray Chaudhuri, Claudia Trenkwalder 2010. The PDSS-2 allows health and social care professionals and people with Parkinson's to self-rate and quantify the level of sleep disruption being experienced in order to target treatment appropriately.",1,,,
+"FIND_CAT_DEF","PEDHAL CHILDREN'S/TEENAGERS' V0.12 FIND_CAT","PedHAL Children's/teenagers' V0.12","Pediatric  Hemophilia Activities List Children's/teenagers' version.
+An activities questionnaire for children and teenagers aged 8-17 with haemophilia V0.12",1,,,
+"FIND_CAT_DEF","PEDHAL PARENTS' V0.12 FIND_CAT","PedHAL Parents' V0.12","Pediatric  Hemophilia Activities List Parents' version.
+An activities questionnaire for children and teenagers aged 4-17 with haemophilia V0.12",1,,,
+"FIND_CAT_DEF","PEDSQL ACUTE V4 ADULT FIND_CAT","PedsQL Acute V4 Adult","PedsQL Acute V4 Adult",1,,,
+"FIND_CAT_DEF","PEDSQL ACUTE V4 CHILDREN PARENT REPORT FIND_CAT","PedsQL Acute V4 Children Parent Report","PedsQL Acute V4 Children Parent Report",1,,,
+"FIND_CAT_DEF","PEDSQL ACUTE V4 TEEN FIND_CAT","PedsQL Acute V4 Teen","PedsQL Acute V4 Teen",1,,,
+"FIND_CAT_DEF","PEDSQL ACUTE V4 YOUNG ADULT FIND_CAT","PedsQL Acute V4 Young Adult","PedsQL Acute V4 Young Adult",1,,,
+"FIND_CAT_DEF","PEDSQL ACUTE V4 YOUNG CHILDREN PARENT REPORT FIND_CAT","PedsQL Acute V4 Young Child Parent Repor","PedsQL Acute V4 Young Children Parent Report",1,,,
+"FIND_CAT_DEF","PET SCAN FIND_CAT","PET scan","CDISC code: C17007
+CDISC submission value: PET SCAN
+CDISC synonym(s): 
+CDISC definition: An imaging technique for measuring the gamma radiation produced by collisions of electrons and positrons (anti-electrons) within living tissue. In positron emission tomography (PET), a subject is given a dose of a positron-emitting radionuclide attached to a metabolically active substance. A scanner reveals the tissue location of the metabolically-active substance administered.
+NCI preferred term: Positron Emission Tomography",1000,,,
+"FIND_CAT_DEF","PGI FIND_CAT","PGI","Patient Global Impression",1,,,
+"FIND_CAT_DEF","PGIC FIND_CAT","PGIC","Patient Global Impression of Change (PGIC).
+",1,,,
+"FIND_CAT_DEF","PGIC WRSS FIND_CAT","PGIC WRSS","Patient Global Impression of Change (PGIC) used with Weight Related Sign and Symptom measure (WRSS)",1,,,
+"FIND_CAT_DEF","PGIC-IWQOL LITE CT 20 ITEMS FIND_CAT","PGIC for IWQOL LITE CT 20 ITEMS","Category for Patient Global Impression of Change (PGIC) used with Impact of Weight Quality of Life Lite for Clinical Trials - 20 Item version (IWQOL LITE CT 20 ITEMS)
+",1,,,
+"FIND_CAT_DEF","PGIC-WRSS V2.0 FIND_CAT","PGIC for WRSS V2.0","Category for Patient Global Impression of Change (PGIC) used with Weight Related Sign and Symptom Measure Version 2.0 (WRSS 2.0)
+",1,,,
+"FIND_CAT_DEF","PGIC_HEMOPHILIA FIND_CAT","PGIC Hemophilia","Patient?s Global Impression of Change (PGIC) for Hemophilia. Version 1.0 (Novo Nordisk) United States English.",1,,,
+"FIND_CAT_DEF","PGIS FIND_CAT","PGIS","Patient Global Impression of Severity (PGIS).
+",1,,,
+"FIND_CAT_DEF","PGIS-IWQOL LITE CT 20 ITEMS FIND_CAT","PGIS for IWQOL LITE CT 20 ITEMS","Category for Patient Global Impression of Status (PGIS) used with Impact of Weight Quality of Life Lite for Clinical Trials - 20 Item version (IWQOL LITE CT 20 ITEMS)
+",1,,,
+"FIND_CAT_DEF","PGIS-WRSS V2.0 FIND_CAT","PGIS for WRSS V2.0","Category for Patient Global Impression of Severity (PGIS) used with Weight Related Sign and Symptom Measure Version 2.0 (WRSS 2.0)
+",1,,,
+"FIND_CAT_DEF","PHARMACOECONOMIC FIND_CAT","Pharmacoeconomic","Pharmacoeconomic
+",1608,,,
+"FIND_CAT_DEF","PHQ-9 FIND_CAT","PHQ-9","Patient Health Questionnaire - 9 (PHQ-9) (Kroenke K, Spitzer RL, Williams JBW. The PHQ-9: Validity of a brief depression severity measure. J Gen Intern Med 2001; 16:606-613).
+",1,,,
+"FIND_CAT_DEF","PHYSICAL EXAMINATION FIND_CAT","Physical Examination","Finding category, Physical examination",1608,,,
+"FIND_CAT_DEF","PK AFTER MULTIPLE DOSE FIND_CAT","PK after multiple dose","PK after multiple dose",1611,,,
+"FIND_CAT_DEF","PK AFTER SINGLE DOSE FIND_CAT","PK after single dose","PK after single dose",1611,,,
+"FIND_CAT_DEF","PK/PD FIND_CAT","PK/PD","PK/PD",1611,,,
+"FIND_CAT_DEF","PLAQUE MORPHOLOGY AND BURDEN FIND_CAT","Plaque Morphology and Burden","Plaque Morphology and Burden.",1,,,
+"FIND_CAT_DEF","PLETHYSMOGRAPHY FIND_CAT","Plethysmography","A plethysmograph is an instrument for measuring changes in volume within an organ or whole body (usually resulting from fluctuations in the amount of blood or air it contains).
+",1612,,,
+"FIND_CAT_DEF","POLYSOMNOGRAPHY FIND_CAT","Polysomnography","This is also the name of a CDISC domain.
+CDISC code: C49613
+CDISC submission value: SL
+CDISC synonyms: Sleep polysomnography data
+CDISC definition: Findings from diagnostic sleep tests (polysomnography).
+NCI preferred term: Sleep Polysomnography Domain
+But somni is the latin word for sleep, so to put sleep in front of polysomnography makes no sense.",1615,,,
+"FIND_CAT_DEF","PREFERRED TERM PRE-EVALUATION FIND_CAT","PREFERRED TERM PRE-EVALUATION","PREFERRED TERM PRE-EVALUATION FOR ADJUDICATION",1,,,
+"FIND_CAT_DEF","PREGNANCY AND DELIVERY FIND_CAT","Pregnancy and Delivery","Pregnancy and Delivery",1616,,,
+"FIND_CAT_DEF","PREGNANCY SCAN FIND_CAT","Pregnancy Scan",,1,,,
+"FIND_CAT_DEF","PREGNANCY TEST FIND_CAT","Pregnancy Test","Finding category, Pregnancy test",1616,,,
+"FIND_CAT_DEF","PRO QUESTIONNAIRES FIND_CAT","PRO questionnaires","PRO questionnaires",1616,,,
+"FIND_CAT_DEF","PROFILES FIND_CAT","Profiles","Profiles",1616,,,
+"FIND_CAT_DEF","PROMIS NUMERIC RATING SCALE V1.0 - PAIN INTENSITY 1A FIND_CAT","PROMIS NRS V1.0 - Pain Intensity 1a","PROMIS Numeric Rating Scale v.1.0 ? Pain Intensity 1a - 5 Oct 2017 ? 2008-2017 PROMIS Health Organization (PHO)",1,,,
+"FIND_CAT_DEF","PROMIS SHORT FORM V1.0 - FATIGUE 7A FIND_CAT","PROMIS SF V1.0 - Fatigue","PROMIS Item Bank - Fatigue - Short Form 7a V1.0",1,,,
+"FIND_CAT_DEF","PROMIS SHORT FORM V1.0 - FATIGUE 8A FIND_CAT","PROMIS SHORT FORM V1.0 - FATIGUE 8A","PROMIS v1.0 ? Fatigue ? Short Form 8a (PROM) - 02 Mar 2017 ? 2008-2017 PROMIS Health Organization and PROMIS Cooperative Group",1,,,
+"FIND_CAT_DEF","PROMIS SHORT FORM V2.0 - UPPER EXTREMITY 7A FIND_CAT","PROMIS SF V2.0 - Upper Extremity 7a","PROMIS v2.0-Upper Extremity-Short Form 7a - 11 Jul 2018  ? 2008-2018 PROMIS Health Organization (PHO)",1,,,
+"FIND_CAT_DEF","PROTECT COGNITIVE TEST FIND_CAT","Protect Cognitive Test","PROTECT Cognitive test",1,,,
+"FIND_CAT_DEF","PSE SYNDROME TEST V2.0 FIND_CAT","PSE Syndrome Test V2.0","The Portosystemic Encephalopathy Syndrome Test (PSE Syndrome Test) (Hans Schomerus, Karin Weissenborn, Hartmut Hecker, Wolfgang Hamster, Norbert Ruckert. Second revised edition 2013, digital media, Hannover Medical School) V2.0",1,,,
+"FIND_CAT_DEF","PSQI FIND_CAT","PSQI","Pittsburgh Sleep Quality Index. Buysse DJ, Reynolds CF, Monk TH, Berman SR, Kupfer DJ: Psychiatry Research, 28:193-213, 1989. Copyright 1989 and 2010, University of Pittsburgh.",1,,,
+"FIND_CAT_DEF","PSYCHIATRIC DISORDER FIND_CAT","Psychiatric disorder","Psychiatric disorder
+",1618,,,
+"FIND_CAT_DEF","PUBERTAL STATUS FIND_CAT","Pubertal Status","Pubertal Status
+",1690,,,
+"FIND_CAT_DEF","PUBERTAL STATUS BOY FIND_CAT","Pubertal Status Boy","Clinical Diagnosis of Pubertal Status Boy",1,,,
+"FIND_CAT_DEF","PUBERTAL STATUS GIRL FIND_CAT","Pubertal Status Girl","Clinical Diagnosis of Pubertal Status Girl",1,,,
+"FIND_CAT_DEF","PULMONARY FUNCTION FIND_CAT","Pulmonary function","Pulmonary function tests",1621,,,
+"FIND_CAT_DEF","PUMP_RELATED_DETAILS_AND_ASSESSMENTS FIND_CAT","Pump related details and assessments","CDISC code: Sponsor defined
+Pump related details and assessments",160,,,
+"FIND_CAT_DEF","QUALIFICATION CRITERIA FIND_CAT","Qualification Criteria","Qualification Criteria",1,,,
+"FIND_CAT_DEF","RANDOMISATION CRITERIA FIND_CAT","Randomisation criteria","Randomisation criteria",1801,,,
+"FIND_CAT_DEF","RBANS FIND_CAT","RBANS","Repeatable Battery for the Assessment of Neuropsychological Status (RBANS) update. Copyright 1998, 2012 NCS Pearson, Inc.",1,,,
+"FIND_CAT_DEF","RDRS FIND_CAT","The Rush Dyskinesia Rating Scale","The Rush Dyskinesia Rating Scale (RDRS), developed by the Movement Disorder Society (MDS), was created to objectively assess severity of overall dyskinesia based on interference in activities of daily living, to distinguish between chorea, dystonia, and other types of dyskinesia observed and to identify the most disabling form of dyskinesia. 
+Goetz CG, Stebbins GT, Shale HM, Lang AE, Chernik DA, Chmura TA, Ahlskog JE, Dorflinger EE. Utility of an objective dyskinesia rating scale for Parkinson's disease: inter- and intrarater reliability assessment. Mov Disord. 1994 Jul;9(4):390-4. doi: 10.1002/mds.870090403. PMID: 7969204.",1,,,
+"FIND_CAT_DEF","REGIMEN FIND_CAT","Type of regimen","Type of regimen
+",2060,,,
+"FIND_CAT_DEF","RENIN ANGIOTENSIN SYSTEM INHIBITOR THERAPY FIND_CAT","Renin Angiotensin Sys Inhibitor Therapy","Renin Angiotensin System Inhibitor Therapy",1,,,
+"FIND_CAT_DEF","RESCUE CRITERIA FIND_CAT","Rescue criteria","Rescue criteria",1805,,,
+"FIND_CAT_DEF","RESPIRATION CHAMBER FIND_CAT","Respiration Chamber","Respiration Chamber
+",1805,,,
+"FIND_CAT_DEF","RISK FACTORS FOR BREAST NEOPLASM FIND_CAT","Risk Factors for Breast Neoplasm","Risk factors for Breast Neoplasm",1,,,
+"FIND_CAT_DEF","RISK FACTORS FOR SKIN CANCER FIND_CAT","Risk Factors for Skin Cancer","Risk factors for skin cancer",2,,,
+"FIND_CAT_DEF","ROI FIND_CAT","Regions of interest","Regions of interest (ROI)
+",15,,,
+"FIND_CAT_DEF","RUD BASELINE FIND_CAT","Rud Baseline","The Resource Utilisation in Dementia Questionnaire Baseline
+",1,,,
+"FIND_CAT_DEF","RUD FOLLOW-UP FIND_CAT","Rud Follow-Up","The Resource Utilisation in Dementia Questionnaire Follow-Up
+",1,,,
+"FIND_CAT_DEF","SCINTIGRAPHY FIND_CAT","Scintigraphy","Gamma scintigraphy is useful tool in the development and evaluation of pharmaceutical drug delivery systems. The technique provides information on the deposition, dispersion and movement of a formulation and is typically combined with PK assessments to provide information concerning the sites of release and absorption (?pharmacoscintigraphy?). 
+[CDISC definition i not used since Scintigraphy is an item of the 'Method' codelist in SDTM. ]",1903,,,
+"FIND_CAT_DEF","SDS_HEMOPHILIA FIND_CAT","SDS Hemophilia","Sheehan Disability Scale - Hemophilia (Copyright 1983, 2010, 2011 David V. Sheehan. All rights reserved.). Adapted from CDISC version 1.1",1,,,
+"FIND_CAT_DEF","SELF MEASURED GLUCOSE FIND_CAT","Self Measured Glucose","Self Measured Glucose",190,,,
+"FIND_CAT_DEF","SELF MEASURED PLASMA GLUCOSE FIND_CAT","Self measured plasma glucose","Self measured plasma glucose",1905,,,
+"FIND_CAT_DEF","SF10 V1.0 CHILDREN STANDARD FIND_CAT","SF10 V1.0 Children Standard","Short Form 10 Health Survey for Children, Standard, Version 1.0 V1.0 CHILDREN STANDARD",1,,,
+"FIND_CAT_DEF","SF36 V2.0 ACUTE FIND_CAT","SF36 V2.0 Acute","Short Form 36 Health Survey Acute, US Version 2.0 Questionnaire
+",1,,,
+"FIND_CAT_DEF","SF36 V2.0 ACUTE PRO CORE POPULATION BENCHMARK FIND_CAT","SF36 V2.0 Acute PRO CoRE Pop Benchmark","The Short Form 36 Health Survey Acute, US Version 2.0 (SF36 V2.0 ACUTE) Scoring Software PRO CoRE Population Benchmark (copyright 1992, 1996, 2000 Medical Outcomes Trust and QualityMetric Incorporated. All rights reserved). These materials discuss and/or include one or more of the SF Health Surveys, which are owned exclusively by QualityMetric Incorporated. No part of the SF Health Surveys may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of QualityMetric Incorporated and payment of any applicable fees. Copyright QualityMetric Incorporated. All rights reserved.",1,,,
+"FIND_CAT_DEF","SF36 V2.0 ACUTE PRO-CORE V1 FIND_CAT","SF36 V2.0 Acute PRO-CoRE V1","SF36 V2.0 Acute PRO-CoRE V1 - Scoring Software
+",1,,,
+"FIND_CAT_DEF","SF36 V2.0 STANDARD FIND_CAT","SF36 V2.0 Standard","Short Form 36 Health Survey Standard, US Version 2.0 Questionnaire
+",1,,,
+"FIND_CAT_DEF","SF36 V2.0 STANDARD PRO CORE POPULATION BENCHMARK FIND_CAT","SF36 V2.0 Std PRO CoRE Pop Benchmark","The Short Form 36 Health Survey Standard, US Version 2.0 (SF36 V2.0 STANDARD) Scoring Software PRO CoRE Population Benchmark (copyright 1992, 1996, 2000 Medical Outcomes Trust and QualityMetric Incorporated. All rights reserved). These materials discuss and/or include one or more of the SF Health Surveys, which are owned exclusively by QualityMetric Incorporated. No part of the SF Health Surveys may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of QualityMetric Incorporated and payment of any applicable fees. Copyright QualityMetric Incorporated. All rights reserved.",1,,,
+"FIND_CAT_DEF","SF36 V2.0 STANDARD PRO-CORE V1 FIND_CAT","SF36 V2.0 Standard PRO-CoRE V1","SF36 V2.0 Standard PRO-CoRE V1 - Scoring Software
+",1,,,
+"FIND_CAT_DEF","SGA-CIM OBSERVER FIND_CAT","SGA-Child Impact Measure Observer","Small for Gestational Age - Child Impact Measure - Observer (SGA-CIM-O). Version 1.0. Novo Nordisk. 28Sep2021.",1,,,
+"FIND_CAT_DEF","SHORT-FORM MPQ-2 FIND_CAT","Short-Form MPQ-2","Short-Form McGill Pain Questionnaire-2 (SF-MPQ-2). R. Melzack and the Initiative on Methods, Measurement, and Pain Assessment in Clinical Trials (IMMPACT), 2009.",1,,,
+"FIND_CAT_DEF","SICKLE CELL DISEASE FIND_CAT","Sickle Cell Disease","Sickle Cell Disease",1,,,
+"FIND_CAT_DEF","SIT TO STAND FIND_CAT","Sit to Stand","Sit to stand",1,,,
+"FIND_CAT_DEF","SIX MINUTE WALK FIND_CAT","Six Minute Walk","6 Minute Walk Test (6MWT) (Goldman MD, Marrie RA, Cohen JA. Evaluation of the six-minute walk in multiple sclerosis subjects and healthy controls. Multiple Sclerosis 2008; 14: 383-390).
+",1,,,
+"FIND_CAT_DEF","SIX MINUTE WALK TEST FIND_CAT","Six Minute Walk Test","Six Minute Walk Test",1,,,
+"FIND_CAT_DEF","SLEEP FIND_CAT","Sleep","Sleep",1,,,
+"FIND_CAT_DEF","SMOKING HABITS FIND_CAT","Smoking habits","Smoking habits
+",1913,,,
+"FIND_CAT_DEF","SOCIO-DEMOGRAPHIC PARAMETER FIND_CAT","Socio-Demographic Parameter","Socio-Demographic Parameter",1,,,
+"FIND_CAT_DEF","SPECIMEN FIND_CAT","Specimen","Specimen for laboratory findings",1916,,,
+"FIND_CAT_DEF","SPERM ANALYSIS FIND_CAT","Sperm Analysis","A sperm analysis involves checking a sample of semen for overall sperm health.
+",1,,,
+"FIND_CAT_DEF","SPFQ V1.0 FIND_CAT","SPFQ V1.0","Study Participant Feedback Questionnaire version 1.0. Prepared by TransCelerate Patient Experience Initiative Team.",1,,,
+"FIND_CAT_DEF","SPIROMETRY FIND_CAT","Spirometry","Spirometry
+
+A method used to measure the breathing capacity of the lung by means of a spirometer.",1,,,
+"FIND_CAT_DEF","SPORT ACTIVITY FIND_CAT","Sport Activity","Sport Activity",1,,,
+"FIND_CAT_DEF","SPS-6 FIND_CAT","SPS-6","Stanford presenteeism scale-6
+",1,,,
+"FIND_CAT_DEF","SPS-6 TRIGGER QUESTION FIND_CAT","SPS-6 Trigger Question","A trigger question for the Stanford presenteeism scale-6
+",1,,,
+"FIND_CAT_DEF","STEPS FIND_CAT","Steps","Steps",1,,,
+"FIND_CAT_DEF","STROOP COLOR AND WORD TEST ADULT VERSION FIND_CAT","Stroop Color and Word Test Adult Version","Stroop Color and Word Test.
+Golden C. J., Freshwater S. M. (2002). The Stroop Color and Word Test: A Manual for Clinical and Experimental Uses. Chicago, IL: Stoelting. Adult version",1,,,
+"FIND_CAT_DEF","STUDY MEDICATION FIND_CAT","Study Medication","Sponsor defined: Study Medication",1,,,
+"FIND_CAT_DEF","SWQS FIND_CAT","SWQS","Swallowability Questionnaire (SWQS)",1,,,
+"FIND_CAT_DEF","TANNER SCALE BOY FIND_CAT","Tanner Scale Boy","Tanner Scale Boy (Marshall WA, Tanner JM. Variations in pattern of pubertal changes in boys. Arch Dis Child 1970 Feb;45(239):13-23).",1,,,
+"FIND_CAT_DEF","TANNER SCALE GIRL FIND_CAT","Tanner Scale Girl","Tanner Scale Girl (Marshall WA, Tanner JM. Variations in pattern of pubertal changes in girls. Arch Dis Child 1969 Jun; 44(235): 291-303).",1,,,
+"FIND_CAT_DEF","TB-CGHD CAREGIVER REPORT FIND_CAT","TB-CGHD Caregiver Report","Treatment Burden - Child Growth Hormone Deficiency - Observer (TB-CGHD-O), Version 1.0, 01 SEP 2016 (Novo Nordisk)",1,,,
+"FIND_CAT_DEF","TB-CGHD-O FIND_CAT","Treatment Burden - CGHD-Observer","Treatment burden - CGHD-Observer",1,,,
+"FIND_CAT_DEF","TB-CGHD-P FIND_CAT","TB-CGHD-P","Treatment Burden - CGHD-Parent (TB-CGHD-P)
+",1,,,
+"FIND_CAT_DEF","TB-CGHD-P 15 ITEMS FIND_CAT","TB-CGHD-P 15 Items","Treatment Burden ? Child Growth Hormone Deficiency ? PRO Parent/Guardian (TB-CGHD-P), Version 1.0, 01 SEP 2016 (Novo Nordisk)",1,,,
+"FIND_CAT_DEF","TB-CGHD-P 8 ITEMS FIND_CAT","Trt Burd Child GH Defici-Parent 8 Items","Treatment Burden Measure-Child Growth Hormone Deficiency-Parent 8 Items Version",1,,,
+"FIND_CAT_DEF","TFEQ-R18V2 FIND_CAT","TFEQ-R18V2","Three Factor Eating Questionnaire R18, Version 2 (TFEQ-R18V2)",1,,,
+"FIND_CAT_DEF","TIME TO EVENT FIND_CAT","Time to event","Finding category, Time to event",201520,,,
+"FIND_CAT_DEF","TREADMILL FIND_CAT","Treadmill","Treadmill assessments",1,,,
+"FIND_CAT_DEF","TREATING PHYSICIAN PRACTICE AND SPECIALITY FIND_CAT","Treating Physician Practice / Speciality","Treating physician practice and speciality",1,,,
+"FIND_CAT_DEF","TRIAL SPECIFIC QUESTIONS FIND_CAT","Trial Specific Questions","Question that are only used for a particular trial and not part of a questionnaire.",2050,,,
+"FIND_CAT_DEF","TRIM-AGHD_V2_0 FIND_CAT","TRIM-AGHD V2.0","Treatment Related Impact Measure ? Growth Hormone Deficiency in Adults (TRIM-AGHD) - Version 2.0 - United States English
+",1,,,
+"FIND_CAT_DEF","TRIM-CGHD-O_V1_0 FIND_CAT","TRIM-CGHD-O","Treatment Related Impact Measure ? Child Growth Hormone Deficiency ? Observer (TRIM-CGHD-O) - United States English
+",1,,,
+"FIND_CAT_DEF","TRIM-D FIND_CAT","TRIM-D","Treatment Related Impact Measure Diabetes (TRIM-D) (TRIM-D ? Novo Nordisk, August 2008. Brod M, Hammer M, Christensen T, Lessard S, Bushnell DM. Understanding and assessing the impact of treatment in diabetes: the Treatment-Related Impact Measures for Diabetes and Devices (TRIM-Diabetes and TRIM-Diabetes Device). Health Qual Life Outcomes. 2009 Sep 9;7:83).
+",1,,,
+"FIND_CAT_DEF","TRIM-D DEVICE FIND_CAT","TRIM-Diabetes Device","TRIM-Diabetes Device ? Novo Nordisk, August 2008
+English (USA). Revised version of 11 Nov 2016",1,,,
+"FIND_CAT_DEF","TSQM V2 FIND_CAT","Trt Satisfaction Quest for Medication","Treatment Satisfaction Questionnaire for Medication (TSQM) - Version 2.0 (Copyright (C) 2006 Quintiles Transnational Corp. All Rights Reserved)
+",1,,,
+"FIND_CAT_DEF","TSQM-9 FIND_CAT","TSQM-9","Abbreviated Treatment Satisfaction Questionnaire for Medication (TSQM-9). Murtuza Bharmal, Krista Payne, Mark J Atkinson et al. Validation of an abbreviated Treatment Satisfaction Questionnaire for Medication (TSQM-9) among patients on antihypertensive medications. Health Qual Life Outcomes. 2009 Apr 27;7:36.",1,,,
+"FIND_CAT_DEF","URINALYSIS FIND_CAT","Urinalysis","Urinalysis",2170,,,
+"FIND_CAT_DEF","URINE SAMPLING FIND_CAT","Urine sampling","Urine sampling
+",2172,,,
+"FIND_CAT_DEF","USE ERROR FIND_CAT","Use Error","Use Error",1,,,
+"FIND_CAT_DEF","VASCUQOL-6 FIND_CAT","VascuQoL-6","Vascular Quality of Life-6 Questionnaire (VascuQoL-6)",1,,,
+"FIND_CAT_DEF","VIROLOGY FIND_CAT","Virology","Finding category, Virology",1,,,
+"FIND_CAT_DEF","VISUAL ACUITY FIND_CAT","Visual Acuity","Visual Acuity",1,,,
+"FIND_CAT_DEF","VISUAL ANALOGUE SCALE FIND_CAT","Visual Analogue Scale","Visual Analogue Scale (VAS)
+",2225,,,
+"FIND_CAT_DEF","VITAL SIGNS FIND_CAT","Vital Signs","Vital signs",2230,,,
+"FIND_CAT_DEF","VPRN FIND_CAT","VPRN","Validated Hemophilia Regimen Treatment Adherence Scale (Veritas-PRN) ? Indiana Hemophilia and Thrombosis Center, Inc. 2010.",1,,,
+"FIND_CAT_DEF","VPRO FIND_CAT","Veritas-Pro","Validated Hemophilia Regimen Treatment Adherence Scale ? Prophylaxis (VPRO)
+",1,,,
+"FIND_CAT_DEF","WEAR FIND_CAT","Wear","Wear",1,,,
+"FIND_CAT_DEF","WEIGHT HISTORY FIND_CAT","Weight History","Weight history category for the Weight history project standard",1,,,
+"FIND_CAT_DEF","WIQ FIND_CAT","WIQ","Walking Impairment Questionnaire",1,,,
+"FIND_CAT_DEF","WITHDRAWAL CRITERIA FIND_CAT","Withdrawal criteria","Withdrawal criteria",2330,,,
+"FIND_CAT_DEF","WLQ FIND_CAT","Work Limitations Questionnaire","Work Limitations Questionnaire
+
+1998, The Health Institute, Tufts Medical Center f/k/a New England Medical Center Hospitals, Inc.; Debra Lerner, Ph.D.; Benjamin Amick III, Ph.D.; and GlaxoWellcome, Inc.
+",1,,,
+"FIND_CAT_DEF","WOMAC NRS 3.1 INDEX FIND_CAT","WOMAC NRS 3.1 INDEX","Western Ontario and McMaster Universities Osteoarthritis Index Version 3.1 Numerical Rating Scale Format (WOMAC NRS 3.1) (Bellamy N. WOMAC Osteoarthritis Index User Guide. Version V. Brisbane, Australia 2002; WOMAC 3.1 User Guide XI; WOMAC is a registered trade-mark. Copyright 2008. Prof Nicholas Bellamy. All Rights Reserved)",1,,,
+"FIND_CAT_DEF","WORK STUDY IMPACT FIND_CAT","Work Study Impact","Sickle Cell Disease Work Study Impact questionnaire (SCDWSIQ), Novo Nordisk, Version 1, 25Jun2020",1,,,
+"FIND_CAT_DEF","WPAI-GH V2.0 FIND_CAT","WPAI-GH V2.0","The Work Productivity and Activity Impairment - General Health Version 2.0 (WPAI-GH V2.0) (Reilly MC, Zbrozek AS, Dukes EM. The validity and reproducibility of a work productivity and activity impairment instrument. PharmacoEconomics 1993; 4(5):353-65. http://www.reillyassociates.net/WPAI_GH.html. http://www.reillyassociates.net/WPAI_General.html)",1,,,
+"FIND_CAT_DEF","WPAI-SHP FIND_CAT","WPAI-SHP","WPAI-SHP: The Work Productivity and Activity Impairment - Specific Health Problems Questionnaire Version 2.0 (WPAI01) 
+",1,,,
+"FIND_CAT_DEF","WRSS V2.0 FIND_CAT","WRSS V2.0","Sponsor defined: Weight Related Sign and Symptom measure version 2.0",1,,,
+"FIND_CAT_DEF","X-RAY FIND_CAT","X-ray","X-ray",2470,,,

@@ -1,0 +1,307 @@
+[
+   {
+      "name": "Test POST create activity group",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name": "new_name",
+            "name_sentence_case": "new_name",
+            "definition": "definition",
+            "abbreviation": "abbv",
+            "library_name": "Sponsor"
+         },
+         "url": "/concepts/activities/activity-groups"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "ActivityGroup_000001",
+            "name": "new_name",
+            "name_sentence_case": "new_name",
+            "definition": "definition",
+            "abbreviation": "abbv",
+            "library_name": "Sponsor",
+            "start_date": "2021-03-18T11:54:20.898Z",
+            "end_date": null,
+            "status": "Draft",
+            "version": "0.1",
+            "change_description": "Initial version",
+            "user_initials": "TODO user initials",
+            "possible_actions": [
+               "approve",
+               "delete",
+               "edit"
+            ]
+         }
+      }
+   },
+   {
+      "name": "Test GET all activity groups",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/concepts/activities/activity-groups?total_count=true"
+      },
+      "response": {
+         "code": 200,
+         "headers": {},
+         "result": {
+            "items": [
+               {
+                  "uid": "activity_group_root1",
+                  "name": "name1",
+                  "name_sentence_case": "name1",
+                  "definition": "definition1",
+                  "abbreviation": "abbv",
+                  "library_name": "Sponsor",
+                  "start_date": "2021-03-18T11:54:20.898Z",
+                  "end_date": null,
+                  "status": "Final",
+                  "version": "1.0",
+                  "change_description": "Approved version",
+                  "user_initials": "TODO user initials",
+                  "possible_actions": [
+                     "inactivate",
+                     "new_version"
+                  ]
+               },
+               {
+                  "uid": "activity_group_root2",
+                  "name": "name2",
+                  "name_sentence_case": "name2",
+                  "definition": "definition2",
+                  "abbreviation": "abbv",
+                  "library_name": "Sponsor",
+                  "start_date": "2021-03-18T11:54:20.898Z",
+                  "end_date": null,
+                  "status": "Draft",
+                  "version": "0.1",
+                  "change_description": "New draft version",
+                  "user_initials": "TODO user initials",
+                  "possible_actions": [
+                     "approve",
+                     "delete",
+                     "edit"
+                  ]
+               },
+               {
+                  "uid": "activity_group_root3",
+                  "name": "name3",
+                  "name_sentence_case": "name3",
+                  "definition": "definition3",
+                  "abbreviation": "abbv",
+                  "library_name": "Sponsor",
+                  "start_date": "2021-03-18T11:54:20.898Z",
+                  "end_date": null,
+                  "status": "Final",
+                  "version": "1.0",
+                  "change_description": "Approved version",
+                  "user_initials": "TODO user initials",
+                  "possible_actions": [
+                     "inactivate",
+                     "new_version"
+                  ]
+               },
+               {
+                  "uid": "ActivityGroup_000001",
+                  "name": "new_name",
+                  "name_sentence_case": "new_name",
+                  "definition": "definition",
+                  "abbreviation": "abbv",
+                  "library_name": "Sponsor",
+                  "start_date": "2021-03-18T11:54:20.898Z",
+                  "end_date": null,
+                  "status": "Draft",
+                  "version": "0.1",
+                  "change_description": "Initial version",
+                  "user_initials": "TODO user initials",
+                  "possible_actions": [
+                     "approve",
+                     "delete",
+                     "edit"
+                  ]
+               }
+            ],
+            "total": 4,
+            "page": 1,
+            "size": 10
+         }
+      }
+   },
+   {
+      "name": "Test POST approve activity group",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {},
+         "url": "/concepts/activities/activity-groups/ActivityGroup_000001/approvals"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "ActivityGroup_000001",
+            "name": "new_name",
+            "name_sentence_case": "new_name",
+            "definition": "definition",
+            "abbreviation": "abbv",
+            "library_name": "Sponsor",
+            "start_date": "2021-03-18T11:54:20.898Z",
+            "end_date": null,
+            "status": "Final",
+            "version": "1.0",
+            "change_description": "Approved version",
+            "user_initials": "TODO user initials",
+            "possible_actions": [
+               "inactivate",
+               "new_version"
+            ]
+         }
+      }
+   },
+   {
+      "name": "Test POST /versions activity group",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {},
+         "url": "/concepts/activities/activity-groups/ActivityGroup_000001/versions"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "ActivityGroup_000001",
+            "name": "new_name",
+            "name_sentence_case": "new_name",
+            "definition": "definition",
+            "abbreviation": "abbv",
+            "library_name": "Sponsor",
+            "start_date": "2021-03-18T11:54:20.898Z",
+            "end_date": null,
+            "status": "Draft",
+            "version": "1.1",
+            "change_description": "New draft created",
+            "user_initials": "TODO user initials",
+            "possible_actions": [
+               "approve",
+               "edit"
+            ]
+         }
+      }
+   },
+   {
+      "name": "Test PATCH DRAFT activity group",
+      "request": {
+         "headers": {},
+         "method": "PATCH",
+         "request": {
+            "name": "new_activity_name",
+            "name_sentence_case": "new_activity_name",
+            "definition": "new_definition",
+            "change_description": "activity patch"
+         },
+         "url": "/concepts/activities/activity-groups/ActivityGroup_000001"
+      },
+      "response": {
+         "code": 200,
+         "headers": {},
+         "result": {
+            "uid": "ActivityGroup_000001",
+            "name": "new_activity_name",
+            "name_sentence_case": "new_activity_name",
+            "definition": "new_definition",
+            "abbreviation": "abbv",
+            "library_name": "Sponsor",
+            "start_date": "2021-03-18T11:54:20.898Z",
+            "end_date": null,
+            "status": "Draft",
+            "version": "1.2",
+            "change_description": "activity patch",
+            "user_initials": "TODO user initials",
+            "possible_actions": [
+               "approve",
+               "edit"
+            ]
+         }
+      }
+   },
+   {
+      "name": "Test DELETE activations activity group",
+      "request": {
+         "headers": {},
+         "method": "DELETE",
+         "request": {},
+         "url": "/concepts/activities/activity-groups/activity_group_root1/activations"
+      },
+      "response": {
+         "code": 200,
+         "headers": {},
+         "result": {
+            "uid": "activity_group_root1",
+            "name": "name1",
+            "name_sentence_case": "name1",
+            "definition": "definition1",
+            "abbreviation": "abbv",
+            "library_name": "Sponsor",
+            "start_date": "2021-03-18T11:54:20.898Z",
+            "end_date": null,
+            "status": "Retired",
+            "version": "1.0",
+            "change_description": "Inactivated version",
+            "user_initials": "TODO user initials",
+            "possible_actions": [
+               "reactivate"
+            ]
+         }
+      }
+   },
+   {
+      "name": "Test POST activations activity group",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {},
+         "url": "/concepts/activities/activity-groups/activity_group_root1/activations"
+      },
+      "response": {
+         "code": 200,
+         "headers": {},
+         "result": {
+            "uid": "activity_group_root1",
+            "name": "name1",
+            "name_sentence_case": "name1",
+            "definition": "definition1",
+            "abbreviation": "abbv",
+            "library_name": "Sponsor",
+            "start_date": "2021-03-18T11:54:20.898Z",
+            "end_date": null,
+            "status": "Final",
+            "version": "1.0",
+            "change_description": "Reactivated version",
+            "user_initials": "TODO user initials",
+            "possible_actions": [
+               "inactivate",
+               "new_version"
+            ]
+         }
+      }
+   },
+   {
+      "name": "Test DELETE activity group",
+      "request": {
+         "headers": {},
+         "method": "DELETE",
+         "request": {},
+         "url": "/concepts/activities/activity-groups/activity_group_root2"
+      },
+      "response": {
+         "code": 204,
+         "headers": {},
+         "result": null
+      }
+   }
+]

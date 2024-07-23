@@ -1,0 +1,129 @@
+[
+    {
+        "name": "Test get all terms from non-existent codelist",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/ct/terms/names?codelist_uid=non_existent_codelist"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "214",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "There is no CTCodelistRoot identified by provided codelist uid (non_existent_codelist)",
+                "method": "GET",
+                "path": "http://testserver/ct/terms/names?codelist_uid=non_existent_codelist",
+                "time": "2020-11-03T23:42:41.518146",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test PATCH term name non draft term",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "sponsor_preferred_name": "sponsor_preferred_name",
+                "sponsor_preferred_name_sentence_case": "sponsor_preferred_name_sentence_case",
+                "change_description": "term change"
+            },
+            "url": "/ct/terms/term_root_final/names"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "The object is not in draft status.",
+                "method": "PATCH",
+                "path": "http://testserver/ct/terms/term_root_final/names",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test POST name approve non DRAFT term",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/ct/terms/term_root_final/names/approvals"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "The object is not in draft status.",
+                "method": "POST",
+                "path": "http://testserver/ct/terms/term_root_final/names/approvals",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test DELETE name activations non FINAL term",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "/ct/terms/term_root_draft/names/activations"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "Cannot retire draft version.",
+                "method": "DELETE",
+                "path": "http://testserver/ct/terms/term_root_draft/names/activations",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test DELETE name delete accepted term",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "/ct/terms/term_root_final/names"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "Object has been accepted",
+                "method": "DELETE",
+                "path": "http://testserver/ct/terms/term_root_final/names",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test PATCH name terms name already exists",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "sponsor_preferred_name": "term_value_name1",
+                "sponsor_preferred_name_sentence_case": "term_value_name1",
+                "order": 1,
+                "change_description": "changed"
+            },
+            "url": "/ct/terms/term_root_draft/names"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "CTTermName with name (term_value_name1) already exists.",
+                "method": "PATCH",
+                "path": "http://testserver/ct/terms/term_root_draft/names",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "ValidationException"
+            }
+        }
+    }
+]

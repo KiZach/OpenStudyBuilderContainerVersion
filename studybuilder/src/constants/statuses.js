@@ -1,0 +1,24 @@
+const DRAFT = 'Draft'
+const FINAL = 'Final'
+const RETIRED = 'Retired'
+const LATEST = 'Latest'
+const SUGGESTION = 'Suggestion'
+
+const STUDY_DRAFT = 'DRAFT'
+const STUDY_RELEASED = 'RELEASED'
+const STUDY_LOCKED = 'LOCKED'
+const COMMENT_STATUS_ACTIVE = 'ACTIVE'
+const COMMENT_STATUS_RESOLVED = 'RESOLVED'
+
+export default {
+  LATEST,
+  DRAFT,
+  FINAL,
+  RETIRED,
+  STUDY_DRAFT,
+  STUDY_RELEASED,
+  STUDY_LOCKED,
+  COMMENT_STATUS_ACTIVE,
+  COMMENT_STATUS_RESOLVED,
+  SUGGESTION,
+}

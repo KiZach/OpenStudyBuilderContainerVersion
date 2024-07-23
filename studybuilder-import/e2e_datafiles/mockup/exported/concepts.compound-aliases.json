@@ -1,0 +1,71 @@
+[
+  {
+    "abbreviation": null,
+    "change_description": "Approved version",
+    "compound": {
+      "name": "Metformin",
+      "uid": "Compound_000001"
+    },
+    "definition": "Some typical generic Metformin",
+    "end_date": null,
+    "is_preferred_synonym": false,
+    "library_name": "Sponsor",
+    "name": "Generic Metformin",
+    "name_sentence_case": "generic metformin",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-06-30T11:33:00.889616",
+    "status": "Final",
+    "uid": "CompoundAlias_000002",
+    "user_initials": "unknown-user",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "change_description": "Approved version",
+    "compound": {
+      "name": "Metformin",
+      "uid": "Compound_000001"
+    },
+    "definition": "A better drug based on Metformin",
+    "end_date": null,
+    "is_preferred_synonym": false,
+    "library_name": "Sponsor",
+    "name": "Improved Metformin",
+    "name_sentence_case": "improved metformin",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-06-30T11:34:28.037772",
+    "status": "Final",
+    "uid": "CompoundAlias_000001",
+    "user_initials": "unknown-user",
+    "version": "2.0"
+  }, 
+  {
+    "abbreviation": null,
+    "change_description": "Approved version",
+    "compound": {
+      "name": "NPH Insulin",
+      "uid": "Compound_000006"
+    },
+    "definition": null,
+    "end_date": null,
+    "is_preferred_synonym": true,
+    "library_name": "Sponsor",
+    "name": "NPH Insulin",
+    "name_sentence_case": "nph insulin",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T13:18:30.506299",
+    "status": "Final",
+    "uid": "CompoundAlias_000006",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  }
+]

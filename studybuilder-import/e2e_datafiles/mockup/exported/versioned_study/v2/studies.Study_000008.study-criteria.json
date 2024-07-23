@@ -1,0 +1,61 @@
+[
+    {
+        "study_uid": "Study_000008",
+        "order": 1,
+        "project_number": "CDISC DEV",
+        "project_name": "CDISC Dev",
+        "study_criteria_uid": "StudyCriteria_000001",
+        "criteria_type": {
+            "term_uid": "C25532_INCLUSION",
+            "catalogue_name": "SDTM CT",
+            "codelist_uid": "CTCodelist_000011",
+            "sponsor_preferred_name": "Inclusion Criteria",
+            "sponsor_preferred_name_sentence_case": "inclusion criteria",
+            "order": 1,
+            "library_name": "CDISC",
+            "start_date": "2023-08-29T09:26:11.375000+00:00",
+            "end_date": null,
+            "status": "Final",
+            "version": "1.0",
+            "change_description": "Initial import from CDISC",
+            "user_initials": "TEST",
+            "possible_actions": [
+                "inactivate",
+                "new_version"
+            ]
+        },
+        "criteria": {
+            "uid": "Criteria_000001",
+            "name": "Criteria for v1.1",
+            "name_plain": "Criteria for v1.1",
+            "start_date": "2023-10-03T08:04:23.113181+00:00",
+            "end_date": null,
+            "status": "Final",
+            "version": "1.0",
+            "change_description": "Approved version",
+            "user_initials": "unknown-user",
+            "possible_actions": [
+                "inactivate"
+            ],
+            "criteria_template": {
+                "name": "Criteria for v1.1",
+                "name_plain": "Criteria for v1.1",
+                "guidance_text": null,
+                "uid": "CriteriaTemplate_000005",
+                "sequence_id": "CI4",
+                "library_name": "User Defined"
+            },
+            "parameter_terms": [],
+            "library": {
+                "name": "User Defined",
+                "is_editable": true
+            },
+            "study_count": 0
+        },
+        "start_date": "2023-10-03T08:04:23.651164+00:00",
+        "user_initials": "unknown-user",
+        "key_criteria": false,
+        "latest_criteria": null,
+        "accepted_version": false
+    }
+]

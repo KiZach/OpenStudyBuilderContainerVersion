@@ -1,0 +1,7 @@
+uid_item,oid_item,name_assessment,order_number,mandatory,collection_exception_condition_oid
+I.SUBJID,I.SUBJID,Subject information,1,TRUE,
+I.PREVSUBJ,I.PREVSUBJ,Subject information,2,TRUE,
+I.BRTHDTC,I.BRTHDTC,Date of Birth,3,FALSE,
+I.BRTHDTCARGUS,I.BRTHDTCARGUS,Date of Birth,4,FALSE,
+I.SEX,I.SEX,Sex,5,TRUE,
+I.SEXDEA,I.SEXDEA,Sex,6,TRUE,

@@ -1,0 +1,352 @@
+[
+    {
+        "name": "Test POST Create term",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "catalogue_name": "SDTM CT",
+                "codelist_uid": "editable_cr",
+                "code_submission_value": "code_submission_value",
+                "name_submission_value": "name_submission_value",
+                "nci_preferred_name": "nci_preferred_name",
+                "definition": "definition",
+                "sponsor_preferred_name": "string",
+                "sponsor_preferred_name_sentence_case": "string",
+                "order": 7,
+                "library_name": "Sponsor"
+            },
+            "url": "/ct/terms"
+        },
+        "response": {
+            "code": 201,
+            "headers": {},
+            "result": {
+                "term_uid": "random",
+                "catalogue_name": "SDTM CT",
+                "codelists": [
+                    {
+                        "codelist_uid": "editable_cr",
+                        "order": 7
+                    }
+                ],
+                "concept_id": null,
+                "code_submission_value": "code_submission_value",
+                "name_submission_value": "name_submission_value",
+                "nci_preferred_name": "nci_preferred_name",
+                "definition": "definition",
+                "sponsor_preferred_name": "string",
+                "sponsor_preferred_name_sentence_case": "string",
+                "library_name": "Sponsor",
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test PATCH term attributes draft term",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "code_submission_value": "code_submission_valuePATCHED",
+                "name_submission_value": "name_submission_valuePATCHED",
+                "nci_preferred_name": "nci_preferred_name",
+                "definition": "definition",
+                "change_description": "change_description"
+            },
+            "url": "/ct/terms/term_root_draft/attributes"
+        },
+        "response": {
+            "code": 200,
+            "headers": {},
+            "result": {
+                "term_uid": "term_root_draft",
+                "catalogue_name": "SDTM CT",
+                "codelists": [
+                    {
+                        "codelist_uid": "editable_cr",
+                        "order": 2
+                    }
+                ],
+                "concept_id": null,
+                "code_submission_value": "code_submission_valuePATCHED",
+                "name_submission_value": "name_submission_valuePATCHED",
+                "nci_preferred_name": "nci_preferred_name",
+                "definition": "definition",
+                "change_description": "change_description",
+                "library_name": "Sponsor",
+                "start_date": "2021-04-06T12:38:32.069969",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.2",
+                "user_initials": "unknown-user",
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test POST attributes approve term",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/ct/terms/term_root_draft/attributes/approvals"
+        },
+        "response": {
+            "code": 201,
+            "headers": {},
+            "result": {
+                "term_uid": "term_root_draft",
+                "catalogue_name": "SDTM CT",
+                "codelists": [
+                    {
+                        "codelist_uid": "editable_cr",
+                        "order": 2
+                    }
+                ],
+                "concept_id": null,
+                "code_submission_value": "code_submission_valuePATCHED",
+                "name_submission_value": "name_submission_valuePATCHED",
+                "nci_preferred_name": "nci_preferred_name",
+                "definition": "definition",
+                "change_description": "Approved version",
+                "library_name": "Sponsor",
+                "start_date": "2021-04-06T12:38:32.069969",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "user_initials": "unknown-user",
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test DELETE attributes activations term",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "/ct/terms/term_root_draft/attributes/activations"
+        },
+        "response": {
+            "code": 200,
+            "headers": {},
+            "result": {
+                "term_uid": "term_root_draft",
+                "catalogue_name": "SDTM CT",
+                "codelists": [
+                    {
+                        "codelist_uid": "editable_cr",
+                        "order": 2
+                    }
+                ],
+                "concept_id": null,
+                "code_submission_value": "code_submission_valuePATCHED",
+                "name_submission_value": "name_submission_valuePATCHED",
+                "nci_preferred_name": "nci_preferred_name",
+                "definition": "definition",
+                "change_description": "Inactivated version",
+                "library_name": "Sponsor",
+                "start_date": "2021-04-06T12:38:32.069969",
+                "end_date": null,
+                "status": "Retired",
+                "version": "1.0",
+                "user_initials": "unknown-user",
+                "possible_actions": [
+                    "reactivate"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test POST attributes reactivate term",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/ct/terms/term_root_draft/attributes/activations"
+        },
+        "response": {
+            "code": 200,
+            "headers": {},
+            "result": {
+                "term_uid": "term_root_draft",
+                "catalogue_name": "SDTM CT",
+                "codelists": [
+                    {
+                        "codelist_uid": "editable_cr",
+                        "order": 2
+                    }
+                ],
+                "concept_id": null,
+                "code_submission_value": "code_submission_valuePATCHED",
+                "name_submission_value": "name_submission_valuePATCHED",
+                "nci_preferred_name": "nci_preferred_name",
+                "definition": "definition",
+                "change_description": "Reactivated version",
+                "library_name": "Sponsor",
+                "start_date": "2021-04-06T12:38:32.069969",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "user_initials": "unknown-user",
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test POST /attributes/versions term",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/ct/terms/term_root_draft/attributes/versions"
+        },
+        "response": {
+            "code": 201,
+            "headers": {},
+            "result": {
+                "term_uid": "term_root_draft",
+                "catalogue_name": "SDTM CT",
+                "codelists": [
+                    {
+                        "codelist_uid": "editable_cr",
+                        "order": 2
+                    }
+                ],
+                "concept_id": null,
+                "code_submission_value": "code_submission_valuePATCHED",
+                "name_submission_value": "name_submission_valuePATCHED",
+                "nci_preferred_name": "nci_preferred_name",
+                "definition": "definition",
+                "change_description": "New draft created",
+                "library_name": "Sponsor",
+                "start_date": "2021-04-06T12:38:32.069969",
+                "end_date": null,
+                "status": "Draft",
+                "version": "1.1",
+                "user_initials": "unknown-user",
+                "possible_actions": [
+                    "approve",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test add term node parent ",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/ct/terms/term_root_final/parents?parent_uid=term_root_final&relationship_type=type"
+        },
+        "response": {
+            "code": 201,
+            "result": {
+                "term_uid": "term_root_final",
+                "catalogue_name": "SDTM CT",
+                "codelists": [
+                    {
+                        "codelist_uid": "editable_cr",
+                        "order": 1
+                    }
+                ],
+                "concept_id": null,
+                "code_submission_value": "code_submission_value1",
+                "name_submission_value": "name_submission_value1",
+                "nci_preferred_name": "preferred_term",
+                "definition": "definition",
+                "sponsor_preferred_name": "term_value_name1",
+                "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+                "library_name": "Sponsor",
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test remove term node parent ",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "/ct/terms/term_root_final/parents?parent_uid=term_root_final&relationship_type=type"
+        },
+        "response": {
+            "code": 201,
+            "result": {
+                "term_uid": "term_root_final",
+                "catalogue_name": "SDTM CT",
+                "codelists": [
+                    {
+                        "codelist_uid": "editable_cr",
+                        "order": 1
+                    }
+                ],
+                "concept_id": null,
+                "code_submission_value": "code_submission_value1",
+                "name_submission_value": "name_submission_value1",
+                "nci_preferred_name": "preferred_term",
+                "definition": "definition",
+                "sponsor_preferred_name": "term_value_name1",
+                "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+                "library_name": "Sponsor",
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test add term node parent after deleting",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/ct/terms/term_root_final/parents?parent_uid=term_root_final&relationship_type=type"
+        },
+        "response": {
+            "code": 201,
+            "result": {
+                "term_uid": "term_root_final",
+                "catalogue_name": "SDTM CT",
+                "codelists": [
+                    {
+                        "codelist_uid": "editable_cr",
+                        "order": 1
+                    }
+                ],
+                "concept_id": null,
+                "code_submission_value": "code_submission_value1",
+                "name_submission_value": "name_submission_value1",
+                "nci_preferred_name": "preferred_term",
+                "definition": "definition",
+                "sponsor_preferred_name": "term_value_name1",
+                "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+                "library_name": "Sponsor",
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    }
+]

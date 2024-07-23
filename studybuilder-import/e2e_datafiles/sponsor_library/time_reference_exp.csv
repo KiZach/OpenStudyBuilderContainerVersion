@@ -1,0 +1,15 @@
+CT_CD_LIST_SUBMVAL,CT_NAME,NAME_SENTENSE_CASE,CT_SUBMVAL,DEFINITION,ORDER,CT_CD,NCI_PREFERRED_NAME
+TIMEREF,Screening,screening,SCR TIME REFERENCE,Screening visit time reference,1,,Screening
+TIMEREF,Start of run-in,start of run-in,START RI TIME REFERENCE,Start of run-in visit time reference,2,,Start of run-in
+TIMEREF,Start of treatment,start of treatment,START TRT TIME REFERENCE,Start of treatment visit time reference,3,,Start of treatment
+TIMEREF,Start of washout,start of washout,START WO TIME REFERENCE,Start of washout visit time reference,4,,Start of washout
+TIMEREF,Surgery,surgery,SURGERY TIME REFERENCE,Surgery visit time reference,5,,Surgery
+TIMEREF,Treatment,treatment,TRT TIME REFERENCE,Treatment visit time reference,6,,Treatment
+TIMEREF,Informed consent,informed consent,IC TIME REFERENCE,Informed consent visit time reference,7,,Informed consent
+TIMEREF,Global anchor visit,global anchor visit,GLOBAL ANCHOR VISIT REFERENCE,Global anchor visit time reference,8,,Global anchor visit
+TIMEREF,Anchor visit in visit group,anchor visit in visit group,ANCHOR VISIT IN VISIT GROUP REFERENCE,Anchor visit in visit group time reference,9,,Anchor visit in visit group
+TIMEREF,Randomisation,randomisation,RANDOM TIME REFERENCE,Randomisation visit time reference,10,,Randomisation
+TIMEREF,Randomisation 2,randomisation 2,RANDOM2 TIME REFERENCE,Second randomisation visit time reference,11,,Randomisation 2
+TIMEREF,End of study,end of study,EOSTUDY TIME REFERENCE,End of study visit time reference,12,,End of study
+TIMEREF,End of treatment,end of treatment,EOTRT TIME REFERENCE,End of treatment visit time reference,13,,End of treatment
+TIMEREF,End of trial,end of trial,EOTRIAL TIME REFERENCE,End of trial visit time reference,14,,End of trial

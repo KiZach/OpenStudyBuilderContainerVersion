@@ -1,0 +1,29 @@
+# Pipeline parameters
+parameters:
+
+  - name: SERVICE_CONN
+    type: string
+    default: IaCAgent-ClinicalMDR-DEV
+
+  - name: DEPLOY_ID_NUMBER
+    type: string
+    default: '1'
+
+steps:
+
+  # Get AZ metadata for later use
+  - task: AzureCLI@2
+    displayName: Get AZ metadata
+    name: azmd
+    inputs:
+      azureSubscription: ${{parameters.SERVICE_CONN}}
+      scriptType: bash
+      scriptLocation: inlineScript
+      inlineScript: |
+        set -ex
+        
+        acrname="`az resource list --resource-type "Microsoft.ContainerRegistry/registries" --query "[?tags.environmentNumber == '${{parameters.DEPLOY_ID_NUMBER}}'].name" -o tsv`"
+        echo "##vso[task.setvariable variable=acrname;isOutput=true;]$acrname"
+        
+        namesuffix="`az resource list --resource-type "Microsoft.Network/applicationGateways" --query "[?tags.environmentNumber == '${{parameters.DEPLOY_ID_NUMBER}}'].name" -o tsv | cut -d "-" -f 2`"
+        echo "##vso[task.setvariable variable=namesuffix;isOutput=true;]$namesuffix"

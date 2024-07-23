@@ -1,0 +1,67 @@
+@startuml ddd-responsibility-segregation-overview
+
+participant FrontEndApplication
+
+box "clinical-mdr-api"
+    participant ApplicationService
+    participant Repository
+    participant DomainAggregateInstance << (C,#ADD1B2) >>
+end box
+
+FrontEndApplication -> ApplicationService ++: API request
+
+    ApplicationService -> ApplicationService: non-business logic
+    note right
+        authentication, authorization, concurency, transaction management, ... 
+        (some of that managed by container)
+    end note
+
+    |||
+    == Request parsing ==
+
+    ApplicationService -> ApplicationService: representation transformation logic
+
+    |||
+    == Setting up a scene ==
+
+    group ...
+        ApplicationService -> Repository ++: find by ...
+            'participant DomainAggregateInstance << (C,#ADD1B2) >>
+            database DB
+            Repository -> DB ++: DB query statement(s)
+            return data retrieved from DB
+            Repository -> Repository: representation transformation logic
+            Repository -> DomainAggregateInstance **: create instance (in-memory)
+        return DomainAggregateInstance
+    end
+
+    |||
+    == Executing ==
+
+    group ... (possibly several times)
+        ApplicationService -> DomainAggregateInstance  ++: invoke business logic
+            note over DomainAggregateInstance: in-memory processing
+            DomainAggregateInstance -> DomainAggregateInstance: precondition/invariants validation
+            DomainAggregateInstance -> DomainAggregateInstance: consistent state change
+        return
+    end
+
+    |||
+    == Persisting results ==
+
+    ApplicationService -> Repository++: persist new state of the aggregate
+        Repository -> DomainAggregateInstance++: retrieve/inspect aggregate instance state
+        return
+        Repository -> Repository: representation trasnformation logic
+        Repository -> DB++: DB update statement(s)
+        return
+    return
+
+    |||
+    == Response rendering ==
+
+    ApplicationService -> ApplicationService: representation transformation logic
+
+return API Response
+
+@enduml

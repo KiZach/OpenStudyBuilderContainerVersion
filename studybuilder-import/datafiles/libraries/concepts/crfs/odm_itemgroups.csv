@@ -1,0 +1,8 @@
+library,oid,name,prompt,repeating,isreferencedata,sasdatasetname,domain,origin,purpose,comment,language,description,instruction
+Sponsor,G.DM.IC,Informed Consent,,false,false,DEMOG,"C49572_DM|C49576_DS",Collected Value,Tabulation,,ENG,Informed Consent item group,Please complete the Informed Consent item group  before any other information
+Sponsor,G.DM.DM,General Demography ,,false,false,DEMOG,C49572_DM,Collected Value,Tabulation,,ENG,General Demographic item group,Please complete this General Demographic item group  at the very beginning of the study
+Sponsor,G.MH.NS,Any conditions / illnesses,,false,false,MEDHIS,C49603_MH,Collected Value,Tabulation,,ENG,Any conditions / illnesses ?,Please state if there was any conditions / Illnesses
+Sponsor,G.MH.CM,Medical History / Concomitant Illness,,true,false,MEDHIS,C49603_MH,Collected Value,Tabulation,,ENG,Medical History item group,Please complete this Medical History item group before starting the treatment
+Sponsor,G.VS.VS,Vital Signs,,true,false,VITALSIGNS,C49622_VS,Collected Value,Tabulation,,ENG,Vital signs,Please complete the Vital Signs item group at each expected time point
+Sponsor,G.VS.BPP,Blood pressure and pulse,,false,false,VITALSIGNSBPP,C49622_VS,Collected Value,Tabulation,,ENG,Blood pressure and pulse,Please complete the Blood pressure and Pulse item group at each expected time point
+Sponsor,G.EG.ECGSTATUS,Is teh ECG,,false,false,ECGSTATUS,C49626_EG,Collected Value,Tabulation,,ENG,ECG Test Results,Please complete the ECG Test Results item group at each expected time point

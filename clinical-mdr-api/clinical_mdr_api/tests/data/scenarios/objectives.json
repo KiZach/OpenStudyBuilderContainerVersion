@@ -1,0 +1,327 @@
+[
+    {
+        "name": "Test empty list",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/objectives"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "2",
+                "content-type": "application/json"
+            },
+            "result": {
+                "items": [],
+                "total": 0,
+                "page": 1,
+                "size": 10
+            }
+        }
+    },
+    {
+        "name": "Test adding objective wrong parameter",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Test library",
+                "name": "Test objective",
+                "objective_template_uid": "{otuid}",
+                "parameter_terms": [
+                    {
+                        "position": 1,
+                        "conjunction": "and",
+                        "terms": [
+                            {
+                                "index": 1,
+                                "type": "ActivityInstance",
+                                "name": "type 2 diabetes",
+                                "uid": "Indication-99991"
+                            },
+                            {
+                                "index": 2,
+                                "type": "ActivityInstance",
+                                "name": "coronary heart disease",
+                                "uid": "Indication-99992"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "url": "/objectives"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "148",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "Parameter term Indication-99991 ('type 2 diabetes') not valid for parameter 'ActivityInstance'",
+                "time": "2020-11-11T02:03:45.621381",
+                "path": "http://testserver/objectives",
+                "method": "POST",
+                "type": "ValidationException"
+            }
+        }
+    },
+    {
+        "name": "Test previewing objective",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Test library",
+                "name": "Test objective",
+                "objective_template_uid": "{otuid}",
+                "parameter_terms": [
+                    {
+                        "position": 1,
+                        "conjunction": "and",
+                        "terms": [
+                            {
+                                "index": 1,
+                                "type": "Indication",
+                                "name": "type 2 diabetes",
+                                "uid": "Indication-99991"
+                            },
+                            {
+                                "index": 2,
+                                "type": "Indication",
+                                "name": "coronary heart disease",
+                                "uid": "Indication-99992"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "url": "/objectives/preview"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "8220b276-0bd3-4308-8e27-91231f1e4c9d",
+                "name": "Test [type 2 diabetes and coronary heart disease]",
+                "name_plain": "Test type 2 diabetes and coronary heart disease",
+                "start_date": "2020-11-11T01:06:37+00:00",
+                "end_date": null,
+                "status": "Draft",
+                "study_count": null,
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "unknown-user",
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ],
+                "objective_template": {
+                    "name": "Test [Indication]",
+                    "name_plain": "Test [Indication]",
+                    "guidance_text": null,
+                    "uid": "{otuid}",
+                    "sequence_id": "O1",
+                    "library_name": "Test library"
+                },
+                "parameter_terms": [
+                    {
+                        "position": 1,
+                        "conjunction": "and",
+                        "terms": [
+                            {
+                                "index": 1,
+                                "type": "Indication",
+                                "name": "type 2 diabetes",
+                                "uid": "Indication-99991"
+                            },
+                            {
+                                "index": 2,
+                                "type": "Indication",
+                                "name": "coronary heart disease",
+                                "uid": "Indication-99992"
+                            }
+                        ]
+                    }
+                ],
+                "library": {
+                    "name": "Test library",
+                    "is_editable": true
+                }
+            }
+        }
+    },
+    {
+        "name": "Test adding objective",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Test library",
+                "name": "Test objective",
+                "objective_template_uid": "{otuid}",
+                "parameter_terms": [
+                    {
+                        "position": 1,
+                        "conjunction": "and",
+                        "terms": [
+                            {
+                                "index": 1,
+                                "type": "Indication",
+                                "name": "type 2 diabetes",
+                                "uid": "Indication-99991"
+                            },
+                            {
+                                "index": 2,
+                                "type": "Indication",
+                                "name": "coronary heart disease",
+                                "uid": "Indication-99992"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "url": "/objectives"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "8220b276-0bd3-4308-8e27-91231f1e4c9d",
+                "name": "Test [type 2 diabetes and coronary heart disease]",
+                "name_plain": "Test type 2 diabetes and coronary heart disease",
+                "start_date": "2020-11-11T01:06:37+00:00",
+                "end_date": null,
+                "status": "Draft",
+                "study_count": null,
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "unknown-user",
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ],
+                "objective_template": {
+                    "name": "Test [Indication]",
+                    "name_plain": "Test [Indication]",
+                    "guidance_text": null,
+                    "uid": "{otuid}",
+                    "sequence_id": "O1",
+                    "library_name": "Test library"
+                },
+                "parameter_terms": [
+                    {
+                        "position": 1,
+                        "conjunction": "and",
+                        "terms": [
+                            {
+                                "index": 1,
+                                "type": "Indication",
+                                "name": "type 2 diabetes",
+                                "uid": "Indication-99991"
+                            },
+                            {
+                                "index": 2,
+                                "type": "Indication",
+                                "name": "coronary heart disease",
+                                "uid": "Indication-99992"
+                            }
+                        ]
+                    }
+                ],
+                "library": {
+                    "name": "Test library",
+                    "is_editable": true
+                }
+            }
+        }
+    },
+    {
+        "name": "Test adding the same objective name",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Test library",
+                "name": "Test objective",
+                "objective_template_uid": "{otuid}",
+                "parameter_terms": [
+                    {
+                        "position": 1,
+                        "conjunction": "and",
+                        "terms": [
+                            {
+                                "index": 1,
+                                "type": "Indication",
+                                "name": "type 2 diabetes",
+                                "uid": "Indication-99991"
+                            },
+                            {
+                                "index": 2,
+                                "type": "Indication",
+                                "name": "coronary heart disease",
+                                "uid": "Indication-99992"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "url": "/objectives"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "138",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "The specified object already exists.",
+                "method": "POST",
+                "path": "http://testserver/objectives",
+                "time": "2020-11-10T01:32:16.234697",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test list studies",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/objectives/Objective_000001/studies/"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "2",
+                "content-type": "application/json"
+            },
+            "result": []
+        }
+    },
+    {
+        "name": "Test DELETE",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "/objectives/Objective_000002"
+        },
+        "response": {
+            "code": 204,
+            "headers": {},
+            "result": null
+        }
+    }
+]

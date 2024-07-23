@@ -1,0 +1,798 @@
+[
+  {
+    "name": "Test name generation of objective with 0 values for both template parameters",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "library_name": "Test library",
+        "name": "Test objective",
+        "objective_template_uid": "{otuid}",
+        "parameter_terms": [
+          {
+            "position": 1,
+            "conjunction": "and",
+            "terms": []
+          },
+          {
+            "position": 2,
+            "conjunction": "and",
+            "terms": []
+          }
+        ]
+      },
+      "url": "/objectives"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "459",
+        "content-type": "application/json"
+      },
+      "result": {
+        "uid": "8220b276-0bd3-4308-8e27-91231f1e4c9d",
+        "name": "To investigate",
+        "name_plain": "To investigate",
+        "start_date": "2020-11-11T01:06:37+00:00",
+        "end_date": null,
+        "status": "Draft",
+        "study_count": null,
+        "version": "0.1",
+        "change_description": "Initial version",
+        "user_initials": "unknown-user",
+        "possible_actions": [
+          "approve",
+          "delete",
+          "edit"
+        ],
+        "objective_template": {
+          "name": "{otname}",
+          "name_plain": "{otname}",
+          "guidance_text": null,
+          "uid": "{otuid}",
+          "sequence_id": "O1",
+          "library_name": "Test library"
+        },
+        "parameter_terms": [
+          {
+            "position": 1,
+            "conjunction": "and",
+            "terms": []
+          },
+          {
+            "position": 2,
+            "conjunction": "and",
+            "terms": []
+          }
+        ],
+        "library": {
+          "name": "Test library",
+          "is_editable": true
+        }
+      }
+    }
+  },
+  {
+    "name": "Test name generation of objective with 1 template parameter term + 0 template parameter terms",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "library_name": "Test library",
+        "name": "Test objective",
+        "objective_template_uid": "{otuid}",
+        "parameter_terms": [
+          {
+            "position": 1,
+            "conjunction": "and",
+            "terms": [
+              {
+                "index": 1,
+                "type": "Indication",
+                "name": "type 2 diabetes",
+                "uid": "Indication-99991"
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "conjunction": "and",
+            "terms": []
+          }
+        ]
+      },
+      "url": "/objectives"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "459",
+        "content-type": "application/json"
+      },
+      "result": {
+        "uid": "8220b276-0bd3-4308-8e27-91231f1e4c9d",
+        "name": "To investigate [type 2 diabetes]",
+        "name_plain": "To investigate type 2 diabetes",
+        "start_date": "2020-11-11T01:06:37+00:00",
+        "end_date": null,
+        "status": "Draft",
+        "study_count": null,
+        "version": "0.1",
+        "change_description": "Initial version",
+        "user_initials": "unknown-user",
+        "possible_actions": [
+          "approve",
+          "delete",
+          "edit"
+        ],
+        "objective_template": {
+          "name": "{otname}",
+          "name_plain": "{otname}",
+          "guidance_text": null,
+          "uid": "{otuid}",
+          "sequence_id": "O1",
+          "library_name": "Test library"
+        },
+        "parameter_terms": [
+          {
+            "position": 1,
+            "conjunction": "and",
+            "terms": [
+              {
+                "index": 1,
+                "type": "Indication",
+                "name": "type 2 diabetes",
+                "uid": "Indication-99991"
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "conjunction": "and",
+            "terms": []
+          }
+        ],
+        "library": {
+          "name": "Test library",
+          "is_editable": true
+        }
+      }
+    }
+  },
+  {
+    "name": "Test name generation of objective with 2 template parameters terms + 0 template parameter terms",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "library_name": "Test library",
+        "name": "Test objective",
+        "objective_template_uid": "{otuid}",
+        "parameter_terms": [
+          {
+            "position": 1,
+            "conjunction": "and",
+            "terms": [
+              {
+                "index": 1,
+                "type": "Indication",
+                "name": "type 2 diabetes",
+                "uid": "Indication-99991"
+              },
+              {
+                "index": 2,
+                "type": "Indication",
+                "name": "coronary heart disease",
+                "uid": "Indication-99992"
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "conjunction": "and",
+            "terms": []
+          }
+        ]
+      },
+      "url": "/objectives"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "459",
+        "content-type": "application/json"
+      },
+      "result": {
+        "uid": "8220b276-0bd3-4308-8e27-91231f1e4c9d",
+        "name": "To investigate [type 2 diabetes and coronary heart disease]",
+        "name_plain": "To investigate type 2 diabetes and coronary heart disease",
+        "start_date": "2020-11-11T01:06:37+00:00",
+        "end_date": null,
+        "status": "Draft",
+        "study_count": null,
+        "version": "0.1",
+        "change_description": "Initial version",
+        "user_initials": "unknown-user",
+        "possible_actions": [
+          "approve",
+          "delete",
+          "edit"
+        ],
+        "objective_template": {
+          "name": "{otname}",
+          "name_plain": "{otname}",
+          "guidance_text": null,
+          "uid": "{otuid}",
+          "sequence_id": "O1",
+          "library_name": "Test library"
+        },
+        "parameter_terms": [
+          {
+            "position": 1,
+            "conjunction": "and",
+            "terms": [
+              {
+                "index": 1,
+                "type": "Indication",
+                "name": "type 2 diabetes",
+                "uid": "Indication-99991"
+              },
+              {
+                "index": 2,
+                "type": "Indication",
+                "name": "coronary heart disease",
+                "uid": "Indication-99992"
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "conjunction": "and",
+            "terms": []
+          }
+        ],
+        "library": {
+          "name": "Test library",
+          "is_editable": true
+        }
+      }
+    }
+  },
+  {
+    "name": "Test name generation of objective with 3 template parameters terms + 0 template parameter terms",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "library_name": "Test library",
+        "name": "Test objective",
+        "objective_template_uid": "{otuid}",
+        "parameter_terms": [
+          {
+            "position": 1,
+            "conjunction": "and",
+            "terms": [
+              {
+                "index": 1,
+                "type": "Indication",
+                "name": "type 2 diabetes",
+                "uid": "Indication-99991"
+              },
+              {
+                "index": 2,
+                "type": "Indication",
+                "name": "coronary heart disease",
+                "uid": "Indication-99992"
+              },
+              {
+                "index": 3,
+                "type": "Indication",
+                "name": "breathing problems",
+                "uid": "Indication-99993"
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "conjunction": "and",
+            "terms": []
+          }
+        ]
+      },
+      "url": "/objectives"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "459",
+        "content-type": "application/json"
+      },
+      "result": {
+        "uid": "8220b276-0bd3-4308-8e27-91231f1e4c9d",
+        "name": "To investigate [type 2 diabetes, coronary heart disease and breathing problems]",
+        "name_plain": "To investigate type 2 diabetes, coronary heart disease and breathing problems",
+        "start_date": "2020-11-11T01:06:37+00:00",
+        "end_date": null,
+        "status": "Draft",
+        "study_count": null,
+        "version": "0.1",
+        "change_description": "Initial version",
+        "user_initials": "unknown-user",
+        "possible_actions": [
+          "approve",
+          "delete",
+          "edit"
+        ],
+        "objective_template": {
+          "name": "{otname}",
+          "name_plain": "{otname}",
+          "guidance_text": null,
+          "uid": "{otuid}",
+          "sequence_id": "O1",
+          "library_name": "Test library"
+        },
+        "parameter_terms": [
+          {
+            "position": 1,
+            "conjunction": "and",
+            "terms": [
+              {
+                "index": 1,
+                "type": "Indication",
+                "name": "type 2 diabetes",
+                "uid": "Indication-99991"
+              },
+              {
+                "index": 2,
+                "type": "Indication",
+                "name": "coronary heart disease",
+                "uid": "Indication-99992"
+              },
+              {
+                "index": 3,
+                "type": "Indication",
+                "name": "breathing problems",
+                "uid": "Indication-99993"
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "conjunction": "and",
+            "terms": []
+          }
+        ],
+        "library": {
+          "name": "Test library",
+          "is_editable": true
+        }
+      }
+    }
+  },
+  {
+    "name": "Test name generation of objective with 0 template parameter terms + 1 template parameter term",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "library_name": "Test library",
+        "name": "Test objective",
+        "objective_template_uid": "{otuid}",
+        "parameter_terms": [
+          {
+            "position": 1,
+            "conjunction": "and",
+            "terms": []
+          },
+          {
+            "position": 2,
+            "conjunction": "and",
+            "terms": [
+              {
+                "index": 1,
+                "type": "Intervention",
+                "name": "Metformin",
+                "uid": "Intervention-99992"
+              }
+            ]
+          }
+        ]
+      },
+      "url": "/objectives"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "459",
+        "content-type": "application/json"
+      },
+      "result": {
+        "uid": "8220b276-0bd3-4308-8e27-91231f1e4c9d",
+        "name": "To investigate ([Metformin])",
+        "name_plain": "To investigate (Metformin)",
+        "start_date": "2020-11-11T01:06:37+00:00",
+        "end_date": null,
+        "status": "Draft",
+        "study_count": null,
+        "version": "0.1",
+        "change_description": "Initial version",
+        "user_initials": "unknown-user",
+        "possible_actions": [
+          "approve",
+          "delete",
+          "edit"
+        ],
+        "objective_template": {
+          "name": "{otname}",
+          "name_plain": "{otname}",
+          "guidance_text": null,
+          "uid": "{otuid}",
+          "sequence_id": "O1",
+          "library_name": "Test library"
+        },
+        "parameter_terms": [
+          {
+            "position": 1,
+            "conjunction": "and",
+            "terms": []
+          },
+          {
+            "position": 2,
+            "conjunction": "and",
+            "terms": [
+              {
+                "index": 1,
+                "type": "Intervention",
+                "name": "Metformin",
+                "uid": "Intervention-99992"
+              }
+            ]
+          }
+        ],
+        "library": {
+          "name": "Test library",
+          "is_editable": true
+        }
+      }
+    }
+  },
+  {
+    "name": "Test name generation of objective with 1 template parameter term + 1 template parameter term",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "library_name": "Test library",
+        "name": "Test objective",
+        "objective_template_uid": "{otuid}",
+        "parameter_terms": [
+          {
+            "position": 1,
+            "conjunction": "and",
+            "terms": [
+              {
+                "index": 1,
+                "type": "Indication",
+                "name": "type 2 diabetes",
+                "uid": "Indication-99991"
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "conjunction": "and",
+            "terms": [
+              {
+                "index": 1,
+                "type": "Intervention",
+                "name": "Metformin",
+                "uid": "Intervention-99992"
+              }
+            ]
+          }
+        ]
+      },
+      "url": "/objectives"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "459",
+        "content-type": "application/json"
+      },
+      "result": {
+        "uid": "8220b276-0bd3-4308-8e27-91231f1e4c9d",
+        "name": "To investigate [type 2 diabetes] ([Metformin])",
+        "name_plain": "To investigate type 2 diabetes (Metformin)",
+        "start_date": "2020-11-11T01:06:37+00:00",
+        "end_date": null,
+        "status": "Draft",
+        "study_count": null,
+        "version": "0.1",
+        "change_description": "Initial version",
+        "user_initials": "unknown-user",
+        "possible_actions": [
+          "approve",
+          "delete",
+          "edit"
+        ],
+        "objective_template": {
+          "name": "{otname}",
+          "name_plain": "{otname}",
+          "guidance_text": null,
+          "uid": "{otuid}",
+          "sequence_id": "O1",
+          "library_name": "Test library"
+        },
+        "parameter_terms": [
+          {
+            "position": 1,
+            "conjunction": "and",
+            "terms": [
+              {
+                "index": 1,
+                "type": "Indication",
+                "name": "type 2 diabetes",
+                "uid": "Indication-99991"
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "conjunction": "and",
+            "terms": [
+              {
+                "index": 1,
+                "type": "Intervention",
+                "name": "Metformin",
+                "uid": "Intervention-99992"
+              }
+            ]
+          }
+        ],
+        "library": {
+          "name": "Test library",
+          "is_editable": true
+        }
+      }
+    }
+  },
+  {
+    "name": "Test name generation of objective with 2 template parameters terms + 1 template parameter term",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "library_name": "Test library",
+        "name": "Test objective",
+        "objective_template_uid": "{otuid}",
+        "parameter_terms": [
+          {
+            "position": 1,
+            "conjunction": "and",
+            "terms": [
+              {
+                "index": 1,
+                "type": "Indication",
+                "name": "type 2 diabetes",
+                "uid": "Indication-99991"
+              },
+              {
+                "index": 2,
+                "type": "Indication",
+                "name": "coronary heart disease",
+                "uid": "Indication-99992"
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "conjunction": "and",
+            "terms": [
+              {
+                "index": 1,
+                "type": "Intervention",
+                "name": "Metformin",
+                "uid": "Intervention-99992"
+              }
+            ]
+          }
+        ]
+      },
+      "url": "/objectives"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "459",
+        "content-type": "application/json"
+      },
+      "result": {
+        "uid": "8220b276-0bd3-4308-8e27-91231f1e4c9d",
+        "name": "To investigate [type 2 diabetes and coronary heart disease] ([Metformin])",
+        "name_plain": "To investigate type 2 diabetes and coronary heart disease (Metformin)",
+        "start_date": "2020-11-11T01:06:37+00:00",
+        "end_date": null,
+        "status": "Draft",
+        "study_count": null,
+        "version": "0.1",
+        "change_description": "Initial version",
+        "user_initials": "unknown-user",
+        "possible_actions": [
+          "approve",
+          "delete",
+          "edit"
+        ],
+        "objective_template": {
+          "name": "{otname}",
+          "name_plain": "{otname}",
+          "guidance_text": null,
+          "uid": "{otuid}",
+          "sequence_id": "O1",
+          "library_name": "Test library"
+        },
+        "parameter_terms": [
+          {
+            "position": 1,
+            "conjunction": "and",
+            "terms": [
+              {
+                "index": 1,
+                "type": "Indication",
+                "name": "type 2 diabetes",
+                "uid": "Indication-99991"
+              },
+              {
+                "index": 2,
+                "type": "Indication",
+                "name": "coronary heart disease",
+                "uid": "Indication-99992"
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "conjunction": "and",
+            "terms": [
+              {
+                "index": 1,
+                "type": "Intervention",
+                "name": "Metformin",
+                "uid": "Intervention-99992"
+              }
+            ]
+          }
+        ],
+        "library": {
+          "name": "Test library",
+          "is_editable": true
+        }
+      }
+    }
+  },
+  {
+    "name": "Test name generation of objective with 3 template parameters terms + 1 template parameter term",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "library_name": "Test library",
+        "name": "Test objective",
+        "objective_template_uid": "{otuid}",
+        "parameter_terms": [
+          {
+            "position": 1,
+            "conjunction": "and",
+            "terms": [
+              {
+                "index": 1,
+                "type": "Indication",
+                "name": "type 2 diabetes",
+                "uid": "Indication-99991"
+              },
+              {
+                "index": 2,
+                "type": "Indication",
+                "name": "coronary heart disease",
+                "uid": "Indication-99992"
+              },
+              {
+                "index": 3,
+                "type": "Indication",
+                "name": "breathing problems",
+                "uid": "Indication-99993"
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "conjunction": "and",
+            "terms": [
+              {
+                "index": 1,
+                "type": "Intervention",
+                "name": "Metformin",
+                "uid": "Intervention-99992"
+              }
+            ]
+          }
+        ]
+      },
+      "url": "/objectives"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "459",
+        "content-type": "application/json"
+      },
+      "result": {
+        "uid": "8220b276-0bd3-4308-8e27-91231f1e4c9d",
+        "name": "To investigate [type 2 diabetes, coronary heart disease and breathing problems] ([Metformin])",
+        "name_plain": "To investigate type 2 diabetes, coronary heart disease and breathing problems (Metformin)",
+        "start_date": "2020-11-11T01:06:37+00:00",
+        "end_date": null,
+        "status": "Draft",
+        "study_count": null,
+        "version": "0.1",
+        "change_description": "Initial version",
+        "user_initials": "unknown-user",
+        "possible_actions": [
+          "approve",
+          "delete",
+          "edit"
+        ],
+        "objective_template": {
+          "name": "{otname}",
+          "name_plain": "{otname}",
+          "guidance_text": null,
+          "uid": "{otuid}",
+          "sequence_id": "O1",
+          "library_name": "Test library"
+        },
+        "parameter_terms": [
+          {
+            "position": 1,
+            "conjunction": "and",
+            "terms": [
+              {
+                "index": 1,
+                "type": "Indication",
+                "name": "type 2 diabetes",
+                "uid": "Indication-99991"
+              },
+              {
+                "index": 2,
+                "type": "Indication",
+                "name": "coronary heart disease",
+                "uid": "Indication-99992"
+              },
+              {
+                "index": 3,
+                "type": "Indication",
+                "name": "breathing problems",
+                "uid": "Indication-99993"
+              }
+            ]
+          },
+          {
+            "position": 2,
+            "conjunction": "and",
+            "terms": [
+              {
+                "index": 1,
+                "type": "Intervention",
+                "name": "Metformin",
+                "uid": "Intervention-99992"
+              }
+            ]
+          }
+        ],
+        "library": {
+          "name": "Test library",
+          "is_editable": true
+        }
+      }
+    }
+  }
+]

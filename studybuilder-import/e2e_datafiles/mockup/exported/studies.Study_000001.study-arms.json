@@ -1,0 +1,26 @@
+[
+    {
+        "#": 1,
+        "type": "Investigational Arm",
+        "name": "A",
+        "short_name": "A",
+        "code": "A",
+        "randomisation-group": "A",
+        "number-of-subjects": null,
+        "description": "top one",
+        "modified": "2022-04-05T13:37:23.218656",
+        "modified-by": "unknown-user"
+    },
+    {
+        "#": 2,
+        "type": "Investigational Arm",
+        "name": "B",
+        "short_name": "B",
+        "code": "B",
+        "randomisation-group": "b",
+        "number-of-subjects": 10,
+        "description": "lower one",
+        "modified": "2022-04-05T13:37:44.570703",
+        "modified-by": "unknown-user"
+    }
+]

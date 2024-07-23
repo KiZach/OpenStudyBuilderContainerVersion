@@ -1,0 +1,563 @@
+#############################################################################
+####      Build validation, required to pass before merging a PR        #####
+#############################################################################
+trigger:
+  batch: true # Whether to batch changes per branch.  (false,n,no,off,on,true,y,yes)
+  branches:  
+    include: 
+    - main
+    - release/*
+# Pipeline parameters
+parameters:
+- name: SERVICE_CONN
+  type: string
+  default: IaCAgent-ClinicalMDR-DEV
+- name: DEPLOY_ID_NUMBER
+  displayName: ID number of parallel deployments running in the same environment.
+  type: string
+  default: '1'
+  values:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+- name: VAULT_NAME_PREFIX
+  type: string
+  default: kv-general
+
+# Identify which agent to run the pipeline on
+pool:
+  name: 'clinical-mdr-dev-vmss'
+
+variables:
+ - name: python_version
+   value: 3.11
+ - name: MS_GRAPH_INTEGRATION_ENABLED
+   value: True
+
+
+jobs:
+
+
+#############################################################################
+####                      BUILD DOCKER IMAGES                           #####
+#############################################################################
+
+- job: build_docker
+  displayName: Building docker images
+  timeoutInMinutes: 30
+  steps:
+    - checkout: self
+      persistCredentials: true
+
+    - template: pipelines/templates/azure-config.yaml
+      parameters:
+        DEPLOY_ID_NUMBER: ${{parameters.DEPLOY_ID_NUMBER}}
+        VAULT_NAME_PREFIX: kv-general
+
+    - template: pipelines/templates/docker-build.yml
+      parameters:
+        SERVICE_CONN: ${{parameters.SERVICE_CONN}}
+
+
+#############################################################################
+####                      SBOM and OpenAPI Schema                       #####
+#############################################################################
+
+- job: sbom_and_schema
+  dependsOn: build_docker
+  displayName: 'SBOM and OpenAPI schema'
+  timeoutInMinutes: 90
+  steps:
+    - checkout: self
+      persistCredentials: true
+
+    - template: pipelines/templates/azure-config.yaml
+      parameters:
+        DEPLOY_ID_NUMBER: ${{parameters.DEPLOY_ID_NUMBER}}
+        VAULT_NAME_PREFIX: kv-general
+
+    - template: pipelines/templates/docker-config.yml
+      parameters:
+        SERVICE_CONN: ${{parameters.SERVICE_CONN}}
+
+    # Checkout git branch
+    - script: |
+        set -ex
+        
+        git fetch -a
+
+        if [[ "$(Build.Reason)" == "PullRequest" ]]; then
+          gitbranch=`echo $(System.PullRequest.SourceBranch) | sed 's/^refs\/heads\///'`
+        else
+          gitbranch=`echo $(Build.SourceBranch) | sed 's/^refs\/heads\///'`
+        fi
+
+        echo "##vso[task.setvariable variable=gitbranch;isOutput=true;]$gitbranch"
+
+        git checkout $gitbranch
+        git pull
+      displayName: 'Checkout git branch'
+      name: gitref
+
+    # Build SBOM
+    - script: |
+        set -ex
+        
+        docker compose pull api
+        docker compose run --rm api pipenv run build-sbom > sbom.md
+
+        tail -n +2 sbom-additional.md >> sbom.md
+
+        if [[ "$(Build.SourceBranchName)" != "main" && "$(Build.Reason)" == "PullRequest" && `git diff --exit-code sbom.md` ]]; then
+          git config --global user.email pipeline@studybuilder.com
+          git config --global user.name "Pipeline $(Build.BuildNumber)"
+
+          git add sbom.md
+          pwsh -NoLogo -NonInteractive -File CheckSbom.ps1 -token $(System.AccessToken) -pullRequestId $(System.PullRequest.PullRequestId) -projectName $(System.TeamProject) -repositoryName $(Build.Repository.Name)
+          git commit sbom.md -m "Pipeline $(Build.BuildNumber) committed changes to SBOM"
+          gitbranch=`echo $(System.PullRequest.SourceBranch) | sed 's/^refs\/heads\///'`
+          git push "https://$SYSTEM_ACCESSTOKEN@dev.azure.com/novonordiskit/Clinical-MDR/_git/$(Build.Repository.Name)" "$gitbranch"          
+        fi
+      displayName: Build SBOM
+      env:
+        SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+
+    # Generate openapi.json
+    - script: |
+        set -ex
+        
+        docker compose pull api
+        docker compose run --rm api pipenv run openapi --stdout > openapi.json
+        jq -r .info.version openapi.json | tee apiVersion 
+        
+        if [[ `git diff --exit-code openapi.json` ]]; then
+          git config --global user.email pipeline@studybuilder.com
+          git config --global user.name "Pipeline $(Build.BuildNumber)"
+        
+          api_version=$(jq -r '.info.version' openapi.json)
+          echo "Changes to API specification detected. New API version is $api_version."
+
+          git add openapi.json            
+          git add apiVersion          
+          git commit openapi.json apiVersion -m "Pipeline $(Build.BuildNumber) committed changes to openapi.json API specification"
+          gitbranch=`echo $(System.PullRequest.SourceBranch) | sed 's/^refs\/heads\///'`
+          git push "https://$SYSTEM_ACCESSTOKEN@dev.azure.com/novonordiskit/Clinical-MDR/_git/$(Build.Repository.Name)" "$gitbranch"
+          echo "Committed and pushed changes to API specification." 
+        fi
+
+        # Add git tag for api version only when building main branch
+        if [[ "$(Build.SourceBranchName)" == "main" ]]; then
+          git config --global user.email pipeline@studybuilder.com
+          git config --global user.name "Pipeline $(Build.BuildNumber)"
+
+          api_version="$(jq -r '.info.version' openapi.json)"
+          api_version_tag="api-v${api_version}"
+   
+          # Recreating the same tag is OK to fail #
+          if git tag "$api_version_tag" ; then
+            echo "Add git tag $api_version_tag" 
+            git push "https://$SYSTEM_ACCESSTOKEN@dev.azure.com/novonordiskit/Clinical-MDR/_git/$(Build.Repository.Name)" --tags
+            echo "Added git tag $api_version_tag"
+          fi
+        fi
+      displayName: Update openapi.json and apiVersion
+      env:
+        # No database connection needed, just the spaghetti code requires a valid hostname
+        NEO4J_DSN: 'bolt://x:x@localhost:7687/x'
+        SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+
+    # Ensure cleanup, including docker shutdown
+    - template: pipelines/templates/docker-cleanup.yml
+
+    # Ensure shutdown of the full pipeline, if one of the jobs fail
+    # - template: pipelines/templates/shutdown.yml
+
+
+#############################################################################
+####                      INTEGRATION TESTS                             #####
+#############################################################################
+
+- job: test_int
+  dependsOn:
+    - build_docker
+    - sbom_and_schema
+  displayName: 'Integration tests'
+  timeoutInMinutes: 90
+  steps:
+    - checkout: self
+      persistCredentials: true
+
+    - template: pipelines/templates/azure-config.yaml
+      parameters:
+        DEPLOY_ID_NUMBER: ${{parameters.DEPLOY_ID_NUMBER}}
+        VAULT_NAME_PREFIX: kv-general
+
+    - template: pipelines/templates/docker-up.yml
+      parameters:
+        SERVICE_CONN: ${{parameters.SERVICE_CONN}}
+        start_api: False
+
+    - script: >-  # a single-line script, newlines replaced with spaces, no tailing newline
+        docker compose run --rm dev pipenv run testint
+      displayName: "Integration test"
+      env:
+        # Plain environment, no authorization #
+        OAUTH_METADATA_URL: $(CLINICAL-MDR-AUTH-${{parameters.DEPLOY_ID_NUMBER}}-OIDC-METADATA)
+        OAUTH_API_APP_ID: $(CLINICAL-MDR-AUTH-${{parameters.DEPLOY_ID_NUMBER}}-STUDYB-SERVER-ID)
+        OAUTH_API_APP_SECRET: $(CLINICAL-MDR-API-OAUTH-APP-SECRET)
+        MS_GRAPH_INTEGRATION_ENABLED: $(MS_GRAPH_INTEGRATION_ENABLED)
+        MS_GRAPH_GROUPS_QUERY: $(CLINICAL-MDR-API-MS-GRAPH-GROUPS-QUERY)
+
+    # Publish combined code coverage of unit/integration/auth tests
+    - task: PublishBuildArtifacts@1
+      inputs:
+        pathToPublish: 'reports/coverage.xml'
+        artifactName: 'integration-test-coverage'
+      condition: always() # this step will always run, even if the pipeline is canceled
+      displayName: "Publish coverage.xml"
+
+    - task: PublishTestResults@2
+      inputs:
+        testResultsFormat: 'JUnit'
+        testResultsFiles: '$(Build.SourcesDirectory)/reports/int_report.xml'
+        failTaskOnFailedTests: true
+        mergeTestResults: false
+        testRunTitle: "API - $(Build.BuildNumber) - Integration"
+      condition: always()
+      displayName: "Publish integration test report"
+
+    # Save logs from Neo4j container
+    - script: >-  # a single-line script, newlines replaced with spaces, no tailing newline
+        docker compose logs --no-color --no-log-prefix database > reports/neo4j.log
+      condition: always() # this step will always run, even if the pipeline is canceled
+      displayName: Save database logs
+
+    # Publish Neo4j logs
+    - task: PublishBuildArtifacts@1
+      inputs:
+        pathToPublish: 'reports/neo4j.log'
+        artifactName: 'Neo4j logs from integration tests'
+      condition: always() # this step will always run, even if the pipeline is canceled
+      displayName: "Publish neo4j.log"
+
+    # Ensure cleanup, including docker shutdown
+    - template: pipelines/templates/docker-cleanup.yml
+
+    # Ensure shutdown of the full pipeline, if one of the jobs fail
+    - template: pipelines/templates/shutdown.yml
+
+#############################################################################
+####                      OTHER TESTS                                   #####
+#############################################################################
+
+- job: test_app
+  dependsOn:
+    - build_docker
+    - sbom_and_schema
+  displayName: 'Other tests'
+  timeoutInMinutes: 90
+  steps:
+    - checkout: self
+      persistCredentials: true
+
+    - template: pipelines/templates/azure-config.yaml
+      parameters:
+        DEPLOY_ID_NUMBER: ${{parameters.DEPLOY_ID_NUMBER}}
+        VAULT_NAME_PREFIX: kv-general
+
+    - template: pipelines/templates/docker-up.yml
+      parameters:
+        SERVICE_CONN: ${{parameters.SERVICE_CONN}}
+        start_api: False
+
+    - script: >-  # a single-line script, newlines replaced with spaces, no tailing newline
+        docker compose run --rm dev pipenv run testunit
+      displayName: "Unit test"
+
+    - script: >-  # a single-line script, newlines replaced with spaces, no tailing newline
+        docker compose run --rm dev pipenv run test-telemetry
+      displayName: "Telemetry test"
+      env:
+        # Although the fake connection string, it enables App Insights integration code related to logging and tracing
+        APPLICATIONINSIGHTS_CONNECTION_STRING: 'InstrumentationKey=00000000-0000-0000-0000-000000000000'
+        # Configure Python logging with logging-azure.yaml to validate config file and code dependencies
+        UVICORN_LOG_CONFIG: 'logging-azure.yaml'
+
+    - script: >-  # a single-line script, newlines replaced with spaces, no tailing newline
+        docker compose run --rm dev pipenv run testauth
+      displayName: "Auth test"
+      env:
+        OAUTH_ENABLED: y
+        OAUTH_METADATA_URL: $(CLINICAL-MDR-AUTH-${{parameters.DEPLOY_ID_NUMBER}}-OIDC-METADATA)
+        OAUTH_API_APP_ID: $(CLINICAL-MDR-AUTH-${{parameters.DEPLOY_ID_NUMBER}}-STUDYB-SERVER-ID)
+        EXPIRED_ACCESS_TOKEN: $(CLINICAL-MDR-TEST-${{parameters.DEPLOY_ID_NUMBER}}-EXP-ACCESS-TOKEN)
+
+    # Publish code coverage report
+    - task: PublishBuildArtifacts@1
+      inputs:
+        pathToPublish: 'reports/coverage.xml'
+        artifactName: 'other-test-coverage'
+      condition: always() # this step will always run, even if the pipeline is canceled
+      displayName: "Publish coverage.xml"
+
+    # Publish test results to Azure Pipelines
+    - task: PublishTestResults@2
+      inputs:
+        testResultsFormat: 'JUnit'
+        testResultsFiles: '$(Build.SourcesDirectory)/reports/unit_report.xml'
+        failTaskOnFailedTests: true
+        testRunTitle: "API - $(Build.BuildNumber) - Unit"
+      condition: always()
+      displayName: "Publish unit test report"
+
+    - task: PublishTestResults@2
+      inputs:
+        testResultsFormat: 'JUnit'
+        testResultsFiles: '$(Build.SourcesDirectory)/reports/telemetry_report.xml'
+        failTaskOnFailedTests: true
+        testRunTitle: "API - $(Build.BuildNumber) - Telemetry"
+      condition: always()
+      displayName: "Publish telemetry tests report"
+
+    - task: PublishTestResults@2
+      inputs:
+        testResultsFormat: 'JUnit'
+        testResultsFiles: '$(Build.SourcesDirectory)/reports/auth_report.xml'
+        failTaskOnFailedTests: true
+        testRunTitle: "API - $(Build.BuildNumber) - Auth"
+      condition: always()
+      displayName: "Publish auth test report"
+
+    # Save logs from Neo4j container
+    - script: >-  # a single-line script, newlines replaced with spaces, no tailing newline
+        docker compose logs --no-color --no-log-prefix database > reports/neo4j.log
+      condition: always() # this step will always run, even if the pipeline is canceled
+      displayName: Save database logs
+
+    # Publish Neo4j logs
+    - task: PublishBuildArtifacts@1
+      inputs:
+        pathToPublish: 'reports/neo4j.log'
+        artifactName: 'Neo4j logs from other tests'
+      condition: always() # this step will always run, even if the pipeline is canceled
+      displayName: "Publish neo4j.log"
+
+    # Ensure cleanup, including docker shutdown
+    - template: pipelines/templates/docker-cleanup.yml
+
+    # Ensure shutdown of the full pipeline, if one of the jobs fail
+    - template: pipelines/templates/shutdown.yml
+
+#############################################################################
+####                      QUALITY CHECKS                                #####
+#############################################################################
+
+- job: evaluate_app
+  dependsOn:
+    - build_docker
+    - sbom_and_schema
+  displayName: 'Code quality check'
+  timeoutInMinutes: 90
+  steps:
+    - checkout: self
+      persistCredentials: true
+
+    - template: pipelines/templates/azure-config.yaml
+      parameters:
+        DEPLOY_ID_NUMBER: ${{parameters.DEPLOY_ID_NUMBER}}
+        VAULT_NAME_PREFIX: kv-general
+
+    - template: pipelines/templates/docker-config.yml
+      parameters:
+        SERVICE_CONN: ${{parameters.SERVICE_CONN}}
+
+    # Verify that Pipfile.lock is up-to-date
+    - script: >-  # a single-line script, newlines replaced with spaces, no tailing newline
+        docker compose run --rm dev pipenv verify
+      displayName: "Verify Pipfile.lock is up-to-date"
+
+    # Check packages for vulnerabilities with pipenv
+    - script: >-
+        docker compose pull dev && docker compose run --rm dev pipenv check | tee pipenv_report.txt
+      displayName: "Check packages for security vulnerabilities"
+
+    # Publish security report
+    - task: PublishBuildArtifacts@1
+      inputs:
+        pathToPublish: 'pipenv_report.txt'
+        artifactName: 'Python package vulnerabilities'
+      condition: always()
+      displayName: "Publish security vulnerability report"
+
+    # Black check
+    - script: >-
+        docker compose run --rm dev pipenv run black --check .
+      displayName: "Black checks code formatting"
+
+    # Isort check
+    - script: >-
+        docker compose run --rm dev pipenv run isort ./clinical_mdr_api/ --check
+      displayName: "Isort checks on imports"
+
+    # Check for absolute paths
+    - script: >-
+        docker compose run --rm dev ./.git-hooks/absolute-import-paths.sh
+      displayName: "Absolute Import Paths Check"
+
+    # Check for unnecessary typing imports
+    - script: >-
+        docker compose run --rm dev ./.git-hooks/no-unnecessary-importing-from-typing.sh
+      displayName: "Unnecessary Typing Imports Check"
+
+    # Linting
+    - script: >-
+        docker compose run --rm dev pipenv run lint
+      displayName: "Pylint"
+
+    # Sonarqube scanning
+    - task: SonarQubePrepare@5
+      displayName: SonarQube Prepare
+      inputs:
+        SonarQube: 'Sonarqube-ClinicalMDR-DEV'
+        scannerMode: 'CLI'
+        configMode: 'manual'
+        cliProjectKey: 'clinical-mdr-api'
+        cliProjectName: 'clinical-mdr-api'
+        cliSources: './clinical_mdr_api'
+        extraProperties: |
+          sonar.verbose=true
+          sonar.python.coverage.reportPaths=$(System.DefaultWorkingDirectory)/reports/coverage.xml
+          sonar.sources=clinical_mdr_api 
+          sonar.tests=clinical_mdr_api
+          sonar.test.inclusions=**/tests/**
+          sonar.exclusions=**/tests/**
+
+    - task: SonarQubeAnalyze@5
+      displayName: SonarQube Analyze
+
+    - task: SonarQubePublish@5
+      displayName: SonarQube Publish
+      inputs:
+        pollingTimeoutSec: '300'
+
+    # Run whitesource bolt
+    - task: WhiteSource@21
+      inputs:
+        cwd: '$(System.DefaultWorkingDirectory)'
+
+    # Ensure cleanup, including docker shutdown
+    - template: pipelines/templates/docker-cleanup.yml
+
+    # Publish specflow
+    # - task: SpecFlowPlus@0
+    #   inputs:
+    #     generatorSource: 'FeatureFolder'
+    #     projectFilePath: '$(Build.SourcesDirectory)/clinical_mdr_api/tests/acceptance/features/'
+
+    # Ensure shutdown of the full pipeline, if one of the jobs fail
+    # - template: pipelines/templates/shutdown.yml
+
+
+#############################################################################
+####               Schemathesis tests of API schema                     #####
+#############################################################################
+
+- job: schemathesis
+  dependsOn:
+    - build_docker
+    - sbom_and_schema
+  displayName: 'Schemathesis tests of API schema'
+  timeoutInMinutes: 90
+  steps:
+    - checkout: self
+      persistCredentials: true
+
+    - template: pipelines/templates/azure-config.yaml
+      parameters:
+        DEPLOY_ID_NUMBER: ${{parameters.DEPLOY_ID_NUMBER}}
+        VAULT_NAME_PREFIX: kv-general
+
+    - template: pipelines/templates/docker-up.yml
+      parameters:
+        OAUTH_ENABLED: False
+        OAUTH_API_APP_ID: $(CLINICAL-MDR-AUTH-${{parameters.DEPLOY_ID_NUMBER}}-STUDYB-SERVER-ID)
+        OAUTH_API_APP_SECRET: $(CLINICAL-MDR-API-OAUTH-APP-SECRET)
+        OAUTH_METADATA_URL: $(CLINICAL-MDR-AUTH-${{parameters.DEPLOY_ID_NUMBER}}-OIDC-METADATA)
+        MS_GRAPH_GROUPS_QUERY: $(CLINICAL-MDR-API-MS-GRAPH-GROUPS-QUERY)
+        MS_GRAPH_INTEGRATION_ENABLED: True
+        SERVICE_CONN: ${{parameters.SERVICE_CONN}}
+        start_api: True
+
+    - script: >-
+        docker compose run --rm dev pipenv run schemathesis --base-url=http://${API_HOST:-api}:${API_PORT:-8000}
+      displayName: "Run Schemathesis tests"
+
+    # Publish test results to Azure Pipelines
+    - task: PublishTestResults@2
+      inputs:
+        testResultsFormat: 'JUnit'
+        testResultsFiles: '$(Build.SourcesDirectory)/reports/schemathesis_report.xml'
+        failTaskOnFailedTests: false
+        testRunTitle: "API - $(Build.BuildNumber) - Schemathesis"
+      condition: always()
+      displayName: "Publish test report"
+
+    # Publish schemathesis logs
+    - task: PublishBuildArtifacts@1
+      inputs:
+        pathToPublish: 'reports/schemathesis_report.tgz'
+        artifactName: 'schemathesis_report'
+      condition: always() # this step will always run, even if the pipeline is canceled
+      displayName: "Publish schemathesis report"
+
+    # Ensure cleanup, including docker shutdown
+    - template: pipelines/templates/docker-cleanup.yml
+
+#############################################################################
+####               Merge code coverage results                          #####
+#############################################################################
+
+- job: coverage
+  dependsOn:
+    - test_int
+    - test_app
+  condition: always()  # always run this job, even if the dependent jobs failed
+  displayName: 'Publish code coverage'
+  timeoutInMinutes: 90
+  steps:
+    - checkout: self
+      persistCredentials: true
+
+    - task: DownloadBuildArtifacts@1
+      inputs:
+        downloadType: specific
+        itemPattern: '**test-coverage/coverage.xml'
+        downloadPath: '$(System.ArtifactsDirectory)'
+      displayName: "Collect code coverage"
+
+    - script: >-
+        find '$(System.ArtifactsDirectory)' '$(System.DefaultWorkingDirectory)'
+      displayName: "List collected coverage files"
+
+    # Merge coverage files and build HTML report
+    - task: reportgenerator@5
+      displayName: ReportGenerator
+      inputs:
+        reports: $(System.ArtifactsDirectory)/**/coverage.xml
+        targetdir: '$(Build.SourcesDirectory)/reports/coverage'
+        reporttypes: 'HtmlInline_AzurePipelines;Cobertura;Badges'
+        assemblyfilters: '-xunit*'
+
+    # Publish merged coverage data and HTML report (without rebuilding)
+    - task: PublishCodeCoverageResults@1
+      displayName: 'Publish code coverage results'
+      inputs:
+        codeCoverageTool: Cobertura
+        summaryFileLocation: '$(Build.SourcesDirectory)/reports/coverage/Cobertura.xml'
+        reportDirectory: '$(Build.SourcesDirectory)/reports/coverage'
+        pathToSources: '$(System.DefaultWorkingDirectory)'
+        failIfCoverageEmpty: true
+      env:
+        DISABLE_COVERAGE_AUTOGENERATE: 'true'

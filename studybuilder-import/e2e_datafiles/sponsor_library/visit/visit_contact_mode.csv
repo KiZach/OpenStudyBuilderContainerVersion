@@ -1,0 +1,4 @@
+CT_CD_LIST_SUBMVAL,CT_SUBMVAL,CT_NAME,NAME_SENTENSE_CASE,ORDER,DEFINITION
+VISCNTMD,ONSITE,On Site Visit,on site visit,1,"On site visit"
+VISCNTMD,PHNCNTCT,Phone Contact,phone contact,2,"Phone contact"
+VISCNTMD,VIRTLVIS,Virtual Visit,virtual visit,3,"Virtual online visit"

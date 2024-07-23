@@ -1,0 +1,236 @@
+[
+   {
+      "name": "Test POST lag time",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "value": 7.5,
+            "unit_definition_uid": "unit_definition_root1",
+            "sdtm_domain_uid": "sdtm_domain_uid1",
+            "definition": "lag_time_definition1",
+            "abbreviation": "abbv",
+            "template_parameter": true,
+            "library_name": "Sponsor"
+         },
+         "url": "/concepts/lag-times"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "LagTime_000001",
+            "name": "7.5 [unit_definition_root1] for SDTM domain [sdtm_domain_uid1]",
+            "value": 7.5,
+            "unit_definition_uid": "unit_definition_root1",
+            "unit_label": "name1",
+            "sdtm_domain_uid": "sdtm_domain_uid1",
+            "name_sentence_case": "7.5",
+            "definition": "lag_time_definition1",
+            "abbreviation": "abbv",
+            "template_parameter": true,
+            "library_name": "Sponsor",
+            "status": null,
+            "version": null,
+            "change_description": null,
+            "user_initials": null,
+            "start_date": null,
+            "end_date": null
+         }
+      }
+   },
+   {
+      "name": "Test POST lag time - existing lag time is returned",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "value": 7.5,
+            "unit_definition_uid": "unit_definition_root1",
+            "sdtm_domain_uid": "sdtm_domain_uid1",
+            "definition": "lag_time_definition1",
+            "abbreviation": "abbv",
+            "template_parameter": true,
+            "library_name": "Sponsor"
+         },
+         "url": "/concepts/lag-times"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "LagTime_000001",
+            "name": "7.5 [unit_definition_root1] for SDTM domain [sdtm_domain_uid1]",
+            "value": 7.5,
+            "unit_definition_uid": "unit_definition_root1",
+            "unit_label": "name1",
+            "sdtm_domain_uid": "sdtm_domain_uid1",
+            "name_sentence_case": "7.5",
+            "definition": "lag_time_definition1",
+            "abbreviation": "abbv",
+            "template_parameter": true,
+            "library_name": "Sponsor",
+            "status": null,
+            "version": null,
+            "change_description": null,
+            "user_initials": null,
+            "start_date": null,
+            "end_date": null
+         }
+      }
+   },
+   {
+      "name": "Test POST lag time",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "value": 9.12,
+            "unit_definition_uid": "unit_definition_root1",
+            "sdtm_domain_uid": "sdtm_domain_uid1",
+            "definition": "lag_time_definition2",
+            "abbreviation": "abbv",
+            "template_parameter": true,
+            "library_name": "Sponsor"
+         },
+         "url": "/concepts/lag-times"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "LagTime_000002",
+            "name": "9.12 [unit_definition_root1] for SDTM domain [sdtm_domain_uid1]",
+            "value": 9.12,
+            "unit_definition_uid": "unit_definition_root1",
+            "unit_label": "name1",
+            "sdtm_domain_uid": "sdtm_domain_uid1",
+            "name_sentence_case": "9.12",
+            "definition": "lag_time_definition2",
+            "abbreviation": "abbv",
+            "template_parameter": true,
+            "library_name": "Sponsor",
+            "status": null,
+            "version": null,
+            "change_description": null,
+            "user_initials": null,
+            "start_date": null,
+            "end_date": null
+         }
+      }
+   },
+   {
+      "name": "Test GET all lag times",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/concepts/lag-times?total_count=true"
+      },
+      "response": {
+         "code": 200,
+         "headers": {},
+         "result": {
+            "items": [
+               {
+                  "uid": "LagTime_000001",
+                  "name": "7.5",
+                  "value": 7.5,
+                  "unit_definition_uid": "unit_definition_root1",
+                  "unit_label": "name1",
+                  "sdtm_domain_uid": "sdtm_domain_uid1",
+                  "name_sentence_case": "7.5",
+                  "definition": "lag_time_definition1",
+                  "abbreviation": "abbv",
+                  "template_parameter": true,
+                  "library_name": "Sponsor",
+                  "status": null,
+                  "version": null,
+                  "change_description": null,
+                  "user_initials": null,
+                  "start_date": null,
+                  "end_date": null
+               },
+               {
+                  "uid": "LagTime_000002",
+                  "name": "9.12",
+                  "value": 9.12,
+                  "unit_definition_uid": "unit_definition_root1",
+                  "unit_label": "name1",
+                  "sdtm_domain_uid": "sdtm_domain_uid1",
+                  "name_sentence_case": "9.12",
+                  "definition": "lag_time_definition2",
+                  "abbreviation": "abbv",
+                  "template_parameter": true,
+                  "library_name": "Sponsor",
+                  "status": null,
+                  "version": null,
+                  "change_description": null,
+                  "user_initials": null,
+                  "start_date": null,
+                  "end_date": null
+               }
+            ],
+            "total": 2,
+            "page": 1,
+            "size": 10
+         }
+      }
+   },
+   {
+      "name": "Test POST lag time - specifying a non-existent unit",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "value": 8.43,
+            "unit_definition_uid": "non-existent-uid",
+            "sdtm_domain_uid": "sdtm_domain_uid1",
+            "definition": "lag_time_definition2",
+            "abbreviation": "abbv",
+            "template_parameter": false,
+            "library_name": "Sponsor"
+         },
+         "url": "/concepts/lag-times"
+      },
+      "response": {
+         "code": 400,
+         "headers": {},
+         "result": {
+            "message": "LagTimeVO tried to connect to non-existent unit definition identified by uid (non-existent-uid)",
+            "time": "2022-04-19T15:11:40.945991",
+            "path": "http://testserver/concepts/lag-times",
+            "method": "POST",
+            "type": "ValidationException"
+         }
+      }
+   },
+   {
+      "name": "Test POST lag time - specifying a non-existent sdtm domain",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "value": 8.43,
+            "unit_definition_uid": "unit_definition_root1",
+            "sdtm_domain_uid": "non-existent-uid",
+            "definition": "lag_time_definition2",
+            "abbreviation": "abbv",
+            "template_parameter": false,
+            "library_name": "Sponsor"
+         },
+         "url": "/concepts/lag-times"
+      },
+      "response": {
+         "code": 400,
+         "headers": {},
+         "result": {
+            "message": "LagTimeVO tried to connect to non-existent sdtm domain identified by uid (non-existent-uid)",
+            "time": "2022-04-19T15:11:40.945991",
+            "path": "http://testserver/concepts/lag-times",
+            "method": "POST",
+            "type": "ValidationException"
+         }
+      }
+   }
+]

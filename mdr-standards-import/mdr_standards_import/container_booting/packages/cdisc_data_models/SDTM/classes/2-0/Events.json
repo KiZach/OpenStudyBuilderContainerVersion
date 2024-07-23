@@ -1,0 +1,2185 @@
+{
+    "_links": {
+        "parentClass": {
+            "href": "/mdr/sdtm/2-0/classes/GeneralObservations",
+            "title": "General Observations",
+            "type": "Class"
+        },
+        "parentProduct": {
+            "href": "/mdr/sdtm/2-0",
+            "title": "Study Data Tabulation Model Version 2.0",
+            "type": "Foundational Model"
+        },
+        "priorVersion": {
+            "href": "/mdr/sdtm/1-8/classes/Events",
+            "title": "Events Observation Class",
+            "type": "Class"
+        },
+        "self": {
+            "href": "/mdr/sdtm/2-0/classes/Events",
+            "title": "Events",
+            "type": "Class"
+        }
+    },
+    "classVariables": [
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--TERM",
+                    "title": "Reported Term",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--TERM",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--TERM",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--TERM",
+                    "title": "Reported Term",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "The collected name for an event observation.",
+            "label": "Reported Term",
+            "name": "--TERM",
+            "notes": "The verbatim or prespecified name of the event.",
+            "ordinal": "1",
+            "role": "Topic",
+            "simpleDatatype": "Char",
+            "variableCcode": "C82571"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--MODIFY",
+                    "title": "Modified Reported Term",
+                    "type": "Class Variable"
+                },
+                "qualifiesVariables": [
+                    {
+                        "href": "/mdr/sdtm/2-0/classes/Events/variables/--TERM",
+                        "title": "Reported Term",
+                        "type": "SDTM Class Variable"
+                    }
+                ],
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--MODIFY",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--MODIFY",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--MODIFY",
+                    "title": "Modified Reported Term",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "A value which represents an alteration to a collected value for coding.",
+            "label": "Modified Reported Term",
+            "name": "--MODIFY",
+            "notes": "If the value for --TERM is modified for coding purposes, then the modified text is placed here.",
+            "ordinal": "2",
+            "role": "Synonym Qualifier",
+            "simpleDatatype": "Char",
+            "variableCcode": "C170998"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--LLT",
+                    "title": "Lowest Level Term",
+                    "type": "Class Variable"
+                },
+                "qualifiesVariables": [
+                    {
+                        "href": "/mdr/sdtm/2-0/classes/Events/variables/--TERM",
+                        "title": "Reported Term",
+                        "type": "SDTM Class Variable"
+                    }
+                ],
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--LLT",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--LLT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--LLT",
+                    "title": "Lowest Level Term",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "The lowest-level term assigned to the event from MedDRA.",
+            "label": "Lowest Level Term",
+            "name": "--LLT",
+            "ordinal": "3",
+            "role": "Variable Qualifier",
+            "simpleDatatype": "Char",
+            "usageRestrictions": "Not in nonclinical trials",
+            "variableCcode": "C71886"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--LLTCD",
+                    "title": "Lowest Level Term Code",
+                    "type": "Class Variable"
+                },
+                "qualifiesVariables": [
+                    {
+                        "href": "/mdr/sdtm/2-0/classes/Events/variables/--LLT",
+                        "title": "Lowest Level Term",
+                        "type": "SDTM Class Variable"
+                    }
+                ],
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--LLTCD",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--LLTCD",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--LLTCD",
+                    "title": "Lowest Level Term Code",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "The lowest-level term code assigned to the event from MedDRA.",
+            "label": "Lowest Level Term Code",
+            "name": "--LLTCD",
+            "ordinal": "4",
+            "role": "Variable Qualifier",
+            "simpleDatatype": "Num",
+            "usageRestrictions": "Not in nonclinical trials",
+            "variableCcode": "C117048"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--DECOD",
+                    "title": "Dictionary-Derived Term",
+                    "type": "Class Variable"
+                },
+                "qualifiesVariables": [
+                    {
+                        "href": "/mdr/sdtm/2-0/classes/Events/variables/--TERM",
+                        "title": "Reported Term",
+                        "type": "SDTM Class Variable"
+                    }
+                ],
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--DECOD",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--DECOD",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--DECOD",
+                    "title": "Dictionary-Derived Term",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "Standardized or dictionary-derived text for the description of an event or intervention.",
+            "label": "Dictionary-Derived Term",
+            "name": "--DECOD",
+            "notes": "Equivalent to the Preferred Term (\"PT\" in MedDRA).",
+            "ordinal": "5",
+            "role": "Synonym Qualifier",
+            "simpleDatatype": "Char",
+            "variableCcode": "C170991"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--EVDTYP",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--EVDTYP",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--EVDTYP",
+                    "title": "Medical History Event Date Type",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "examples": "\"DIAGNOSIS\", \"SYMPTOM ONSET\", \"DISEASE RELAPSE\"",
+            "label": "Medical History Event Date Type",
+            "name": "--EVDTYP",
+            "notes": "Specifies the aspect of the medical condition or event by which MHSTDTC and/or the MHENDTC is defined.",
+            "ordinal": "6",
+            "role": "Variable Qualifier",
+            "simpleDatatype": "Char",
+            "usageRestrictions": "MH domain only"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--PTCD",
+                    "title": "Preferred Term Code",
+                    "type": "Class Variable"
+                },
+                "qualifiesVariables": [
+                    {
+                        "href": "/mdr/sdtm/2-0/classes/Events/variables/--DECOD",
+                        "title": "Dictionary-Derived Term",
+                        "type": "SDTM Class Variable"
+                    }
+                ],
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--PTCD",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--PTCD",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--PTCD",
+                    "title": "Preferred Term Code",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "The preferred term code assigned to the event from the MedDRA dictionary.",
+            "label": "Preferred Term Code",
+            "name": "--PTCD",
+            "ordinal": "7",
+            "role": "Variable Qualifier",
+            "simpleDatatype": "Num",
+            "usageRestrictions": "Not in nonclinical trials",
+            "variableCcode": "C117056"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--HLT",
+                    "title": "High Level Term",
+                    "type": "Class Variable"
+                },
+                "qualifiesVariables": [
+                    {
+                        "href": "/mdr/sdtm/2-0/classes/Events/variables/--TERM",
+                        "title": "Reported Term",
+                        "type": "SDTM Class Variable"
+                    }
+                ],
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--HLT",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--HLT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--HLT",
+                    "title": "High Level Term",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "The high-level term from the primary hierarchy assigned to the event from MedDRA.",
+            "label": "High Level Term",
+            "name": "--HLT",
+            "ordinal": "8",
+            "role": "Variable Qualifier",
+            "simpleDatatype": "Char",
+            "usageRestrictions": "Not in nonclinical trials",
+            "variableCcode": "C71880"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--HLTCD",
+                    "title": "High Level Term Code",
+                    "type": "Class Variable"
+                },
+                "qualifiesVariables": [
+                    {
+                        "href": "/mdr/sdtm/2-0/classes/Events/variables/--HLT",
+                        "title": "High Level Term",
+                        "type": "SDTM Class Variable"
+                    }
+                ],
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--HLTCD",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--HLTCD",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--HLTCD",
+                    "title": "High Level Term Code",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "The high-level term code from the primary hierarchy assigned to the event from MedDRA.",
+            "label": "High Level Term Code",
+            "name": "--HLTCD",
+            "ordinal": "9",
+            "role": "Variable Qualifier",
+            "simpleDatatype": "Num",
+            "usageRestrictions": "Not in nonclinical trials",
+            "variableCcode": "C117047"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--HLGT",
+                    "title": "High Level Group Term",
+                    "type": "Class Variable"
+                },
+                "qualifiesVariables": [
+                    {
+                        "href": "/mdr/sdtm/2-0/classes/Events/variables/--TERM",
+                        "title": "Reported Term",
+                        "type": "SDTM Class Variable"
+                    }
+                ],
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--HLGT",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--HLGT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--HLGT",
+                    "title": "High Level Group Term",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "The high-level group term from the primary hierarchy assigned to the event from MedDRA.",
+            "label": "High Level Group Term",
+            "name": "--HLGT",
+            "ordinal": "10",
+            "role": "Variable Qualifier",
+            "simpleDatatype": "Char",
+            "usageRestrictions": "Not in nonclinical trials",
+            "variableCcode": "C71889"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--HLGTCD",
+                    "title": "High Level Group Term Code",
+                    "type": "Class Variable"
+                },
+                "qualifiesVariables": [
+                    {
+                        "href": "/mdr/sdtm/2-0/classes/Events/variables/--HLGT",
+                        "title": "High Level Group Term",
+                        "type": "SDTM Class Variable"
+                    }
+                ],
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--HLGTCD",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--HLGTCD",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--HLGTCD",
+                    "title": "High Level Group Term Code",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "The high-level group term code from the primary hierarchy assigned to the event from MedDRA.",
+            "label": "High Level Group Term Code",
+            "name": "--HLGTCD",
+            "ordinal": "11",
+            "role": "Variable Qualifier",
+            "simpleDatatype": "Num",
+            "usageRestrictions": "Not in nonclinical trials",
+            "variableCcode": "C117046"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--CAT",
+                    "title": "Category",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--CAT",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--CAT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--CAT",
+                    "title": "Category",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "A grouping or classification of the topic of the finding, event, or intervention.",
+            "label": "Category",
+            "name": "--CAT",
+            "ordinal": "12",
+            "role": "Grouping Qualifier",
+            "simpleDatatype": "Char",
+            "variableCcode": "C25372"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--SCAT",
+                    "title": "Subcategory",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--SCAT",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--SCAT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--SCAT",
+                    "title": "Subcategory",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "A further grouping or classification of the category for the topic of the finding, event, or intervention.",
+            "label": "Subcategory",
+            "name": "--SCAT",
+            "notes": "The category is in --CAT.",
+            "ordinal": "13",
+            "role": "Grouping Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--PRESP",
+                    "title": "Pre-Specified",
+                    "type": "Class Variable"
+                },
+                "qualifiesVariables": [
+                    {
+                        "href": "/mdr/sdtm/2-0/classes/Events/variables/--TERM",
+                        "title": "Reported Term",
+                        "type": "SDTM Class Variable"
+                    }
+                ],
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--PRESP",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--PRESP",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--PRESP",
+                    "title": "Pre-Specified",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "An indication that the event or intervention was prospectively stated or detailed on the CRF.",
+            "label": "Pre-Specified",
+            "name": "--PRESP",
+            "notes": "Value is \"Y\" for prespecified events, null for spontaneously reported events.",
+            "ordinal": "14",
+            "role": "Variable Qualifier",
+            "simpleDatatype": "Char",
+            "variableCcode": "C82510"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--OCCUR",
+                    "title": "Occurrence Indicator",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--OCCUR",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--OCCUR",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--OCCUR",
+                    "title": "Occurrence Indicator",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "An indication as to whether a prespecified event or intervention has occurred.",
+            "label": "Occurrence Indicator",
+            "name": "--OCCUR",
+            "ordinal": "15",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "usageRestrictions": "Not in AE domain",
+            "variableCcode": "C171000"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--REASOC",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--REASOC",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--REASOC",
+                    "title": "Reason for Occur Value",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "label": "Reason for Occur Value",
+            "name": "--REASOC",
+            "notes": "--REASOC is the reason the event did or did not occur, according to the value in --OCCUR.",
+            "ordinal": "16",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "usageRestrictions": "Not in AE domain"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--STAT",
+                    "title": "Completion Status",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--STAT",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--STAT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--STAT",
+                    "title": "Completion Status",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "label": "Completion Status",
+            "name": "--STAT",
+            "notes": "Used to indicate when a question about the occurrence of a prespecified event was not answered. Should be null or have a value of \"NOT DONE\".",
+            "ordinal": "17",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "usageRestrictions": "Not in AE domain \\n"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--REASND",
+                    "title": "Reason Not Done",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--REASND",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--REASND",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--REASND",
+                    "title": "Reason Not Done",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "The explanation for why requested information was not available.",
+            "label": "Reason Not Done",
+            "name": "--REASND",
+            "notes": "Used in conjunction with --STAT when its value is \"NOT DONE\".",
+            "ordinal": "18",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "usageRestrictions": "Not in AE domain",
+            "variableCcode": "C82556"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--BODSYS",
+                    "title": "Body System or Organ Class",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--BODSYS",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--BODSYS",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--BODSYS",
+                    "title": "Body System or Organ Class",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "A standardized or dictionary-derived name for the body system or organ class.",
+            "examples": "GASTROINTESTINAL DISORDERS",
+            "label": "Body System or Organ Class",
+            "name": "--BODSYS",
+            "notes": "Body system or system organ class assigned for analysis from a standard hierarchy (e.g., MedDRA) associated with an event.",
+            "ordinal": "19",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "variableCcode": "C170986"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--BDSYCD",
+                    "title": "Body System or Organ Class Code",
+                    "type": "Class Variable"
+                },
+                "qualifiesVariables": [
+                    {
+                        "href": "/mdr/sdtm/2-0/classes/Events/variables/--BODSYS",
+                        "title": "Body System or Organ Class",
+                        "type": "SDTM Class Variable"
+                    }
+                ],
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--BDSYCD",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--BDSYCD",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--BDSYCD",
+                    "title": "Body System or Organ Class Code",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "A standardized or dictionary-derived short sequence of characters used to represent the body system or organ class.",
+            "label": "Body System or Organ Class Code",
+            "name": "--BDSYCD",
+            "notes": "MedDRA System Organ Class code corresponding to --BODSYS assigned for analysis.",
+            "ordinal": "20",
+            "role": "Variable Qualifier",
+            "simpleDatatype": "Num",
+            "usageRestrictions": "Not in nonclinical trials",
+            "variableCcode": "C170985"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--SOC",
+                    "title": "Primary System Organ Class",
+                    "type": "Class Variable"
+                },
+                "qualifiesVariables": [
+                    {
+                        "href": "/mdr/sdtm/2-0/classes/Events/variables/--TERM",
+                        "title": "Reported Term",
+                        "type": "SDTM Class Variable"
+                    }
+                ],
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--SOC",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--SOC",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--SOC",
+                    "title": "Primary System Organ Class",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "The system organ class from the primary hierarchy assigned in the MedDRA dictionary.",
+            "label": "Primary System Organ Class",
+            "name": "--SOC",
+            "ordinal": "21",
+            "role": "Variable Qualifier",
+            "simpleDatatype": "Char",
+            "usageRestrictions": "Not in nonclinical trials",
+            "variableCcode": "C71888"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--SOCCD",
+                    "title": "Primary System Organ Class Code",
+                    "type": "Class Variable"
+                },
+                "qualifiesVariables": [
+                    {
+                        "href": "/mdr/sdtm/2-0/classes/Events/variables/--SOC",
+                        "title": "Primary System Organ Class",
+                        "type": "SDTM Class Variable"
+                    }
+                ],
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--SOCCD",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--SOCCD",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--SOCCD",
+                    "title": "Primary System Organ Class Code",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "The system organ class code from the primary hierarchy assigned in the MedDRA dictionary.",
+            "label": "Primary System Organ Class Code",
+            "name": "--SOCCD",
+            "ordinal": "22",
+            "role": "Variable Qualifier",
+            "simpleDatatype": "Num",
+            "usageRestrictions": "Not in nonclinical trials",
+            "variableCcode": "C117059"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--CNTMOD",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--CNTMOD",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--CNTMOD",
+                    "title": "Contact Mode",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "examples": "\"IN PERSON\", \"TELEPHONE\", \"IVRS\"",
+            "label": "Contact Mode",
+            "name": "--CNTMOD",
+            "notes": "The way in which the event, visit, or contact was conducted.",
+            "ordinal": "23",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--EPCHGI",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--EPCHGI",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--EPCHGI",
+                    "title": "Epi/Pandemic Related Change Indicator",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "label": "Epi/Pandemic Related Change Indicator",
+            "name": "--EPCHGI",
+            "notes": "Indicates whether the event was changed due to an epidemic or pandemic. Not the same as whether a medical condition was caused by an epidemic or pandemic.",
+            "ordinal": "24",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--LOC",
+                    "title": "Location of Event",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--LOC",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--LOC",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--LOC",
+                    "title": "Location of Event",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "examples": "ARM for skin rash",
+            "label": "Location of Event",
+            "name": "--LOC",
+            "notes": "Describes anatomical location relevant for the event.",
+            "ordinal": "25",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--LAT",
+                    "title": "Laterality",
+                    "type": "Class Variable"
+                },
+                "qualifiesVariables": [
+                    {
+                        "href": "/mdr/sdtm/2-0/classes/Events/variables/--LOC",
+                        "title": "Location of Event",
+                        "type": "SDTM Class Variable"
+                    }
+                ],
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--LAT",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--LAT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--LAT",
+                    "title": "Laterality",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "examples": "\"RIGHT\", \"LEFT\", \"BILATERAL\"",
+            "label": "Laterality",
+            "name": "--LAT",
+            "notes": "Qualifier for anatomical location, further detailing laterality.",
+            "ordinal": "26",
+            "role": "Variable Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--DIR",
+                    "title": "Directionality",
+                    "type": "Class Variable"
+                },
+                "qualifiesVariables": [
+                    {
+                        "href": "/mdr/sdtm/2-0/classes/Events/variables/--LOC",
+                        "title": "Location of Event",
+                        "type": "SDTM Class Variable"
+                    }
+                ],
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--DIR",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--DIR",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--DIR",
+                    "title": "Directionality",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "examples": "\"ANTERIOR\", \"LOWER\", \"PROXIMAL\"",
+            "label": "Directionality",
+            "name": "--DIR",
+            "notes": "Qualifier for anatomical location, further detailing directionality.",
+            "ordinal": "27",
+            "role": "Variable Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--PORTOT",
+                    "title": "Portion or Totality",
+                    "type": "Class Variable"
+                },
+                "qualifiesVariables": [
+                    {
+                        "href": "/mdr/sdtm/2-0/classes/Events/variables/--LOC",
+                        "title": "Location of Event",
+                        "type": "SDTM Class Variable"
+                    }
+                ],
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--PORTOT",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--PORTOT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--PORTOT",
+                    "title": "Portion or Totality",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "examples": "\"ENTIRE\", \"SINGLE\", \"SEGMENT\", \"MANY\"",
+            "label": "Portion or Totality",
+            "name": "--PORTOT",
+            "notes": "Qualifier for anatomical location, further detailing the distribution (i.e., arrangement of, apportioning of).",
+            "ordinal": "28",
+            "role": "Variable Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--PARTY",
+                    "title": "Accountable Party",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--PARTY",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--PARTY",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--PARTY",
+                    "title": "Accountable Party",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "The role of the individual or entity responsible for the receipt of the transferred object (e.g., device, specimen).",
+            "label": "Accountable Party",
+            "name": "--PARTY",
+            "notes": "The party could be an individual (e.g., subject), an organization (e.g., sponsor), or a location that is a proxy for an individual or organization (e.g., site). It is usually a somewhat general term that is further identified in the --PRTYID variable.",
+            "ordinal": "29",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "usageRestrictions": "Not in nonclinical trials",
+            "variableCcode": "C117052"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--PRTYID",
+                    "title": "Identification of Accountable Party",
+                    "type": "Class Variable"
+                },
+                "qualifiesVariables": [
+                    {
+                        "href": "/mdr/sdtm/2-0/classes/Events/variables/--PARTY",
+                        "title": "Accountable Party",
+                        "type": "SDTM Class Variable"
+                    }
+                ],
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--PRTYID",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--PRTYID",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--PRTYID",
+                    "title": "Identification of Accountable Party",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "A sequence of characters used to uniquely identify the individual or entity responsible for the receipt of the transferred object (e.g., device, specimen).",
+            "label": "Identification of Accountable Party",
+            "name": "--PRTYID",
+            "notes": "Used in conjunction with --PARTY.",
+            "ordinal": "30",
+            "role": "Variable Qualifier",
+            "simpleDatatype": "Char",
+            "usageRestrictions": "Not in nonclinical trials",
+            "variableCcode": "C117054"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--SEV",
+                    "title": "Severity/Intensity",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--SEV",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--SEV",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--SEV",
+                    "title": "Severity/Intensity",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "The quality or degree of harm associated with a finding or event, as collected.",
+            "examples": "\"MILD\", \"MODERATE\", \"SEVERE\"",
+            "label": "Severity/Intensity",
+            "name": "--SEV",
+            "ordinal": "31",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "variableCcode": "C25676"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--SER",
+                    "title": "Serious Event",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--SER",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--SER",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--SER",
+                    "title": "Serious Event",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "A collected indication as to whether an event meets regulatory criteria for seriousness.",
+            "label": "Serious Event",
+            "name": "--SER",
+            "notes": "Valid values are \"Y\" and \"N\".",
+            "ordinal": "32",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "variableCcode": "C82578"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--ACN",
+                    "title": "Action Taken with Study Treatment",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--ACN",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--ACN",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--ACN",
+                    "title": "Action Taken with Study Treatment",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "An action taken with study treatment as the result of the event.",
+            "examples": "\"DOSE INCREASED\", \"DOSE NOT CHANGED\"",
+            "label": "Action Taken with Study Treatment",
+            "name": "--ACN",
+            "ordinal": "33",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "variableCcode": "C49499"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--ACNOTH",
+                    "title": "Other Action Taken",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--ACNOTH",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--ACNOTH",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--ACNOTH",
+                    "title": "Other Action Taken",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "An action taken unrelated to study treatment, as the result of the event.",
+            "label": "Other Action Taken",
+            "name": "--ACNOTH",
+            "ordinal": "34",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "variableCcode": "C82509"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--ACNDEV",
+                    "title": "Action Taken with Device",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--ACNDEV",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--ACNDEV",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--ACNDEV",
+                    "title": "Action Taken with Device",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "An action taken with a device as the result of the event.",
+            "label": "Action Taken with Device",
+            "name": "--ACNDEV",
+            "notes": "The device may or may not be the device under study.",
+            "ordinal": "35",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "variableCcode": "C117037"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--REL",
+                    "title": "Causality",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--REL",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--REL",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--REL",
+                    "title": "Causality",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "The investigator's assessment of the likelihood that the study treatment was the cause of the event.",
+            "examples": "\"NOT RELATED\", \"UNLIKELY RELATED\", \"POSSIBLY RELATED\", \"RELATED\"",
+            "label": "Causality",
+            "name": "--REL",
+            "ordinal": "36",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "variableCcode": "C103163"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--RLDEV",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--RLDEV",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--RLDEV",
+                    "title": "Relationship of Event to Device",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "A judgement as to the likelihood that the device caused the event.",
+            "examples": "\"CAUSAL\", \"UNLIKELY\"",
+            "label": "Relationship of Event to Device",
+            "name": "--RLDEV",
+            "notes": "The device may or may not be the device under study. Controlled terminology from EC Directive MEDDEV 2.7/3 March 2015 is required in EU but not US.",
+            "ordinal": "37",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--RELNST",
+                    "title": "Relationship to Non-Study Treatment",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--RELNST",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--RELNST",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--RELNST",
+                    "title": "Relationship to Non-Study Treatment",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "The investigator's assessment of the causal relationship of the event to a non-study treatment.",
+            "examples": "MORE LIKELY RELATED TO ASPIRIN USE",
+            "label": "Relationship to Non-Study Treatment",
+            "name": "--RELNST",
+            "ordinal": "38",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "variableCcode": "C82564"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--PATT",
+                    "title": "Pattern of Event",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--PATT",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--PATT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--PATT",
+                    "title": "Pattern of Event",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "A characterization of the temporal pattern of occurrences of the event.",
+            "examples": "\"INTERMITTENT\", \"CONTINUOUS\", \"SINGLE EVENT\"",
+            "label": "Pattern of Event",
+            "name": "--PATT",
+            "ordinal": "39",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "variableCcode": "C82550"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--OUT",
+                    "title": "Outcome of Event",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--OUT",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--OUT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--OUT",
+                    "title": "Outcome of Event",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "The status associated with the result or conclusion of the event.",
+            "examples": "\"RECOVERED/RESOLVED\", \"FATAL\"",
+            "label": "Outcome of Event",
+            "name": "--OUT",
+            "ordinal": "40",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "variableCcode": "C171001"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--SCAN",
+                    "title": "Involves Cancer",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--SCAN",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--SCAN",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--SCAN",
+                    "title": "Involves Cancer",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "An indication as to whether the reason an event was serious was because the event was associated with cancer.",
+            "label": "Involves Cancer",
+            "name": "--SCAN",
+            "notes": "Valid values are \"Y\", \"N\", and null.",
+            "ordinal": "41",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "usageRestrictions": "Not in nonclinical trials",
+            "variableCcode": "C82561"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--SCONG",
+                    "title": "Congenital Anomaly or Birth Defect",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--SCONG",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--SCONG",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--SCONG",
+                    "title": "Congenital Anomaly or Birth Defect",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "An indication as to whether the reason an event is serious is because the event is associated with congenital anomaly or birth defect in an offspring of the subject.",
+            "label": "Congenital Anomaly or Birth Defect",
+            "name": "--SCONG",
+            "notes": "Valid values are \"Y\", \"N\", and null.",
+            "ordinal": "42",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "usageRestrictions": "Not in nonclinical trials",
+            "variableCcode": "C2849"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--SDISAB",
+                    "title": "Persist or Signif Disability/Incapacity",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--SDISAB",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--SDISAB",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--SDISAB",
+                    "title": "Persist or Signif Disability/Incapacity",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "An indication as to whether the reason an event is serious is because the event resulted in a significant, persistent, or permanent change, impairment, damage, or disruption in the subject's body function/structure, physical activities, and/or quality of life.",
+            "label": "Persist or Signif Disability/Incapacity",
+            "name": "--SDISAB",
+            "notes": "Valid values are \"Y\", \"N\", and null.",
+            "ordinal": "43",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "usageRestrictions": "Not in nonclinical trials",
+            "variableCcode": "C68606"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--SDTH",
+                    "title": "Results in Death",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--SDTH",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--SDTH",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--SDTH",
+                    "title": "Results in Death",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "An indication as to whether the reason an event is serious is because the event resulted in death.",
+            "label": "Results in Death",
+            "name": "--SDTH",
+            "notes": "Valid values are \"Y\", \"N\", and null.",
+            "ordinal": "44",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "usageRestrictions": "Not in nonclinical trials",
+            "variableCcode": "C82549"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--SHOSP",
+                    "title": "Requires or Prolongs Hospitalization",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--SHOSP",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--SHOSP",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--SHOSP",
+                    "title": "Requires or Prolongs Hospitalization",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "An indication as to whether the reason an event is serious is because the event resulted in or prolonged hospitalization.",
+            "label": "Requires or Prolongs Hospitalization",
+            "name": "--SHOSP",
+            "notes": "Valid values are \"Y\", \"N\", and null.",
+            "ordinal": "45",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "usageRestrictions": "Not in nonclinical trials",
+            "variableCcode": "C68605"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--SLIFE",
+                    "title": "Is Life Threatening",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--SLIFE",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--SLIFE",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--SLIFE",
+                    "title": "Is Life Threatening",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "An indication as to whether the reason an event is serious is because the event resulted in a substantial risk of dying.",
+            "label": "Is Life Threatening",
+            "name": "--SLIFE",
+            "notes": "Valid values are \"Y\", \"N\", and null.",
+            "ordinal": "46",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "usageRestrictions": "Not in nonclinical trials",
+            "variableCcode": "C82508"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--SOD",
+                    "title": "Occurred with Overdose",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--SOD",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--SOD",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--SOD",
+                    "title": "Occurred with Overdose",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "An indication as to whether the reason an event is serious is because the event is associated with overdose.",
+            "label": "Occurred with Overdose",
+            "name": "--SOD",
+            "notes": "Valid values are \"Y\", \"N\", and null.",
+            "ordinal": "47",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "usageRestrictions": "Not in nonclinical trials",
+            "variableCcode": "C82548"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--SMIE",
+                    "title": "Other Medically Important Serious Event",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--SMIE",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--SMIE",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--SMIE",
+                    "title": "Other Medically Important Serious Event",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "An indication as to whether the reason an event is serious is because the event may jeopardize the subject and may require intervention to prevent one of the other outcomes associated with serious adverse events.",
+            "label": "Other Medically Important Serious Event",
+            "name": "--SMIE",
+            "notes": "Valid values are \"Y\", \"N\", and null.",
+            "ordinal": "48",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "usageRestrictions": "Not in nonclinical trials",
+            "variableCcode": "C82521"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--SINTV",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--SINTV",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--SINTV",
+                    "title": "Needs Intervention to Prevent Impairment",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "label": "Needs Intervention to Prevent Impairment",
+            "name": "--SINTV",
+            "notes": "Valid values are \"Y\", \"N\", and null. Expected use is in medical device-related trials. It is part of the definition of a serious AE as represented in 21 CFR Part 803.3(w)(3). \\n Records whether medical or surgical intervention was necessary to preclude permanent impairment of a body function, or prevent permanent damage to a body structure, with either situation suspected to be due to the use of a medical product.",
+            "ordinal": "49",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "usageRestrictions": "AE domain only"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--UNANT",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--UNANT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--UNANT",
+                    "title": "Unanticipated Adverse Device Effect",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "label": "Unanticipated Adverse Device Effect",
+            "name": "--UNANT",
+            "notes": "The assessment is about a device identified in the data (i.e., which has an SPDEVID). The device may be ancillary or under study. \\n Any serious adverse effect on health or safety or any life-threatening problem or death caused by or associated with a device, if that effect, problem, or death was not previously identified in nature, severity, or degree of incidence in the investigational plan or application (including a supplementary plan or application), or any other unanticipated serious problem associated with a device that relates to the rights, safety, or welfare of subjects. (21 CFR 812.3(s)).",
+            "ordinal": "50",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "usageRestrictions": "AE domain only"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--RLPRT",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--RLPRT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--RLPRT",
+                    "title": "Rel of AE to Device-Related Procedure",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "examples": "\"CAUSAL\", \"UNLIKELY\"",
+            "label": "Rel of AE to Device-Related Procedure",
+            "name": "--RLPRT",
+            "notes": "The investigator's opinion as to the likelihood that the device-related study procedure caused the AE (e.g., implant/insertion, revision/adjustment, explant/removal) \\n The relationship is to a device-related procedure where the device is identified in the data (i.e., which has an SPDEVID). The device may be ancillary or under study.",
+            "ordinal": "51",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "usageRestrictions": "AE domain only"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--RLPRC",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--RLPRC",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--RLPRC",
+                    "title": "Rel of AE to Non-Dev-Rel Study Activity",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "examples": "\"CAUSAL\", \"UNLIKELY\"",
+            "label": "Rel of AE to Non-Dev-Rel Study Activity",
+            "name": "--RLPRC",
+            "notes": "The investigator's opinion as to the causality of the event as related to other protocol-required activities, actions or assessments (e.g., medication changes, tests/assessments, other procedures). \\n The relationship is to a protocol-specified non-device-related activity where the device is identified in the data (i.e., which has an SPDEVID). The device may be ancillary or under study.",
+            "ordinal": "52",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "usageRestrictions": "AE domain only"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--CONTRT",
+                    "title": "Concomitant or Additional Trtmnt Given",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--CONTRT",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--CONTRT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--CONTRT",
+                    "title": "Concomitant or Additional Trtmnt Given",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "An indication as to whether a non-study treatment was given because of the occurrence of the event.",
+            "label": "Concomitant or Additional Trtmnt Given",
+            "name": "--CONTRT",
+            "notes": "Valid values are \"Y\", \"N\", and null.",
+            "ordinal": "53",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "variableCcode": "C170989"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--TOX",
+                    "title": "Toxicity",
+                    "type": "Class Variable"
+                },
+                "qualifiesVariables": [
+                    {
+                        "href": "/mdr/sdtm/2-0/classes/Events/variables/--TOXGR",
+                        "title": "Toxicity Grade",
+                        "type": "SDTM Class Variable"
+                    }
+                ],
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--TOX",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--TOX",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--TOX",
+                    "title": "Toxicity",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "The standardized or dictionary-derived name for an untoward event or finding.",
+            "examples": "An NCI CTCAE Short Name, \"HYPERCALCEMIA\", \"HYPOCALCEMIA\"",
+            "label": "Toxicity",
+            "name": "--TOX",
+            "notes": "Sponsor should specify which scale and version is used in the Sponsor Comments column of the Define-XML document.",
+            "ordinal": "54",
+            "role": "Variable Qualifier",
+            "simpleDatatype": "Char",
+            "variableCcode": "C27990"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--TOXGR",
+                    "title": "Toxicity Grade",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--TOXGR",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--TOXGR",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--TOXGR",
+                    "title": "Toxicity Grade",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "A categorical classification of the severity of an event or finding, based on a standard scale, used in study data tabulation.",
+            "examples": "A toxicity grade from the NCI CTCAE.",
+            "label": "Toxicity Grade",
+            "name": "--TOXGR",
+            "notes": "Sponsor should specify which scale and version is used in the Sponsor Comments column of the Define-XML document.",
+            "ordinal": "55",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "variableCcode": "C82528"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/2-0/classes/Events",
+                    "title": "Events",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/2-0",
+                    "title": "Study Data Tabulation Model Version 2.0",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-8/classes/Events/variables/--USCHFL",
+                    "title": "Unscheduled Flag",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/Events/variables/--USCHFL",
+                    "title": "Version-agnostic anchor resource for SDTM variable Events.--USCHFL",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--USCHFL",
+                    "title": "Unscheduled Flag",
+                    "type": "SDTM Class Variable"
+                }
+            },
+            "definition": "An indication that the performed test or observation was done at a time that was not planned.",
+            "label": "Unscheduled Flag",
+            "name": "--USCHFL",
+            "notes": "If a test or observation was performed based upon a schedule defined in the protocol, this flag should be null. Expected values are \"Y\" or null. This variable would not be needed when information on planned assessments is provided, such as when the Trial Visits (TV) and Subject Visits (SV) domains are used.",
+            "ordinal": "56",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char",
+            "usageRestrictions": "Not in human clinical trials",
+            "variableCcode": "C170510"
+        }
+    ],
+    "description": "This SDTM class captures planned protocol milestones such as randomization and study completion, and occurrences, conditions, or incidents independent of planned study evaluations occurring during the trial (e.g., adverse events) or prior to the trial (e.g., medical history). (Source: CDISC Controlled Terminology, GNRLOBSC, EVENTS, 2021-09-24)",
+    "label": "Events",
+    "name": "Events",
+    "ordinal": "3"
+}

@@ -1,0 +1,414 @@
+[{
+  "categories": null,
+  "change_description": "Approved version",
+  "default_parameter_terms": {
+    "0": [
+      {
+        "conjunction": "",
+        "position": 1,
+        "terms": []
+      },
+      {
+        "conjunction": "",
+        "position": 2,
+        "terms": []
+      },
+      {
+        "conjunction": "",
+        "position": 3,
+        "terms": []
+      },
+      {
+        "conjunction": "",
+        "position": 4,
+        "terms": []
+      }
+    ]
+  },
+  "end_date": null,
+  "guidance_text": null,
+  "indications": null,
+  "is_confirmatory_testing": null,
+  "library": {
+    "is_editable": true,
+    "name": "Sponsor"
+  },
+  "name": "<p>To assess the safety of [Compound] and [Compound] combination or [Compound] and [Compound] combination in biliary tract cancer patients</p>",
+  "name_plain": "To assess the safety of [Compound] and [Compound] combination or [Compound] and [Compound] combination in biliary tract cancer patients",
+  "parameters": [
+    {
+      "name": "Compound",
+      "terms": null
+    },
+    {
+      "name": "Compound",
+      "terms": null
+    },
+    {
+      "name": "Compound",
+      "terms": null
+    },
+    {
+      "name": "Compound",
+      "terms": null
+    }
+  ],
+  "possible_actions": [
+    "inactivate",
+    "new_version"
+  ],
+  "start_date": "2023-04-18T06:35:07.908753+00:00",
+  "status": "Final",
+  "study_count": 1,
+  "uid": "ObjectiveTemplate_000010",
+  "user_initials": "unknown-user",
+  "version": "1.0"
+},
+{
+  "categories": null,
+  "change_description": "Approved version",
+  "default_parameter_terms": {
+    "0": [
+      {
+        "conjunction": "",
+        "position": 1,
+        "terms": []
+      },
+      {
+        "conjunction": "",
+        "position": 2,
+        "terms": []
+      },
+      {
+        "conjunction": "",
+        "position": 3,
+        "terms": []
+      },
+      {
+        "conjunction": "",
+        "position": 4,
+        "terms": []
+      }
+    ]
+  },
+  "end_date": null,
+  "guidance_text": null,
+  "indications": null,
+  "is_confirmatory_testing": null,
+  "library": {
+    "is_editable": true,
+    "name": "Sponsor"
+  },
+  "name": "<p>To assess the effect of [Compound] and [Compound] or [Compound] and [Compound] combination in biliary tract cancer patients who have failed to 1st-line chemotherapy</p>",
+  "name_plain": "To assess the effect of [Compound] and [Compound] or [Compound] and [Compound] combination in biliary tract cancer patients who have failed to 1st-line chemotherapy",
+  "parameters": [
+    {
+      "name": "Compound",
+      "terms": null
+    },
+    {
+      "name": "Compound",
+      "terms": null
+    },
+    {
+      "name": "Compound",
+      "terms": null
+    },
+    {
+      "name": "Compound",
+      "terms": null
+    }
+  ],
+  "possible_actions": [
+    "inactivate",
+    "new_version"
+  ],
+  "start_date": "2023-04-18T06:27:49.240462+00:00",
+  "status": "Final",
+  "study_count": 1,
+  "uid": "ObjectiveTemplate_000009",
+  "user_initials": "unknown-user",
+  "version": "1.0"
+},
+{
+    "categories": null,
+    "change_description": "Approved version",
+    "confirmatory_testing": false,
+    "default_parameter_values": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": []
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "values": []
+        },
+        {
+          "conjunction": "",
+          "position": 3,
+          "values": []
+        }
+      ]
+    },
+    "editable_instance": false,
+    "end_date": null,
+    "indications": [
+      {
+        "abbreviation": "HF",
+        "change_description": "Approved version",
+        "definition": "Heart failure (disorder)",
+        "dictionary_id": "84114007",
+        "end_date": null,
+        "library_name": "SNOMED",
+        "name": "Heart failure",
+        "name_sentence_case": "heart failure",
+        "possible_actions": [
+          "inactivate",
+          "newVersion"
+        ],
+        "start_date": "2022-05-23T11:41:23.366441",
+        "status": "Final",
+        "term_uid": "DictionaryTerm_000015",
+        "user_initials": "unknown-user",
+        "version": "1.0"
+      }
+    ],
+    "library": {
+      "is_editable": true,
+      "name": "Sponsor"
+    },
+    "name": "To compare the effect of [Compound] relative to [Comparator] on [ActivityInstance]",
+    "name_plain": "To compare the effect of [Compound] relative to [Comparator] on [ActivityInstance]",
+    "parameters": [
+      {
+        "name": "Compound",
+        "values": null
+      },
+      {
+        "name": "Comparator",
+        "values": null
+      },
+      {
+        "name": "ActivityInstance",
+        "values": null
+      }
+    ],
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-05-23T12:12:03.038862",
+    "status": "Final",
+    "study_count": 1,
+    "uid": "ObjectiveTemplate_000004",
+    "user_initials": "unknown-user",
+    "version": "1.0"
+  },
+  {
+    "categories": null,
+    "change_description": "Approved version",
+    "confirmatory_testing": null,
+    "default_parameter_values": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": []
+        }
+      ]
+    },
+    "editable_instance": false,
+    "end_date": null,
+    "indications": null,
+    "library": {
+      "is_editable": true,
+      "name": "User Defined"
+    },
+    "name": "test user defined [ActivityInstance]",
+    "name_plain": "test user defined [ActivityInstance]",
+    "parameters": [
+      {
+        "name": "ActivityInstance",
+        "values": null
+      }
+    ],
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-05-23T12:12:02.455852",
+    "status": "Final",
+    "study_count": 0,
+    "uid": "ObjectiveTemplate_000003",
+    "user_initials": "unknown-user",
+    "version": "1.0"
+  },
+  {
+    "categories": null,
+    "change_description": "Approved version",
+    "confirmatory_testing": null,
+    "default_parameter_values": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": []
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "values": []
+        }
+      ]
+    },
+    "editable_instance": false,
+    "end_date": null,
+    "indications": null,
+    "library": {
+      "is_editable": true,
+      "name": "Sponsor"
+    },
+    "name": "test [ActivityInstance] and [DiseaseDisorder]",
+    "name_plain": "test [ActivityInstance] and [DiseaseDisorder]",
+    "parameters": [
+      {
+        "name": "ActivityInstance",
+        "values": null
+      },
+      {
+        "name": "DiseaseDisorder",
+        "values": null
+      }
+    ],
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-05-23T12:12:02.252115",
+    "status": "Final",
+    "study_count": 0,
+    "uid": "ObjectiveTemplate_000002",
+    "user_initials": "unknown-user",
+    "version": "1.0"
+  },
+  {
+    "categories": null,
+    "change_description": "Approved version",
+    "confirmatory_testing": null,
+    "default_parameter_values": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": []
+        }
+      ]
+    },
+    "editable_instance": false,
+    "end_date": null,
+    "indications": null,
+    "library": {
+      "is_editable": true,
+      "name": "Sponsor"
+    },
+    "name": "test [ActivityInstance]",
+    "name_plain": "test [ActivityInstance]",
+    "parameters": [
+      {
+        "name": "ActivityInstance",
+        "values": null
+      }
+    ],
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-05-23T12:12:01.873848",
+    "status": "Final",
+    "study_count": 0,
+    "uid": "ObjectiveTemplate_000001",
+    "user_initials": "unknown-user",
+    "version": "1.0"
+  }, 
+  {
+    "categories": null,
+    "change_description": "Work in Progress",
+    "confirmatory_testing": false,
+    "default_parameter_values": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": []
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "values": []
+        },
+        {
+          "conjunction": "",
+          "position": 3,
+          "values": []
+        }
+      ]
+    },
+    "editable_instance": false,
+    "end_date": null,
+    "indications": [
+      {
+        "abbreviation": "HF",
+        "change_description": "Approved version",
+        "definition": "Heart failure (disorder)",
+        "dictionary_id": "84114007",
+        "end_date": null,
+        "library_name": "SNOMED",
+        "name": "Heart failure",
+        "name_sentence_case": "heart failure",
+        "possible_actions": [
+          "inactivate",
+          "newVersion"
+        ],
+        "start_date": "2022-10-18T12:43:45.780737",
+        "status": "Final",
+        "term_uid": "DictionaryTerm_000015",
+        "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+        "version": "1.0"
+      }
+    ],
+    "library": {
+      "is_editable": true,
+      "name": "Sponsor"
+    },
+    "name": "<p>To compare the effect of [Compound] relative to [Comparator] on [ActivityInstance] when something</p>",
+    "name_plain": "To compare the effect of [Compound] relative to [Comparator] on [ActivityInstance] when something",
+    "parameters": [
+      {
+        "name": "Compound",
+        "values": null
+      },
+      {
+        "name": "Comparator",
+        "values": null
+      },
+      {
+        "name": "ActivityInstance",
+        "values": null
+      }
+    ],
+    "possible_actions": [
+      "approve",
+      "edit"
+    ],
+    "start_date": "2022-10-20T08:27:47.760273",
+    "status": "Draft",
+    "study_count": 0,
+    "uid": "ObjectiveTemplate_000004",
+    "user_initials": "AJLD",
+    "version": "1.2"
+  }
+]
+

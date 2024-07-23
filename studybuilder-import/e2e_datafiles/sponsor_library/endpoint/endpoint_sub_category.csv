@@ -1,0 +1,9 @@
+CT_CD_LIST_SUBMVAL,CT_SUBMVAL,CT_NAME,NAME_SENTENSE_CASE,ORDER,DEFINITION
+ENDPSCAT,Continuous (normal),Continuous (normal),continuous (normal),1,Continuous (normal) endpoint
+ENDPSCAT,Continuous (log-normal),Continuous (log-normal),continuous (log-normal),2,Continuous (log-normal) endpoint
+ENDPSCAT,Continuous (relative change),Continuous (relative change),continuous (relative change),3,Continuous (relative change) endpoint
+ENDPSCAT,Binary (responder),Binary (responder),binary (responder),4,Binary (responder) endpoint
+ENDPSCAT,Count,Count,count,5,Count endpoint
+ENDPSCAT,Ordinal,Ordinal,ordinal,6,Ordinal endpoint
+ENDPSCAT,Time-to-event,Time-to-event,time-to-event,7,Time-to-event endpoint
+ENDPSCAT,PROs/COAs/questionnaires,PROs/COAs/questionnaires,PROs/COAs/questionnaires,8,PROs/COAs/questionnaires endpoint

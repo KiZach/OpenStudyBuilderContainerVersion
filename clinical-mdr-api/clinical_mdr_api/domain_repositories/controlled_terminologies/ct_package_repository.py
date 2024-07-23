@@ -1,0 +1,201 @@
+from datetime import date, datetime
+from typing import Collection
+
+from neomodel import db
+from neomodel.exceptions import UniqueProperty
+
+from clinical_mdr_api import models
+from clinical_mdr_api.domain_repositories.models.controlled_terminology import (
+    CTCatalogue,
+    CTPackage,
+)
+from clinical_mdr_api.domains.controlled_terminologies.ct_package import CTPackageAR
+from clinical_mdr_api.exceptions import BusinessLogicException, NotFoundException
+
+
+class CTPackageRepository:
+    def package_exists(self, package_name: str) -> bool:
+        package_node = CTPackage.nodes.get_or_none(name=package_name)
+        return bool(package_node)
+
+    def find_all(
+        self,
+        catalogue_name: str | None,
+        standards_only: bool = True,
+        sponsor_only: bool = False,
+    ) -> Collection[CTPackageAR]:
+        where_clause_elements = []
+        if sponsor_only:
+            standards_only = False
+        if catalogue_name is not None:
+            where_clause_elements.append("catalogue.name=$catalogue_name")
+        if standards_only:
+            where_clause_elements.append("NOT EXISTS((package)-[:EXTENDS_PACKAGE]->())")
+        where_clause = (
+            f"WHERE {' AND '.join(where_clause_elements)}"
+            if len(where_clause_elements) > 0
+            else ""
+        )
+
+        query = f"""
+            MATCH (catalogue:CTCatalogue)-[:CONTAINS_PACKAGE]->(package:CTPackage)
+            {where_clause}
+            {"OPTIONAL" if not sponsor_only else ""} MATCH (package)-[:EXTENDS_PACKAGE]->(extends:CTPackage)
+            RETURN package, extends.uid AS extends_package
+            ORDER BY catalogue.name, package.effective_date
+            """
+
+        result, _ = db.cypher_query(
+            query, {"catalogue_name": catalogue_name}, resolve_objects=True
+        )
+
+        if len(result) == 0:
+            return []
+        # projecting results to CTPackageAR instances
+        ct_packages: list[CTPackageAR] = [
+            CTPackageAR.from_repository_values(
+                uid=ct_package[0].uid,
+                catalogue_name=ct_package[0].contains_package.single().name,
+                name=ct_package[0].name,
+                label=ct_package[0].label,
+                description=ct_package[0].description,
+                href=ct_package[0].href,
+                registration_status=ct_package[0].registration_status,
+                source=ct_package[0].source,
+                extends_package=ct_package[1] if len(ct_package) > 1 else None,
+                import_date=ct_package[0].import_date,
+                effective_date=ct_package[0].effective_date,
+                user_initials=ct_package[0].user_initials,
+            )
+            for ct_package in result
+        ]
+        return ct_packages
+
+    def find_by_uid(
+        self, uid: str | None, sponsor_only: bool = False
+    ) -> models.CTPackage:
+        query = f"""
+            MATCH (catalogue:CTCatalogue)-[:CONTAINS_PACKAGE]->(package:CTPackage)
+            WHERE package.uid = $uid
+            {"OPTIONAL" if not sponsor_only else ""} MATCH (package)-[:EXTENDS_PACKAGE]->(extends:CTPackage)
+            RETURN package, extends.uid AS extends_package
+            ORDER BY catalogue.name, package.effective_date
+            """
+
+        ct_package = db.cypher_query(query, {"uid": uid}, resolve_objects=True)[0][0]
+
+        if len(ct_package) == 0:
+            return []
+        # projecting results to CTPackageAR instances
+        ct_package_ar: models.CTPackage = models.CTPackage.from_ct_package_ar(
+            CTPackageAR.from_repository_values(
+                uid=ct_package[0].uid,
+                catalogue_name=ct_package[0].contains_package.single().name,
+                name=ct_package[0].name,
+                label=ct_package[0].label,
+                description=ct_package[0].description,
+                href=ct_package[0].href,
+                registration_status=ct_package[0].registration_status,
+                source=ct_package[0].source,
+                extends_package=ct_package[1] if len(ct_package) > 1 else None,
+                import_date=ct_package[0].import_date,
+                effective_date=ct_package[0].effective_date,
+                user_initials=ct_package[0].user_initials,
+            )
+        )
+        return ct_package_ar
+
+    def count_all(self) -> int:
+        """
+        Returns the count of CT Packages in the database
+
+        :return: int - count of CT Packages
+        """
+        return len(CTPackage.nodes)
+
+    def find_by_catalogue_and_date(
+        self, catalogue_name: str, package_date: date
+    ) -> CTPackageAR | None:
+        query = """
+            MATCH (:CTCatalogue {name: $catalogue_name})-[:CONTAINS_PACKAGE]->
+            (package:CTPackage {effective_date:date($date)})
+            RETURN package
+            """
+        result, _ = db.cypher_query(
+            query,
+            {"catalogue_name": catalogue_name, "date": package_date},
+            resolve_objects=True,
+        )
+        if len(result) > 0 and len(result[0]) > 0:
+            ct_package = result[0][0]
+            return CTPackageAR.from_repository_values(
+                uid=ct_package.uid,
+                catalogue_name=ct_package.contains_package.single().name,
+                name=ct_package.name,
+                label=ct_package.label,
+                description=ct_package.description,
+                href=ct_package.href,
+                registration_status=ct_package.registration_status,
+                source=ct_package.source,
+                import_date=ct_package.import_date,
+                effective_date=ct_package.effective_date,
+                user_initials=ct_package.user_initials,
+                extends_package=None,
+            )
+        return None
+
+    def create_sponsor_package(
+        self, extends_package: str, effective_date: date, user_initials: str
+    ) -> CTPackageAR:
+        # First, get parent_package node
+        extends_package_node: CTPackage = CTPackage.nodes.get_or_none(
+            uid=extends_package
+        )
+
+        # Throw a NotFoundError if it does not exist
+        if not extends_package_node:
+            raise NotFoundException(f"Parent package {extends_package} not found")
+
+        catalogue_node: CTCatalogue = extends_package_node.contains_package.single()
+
+        # Create the new package
+        sponsor_package_uid = (
+            f"Sponsor {catalogue_node.name} {effective_date.strftime('%Y-%m-%d')}"
+        )
+        sponsor_package = CTPackage(
+            uid=sponsor_package_uid,
+            name=sponsor_package_uid,
+            description=f"Sponsor package for {extends_package}, as of {effective_date.strftime('%Y-%m-%d')}",
+            import_date=datetime.now(),
+            effective_date=effective_date,
+            user_initials=user_initials,
+        )
+        try:
+            sponsor_package.save()
+        except UniqueProperty as exc:
+            raise BusinessLogicException(
+                "A sponsor CTPackage already exists for this date"
+            ) from exc
+        # Connect the new package to its parent and the catalogue node
+        sponsor_package.extends_package.connect(extends_package_node)
+        catalogue_node.contains_package.connect(sponsor_package)
+
+        return CTPackageAR.from_repository_values(
+            uid=sponsor_package.uid,
+            catalogue_name=catalogue_node.name,
+            name=sponsor_package.name,
+            description=sponsor_package.description,
+            label=sponsor_package.label,
+            href=sponsor_package.href,
+            registration_status=sponsor_package.registration_status,
+            source=sponsor_package.source,
+            import_date=sponsor_package.import_date,
+            effective_date=sponsor_package.effective_date,
+            user_initials=user_initials,
+            extends_package=extends_package,
+        )
+
+    def close(self) -> None:
+        # Our repository guidelines state that repos should have a close method
+        # But nothing needs to be done in this one
+        pass

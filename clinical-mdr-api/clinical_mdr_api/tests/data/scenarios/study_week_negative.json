@@ -1,0 +1,35 @@
+[
+   {
+      "name":"Test POST study week",
+      "request":{
+         "headers":{
+
+         },
+         "method":"POST",
+         "request":{
+            "value": 1.23,
+            "definition":"study_week_definition1",
+            "abbreviation": "abbv",
+            "library_name":"Sponsor",
+            "template_parameter": true
+         },
+         "url":"/concepts/study-weeks"
+      },
+      "response":{
+         "code":201,
+         "headers":{
+
+         },
+         "result":{
+            "uid":"StudyWeek_000001",
+            "name":"Week 1.23",
+            "value": 1.23,
+            "name_sentence_case":"week 1.23",
+            "definition":"study_week_definition1",
+            "abbreviation": "abbv",
+            "template_parameter": true,
+            "library_name":"Sponsor"
+         }
+      }
+   }
+]

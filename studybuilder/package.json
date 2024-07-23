@@ -1,0 +1,50 @@
+{
+  "name": "studybuilder",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:dev": "vite build --mode dev",
+    "build:staging": "vite build --mode staging",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js --fix --ignore-path .gitignore",
+    "lint:staged": "eslint --fix",
+    "format": "prettier --write .",
+    "format:staged": "prettier --write",
+    "update-config": "node scripts/update-config.js public/config.json public/config.json",
+    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'"
+  },
+  "dependencies": {
+    "@microsoft/applicationinsights-clickanalytics-js": "^3.2.0",
+    "@microsoft/applicationinsights-web": "^3.2.0",
+    "@vueup/vue-quill": "^1.2.0",
+    "axios": "^1.6.2",
+    "buffer": "^6.0.3",
+    "chart.js": "^4.4.0",
+    "exceljs": "^4.4.0",
+    "luxon": "^3.4.4",
+    "marked": "^10.0.0",
+    "oidc-client-ts": "^3.0.0-beta.0",
+    "pinia": "^2.1.7",
+    "vue": "^3.4.19",
+    "vue-chartjs": "^5.2.0",
+    "vue-i18n": "9",
+    "vue-router": "^4.2.5",
+    "vue3-editor-js": "^0.1.4",
+    "vuetify": "^3.5.1",
+    "yaml": "^2.3.4"
+  },
+  "devDependencies": {
+    "@mdi/font": "^7.3.67",
+    "@vitejs/plugin-vue": "^5.0.3",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-vue": "^9.20.1",
+    "license-checker": "^25.0.1",
+    "prettier": "^3.2.5",
+    "sass": "^1.69.5",
+    "vite": "^5.0.2",
+    "vite-plugin-vuetify": "^2.0.1"
+  }
+}

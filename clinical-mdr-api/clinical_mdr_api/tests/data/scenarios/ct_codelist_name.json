@@ -1,0 +1,129 @@
+[
+    {
+        "name": "Test PATCH DRAFT codelist that is TP",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "name": "codelist new name",
+                "template_parameter": true,
+                "change_description": "changing codelist name"
+            },
+            "url": "/ct/codelists/ct_codelist_root3/names"
+        },
+        "response": {
+            "code": 200,
+            "headers": {},
+            "result": {
+                "catalogue_name": "SDTM CT",
+                "codelist_uid": "ct_codelist_root3",
+                "name": "codelist new name",
+                "template_parameter": true,
+                "library_name": "Sponsor",
+                "start_date": "2021-03-18T11:54:20.898Z",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.2",
+                "change_description": "changing codelist name",
+                "user_initials": "TODO user initials",
+                "possible_actions": [
+                    "approve",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test PATCH DRAFT codelist that is not TP",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "name": "codelist new name",
+                "template_parameter": false,
+                "change_description": "changing codelist name"
+            },
+            "url": "/ct/codelists/ct_codelist_root3/names"
+        },
+        "response": {
+            "code": 200,
+            "headers": {},
+            "result": {
+                "catalogue_name": "SDTM CT",
+                "codelist_uid": "ct_codelist_root3",
+                "name": "codelist new name",
+                "template_parameter": false,
+                "library_name": "Sponsor",
+                "start_date": "2021-03-18T11:54:20.898Z",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.3",
+                "change_description": "changing codelist name",
+                "user_initials": "TODO user initials",
+                "possible_actions": [
+                    "approve",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test POST /versions codelist",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/ct/codelists/ct_codelist_root1/names/versions"
+        },
+        "response": {
+            "code": 201,
+            "headers": {},
+            "result": {
+                "catalogue_name": "SDTM CT",
+                "codelist_uid": "ct_codelist_root1",
+                "name": "tp_codelist_name_value",
+                "template_parameter": true,
+                "library_name": "Sponsor",
+                "start_date": "2021-03-18T11:54:20.898Z",
+                "end_date": null,
+                "status": "Draft",
+                "version": "1.1",
+                "change_description": "New draft created",
+                "user_initials": "TODO user initials",
+                "possible_actions": [
+                    "approve",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test POST /versions codelist",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/ct/codelists/ct_codelist_root3/names/approvals"
+        },
+        "response": {
+            "code": 201,
+            "headers": {},
+            "result": {
+                "catalogue_name": "SDTM CT",
+                "codelist_uid": "ct_codelist_root3",
+                "name": "codelist new name",
+                "template_parameter": false,
+                "library_name": "Sponsor",
+                "start_date": "2021-03-18T11:54:20.898Z",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Approved version",
+                "user_initials": "TODO user initials",
+                "possible_actions": [
+                    "new_version"
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,3 @@
+"CT_CD_LIST_SUBMVAL","CT_SUBMVAL","CT_NAME","ORDER","NAME_SENTENSE_CASE","DEFINITION"
+"GEN_ELEM_TYPE","TREATMENT ELEMENT TYPE","Treatment","1","treatment","Study Element with protocol specified intervention or treatment"
+"GEN_ELEM_TYPE","NO TREATMENT ELEMENT TYPE","No Treatment","2","no treatment","Study Element without protocol specified intervention or treatment"

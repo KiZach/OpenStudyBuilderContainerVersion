@@ -1,0 +1,3 @@
+uid_form,oid_form,name_activitygroup,order_number,mandatory,collection_exception_condition_oid
+F.DM,F.DM,Demography,1,TRUE,
+F.VS,F.VS,Examinations,2,TRUE,

@@ -1,0 +1,6 @@
+"CT_CD_LIST_SUBMVAL","GEN_ELEM_TYPE",CT_SUBMVAL,"CT_NAME","NAME_SENTENSE_CASE","ORDER","DEFINITION"
+"GEN_ELEM_SUB_TYPE","NO TREATMENT ELEMENT TYPE",SCREENING ELEMENT SUB TYPE,"Screening","screening","1","Screening element sub type"
+"GEN_ELEM_SUB_TYPE","NO TREATMENT ELEMENT TYPE",RUN-IN ELEMENT SUB TYPE,"Run-in","run-in","2","Run-in element sub type"
+"GEN_ELEM_SUB_TYPE","TREATMENT ELEMENT TYPE",TREATMENT ELEMENT SUB TYPE,"Treatment","treatment","3","Treatment element sub type"
+"GEN_ELEM_SUB_TYPE","NO TREATMENT ELEMENT TYPE",WASHOUT ELEMENT SUB TYPE,"Wash-out","wash-out","4","Wash-out element sub type"
+"GEN_ELEM_SUB_TYPE","NO TREATMENT ELEMENT TYPE",FOLLOW-UP ELEMENT SUB TYPE,"Follow-up","follow-up","5","Follow-up element sub type"

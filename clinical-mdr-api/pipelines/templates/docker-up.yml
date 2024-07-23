@@ -1,0 +1,53 @@
+# Pipeline parameters
+parameters:
+
+  - name: SERVICE_CONN
+    type: string
+  - name: OAUTH_ENABLED
+    type: string
+    default: False
+  - name: OAUTH_API_APP_ID
+    type: string
+    default:
+  - name: OAUTH_API_APP_SECRET
+    type: string
+    default:
+  - name: OAUTH_METADATA_URL
+    type: string
+    default:
+  - name: MS_GRAPH_GROUPS_QUERY
+    type: string
+    default:
+  - name: MS_GRAPH_INTEGRATION_ENABLED
+    type: string
+    default:
+  - name: start_api
+    type: boolean
+    default: true
+
+steps:
+
+  - template: docker-config.yml
+    parameters:
+      SERVICE_CONN: ${{parameters.SERVICE_CONN}}
+
+  - script: >-
+      docker compose up --detach --renew-anon-volumes --wait database
+    displayName: "Start Database service"
+
+  - script: >-
+      docker compose up --detach --wait api
+    condition: ${{parameters.start_api}}
+    displayName: "Start API service"
+    env:
+      OAUTH_ENABLED: "${{parameters.OAUTH_ENABLED}}"
+      OAUTH_API_APP_ID: "${{parameters.OAUTH_API_APP_ID}}"
+      OAUTH_API_APP_SECRET: "${{parameters.OAUTH_API_APP_SECRET}}"
+      OAUTH_METADATA_URL: "${{parameters.OAUTH_METADATA_URL}}"
+      MS_GRAPH_GROUPS_QUERY: "${{parameters.MS_GRAPH_GROUPS_QUERY}}"
+      MS_GRAPH_INTEGRATION_ENABLED: "${{parameters.MS_GRAPH_INTEGRATION_ENABLED}}"
+
+  - script: >-
+      docker compose logs --no-color
+    condition: always()
+    displayName: "Docker container logs"

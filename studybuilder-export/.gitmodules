@@ -1,0 +1,3 @@
+[submodule "studybuilder-import"]
+	path = studybuilder-import
+	url = ../studybuilder-import

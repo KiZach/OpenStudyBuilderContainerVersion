@@ -1,0 +1,18 @@
+services:
+
+  export:
+    build:
+      args:
+        PYTHON_IMAGE: ${PYTHON_IMAGE:-python:3.11.3-slim}
+        UID: "${UID:-1000}"
+      context: ./
+      dockerfile: Dockerfile
+    command: pipenv run export
+    environment:
+      API_BASE_URL:  http://localhost:8000
+    network_mode: host
+    volumes:
+      - type: bind
+        source: ./datafiles
+        target: /app/datafiles
+        read_only: true

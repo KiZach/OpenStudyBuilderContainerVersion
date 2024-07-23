@@ -1,0 +1,402 @@
+[
+  {
+    "name": "Test adding selection",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "Arm_Name_1",
+        "short_name": "Arm_Short_Name_1",
+        "code": "Arm_code_1",
+        "description": "desc...",
+        "arm_colour": "arm_colour...",
+        "randomization_group": "Randomization_Group_1",
+        "number_of_subjects": 1,
+        "arm_type_uid": "term_root_final"
+      },
+      "url": "/studies/study_root/study-arms"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "study_uid": "study_root",
+        "arm_uid": "StudyArm_000001",
+        "order": 1,
+        "name": "Arm_Name_1",
+        "short_name": "Arm_Short_Name_1",
+        "code": "Arm_code_1",
+        "start_date": "2020-06-26T00:00:00",
+        "end_date": null,
+        "status": null,
+        "change_type": null,
+        "accepted_version": null,
+        "arm_type": {
+          "term_uid": "term_root_final",
+          "catalogue_name": "SDTM CT",
+          "codelists": [
+            {
+              "codelist_uid": "ct_codelist_root1",
+              "order": null
+            }
+          ],
+          "sponsor_preferred_name": "term_value_name1",
+          "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+          "library_name": "Sponsor",
+          "start_date": "2020-06-26T00:00:00",
+          "end_date": null,
+          "status": "Final",
+          "version": "1.0",
+          "change_description": "Approved version",
+          "user_initials": "TODO initials",
+          "possible_actions": [
+            "inactivate",
+            "new_version"
+          ]
+        },
+        "description": "desc...",
+        "arm_colour": "arm_colour...",
+        "number_of_subjects": 1,
+        "randomization_group": "Randomization_Group_1",
+        "user_initials": "TODO initials"
+      },
+      "save": {
+        "arm_uid": "arm_uid"
+      }
+    }
+  },
+  {
+    "name": "Test adding 2nd selection",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "Arm_Name_2",
+        "short_name": "Arm_Short_Name_2",
+        "code": "Arm_code_2",
+        "description": "desc...",
+        "arm_colour": "arm_colour2...",
+        "randomization_group": "Randomization_Group_2",
+        "number_of_subjects": 1,
+        "arm_type_uid": "term_root_final"
+      },
+      "url": "/studies/study_root/study-arms"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "study_uid": "study_root",
+        "arm_uid": "StudyArm_000003",
+        "order": 2,
+        "name": "Arm_Name_2",
+        "code": "Arm_code_2",
+        "short_name": "Arm_Short_Name_2",
+        "start_date": "2020-06-26T00:00:00",
+        "end_date": null,
+        "status": null,
+        "change_type": null,
+        "accepted_version": null,
+        "arm_type": {
+          "term_uid": "term_root_final",
+          "catalogue_name": "SDTM CT",
+          "codelists": [
+            {
+              "codelist_uid": "ct_codelist_root1",
+              "order": null
+            }
+          ],
+          "sponsor_preferred_name": "term_value_name1",
+          "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+          "library_name": "Sponsor",
+          "start_date": "2020-06-26T00:00:00",
+          "end_date": null,
+          "status": "Final",
+          "version": "1.0",
+          "change_description": "Approved version",
+          "user_initials": "TODO initials",
+          "possible_actions": [
+            "inactivate",
+            "new_version"
+          ]
+        },
+        "description": "desc...",
+        "arm_colour": "arm_colour2...",
+        "number_of_subjects": 1,
+        "randomization_group": "Randomization_Group_2",
+        "user_initials": "TODO initials"
+      },
+      "save": {
+        "arm_uid": "arm_uid"
+      }
+    }
+  },
+  {
+    "name": "Test adding selection with non unique name, short name, randomization",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "Arm_Name_1"
+      },
+      "url": "/studies/study_root/study-arms"
+    },
+    "response": {
+      "code": 400,
+      "result": {
+        "message": "Value \"Arm_Name_1\" in field Arm name is not unique for the study",
+        "method": "POST",
+        "path": "http://testserver/studies/study_root/study-arms",
+        "time": "2020-11-10T01:51:17.884429"
+      }
+    }
+  },
+  {
+    "name": "Test patch specific - set name",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "name": "New_Arm_Name_1",
+        "short_name": "Arm_Short_Name_1",
+        "arm_type_uid": "term_root_final_non_edit"
+      },
+      "url": "/studies/study_root/study-arms/StudyArm_000001"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": {
+        "study_uid": "study_root",
+        "arm_uid": "StudyArm_000001",
+        "order": 1,
+        "name": "New_Arm_Name_1",
+        "short_name": "Arm_Short_Name_1",
+        "code": "Arm_code_1",
+        "start_date": "2020-06-26T00:00:00",
+        "end_date": null,
+        "status": null,
+        "change_type": null,
+        "accepted_version": null,
+        "arm_type": {
+          "term_uid": "term_root_final_non_edit",
+          "catalogue_name": "SDTM CT",
+          "codelists": [
+            {
+              "codelist_uid": "non_editable_cr",
+              "order": 3
+            }
+          ],
+          "sponsor_preferred_name": "term_value_name3",
+          "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+          "library_name": "CDISC",
+          "start_date": "2020-06-26T00:00:00",
+          "end_date": null,
+          "status": "Final",
+          "version": "1.0",
+          "change_description": "Approved version",
+          "user_initials": "TODO initials",
+          "possible_actions": [
+            "inactivate",
+            "new_version"
+          ]
+        },
+        "arm_connected_branch_arms": null,
+        "description": "desc...",
+        "arm_colour": "arm_colour...",
+        "number_of_subjects": 1,
+        "randomization_group": "Randomization_Group_1",
+        "user_initials": "TODO initials"
+      }
+    }
+  },
+  {
+    "name": "Test all history of specific selection",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/studies/study_root/study-arms/StudyArm_000001/audit-trail/"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": [
+        {
+          "study_uid": "study_root",
+          "order": 1,
+          "arm_uid": "StudyArm_000001",
+          "name": "New_Arm_Name_1",
+          "short_name": "Arm_Short_Name_1",
+          "code": "Arm_code_1",
+          "description": "desc...",
+          "arm_colour": "arm_colour...",
+          "randomization_group": "Randomization_Group_1",
+          "number_of_subjects": 1,
+          "arm_type": {
+            "term_uid": "term_root_final_non_edit",
+            "catalogue_name": "SDTM CT",
+            "codelists": [
+              {
+                "codelist_uid": "non_editable_cr",
+                "order": 3
+              }
+            ],
+            "sponsor_preferred_name": "term_value_name3",
+            "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+            "library_name": "CDISC",
+            "start_date": "2022-06-27T15:48:26.528000",
+            "end_date": null,
+            "status": "Final",
+            "version": "1.0",
+            "change_description": "Approved version",
+            "user_initials": "TODO initials",
+            "possible_actions": [
+              "inactivate",
+              "new_version"
+            ]
+          },
+          "start_date": "2022-06-27T17:49:07.333064",
+          "user_initials": "unknown-user",
+          "end_date": null,
+          "status": null,
+          "change_type": "Edit",
+          "accepted_version": null
+        },
+        {
+          "study_uid": "study_root",
+          "order": 1,
+          "arm_uid": "StudyArm_000001",
+          "name": "Arm_Name_1",
+          "short_name": "Arm_Short_Name_1",
+          "code": "Arm_code_1",
+          "description": "desc...",
+          "arm_colour": "arm_colour...",
+          "randomization_group": "Randomization_Group_1",
+          "number_of_subjects": 1,
+          "arm_type": {
+            "term_uid": "term_root_final",
+            "catalogue_name": "SDTM CT",
+            "codelists": [
+              {
+                "codelist_uid": "ct_codelist_root_endpoint",
+                "order": 1
+              }
+            ],
+            "sponsor_preferred_name": "term_value_name1",
+            "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+            "library_name": "Sponsor",
+            "start_date": "2022-06-27T15:48:26.528000",
+            "end_date": null,
+            "status": "Final",
+            "version": "1.0",
+            "change_description": "Approved version",
+            "user_initials": "TODO initials",
+            "possible_actions": [
+              "inactivate",
+              "new_version"
+            ]
+          },
+          "start_date": "2022-06-27T17:48:53.758950",
+          "user_initials": "unknown-user",
+          "end_date": "2022-06-27T17:49:07.333064",
+          "status": null,
+          "change_type": "Create",
+          "accepted_version": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "Test patch specific - patch a randomization group name that is in history (not latest)",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "name": "Arm_Name_1"
+      },
+      "url": "/studies/study_root/study-arms/StudyArm_000003"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": {
+        "study_uid": "study_root",
+        "order": 2,
+        "arm_uid": "StudyArm_000003",
+        "name": "Arm_Name_1",
+        "short_name": "Arm_Short_Name_2",
+        "code": "Arm_code_2",
+        "description": "desc...",
+        "arm_colour": "arm_colour2...",
+        "randomization_group": "Randomization_Group_2",
+        "number_of_subjects": 1,
+        "arm_type": {
+          "term_uid": "term_root_final",
+          "catalogue_name": "SDTM CT",
+          "codelists": [
+            {
+              "codelist_uid": "ct_codelist_root_endpoint",
+              "order": 1
+            }
+          ],
+          "sponsor_preferred_name": "term_value_name1",
+          "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+          "library_name": "Sponsor",
+          "start_date": "2022-06-27T16:25:53.590000",
+          "end_date": null,
+          "status": "Final",
+          "version": "1.0",
+          "change_description": "Approved version",
+          "user_initials": "TODO initials",
+          "possible_actions": [
+            "inactivate",
+            "new_version"
+          ]
+        },
+        "start_date": "2022-06-27T18:26:35.768985",
+        "user_initials": "unknown-user",
+        "end_date": null,
+        "status": null,
+        "change_type": null,
+        "accepted_version": null,
+        "arm_connected_branch_arms": null
+      }
+    }
+  },
+  {
+    "name": "Test patch specific - patch some randomization group that is already used on another branch",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "randomization_group": "Randomization_Group_2"
+      },
+      "url": "/studies/study_root/study-arms/StudyArm_000001"
+    },
+    "response": {
+      "code": 400,
+      "result": {
+        "message": "Value \"Randomization_Group_2\" in field Arm code is not unique for the study",
+        "method": "PATCH",
+        "path": "http://testserver/studies/study_root/study-arms/StudyArm_000001",
+        "time": "2020-11-10T01:51:17.884429"
+      }
+    }
+  }
+]

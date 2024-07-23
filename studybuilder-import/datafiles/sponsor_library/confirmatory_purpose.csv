@@ -1,0 +1,3 @@
+CT_CD_LIST_SUBMVAL,CT_NAME,NAME_SENTENSE_CASE,CT_SUBMVAL,DEFINITION,ORDER,CT_CD,NCI_PREFERRED_NAME
+CNFPURP,Demonstrate,demonstrate,DEMONSTRATE PURPOSE,Use 'demonstrate' term for e.g. confirmatory study objectives,1,,Demonstrate
+CNFPURP,Confirm,confirm,CONFIRM PURPOSE,Use 'confirm' term for e.g. confirmatory study objectives,2,,Confirm

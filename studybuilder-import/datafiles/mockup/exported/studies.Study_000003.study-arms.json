@@ -1,0 +1,78 @@
+[
+  {
+    "accepted_version": false,
+    "arm_colour": "#F44336FF",
+    "arm_connected_branch_arms": null,
+    "arm_type": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000023",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": 1,
+      "possible_actions": [
+        "inactivate",
+        "new_version"
+      ],
+      "sponsor_preferred_name": "Investigational Arm",
+      "sponsor_preferred_name_sentence_case": "investigational arm",
+      "start_date": "2022-11-07T11:46:23.933399+00:00",
+      "status": "Final",
+      "term_uid": "CTTerm_000084",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "arm_uid": "StudyArm_000005",
+    "change_type": null,
+    "code": "AB",
+    "description": null,
+    "end_date": null,
+    "name": "Arm 1 - A/B",
+    "number_of_subjects": null,
+    "order": 1,
+    "randomization_group": "AB",
+    "short_name": "A/B",
+    "start_date": "2022-12-12T13:36:30.835468+00:00",
+    "status": null,
+    "study_uid": "Study_000002",
+    "user_initials": "unknown-user"
+  },
+  {
+    "accepted_version": false,
+    "arm_colour": "#9C27B0FF",
+    "arm_connected_branch_arms": null,
+    "arm_type": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000023",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": 1,
+      "possible_actions": [
+        "inactivate",
+        "new_version"
+      ],
+      "sponsor_preferred_name": "Investigational Arm",
+      "sponsor_preferred_name_sentence_case": "investigational arm",
+      "start_date": "2022-11-07T11:46:23.933399+00:00",
+      "status": "Final",
+      "term_uid": "CTTerm_000084",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "arm_uid": "StudyArm_000007",
+    "change_type": null,
+    "code": "BA",
+    "description": null,
+    "end_date": null,
+    "name": "Arm 2 - B/A",
+    "number_of_subjects": null,
+    "order": 2,
+    "randomization_group": "BA",
+    "short_name": "B/A",
+    "start_date": "2022-12-12T13:37:05.432868+00:00",
+    "status": null,
+    "study_uid": "Study_000002",
+    "user_initials": "unknown-user"
+  }
+]

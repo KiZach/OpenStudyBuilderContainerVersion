@@ -1,0 +1,4 @@
+CT_CD_LIST_SUBMVAL,CT_NAME,NAME_SENTENSE_CASE,CT_SUBMVAL,DEFINITION,ORDER,CT_CD,NCI_PREFERRED_NAME
+NCNFPURP,compare,compare,COMPARE PURPOSE,Use 'compare' term for e.g. non-confirmatory study objectives,1,,Compare purpose
+NCNFPURP,investigate,investigate,INVESTIGATE PURPOSE,Use 'investigate' term for e.g. non-confirmatory study objectives,2,,Investigate purpose
+NCNFPURP,explore,explore,EXPLORE PURPOSE,Use 'explore' term for e.g. non-confirmatory study objectives,3,,Explore purpose

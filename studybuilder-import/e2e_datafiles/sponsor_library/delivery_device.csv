@@ -1,0 +1,4 @@
+CT_CD_LIST_SUBMVAL,CT_NAME,NAME_SENTENSE_CASE,CT_SUBMVAL,DEFINITION,ORDER,CT_CD,NCI_PREFERRED_NAME
+DEVICE,Insulin pump,insulin pump,DEVICE INSULIN PUMP,Insulin pump,1,,Insulin pump
+DEVICE,Pre-filled pen,pre-filled pen,DEVICE PREFILLED PEN,Pre-filled pen,2,,Pre-filled pen
+DEVICE,Syringe,syringe,DEVICE SYRINGE,Syringe,3,,Syringe

@@ -1,0 +1,133 @@
+[
+   {
+      "name": "Test POST brand",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name": "Brand A"
+         },
+         "url": "/brands"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "Brand_000001",
+            "name": "Brand A"
+         }
+      }
+   },
+   {
+      "name": "Test POST brand",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name": "Brand B"
+         },
+         "url": "/brands"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "Brand_000002",
+            "name": "Brand B"
+         }
+      }
+   },
+   {
+      "name": "Test POST brand with existing name",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name": "Brand A"
+         },
+         "url": "/brands"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "Brand_000001",
+            "name": "Brand A"
+         }
+      }
+   },
+   {
+      "name": "Test GET single brand",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/brands/Brand_000001"
+      },
+      "response": {
+         "code": 200,
+         "headers": {},
+         "result": {
+            "uid": "Brand_000001",
+            "name": "Brand A"
+         }
+      }
+   },
+   {
+      "name": "Test GET all brands",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/brands"
+      },
+      "response": {
+         "code": 200,
+         "headers": {},
+         "result": [
+            {
+               "uid": "Brand_000001",
+               "name": "Brand A"
+            },
+            {
+               "uid": "Brand_000002",
+               "name": "Brand B"
+            }
+         ]
+      }
+   },
+   {
+      "name": "Test DELETE brand",
+      "request": {
+         "headers": {},
+         "method": "DELETE",
+         "request": {},
+         "url": "/brands/Brand_000002"
+      },
+      "response": {
+         "code": 204,
+         "headers": {},
+         "result": null
+      }
+   },
+   {
+      "name": "Test GET just-deleted brand",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/brands/Brand_000002"
+      },
+      "response": {
+         "code": 404,
+         "headers": {},
+         "result": {
+            "message": "Brand with the specified uid 'Brand_000002' could not be found.",
+            "time": "2022-05-25T13:57:25.251221",
+            "path": "http://testserver/brands/Brand_000002",
+            "method": "GET",
+            "type": "NotFoundException"
+         }
+      }
+   }
+]

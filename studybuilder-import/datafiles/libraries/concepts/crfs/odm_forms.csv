@@ -1,0 +1,24 @@
+library,oid,name,prompt,repeating,language,description,instruction
+Sponsor,F.DM,Informed Consent and Demography,,false,ENG,Informed Consent and Demography form,"Please complete this Informed Consent and Demography form at the very beginning of the study
+
+General item design notes:
+Integration: A: Argus, Ax: Forms attached in Argus, C: CPR Dashboard, IW: IWRS, P: Impact, R: Reports, RT: RTSM
+
+General item design notes:  Integration: A: Argus, Ax: 
+
+rms attached in Argus, C: CPR Dashboard, IW: IWRS, P: Impact, R: Reports, RT: RTSM
+
+Oracle item des
+N notes:  Key: [*] = Item is required.  Sex: Populated by IWRS. Item to trigger Childbearing potential form to appear if response = Female.  Subject No.: Populated by IWRS and mapped from ENR to Inf Cons/DemogOracle item design notes:  Key: [*] = Item is required.  Sex: Populated by IWRS. Item to trigger Childbearing potential form to appear if response = Female.  Subject No.: Populated by IWRS and mapped from ENR to Inf Cons/Demog"
+Sponsor,F.VS,Vital Signs,,false,ENG,Vital signs form,Please complete this Vital Sign form before starting the treatment
+Sponsor,F.MH,Medical History/Concomitant Illness,,false,ENG,Medical History/Concomitant Illness (Without pre-printed diagnosis),"This CRF is to be used for studies not collecting specific medical histories (e.g. Cardiovascular History, Diabetes History, Gallbladder Disease History)."
+Sponsor,F.IM,Administration of <Investigational medicinal product>,,false,ENG,Administration of <Investigational medicinal product>,"In case of multiple investigational medicinal products, there should be separate CRFs for each, unless the study in blinded.
+In case the study is blinded, the investigational  medical product should be named with combination of the drugs with a '/' between the names.
+The items: Dose form and Route do not need to be visible for investigator if only one response is used, but values must be available in the data loaded.
+If stop date is not collected, copy start date (ECSTDTC) to stop date (ECENDTC). This could be cases for administrations considered given at a point in time (e.g., oral  tablet, pre-filled syringe injection).
+Either Prescribed dose or Actual dose has to be collected together with the Start date. 
+This form is a maximum content form and no additional questions and/or response options can be added unless evaluated E2E by IG and approved by the PST."
+Sponsor,F.AE,Adverse Event,,false,ENG,Adverse Event,"One AE should be reported per form.
+During conduct of the study, please transcribe data to EDC as soon as possible.
+The AE diagnosis, causality, seriousness and severity should be evaluated by the investigator or sub-investigator with physician background."
+Sponsor,F.EG,ECG,,false,ENG,ECG form,Please complete this ECG form before starting the treatment

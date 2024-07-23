@@ -1,0 +1,92 @@
+[
+    {
+        "start_date": "2023-10-03T08:07:00.399253+00:00",
+        "end_date": null,
+        "status": "Final",
+        "version": "1.0",
+        "change_description": "Approved version",
+        "user_initials": "unknown-user",
+        "uid": "Activity_000131",
+        "name": "Activity Placeholder for v1",
+        "name_sentence_case": "Activity Placeholder for v1",
+        "definition": null,
+        "abbreviation": null,
+        "library_name": "Requested",
+        "possible_actions": [
+            "inactivate",
+            "new_version"
+        ],
+        "nci_concept_id": null,
+        "activity_groupings": [
+            {
+                "activity_group_uid": "ActivityGroup_000004",
+                "activity_group_name": "Adverse Event",
+                "activity_subgroup_uid": "ActivitySubGroup_000005",
+                "activity_subgroup_name": "Adverse Event"
+            }
+        ],
+        "request_rationale": "rationale for v1",
+        "replaced_by_activity": null,
+        "is_data_collected": false
+    },
+    {
+        "start_date": "2023-10-03T08:07:00.399253+00:00",
+        "end_date": null,
+        "status": "Final",
+        "version": "1.0",
+        "change_description": "Approved version",
+        "user_initials": "unknown-user",
+        "uid": "Activity_000132",
+        "name": "Activity Placeholder for v1.1",
+        "name_sentence_case": "Activity Placeholder for v1.1",
+        "definition": null,
+        "abbreviation": null,
+        "library_name": "Requested",
+        "possible_actions": [
+            "inactivate",
+            "new_version"
+        ],
+        "nci_concept_id": null,
+        "activity_groupings": [
+            {
+                "activity_group_uid": "ActivityGroup_000004",
+                "activity_group_name": "Adverse Event",
+                "activity_subgroup_uid": "ActivitySubGroup_000005",
+                "activity_subgroup_name": "Adverse Event"
+            }
+        ],
+        "request_rationale": "rationale for v1.1",
+        "replaced_by_activity": null,
+        "is_data_collected": false
+    },
+    {
+        "start_date": "2023-10-03T08:07:00.399253+00:00",
+        "end_date": null,
+        "status": "Final",
+        "version": "1.0",
+        "change_description": "Approved version",
+        "user_initials": "unknown-user",
+        "uid": "Activity_000133",
+        "name": "Activity Placeholder for new draft",
+        "name_sentence_case": "Activity Placeholder for new draft",
+        "definition": null,
+        "abbreviation": null,
+        "library_name": "Requested",
+        "possible_actions": [
+            "inactivate",
+            "new_version"
+        ],
+        "nci_concept_id": null,
+        "activity_groupings": [
+            {
+                "activity_group_uid": "ActivityGroup_000004",
+                "activity_group_name": "Adverse Event",
+                "activity_subgroup_uid": "ActivitySubGroup_000005",
+                "activity_subgroup_name": "Adverse Event"
+            }
+        ],
+        "request_rationale": "rationale for new draft",
+        "replaced_by_activity": null,
+        "is_data_collected": false
+    }
+]

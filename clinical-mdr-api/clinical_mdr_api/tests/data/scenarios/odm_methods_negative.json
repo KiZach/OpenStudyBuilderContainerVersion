@@ -1,0 +1,394 @@
+[
+    {
+        "name": "Create a new ODM Method",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "oid1",
+                "method_type": "type1",
+                "formal_expressions": [
+                    "odm_formal_expression1"
+                ],
+                "descriptions": [
+                    "odm_description2",
+                    "odm_description3"
+                ],
+                "alias_uids": [
+                    "odm_alias1"
+                ]
+            },
+            "url": "concepts/odms/methods"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmMethod_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "method_type": "type1",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "formal_expressions": [
+                    {
+                        "uid": "odm_formal_expression1",
+                        "context": "context1",
+                        "expression": "expression1",
+                        "version": "0.1"
+                    }
+                ],
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test cannot create a new ODM Method with ODM Formal Expressions with same context",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "a name",
+                "oid": "aoid",
+                "method_type": "atype",
+                "formal_expressions": [
+                    "odm_formal_expression1",
+                    "odm_formal_expression3"
+                ],
+                "descriptions": [
+                    "odm_description3"
+                ],
+                "alias_uids": []
+            },
+            "url": "concepts/odms/methods"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "ODM Method tried to connect to ODM Formal Expressions with same context (context1).",
+                "time": "2022-03-07T12: 14: 18.116363",
+                "path": "http://testserver/concepts/odms/methods",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot update an ODM Method with ODM Formal Expressions with same context",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "change_description": "formal expressions changed",
+                "name": "name1",
+                "oid": "oid1",
+                "method_type": "type1",
+                "formal_expressions": [
+                    "odm_formal_expression3"
+                ],
+                "descriptions": [
+                    "odm_description3"
+                ],
+                "alias_uids": []
+            },
+            "url": "concepts/odms/methods/OdmMethod_000001"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "ODM Method tried to connect to ODM Formal Expressions with same context (context1).",
+                "time": "2022-03-07T12: 14: 18.116363",
+                "path": "http://testserver/concepts/odms/methods/OdmMethod_000001",
+                "method": "PATCH",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot create a new ODM Method with existing name and oid",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "oid1",
+                "method_type": "type1",
+                "formal_expressions": [],
+                "descriptions": [
+                    "odm_description3"
+                ],
+                "alias_uids": []
+            },
+            "url": "concepts/odms/methods"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "ODM Method with ['name: name1', 'OID: oid1'] already exists.",
+                "time": "2022-03-07T12: 14: 18.116363",
+                "path": "http://testserver/concepts/odms/methods",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot create an ODM Method connected to non-existent ODM Formal Expression",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "new name",
+                "oid": "new oid",
+                "method_type": "type1",
+                "formal_expressions": [
+                    "wrong_uid"
+                ],
+                "descriptions": [],
+                "alias_uids": []
+            },
+            "url": "concepts/odms/methods"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "ODM Method tried to connect to non-existent concepts [('Concept Name: ODM Formal Expression', \"uids: {'wrong_uid'}\")].",
+                "time": "2022-03-07T12: 14: 18.116363",
+                "path": "http://testserver/concepts/odms/methods",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot create an ODM Method connected to non-existent ODM Description",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "new name",
+                "oid": "new oid",
+                "method_type": "type1",
+                "formal_expressions": [],
+                "descriptions": [
+                    "wrong_uid"
+                ],
+                "alias_uids": []
+            },
+            "url": "concepts/odms/methods"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "ODM Method tried to connect to non-existent concepts [('Concept Name: ODM Description', \"uids: {'wrong_uid'}\")].",
+                "time": "2022-03-07T12: 14: 18.116363",
+                "path": "http://testserver/concepts/odms/methods",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot create an ODM Method connected to non-existent ODM Alias",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "new name",
+                "oid": "new oid",
+                "method_type": "type1",
+                "formal_expressions": [],
+                "descriptions": [
+                    "odm_description3"
+                ],
+                "alias_uids": [
+                    "wrong_uid"
+                ]
+            },
+            "url": "concepts/odms/methods"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "ODM Method tried to connect to non-existent concepts [('Concept Name: ODM Alias', \"uids: {'wrong_uid'}\")].",
+                "time": "2022-03-07T12: 14: 18.116363",
+                "path": "http://testserver/concepts/odms/methods",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot create a new ODM Method without an English description",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "name2",
+                "oid": "oid2",
+                "type": "type2",
+                "formal_expressions": [],
+                "descriptions": [
+                    "odm_description2"
+                ],
+                "alias_uids": []
+            },
+            "url": "concepts/odms/methods"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "An English ODM Description must be provided.",
+                "time": "2022-03-07T12: 14: 18.116363",
+                "path": "http://testserver/concepts/odms/methods",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test getting error for retrieving non-existent ODM Method",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/methods/OdmMethod_000002"
+        },
+        "response": {
+            "code": 404,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "OdmMethodAR with uid OdmMethod_000002 does not exist or there's no version with requested status or version number.",
+                "time": "2022-03-07T12:20:39.613764",
+                "path": "http://testserver/concepts/odms/methods/OdmMethod_000002",
+                "method": "GET",
+                "type": "NotFoundException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot inactivate an ODM Method that is in Draft status",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "concepts/odms/methods/OdmMethod_000001/activations"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "Cannot retire draft version.",
+                "time": "2022-03-07T12:24:39.980123",
+                "path": "http://testserver/concepts/odms/methods/OdmMethod_000001/activations",
+                "method": "DELETE",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot reactivate an ODM Method that is not retired",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/methods/OdmMethod_000001/activations"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "Only RETIRED version can be reactivated.",
+                "time": "2022-03-07T12:27:17.572613",
+                "path": "http://testserver/concepts/odms/methods/OdmMethod_000001/activations",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    }
+]

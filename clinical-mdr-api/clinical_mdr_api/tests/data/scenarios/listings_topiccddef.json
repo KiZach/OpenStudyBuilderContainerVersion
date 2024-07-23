@@ -1,0 +1,81 @@
+[
+  {
+    "name": "No Datetime Specified",
+    "request": {
+        "headers": {},
+        "method": "GET",
+        "request": {},
+        "url": "/listings/libraries/all/gcmd/topic-cd-def"
+    },
+    "response": {
+        "code": 200,
+        "headers": {
+            "content-length": "2",
+            "content-type": "application/json"
+        },
+        "result": {
+          "items": [
+            {
+              "lb": "name2",
+              "topic_cd": "topic_code2",
+              "short_topic_cd": "adam_param_code2",
+              "description": "legacy_description2",
+              "molecular_weight": null,
+              "sas_display_format": null,
+              "general_domain_class": "Interventions",
+              "sub_domain_class": "CompoundDosing",
+              "sub_domain_type": "Other"
+            },
+            {
+              "lb": "new_name1",
+              "topic_cd": "topic_code1",
+              "short_topic_cd": "adam_param_code1",
+              "description": "legacy_description1",
+              "molecular_weight": 1.0,
+              "sas_display_format": "string",
+              "general_domain_class": "Findings",
+              "sub_domain_class": "NumericFinding",
+              "sub_domain_type": "Other"
+            }
+          ],
+          "total": 0,
+          "page": 1,
+          "size": 10
+        }
+    }
+  },
+  {
+    "name": "Datetime Specified",
+    "request": {
+        "headers": {},
+        "method": "GET",
+        "request": {},
+        "url": "/listings/libraries/all/gcmd/topic-cd-def?at_specified_date_time=2021-10-02T10%3A00%3A00Z"
+    },
+    "response": {
+        "code": 200,
+        "headers": {
+            "content-length": "2",
+            "content-type": "application/json"
+        },
+        "result": {
+          "items": [
+            {
+              "lb": "name1",
+              "topic_cd": "topic_code1",
+              "short_topic_cd": "adam_param_code1",
+              "description": "legacy_description1",
+              "molecular_weight": 0.0,
+              "sas_display_format": "string",
+              "general_domain_class": "Findings",
+              "sub_domain_class": "NumericFinding",
+              "sub_domain_type": "Other"
+            }
+          ],
+          "total": 0,
+          "page": 1,
+          "size": 10
+        }
+    }
+  }
+]

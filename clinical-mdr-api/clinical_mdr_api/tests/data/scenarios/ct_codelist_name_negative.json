@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Test get all codelists from non-existent catalogue",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/ct/codelists/names?catalogue_name=SDTM%20CTM"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "214",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "There is no catalogue identified by provided catalogue name (SDTM CTM)",
+                "method": "GET",
+                "path": "http://testserver/ct/codelists/names?catalogue_name=SDTM%20CTM",
+                "time": "2020-11-03T23:42:41.518146",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test PATCH non draft codelist",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "name": "codelist name",
+                "template_parameter": true,
+                "change_description": "Changing codelist"
+            },
+            "url": "/ct/codelists/ct_codelist_root1/names"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "The object is not in draft status.",
+                "method": "PATCH",
+                "path": "http://testserver/ct/codelists/ct_codelist_root1/names",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test PATCH codelist name already exists",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "name": "not_tp_codelist_name_value",
+                "template_parameter": true,
+                "change_description": "Changing codelist"
+            },
+            "url": "/ct/codelists/ct_codelist_root3/names"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "CTCodelistName with name (not_tp_codelist_name_value) already exists.",
+                "method": "PATCH",
+                "path": "http://testserver/ct/codelists/ct_codelist_root3/names",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "ValidationException"
+            }
+        }
+    },
+    {
+        "name": "Test POST approve non DRAFT codelist",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/ct/codelists/ct_codelist_root1/names/approvals"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "The object is not in draft status.",
+                "method": "POST",
+                "path": "http://testserver/ct/codelists/ct_codelist_root1/names/approvals",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    }
+]

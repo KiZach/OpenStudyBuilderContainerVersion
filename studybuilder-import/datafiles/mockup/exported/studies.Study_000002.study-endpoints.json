@@ -1,0 +1,376 @@
+[
+  {
+    "accepted_version": false,
+    "endpoint": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "endpoint_template": {
+        "name": "<p>Mean change from baseline in [ActivityInstance]</p>",
+        "name_plain": "Mean change from baseline in [ActivityInstance]",
+        "uid": "EndpointTemplate_000004"
+      },
+      "library": {
+        "is_editable": true,
+        "name": "Sponsor"
+      },
+      "name": "<p>Mean change from baseline in [hba1c]</p>",
+      "name_plain": "Mean change from baseline in hba1c",
+      "parameter_terms": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "terms": [
+            {
+              "index": 1,
+              "name": "hba1c",
+              "type": "ActivityInstance",
+              "uid": "NumericFinding_000191"
+            }
+          ]
+        }
+      ],
+      "possible_actions": [
+        "inactivate"
+      ],
+      "start_date": "2022-10-20T12:26:38.484886",
+      "status": "Final",
+      "study_count": null,
+      "uid": "Endpoint_000005",
+      "user_initials": "MT",
+      "version": "1.0"
+    },
+    "endpoint_level": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000004",
+      "end_date": null,
+      "library_name": "CDISC",
+      "order": 1,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "Primary Endpoint",
+      "sponsor_preferred_name_sentence_case": "primary endpoint",
+      "start_date": "2022-10-18T12:52:44.445889",
+      "status": "Final",
+      "term_uid": "C98772_OUTMSPRI",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "2.0"
+    },
+    "endpoint_sublevel": null,
+    "endpoint_units": {
+      "separator": null,
+      "units": [
+        "UnitDefinition_000224"
+      ]
+    },
+    "latest_endpoint": null,
+    "latest_timeframe": null,
+    "order": 1,
+    "project_name": "CDISC Dev",
+    "project_number": "CDISC DEV",
+    "start_date": "2022-10-20T12:31:10.459807",
+    "study_endpoint_uid": "StudyEndpoint_000005",
+    "study_objective": {
+      "accepted_version": false,
+      "endpoint_count": 1,
+      "latest_objective": null,
+      "objective": {
+        "change_description": "Approved version",
+        "end_date": null,
+        "library": {
+          "is_editable": true,
+          "name": "User Defined"
+        },
+        "name": "<p>Time to first occurrence of MACE+, a composite endpoint consisting of: CV death, nonfatal MI,</p><p>nonfatal stroke, or hospitalization for unstable&nbsp;</p><p>angina</p>",
+        "name_plain": "Time to first occurrence of MACE+, a composite endpoint consisting of: CV death, nonfatal MI,nonfatal stroke, or hospitalization for unstable\u00a0angina",
+        "objective_template": {
+          "name": "<p>Time to first occurrence of MACE+, a composite endpoint consisting of: CV death, nonfatal MI,</p><p>nonfatal stroke, or hospitalization for unstable&nbsp;</p><p>angina</p>",
+          "name_plain": "Time to first occurrence of MACE+, a composite endpoint consisting of: CV death, nonfatal MI,nonfatal stroke, or hospitalization for unstable\u00a0angina",
+          "uid": "ObjectiveTemplate_000005"
+        },
+        "parameter_terms": [],
+        "possible_actions": [
+          "inactivate"
+        ],
+        "start_date": "2022-10-20T06:32:44.810374",
+        "status": "Final",
+        "study_count": null,
+        "uid": "Objective_000004",
+        "user_initials": "MT",
+        "version": "1.0"
+      },
+      "objective_level": {
+        "catalogue_name": "SDTM CT",
+        "change_description": "Approved version",
+        "codelist_uid": "CTCodelist_000001",
+        "end_date": null,
+        "library_name": "CDISC",
+        "order": 1,
+        "possible_actions": [
+          "inactivate",
+          "newVersion"
+        ],
+        "sponsor_preferred_name": "Primary Objective",
+        "sponsor_preferred_name_sentence_case": "primary objective",
+        "start_date": "2022-10-18T12:52:48.896938",
+        "status": "Final",
+        "term_uid": "C85826_OBJPRIM",
+        "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+        "version": "2.0"
+      },
+      "order": 1,
+      "project_name": "CDISC Dev",
+      "project_number": "CDISC DEV",
+      "start_date": "2022-10-20T06:32:44.904961",
+      "study_objective_uid": "StudyObjective_000001",
+      "study_uid": "Study_000002",
+      "user_initials": "MT"
+    },
+    "study_uid": "Study_000002",
+    "timeframe": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "library": {
+        "is_editable": true,
+        "name": "Sponsor"
+      },
+      "name": "<p>after [26 weeks]</p>",
+      "name_plain": "after 26 weeks",
+      "parameter_terms": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "terms": [
+            {
+              "index": 1,
+              "name": "26 weeks",
+              "type": "StudyDurationWeeks",
+              "uid": "NumericValue_000074"
+            }
+          ]
+        }
+      ],
+      "possible_actions": [
+        "inactivate"
+      ],
+      "start_date": "2022-10-20T12:31:10.060341",
+      "status": "Final",
+      "timeframe_template": {
+        "name": "<p>after [StudyDurationWeeks]</p>",
+        "name_plain": "after [StudyDurationWeeks]",
+        "uid": "TimeframeTemplate_000004"
+      },
+      "uid": "Timeframe_000004",
+      "user_initials": "MT",
+      "version": "1.0"
+    },
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "endpoint": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "endpoint_template": {
+        "name": "<p>Proportion of subjects with [ActivityInstance] [Operator] [NumericValue] [Unit]</p>",
+        "name_plain": "Proportion of subjects with [ActivityInstance] [Operator] [NumericValue] [Unit]",
+        "uid": "EndpointTemplate_000005"
+      },
+      "library": {
+        "is_editable": true,
+        "name": "Sponsor"
+      },
+      "name": "<p>Proportion of subjects with [hba1c] [<] [7] [%]</p>",
+      "name_plain": "Proportion of subjects with hba1c < 7 %",
+      "parameter_terms": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "terms": [
+            {
+              "index": 1,
+              "name": "hba1c",
+              "type": "ActivityInstance",
+              "uid": "NumericFinding_000191"
+            }
+          ]
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "terms": [
+            {
+              "index": 1,
+              "name": "<",
+              "type": "Operator",
+              "uid": "TemplateParameterValue_000418"
+            }
+          ]
+        },
+        {
+          "conjunction": "",
+          "position": 3,
+          "terms": [
+            {
+              "index": 1,
+              "name": "7",
+              "type": "NumericValue",
+              "uid": "NumericValue_000011"
+            }
+          ]
+        },
+        {
+          "conjunction": "",
+          "position": 4,
+          "terms": [
+            {
+              "index": 1,
+              "name": "%",
+              "type": "Unit",
+              "uid": "UnitDefinition_000224"
+            }
+          ]
+        }
+      ],
+      "possible_actions": [
+        "inactivate"
+      ],
+      "start_date": "2022-10-20T12:28:30.265170",
+      "status": "Final",
+      "study_count": null,
+      "uid": "Endpoint_000006",
+      "user_initials": "MT",
+      "version": "1.0"
+    },
+    "endpoint_level": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000004",
+      "end_date": null,
+      "library_name": "CDISC",
+      "order": 2,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "Secondary Endpoint",
+      "sponsor_preferred_name_sentence_case": "secondary endpoint",
+      "start_date": "2022-10-18T12:52:45.400062",
+      "status": "Final",
+      "term_uid": "C98781_OUTMSSEC",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "2.0"
+    },
+    "endpoint_sublevel": null,
+    "endpoint_units": {
+      "separator": null,
+      "units": [
+        "UnitDefinition_000015"
+      ]
+    },
+    "latest_endpoint": null,
+    "latest_timeframe": null,
+    "order": 2,
+    "project_name": "CDISC Dev",
+    "project_number": "CDISC DEV",
+    "start_date": "2022-10-20T12:31:36.051740",
+    "study_endpoint_uid": "StudyEndpoint_000008",
+    "study_objective": {
+      "accepted_version": false,
+      "endpoint_count": 1,
+      "latest_objective": null,
+      "objective": {
+        "change_description": "Approved version",
+        "end_date": null,
+        "library": {
+          "is_editable": true,
+          "name": "User Defined"
+        },
+        "name": "<p>Time from randomisation to all cause death</p>",
+        "name_plain": "Time from randomisation to all cause death",
+        "objective_template": {
+          "name": "<p>Time from randomisation to all cause death</p>",
+          "name_plain": "Time from randomisation to all cause death",
+          "uid": "ObjectiveTemplate_000006"
+        },
+        "parameter_terms": [],
+        "possible_actions": [
+          "inactivate"
+        ],
+        "start_date": "2022-10-20T12:27:17.588804",
+        "status": "Final",
+        "study_count": null,
+        "uid": "Objective_000005",
+        "user_initials": "MT",
+        "version": "1.0"
+      },
+      "objective_level": {
+        "catalogue_name": "SDTM CT",
+        "change_description": "Approved version",
+        "codelist_uid": "CTCodelist_000001",
+        "end_date": null,
+        "library_name": "CDISC",
+        "order": 2,
+        "possible_actions": [
+          "inactivate",
+          "newVersion"
+        ],
+        "sponsor_preferred_name": "Secondary Objective",
+        "sponsor_preferred_name_sentence_case": "secondary objective",
+        "start_date": "2022-10-18T12:52:49.546806",
+        "status": "Final",
+        "term_uid": "C85827_OBJSEC",
+        "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+        "version": "2.0"
+      },
+      "order": 2,
+      "project_name": "CDISC Dev",
+      "project_number": "CDISC DEV",
+      "start_date": "2022-10-20T12:27:17.685437",
+      "study_objective_uid": "StudyObjective_000002",
+      "study_uid": "Study_000002",
+      "user_initials": "MT"
+    },
+    "study_uid": "Study_000002",
+    "timeframe": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "library": {
+        "is_editable": true,
+        "name": "Sponsor"
+      },
+      "name": "<p>after [26 weeks]</p>",
+      "name_plain": "after 26 weeks",
+      "parameter_terms": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "terms": [
+            {
+              "index": 1,
+              "name": "26 weeks",
+              "type": "StudyDurationWeeks",
+              "uid": "NumericValue_000074"
+            }
+          ]
+        }
+      ],
+      "possible_actions": [
+        "inactivate"
+      ],
+      "start_date": "2022-10-20T12:31:10.060341",
+      "status": "Final",
+      "timeframe_template": {
+        "name": "<p>after [StudyDurationWeeks]</p>",
+        "name_plain": "after [StudyDurationWeeks]",
+        "uid": "TimeframeTemplate_000004"
+      },
+      "uid": "Timeframe_000004",
+      "user_initials": "MT",
+      "version": "1.0"
+    },
+    "user_initials": "MT"
+  }
+]

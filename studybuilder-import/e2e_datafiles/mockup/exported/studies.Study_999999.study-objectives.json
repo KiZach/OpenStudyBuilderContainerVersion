@@ -1,0 +1,95 @@
+[
+  {
+    "study_uid": "Study_000002",
+    "order": 1,
+    "project_number": "CDISC DEV",
+    "project_name": "CDISC Dev",
+    "study_objective_uid": "StudyObjective_000004",
+    "objective_level": {
+      "term_uid": "C85826_OBJPRIM",
+      "catalogue_name": "SDTM CT",
+      "codelist_uid": "CTCodelist_000001",
+      "sponsor_preferred_name": "Primary Objective",
+      "sponsor_preferred_name_sentence_case": "primary objective",
+      "order": 1,
+      "library_name": "CDISC",
+      "start_date": "2022-11-09T08:52:13.742186",
+      "end_date": null,
+      "status": "Final",
+      "version": "2.0",
+      "change_description": "Approved version",
+      "user_initials": "unknown-user",
+      "possible_actions": [
+        "inactivate",
+        "new_version"
+      ]
+    },
+    "objective": {
+      "uid": "Objective_000006",
+      "name": "To compare the effect of [metformin] relative to [nph insulin] on [body weight]",
+      "name_plain": "To compare the effect of metformin relative to nph insulin on body weight",
+      "start_date": "2022-11-21T09:23:28.424019",
+      "end_date": null,
+      "status": "Final",
+      "version": "1.0",
+      "change_description": "Approved version",
+      "user_initials": "unknown-user",
+      "possible_actions": [
+        "inactivate"
+      ],
+      "objective_template": {
+        "name": "To compare the effect of [Compound] relative to [Comparator] on [ActivityInstance]",
+        "name_plain": "To compare the effect of [Compound] relative to [Comparator] on [ActivityInstance]",
+        "uid": "ObjectiveTemplate_000004"
+      },
+      "parameter_terms": [
+        {
+          "position": 1,
+          "conjunction": "",
+          "terms": [
+            {
+              "uid": "Compound_000001",
+              "name": "metformin",
+              "type": "Compound",
+              "index": 1
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "conjunction": "",
+          "terms": [
+            {
+              "uid": "Compound_000002",
+              "name": "nph insulin",
+              "type": "Comparator",
+              "index": 1
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "conjunction": "",
+          "terms": [
+            {
+              "uid": "NumericFinding_000020",
+              "name": "body weight",
+              "type": "ActivityInstance",
+              "index": 1
+            }
+          ]
+        }
+      ],
+      "library": {
+        "name": "Sponsor",
+        "is_editable": true
+      },
+      "study_count": null
+    },
+    "start_date": "2022-11-21T10:22:19.784820",
+    "user_initials": "unknown-user",
+    "endpoint_count": 0,
+    "latest_objective": null,
+    "accepted_version": false
+  }
+]

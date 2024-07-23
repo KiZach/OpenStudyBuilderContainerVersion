@@ -1,0 +1,6 @@
+CT_CD_LIST_SUBMVAL,CT_NAME,NAME_SENTENSE_CASE,CT_SUBMVAL,DEFINITION,ORDER,CT_CD,NCI_PREFERRED_NAME
+TTYPE,Multi-centre,multi-centre,MULTI-CENTRE,Clinical trial conducted according to a single protocol but at more than one site and therefore carried out by more than one investigator. (ICH E9 Glossary),1,,Multi-centre
+TTYPE,Multi-national,multi-national,MULTI-NATIONAL,Multinational means that the study sites are located in more than one country,2,,Multi-national
+TTYPE,Treat-to-target,treat-to-target,TREAT-TO-TARGET,Treat-to-target,3,,Treat-to-target
+TTYPE,Multi-regional,multi-regional,MULTI-REGIONAL,Clinical trial conducted in more than one region under a single protocol and allows data from one country or region to help gain approval in another country or region.,4,,Multi-regional
+TTYPE,Single-centre,single-centre,SINGLE-CENTRE,Clinical trial conducted at one single site,5,,Single-centre

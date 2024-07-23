@@ -1,0 +1,2786 @@
+[
+    {
+        "name": "Test getting empty list of ODM Item Groups",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/item-groups"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "2",
+                "content-type": "application/json"
+            },
+            "result": {
+                "items": [],
+                "total": 0,
+                "page": 1,
+                "size": 10
+            }
+        }
+    },
+    {
+        "name": "Test creating a new ODM Item Group",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "oid1",
+                "repeating": "No",
+                "is_reference_data": "No",
+                "sas_dataset_name": "sas_dataset_name1",
+                "origin": "origin1",
+                "purpose": "purpose1",
+                "comment": "comment1",
+                "descriptions": [
+                    "odm_description2",
+                    "odm_description3"
+                ],
+                "alias_uids": [
+                    "odm_alias1"
+                ],
+                "sdtm_domain_uids": [
+                    "term1"
+                ]
+            },
+            "url": "concepts/odms/item-groups"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmItemGroup_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "repeating": "No",
+                "is_reference_data": "No",
+                "sas_dataset_name": "sas_dataset_name1",
+                "origin": "origin1",
+                "purpose": "purpose1",
+                "comment": "comment1",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "sdtm_domains": [
+                    {
+                        "uid": "term1",
+                        "code_submission_value": "code_submission_value1",
+                        "preferred_term": "preferred_term1"
+                    }
+                ],
+                "activity_subgroups": [],
+                "items": [],
+                "vendor_elements": [],
+                "vendor_attributes": [],
+                "vendor_element_attributes": [],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test getting non empty list of ODM Item Groups",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/item-groups"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": {
+                "items": [
+                    {
+                        "uid": "OdmItemGroup_000001",
+                        "name": "name1",
+                        "library_name": "Sponsor",
+                        "oid": "oid1",
+                        "repeating": "No",
+                        "is_reference_data": "No",
+                        "sas_dataset_name": "sas_dataset_name1",
+                        "origin": "origin1",
+                        "purpose": "purpose1",
+                        "comment": "comment1",
+                        "start_date": "2022-03-03T11:17:56.799074",
+                        "end_date": null,
+                        "status": "Draft",
+                        "version": "0.1",
+                        "change_description": "Initial version",
+                        "user_initials": "TODO user initials",
+                        "descriptions": [
+                            {
+                                "uid": "odm_description2",
+                                "name": "name2",
+                                "language": "language2",
+                                "description": "description2",
+                                "instruction": "instruction2",
+                                "sponsor_instruction": "sponsor_instruction2",
+                                "version": "0.1"
+                            },
+                            {
+                                "uid": "odm_description3",
+                                "name": "name3",
+                                "language": "ENG",
+                                "description": "description3",
+                                "instruction": "instruction3",
+                                "sponsor_instruction": "sponsor_instruction3",
+                                "version": "0.1"
+                            }
+                        ],
+                        "aliases": [
+                            {
+                                "uid": "odm_alias1",
+                                "context": "context1",
+                                "name": "name1",
+                                "version": "0.1"
+                            }
+                        ],
+                        "sdtm_domains": [
+                            {
+                                "uid": "term1",
+                                "code_submission_value": "code_submission_value1",
+                                "preferred_term": "preferred_term1"
+                            }
+                        ],
+                        "activity_subgroups": [],
+                        "items": [],
+                        "vendor_elements": [],
+                        "vendor_attributes": [],
+                        "vendor_element_attributes": [],
+                        "possible_actions": [
+                            "approve",
+                            "delete",
+                            "edit"
+                        ]
+                    }
+                ],
+                "total": 0,
+                "page": 1,
+                "size": 10
+            }
+        }
+    },
+    {
+        "name": "Test getting possible header values of ODM Item Groups",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/item-groups/headers?field_name=name"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": [
+                "name1"
+            ]
+        }
+    },
+    {
+        "name": "Test getting a specific ODM Item Group",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/item-groups/OdmItemGroup_000001"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmItemGroup_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "repeating": "No",
+                "is_reference_data": "No",
+                "sas_dataset_name": "sas_dataset_name1",
+                "origin": "origin1",
+                "purpose": "purpose1",
+                "comment": "comment1",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO initials",
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "sdtm_domains": [
+                    {
+                        "uid": "term1",
+                        "code_submission_value": "code_submission_value1",
+                        "preferred_term": "preferred_term1"
+                    }
+                ],
+                "activity_subgroups": [],
+                "items": [],
+                "vendor_elements": [],
+                "vendor_attributes": [],
+                "vendor_element_attributes": [],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test getting versions of a specific ODM Item Group",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/item-groups/OdmItemGroup_000001/versions"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": [
+                {
+                    "uid": "OdmItemGroup_000001",
+                    "name": "name1",
+                    "library_name": "Sponsor",
+                    "oid": "oid1",
+                    "repeating": "No",
+                    "is_reference_data": "No",
+                    "sas_dataset_name": "sas_dataset_name1",
+                    "origin": "origin1",
+                    "purpose": "purpose1",
+                    "comment": "comment1",
+                    "start_date": "2022-03-03T13:18:03.230000",
+                    "end_date": null,
+                    "status": "Draft",
+                    "version": "0.1",
+                    "change_description": "Initial version",
+                    "user_initials": "TODO initials",
+                    "descriptions": [
+                        {
+                            "uid": "odm_description2",
+                            "name": "name2",
+                            "language": "language2",
+                            "description": "description2",
+                            "instruction": "instruction2",
+                            "sponsor_instruction": "sponsor_instruction2",
+                            "version": "0.1"
+                        },
+                        {
+                            "uid": "odm_description3",
+                            "name": "name3",
+                            "language": "ENG",
+                            "description": "description3",
+                            "instruction": "instruction3",
+                            "sponsor_instruction": "sponsor_instruction3",
+                            "version": "0.1"
+                        }
+                    ],
+                    "aliases": [
+                        {
+                            "uid": "odm_alias1",
+                            "context": "context1",
+                            "name": "name1",
+                            "version": "0.1"
+                        }
+                    ],
+                    "sdtm_domains": [
+                        {
+                            "uid": "term1",
+                            "code_submission_value": "code_submission_value1",
+                            "preferred_term": "preferred_term1"
+                        }
+                    ],
+                    "activity_subgroups": [],
+                    "items": [],
+                    "vendor_elements": [],
+                    "vendor_attributes": [],
+                    "vendor_element_attributes": [],
+                    "possible_actions": [
+                        "approve",
+                        "delete",
+                        "edit"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "name": "Test updating an existing ODM Item Group",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "oid1",
+                "repeating": "Yes",
+                "is_reference_data": "Yes",
+                "sas_dataset_name": "sas_dataset_name1",
+                "origin": "origin1",
+                "purpose": "purpose1",
+                "comment": "comment1",
+                "change_description": "repeating and is_reference_data changed to Yes",
+                "descriptions": [
+                    "odm_description2",
+                    "odm_description3"
+                ],
+                "alias_uids": [
+                    "odm_alias1"
+                ],
+                "sdtm_domain_uids": [
+                    "term1"
+                ]
+            },
+            "url": "concepts/odms/item-groups/OdmItemGroup_000001"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmItemGroup_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "repeating": "Yes",
+                "is_reference_data": "Yes",
+                "sas_dataset_name": "sas_dataset_name1",
+                "origin": "origin1",
+                "purpose": "purpose1",
+                "comment": "comment1",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.2",
+                "change_description": "repeating and is_reference_data changed to Yes",
+                "user_initials": "TODO initials",
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "sdtm_domains": [
+                    {
+                        "uid": "term1",
+                        "code_submission_value": "code_submission_value1",
+                        "preferred_term": "preferred_term1"
+                    }
+                ],
+                "activity_subgroups": [],
+                "items": [],
+                "vendor_elements": [],
+                "vendor_attributes": [],
+                "vendor_element_attributes": [],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test approving an ODM Item Group",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/item-groups/OdmItemGroup_000001/approvals"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmItemGroup_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "repeating": "Yes",
+                "is_reference_data": "Yes",
+                "sas_dataset_name": "sas_dataset_name1",
+                "origin": "origin1",
+                "purpose": "purpose1",
+                "comment": "comment1",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Approved version",
+                "user_initials": "TODO initials",
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "sdtm_domains": [
+                    {
+                        "uid": "term1",
+                        "code_submission_value": "code_submission_value1",
+                        "preferred_term": "preferred_term1"
+                    }
+                ],
+                "activity_subgroups": [],
+                "items": [],
+                "vendor_elements": [],
+                "vendor_attributes": [],
+                "vendor_element_attributes": [],
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test inactivating a specific ODM Item Group",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "concepts/odms/item-groups/OdmItemGroup_000001/activations"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmItemGroup_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "repeating": "Yes",
+                "is_reference_data": "Yes",
+                "sas_dataset_name": "sas_dataset_name1",
+                "origin": "origin1",
+                "purpose": "purpose1",
+                "comment": "comment1",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Retired",
+                "version": "1.0",
+                "change_description": "Inactivated version",
+                "user_initials": "TODO initials",
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "sdtm_domains": [
+                    {
+                        "uid": "term1",
+                        "code_submission_value": "code_submission_value1",
+                        "preferred_term": "preferred_term1"
+                    }
+                ],
+                "activity_subgroups": [],
+                "items": [],
+                "vendor_elements": [],
+                "vendor_attributes": [],
+                "vendor_element_attributes": [],
+                "possible_actions": [
+                    "delete",
+                    "reactivate"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test reactivating a specific ODM Item Group",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/item-groups/OdmItemGroup_000001/activations"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmItemGroup_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "repeating": "Yes",
+                "is_reference_data": "Yes",
+                "sas_dataset_name": "sas_dataset_name1",
+                "origin": "origin1",
+                "purpose": "purpose1",
+                "comment": "comment1",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Reactivated version",
+                "user_initials": "TODO initials",
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "sdtm_domains": [
+                    {
+                        "uid": "term1",
+                        "code_submission_value": "code_submission_value1",
+                        "preferred_term": "preferred_term1"
+                    }
+                ],
+                "activity_subgroups": [],
+                "items": [],
+                "vendor_elements": [],
+                "vendor_attributes": [],
+                "vendor_element_attributes": [],
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test adding activity sub groups to a specific ODM Item Group",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": [
+                {
+                    "uid": "activity_subgroup_root1"
+                }
+            ],
+            "url": "concepts/odms/item-groups/OdmItemGroup_000001/activity-sub-groups"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmItemGroup_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "repeating": "Yes",
+                "is_reference_data": "Yes",
+                "sas_dataset_name": "sas_dataset_name1",
+                "origin": "origin1",
+                "purpose": "purpose1",
+                "comment": "comment1",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Reactivated version",
+                "user_initials": "TODO initials",
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "sdtm_domains": [
+                    {
+                        "uid": "term1",
+                        "code_submission_value": "code_submission_value1",
+                        "preferred_term": "preferred_term1"
+                    }
+                ],
+                "activity_subgroups": [
+                    {
+                        "uid": "activity_subgroup_root1",
+                        "name": "name1"
+                    }
+                ],
+                "items": [],
+                "vendor_elements": [],
+                "vendor_attributes": [],
+                "vendor_element_attributes": [],
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test overriding activity sub groups from a specific ODM Item Group",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": [
+                {
+                    "uid": "activity_subgroup_root2"
+                }
+            ],
+            "url": "concepts/odms/item-groups/OdmItemGroup_000001/activity-sub-groups?override=true"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmItemGroup_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "repeating": "Yes",
+                "is_reference_data": "Yes",
+                "sas_dataset_name": "sas_dataset_name1",
+                "origin": "origin1",
+                "purpose": "purpose1",
+                "comment": "comment1",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Reactivated version",
+                "user_initials": "TODO initials",
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "sdtm_domains": [
+                    {
+                        "uid": "term1",
+                        "code_submission_value": "code_submission_value1",
+                        "preferred_term": "preferred_term1"
+                    }
+                ],
+                "activity_subgroups": [
+                    {
+                        "uid": "activity_subgroup_root2",
+                        "name": "name2"
+                    }
+                ],
+                "items": [],
+                "vendor_elements": [],
+                "vendor_attributes": [],
+                "vendor_element_attributes": [],
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test adding ODM Items to a specific ODM Item Group",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": [
+                {
+                    "uid": "odm_item1",
+                    "order_number": 1,
+                    "mandatory": "Yes",
+                    "key_sequence": "key_sequence1",
+                    "method_oid": "method_oid1",
+                    "imputation_method_oid": "imputation_method_oid1",
+                    "role": "role1",
+                    "role_codelist_oid": "role_codelist_oid1",
+                    "collection_exception_condition_oid": "collection_exception_condition_oid1",
+                    "vendor": {
+                        "attributes": [
+                            {
+                                "uid": "odm_vendor_attribute3",
+                                "value": "Yes"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "url": "concepts/odms/item-groups/OdmItemGroup_000001/items"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmItemGroup_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "repeating": "Yes",
+                "is_reference_data": "Yes",
+                "sas_dataset_name": "sas_dataset_name1",
+                "origin": "origin1",
+                "purpose": "purpose1",
+                "comment": "comment1",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Reactivated version",
+                "user_initials": "TODO initials",
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "sdtm_domains": [
+                    {
+                        "uid": "term1",
+                        "code_submission_value": "code_submission_value1",
+                        "preferred_term": "preferred_term1"
+                    }
+                ],
+                "activity_subgroups": [
+                    {
+                        "uid": "activity_subgroup_root2",
+                        "name": "name2"
+                    }
+                ],
+                "items": [
+                    {
+                        "uid": "odm_item1",
+                        "oid": "oid1",
+                        "name": "name1",
+                        "order_number": 1,
+                        "mandatory": "Yes",
+                        "key_sequence": "key_sequence1",
+                        "method_oid": "method_oid1",
+                        "imputation_method_oid": "imputation_method_oid1",
+                        "role": "role1",
+                        "role_codelist_oid": "role_codelist_oid1",
+                        "collection_exception_condition_oid": "collection_exception_condition_oid1",
+                        "vendor": {
+                            "attributes": [
+                                {
+                                    "uid": "odm_vendor_attribute3",
+                                    "name": "nameThree",
+                                    "data_type": "string",
+                                    "value_regex": null,
+                                    "value": "Yes",
+                                    "vendor_namespace_uid": "odm_vendor_namespace1"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "vendor_elements": [],
+                "vendor_attributes": [],
+                "vendor_element_attributes": [],
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test overriding ODM Items from a specific ODM Item Group",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": [
+                {
+                    "uid": "odm_item2",
+                    "order_number": 2,
+                    "mandatory": "Yes",
+                    "key_sequence": "key_sequence2",
+                    "method_oid": "method_oid2",
+                    "imputation_method_oid": "imputation_method_oid2",
+                    "role": "role2",
+                    "role_codelist_oid": "role_codelist_oid2",
+                    "collection_exception_condition_oid": "collection_exception_condition_oid2",
+                    "vendor": {
+                        "attributes": [
+                            {
+                                "uid": "odm_vendor_attribute3",
+                                "name": "nameThree",
+                                "data_type": "string",
+                                "value_regex": null,
+                                "value": "Yes",
+                                "vendor_namespace_uid": "odm_vendor_namespace1"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "url": "concepts/odms/item-groups/OdmItemGroup_000001/items?override=true"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmItemGroup_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "repeating": "Yes",
+                "is_reference_data": "Yes",
+                "sas_dataset_name": "sas_dataset_name1",
+                "origin": "origin1",
+                "purpose": "purpose1",
+                "comment": "comment1",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Reactivated version",
+                "user_initials": "TODO initials",
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "sdtm_domains": [
+                    {
+                        "uid": "term1",
+                        "code_submission_value": "code_submission_value1",
+                        "preferred_term": "preferred_term1"
+                    }
+                ],
+                "activity_subgroups": [
+                    {
+                        "uid": "activity_subgroup_root2",
+                        "name": "name2"
+                    }
+                ],
+                "items": [
+                    {
+                        "uid": "odm_item2",
+                        "oid": "oid2",
+                        "name": "name2",
+                        "order_number": 2,
+                        "mandatory": "Yes",
+                        "key_sequence": "key_sequence2",
+                        "method_oid": "method_oid2",
+                        "imputation_method_oid": "imputation_method_oid2",
+                        "role": "role2",
+                        "role_codelist_oid": "role_codelist_oid2",
+                        "collection_exception_condition_oid": "collection_exception_condition_oid2",
+                        "vendor": {
+                            "attributes": [
+                                {
+                                    "uid": "odm_vendor_attribute3",
+                                    "name": "nameThree",
+                                    "data_type": "string",
+                                    "value_regex": null,
+                                    "value": "Yes",
+                                    "vendor_namespace_uid": "odm_vendor_namespace1"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "vendor_elements": [],
+                "vendor_attributes": [],
+                "vendor_element_attributes": [],
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test adding ODM Vendor Element to a specific ODM Item Group",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": [
+                {
+                    "uid": "odm_vendor_element2",
+                    "value": "value"
+                }
+            ],
+            "url": "concepts/odms/item-groups/OdmItemGroup_000001/vendor-elements"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmItemGroup_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "repeating": "Yes",
+                "is_reference_data": "Yes",
+                "sas_dataset_name": "sas_dataset_name1",
+                "origin": "origin1",
+                "purpose": "purpose1",
+                "comment": "comment1",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Reactivated version",
+                "user_initials": "TODO initials",
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "sdtm_domains": [
+                    {
+                        "uid": "term1",
+                        "code_submission_value": "code_submission_value1",
+                        "preferred_term": "preferred_term1"
+                    }
+                ],
+                "activity_subgroups": [
+                    {
+                        "uid": "activity_subgroup_root2",
+                        "name": "name2"
+                    }
+                ],
+                "items": [
+                    {
+                        "uid": "odm_item2",
+                        "oid": "oid2",
+                        "name": "name2",
+                        "order_number": 2,
+                        "mandatory": "Yes",
+                        "key_sequence": "key_sequence2",
+                        "method_oid": "method_oid2",
+                        "imputation_method_oid": "imputation_method_oid2",
+                        "role": "role2",
+                        "role_codelist_oid": "role_codelist_oid2",
+                        "collection_exception_condition_oid": "collection_exception_condition_oid2",
+                        "vendor": {
+                            "attributes": [
+                                {
+                                    "uid": "odm_vendor_attribute3",
+                                    "name": "nameThree",
+                                    "data_type": "string",
+                                    "value_regex": null,
+                                    "value": "Yes",
+                                    "vendor_namespace_uid": "odm_vendor_namespace1"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "vendor_elements": [
+                    {
+                        "uid": "odm_vendor_element2",
+                        "name": "nameTwo",
+                        "value": "value"
+                    }
+                ],
+                "vendor_attributes": [],
+                "vendor_element_attributes": [],
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test overriding ODM Vendor Element from a specific ODM Item Group",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": [
+                {
+                    "uid": "odm_vendor_element1",
+                    "value": "value"
+                }
+            ],
+            "url": "concepts/odms/item-groups/OdmItemGroup_000001/vendor-elements?override=true"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmItemGroup_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "repeating": "Yes",
+                "is_reference_data": "Yes",
+                "sas_dataset_name": "sas_dataset_name1",
+                "origin": "origin1",
+                "purpose": "purpose1",
+                "comment": "comment1",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Reactivated version",
+                "user_initials": "TODO initials",
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "sdtm_domains": [
+                    {
+                        "uid": "term1",
+                        "code_submission_value": "code_submission_value1",
+                        "preferred_term": "preferred_term1"
+                    }
+                ],
+                "activity_subgroups": [
+                    {
+                        "uid": "activity_subgroup_root2",
+                        "name": "name2"
+                    }
+                ],
+                "items": [
+                    {
+                        "uid": "odm_item2",
+                        "oid": "oid2",
+                        "name": "name2",
+                        "order_number": 2,
+                        "mandatory": "Yes",
+                        "key_sequence": "key_sequence2",
+                        "method_oid": "method_oid2",
+                        "imputation_method_oid": "imputation_method_oid2",
+                        "role": "role2",
+                        "role_codelist_oid": "role_codelist_oid2",
+                        "collection_exception_condition_oid": "collection_exception_condition_oid2",
+                        "vendor": {
+                            "attributes": [
+                                {
+                                    "uid": "odm_vendor_attribute3",
+                                    "name": "nameThree",
+                                    "data_type": "string",
+                                    "value_regex": null,
+                                    "value": "Yes",
+                                    "vendor_namespace_uid": "odm_vendor_namespace1"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "vendor_elements": [
+                    {
+                        "uid": "odm_vendor_element1",
+                        "name": "nameOne",
+                        "value": "value"
+                    }
+                ],
+                "vendor_attributes": [],
+                "vendor_element_attributes": [],
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test adding ODM Vendor Attribute to a specific ODM Item Group",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": [
+                {
+                    "uid": "odm_vendor_attribute3",
+                    "value": "value"
+                }
+            ],
+            "url": "concepts/odms/item-groups/OdmItemGroup_000001/vendor-attributes"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmItemGroup_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "repeating": "Yes",
+                "is_reference_data": "Yes",
+                "sas_dataset_name": "sas_dataset_name1",
+                "origin": "origin1",
+                "purpose": "purpose1",
+                "comment": "comment1",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Reactivated version",
+                "user_initials": "TODO initials",
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "sdtm_domains": [
+                    {
+                        "uid": "term1",
+                        "code_submission_value": "code_submission_value1",
+                        "preferred_term": "preferred_term1"
+                    }
+                ],
+                "activity_subgroups": [
+                    {
+                        "uid": "activity_subgroup_root2",
+                        "name": "name2"
+                    }
+                ],
+                "items": [
+                    {
+                        "uid": "odm_item2",
+                        "oid": "oid2",
+                        "name": "name2",
+                        "order_number": 2,
+                        "mandatory": "Yes",
+                        "key_sequence": "key_sequence2",
+                        "method_oid": "method_oid2",
+                        "imputation_method_oid": "imputation_method_oid2",
+                        "role": "role2",
+                        "role_codelist_oid": "role_codelist_oid2",
+                        "collection_exception_condition_oid": "collection_exception_condition_oid2",
+                        "vendor": {
+                            "attributes": [
+                                {
+                                    "uid": "odm_vendor_attribute3",
+                                    "name": "nameThree",
+                                    "data_type": "string",
+                                    "value_regex": null,
+                                    "value": "Yes",
+                                    "vendor_namespace_uid": "odm_vendor_namespace1"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "vendor_elements": [
+                    {
+                        "uid": "odm_vendor_element1",
+                        "name": "nameOne",
+                        "value": "value"
+                    }
+                ],
+                "vendor_attributes": [
+                    {
+                        "uid": "odm_vendor_attribute3",
+                        "name": "nameThree",
+                        "data_type": "string",
+                        "value_regex": "^[a-zA-Z]+$",
+                        "value": "value",
+                        "vendor_namespace_uid": "odm_vendor_namespace1"
+                    }
+                ],
+                "vendor_element_attributes": [],
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test overriding ODM Vendor Attribute from a specific ODM Item Group",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": [
+                {
+                    "uid": "odm_vendor_attribute4",
+                    "value": "value"
+                }
+            ],
+            "url": "concepts/odms/item-groups/OdmItemGroup_000001/vendor-attributes?override=true"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmItemGroup_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "repeating": "Yes",
+                "is_reference_data": "Yes",
+                "sas_dataset_name": "sas_dataset_name1",
+                "origin": "origin1",
+                "purpose": "purpose1",
+                "comment": "comment1",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Reactivated version",
+                "user_initials": "TODO initials",
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "sdtm_domains": [
+                    {
+                        "uid": "term1",
+                        "code_submission_value": "code_submission_value1",
+                        "preferred_term": "preferred_term1"
+                    }
+                ],
+                "activity_subgroups": [
+                    {
+                        "uid": "activity_subgroup_root2",
+                        "name": "name2"
+                    }
+                ],
+                "items": [
+                    {
+                        "uid": "odm_item2",
+                        "oid": "oid2",
+                        "name": "name2",
+                        "order_number": 2,
+                        "mandatory": "Yes",
+                        "key_sequence": "key_sequence2",
+                        "method_oid": "method_oid2",
+                        "imputation_method_oid": "imputation_method_oid2",
+                        "role": "role2",
+                        "role_codelist_oid": "role_codelist_oid2",
+                        "collection_exception_condition_oid": "collection_exception_condition_oid2",
+                        "vendor": {
+                            "attributes": [
+                                {
+                                    "uid": "odm_vendor_attribute3",
+                                    "name": "nameThree",
+                                    "data_type": "string",
+                                    "value_regex": null,
+                                    "value": "Yes",
+                                    "vendor_namespace_uid": "odm_vendor_namespace1"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "vendor_elements": [
+                    {
+                        "uid": "odm_vendor_element1",
+                        "name": "nameOne",
+                        "value": "value"
+                    }
+                ],
+                "vendor_attributes": [
+                    {
+                        "uid": "odm_vendor_attribute4",
+                        "name": "nameFour",
+                        "data_type": "string",
+                        "value_regex": null,
+                        "value": "value",
+                        "vendor_namespace_uid": "odm_vendor_namespace1"
+                    }
+                ],
+                "vendor_element_attributes": [],
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test adding ODM Vendor Element attribute to a specific ODM Item Group",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": [
+                {
+                    "uid": "odm_vendor_attribute1",
+                    "value": "value"
+                }
+            ],
+            "url": "concepts/odms/item-groups/OdmItemGroup_000001/vendor-element-attributes"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmItemGroup_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "repeating": "Yes",
+                "is_reference_data": "Yes",
+                "sas_dataset_name": "sas_dataset_name1",
+                "origin": "origin1",
+                "purpose": "purpose1",
+                "comment": "comment1",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Reactivated version",
+                "user_initials": "TODO initials",
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "sdtm_domains": [
+                    {
+                        "uid": "term1",
+                        "code_submission_value": "code_submission_value1",
+                        "preferred_term": "preferred_term1"
+                    }
+                ],
+                "activity_subgroups": [
+                    {
+                        "uid": "activity_subgroup_root2",
+                        "name": "name2"
+                    }
+                ],
+                "items": [
+                    {
+                        "uid": "odm_item2",
+                        "oid": "oid2",
+                        "name": "name2",
+                        "order_number": 2,
+                        "mandatory": "Yes",
+                        "key_sequence": "key_sequence2",
+                        "method_oid": "method_oid2",
+                        "imputation_method_oid": "imputation_method_oid2",
+                        "role": "role2",
+                        "role_codelist_oid": "role_codelist_oid2",
+                        "collection_exception_condition_oid": "collection_exception_condition_oid2",
+                        "vendor": {
+                            "attributes": [
+                                {
+                                    "uid": "odm_vendor_attribute3",
+                                    "name": "nameThree",
+                                    "data_type": "string",
+                                    "value_regex": null,
+                                    "value": "Yes",
+                                    "vendor_namespace_uid": "odm_vendor_namespace1"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "vendor_elements": [
+                    {
+                        "uid": "odm_vendor_element1",
+                        "name": "nameOne",
+                        "value": "value"
+                    }
+                ],
+                "vendor_attributes": [
+                    {
+                        "uid": "odm_vendor_attribute4",
+                        "name": "nameFour",
+                        "data_type": "string",
+                        "value_regex": null,
+                        "value": "value",
+                        "vendor_namespace_uid": "odm_vendor_namespace1"
+                    }
+                ],
+                "vendor_element_attributes": [
+                    {
+                        "uid": "odm_vendor_attribute1",
+                        "name": "nameOne",
+                        "data_type": "string",
+                        "value_regex": "^[a-zA-Z]+$",
+                        "value": "value",
+                        "vendor_element_uid": "odm_vendor_element1"
+                    }
+                ],
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test overriding ODM Vendor Element attribute from a specific ODM Item Group",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": [
+                {
+                    "uid": "odm_vendor_attribute2",
+                    "value": "value"
+                }
+            ],
+            "url": "concepts/odms/item-groups/OdmItemGroup_000001/vendor-element-attributes?override=true"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmItemGroup_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "repeating": "Yes",
+                "is_reference_data": "Yes",
+                "sas_dataset_name": "sas_dataset_name1",
+                "origin": "origin1",
+                "purpose": "purpose1",
+                "comment": "comment1",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Reactivated version",
+                "user_initials": "TODO initials",
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "sdtm_domains": [
+                    {
+                        "uid": "term1",
+                        "code_submission_value": "code_submission_value1",
+                        "preferred_term": "preferred_term1"
+                    }
+                ],
+                "activity_subgroups": [
+                    {
+                        "uid": "activity_subgroup_root2",
+                        "name": "name2"
+                    }
+                ],
+                "items": [
+                    {
+                        "uid": "odm_item2",
+                        "oid": "oid2",
+                        "name": "name2",
+                        "order_number": 2,
+                        "mandatory": "Yes",
+                        "key_sequence": "key_sequence2",
+                        "method_oid": "method_oid2",
+                        "imputation_method_oid": "imputation_method_oid2",
+                        "role": "role2",
+                        "role_codelist_oid": "role_codelist_oid2",
+                        "collection_exception_condition_oid": "collection_exception_condition_oid2",
+                        "vendor": {
+                            "attributes": [
+                                {
+                                    "uid": "odm_vendor_attribute3",
+                                    "name": "nameThree",
+                                    "data_type": "string",
+                                    "value_regex": null,
+                                    "value": "Yes",
+                                    "vendor_namespace_uid": "odm_vendor_namespace1"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "vendor_elements": [
+                    {
+                        "uid": "odm_vendor_element1",
+                        "name": "nameOne",
+                        "value": "value"
+                    }
+                ],
+                "vendor_attributes": [
+                    {
+                        "uid": "odm_vendor_attribute4",
+                        "name": "nameFour",
+                        "data_type": "string",
+                        "value_regex": null,
+                        "value": "value",
+                        "vendor_namespace_uid": "odm_vendor_namespace1"
+                    }
+                ],
+                "vendor_element_attributes": [
+                    {
+                        "uid": "odm_vendor_attribute2",
+                        "name": "nameTwo",
+                        "data_type": "string",
+                        "value_regex": null,
+                        "value": "value",
+                        "vendor_element_uid": "odm_vendor_element1"
+                    }
+                ],
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test overriding ODM Vendor Element attribute from a specific ODM Item Group",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "elements": [
+                    {
+                        "uid": "odm_vendor_element3",
+                        "value": "value"
+                    }
+                ],
+                "element_attributes": [
+                    {
+                        "uid": "odm_vendor_attribute7",
+                        "value": "value"
+                    }
+                ],
+                "attributes": [
+                    {
+                        "uid": "odm_vendor_attribute4",
+                        "value": "value"
+                    }
+                ]
+            },
+            "url": "concepts/odms/item-groups/OdmItemGroup_000001/vendors"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmItemGroup_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "repeating": "Yes",
+                "is_reference_data": "Yes",
+                "sas_dataset_name": "sas_dataset_name1",
+                "origin": "origin1",
+                "purpose": "purpose1",
+                "comment": "comment1",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Reactivated version",
+                "user_initials": "TODO initials",
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "sdtm_domains": [
+                    {
+                        "uid": "term1",
+                        "code_submission_value": "code_submission_value1",
+                        "preferred_term": "preferred_term1"
+                    }
+                ],
+                "activity_subgroups": [
+                    {
+                        "uid": "activity_subgroup_root2",
+                        "name": "name2"
+                    }
+                ],
+                "items": [
+                    {
+                        "uid": "odm_item2",
+                        "oid": "oid2",
+                        "name": "name2",
+                        "order_number": 2,
+                        "mandatory": "Yes",
+                        "key_sequence": "key_sequence2",
+                        "method_oid": "method_oid2",
+                        "imputation_method_oid": "imputation_method_oid2",
+                        "role": "role2",
+                        "role_codelist_oid": "role_codelist_oid2",
+                        "collection_exception_condition_oid": "collection_exception_condition_oid2",
+                        "vendor": {
+                            "attributes": [
+                                {
+                                    "uid": "odm_vendor_attribute3",
+                                    "name": "nameThree",
+                                    "data_type": "string",
+                                    "value_regex": null,
+                                    "value": "Yes",
+                                    "vendor_namespace_uid": "odm_vendor_namespace1"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "vendor_elements": [
+                    {
+                        "uid": "odm_vendor_element3",
+                        "name": "nameThree",
+                        "value": "value"
+                    }
+                ],
+                "vendor_attributes": [
+                    {
+                        "uid": "odm_vendor_attribute4",
+                        "name": "nameFour",
+                        "data_type": "string",
+                        "value_regex": null,
+                        "value": "value",
+                        "vendor_namespace_uid": "odm_vendor_namespace1"
+                    }
+                ],
+                "vendor_element_attributes": [
+                    {
+                        "uid": "odm_vendor_attribute7",
+                        "name": "nameSeven",
+                        "data_type": "string",
+                        "value_regex": null,
+                        "value": "value",
+                        "vendor_element_uid": "odm_vendor_element3"
+                    }
+                ],
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test creating a new ODM Item Group version",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/item-groups/OdmItemGroup_000001/versions"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmItemGroup_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "repeating": "Yes",
+                "is_reference_data": "Yes",
+                "sas_dataset_name": "sas_dataset_name1",
+                "origin": "origin1",
+                "purpose": "purpose1",
+                "comment": "comment1",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "1.1",
+                "change_description": "New draft created",
+                "user_initials": "TODO user initials",
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "sdtm_domains": [
+                    {
+                        "uid": "term1",
+                        "code_submission_value": "code_submission_value1",
+                        "preferred_term": "preferred_term1"
+                    }
+                ],
+                "activity_subgroups": [
+                    {
+                        "uid": "activity_subgroup_root2",
+                        "name": "name2"
+                    }
+                ],
+                "items": [
+                    {
+                        "uid": "odm_item2",
+                        "oid": "oid2",
+                        "name": "name2",
+                        "order_number": 2,
+                        "mandatory": "Yes",
+                        "key_sequence": "key_sequence2",
+                        "method_oid": "method_oid2",
+                        "imputation_method_oid": "imputation_method_oid2",
+                        "role": "role2",
+                        "role_codelist_oid": "role_codelist_oid2",
+                        "collection_exception_condition_oid": "collection_exception_condition_oid2",
+                        "vendor": {
+                            "attributes": [
+                                {
+                                    "uid": "odm_vendor_attribute3",
+                                    "name": "nameThree",
+                                    "data_type": "string",
+                                    "value_regex": null,
+                                    "value": "Yes",
+                                    "vendor_namespace_uid": "odm_vendor_namespace1"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "vendor_elements": [
+                    {
+                        "uid": "odm_vendor_element3",
+                        "name": "nameThree",
+                        "value": "value"
+                    }
+                ],
+                "vendor_attributes": [
+                    {
+                        "uid": "odm_vendor_attribute4",
+                        "name": "nameFour",
+                        "data_type": "string",
+                        "value_regex": null,
+                        "value": "value",
+                        "vendor_namespace_uid": "odm_vendor_namespace1"
+                    }
+                ],
+                "vendor_element_attributes": [
+                    {
+                        "uid": "odm_vendor_attribute7",
+                        "name": "nameSeven",
+                        "data_type": "string",
+                        "value_regex": null,
+                        "value": "value",
+                        "vendor_element_uid": "odm_vendor_element3"
+                    }
+                ],
+                "possible_actions": [
+                    "approve",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Create a new ODM Item Group for deleting it",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "name1 - delete",
+                "oid": "oid2",
+                "repeating": "No",
+                "is_reference_data": "No",
+                "sas_dataset_name": "sas_dataset_name1",
+                "origin": "origin1",
+                "purpose": "purpose1",
+                "comment": "comment1",
+                "descriptions": [
+                    "odm_description3"
+                ],
+                "alias_uids": [],
+                "sdtm_domain_uids": []
+            },
+            "url": "concepts/odms/item-groups"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmItemGroup_000002",
+                "name": "name1 - delete",
+                "library_name": "Sponsor",
+                "oid": "oid2",
+                "repeating": "No",
+                "is_reference_data": "No",
+                "sas_dataset_name": "sas_dataset_name1",
+                "origin": "origin1",
+                "purpose": "purpose1",
+                "comment": "comment1",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "descriptions": [
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [],
+                "sdtm_domains": [],
+                "activity_subgroups": [],
+                "items": [],
+                "vendor_elements": [],
+                "vendor_attributes": [],
+                "vendor_element_attributes": [],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test deleting a specific ODM Item Group",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "concepts/odms/item-groups/OdmItemGroup_000002"
+        },
+        "response": {
+            "code": 204,
+            "headers": {
+                "content-length": "2",
+                "content-type": "application/json"
+            },
+            "result": null
+        }
+    },
+    {
+        "name": "Test creating a new ODM Item Group with relations",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "string",
+                "oid": "string",
+                "repeating": "No",
+                "is_reference_data": "No",
+                "sas_dataset_name": "string",
+                "origin": "string",
+                "purpose": "string",
+                "comment": "string",
+                "descriptions": [
+                    "odm_description3",
+                    {
+                        "name": "string2",
+                        "library_name": "Sponsor",
+                        "language": "DAN",
+                        "description": "string2",
+                        "instruction": "string2",
+                        "sponsor_instruction": "string2"
+                    }
+                ],
+                "alias_uids": [],
+                "sdtm_domain_uids": []
+            },
+            "url": "concepts/odms/item-groups"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmItemGroup_000003",
+                "name": "string",
+                "library_name": "Sponsor",
+                "oid": "string",
+                "repeating": "No",
+                "is_reference_data": "No",
+                "sas_dataset_name": "string",
+                "origin": "string",
+                "purpose": "string",
+                "comment": "string",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "descriptions": [
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "OdmDescription_000001",
+                        "name": "string2",
+                        "language": "DAN",
+                        "description": "string2",
+                        "instruction": "string2",
+                        "sponsor_instruction": "string2",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [],
+                "sdtm_domains": [],
+                "activity_subgroups": [],
+                "items": [],
+                "vendor_elements": [],
+                "vendor_attributes": [],
+                "vendor_element_attributes": [],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test updating an existing ODM Item Group with relations",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "oid1",
+                "repeating": "Yes",
+                "is_reference_data": "Yes",
+                "sas_dataset_name": "sas_dataset_name1",
+                "origin": "origin1",
+                "purpose": "purpose1",
+                "comment": "comment1",
+                "change_description": "repeating and is_reference_data changed to Yes",
+                "descriptions": [
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "change_description": "nothing changed"
+                    },
+                    {
+                        "name": "string3",
+                        "library_name": "Sponsor",
+                        "language": "ARA",
+                        "description": "string3",
+                        "instruction": "string3",
+                        "sponsor_instruction": "string3"
+                    }
+                ],
+                "alias_uids": [
+                    "odm_alias1"
+                ],
+                "sdtm_domain_uids": [
+                    "term1"
+                ]
+            },
+            "url": "concepts/odms/item-groups/OdmItemGroup_000001"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmItemGroup_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "repeating": "Yes",
+                "is_reference_data": "Yes",
+                "sas_dataset_name": "sas_dataset_name1",
+                "origin": "origin1",
+                "purpose": "purpose1",
+                "comment": "comment1",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Draft",
+                "version": "1.2",
+                "change_description": "repeating and is_reference_data changed to Yes",
+                "user_initials": "TODO initials",
+                "descriptions": [
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "OdmDescription_000002",
+                        "name": "string3",
+                        "language": "ARA",
+                        "description": "string3",
+                        "instruction": "string3",
+                        "sponsor_instruction": "string3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "sdtm_domains": [
+                    {
+                        "uid": "term1",
+                        "code_submission_value": "code_submission_value1",
+                        "preferred_term": "preferred_term1"
+                    }
+                ],
+                "activity_subgroups": [
+                    {
+                        "uid": "activity_subgroup_root2",
+                        "name": "name2"
+                    }
+                ],
+                "items": [
+                    {
+                        "uid": "odm_item2",
+                        "oid": "oid2",
+                        "name": "name2",
+                        "order_number": 2,
+                        "mandatory": "Yes",
+                        "key_sequence": "key_sequence2",
+                        "method_oid": "method_oid2",
+                        "imputation_method_oid": "imputation_method_oid2",
+                        "role": "role2",
+                        "role_codelist_oid": "role_codelist_oid2",
+                        "collection_exception_condition_oid": "collection_exception_condition_oid2",
+                        "vendor": {
+                            "attributes": [
+                                {
+                                    "uid": "odm_vendor_attribute3",
+                                    "name": "nameThree",
+                                    "data_type": "string",
+                                    "value_regex": null,
+                                    "value": "Yes",
+                                    "vendor_namespace_uid": "odm_vendor_namespace1"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "vendor_elements": [
+                    {
+                        "uid": "odm_vendor_element3",
+                        "name": "nameThree",
+                        "value": "value"
+                    }
+                ],
+                "vendor_attributes": [
+                    {
+                        "uid": "odm_vendor_attribute4",
+                        "name": "nameFour",
+                        "data_type": "string",
+                        "value_regex": null,
+                        "value": "value",
+                        "vendor_namespace_uid": "odm_vendor_namespace1"
+                    }
+                ],
+                "vendor_element_attributes": [
+                    {
+                        "uid": "odm_vendor_attribute7",
+                        "name": "nameSeven",
+                        "data_type": "string",
+                        "value_regex": null,
+                        "value": "value",
+                        "vendor_element_uid": "odm_vendor_element3"
+                    }
+                ],
+                "possible_actions": [
+                    "approve",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Create a new ODM Form with relation to ODM Item Group",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "oid1",
+                "sdtm_version": "0.1",
+                "repeating": "No",
+                "scope_uid": null,
+                "descriptions": [],
+                "alias_uids": []
+            },
+            "url": "concepts/odms/forms"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmForm_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "sdtm_version": "0.1",
+                "repeating": "No",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "scope": null,
+                "descriptions": [],
+                "aliases": [],
+                "activity_groups": [],
+                "item_groups": [],
+                "vendor_elements": [],
+                "vendor_attributes": [],
+                "vendor_element_attributes": [],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Approve the ODM Form",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/forms/OdmForm_000001/approvals"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmForm_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "sdtm_version": "0.1",
+                "repeating": "No",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Approved version",
+                "user_initials": "TODO initials",
+                "scope": null,
+                "descriptions": [],
+                "aliases": [],
+                "activity_groups": [],
+                "item_groups": [],
+                "vendor_elements": [],
+                "vendor_attributes": [],
+                "vendor_element_attributes": [],
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Add the ODM Item Group to the ODM Form",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": [
+                {
+                    "uid": "OdmItemGroup_000001",
+                    "order_number": 1,
+                    "mandatory": "Yes",
+                    "collection_exception_condition_oid": "None",
+                    "vendor": {
+                        "attributes": [
+                            {
+                                "uid": "odm_vendor_attribute3",
+                                "name": "nameThree",
+                                "data_type": "string",
+                                "value_regex": null,
+                                "value": "No",
+                                "vendor_namespace_uid": "odm_vendor_namespace1"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "url": "concepts/odms/forms/OdmForm_000001/item-groups"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmForm_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "sdtm_version": "0.1",
+                "repeating": "No",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Approved version",
+                "user_initials": "TODO initials",
+                "scope": null,
+                "descriptions": [],
+                "aliases": [],
+                "activity_groups": [],
+                "item_groups": [
+                    {
+                        "uid": "OdmItemGroup_000001",
+                        "oid": "oid1",
+                        "name": "name1",
+                        "order_number": 1,
+                        "mandatory": "Yes",
+                        "collection_exception_condition_oid": "None",
+                        "vendor": {
+                            "attributes": [
+                                {
+                                    "uid": "odm_vendor_attribute3",
+                                    "name": "nameThree",
+                                    "data_type": "string",
+                                    "value_regex": null,
+                                    "value": "No",
+                                    "vendor_namespace_uid": "odm_vendor_namespace1"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "vendor_elements": [],
+                "vendor_attributes": [],
+                "vendor_element_attributes": [],
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test getting UIDs of a specific ODM Item Group's active relationships",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/item-groups/OdmItemGroup_000001/relationships"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": {
+                "OdmForm": [
+                    "OdmForm_000001"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test getting all ODM Item Groups that belongs to an ODM Form",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/item-groups/forms"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": [
+                {
+                    "uid": "OdmItemGroup_000001",
+                    "name": "name1",
+                    "parent_uids": [
+                        "OdmForm_000001"
+                    ]
+                }
+            ]
+        }
+    }
+]

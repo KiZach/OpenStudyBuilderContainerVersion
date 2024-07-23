@@ -1,0 +1,41 @@
+[
+    {
+        "name": "Criteria for v1",
+        "name_plain": "Criteria for v1",
+        "guidance_text": null,
+        "uid": "CriteriaTemplate_000005",
+        "sequence_id": "CI4",
+        "library_name": "User Defined",
+        "type": {
+            "name": {
+                "sponsor_preferred_name": "Inclusion Criteria"
+            }
+        }
+    },
+    {
+        "name": "Criteria for v1.1",
+        "name_plain": "Criteria for v1.1",
+        "guidance_text": null,
+        "uid": "CriteriaTemplate_000005",
+        "sequence_id": "CI4",
+        "library_name": "User Defined",
+        "type": {
+            "name": {
+                "sponsor_preferred_name": "Inclusion Criteria"
+            }
+        }
+    },
+    {
+        "name": "Criteria for new draft",
+        "name_plain": "Criteria for new draft",
+        "guidance_text": null,
+        "uid": "CriteriaTemplate_000005",
+        "sequence_id": "CI4",
+        "library_name": "User Defined",
+        "type": {
+            "name": {
+                "sponsor_preferred_name": "Inclusion Criteria"
+            }
+        }
+    }
+]

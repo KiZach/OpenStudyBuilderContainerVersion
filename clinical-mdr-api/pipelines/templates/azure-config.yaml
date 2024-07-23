@@ -1,0 +1,55 @@
+# Pipeline parameters
+parameters:
+
+  - name: SERVICE_CONN
+    type: string
+    default: IaCAgent-ClinicalMDR-DEV
+
+  - name: DEPLOY_ID_NUMBER
+    displayName: ID number of parallel deployments running in the same environment.
+    type: string
+    default: '1'
+    values:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+
+  - name: VAULT_NAME_PREFIX
+    type: string
+    default: kv-general
+
+steps:
+
+  # Get AZ metadata for later use
+  - task: AzureCLI@2
+    displayName: Get AZ metadata
+    name: azmd
+    inputs:
+      azureSubscription: ${{parameters.SERVICE_CONN}}
+      scriptType: bash
+      scriptLocation: inlineScript
+      inlineScript: |
+        set -ex
+        
+        acrname="`az resource list --resource-type "Microsoft.ContainerRegistry/registries" --query "[?tags.environmentNumber == '${{parameters.DEPLOY_ID_NUMBER}}'].name" -o tsv`"
+        echo "##vso[task.setvariable variable=acrname;isOutput=true;]$acrname"
+        
+        namesuffix="`az resource list --resource-type "Microsoft.Network/applicationGateways" --query "[?tags.environmentNumber == '${{parameters.DEPLOY_ID_NUMBER}}'].name" -o tsv | cut -d "-" -f 2`"
+        echo "##vso[task.setvariable variable=namesuffix;isOutput=true;]$namesuffix"
+
+  # Get secrets from AzureKeyVault
+  - task: AzureKeyVault@1
+    displayName: Get AZ secrets
+    inputs:
+      azureSubscription: ${{parameters.SERVICE_CONN}}
+      KeyVaultName: '${{parameters.VAULT_NAME_PREFIX}}-$(azmd.namesuffix)'
+      RunAsPreJob: false
+      SecretsFilter:
+        CLINICAL-MDR-AUTH-${{parameters.DEPLOY_ID_NUMBER}}-STUDYB-SERVER-ID,
+        CLINICAL-MDR-API-OAUTH-APP-SECRET,
+        CLINICAL-MDR-AUTH-${{parameters.DEPLOY_ID_NUMBER}}-OIDC-METADATA,
+        CLINICAL-MDR-API-MS-GRAPH-GROUPS-QUERY,
+        CLINICAL-MDR-TEST-${{parameters.DEPLOY_ID_NUMBER}}-EXP-ACCESS-TOKEN
+

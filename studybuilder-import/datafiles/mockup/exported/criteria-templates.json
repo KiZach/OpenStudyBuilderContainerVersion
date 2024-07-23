@@ -1,0 +1,437 @@
+[
+  {
+    "categories": null,
+    "change_description": "Approved version",
+    "default_parameter_values": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": []
+        }
+      ]
+    },
+    "editable_instance": false,
+    "end_date": null,
+    "guidance_text": null,
+    "indications": null,
+    "library": {
+      "is_editable": true,
+      "name": "Sponsor"
+    },
+    "name": "<p>Any disorder, except for conditions associated with [DiseaseDisorder], which in the investigator's opinion might jeopardise participant's safety or compliance with the protocol.</p>",
+    "name_plain": "Any disorder, except for conditions associated with [DiseaseDisorder], which in the investigator's opinion might jeopardise participant's safety or compliance with the protocol.",
+    "parameters": [
+      {
+        "name": "DiseaseDisorder",
+        "values": null
+      }
+    ],
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-20T06:26:35.851643",
+    "status": "Final",
+    "study_count": 1,
+    "sub_categories": null,
+    "type": {
+      "attributes": {
+        "catalogue_name": null,
+        "change_description": "Imported from CDISC",
+        "code_submission_value": "EXCLUSION",
+        "codelist_uid": null,
+        "conceptId": "C25370",
+        "definition": "List of characteristics in a protocol, any one of which may exclude a potential subject from participation in a study. (CDISC glossary)",
+        "end_date": null,
+        "library_name": null,
+        "name_submission_value": null,
+        "nci_preferred_name": "Exclusion Criteria",
+        "possible_actions": [],
+        "start_date": "2014-09-26T00:00:00",
+        "status": "Final",
+        "term_uid": null,
+        "user_initials": "TESTUSER",
+        "version": "1.0"
+      },
+      "catalogue_name": "SDTM CT",
+      "codelist_uid": "CTCodelist_000012",
+      "library_name": "CDISC",
+      "name": {
+        "catalogue_name": null,
+        "change_description": "Initial import from CDISC",
+        "codelist_uid": null,
+        "end_date": null,
+        "library_name": null,
+        "order": 2,
+        "possible_actions": [
+          "inactivate",
+          "newVersion"
+        ],
+        "sponsor_preferred_name": "Exclusion Criteria",
+        "sponsor_preferred_name_sentence_case": "exclusion criteria",
+        "start_date": "2022-10-18T10:16:18.825000",
+        "status": "Final",
+        "term_uid": null,
+        "user_initials": "TESTUSER",
+        "version": "1.0"
+      },
+      "term_uid": "C25370_EXCLUSION"
+    },
+    "uid": "CriteriaTemplate_000004",
+    "user_initials": "MT",
+    "version": "1.0"
+  },
+  {
+    "categories": null,
+    "change_description": "Approved version",
+    "default_parameter_values": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": []
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "values": []
+        }
+      ]
+    },
+    "editable_instance": false,
+    "end_date": null,
+    "guidance_text": null,
+    "indications": null,
+    "library": {
+      "is_editable": true,
+      "name": "Sponsor"
+    },
+    "name": "<p>Age [NumericValue] [Age Unit] or above at the time of signing the informed consent.</p>",
+    "name_plain": "Age [NumericValue] [Age Unit] or above at the time of signing the informed consent.",
+    "parameters": [
+      {
+        "name": "NumericValue",
+        "values": null
+      },
+      {
+        "name": "Age Unit",
+        "values": null
+      }
+    ],
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-20T06:20:15.282623",
+    "status": "Final",
+    "study_count": 1,
+    "sub_categories": null,
+    "type": {
+      "attributes": {
+        "catalogue_name": null,
+        "change_description": "Imported from CDISC",
+        "code_submission_value": "INCLUSION",
+        "codelist_uid": null,
+        "conceptId": "C25532",
+        "definition": "The criteria in a protocol that prospective subjects must meet to be eligible for participation in a study. NOTE: Exclusion and inclusion criteria define the study population. See also exclusion criteria. (CDISC glossary)",
+        "end_date": null,
+        "library_name": null,
+        "name_submission_value": null,
+        "nci_preferred_name": "Inclusion Criteria",
+        "possible_actions": [],
+        "start_date": "2014-09-26T00:00:00",
+        "status": "Final",
+        "term_uid": null,
+        "user_initials": "TESTUSER",
+        "version": "1.0"
+      },
+      "catalogue_name": "SDTM CT",
+      "codelist_uid": "CTCodelist_000012",
+      "library_name": "CDISC",
+      "name": {
+        "catalogue_name": null,
+        "change_description": "Initial import from CDISC",
+        "codelist_uid": null,
+        "end_date": null,
+        "library_name": null,
+        "order": 1,
+        "possible_actions": [
+          "inactivate",
+          "newVersion"
+        ],
+        "sponsor_preferred_name": "Inclusion Criteria",
+        "sponsor_preferred_name_sentence_case": "inclusion criteria",
+        "start_date": "2022-10-18T10:16:18.810000",
+        "status": "Final",
+        "term_uid": null,
+        "user_initials": "TESTUSER",
+        "version": "1.0"
+      },
+      "term_uid": "C25532_INCLUSION"
+    },
+    "uid": "CriteriaTemplate_000003",
+    "user_initials": "MT",
+    "version": "1.0"
+  },
+  {
+    "categories": null,
+    "change_description": "Approved version",
+    "default_parameter_values": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": []
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "values": []
+        },
+        {
+          "conjunction": "",
+          "position": 3,
+          "values": []
+        },
+        {
+          "conjunction": "",
+          "position": 4,
+          "values": []
+        }
+      ]
+    },
+    "editable_instance": false,
+    "end_date": null,
+    "guidance_text": null,
+    "indications": null,
+    "library": {
+      "is_editable": true,
+      "name": "Sponsor"
+    },
+    "name": "<p>Diagnosed with [DiseaseDisorder] [Operator] [NumericValue] [Age Unit] before screening.</p>",
+    "name_plain": "Diagnosed with [DiseaseDisorder] [Operator] [NumericValue] [Age Unit] before screening.",
+    "parameters": [
+      {
+        "name": "DiseaseDisorder",
+        "values": null
+      },
+      {
+        "name": "Operator",
+        "values": null
+      },
+      {
+        "name": "NumericValue",
+        "values": null
+      },
+      {
+        "name": "Age Unit",
+        "values": null
+      }
+    ],
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-20T06:18:14.006157",
+    "status": "Final",
+    "study_count": 1,
+    "sub_categories": null,
+    "type": {
+      "attributes": {
+        "catalogue_name": null,
+        "change_description": "Imported from CDISC",
+        "code_submission_value": "INCLUSION",
+        "codelist_uid": null,
+        "conceptId": "C25532",
+        "definition": "The criteria in a protocol that prospective subjects must meet to be eligible for participation in a study. NOTE: Exclusion and inclusion criteria define the study population. See also exclusion criteria. (CDISC glossary)",
+        "end_date": null,
+        "library_name": null,
+        "name_submission_value": null,
+        "nci_preferred_name": "Inclusion Criteria",
+        "possible_actions": [],
+        "start_date": "2014-09-26T00:00:00",
+        "status": "Final",
+        "term_uid": null,
+        "user_initials": "TESTUSER",
+        "version": "1.0"
+      },
+      "catalogue_name": "SDTM CT",
+      "codelist_uid": "CTCodelist_000012",
+      "library_name": "CDISC",
+      "name": {
+        "catalogue_name": null,
+        "change_description": "Initial import from CDISC",
+        "codelist_uid": null,
+        "end_date": null,
+        "library_name": null,
+        "order": 1,
+        "possible_actions": [
+          "inactivate",
+          "newVersion"
+        ],
+        "sponsor_preferred_name": "Inclusion Criteria",
+        "sponsor_preferred_name_sentence_case": "inclusion criteria",
+        "start_date": "2022-10-18T10:16:18.810000",
+        "status": "Final",
+        "term_uid": null,
+        "user_initials": "TESTUSER",
+        "version": "1.0"
+      },
+      "term_uid": "C25532_INCLUSION"
+    },
+    "uid": "CriteriaTemplate_000002",
+    "user_initials": "MT",
+    "version": "1.0"
+  },
+  {
+    "categories": [
+      {
+        "attributes": {
+          "catalogue_name": null,
+          "change_description": "Approved version",
+          "code_submission_value": "Body Measurements",
+          "codelist_uid": null,
+          "conceptId": null,
+          "definition": "Body Measurements",
+          "end_date": null,
+          "library_name": null,
+          "name_submission_value": "Body Measurements",
+          "nci_preferred_name": "UNK",
+          "possible_actions": [
+            "inactivate",
+            "newVersion"
+          ],
+          "start_date": "2022-10-18T12:53:03.405777",
+          "status": "Final",
+          "term_uid": null,
+          "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+          "version": "1.0"
+        },
+        "catalogue_name": "SDTM CT",
+        "codelist_uid": "CTCodelist_000016",
+        "library_name": "Sponsor",
+        "name": {
+          "catalogue_name": null,
+          "change_description": "Approved version",
+          "codelist_uid": null,
+          "end_date": null,
+          "library_name": null,
+          "order": 5,
+          "possible_actions": [
+            "inactivate",
+            "newVersion"
+          ],
+          "sponsor_preferred_name": "Body Measurements",
+          "sponsor_preferred_name_sentence_case": "body measurements",
+          "start_date": "2022-10-18T12:53:02.901826",
+          "status": "Final",
+          "term_uid": null,
+          "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+          "version": "1.0"
+        },
+        "term_uid": "CTTerm_000031"
+      }
+    ],
+    "change_description": "Approved version",
+    "default_parameter_values": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": []
+        }
+      ]
+    },
+    "editable_instance": false,
+    "end_date": null,
+    "guidance_text": null,
+    "indications": [
+      {
+        "abbreviation": "NASH",
+        "change_description": "Approved version",
+        "definition": "Nonalcoholic steatohepatitis (disorder)",
+        "dictionary_id": "442685003",
+        "end_date": null,
+        "library_name": "SNOMED",
+        "name": "Nonalcoholic steatohepatitis",
+        "name_sentence_case": "nonalcoholic steatohepatitis",
+        "possible_actions": [
+          "inactivate",
+          "newVersion"
+        ],
+        "start_date": "2022-10-18T12:43:52.954208",
+        "status": "Final",
+        "term_uid": "DictionaryTerm_000037",
+        "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+        "version": "1.0"
+      }
+    ],
+    "library": {
+      "is_editable": true,
+      "name": "Sponsor"
+    },
+    "name": "<p>must be [Activity]</p>",
+    "name_plain": "must be [Activity]",
+    "parameters": [
+      {
+        "name": "Activity",
+        "values": null
+      }
+    ],
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T13:22:45.461315",
+    "status": "Final",
+    "study_count": 1,
+    "sub_categories": null,
+    "type": {
+      "attributes": {
+        "catalogue_name": null,
+        "change_description": "Imported from CDISC",
+        "code_submission_value": "INCLUSION",
+        "codelist_uid": null,
+        "conceptId": "C25532",
+        "definition": "The criteria in a protocol that prospective subjects must meet to be eligible for participation in a study. NOTE: Exclusion and inclusion criteria define the study population. See also exclusion criteria. (CDISC glossary)",
+        "end_date": null,
+        "library_name": null,
+        "name_submission_value": null,
+        "nci_preferred_name": "Inclusion Criteria",
+        "possible_actions": [],
+        "start_date": "2014-09-26T00:00:00",
+        "status": "Final",
+        "term_uid": null,
+        "user_initials": "TESTUSER",
+        "version": "1.0"
+      },
+      "catalogue_name": "SDTM CT",
+      "codelist_uid": "CTCodelist_000012",
+      "library_name": "CDISC",
+      "name": {
+        "catalogue_name": null,
+        "change_description": "Initial import from CDISC",
+        "codelist_uid": null,
+        "end_date": null,
+        "library_name": null,
+        "order": 1,
+        "possible_actions": [
+          "inactivate",
+          "newVersion"
+        ],
+        "sponsor_preferred_name": "Inclusion Criteria",
+        "sponsor_preferred_name_sentence_case": "inclusion criteria",
+        "start_date": "2022-10-18T10:16:18.810000",
+        "status": "Final",
+        "term_uid": null,
+        "user_initials": "TESTUSER",
+        "version": "1.0"
+      },
+      "term_uid": "C25532_INCLUSION"
+    },
+    "uid": "CriteriaTemplate_000001",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  }
+]

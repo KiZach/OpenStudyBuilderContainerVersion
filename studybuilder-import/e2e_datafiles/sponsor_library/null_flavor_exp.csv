@@ -1,0 +1,16 @@
+CT_CD_LIST_SUBMVAL,CT_NAME,NAME_SENTENSE_CASE,CT_SUBMVAL,DEFINITION,ORDER,CT_CD,NCI_PREFERRED_NAME
+NULL_FLAVOUR,Asked but unknown,asked but unknown,ASKU,Information was sought but not found (e.g. patient was asked but didn't know).,1,none,Asked but unknown
+NULL_FLAVOUR,Derived,derived,DER,An actual value may exist but it must be derived from the information provided (usually an expression is provided directly).,2,none,Derived
+NULL_FLAVOUR,Invalid,invalid,INV,The value as represented in the instance is not a member of the set of permitted data values in the constrained value domain of a variable.,3,none,Invalid
+NULL_FLAVOUR,Masked,masked,MSK,There is information on this item available but it has not been provided by the sender due to security privacy or other reasons. There may be an alternate mechanism for gaining access to this information. WARNING ? Use of this null flavor does provide information that may be a breach of confidentiality even though no detailed data are provided. Its primary purpose is for those circumstances where it is necessary to inform the receiver that the information does exist without providing any detail.,4,none,Masked
+NULL_FLAVOUR,Not applicable,not applicable,NA,No proper value is applicable in this context (e.g. last menstrual period for a male).,5,C48660,Not Applicable
+NULL_FLAVOUR,Not asked,not asked,NASK,This information has not been sought (e.g. patient was not asked).,6,none,Not asked
+NULL_FLAVOUR,Temporarily unavailable,temporarily unavailable,NAV,Information is not available at this time but it is expected that it will be available later.,7,none,Temporarily unavailable
+NULL_FLAVOUR,No information,no information,NI,The value is exceptional (missing/omitted/incomplete/improper). No information as to the reason for being an exceptional value is provided. This is the most general exceptional value. It is also the default exceptional value.,8,none,No information
+NULL_FLAVOUR,Negative infinity,negative infinity,NINF,Negative infinity of numbers.,9,none,Negative infinity
+NULL_FLAVOUR,Other,other,OTH,The actual value is not a member of the set of permitted data values in the constrained value domain of a variable (e.g. concept not provided by required code system).,10,none,Other
+NULL_FLAVOUR,Positive infinity,positive infinity,PINF,Positive infinity of numbers.,11,none,Positive infinity
+NULL_FLAVOUR,Sufficient quantity,sufficient quantity,QS,The specific quantity is not known but is known to be non-zero and is not specified because it makes up the bulk of the material. 'Add 10 mg of ingredient X/ 50 mg of ingredient Y and sufficient quantity of water to 100 ml.' The null flavor would be used to express the quantity of water.,12,none,Sufficient quantity
+NULL_FLAVOUR,Trace,trace,TRC,The content is greater than zero but too small to be quantified.,13,none,Trace
+NULL_FLAVOUR,Unencoded,unencoded,UNC,No attempt has been made to encode the information correctly but the raw source information is represented (usually in originalText).,14,none,Unencoded
+NULL_FLAVOUR,Unknown,unknown,UNK,A proper value is applicable but not known.,15,none,Unknown

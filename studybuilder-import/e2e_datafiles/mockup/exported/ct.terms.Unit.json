@@ -1,0 +1,876 @@
+[
+  {
+    "attributes": {
+      "change_description": "Approved version",
+      "code_submission_value": "% B/T",
+      "conceptId": null,
+      "definition": "A unit of measure expressed as a percent ratio of bound radioactive tracer to total molecules.",
+      "end_date": null,
+      "name_submission_value": null,
+      "nci_preferred_name": "Percent Bound Radioactive Tracer",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-09-20T10:55:35.216630",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "catalogue_name": "SDTM CT",
+    "codelist_uid": "C71620",
+    "library_name": "Sponsor",
+    "name": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "% B/T",
+      "sponsor_preferred_name_sentence_case": "% B/T",
+      "start_date": "2022-09-20T10:55:33.183900",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "term_uid": "CTTerm_000250"
+  },
+  {
+    "attributes": {
+      "change_description": "Approved version",
+      "code_submission_value": "%-point",
+      "conceptId": null,
+      "definition": "A percentage point or percent point is the unit for the arithmetic difference of two percentages.",
+      "end_date": null,
+      "name_submission_value": null,
+      "nci_preferred_name": "Percentage Point",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-09-20T10:55:35.088456",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "catalogue_name": "SDTM CT",
+    "codelist_uid": "C71620",
+    "library_name": "Sponsor",
+    "name": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "%-point",
+      "sponsor_preferred_name_sentence_case": "%-point",
+      "start_date": "2022-09-20T10:55:33.052793",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "term_uid": "CTTerm_000247"
+  },
+  {
+    "attributes": {
+      "change_description": "Approved version",
+      "code_submission_value": "(pmol*h/L)/(U/kg)",
+      "conceptId": null,
+      "definition": "A unit of concentration in pmol hour per liter divided by dose in U per kg",
+      "end_date": null,
+      "name_submission_value": null,
+      "nci_preferred_name": "Picomole Hour per Liter per U per kg",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-09-20T10:55:34.916751",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "catalogue_name": "SDTM CT",
+    "codelist_uid": "C71620",
+    "library_name": "Sponsor",
+    "name": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "(pmol*h/L)/(U/kg)",
+      "sponsor_preferred_name_sentence_case": "(pmol*h/L)/(U/kg)",
+      "start_date": "2022-09-20T10:55:33.046674",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "term_uid": "CTTerm_000248"
+  },
+  {
+    "attributes": {
+      "change_description": "Approved version",
+      "code_submission_value": "(pmol/L)/(U/kg)",
+      "conceptId": null,
+      "definition": "A unit of concentration in pmol per liter divided by dose in U per kg",
+      "end_date": null,
+      "name_submission_value": null,
+      "nci_preferred_name": "Picomole per Liter per U per kg",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-09-20T10:55:35.114277",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "catalogue_name": "SDTM CT",
+    "codelist_uid": "C71620",
+    "library_name": "Sponsor",
+    "name": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "(pmol/L)/(U/kg)",
+      "sponsor_preferred_name_sentence_case": "(pmol/L)/(U/kg)",
+      "start_date": "2022-09-20T10:55:33.096024",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "term_uid": "CTTerm_000249"
+  },
+  {
+    "attributes": {
+      "change_description": "Approved version",
+      "code_submission_value": "/regimen period",
+      "conceptId": null,
+      "definition": "A unit of measure equal to the instances of an entity per regimen period",
+      "end_date": null,
+      "name_submission_value": null,
+      "nci_preferred_name": "Per Regimen Period",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-09-20T10:55:35.471090",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "catalogue_name": "SDTM CT",
+    "codelist_uid": "C71620",
+    "library_name": "Sponsor",
+    "name": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "/regimen period",
+      "sponsor_preferred_name_sentence_case": "/regimen period",
+      "start_date": "2022-09-20T10:55:34.802441",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "term_uid": "CTTerm_000253"
+  },
+  {
+    "attributes": {
+      "change_description": "Approved version",
+      "code_submission_value": "0/00",
+      "conceptId": null,
+      "definition": "Equal to pro mille or per thousand",
+      "end_date": null,
+      "name_submission_value": null,
+      "nci_preferred_name": "Pro Mille",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-09-20T10:55:35.523556",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "catalogue_name": "SDTM CT",
+    "codelist_uid": "C71620",
+    "library_name": "Sponsor",
+    "name": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "0/00",
+      "sponsor_preferred_name_sentence_case": "0/00",
+      "start_date": "2022-09-20T10:55:34.800243",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "term_uid": "CTTerm_000251"
+  },
+  {
+    "attributes": {
+      "change_description": "Approved version",
+      "code_submission_value": "Arbitrary U/mL",
+      "conceptId": null,
+      "definition": "A unit of arbitrary units per milliliter",
+      "end_date": null,
+      "name_submission_value": null,
+      "nci_preferred_name": "Arbitrary Units per Milliliter",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-09-20T10:55:35.387553",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "catalogue_name": "SDTM CT",
+    "codelist_uid": "C71620",
+    "library_name": "Sponsor",
+    "name": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "Arbitrary U/mL",
+      "sponsor_preferred_name_sentence_case": "Arbitrary U/mL",
+      "start_date": "2022-09-20T10:55:34.798601",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "term_uid": "CTTerm_000252"
+  },
+  {
+    "attributes": {
+      "change_description": "Approved version",
+      "code_submission_value": "COUNT",
+      "conceptId": null,
+      "definition": "Dimension that holds outcomes(numbers) of count variables",
+      "end_date": null,
+      "name_submission_value": null,
+      "nci_preferred_name": "UNK",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-09-20T10:55:30.677810",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "catalogue_name": "SDTM CT",
+    "codelist_uid": "C71620",
+    "library_name": "Sponsor",
+    "name": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "Count",
+      "sponsor_preferred_name_sentence_case": "Count",
+      "start_date": "2022-09-20T10:55:30.091581",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "term_uid": "CTTerm_000231"
+  },
+  {
+    "attributes": {
+      "change_description": "Approved version",
+      "code_submission_value": "DOSE STEP",
+      "conceptId": null,
+      "definition": "A one step increase in dose based on steps, clicks or increments of a combination product with two different units in a fixed ratio.",
+      "end_date": null,
+      "name_submission_value": null,
+      "nci_preferred_name": "Dose Step",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-09-20T10:55:35.910725",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "catalogue_name": "SDTM CT",
+    "codelist_uid": "C71620",
+    "library_name": "Sponsor",
+    "name": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "DOSE STEP",
+      "sponsor_preferred_name_sentence_case": "DOSE STEP",
+      "start_date": "2022-09-20T10:55:35.208663",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "term_uid": "CTTerm_000255"
+  },
+  {
+    "attributes": {
+      "change_description": "Approved version",
+      "code_submission_value": "Fraction of 1",
+      "conceptId": null,
+      "definition": "A unit for expressing a percentage as a decimal whereby the total value is measured as a fraction of the numeric 1.",
+      "end_date": null,
+      "name_submission_value": null,
+      "nci_preferred_name": "Fraction of 1",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-09-20T10:55:36.072996",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "catalogue_name": "SDTM CT",
+    "codelist_uid": "C71620",
+    "library_name": "Sponsor",
+    "name": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "Fraction of 1",
+      "sponsor_preferred_name_sentence_case": "Fraction of 1",
+      "start_date": "2022-09-20T10:55:35.335427",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "term_uid": "CTTerm_000256"
+  },
+  {
+    "attributes": {
+      "change_description": "Approved version",
+      "code_submission_value": "IU/mL/IU/kg",
+      "conceptId": null,
+      "definition": "A unit of measure used to calculate the IR (incremental recovery) used in haemophilia. It is a PK variable and expresses how much factor activity (that be VIII or IX) increases per infused IU. For recombinant FVIII IR is usually 2%, meaning that FVIII activity in the patient will increase with 2% for every 1 IU infused per kg - meaning a HA patient receiving 50 IU/kg can expect FVIII activity of 100%\n\nThe unit for IR in medical papers is usually (IU/ml)/(IU/kg)\nIU/ml - referring to the measured increase in activity\nIU/kg - referring to the dose      ",
+      "end_date": null,
+      "name_submission_value": null,
+      "nci_preferred_name": "International Unit per Milliliter per International Unit per kilogram",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-09-20T10:55:36.498549",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "catalogue_name": "SDTM CT",
+    "codelist_uid": "C71620",
+    "library_name": "Sponsor",
+    "name": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "IU/mL/IU/kg",
+      "sponsor_preferred_name_sentence_case": "IU/mL/IU/kg",
+      "start_date": "2022-09-20T10:55:35.600429",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "term_uid": "CTTerm_000258"
+  },
+  {
+    "attributes": {
+      "change_description": "Approved version",
+      "code_submission_value": "Score",
+      "conceptId": null,
+      "definition": "A unit of measure referring to grading or rating of the result or entity.",
+      "end_date": null,
+      "name_submission_value": null,
+      "nci_preferred_name": "Score",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-09-20T10:55:37.071067",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "catalogue_name": "SDTM CT",
+    "codelist_uid": "C71620",
+    "library_name": "Sponsor",
+    "name": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "Score",
+      "sponsor_preferred_name_sentence_case": "Score",
+      "start_date": "2022-09-20T10:55:36.662584",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "term_uid": "CTTerm_000264"
+  },
+  {
+    "attributes": {
+      "change_description": "Approved version",
+      "code_submission_value": "U/week",
+      "conceptId": null,
+      "definition": "A unit of measure equal to units per week",
+      "end_date": null,
+      "name_submission_value": null,
+      "nci_preferred_name": "Units per Week",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-09-20T10:55:37.098367",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "catalogue_name": "SDTM CT",
+    "codelist_uid": "C71620",
+    "library_name": "Sponsor",
+    "name": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "U/week",
+      "sponsor_preferred_name_sentence_case": "U/week",
+      "start_date": "2022-09-20T10:55:36.725313",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "term_uid": "CTTerm_000265"
+  },
+  {
+    "attributes": {
+      "change_description": "Approved version",
+      "code_submission_value": "dB/m",
+      "conceptId": null,
+      "definition": "A unit of decibel per meter",
+      "end_date": null,
+      "name_submission_value": null,
+      "nci_preferred_name": "Decibel per Meter",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-09-20T10:55:35.797998",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "catalogue_name": "SDTM CT",
+    "codelist_uid": "C71620",
+    "library_name": "Sponsor",
+    "name": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "dB/m",
+      "sponsor_preferred_name_sentence_case": "dB/m",
+      "start_date": "2022-09-20T10:55:35.032669",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "term_uid": "CTTerm_000254"
+  },
+  {
+    "attributes": {
+      "change_description": "Approved version",
+      "code_submission_value": "g/week",
+      "conceptId": null,
+      "definition": "A unit of mass flow rate equal to one gram per week or a dose\nadministration rate unit equal to the rate at which a gram of a\nproduct is delivered or administered over the time period of one\nweek.",
+      "end_date": null,
+      "name_submission_value": null,
+      "nci_preferred_name": "Gram per Week",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-09-20T10:55:36.295639",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "catalogue_name": "SDTM CT",
+    "codelist_uid": "C71620",
+    "library_name": "Sponsor",
+    "name": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "g/week",
+      "sponsor_preferred_name_sentence_case": "g/week",
+      "start_date": "2022-09-20T10:55:35.534887",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "term_uid": "CTTerm_000257"
+  },
+  {
+    "attributes": {
+      "change_description": "Approved version",
+      "code_submission_value": "kJ",
+      "conceptId": null,
+      "definition": "A SI unit of energy equal to 10E3 joules. (NCI)\n\nJoule is a unit of electrical, mechanical, and thermal energy (as well as work and quantity of heat), equal to the work done when the point of application of a force of one Newton is displaced through a distance of one meter in the direction of the force or the work done when a current of one Ampere passes through a resistance of one ohm for one second. \n\nOne joule is equal to 0.23889 gram-calorie (mean).(NCI)\n\nA derived unit defined as the work done or energy required to exert a force of one newton for a distance of one meter. 1 KJ = 2.390 X 10-4 Kilocalorie. (CRCH)",
+      "end_date": null,
+      "name_submission_value": null,
+      "nci_preferred_name": "Kilojoule",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-09-20T10:55:36.607835",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "catalogue_name": "SDTM CT",
+    "codelist_uid": "C71620",
+    "library_name": "Sponsor",
+    "name": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "kJ",
+      "sponsor_preferred_name_sentence_case": "kJ",
+      "start_date": "2022-09-20T10:55:35.729157",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "term_uid": "CTTerm_000259"
+  },
+  {
+    "attributes": {
+      "change_description": "Approved version",
+      "code_submission_value": "kUA/L",
+      "conceptId": null,
+      "definition": "A unit of kilounits of allergen-specific antibodies per liter",
+      "end_date": null,
+      "name_submission_value": null,
+      "nci_preferred_name": "Kilounits of Allergen-Specific Antibodies per Liter",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-09-20T10:55:37.189541",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "catalogue_name": "SDTM CT",
+    "codelist_uid": "C71620",
+    "library_name": "Sponsor",
+    "name": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "kUA/L",
+      "sponsor_preferred_name_sentence_case": "kUA/L",
+      "start_date": "2022-09-20T10:55:36.838425",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "term_uid": "CTTerm_000266"
+  },
+  {
+    "attributes": {
+      "change_description": "Approved version",
+      "code_submission_value": "mL/Week",
+      "conceptId": null,
+      "definition": "A unit of measure expressed in milliliter(s) per week",
+      "end_date": null,
+      "name_submission_value": null,
+      "nci_preferred_name": "Milliliter per Week",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-09-20T10:55:36.727007",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "catalogue_name": "SDTM CT",
+    "codelist_uid": "C71620",
+    "library_name": "Sponsor",
+    "name": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "mL/Week",
+      "sponsor_preferred_name_sentence_case": "mL/Week",
+      "start_date": "2022-09-20T10:55:35.852451",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "term_uid": "CTTerm_000260"
+  },
+  {
+    "attributes": {
+      "change_description": "Approved version",
+      "code_submission_value": "mU/kg/min",
+      "conceptId": null,
+      "definition": "An arbitrary unit of substance content expressed in milliunit(s) per kilogram per minute.",
+      "end_date": null,
+      "name_submission_value": null,
+      "nci_preferred_name": "Milliunit per Kilogram per Minute.",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-09-20T10:55:36.975939",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "catalogue_name": "SDTM CT",
+    "codelist_uid": "C71620",
+    "library_name": "Sponsor",
+    "name": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "mU/kg/min",
+      "sponsor_preferred_name_sentence_case": "mU/kg/min",
+      "start_date": "2022-09-20T10:55:36.537349",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "term_uid": "CTTerm_000263"
+  },
+  {
+    "attributes": {
+      "change_description": "Approved version",
+      "code_submission_value": "mU/kg/min",
+      "conceptId": null,
+      "definition": "A unit of milliunit(s) per kilogram per minute",
+      "end_date": null,
+      "name_submission_value": null,
+      "nci_preferred_name": "Milliunits per Kilogram per Minute",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-09-20T10:55:36.876608",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "catalogue_name": "SDTM CT",
+    "codelist_uid": "C71620",
+    "library_name": "Sponsor",
+    "name": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "mU/kg/min",
+      "sponsor_preferred_name_sentence_case": "mU/kg/min",
+      "start_date": "2022-09-20T10:55:36.444994",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "term_uid": "CTTerm_000262"
+  },
+  {
+    "attributes": {
+      "change_description": "Approved version",
+      "code_submission_value": "mm2/usec",
+      "conceptId": null,
+      "definition": "A unit of millimeter squared divided by microsecond",
+      "end_date": null,
+      "name_submission_value": null,
+      "nci_preferred_name": "Millimeter Squared per Microsecond",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-09-20T10:55:36.777475",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "catalogue_name": "SDTM CT",
+    "codelist_uid": "C71620",
+    "library_name": "Sponsor",
+    "name": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "mm2/usec",
+      "sponsor_preferred_name_sentence_case": "mm2/usec",
+      "start_date": "2022-09-20T10:55:36.116414",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "term_uid": "CTTerm_000261"
+  },
+  {
+    "attributes": {
+      "change_description": "Approved version",
+      "code_submission_value": "NO UNIT",
+      "conceptId": null,
+      "definition": "no unit",
+      "end_date": null,
+      "name_submission_value": null,
+      "nci_preferred_name": "UNK",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-09-20T10:55:28.989104",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "catalogue_name": "SDTM CT",
+    "codelist_uid": "C71620",
+    "library_name": "Sponsor",
+    "name": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "no unit",
+      "sponsor_preferred_name_sentence_case": "no unit",
+      "start_date": "2022-09-20T10:55:28.415720",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "term_uid": "CTTerm_000216"
+  },
+  {
+    "attributes": {
+      "change_description": "Approved version",
+      "code_submission_value": "um2/sec",
+      "conceptId": null,
+      "definition": "A unit of micrometer squared divided by second",
+      "end_date": null,
+      "name_submission_value": null,
+      "nci_preferred_name": "Micrometer Squared per Second",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-09-20T10:55:37.201584",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "catalogue_name": "SDTM CT",
+    "codelist_uid": "C71620",
+    "library_name": "Sponsor",
+    "name": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "um2/sec",
+      "sponsor_preferred_name_sentence_case": "um2/sec",
+      "start_date": "2022-09-20T10:55:36.974001",
+      "status": "Final",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "term_uid": "CTTerm_000267"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "abbreviation": null,
+    "change_description": null,
+    "definition": null,
+    "end_date": null,
+    "library_name": "Sponsor",
+    "name": "7",
+    "name_sentence_case": "7",
+    "sdtm_domain_uid": "C49562_AE",
+    "start_date": null,
+    "status": null,
+    "template_parameter": false,
+    "uid": "LagTime_000001",
+    "unit_definition_uid": "UnitDefinition_000354",
+    "user_initials": null,
+    "value": 7.0,
+    "version": null
+  }
+]

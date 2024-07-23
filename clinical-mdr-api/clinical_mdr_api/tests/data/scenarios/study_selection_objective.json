@@ -1,0 +1,1382 @@
+[
+    {
+        "name": "Test getting empty list",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/studies/study_root/study-objectives"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "2",
+                "content-type": "application/json"
+            },
+            "result": {
+                "items": [],
+                "total": 0
+            }
+        }
+    },
+    {
+        "name": "Test getting empty list for all studies",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/study-objectives"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "2",
+                "content-type": "application/json"
+            },
+            "result": {
+                "items": [],
+                "total": 0,
+                "page": 1,
+                "size": 10
+            }
+        }
+    },
+    {
+        "name": "Test adding selection",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "objective_uid": "Objective_000001",
+                "objective_level_uid": "term_root_final"
+            },
+            "url": "/studies/study_root/study-objectives"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "336",
+                "content-type": "application/json"
+            },
+            "result": {
+                "study_version": null,
+                "study_objective_uid": "StudyObjective_000001",
+                "order": 1,
+                "project_number": null,
+                "project_name": null,
+                "accepted_version": false,
+                "study_uid": "study_root",
+                "objective_level": {
+                    "term_uid": "term_root_final",
+                    "catalogue_name": "SDTM CT",
+                    "codelists": [
+                        {
+                            "codelist_uid": "editable_cr",
+                            "order": 1
+                        }
+                    ],
+                    "sponsor_preferred_name": "term_value_name1",
+                    "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+                    "library_name": "Sponsor",
+                    "start_date": "2021-05-06T04:26:04.068000",
+                    "end_date": null,
+                    "status": "Final",
+                    "version": "1.0",
+                    "change_description": "Approved version",
+                    "user_initials": "TODO initials",
+                    "possible_actions": [
+                        "inactivate",
+                        "new_version"
+                    ]
+                },
+                "latest_objective": null,
+                "objective": {
+                    "uid": "Objective_000001",
+                    "name": "objective_1",
+                    "name_plain": "objective_1",
+                    "start_date": "2021-02-10T09:42:14+00:00",
+                    "end_date": null,
+                    "study_count": null,
+                    "status": "Final",
+                    "version": "1.0",
+                    "change_description": "Approved version",
+                    "user_initials": "TODO Initials",
+                    "possible_actions": [
+                        "inactivate"
+                    ],
+                    "objective_template": {
+                        "name": null,
+                        "name_plain": null,
+                        "uid": null,
+                        "sequence_id": "O1",
+                        "library_name": "Sponsor"
+                    },
+                    "parameter_terms": [],
+                    "library": {
+                        "name": "Sponsor",
+                        "is_editable": true
+                    }
+                },
+                "start_date": "2021-03-23T09:23:58.903656",
+                "user_initials": "TODO User initials",
+                "endpoint_count": 0
+            },
+            "save": {
+                "study_objective_uid": "study_objective_uid"
+            }
+        }
+    },
+    {
+        "name": "Test get all list non empty",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/studies/study_root/study-objectives"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": {
+                "items": [
+                    {
+                        "study_version": null,
+                        "study_objective_uid": "StudyObjective_000001",
+                        "order": 1,
+                        "project_number": "123",
+                        "project_name": "Project ABC",
+                        "accepted_version": false,
+                        "study_uid": "study_root",
+                        "objective_level": {
+                            "term_uid": "term_root_final",
+                            "catalogue_name": "SDTM CT",
+                            "codelists": [
+                                {
+                                    "codelist_uid": "editable_cr",
+                                    "order": 1
+                                }
+                            ],
+                            "sponsor_preferred_name": "term_value_name1",
+                            "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+                            "library_name": "Sponsor",
+                            "start_date": "2021-05-06T04:26:04.068000",
+                            "end_date": null,
+                            "status": "Final",
+                            "version": "1.0",
+                            "change_description": "Approved version",
+                            "user_initials": "TODO initials",
+                            "possible_actions": [
+                                "inactivate",
+                                "new_version"
+                            ]
+                        },
+                        "start_date": "2021-03-23T09:23:58.903656",
+                        "user_initials": "TODO User initials",
+                        "objective": {
+                            "uid": "Objective_000001",
+                            "name": "objective_1",
+                            "name_plain": "objective_1",
+                            "start_date": "2021-02-10T09:42:14+00:00",
+                            "study_count": null,
+                            "end_date": null,
+                            "status": "Final",
+                            "version": "1.0",
+                            "change_description": "Approved version",
+                            "user_initials": "TODO Initials",
+                            "possible_actions": [
+                                "inactivate"
+                            ],
+                            "objective_template": {
+                                "name": null,
+                                "name_plain": null,
+                                "uid": null,
+                                "sequence_id": "O1",
+                                "library_name": "Sponsor"
+                            },
+                            "parameter_terms": [],
+                            "library": {
+                                "name": "Sponsor",
+                                "is_editable": true
+                            }
+                        },
+                        "latest_objective": null,
+                        "endpoint_count": 0
+                    }
+                ],
+                "total": 0
+            }
+        }
+    },
+    {
+        "name": "Test get all for all studies",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/study-objectives"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": {
+                "total": 0,
+                "page": 1,
+                "size": 10,
+                "items": [
+                    {
+                        "study_version": null,
+                        "study_objective_uid": "StudyObjective_000001",
+                        "order": 1,
+                        "project_number": "123",
+                        "project_name": "Project ABC",
+                        "accepted_version": false,
+                        "study_uid": "study_root",
+                        "objective_level": {
+                            "term_uid": "term_root_final",
+                            "catalogue_name": "SDTM CT",
+                            "codelists": [
+                                {
+                                    "codelist_uid": "editable_cr",
+                                    "order": 1
+                                }
+                            ],
+                            "sponsor_preferred_name": "term_value_name1",
+                            "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+                            "library_name": "Sponsor",
+                            "start_date": "2021-05-06T04:26:04.068000",
+                            "end_date": null,
+                            "status": "Final",
+                            "version": "1.0",
+                            "change_description": "Approved version",
+                            "user_initials": "TODO initials",
+                            "possible_actions": [
+                                "inactivate",
+                                "new_version"
+                            ]
+                        },
+                        "start_date": "2021-03-23T09:23:58.903656",
+                        "user_initials": "TODO User initials",
+                        "objective": {
+                            "uid": "Objective_000001",
+                            "name": "objective_1",
+                            "name_plain": "objective_1",
+                            "start_date": "2021-02-10T09:42:14+00:00",
+                            "study_count": null,
+                            "end_date": null,
+                            "status": "Final",
+                            "version": "1.0",
+                            "change_description": "Approved version",
+                            "user_initials": "TODO Initials",
+                            "possible_actions": [
+                                "inactivate"
+                            ],
+                            "objective_template": {
+                                "name": null,
+                                "name_plain": null,
+                                "uid": null,
+                                "sequence_id": "O1",
+                                "library_name": "Sponsor"
+                            },
+                            "parameter_terms": [],
+                            "library": {
+                                "name": "Sponsor",
+                                "is_editable": true
+                            }
+                        },
+                        "latest_objective": null,
+                        "endpoint_count": 0
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test add selection 2, no objective_level set",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "objective_uid": "Objective_000002"
+            },
+            "url": "/studies/study_root/study-objectives"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "336",
+                "content-type": "application/json"
+            },
+            "result": {
+                "study_version": null,
+                "study_objective_uid": "StudyObjective_000002",
+                "order": 2,
+                "project_number": null,
+                "project_name": null,
+                "accepted_version": false,
+                "study_uid": "study_root",
+                "objective_level": null,
+                "latest_objective": null,
+                "objective": {
+                    "uid": "Objective_000002",
+                    "name": "objective_2",
+                    "name_plain": "objective_2",
+                    "start_date": "2021-02-10T09:42:14+00:00",
+                    "end_date": null,
+                    "status": "Final",
+                    "study_count": null,
+                    "version": "1.0",
+                    "change_description": "Approved version",
+                    "user_initials": "TODO Initials",
+                    "possible_actions": [
+                        "inactivate"
+                    ],
+                    "objective_template": {
+                        "name": null,
+                        "name_plain": null,
+                        "uid": null,
+                        "sequence_id": "O22",
+                        "library_name": "Sponsor"
+                    },
+                    "parameter_terms": [],
+                    "library": {
+                        "name": "Sponsor",
+                        "is_editable": true
+                    }
+                },
+                "start_date": "2021-03-23T09:23:58.903656",
+                "user_initials": "TODO User initials",
+                "endpoint_count": 0
+            },
+            "save": {
+                "study_objective_uid": "study_objective_uid"
+            }
+        }
+    },
+    {
+        "name": "Test check list has two",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/studies/study_root/study-objectives"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": {
+                "items": [
+                    {
+                        "study_version": null,
+                        "study_objective_uid": "StudyObjective_000001",
+                        "order": 1,
+                        "project_number": "123",
+                        "project_name": "Project ABC",
+                        "accepted_version": false,
+                        "study_uid": "study_root",
+                        "objective_level": {
+                            "term_uid": "term_root_final",
+                            "catalogue_name": "SDTM CT",
+                            "codelists": [
+                                {
+                                    "codelist_uid": "editable_cr",
+                                    "order": 1
+                                }
+                            ],
+                            "sponsor_preferred_name": "term_value_name1",
+                            "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+                            "library_name": "Sponsor",
+                            "start_date": "2021-05-06T04:26:04.068000",
+                            "end_date": null,
+                            "status": "Final",
+                            "version": "1.0",
+                            "change_description": "Approved version",
+                            "user_initials": "TODO initials",
+                            "possible_actions": [
+                                "inactivate",
+                                "new_version"
+                            ]
+                        },
+                        "objective": {
+                            "uid": "Objective_000001",
+                            "name": "objective_1",
+                            "name_plain": "objective_1",
+                            "start_date": "2021-02-10T09:42:14+00:00",
+                            "end_date": null,
+                            "status": "Final",
+                            "study_count": null,
+                            "version": "1.0",
+                            "change_description": "Approved version",
+                            "user_initials": "TODO Initials",
+                            "possible_actions": [
+                                "inactivate"
+                            ],
+                            "objective_template": {
+                                "name": null,
+                                "name_plain": null,
+                                "uid": null,
+                                "sequence_id": "O1",
+                                "library_name": "Sponsor"
+                            },
+                            "parameter_terms": [],
+                            "library": {
+                                "name": "Sponsor",
+                                "is_editable": true
+                            }
+                        },
+                        "start_date": "2021-03-23T09:23:58.903656",
+                        "user_initials": "TODO User initials",
+                        "latest_objective": null,
+                        "endpoint_count": 0
+                    },
+                    {
+                        "study_version": null,
+                        "study_objective_uid": "StudyObjective_000002",
+                        "order": 2,
+                        "project_number": "123",
+                        "project_name": "Project ABC",
+                        "accepted_version": false,
+                        "study_uid": "study_root",
+                        "objective_level": null,
+                        "latest_objective": null,
+                        "objective": {
+                            "uid": "Objective_000002",
+                            "name": "objective_2",
+                            "name_plain": "objective_2",
+                            "start_date": "2021-02-10T09:42:14+00:00",
+                            "end_date": null,
+                            "status": "Final",
+                            "study_count": null,
+                            "version": "1.0",
+                            "change_description": "Approved version",
+                            "user_initials": "TODO Initials",
+                            "possible_actions": [
+                                "inactivate"
+                            ],
+                            "objective_template": {
+                                "uid": null,
+                                "name_plain": null,
+                                "name": null,
+                                "sequence_id": "O22",
+                                "library_name": "Sponsor"
+                            },
+                            "parameter_terms": [],
+                            "library": {
+                                "name": "Sponsor",
+                                "is_editable": true
+                            }
+                        },
+                        "start_date": "2021-03-23T09:23:58.903656",
+                        "user_initials": "TODO User initials",
+                        "endpoint_count": 0
+                    }
+                ],
+                "total": 0
+            }
+        }
+    },
+    {
+        "name": "Test get specific",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/studies/study_root/study-objectives/{study_objective_uid}"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "389",
+                "content-type": "application/json"
+            },
+            "result": {
+                "study_version": null,
+                "study_objective_uid": "StudyObjective_000002",
+                "order": 2,
+                "project_number": null,
+                "project_name": null,
+                "accepted_version": false,
+                "study_uid": "study_root",
+                "objective_level": null,
+                "latest_objective": null,
+                "objective": {
+                    "uid": "objective_000002",
+                    "name": "objective_2",
+                    "name_plain": "objective_2",
+                    "start_date": "2021-02-10t09:42:14+00:00",
+                    "end_date": null,
+                    "status": "Final",
+                    "study_count": null,
+                    "version": "1.0",
+                    "change_description": "Approved version",
+                    "user_initials": "TODO Initials",
+                    "possible_actions": [
+                        "inactivate"
+                    ],
+                    "objective_template": {
+                        "name": null,
+                        "name_plain": null,
+                        "uid": null,
+                        "sequence_id": "O22",
+                        "library_name": "Sponsor"
+                    },
+                    "parameter_terms": [],
+                    "library": {
+                        "name": "Sponsor",
+                        "is_editable": true
+                    }
+                },
+                "start_date": "2021-03-23T09:23:58.903656",
+                "user_initials": "TODO User initials",
+                "endpoint_count": 0
+            }
+        }
+    },
+    {
+        "name": "Test reorder specific",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "new_order": 1
+            },
+            "url": "/studies/study_root/study-objectives/{study_objective_uid}/order"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "389",
+                "content-type": "application/json"
+            },
+            "result": {
+                "study_version": null,
+                "study_objective_uid": "StudyObjective_000002",
+                "order": 1,
+                "project_number": null,
+                "project_name": null,
+                "accepted_version": false,
+                "study_uid": "study_root",
+                "objective_level": null,
+                "objective": {
+                    "uid": "Objective_000002",
+                    "name": "objective_2",
+                    "name_plain": "objective_2",
+                    "start_date": "2021-02-10T09:42:14+00:00",
+                    "end_date": null,
+                    "status": "Final",
+                    "study_count": null,
+                    "version": "1.0",
+                    "change_description": "Approved version",
+                    "user_initials": "TODO Initials",
+                    "possible_actions": [
+                        "inactivate"
+                    ],
+                    "objective_template": {
+                        "name": null,
+                        "name_plain": null,
+                        "uid": null,
+                        "sequence_id": "O22",
+                        "library_name": "Sponsor"
+                    },
+                    "parameter_terms": [],
+                    "library": {
+                        "name": "Sponsor",
+                        "is_editable": true
+                    }
+                },
+                "start_date": "2021-03-23T09:23:58.903656",
+                "user_initials": "TODO User initials",
+                "latest_objective": null,
+                "endpoint_count": 0
+            }
+        }
+    },
+    {
+        "name": "Test patch specific",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "objective_level": null
+            },
+            "url": "/studies/study_root/study-objectives/{study_objective_uid}"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "389",
+                "content-type": "application/json"
+            },
+            "result": {
+                "study_version": null,
+                "study_objective_uid": "StudyObjective_000002",
+                "order": 2,
+                "project_number": null,
+                "project_name": null,
+                "accepted_version": false,
+                "study_uid": "study_root",
+                "objective_level": null,
+                "latest_objective": null,
+                "objective": {
+                    "uid": "Objective_000002",
+                    "name": "objective_2",
+                    "name_plain": "objective_2",
+                    "start_date": "2021-02-10T09:42:14+00:00",
+                    "end_date": null,
+                    "status": "Final",
+                    "study_count": null,
+                    "version": "1.0",
+                    "change_description": "Approved version",
+                    "user_initials": "TODO Initials",
+                    "possible_actions": [
+                        "inactivate"
+                    ],
+                    "objective_template": {
+                        "name": null,
+                        "name_plain": null,
+                        "uid": null,
+                        "sequence_id": "O22",
+                        "library_name": "Sponsor"
+                    },
+                    "parameter_terms": [],
+                    "library": {
+                        "name": "Sponsor",
+                        "is_editable": true
+                    }
+                },
+                "start_date": "2021-03-23T09:23:58.903656",
+                "user_initials": "TODO User initials",
+                "endpoint_count": 0
+            }
+        }
+    },
+    {
+        "name": "Test get history of all selections",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/studies/study_root/study-objectives/audit-trail"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "389",
+                "content-type": "application/json"
+            },
+            "result": [
+                {
+                    "order": 2,
+                    "study_uid": "study_root",
+                    "study_objective_uid": "StudyObjective_000001",
+                    "objective_level": {
+                        "term_uid": "term_root_final",
+                        "catalogue_name": "SDTM CT",
+                        "codelists": [
+                            {
+                                "codelist_uid": "editable_cr",
+                                "order": 1
+                            }
+                        ],
+                        "sponsor_preferred_name": "term_value_name1",
+                        "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+                        "library_name": "Sponsor",
+                        "start_date": "2021-05-06T05:43:56.074000",
+                        "end_date": null,
+                        "status": "Final",
+                        "version": "1.0",
+                        "change_description": "Approved version",
+                        "user_initials": "TODO initials",
+                        "possible_actions": [
+                            "inactivate",
+                            "new_version"
+                        ]
+                    },
+                    "objective": {
+                        "uid": "Objective_000001",
+                        "name": "objective_1",
+                        "name_plain": "objective_1",
+                        "start_date": "2021-05-06T05:43:56.394000",
+                        "end_date": null,
+                        "status": "Final",
+                        "study_count": null,
+                        "version": "1.0",
+                        "change_description": "Approved version",
+                        "user_initials": "TODO Initials",
+                        "possible_actions": [
+                            "inactivate"
+                        ],
+                        "objective_template": {
+                            "name": "objective_1",
+                            "name_plain": "objective_1",
+                            "uid": "ObjectiveTemplate_000001",
+                            "sequence_id": "O1",
+                            "library_name": "Sponsor"
+                        },
+                        "parameter_terms": [],
+                        "library": {
+                            "name": "Sponsor",
+                            "is_editable": true
+                        }
+                    },
+                    "start_date": "2021-05-06T07:43:59.595848",
+                    "user_initials": "TODO Initials",
+                    "end_date": null,
+                    "status": null,
+                    "change_type": "Edit"
+                },
+                {
+                    "order": 1,
+                    "study_uid": "study_root",
+                    "study_objective_uid": "StudyObjective_000001",
+                    "objective_level": {
+                        "term_uid": "term_root_final",
+                        "catalogue_name": "SDTM CT",
+                        "codelists": [
+                            {
+                                "codelist_uid": "editable_cr",
+                                "order": 1
+                            }
+                        ],
+                        "sponsor_preferred_name": "term_value_name1",
+                        "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+                        "library_name": "Sponsor",
+                        "start_date": "2021-05-06T05:43:56.074000",
+                        "end_date": null,
+                        "status": "Final",
+                        "version": "1.0",
+                        "change_description": "Approved version",
+                        "user_initials": "TODO initials",
+                        "possible_actions": [
+                            "inactivate",
+                            "new_version"
+                        ]
+                    },
+                    "objective": {
+                        "uid": "Objective_000001",
+                        "name": "objective_1",
+                        "name_plain": "objective_1",
+                        "start_date": "2021-05-06T05:43:56.394000",
+                        "end_date": null,
+                        "status": "Final",
+                        "study_count": null,
+                        "version": "1.0",
+                        "change_description": "Approved version",
+                        "user_initials": "TODO Initials",
+                        "possible_actions": [
+                            "inactivate"
+                        ],
+                        "objective_template": {
+                            "name": "objective_1",
+                            "name_plain": "objective_1",
+                            "uid": "ObjectiveTemplate_000001",
+                            "sequence_id": "O1",
+                            "library_name": "Sponsor"
+                        },
+                        "parameter_terms": [],
+                        "library": {
+                            "name": "Sponsor",
+                            "is_editable": true
+                        }
+                    },
+                    "start_date": "2021-05-06T07:43:58.788005",
+                    "user_initials": "TODO Initials",
+                    "end_date": "2021-05-06T07:43:59.595848",
+                    "status": null,
+                    "change_type": "Create"
+                },
+                {
+                    "order": 2,
+                    "study_uid": "study_root",
+                    "study_objective_uid": "StudyObjective_000002",
+                    "objective_level": null,
+                    "objective": {
+                        "uid": "Objective_000002",
+                        "name": "objective_2",
+                        "name_plain": "objective_2",
+                        "start_date": "2021-05-06T05:43:56.394000",
+                        "end_date": null,
+                        "status": "Final",
+                        "study_count": null,
+                        "version": "1.0",
+                        "change_description": "Approved version",
+                        "user_initials": "TODO Initials",
+                        "possible_actions": [
+                            "inactivate"
+                        ],
+                        "objective_template": {
+                            "name": "objective_2",
+                            "name_plain": "objective_2",
+                            "uid": "ObjectiveTemplate_000002",
+                            "sequence_id": "O22",
+                            "library_name": "Sponsor"
+                        },
+                        "parameter_terms": [],
+                        "library": {
+                            "name": "Sponsor",
+                            "is_editable": true
+                        }
+                    },
+                    "start_date": "2021-05-06T07:43:59.767302",
+                    "user_initials": "TODO Initials",
+                    "end_date": null,
+                    "status": null,
+                    "change_type": "Edit"
+                },
+                {
+                    "order": 1,
+                    "study_uid": "study_root",
+                    "study_objective_uid": "StudyObjective_000002",
+                    "objective_level": null,
+                    "objective": {
+                        "uid": "Objective_000002",
+                        "name": "objective_2",
+                        "name_plain": "objective_2",
+                        "start_date": "2021-05-06T05:43:56.394000",
+                        "end_date": null,
+                        "status": "Final",
+                        "study_count": null,
+                        "version": "1.0",
+                        "change_description": "Approved version",
+                        "user_initials": "TODO Initials",
+                        "possible_actions": [
+                            "inactivate"
+                        ],
+                        "objective_template": {
+                            "name": "objective_2",
+                            "name_plain": "objective_2",
+                            "uid": "ObjectiveTemplate_000002",
+                            "sequence_id": "O22",
+                            "library_name": "Sponsor"
+                        },
+                        "parameter_terms": [],
+                        "library": {
+                            "name": "Sponsor",
+                            "is_editable": true
+                        }
+                    },
+                    "start_date": "2021-05-06T07:43:59.632813",
+                    "user_initials": "TODO Initials",
+                    "end_date": "2021-05-06T07:43:59.767302",
+                    "status": null,
+                    "change_type": "Edit"
+                },
+                {
+                    "order": 2,
+                    "study_uid": "study_root",
+                    "study_objective_uid": "StudyObjective_000002",
+                    "objective_level": null,
+                    "objective": {
+                        "uid": "Objective_000002",
+                        "name": "objective_2",
+                        "name_plain": "objective_2",
+                        "start_date": "2021-05-06T05:43:56.394000",
+                        "end_date": null,
+                        "status": "Final",
+                        "study_count": null,
+                        "version": "1.0",
+                        "change_description": "Approved version",
+                        "user_initials": "TODO Initials",
+                        "possible_actions": [
+                            "inactivate"
+                        ],
+                        "objective_template": {
+                            "name": "objective_2",
+                            "name_plain": "objective_2",
+                            "uid": "ObjectiveTemplate_000002",
+                            "sequence_id": "O22",
+                            "library_name": "Sponsor"
+                        },
+                        "parameter_terms": [],
+                        "library": {
+                            "name": "Sponsor",
+                            "is_editable": true
+                        }
+                    },
+                    "start_date": "2021-05-06T07:43:59.361058",
+                    "user_initials": "TODO Initials",
+                    "end_date": "2021-05-06T07:43:59.632813",
+                    "status": null,
+                    "change_type": "Create"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Test all history of specific selection",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/studies/study_root/study-objectives/{study_objective_uid}/audit-trail"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "389",
+                "content-type": "application/json"
+            },
+            "result": [
+                {
+                    "order": 2,
+                    "study_uid": "study_root",
+                    "study_objective_uid": "StudyObjective_000002",
+                    "objective_level": null,
+                    "objective": {
+                        "uid": "Objective_000002",
+                        "name": "objective_2",
+                        "name_plain": "objective_2",
+                        "start_date": "2021-05-06T05:41:38.396000",
+                        "end_date": null,
+                        "status": "Final",
+                        "study_count": null,
+                        "version": "1.0",
+                        "change_description": "Approved version",
+                        "user_initials": "TODO Initials",
+                        "possible_actions": [
+                            "inactivate"
+                        ],
+                        "objective_template": {
+                            "name": "objective_2",
+                            "name_plain": "objective_2",
+                            "uid": "ObjectiveTemplate_000002",
+                            "sequence_id": "O22",
+                            "library_name": "Sponsor"
+                        },
+                        "parameter_terms": [],
+                        "library": {
+                            "name": "Sponsor",
+                            "is_editable": true
+                        }
+                    },
+                    "start_date": "2021-05-06T07:41:41.927178",
+                    "user_initials": "TODO Initials",
+                    "end_date": null,
+                    "status": null,
+                    "change_type": "Edit"
+                },
+                {
+                    "order": 1,
+                    "study_uid": "study_root",
+                    "study_objective_uid": "StudyObjective_000002",
+                    "objective_level": null,
+                    "objective": {
+                        "uid": "Objective_000002",
+                        "name": "objective_2",
+                        "name_plain": "objective_2",
+                        "start_date": "2021-05-06T05:41:38.396000",
+                        "end_date": null,
+                        "status": "Final",
+                        "study_count": null,
+                        "version": "1.0",
+                        "change_description": "Approved version",
+                        "user_initials": "TODO Initials",
+                        "possible_actions": [
+                            "inactivate"
+                        ],
+                        "objective_template": {
+                            "name": "objective_2",
+                            "name_plain": "objective_2",
+                            "uid": "ObjectiveTemplate_000002",
+                            "sequence_id": "O22",
+                            "library_name": "Sponsor"
+                        },
+                        "parameter_terms": [],
+                        "library": {
+                            "name": "Sponsor",
+                            "is_editable": true
+                        }
+                    },
+                    "start_date": "2021-05-06T07:41:41.790948",
+                    "user_initials": "TODO Initials",
+                    "end_date": "2021-05-06T07:41:41.927178",
+                    "status": null,
+                    "change_type": "Edit"
+                },
+                {
+                    "order": 2,
+                    "study_uid": "study_root",
+                    "study_objective_uid": "StudyObjective_000002",
+                    "objective_level": null,
+                    "objective": {
+                        "uid": "Objective_000002",
+                        "name": "objective_2",
+                        "name_plain": "objective_2",
+                        "start_date": "2021-05-06T05:41:38.396000",
+                        "end_date": null,
+                        "status": "Final",
+                        "study_count": null,
+                        "version": "1.0",
+                        "change_description": "Approved version",
+                        "user_initials": "TODO Initials",
+                        "possible_actions": [
+                            "inactivate"
+                        ],
+                        "objective_template": {
+                            "name": "objective_2",
+                            "name_plain": "objective_2",
+                            "uid": "ObjectiveTemplate_000002",
+                            "sequence_id": "O22",
+                            "library_name": "Sponsor"
+                        },
+                        "parameter_terms": [],
+                        "library": {
+                            "name": "Sponsor",
+                            "is_editable": true
+                        }
+                    },
+                    "start_date": "2021-05-06T07:41:41.497833",
+                    "user_initials": "TODO Initials",
+                    "end_date": "2021-05-06T07:41:41.790948",
+                    "status": null,
+                    "change_type": "Create"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Test patch specific replace",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "objective_uid": "Objective_000003"
+            },
+            "url": "/studies/study_root/study-objectives/{study_objective_uid}"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "389",
+                "content-type": "application/json"
+            },
+            "result": {
+                "study_version": null,
+                "study_objective_uid": "StudyObjective_000002",
+                "accepted_version": false,
+                "order": 2,
+                "project_number": null,
+                "project_name": null,
+                "study_uid": "study_root",
+                "objective_level": null,
+                "start_date": "2021-03-23T09:23:58.903656",
+                "user_initials": "TODO User initials",
+                "latest_objective": null,
+                "objective": {
+                    "uid": "Objective_000003",
+                    "name": "objective_3",
+                    "name_plain": "objective_3",
+                    "start_date": "2021-02-10T09:42:14+00:00",
+                    "end_date": null,
+                    "status": "Final",
+                    "study_count": null,
+                    "version": "1.0",
+                    "change_description": "Approved version",
+                    "user_initials": "TODO Initials",
+                    "possible_actions": [
+                        "inactivate"
+                    ],
+                    "objective_template": {
+                        "name": null,
+                        "name_plain": null,
+                        "uid": null,
+                        "sequence_id": "O3",
+                        "library_name": "Sponsor"
+                    },
+                    "parameter_terms": [],
+                    "library": {
+                        "name": "Sponsor",
+                        "is_editable": true
+                    }
+                },
+                "endpoint_count": 0
+            }
+        }
+    },
+    {
+        "name": "Test previewing selection create",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "objective_data": {
+                    "library_name": "Sponsor",
+                    "name": "objective_4",
+                    "objective_template_uid": "ObjectiveTemplate_000004",
+                    "parameter_terms": []
+                },
+                "objective_level_uid": "term_root_final"
+            },
+            "url": "/studies/study_root/study-objectives/preview"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "336",
+                "content-type": "application/json"
+            },
+            "result": {
+                "study_version": null,
+                "study_objective_uid": "preview",
+                "accepted_version": false,
+                "order": 3,
+                "project_number": "123",
+                "project_name": "Project ABC",
+                "study_uid": "study_root",
+                "objective_level": null,
+                "start_date": "2021-03-23T09:23:58.903656",
+                "user_initials": "TODO User initials",
+                "latest_objective": null,
+                "objective": {
+                    "uid": "preview",
+                    "name": "objective_4",
+                    "name_plain": "objective_4",
+                    "start_date": "2021-02-10T09:42:14+00:00",
+                    "end_date": null,
+                    "status": "Final",
+                    "study_count": null,
+                    "version": "1.0",
+                    "change_description": "Approved version",
+                    "user_initials": "TODO Initials",
+                    "possible_actions": [
+                        "inactivate"
+                    ],
+                    "objective_template": {
+                        "name": null,
+                        "name_plain": null,
+                        "uid": null,
+                        "sequence_id": "O4",
+                        "library_name": "Sponsor"
+                    },
+                    "parameter_terms": [],
+                    "library": {
+                        "name": "Sponsor",
+                        "is_editable": true
+                    }
+                },
+                "endpoint_count": 0
+            },
+            "save": {
+                "study_objective_uid": "study_objective_uid"
+            }
+        }
+    },
+    {
+        "name": "Test adding selection create",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "objective_data": {
+                    "library_name": "Sponsor",
+                    "name": "objective_4",
+                    "objective_template_uid": "ObjectiveTemplate_000004",
+                    "parameter_terms": []
+                },
+                "objective_level_uid": "term_root_final"
+            },
+            "url": "/studies/study_root/study-objectives?create_objective=true"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "336",
+                "content-type": "application/json"
+            },
+            "result": {
+                "study_version": null,
+                "study_objective_uid": "StudyObjective_000003",
+                "accepted_version": false,
+                "order": 3,
+                "project_number": null,
+                "project_name": null,
+                "study_uid": "study_root",
+                "objective_level": {
+                    "term_uid": "term_root_final",
+                    "catalogue_name": "SDTM CT",
+                    "codelists": [
+                        {
+                            "codelist_uid": "editable_cr",
+                            "order": 1
+                        }
+                    ],
+                    "sponsor_preferred_name": "term_value_name1",
+                    "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+                    "library_name": "Sponsor",
+                    "start_date": "2021-05-06T05:52:12.208000",
+                    "end_date": null,
+                    "status": "Final",
+                    "version": "1.0",
+                    "change_description": "Approved version",
+                    "user_initials": "TODO initials",
+                    "possible_actions": [
+                        "inactivate",
+                        "new_version"
+                    ]
+                },
+                "start_date": "2021-03-23T09:23:58.903656",
+                "user_initials": "TODO User initials",
+                "latest_objective": null,
+                "objective": {
+                    "uid": "Objective_000004",
+                    "name": "objective_4",
+                    "name_plain": "objective_4",
+                    "start_date": "2021-02-10T09:42:14+00:00",
+                    "end_date": null,
+                    "status": "Final",
+                    "study_count": null,
+                    "version": "1.0",
+                    "change_description": "Approved version",
+                    "user_initials": "TODO Initials",
+                    "possible_actions": [
+                        "inactivate"
+                    ],
+                    "objective_template": {
+                        "name": null,
+                        "name_plain": null,
+                        "uid": null,
+                        "sequence_id": "O4",
+                        "library_name": "Sponsor"
+                    },
+                    "parameter_terms": [],
+                    "library": {
+                        "name": "Sponsor",
+                        "is_editable": true
+                    }
+                },
+                "endpoint_count": 0
+            },
+            "save": {
+                "study_objective_uid": "study_objective_uid"
+            }
+        }
+    },
+    {
+        "name": "Test get all objectives - with proper study count",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/objectives?total_count=True"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "389",
+                "content-type": "application/json"
+            },
+            "result": {
+                "items": [
+                    {
+                        "uid": "Objective_000006",
+                        "name": "objective_4",
+                        "name_plain": "objective_4",
+                        "start_date": "2021-07-07T14:47:04.944158",
+                        "end_date": null,
+                        "status": "Final",
+                        "version": "1.0",
+                        "change_description": "Approved version",
+                        "user_initials": "unknown-user",
+                        "possible_actions": [
+                            "inactivate"
+                        ],
+                        "objective_template": {
+                            "name": "objective_4",
+                            "name_plain": "objective_4",
+                            "guidance_text": null,
+                            "uid": "ObjectiveTemplate_000004",
+                            "sequence_id": "O4",
+                            "library_name": "Sponsor"
+                        },
+                        "parameter_terms": [],
+                        "library": {
+                            "name": "Sponsor",
+                            "is_editable": true
+                        },
+                        "study_count": 1
+                    },
+                    {
+                        "uid": "Objective_000003",
+                        "name": "objective_3",
+                        "name_plain": "objective_3",
+                        "start_date": "2021-07-07T14:47:04.636540",
+                        "end_date": null,
+                        "status": "Final",
+                        "version": "1.0",
+                        "change_description": "Approved version",
+                        "user_initials": "unknown-user",
+                        "possible_actions": [
+                            "inactivate"
+                        ],
+                        "objective_template": {
+                            "name": "objective_3",
+                            "name_plain": "objective_3",
+                            "guidance_text": null,
+                            "uid": "ObjectiveTemplate_000003",
+                            "sequence_id": "O3",
+                            "library_name": "Sponsor"
+                        },
+                        "parameter_terms": [],
+                        "library": {
+                            "name": "Sponsor",
+                            "is_editable": true
+                        },
+                        "study_count": 1
+                    },
+                    {
+                        "uid": "Objective_000001",
+                        "name": "objective_1",
+                        "name_plain": "objective_1",
+                        "start_date": "2021-07-07T12:47:00.377000",
+                        "end_date": null,
+                        "status": "Final",
+                        "version": "1.0",
+                        "change_description": "Approved version",
+                        "user_initials": "TODO Initials",
+                        "possible_actions": [
+                            "inactivate"
+                        ],
+                        "objective_template": {
+                            "name": "objective_1",
+                            "name_plain": "objective_1",
+                            "guidance_text": null,
+                            "uid": "ObjectiveTemplate_000001",
+                            "sequence_id": "O1",
+                            "library_name": "Sponsor"
+                        },
+                        "parameter_terms": [],
+                        "library": {
+                            "name": "Sponsor",
+                            "is_editable": true
+                        },
+                        "study_count": 1
+                    }
+                ],
+                "total": 3,
+                "page": 1,
+                "size": 10
+            }
+        }
+    },
+    {
+        "name": "Test DELETE",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "url": "/studies/study_root/study-objectives/{study_objective_uid}"
+        },
+        "response": {
+            "code": 204,
+            "headers": {},
+            "result": null
+        }
+    }
+]

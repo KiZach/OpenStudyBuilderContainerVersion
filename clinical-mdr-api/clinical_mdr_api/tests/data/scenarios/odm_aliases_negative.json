@@ -1,0 +1,230 @@
+[
+    {
+        "name": "Create a new ODM Alias",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "Variable",
+                "context": "domain1"
+            },
+            "url": "concepts/odms/aliases"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmAlias_000001",
+                "name": "Variable",
+                "library_name": "Sponsor",
+                "context": "domain1",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test cannot create a new ODM Alias with existing name",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "Variable",
+                "context": "domain1"
+            },
+            "url": "concepts/odms/aliases"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "ODM Alias with ['name: Variable'] already exists.",
+                "time": "2022-03-07T12: 14: 18.116363",
+                "path": "http://testserver/concepts/odms/aliases",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot inactivate an ODM Alias that is in Draft status",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "concepts/odms/aliases/OdmAlias_000001/activations"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "Cannot retire draft version.",
+                "time": "2022-03-07T12:24:39.980123",
+                "path": "http://testserver/concepts/odms/aliases/OdmAlias_000001/activations",
+                "method": "DELETE",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot reactivate an ODM Alias that is not retired",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/aliases/OdmAlias_000001/activations"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "Only RETIRED version can be reactivated.",
+                "time": "2022-03-07T12:27:17.572613",
+                "path": "http://testserver/concepts/odms/aliases/OdmAlias_000001/activations",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Create an ODM Form and attach the ODM Alias to it",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "oid1",
+                "sdtm_version": "0.1",
+                "repeating": "No",
+                "descriptions": [
+                    "odm_description3"
+                ],
+                "alias_uids": [
+                    "OdmAlias_000001"
+                ]
+            },
+            "url": "concepts/odms/forms"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmForm_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "sdtm_version": "0.1",
+                "repeating": "No",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "scope": null,
+                "descriptions": [
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "OdmAlias_000001",
+                        "context": "domain1",
+                        "name": "Variable",
+                        "version": "0.1"
+                    }
+                ],
+                "activity_groups": [],
+                "item_groups": [],
+                "vendor_elements": [],
+                "vendor_attributes": [],
+                "vendor_element_attributes": [],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test cannot delete an ODM Alias that is being used",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "concepts/odms/aliases/OdmAlias_000001"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "This ODM Alias is in use.",
+                "time": "2022-03-07T12:27:17.572613",
+                "path": "http://testserver/concepts/odms/aliases/OdmAlias_000001",
+                "method": "DELETE",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot delete non-existent ODM Alias",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "concepts/odms/aliases/wrong_uid"
+        },
+        "response": {
+            "code": 404,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "type": "NotFoundException",
+                "message": "ODM Alias identified by uid (wrong_uid) does not exist.",
+                "time": "2022-11-24T08:43:42.862157",
+                "path": "http://testserver/concepts/odms/aliases/wrong_uid",
+                "method": "DELETE"
+            }
+        }
+    }
+]

@@ -1,0 +1,110 @@
+[
+   {
+      "name":"Test get catalogue changes returned valid data",
+      "request":{
+         "headers":{
+
+         },
+         "method":"GET",
+         "request":{
+
+         },
+         "url":"http://testserver/ct/catalogues/changes?catalogue_name=catalogue&comparison_type=attributes&start_datetime=2020-03-28T00:00:00&end_datetime=2020-06-27T00:00:00"
+      },
+      "response":{
+         "code":200,
+         "headers":{
+
+         },
+         "result":{
+            "start_datetime":"2020-03-28T00:00:00",
+            "end_datetime":"2020-06-27T00:00:00",
+            "new_codelists":[
+               {
+                  "value_node":{
+                     "name":"new_name",
+                     "definition":"codelist_added"
+                  },
+                  "uid":"added_codelist_uid",
+                  "change_date": "2020-06-26T00:00:00+00:00",
+                  "is_change_of_codelist": true
+               }
+            ],
+            "deleted_codelists":[],
+            "updated_codelists":[
+               {
+                  "value_node":{
+                     "left_only":{
+                        "extensible":false
+                     },
+                     "in_common":{
+
+                     },
+                     "different":{
+                        "name":{
+                           "left":"old_name",
+                           "right":"new_name"
+                        }
+                     },
+                     "right_only":{
+                        "definition":"new_definition"
+                     }
+                  },
+                  "uid":"updated_codelist_uid",
+                  "change_date": "2020-06-26T00:00:00+00:00",
+                  "is_change_of_codelist": true
+               },
+               {
+                  "uid":"added_codelist_uid",
+                  "is_change_of_codelist": false,
+                  "change_date": "2020-06-26T00:00:00+00:00",
+                  "value_node":{
+                     "name":"new_name",
+                     "definition":"codelist_added"
+                  }
+               }
+            ],
+            "new_terms":[
+               {
+                  "uid":"added_term_uid",
+                  "change_date": "2020-06-26T00:00:00+00:00",
+                  "value_node":{
+                     "preferred_term":"old_preferred_term",
+                     "name_submission_value":"old_submission_value"
+                  },
+                  "codelists":[
+                     "added_codelist_uid"
+                  ]
+               }
+            ],
+            "deleted_terms":[],
+            "updated_terms":[
+               {
+                  "uid":"updated_term_uid",
+                  "change_date": "2020-06-26T00:00:00+00:00",
+                  "value_node":{
+                     "left_only":{
+                        "preferred_term":"old_preferred_term"
+                     },
+                     "in_common":{
+
+                     },
+                     "different":{
+                        "name_submission_value":{
+                           "left":"old_submission_value",
+                           "right":"new_submission_value"
+                        }
+                     },
+                     "right_only":{
+                        "definition":"new_definition"
+                     }
+                  },
+                  "codelists":[
+                     "updated_codelist_uid"
+                  ]
+               }
+            ]
+         }
+      }
+   }
+]

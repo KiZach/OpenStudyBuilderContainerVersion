@@ -1,0 +1,212 @@
+[
+  {
+    "accepted_version": false,
+    "endpoint_count": 2,
+    "latest_objective": null,
+    "objective": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "library": {
+        "is_editable": true,
+        "name": "Sponsor"
+      },
+      "name": "<p>To assess the effect of [azd6738] and [durvalumab] or [azd6738] and [olaparib] combination in biliary tract cancer patients who have failed to 1st-line chemotherapy</p>",
+      "name_plain": "To assess the effect of azd6738 and durvalumab or azd6738 and olaparib combination in biliary tract cancer patients who have failed to 1st-line chemotherapy",
+      "objective_template": {
+        "name": "<p>To assess the effect of [Compound] and [Compound] or [Compound] and [Compound] combination in biliary tract cancer patients who have failed to 1st-line chemotherapy</p>",
+        "name_plain": "To assess the effect of [Compound] and [Compound] or [Compound] and [Compound] combination in biliary tract cancer patients who have failed to 1st-line chemotherapy",
+        "uid": "ObjectiveTemplate_000009"
+      },
+      "parameter_terms": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "terms": [
+            {
+              "index": 1,
+              "name": "azd6738",
+              "type": "Compound",
+              "uid": "Compound_000013"
+            }
+          ]
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "terms": [
+            {
+              "index": 1,
+              "name": "durvalumab",
+              "type": "Comparator",
+              "uid": "Compound_000012"
+            }
+          ]
+        },
+        {
+          "conjunction": "",
+          "position": 3,
+          "terms": [
+            {
+              "index": 1,
+              "name": "azd6738",
+              "type": "Compound",
+              "uid": "Compound_000013"
+            }
+          ]
+        },
+        {
+          "conjunction": "",
+          "position": 4,
+          "terms": [
+            {
+              "index": 1,
+              "name": "olaparib",
+              "type": "Compound",
+              "uid": "Compound_000011"
+            }
+          ]
+        }
+      ],
+      "possible_actions": [
+        "inactivate"
+      ],
+      "start_date": "2023-04-18T06:33:44.707176+00:00",
+      "status": "Final",
+      "study_count": null,
+      "uid": "Objective_000003",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "objective_level": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000004",
+      "end_date": null,
+      "library_name": "CDISC",
+      "order": 1,
+      "possible_actions": [
+        "inactivate",
+        "new_version"
+      ],
+      "sponsor_preferred_name": "Primary Objective",
+      "sponsor_preferred_name_sentence_case": "primary objective",
+      "start_date": "2023-04-17T12:55:52.279938+00:00",
+      "status": "Final",
+      "term_uid": "C85826_OBJPRIM",
+      "user_initials": "unknown-user",
+      "version": "3.0"
+    },
+    "order": 1,
+    "project_name": "CDISC Dev",
+    "project_number": "CDISC DEV",
+    "start_date": "2023-04-18T06:33:44.904028+00:00",
+    "study_objective_uid": "StudyObjective_000003",
+    "study_uid": "Study_000036",
+    "user_initials": "unknown-user"
+  },
+  {
+    "accepted_version": false,
+    "endpoint_count": 2,
+    "latest_objective": null,
+    "objective": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "library": {
+        "is_editable": true,
+        "name": "Sponsor"
+      },
+      "name": "<p>To assess the safety of [azd6738] and [durvalumab] combination or [azd6738] and [olaparib] combination in biliary tract cancer patients</p>",
+      "name_plain": "To assess the safety of azd6738 and durvalumab combination or azd6738 and olaparib combination in biliary tract cancer patients",
+      "objective_template": {
+        "name": "<p>To assess the safety of [Compound] and [Compound] combination or [Compound] and [Compound] combination in biliary tract cancer patients</p>",
+        "name_plain": "To assess the safety of [Compound] and [Compound] combination or [Compound] and [Compound] combination in biliary tract cancer patients",
+        "uid": "ObjectiveTemplate_000010"
+      },
+      "parameter_terms": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "terms": [
+            {
+              "index": 1,
+              "name": "azd6738",
+              "type": "Compound",
+              "uid": "Compound_000013"
+            }
+          ]
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "terms": [
+            {
+              "index": 1,
+              "name": "durvalumab",
+              "type": "Comparator",
+              "uid": "Compound_000012"
+            }
+          ]
+        },
+        {
+          "conjunction": "",
+          "position": 3,
+          "terms": [
+            {
+              "index": 1,
+              "name": "azd6738",
+              "type": "Compound",
+              "uid": "Compound_000013"
+            }
+          ]
+        },
+        {
+          "conjunction": "",
+          "position": 4,
+          "terms": [
+            {
+              "index": 1,
+              "name": "olaparib",
+              "type": "Compound",
+              "uid": "Compound_000011"
+            }
+          ]
+        }
+      ],
+      "possible_actions": [
+        "inactivate"
+      ],
+      "start_date": "2023-04-18T06:35:58.594005+00:00",
+      "status": "Final",
+      "study_count": null,
+      "uid": "Objective_000004",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "objective_level": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000004",
+      "end_date": null,
+      "library_name": "CDISC",
+      "order": 2,
+      "possible_actions": [
+        "inactivate",
+        "new_version"
+      ],
+      "sponsor_preferred_name": "Secondary Objective",
+      "sponsor_preferred_name_sentence_case": "secondary objective",
+      "start_date": "2023-04-17T12:55:52.917151+00:00",
+      "status": "Final",
+      "term_uid": "C85827_OBJSEC",
+      "user_initials": "unknown-user",
+      "version": "3.0"
+    },
+    "order": 2,
+    "project_name": "CDISC Dev",
+    "project_number": "CDISC DEV",
+    "start_date": "2023-04-18T06:35:58.671959+00:00",
+    "study_objective_uid": "StudyObjective_000004",
+    "study_uid": "Study_000036",
+    "user_initials": "unknown-user"
+  }
+]

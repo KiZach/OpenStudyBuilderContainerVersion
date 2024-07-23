@@ -1,0 +1,92 @@
+[
+    {
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "is_editable": true,
+                "name": "Test library"
+            },
+            "url": "/libraries"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "41",
+                "content-type": "application/json"
+            },
+            "result": {
+                "is_editable": true,
+                "name": "Test library"
+            }
+        }
+    },
+    {
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/libraries"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "43",
+                "content-type": "application/json"
+            },
+            "result": [
+                {
+                    "is_editable": true,
+                    "name": "Test library"
+                }
+            ]
+        }
+    },
+    {
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "is_editable": false,
+                "name": "Test library1"
+            },
+            "url": "/libraries"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "43",
+                "content-type": "application/json"
+            },
+            "result": {
+                "is_editable": false,
+                "name": "Test library1"
+            }
+        }
+    },
+    {
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/libraries"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "87",
+                "content-type": "application/json"
+            },
+            "result": [
+                {
+                    "is_editable": true,
+                    "name": "Test library"
+                },
+                {
+                    "is_editable": false,
+                    "name": "Test library1"
+                }
+            ]
+        }
+    }
+]

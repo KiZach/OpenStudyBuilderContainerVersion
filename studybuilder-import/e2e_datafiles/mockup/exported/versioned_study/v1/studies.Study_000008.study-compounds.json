@@ -1,0 +1,145 @@
+[
+    {
+        "study_uid": "Study_000008",
+        "order": 1,
+        "project_number": "CDISC DEV",
+        "project_name": "CDISC Dev",
+        "study_compound_uid": "StudyCompound_000009",
+        "compound": {
+            "start_date": "2023-08-29T12:05:44.048596+00:00",
+            "end_date": null,
+            "status": "Final",
+            "version": "1.0",
+            "change_description": "Approved version",
+            "user_initials": "unknown-user",
+            "uid": "Compound_000001",
+            "name": "Metformin",
+            "name_sentence_case": "metformin",
+            "definition": null,
+            "abbreviation": null,
+            "library_name": "Sponsor",
+            "possible_actions": [
+                "inactivate",
+                "new_version"
+            ],
+            "analyte_number": null,
+            "nnc_short_number": null,
+            "nnc_long_number": null,
+            "is_sponsor_compound": false,
+            "is_name_inn": true,
+            "substances": [
+                {
+                    "substance_term_uid": "DictionaryTerm_001022",
+                    "substance_name": "METFORMIN",
+                    "substance_unii": "9100L32L2N",
+                    "pclass_term_uid": "DictionaryTerm_000041",
+                    "pclass_name": "Biguanide",
+                    "pclass_id": "N0000175565"
+                }
+            ],
+            "dose_values": [
+                {
+                    "uid": "NumericValueWithUnit_000002",
+                    "value": 500,
+                    "unit_definition_uid": "UnitDefinition_000238",
+                    "unit_label": "mg"
+                }
+            ],
+            "strength_values": [
+                {
+                    "uid": "NumericValueWithUnit_000002",
+                    "value": 500,
+                    "unit_definition_uid": "UnitDefinition_000238",
+                    "unit_label": "mg"
+                },
+                {
+                    "uid": "NumericValueWithUnit_000003",
+                    "value": 850,
+                    "unit_definition_uid": "UnitDefinition_000238",
+                    "unit_label": "mg"
+                },
+                {
+                    "uid": "NumericValueWithUnit_000004",
+                    "value": 1000,
+                    "unit_definition_uid": "UnitDefinition_000238",
+                    "unit_label": "mg"
+                }
+            ],
+            "lag_times": [
+                {
+                    "value": 7,
+                    "unit_definition_uid": "UnitDefinition_000364",
+                    "unit_label": "days",
+                    "sdtm_domain_uid": "C49562_AE",
+                    "sdtm_domain_label": "Adverse Event Domain"
+                }
+            ],
+            "delivery_devices": [],
+            "dispensers": [
+                {
+                    "term_uid": "CTTerm_000127",
+                    "name": "Blister"
+                }
+            ],
+            "projects": [],
+            "brands": [],
+            "half_life": {
+                "uid": "NumericValueWithUnit_000001",
+                "value": 6.5,
+                "unit_definition_uid": "UnitDefinition_000352",
+                "unit_label": "hour"
+            },
+            "dose_frequencies": [],
+            "dosage_forms": [
+                {
+                    "term_uid": "C42998_TABLET",
+                    "name": "Tablet"
+                }
+            ],
+            "routes_of_administration": [
+                {
+                    "term_uid": "C38288_ORAL",
+                    "name": "Oral"
+                }
+            ]
+        },
+        "compound_alias": {
+            "start_date": "2023-08-29T12:05:45.023925+00:00",
+            "end_date": null,
+            "status": "Final",
+            "version": "1.0",
+            "change_description": "Approved version",
+            "user_initials": "unknown-user",
+            "uid": "CompoundAlias_000001",
+            "name": "Metformin",
+            "name_sentence_case": "metformin",
+            "definition": null,
+            "abbreviation": null,
+            "library_name": "Sponsor",
+            "possible_actions": [
+                "inactivate",
+                "new_version"
+            ],
+            "compound": {
+                "uid": "Compound_000001",
+                "name": "Metformin"
+            },
+            "is_preferred_synonym": true
+        },
+        "type_of_treatment": {
+            "term_uid": "CTTerm_000125",
+            "name": "Investigational Product"
+        },
+        "route_of_administration": null,
+        "strength_value": null,
+        "dosage_form": null,
+        "dispensed_in": null,
+        "device": null,
+        "formulation": null,
+        "other_info": null,
+        "reason_for_missing_null_value": null,
+        "study_compound_dosing_count": 0,
+        "start_date": "2023-10-03T08:04:54.703632+00:00",
+        "user_initials": "unknown-user"
+    }
+]

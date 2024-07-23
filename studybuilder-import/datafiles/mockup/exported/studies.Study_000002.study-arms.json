@@ -1,0 +1,78 @@
+[
+  {
+    "accepted_version": false,
+    "arm_colour": "#9FA8DAFF",
+    "arm_connected_branch_arms": null,
+    "arm_type": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000022",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": 1,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "Investigational Arm",
+      "sponsor_preferred_name_sentence_case": "investigational arm",
+      "start_date": "2022-10-18T12:53:21.759357",
+      "status": "Final",
+      "term_uid": "CTTerm_000081",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "arm_uid": "StudyArm_000005",
+    "change_type": null,
+    "code": "A",
+    "description": null,
+    "end_date": null,
+    "name": "Human Insulin",
+    "number_of_subjects": 50,
+    "order": 1,
+    "randomization_group": "A",
+    "short_name": "Human Insulin",
+    "start_date": "2022-10-19T07:37:36.068454",
+    "status": null,
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "arm_colour": "#81C784FF",
+    "arm_connected_branch_arms": null,
+    "arm_type": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000022",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": 2,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "Comparator Arm",
+      "sponsor_preferred_name_sentence_case": "comparator arm",
+      "start_date": "2022-10-18T12:53:22.154157",
+      "status": "Final",
+      "term_uid": "CTTerm_000084",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "arm_uid": "StudyArm_000007",
+    "change_type": null,
+    "code": "B",
+    "description": null,
+    "end_date": null,
+    "name": "Metformin",
+    "number_of_subjects": 50,
+    "order": 2,
+    "randomization_group": "B",
+    "short_name": "Metformin",
+    "start_date": "2022-10-19T07:38:19.610308",
+    "status": null,
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  }
+]

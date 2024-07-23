@@ -1,0 +1,89 @@
+[
+    {
+        "name": "Check add endpoint",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "endpoint_template_uid": "{etuid}",
+                "library_name": "non-existent library",
+                "name": "Test objective",
+                "objective_uid": "{ouid}",
+                "parameter_terms": []
+            },
+            "url": "/endpoints"
+        },
+        "response": {
+            "code": 404,
+            "headers": {
+                "content-length": "173",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "The library with the name='non-existent library' could not be found.",
+                "method": "POST",
+                "path": "http://testserver/endpoints",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "NotFoundException"
+            }
+        }
+    },
+    {
+        "name": "Check missing endpoint temlpate",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "endpoint_template_uid": "wrong-uid",
+                "library_name": "Test library",
+                "name": "Test objective",
+                "objective_uid": "{ouid}",
+                "parameter_terms": []
+            },
+            "url": "/endpoints"
+        },
+        "response": {
+            "code": 404,
+            "headers": {
+                "content-length": "192",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "No EndpointTemplateRoot with UID (wrong-uid) found in given status, date and version.",
+                "method": "POST",
+                "path": "http://testserver/endpoints",
+                "time": "2020-11-10T01:52:30.985556",
+                "type": "NotFoundException"
+            }
+        }
+    },
+    {
+        "name": "Check endpoint template not in final version ",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "endpoint_template_uid": "{otuidna}",
+                "library_name": "Test library",
+                "name": "Test objective",
+                "objective_uid": "{ouid}",
+                "parameter_terms": []
+            },
+            "url": "/endpoints"
+        },
+        "response": {
+            "code": 404,
+            "headers": {
+                "content-length": "192",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "No EndpointTemplateRoot with UID ({otuidna}) found in given status, date and version.",
+                "method": "POST",
+                "path": "http://testserver/endpoints",
+                "time": "2020-11-10T01:52:30.985556",
+                "type": "NotFoundException"
+            }
+        }
+    }
+]

@@ -1,0 +1,141 @@
+{
+  "current_metadata": {
+    "high_level_study_design": {
+      "confirmed_response_minimum_duration": null,
+      "confirmed_response_minimum_duration_null_value_code": {
+        "name": "Not Applicable",
+        "term_uid": "C48660_NA"
+      },
+      "is_adaptive_design": false,
+      "is_adaptive_design_null_value_code": null,
+      "is_extension_trial": false,
+      "is_extension_trial_null_value_code": null,
+      "post_auth_indicator": false,
+      "post_auth_indicator_null_value_code": null,
+      "study_stop_rules": null,
+      "study_stop_rules_null_value_code": null,
+      "study_type_code": {
+        "name": "Interventional",
+        "term_uid": "C98388_INTERVENTIONAL"
+      },
+      "study_type_null_value_code": null,
+      "trial_phase_code": {
+        "name": "Phase II Trial",
+        "term_uid": "C15601_PHASE__II__TRIAL"
+      },
+      "trial_phase_null_value_code": null,
+      "trial_type_codes": [
+        {
+          "name": "Efficacy Study",
+          "term_uid": "C49666_EFFICACY"
+        },
+        {
+          "name": "Safety Study",
+          "term_uid": "C49667_SAFETY"
+        }
+      ],
+      "trial_type_null_value_code": null
+    },
+    "identification_metadata": {
+      "clinical_programme_name": "CDISC Development programme",
+      "project_name": "CDISC Dev",
+      "project_number": "CDISC DEV",
+      "registry_identifiers": {
+        "ct_gov_id": "NCT0000001",
+        "ct_gov_id_null_value_code": null,
+        "eudract_id": null,
+        "eudract_id_null_value_code": null,
+        "investigational_new_drug_application_number_ind": null,
+        "investigational_new_drug_application_number_ind_null_value_code": null,
+        "japanese_trial_registry_id_japic": null,
+        "japanese_trial_registry_id_japic_null_value_code": null,
+        "universal_trial_number_utn": null,
+        "universal_trial_number_utn_null_value_code": null,
+        "eu_trial_number": null,
+        "eu_trial_number_null_value_code": null,
+        "civ_id_sin_number": null,
+        "civ_id_sin_number_null_value_code": null,
+        "national_clinical_trial_number_null_value_code": null,
+        "national_clinical_trial_number": null,
+        "japanese_trial_registry_number_jrct_null_value_code": null,
+        "japanese_trial_registry_number_jrct": null,
+        "national_medical_products_administration_nmpa_number_null_value_code": null,
+        "national_medical_products_administration_nmpa_number": null,
+        "eudamed_srn_number_null_value_code": null,
+        "eudamed_srn_number": null,
+        "investigational_device_exemption_ide_number": null,
+        "investigational_device_exemption_ide_number_null_value_code": null
+      },
+      "study_acronym": "DDF-SampleData-0001",
+      "study_id": "CDISC DEV-0001",
+      "study_number": "0001"
+    },
+    "study_description": {
+      "study_short_title": null,
+      "study_title": "Umbrella\u00a0Study of DDR (DNA-Damage Response) Targeting Agents in Advanced Biliary Tract Cancer"
+    },
+    "study_intervention": {
+      "add_on_to_existing_treatments": null,
+      "add_on_to_existing_treatments_null_value_code": null,
+      "control_type_code": null,
+      "control_type_null_value_code": null,
+      "intervention_model_code": null,
+      "intervention_model_null_value_code": null,
+      "intervention_type_code": null,
+      "intervention_type_null_value_code": null,
+      "is_trial_randomised": null,
+      "is_trial_randomised_null_value_code": null,
+      "planned_study_length": null,
+      "planned_study_length_null_value_code": null,
+      "stratification_factor": null,
+      "stratification_factor_null_value_code": null,
+      "trial_blinding_schema_code": null,
+      "trial_blinding_schema_null_value_code": null,
+      "trial_intent_types_codes": [],
+      "trial_intent_types_null_value_code": null
+    },
+    "study_population": {
+      "diagnosis_group_codes": [],
+      "diagnosis_group_null_value_code": null,
+      "disease_condition_or_indication_codes": [],
+      "disease_condition_or_indication_null_value_code": null,
+      "healthy_subject_indicator": null,
+      "healthy_subject_indicator_null_value_code": null,
+      "number_of_expected_subjects": null,
+      "number_of_expected_subjects_null_value_code": null,
+      "pediatric_investigation_plan_indicator": null,
+      "pediatric_investigation_plan_indicator_null_value_code": null,
+      "pediatric_postmarket_study_indicator": null,
+      "pediatric_postmarket_study_indicator_null_value_code": null,
+      "pediatric_study_indicator": null,
+      "pediatric_study_indicator_null_value_code": null,
+      "planned_maximum_age_of_subjects": null,
+      "planned_maximum_age_of_subjects_null_value_code": null,
+      "planned_minimum_age_of_subjects": null,
+      "planned_minimum_age_of_subjects_null_value_code": null,
+      "rare_disease_indicator": null,
+      "rare_disease_indicator_null_value_code": null,
+      "relapse_criteria": null,
+      "relapse_criteria_null_value_code": null,
+      "sex_of_participants_code": null,
+      "sex_of_participants_null_value_code": null,
+      "stable_disease_minimum_duration": null,
+      "stable_disease_minimum_duration_null_value_code": null,
+      "therapeutic_area_codes": [],
+      "therapeutic_area_null_value_code": null
+    },
+    "version_metadata": {
+      "study_status": "DRAFT",
+      "version_author": "unknown-user",
+      "version_description": null,
+      "version_number": null,
+      "version_timestamp": "2023-04-18T05:32:17.597805+00:00"
+    }
+  },
+  "possible_actions": [
+    "delete",
+    "lock",
+    "release"
+  ],
+  "uid": "Study_000036"
+}

@@ -1,0 +1,332 @@
+[
+    {
+        "dataset_name": "topic_cd_def",
+        "dataset_label": "Topic code definitions",
+        "name": "lb",
+        "type": "char",
+        "length": 200.0,
+        "label": "Label",
+        "format": "$200.",
+        "informat": "$200."
+    },
+    {
+        "dataset_name": "topic_cd_def",
+        "dataset_label": "Topic code definitions",
+        "name": "topic_cd",
+        "type": "char",
+        "length": 80.0,
+        "label": "Topic Code",
+        "format": "$80.",
+        "informat": "$80."
+    },
+    {
+        "dataset_name": "topic_cd_def",
+        "dataset_label": "Topic code definitions",
+        "name": "short_topic_cd",
+        "type": "char",
+        "length": 8.0,
+        "label": "Short Topic Code",
+        "format": "$8.",
+        "informat": "$8."
+    },
+    {
+        "dataset_name": "topic_cd_def",
+        "dataset_label": "Topic code definitions",
+        "name": "description",
+        "type": "char",
+        "length": 2000.0,
+        "label": "Description",
+        "format": "$2000.",
+        "informat": "$2000."
+    },
+    {
+        "dataset_name": "topic_cd_def",
+        "dataset_label": "Topic code definitions",
+        "name": "molecular_weight",
+        "type": "num",
+        "length": 8.0,
+        "label": "Molecular Weight",
+        "format": "",
+        "informat": ""
+    },
+    {
+        "dataset_name": "topic_cd_def",
+        "dataset_label": "Topic code definitions",
+        "name": "sas_display_format",
+        "type": "char",
+        "length": 32.0,
+        "label": "Sas Display Format",
+        "format": "$32.",
+        "informat": "$32."
+    },
+    {
+        "dataset_name": "topic_cd_def",
+        "dataset_label": "Topic code definitions",
+        "name": "general_domain_class",
+        "type": "char",
+        "length": 80.0,
+        "label": "General Domain Class",
+        "format": "$GENERAL_DOMAIN_CLASS_NL.",
+        "informat": "$80."
+    },
+    {
+        "dataset_name": "topic_cd_def",
+        "dataset_label": "Topic code definitions",
+        "name": "sub_domain_class",
+        "type": "char",
+        "length": 80.0,
+        "label": "Sub Domain Class",
+        "format": "$80.",
+        "informat": "$80."
+    },
+    {
+        "dataset_name": "topic_cd_def",
+        "dataset_label": "Topic code definitions",
+        "name": "sub_domain_type",
+        "type": "char",
+        "length": 80.0,
+        "label": "Sub Domain Type",
+        "format": "$80.",
+        "informat": "$80."
+    },
+    {
+        "dataset_name": "cdisc_ct_ver",
+        "dataset_label": "CDISC CT Version",
+        "name": "ct_scope",
+        "type": "char",
+        "length": 25.0,
+        "label": "CT Scope",
+        "format": "$25.",
+        "informat": "$25."
+    },
+    {
+        "dataset_name": "cdisc_ct_ver",
+        "dataset_label": "CDISC CT Version",
+        "name": "ct_ver",
+        "type": "char",
+        "length": 25.0,
+        "label": "CT Version",
+        "format": "$25.",
+        "informat": "$25."
+    },
+    {
+        "dataset_name": "cdisc_ct_ver",
+        "dataset_label": "CDISC CT Version",
+        "name": "pkg_nm",
+        "type": "char",
+        "length": 25.0,
+        "label": "Package Name",
+        "format": "$25.",
+        "informat": "$25."
+    },
+    {
+        "dataset_name": "cdisc_ct_pkg",
+        "dataset_label": "CDISC CT Package",
+        "name": "pkg_scope",
+        "type": "char",
+        "length": 80.0,
+        "label": "Package Scope",
+        "format": "$80.",
+        "informat": "$80."
+    },
+    {
+        "dataset_name": "cdisc_ct_pkg",
+        "dataset_label": "CDISC CT Package",
+        "name": "pkg_nm",
+        "type": "char",
+        "length": 80.0,
+        "label": "CT Package Number",
+        "format": "$80.",
+        "informat": "$80."
+    },
+    {
+        "dataset_name": "cdisc_ct_list",
+        "dataset_label": "CDISC CT List",
+        "name": "ct_cd_list_cd",
+        "type": "char",
+        "length": 80.0,
+        "label": "CT Code",
+        "format": "$80.",
+        "informat": "$80."
+    },
+    {
+        "dataset_name": "cdisc_ct_list",
+        "dataset_label": "CDISC CT List",
+        "name": "ct_cd_list_extensible",
+        "type": "char",
+        "length": 1.0,
+        "label": "CT Code List Extensible",
+        "format": "$1.",
+        "informat": "$1."
+    },
+    {
+        "dataset_name": "cdisc_ct_list",
+        "dataset_label": "CDISC CT List",
+        "name": "ct_cd_list_nm",
+        "type": "char",
+        "length": 200.0,
+        "label": "CT Code List Name",
+        "format": "$200.",
+        "informat": "$200."
+    },
+    {
+        "dataset_name": "cdisc_ct_list",
+        "dataset_label": "CDISC CT List",
+        "name": "ct_cd_list_submval",
+        "type": "char",
+        "length": 200.0,
+        "label": "CT Code List Submission Value",
+        "format": "$200.",
+        "informat": "$200."
+    },
+    {
+        "dataset_name": "cdisc_ct_list",
+        "dataset_label": "CDISC CT List",
+        "name": "ct_scope",
+        "type": "char",
+        "length": 25.0,
+        "label": "CT Scope",
+        "format": "$25.",
+        "informat": "$25."
+    },
+    {
+        "dataset_name": "cdisc_ct_list",
+        "dataset_label": "CDISC CT List",
+        "name": "ct_ver",
+        "type": "char",
+        "length": 25.0,
+        "label": "CT Version",
+        "format": "$25.",
+        "informat": "$25."
+    },
+    {
+        "dataset_name": "cdisc_ct_list",
+        "dataset_label": "CDISC CT List",
+        "name": "definition",
+        "type": "char",
+        "length": 2000.0,
+        "label": "Definition",
+        "format": "$2000.",
+        "informat": "$2000."
+    },
+    {
+        "dataset_name": "cdisc_ct_list",
+        "dataset_label": "CDISC CT List",
+        "name": "nci_pref_term",
+        "type": "char",
+        "length": 1000.0,
+        "label": "NCI Preferred Term",
+        "format": "$1000.",
+        "informat": "$1000."
+    },
+    {
+        "dataset_name": "cdisc_ct_list",
+        "dataset_label": "CDISC CT List",
+        "name": "pkg_nm",
+        "type": "char",
+        "length": 25.0,
+        "label": "Package Name",
+        "format": "$25.",
+        "informat": "$25."
+    },
+    {
+        "dataset_name": "cdisc_ct_list",
+        "dataset_label": "CDISC CT List",
+        "name": "synonyms",
+        "type": "char",
+        "length": 2000.0,
+        "label": "Synonyms",
+        "format": "$2000.",
+        "informat": "$2000."
+    },
+    {
+        "dataset_name": "cdisc_ct_val",
+        "dataset_label": "CDISC CT Values",
+        "name": "ct_cd",
+        "type": "char",
+        "length": 80.0,
+        "label": "CT Value",
+        "format": "$80.",
+        "informat": "$80."
+    },
+    {
+        "dataset_name": "cdisc_ct_val",
+        "dataset_label": "CDISC CT Values",
+        "name": "ct_cd_list_submval",
+        "type": "char",
+        "length": 200.0,
+        "label": "CT Code List Submission Value",
+        "format": "$200.",
+        "informat": "$200."
+    },
+    {
+        "dataset_name": "cdisc_ct_val",
+        "dataset_label": "CDISC CT Values",
+        "name": "ct_scope",
+        "type": "char",
+        "length": 25.0,
+        "label": "CT Scope",
+        "format": "$25.",
+        "informat": "$25."
+    },
+    {
+        "dataset_name": "cdisc_ct_val",
+        "dataset_label": "CDISC CT Values",
+        "name": "ct_submval",
+        "type": "char",
+        "length": 200.0,
+        "label": "CT Submission Value",
+        "format": "$200.",
+        "informat": "$200."
+    },
+    {
+        "dataset_name": "cdisc_ct_val",
+        "dataset_label": "CDISC CT Values",
+        "name": "ct_ver",
+        "type": "char",
+        "length": 25.0,
+        "label": "CT Version",
+        "format": "$25.",
+        "informat": "$25."
+    },
+    {
+        "dataset_name": "cdisc_ct_val",
+        "dataset_label": "CDISC CT Values",
+        "name": "definition",
+        "type": "char",
+        "length": 2000.0,
+        "label": "Definition",
+        "format": "$2000.",
+        "informat": "$2000."
+    },
+    {
+        "dataset_name": "cdisc_ct_val",
+        "dataset_label": "CDISC CT Values",
+        "name": "nci_pref_term",
+        "type": "char",
+        "length": 1000.0,
+        "label": "NCI Preferred Term",
+        "format": "$1000.",
+        "informat": "$1000."
+    },
+    {
+        "dataset_name": "cdisc_ct_val",
+        "dataset_label": "CDISC CT Values",
+        "name": "pkg_nm",
+        "type": "char",
+        "length": 25.0,
+        "label": "Package Name",
+        "format": "$25.",
+        "informat": "$25."
+    },
+    {
+        "dataset_name": "cdisc_ct_val",
+        "dataset_label": "CDISC CT Values",
+        "name": "synonyms",
+        "type": "char",
+        "length": 2000.0,
+        "label": "Synonyms",
+        "format": "$2000.",
+        "informat": "$2000."
+    }
+]

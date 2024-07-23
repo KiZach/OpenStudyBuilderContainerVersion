@@ -1,0 +1,7 @@
+CT_CD_LIST_SUBMVAL,CT_NAME,NAME_SENTENSE_CASE,CT_SUBMVAL,DEFINITION,ORDER,CT_CD,NCI_PREFERRED_NAME
+LANGUAGE,English,english,ENG,English code,1,,English
+LANGUAGE,French,french,FRA,French code,2,C16592,French
+LANGUAGE,German,german,DEU,German code,3,C16636,German
+LANGUAGE,Danish,danish,DAN,Danish code,4,,Danish
+LANGUAGE,Spanish,spanish,SPA,Spanish code,5,,Spanish
+LANGUAGE,Italian,italian,ITA,Italien code,6,C16761,Italien

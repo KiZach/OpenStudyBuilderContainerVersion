@@ -1,0 +1,42 @@
+SPDEF_SUBMVAL,NCI_PREFERRED_NAME,DEFINITION
+% B/T,Percent Bound Radioactive Tracer,A unit of measure expressed as a percent ratio of bound radioactive tracer to total molecules.
+%-point,Percentage Point,A percentage point or percent point is the unit for the arithmetic difference of two percentages.
+(pmol*h/L)/(U/kg),Picomole Hour per Liter per U per kg,A unit of concentration in pmol hour per liter divided by dose in U per kg
+(pmol/L)/(U/kg),Picomole per Liter per U per kg,A unit of concentration in pmol per liter divided by dose in U per kg
+/regimen period,Per Regimen Period,A unit of measure equal to the instances of an entity per regimen period
+0/00,Pro Mille,Equal to pro mille or per thousand
+Arbitrary U/mL,Arbitrary Units per Milliliter,A unit of arbitrary units per milliliter
+cm2,Square Centimeter,A unit of area measurement equal to a square measuring one centimeter on each side. One square centimeter is equal to 1E-4 square meter. (NCI)
+Count,Count,A unit of measure referring to the entity counted
+dB/m,Decibel per Meter,A unit of decibel per meter
+DOSE STEP,Dose Step,"A one step increase in dose based on steps, clicks or increments of a combination product with two different units in a fixed ratio."
+Fraction of 1,Fraction of 1,A unit for expressing a percentage as a decimal whereby the total value is measured as a fraction of the numeric 1.
+g/cm2,Gram per Square Centimeter,A unit of area density defined as a spread rate at which one gram of a substance is spread over the area of one square centimeter. The unit is also used as a dose calculation unit.(NCI)
+g/week,Gram per Week,"A unit of mass flow rate equal to one gram per week or a dose
+administration rate unit equal to the rate at which a gram of a
+product is delivered or administered over the time period of one
+week."
+IU/mL/IU/kg,International Unit per Milliliter per International Unit per kilogram,"A unit of measure used to calculate the IR (incremental recovery) used in haemophilia. It is a PK variable and expresses how much factor activity (that be VIII or IX) increases per infused IU. For recombinant FVIII IR is usually 2%, meaning that FVIII activity in the patient will increase with 2% for every 1 IU infused per kg - meaning a HA patient receiving 50 IU/kg can expect FVIII activity of 100%
+
+The unit for IR in medical papers is usually (IU/ml)/(IU/kg)
+IU/ml - referring to the measured increase in activity
+IU/kg - referring to the dose      "
+kJ,Kilojoule,"A SI unit of energy equal to 10E3 joules. (NCI)
+
+Joule is a unit of electrical, mechanical, and thermal energy (as well as work and quantity of heat), equal to the work done when the point of application of a force of one Newton is displaced through a distance of one meter in the direction of the force or the work done when a current of one Ampere passes through a resistance of one ohm for one second. 
+
+One joule is equal to 0.23889 gram-calorie (mean).(NCI)
+
+A derived unit defined as the work done or energy required to exert a force of one newton for a distance of one meter. 1 KJ = 2.390 X 10-4 Kilocalorie. (CRCH)"
+kUA/L,Kilounits of Allergen-Specific Antibodies per Liter,A unit of kilounits of allergen-specific antibodies per liter
+min*nmol/L,Minute Times Picomole per Milliliter,A unit of measure expressed in minutes times nanomoles per liter (area under the curve).
+mL/Week,Milliliter per Week,A unit of measure expressed in milliliter(s) per week
+mm2/usec,Millimeter Squared per Microsecond,A unit of millimeter squared divided by microsecond
+MONTHS,Month,"One of the 12 divisions of a year as determined by a calendar. It corresponds to the unit of time of approximately to one cycle of the moon's phases, about 30 days or 4 weeks. (NCI)"
+mU/kg/min,Milliunits per Kilogram per Minute,A unit of milliunit(s) per kilogram per minute
+mU/kg/min,Milliunit per Kilogram per Minute.,An arbitrary unit of substance content expressed in milliunit(s) per kilogram per minute.
+NO UNIT,No Unit,"Used to express no unit i.e., NULL"
+Score,Score,A unit of measure referring to grading or rating of the result or entity.
+U/week,Units per Week,A unit of measure equal to units per week
+um2/sec,Micrometer Squared per Second,A unit of micrometer squared divided by second
+YEARS,Year,"The period of time that it takes for Earth to make a complete revolution around the sun, approximately 365 days; a specific one year period. (NCI)"

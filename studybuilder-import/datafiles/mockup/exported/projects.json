@@ -1,0 +1,12 @@
+[
+  {
+    "clinical_programme": {
+      "name": "CDISC Development programme",
+      "uid": "ClinicalProgramme_000002"
+    },
+    "description": "Project to be used for test of CDISC implementation, e.g. SDTM, ADAM",
+    "name": "CDISC Dev",
+    "project_number": "CDISC DEV",
+    "uid": "Project_000003"
+  }
+]

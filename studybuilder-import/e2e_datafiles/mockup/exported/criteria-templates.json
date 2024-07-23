@@ -1,0 +1,140 @@
+[{
+    "categories": [{
+        "attributes": {
+            "catalogue_name": null,
+            "change_description": "Approved version",
+            "code_submission_value": "Body Measurements",
+            "codelist_uid": null,
+            "conceptId": null,
+            "definition": "Body Measurements",
+            "end_date": null,
+            "library_name": null,
+            "name_submission_value": "Body Measurements",
+            "nci_preferred_name": "UNK",
+            "possible_actions": [
+                "inactivate",
+                "newVersion"
+            ],
+            "start_date": "2022-05-23T11:47:27.782259",
+            "status": "Final",
+            "term_uid": null,
+            "user_initials": "unknown-user",
+            "version": "1.0"
+        },
+        "catalogue_name": "SDTM CT",
+        "codelist_uid": "CTCodelist_000016",
+        "library_name": "Sponsor",
+        "name": {
+            "catalogue_name": null,
+            "change_description": "Approved version",
+            "codelist_uid": null,
+            "end_date": null,
+            "library_name": null,
+            "order": 5,
+            "possible_actions": [
+                "inactivate",
+                "newVersion"
+            ],
+            "sponsor_preferred_name": "Body Measurements",
+            "sponsor_preferred_name_sentence_case": "body measurements",
+            "start_date": "2022-05-23T11:47:27.560583",
+            "status": "Final",
+            "term_uid": null,
+            "user_initials": "unknown-user",
+            "version": "1.0"
+        },
+        "term_uid": "CTTerm_000031"
+    }],
+    "change_description": "Initial version",
+    "default_parameter_values": {
+        "0": [{
+            "conjunction": "",
+            "position": 1,
+            "values": []
+        }]
+    },
+    "editable_instance": false,
+    "end_date": null,
+    "guidance_text": null,
+    "indications": [{
+        "abbreviation": "NASH",
+        "change_description": "Approved version",
+        "definition": "Nonalcoholic steatohepatitis (disorder)",
+        "dictionary_id": "442685003",
+        "end_date": null,
+        "library_name": "SNOMED",
+        "name": "Nonalcoholic steatohepatitis",
+        "name_sentence_case": "nonalcoholic steatohepatitis",
+        "possible_actions": [
+            "inactivate",
+            "newVersion"
+        ],
+        "start_date": "2022-05-23T11:41:26.331204",
+        "status": "Final",
+        "term_uid": "DictionaryTerm_000037",
+        "user_initials": "unknown-user",
+        "version": "1.0"
+    }],
+    "library": {
+        "is_editable": true,
+        "name": "Sponsor"
+    },
+    "name": "<p>Preloaded inclusion criteria</p>",
+    "name_plain": "Preloaded inclusion criteria",
+    "parameters": [],
+    "possible_actions": [
+        "approve",
+        "delete",
+        "edit"
+    ],
+    "start_date": "2022-05-24T09:54:54.916510",
+    "status": "Draft",
+    "study_count": 0,
+    "sub_categories": null,
+    "type": {
+        "attributes": {
+            "catalogue_name": null,
+            "change_description": "Imported from CDISC",
+            "code_submission_value": "INCLUSION",
+            "codelist_uid": null,
+            "conceptId": "C25532",
+            "definition": "The criteria in a protocol that prospective subjects must meet to be eligible for participation in a study. NOTE: Exclusion and inclusion criteria define the study population. See also exclusion criteria. (CDISC glossary)",
+            "end_date": null,
+            "library_name": null,
+            "name_submission_value": null,
+            "nci_preferred_name": "Inclusion Criteria",
+            "possible_actions": [],
+            "start_date": "2014-09-26T00:00:00",
+            "status": "Final",
+            "term_uid": null,
+            "user_initials": "TEST",
+            "version": "1.0"
+        },
+        "catalogue_name": "SDTM CT",
+        "codelist_uid": "CTCodelist_000012",
+        "library_name": "CDISC",
+        "name": {
+            "catalogue_name": null,
+            "change_description": "Initial import from CDISC",
+            "codelist_uid": null,
+            "end_date": null,
+            "library_name": null,
+            "order": 1,
+            "possible_actions": [
+                "inactivate",
+                "newVersion"
+            ],
+            "sponsor_preferred_name": "Inclusion Criteria",
+            "sponsor_preferred_name_sentence_case": "inclusion criteria",
+            "start_date": "2022-03-28T07:20:35.791000",
+            "status": "Final",
+            "term_uid": null,
+            "user_initials": "TEST",
+            "version": "1.0"
+        },
+        "term_uid": "C25532_INCLUSION"
+    },
+    "uid": "CriteriaTemplate_000001",
+    "user_initials": "unknown-user",
+    "version": "0.1"
+}]

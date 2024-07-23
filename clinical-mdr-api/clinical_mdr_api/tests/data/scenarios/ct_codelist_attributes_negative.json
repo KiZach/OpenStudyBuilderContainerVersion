@@ -1,0 +1,281 @@
+[
+    {
+        "name": "Test POST Create codelist non enditable library",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "catalogue_name": "SDTM CT",
+                "name": "name",
+                "submission_value": "Submission value",
+                "nci_preferred_name": "Nci preferred name",
+                "definition": "definition",
+                "extensible": true,
+                "sponsor_preferred_name": "Sponsor preferred name",
+                "template_parameter": true,
+                "library_name": "CDISC",
+                "terms": []
+            },
+            "url": "/ct/codelists"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "The library with the name='CDISC' does not allow to create objects.",
+                "method": "POST",
+                "path": "http://testserver/ct/codelists",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test get all codelists from non-existent catalogue",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/ct/codelists/attributes?catalogue_name=SDTM%20CTM"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "214",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "There is no catalogue identified by provided catalogue name (SDTM CTM)",
+                "method": "GET",
+                "path": "http://testserver/ct/codelists/attributes?catalogue_name=SDTM%20CTM",
+                "time": "2020-11-03T23:42:41.518146",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test PATCH non draft codelist",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "name": "codelist new name",
+                "submission_value": "new codelist submission value",
+                "nci_preferred_name": "new codelist preferred term",
+                "definition": "new codelist definition",
+                "extensible": true,
+                "change_description": "changing codelist name"
+            },
+            "url": "/ct/codelists/ct_codelist_root1/attributes"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "The object is not in draft status.",
+                "method": "PATCH",
+                "path": "http://testserver/ct/codelists/ct_codelist_root1/attributes",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test PATCH codelist in non editable library",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "name": "codelist new name",
+                "submission_value": "new codelist submission value",
+                "nci_preferred_name": "new codelist preferred term",
+                "definition": "new codelist definition",
+                "extensible": true,
+                "change_description": "changing codelist name"
+            },
+            "url": "/ct/codelists/ct_codelist_root2/attributes"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "Library is not editable.",
+                "method": "PATCH",
+                "path": "http://testserver/ct/codelists/ct_codelist_root2/attributes",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test PATCH codelist name already exists",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "name": "codelist attributes value1",
+                "submission_value": "new codelist submission value",
+                "nci_preferred_name": "new codelist preferred term",
+                "definition": "new codelist definition",
+                "extensible": true,
+                "change_description": "changing codelist name"
+            },
+            "url": "/ct/codelists/ct_codelist_root3/attributes"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "CTCodelistAttributes with name (codelist attributes value1) already exists.",
+                "method": "PATCH",
+                "path": "http://testserver/ct/codelists/ct_codelist_root3/attributes",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "ValidationException"
+            }
+        }
+    },
+    {
+        "name": "Test PATCH codelist submission value already exists",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "name": "new codelist name",
+                "submission_value": "codelist submission value1",
+                "nci_preferred_name": "new codelist preferred term",
+                "definition": "new codelist definition",
+                "extensible": true,
+                "change_description": "changing codelist name"
+            },
+            "url": "/ct/codelists/ct_codelist_root3/attributes"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "CTCodelistAttributes with submission_value (codelist submission value1) already exists.",
+                "method": "PATCH",
+                "path": "http://testserver/ct/codelists/ct_codelist_root3/attributes",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "ValidationException"
+            }
+        }
+    },
+    {
+        "name": "Test POST /versions non editable library",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/ct/codelists/ct_codelist_root2/attributes/versions"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "Library is not editable.",
+                "method": "POST",
+                "path": "http://testserver/ct/codelists/ct_codelist_root2/attributes/versions",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test POST approve non DRAFT codelist",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/ct/codelists/ct_codelist_root1/attributes/approvals"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "The object is not in draft status.",
+                "method": "POST",
+                "path": "http://testserver/ct/codelists/ct_codelist_root1/attributes/approvals",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test POST approve non editable library",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/ct/codelists/ct_codelist_root2/attributes/approvals"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "Library is not editable.",
+                "method": "POST",
+                "path": "http://testserver/ct/codelists/ct_codelist_root2/attributes/approvals",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test POST Create codelist with parent codelist",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "catalogue_name": "SDTM CT",
+                "name": "name with parent",
+                "parent_codelist_uid": "ct_codelist_root3",
+                "submission_value": "Submission value with parent",
+                "nci_preferred_name": "Nci preferred name with parent",
+                "definition": "definition",
+                "extensible": true,
+                "sponsor_preferred_name": "Sponsor preferred name with parent",
+                "template_parameter": true,
+                "library_name": "Sponsor",
+                "terms": []
+            },
+            "url": "/ct/codelists"
+        },
+        "response": {
+            "code": 201,
+            "headers": {},
+            "result": {
+                "catalogue_name": "SDTM CT",
+                "codelist_uid": "CTCodelist_000001",
+                "parent_codelist_uid": "ct_codelist_root3",
+                "child_codelist_uids": [],
+                "name": "name with parent",
+                "submission_value": "Submission value with parent",
+                "nci_preferred_name": "Nci preferred name with parent",
+                "definition": "definition",
+                "extensible": true,
+                "sponsor_preferred_name": "Sponsor preferred name with parent",
+                "template_parameter": true,
+                "library_name": "Sponsor",
+                "possible_actions": [
+                    "approve",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test POST add term to child codelist",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "term_uid": "term1"
+            },
+            "url": "/ct/codelists/CTCodelist_000001/terms"
+        },
+        "response": {
+            "code": 400,
+            "headers": {},
+            "result": {
+                "message": "The term identified by (term1) is not in use by parent codelist identified by (ct_codelist_root3)",
+                "time": "2022-06-10T11:18:54.056131",
+                "path": "http://testserver/ct/codelists/CTCodelist_000001/terms",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    }
+]

@@ -1,0 +1,43 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = "~=2.28.1"
+aiohttp = "~=3.8.3"
+
+[dev-packages]
+pylint = "~=2.15.0"
+black = "~=22.6.0"
+isort = "~=5.11.5"
+
+[requires]
+python_version = "3.11"
+
+[scripts]
+build-sbom = "pipelines/scripts/build-sbom.sh"
+import_all = "python -m run_import"
+import_dummydata = "python -m importers.run_import_dummydata"
+config = "python -m importers.run_import_config"
+dictionaries = "python -m importers.run_import_dictionaries"
+activities = "python -m importers.run_import_activities"
+codelistterms1 = "python -m importers.run_import_standardcodelistterms1"
+codelistterms2 = "python -m importers.run_import_standardcodelistterms2"
+unitdefinitions = "python -m importers.run_import_unitdefinitions"
+codelistfinish = "python -m importers.run_import_standardcodelistfinish"
+compounds = "python -m importers.run_import_compounds"
+crfs = "python -m importers.run_import_crfs"
+mockdata = "python -m importers.run_import_mockdata"
+mockdatajson = "python -m importers.run_import_mockdatajson"
+e2e = "python -m importers.run_import_e2e"
+sponsormodels = "python -m importers.run_import_sponsormodels"
+validatedatafiles = "python -m test_datafiles_e2e_sync"
+
+format = """sh -c "
+    python -m isort . \
+    && python -m black . \
+"
+"""
+lint = "pylint studybuilder-import"
+

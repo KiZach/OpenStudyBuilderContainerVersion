@@ -1,0 +1,78 @@
+[
+  {
+    "accepted_version": false,
+    "arm_colour": null,
+    "arm_connected_branch_arms": null,
+    "arm_type": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000023",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": 1,
+      "possible_actions": [
+        "inactivate",
+        "new_version"
+      ],
+      "sponsor_preferred_name": "Investigational Arm",
+      "sponsor_preferred_name_sentence_case": "investigational arm",
+      "start_date": "2023-04-17T11:03:22.071144+00:00",
+      "status": "Final",
+      "term_uid": "CTTerm_000083",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "arm_uid": "StudyArm_000009",
+    "change_type": null,
+    "code": null,
+    "description": "AZD6738 + Olaparib",
+    "end_date": null,
+    "name": "OLAPARIB_ADDON",
+    "number_of_subjects": null,
+    "order": 1,
+    "randomization_group": null,
+    "short_name": "OLAPARIB_ADDON",
+    "start_date": "2023-04-17T11:43:45.606778+00:00",
+    "status": null,
+    "study_uid": "Study_000036",
+    "user_initials": "unknown-user"
+  },
+  {
+    "accepted_version": false,
+    "arm_colour": null,
+    "arm_connected_branch_arms": null,
+    "arm_type": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000023",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": 1,
+      "possible_actions": [
+        "inactivate",
+        "new_version"
+      ],
+      "sponsor_preferred_name": "Investigational Arm",
+      "sponsor_preferred_name_sentence_case": "investigational arm",
+      "start_date": "2023-04-17T11:03:22.071144+00:00",
+      "status": "Final",
+      "term_uid": "CTTerm_000083",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "arm_uid": "StudyArm_000011",
+    "change_type": null,
+    "code": null,
+    "description": "AZD6738 + emerging Therapy 1",
+    "end_date": null,
+    "name": "NEW1_ADDON",
+    "number_of_subjects": null,
+    "order": 2,
+    "randomization_group": null,
+    "short_name": "NEW1_ADDON",
+    "start_date": "2023-04-17T11:43:45.865283+00:00",
+    "status": null,
+    "study_uid": "Study_000036",
+    "user_initials": "unknown-user"
+  }
+]

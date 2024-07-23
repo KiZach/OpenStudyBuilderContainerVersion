@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Objective for v1",
+        "name_plain": "Objective for v1",
+        "uid": "ObjectiveTemplate_000010",
+        "sequence_id": "O10",
+        "library_name": "User Defined"
+    },
+    {
+        "name": "Objective for v1.1",
+        "name_plain": "Objective for v1.1",
+        "uid": "ObjectiveTemplate_000010",
+        "sequence_id": "O10",
+        "library_name": "User Defined"
+    },
+    {
+        "name": "Objective for new draft",
+        "name_plain": "Objective for new draft",
+        "uid": "ObjectiveTemplate_000010",
+        "sequence_id": "O10",
+        "library_name": "User Defined"
+    }
+]

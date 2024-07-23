@@ -1,0 +1,428 @@
+[
+    {
+        "name": "Test empty list",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/timeframes"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "2",
+                "content-type": "application/json"
+            },
+            "result": {
+                "items": [],
+                "total": 0,
+                "page": 1,
+                "size": 10
+            }
+        }
+    },
+    {
+        "name": "Test adding timeframe wrong parameter",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Test library",
+                "parameter_terms": [
+                    {
+                        "conjunction": ",",
+                        "name": "Intervention",
+                        "terms": [
+                            {
+                                "index": 1,
+                                "name": "Intervention",
+                                "type": "Intervention",
+                                "uid": "Indication-99991",
+                                "value": "diabetes"
+                            }
+                        ]
+                    }
+                ],
+                "timeframe_template_uid": "{ttuid}"
+            },
+            "url": "/timeframes"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "148",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "Parameter term Indication-99991 ('type 2 diabetes') not valid for parameter 'Intervention'",
+                "method": "POST",
+                "path": "http://testserver/timeframes",
+                "time": "2020-11-11T02:03:45.621381",
+                "type": "ValidationException"
+            }
+        }
+    },
+    {
+        "name": "Test previewing timeframe single parameter",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Test library",
+                "parameter_terms": [
+                    {
+                        "conjunction": ",",
+                        "name": "Indication",
+                        "terms": [
+                            {
+                                "index": 1,
+                                "name": "Indication",
+                                "type": "Indication",
+                                "uid": "Indication-99991",
+                                "value": "type 2 diabetes"
+                            },
+                            {
+                                "index": 2,
+                                "name": "Indication",
+                                "type": "Indication",
+                                "uid": "Indication-99992",
+                                "value": "coronary heart disease"
+                            }
+                        ]
+                    }
+                ],
+                "timeframe_template_uid": "{ttuid}"
+            },
+            "url": "/timeframes/preview"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "study_count": null,
+                "change_description": "Initial version",
+                "end_date": null,
+                "library": {
+                    "is_editable": true,
+                    "name": "Test library"
+                },
+                "name": "Test [type 2 diabetes , coronary heart disease]",
+                "name_plain": "Test type 2 diabetes , coronary heart disease",
+                "parameter_terms": [
+                    {
+                        "conjunction": ",",
+                        "position": 1,
+                        "terms": [
+                            {
+                                "index": 1,
+                                "name": "type 2 diabetes",
+                                "type": "Indication",
+                                "uid": "Indication-99991"
+                            },
+                            {
+                                "index": 2,
+                                "name": "coronary heart disease",
+                                "type": "Indication",
+                                "uid": "Indication-99992"
+                            }
+                        ]
+                    }
+                ],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ],
+                "start_date": "2020-11-11T01:06:37+00:00",
+                "status": "Draft",
+                "timeframe_template": {
+                    "name": "Test [Indication]",
+                    "name_plain": "Test [Indication]",
+                    "guidance_text": null,
+                    "uid": "{ttuid}",
+                    "sequence_id": "T1",
+                    "library_name": "Test library"
+                },
+                "uid": "8220b276-0bd3-4308-8e27-91231f1e4c9d",
+                "user_initials": "unknown-user",
+                "version": "0.1"
+            }
+        }
+    },
+    {
+        "name": "Test adding timeframe single parameter",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Test library",
+                "parameter_terms": [
+                    {
+                        "conjunction": ",",
+                        "name": "Indication",
+                        "terms": [
+                            {
+                                "index": 1,
+                                "name": "Indication",
+                                "type": "Indication",
+                                "uid": "Indication-99991",
+                                "value": "type 2 diabetes"
+                            },
+                            {
+                                "index": 2,
+                                "name": "Indication",
+                                "type": "Indication",
+                                "uid": "Indication-99992",
+                                "value": "coronary heart disease"
+                            }
+                        ]
+                    }
+                ],
+                "timeframe_template_uid": "{ttuid}"
+            },
+            "url": "/timeframes"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "study_count": null,
+                "change_description": "Initial version",
+                "end_date": null,
+                "library": {
+                    "is_editable": true,
+                    "name": "Test library"
+                },
+                "name": "Test [type 2 diabetes , coronary heart disease]",
+                "name_plain": "Test type 2 diabetes , coronary heart disease",
+                "parameter_terms": [
+                    {
+                        "conjunction": ",",
+                        "position": 1,
+                        "terms": [
+                            {
+                                "index": 1,
+                                "name": "type 2 diabetes",
+                                "type": "Indication",
+                                "uid": "Indication-99991"
+                            },
+                            {
+                                "index": 2,
+                                "name": "coronary heart disease",
+                                "type": "Indication",
+                                "uid": "Indication-99992"
+                            }
+                        ]
+                    }
+                ],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ],
+                "start_date": "2020-11-11T01:06:37+00:00",
+                "status": "Draft",
+                "timeframe_template": {
+                    "name": "Test [Indication]",
+                    "name_plain": "Test [Indication]",
+                    "guidance_text": null,
+                    "uid": "{ttuid}",
+                    "sequence_id": "T1",
+                    "library_name": "Test library"
+                },
+                "uid": "8220b276-0bd3-4308-8e27-91231f1e4c9d",
+                "user_initials": "unknown-user",
+                "version": "0.1"
+            }
+        }
+    },
+    {
+        "name": "Test adding timeframe multiple parameters",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Test library",
+                "parameter_terms": [
+                    {
+                        "conjunction": ",",
+                        "name": "Indication",
+                        "terms": [
+                            {
+                                "index": 1,
+                                "name": "type 2 diabetes",
+                                "type": "Indication",
+                                "uid": "Indication-99991"
+                            },
+                            {
+                                "index": 2,
+                                "name": "coronary heart disease",
+                                "type": "Indication",
+                                "uid": "Indication-99992"
+                            }
+                        ]
+                    },
+                    {
+                        "conjunction": "and",
+                        "name": "Intervention",
+                        "terms": [
+                            {
+                                "index": 1,
+                                "name": "Metformin",
+                                "type": "Intervention",
+                                "uid": "Intervention-99991"
+                            },
+                            {
+                                "index": 2,
+                                "name": "human insulin",
+                                "type": "Intervention",
+                                "uid": "Intervention-99992"
+                            }
+                        ]
+                    }
+                ],
+                "timeframe_template_uid": "{ttuid2}"
+            },
+            "url": "/timeframes"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "study_count": null,
+                "change_description": "Initial version",
+                "end_date": null,
+                "library": {
+                    "is_editable": true,
+                    "name": "Test library"
+                },
+                "name": "Test [type 2 diabetes , coronary heart disease] and [human insulin and Metformin]",
+                "name_plain": "Test type 2 diabetes , coronary heart disease and human insulin and Metformin",
+                "parameter_terms": [
+                    {
+                        "conjunction": ",",
+                        "position": 1,
+                        "terms": [
+                            {
+                                "index": 1,
+                                "name": "type 2 diabetes",
+                                "type": "Indication",
+                                "uid": "Indication-99991"
+                            },
+                            {
+                                "index": 2,
+                                "name": "coronary heart disease",
+                                "type": "Indication",
+                                "uid": "Indication-99992"
+                            }
+                        ]
+                    },
+                    {
+                        "conjunction": "and",
+                        "position": 2,
+                        "terms": [
+                            {
+                                "index": 1,
+                                "name": "human insulin",
+                                "type": "Intervention",
+                                "uid": "Intervention-99991"
+                            },
+                            {
+                                "index": 2,
+                                "name": "Metformin",
+                                "type": "Intervention",
+                                "uid": "Intervention-99992"
+                            }
+                        ]
+                    }
+                ],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ],
+                "start_date": "2020-11-11T01:06:37+00:00",
+                "status": "Draft",
+                "timeframe_template": {
+                    "name": "Test [Indication] and [Intervention]",
+                    "name_plain": "Test [Indication] and [Intervention]",
+                    "guidance_text": null,
+                    "uid": "{ttuid}",
+                    "sequence_id": "T2",
+                    "library_name": "Test library"
+                },
+                "uid": "8220b276-0bd3-4308-8e27-91231f1e4c9d",
+                "user_initials": "unknown-user",
+                "version": "0.1"
+            }
+        }
+    },
+    {
+        "name": "Test adding the same timeframe name",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Test library",
+                "parameter_terms": [
+                    {
+                        "conjunction": ",",
+                        "position": 1,
+                        "terms": [
+                            {
+                                "index": 1,
+                                "name": "type 2 diabetes",
+                                "type": "Indication",
+                                "uid": "Indication-99991"
+                            },
+                            {
+                                "index": 2,
+                                "name": "coronary heart disease",
+                                "type": "Indication",
+                                "uid": "Indication-99992"
+                            }
+                        ]
+                    }
+                ],
+                "timeframe_template_uid": "{ttuid}"
+            },
+            "url": "/timeframes"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "138",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "The specified object already exists.",
+                "method": "POST",
+                "path": "http://testserver/timeframes",
+                "time": "2020-11-10T01:32:16.234697",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test DELETE",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "url": "/timeframes/Timeframe_000003"
+        },
+        "response": {
+            "code": 204,
+            "headers": {},
+            "result": null
+        }
+    }
+]

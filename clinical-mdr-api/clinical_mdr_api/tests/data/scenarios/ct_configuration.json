@@ -1,0 +1,1544 @@
+[
+  {
+    "name": "Test empty list (1)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "2",
+        "content-type": "application/json"
+      },
+      "result": []
+    }
+  },
+  {
+    "name": "Test adding",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "user_initials": "unknown-user",
+        "study_field_name": "unit1",
+        "study_field_data_type": "string",
+        "study_field_name_api": "unit1",
+        "study_field_grouping": "sbtab",
+        "is_dictionary_term": false
+      },
+      "url": "/configurations"
+    },
+    "response": {
+      "save": {
+        "uid": "uid"
+      },
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "uid": "CodelistConfig_000001",
+        "user_initials": "unknown-user",
+        "study_field_name": "unit1",
+        "study_field_grouping": "sbtab",
+        "start_date": "2021-04-03T17:39:29.387415",
+        "end_date": null,
+        "status": "Draft",
+        "version": "0.1",
+        "change_description": "Initial version",
+        "study_field_data_type": "string",
+        "study_field_null_value_code": null,
+        "configured_codelist_uid": null,
+        "configured_term_uid": null,
+        "study_field_name_api": "unit1",
+        "is_dictionary_term": false
+      }
+    }
+  },
+  {
+    "name": "Test get all (1)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": [
+        {
+          "uid": "CodelistConfig_000001",
+          "user_initials": "unknown-user",
+          "study_field_name": "unit1",
+          "study_field_grouping": "sbtab",
+          "start_date": "2021-04-03T17:39:29.387415",
+          "end_date": null,
+          "status": "Draft",
+          "version": "0.1",
+          "change_description": "Initial version",
+          "study_field_data_type": "string",
+          "study_field_null_value_code": null,
+          "configured_codelist_uid": null,
+          "configured_term_uid": null,
+          "study_field_name_api": "unit1",
+          "is_dictionary_term": false
+        }
+      ]
+    }
+  },
+  {
+    "name": "Test delete success",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "request": {},
+      "url": "/configurations/{uid}"
+    },
+    "response": {
+      "code": 204,
+      "headers": {},
+      "result": null
+    }
+  },
+  {
+    "name": "Test empty list",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "2",
+        "content-type": "application/json"
+      },
+      "result": []
+    }
+  },
+  {
+    "name": "Test adding",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "user_initials": "unknown-user",
+        "study_field_name": "unit1",
+        "study_field_data_type": "string",
+        "study_field_name_api": "unit1",
+        "study_field_grouping": "sbtab",
+        "is_dictionary_term": false
+      },
+      "url": "/configurations"
+    },
+    "response": {
+      "save": {
+        "uid": "uid",
+        "start_date_ofV0_1": "start_date"
+      },
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "user_initials": "unknown-user",
+        "study_field_name": "unit1",
+        "study_field_grouping": "sbtab",
+        "start_date": "2021-04-03T17:39:29.387415",
+        "end_date": null,
+        "status": "Draft",
+        "version": "0.1",
+        "change_description": "Initial version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "study_field_data_type": "string",
+        "study_field_null_value_code": null,
+        "configured_codelist_uid": null,
+        "configured_term_uid": null,
+        "study_field_name_api": "unit1",
+        "is_dictionary_term": false
+      }
+    }
+  },
+  {
+    "name": "Test retire draft fail",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "request": {},
+      "url": "/configurations/{uid}/activations"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "DELETE",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test reactivate draft fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/activations"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test POST /versions draft fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/versions"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test get all",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": [
+        {
+          "user_initials": "unknown-user",
+          "study_field_name": "unit1",
+          "study_field_grouping": "sbtab",
+          "start_date": "2021-04-03T17:39:29.387415",
+          "end_date": null,
+          "status": "Draft",
+          "version": "0.1",
+          "change_description": "Initial version",
+          "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+          "study_field_data_type": "string",
+          "study_field_null_value_code": null,
+          "configured_codelist_uid": null,
+          "configured_term_uid": null,
+          "study_field_name_api": "unit1",
+          "is_dictionary_term": false
+        }
+      ]
+    }
+  },
+  {
+    "name": "Test get specific (latest)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "user_initials": "unknown-user",
+        "study_field_name": "unit1",
+        "study_field_grouping": "sbtab",
+        "start_date": "2021-04-03T17:39:29.387415",
+        "end_date": null,
+        "status": "Draft",
+        "version": "0.1",
+        "change_description": "Initial version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "study_field_data_type": "string",
+        "study_field_null_value_code": null,
+        "configured_codelist_uid": null,
+        "configured_term_uid": null,
+        "study_field_name_api": "unit1",
+        "is_dictionary_term": false
+      }
+    }
+  },
+  {
+    "name": "Test get specific (status=Draft)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?status=Draft"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "user_initials": "unknown-user",
+        "study_field_name": "unit1",
+        "study_field_grouping": "sbtab",
+        "start_date": "2021-04-03T17:39:29.387415",
+        "end_date": null,
+        "status": "Draft",
+        "version": "0.1",
+        "change_description": "Initial version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "study_field_data_type": "string",
+        "study_field_null_value_code": null,
+        "configured_codelist_uid": null,
+        "configured_term_uid": null,
+        "study_field_name_api": "unit1",
+        "is_dictionary_term": false
+      }
+    }
+  },
+  {
+    "name": "Test get specific (version=0.1)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?version=0.1"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "user_initials": "unknown-user",
+        "study_field_name": "unit1",
+        "study_field_grouping": "sbtab",
+        "start_date": "2021-04-03T17:39:29.387415",
+        "end_date": null,
+        "status": "Draft",
+        "version": "0.1",
+        "change_description": "Initial version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "study_field_data_type": "string",
+        "study_field_null_value_code": null,
+        "configured_codelist_uid": null,
+        "configured_term_uid": null,
+        "study_field_name_api": "unit1",
+        "is_dictionary_term": false
+      }
+    }
+  },
+  {
+    "name": "Test get specific (at_specified_date=start_date_ofV0_1) (1)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?at_specified_date={start_date_ofV0_1}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "user_initials": "unknown-user",
+        "study_field_name": "unit1",
+        "study_field_grouping": "sbtab",
+        "start_date": "2021-04-03T17:39:29.387415",
+        "end_date": null,
+        "status": "Draft",
+        "version": "0.1",
+        "change_description": "Initial version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "study_field_data_type": "string",
+        "study_field_null_value_code": null,
+        "configured_codelist_uid": null,
+        "configured_term_uid": null,
+        "study_field_name_api": "unit1",
+        "is_dictionary_term": false
+      }
+    }
+  },
+  {
+    "name": "Test get specific (status=Final)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?status=Final"
+    },
+    "response": {
+      "code": 404,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "GET",
+        "type": "NotFoundException"
+      }
+    }
+  },
+  {
+    "name": "Test get specific (version=0.2) (1)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?version=0.2"
+    },
+    "response": {
+      "code": 404,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "GET",
+        "type": "NotFoundException"
+      }
+    }
+  },
+  {
+    "name": "Test get specific (status=Retired)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?status=Retired"
+    },
+    "response": {
+      "code": 404,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "GET",
+        "type": "NotFoundException"
+      }
+    }
+  },
+  {
+    "name": "Test patch",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "change_description": "Patched version",
+        "study_field_name": "unit1-patched",
+        "study_field_data_type": "string",
+        "study_field_name_api": "unit1",
+        "is_dictionary_term": false
+      },
+      "url": "/configurations/{uid}"
+    },
+    "response": {
+      "save": {
+        "start_date_ofV0_2": "start_date"
+      },
+      "code": 200,
+      "headers": {},
+      "result": {
+        "user_initials": "unknown-user",
+        "study_field_name": "unit1-patched",
+        "study_field_grouping": "sbtab",
+        "start_date": "2021-04-03T17:39:29.387415",
+        "end_date": null,
+        "status": "Draft",
+        "version": "0.2",
+        "change_description": "Patched version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "study_field_data_type": "string",
+        "study_field_null_value_code": null,
+        "configured_codelist_uid": null,
+        "configured_term_uid": null,
+        "study_field_name_api": "unit1",
+        "is_dictionary_term": false
+      }
+    }
+  },
+  {
+    "name": "Test get all",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": [
+        {
+          "user_initials": "unknown-user",
+          "study_field_name": "unit1-patched",
+          "study_field_grouping": "sbtab",
+          "start_date": "2021-04-03T17:39:29.387415",
+          "end_date": null,
+          "status": "Draft",
+          "version": "0.2",
+          "change_description": "Patched version",
+          "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+          "study_field_data_type": "string",
+          "study_field_null_value_code": null,
+          "configured_codelist_uid": null,
+          "configured_term_uid": null,
+          "study_field_name_api": "unit1",
+          "is_dictionary_term": false
+        }
+      ]
+    }
+  },
+  {
+    "name": "Test get specific (latest)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "user_initials": "unknown-user",
+        "study_field_name": "unit1-patched",
+        "study_field_grouping": "sbtab",
+        "start_date": "2021-04-03T17:39:29.387415",
+        "end_date": null,
+        "status": "Draft",
+        "version": "0.2",
+        "change_description": "Patched version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "study_field_data_type": "string",
+        "study_field_null_value_code": null,
+        "configured_codelist_uid": null,
+        "configured_term_uid": null,
+        "study_field_name_api": "unit1",
+        "is_dictionary_term": false
+      }
+    }
+  },
+  {
+    "name": "Test get specific (status=Draft)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?status=Draft"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "user_initials": "unknown-user",
+        "study_field_name": "unit1-patched",
+        "study_field_grouping": "sbtab",
+        "start_date": "2021-04-03T17:39:29.387415",
+        "end_date": null,
+        "status": "Draft",
+        "version": "0.2",
+        "change_description": "Patched version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "study_field_data_type": "string",
+        "study_field_null_value_code": null,
+        "configured_codelist_uid": null,
+        "configured_term_uid": null,
+        "study_field_name_api": "unit1",
+        "is_dictionary_term": false
+      }
+    }
+  },
+  {
+    "name": "Test get specific (version=0.2) (2)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?version=0.2"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "user_initials": "unknown-user",
+        "study_field_name": "unit1-patched",
+        "study_field_grouping": "sbtab",
+        "start_date": "2021-04-03T17:39:29.387415",
+        "end_date": null,
+        "status": "Draft",
+        "version": "0.2",
+        "change_description": "Patched version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "study_field_data_type": "string",
+        "study_field_null_value_code": null,
+        "configured_codelist_uid": null,
+        "configured_term_uid": null,
+        "study_field_name_api": "unit1",
+        "is_dictionary_term": false
+      }
+    }
+  },
+  {
+    "name": "Test get specific (at_specified_date=start_date_ofV0_2)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?at_specified_date={start_date_ofV0_2}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "user_initials": "unknown-user",
+        "study_field_name": "unit1-patched",
+        "study_field_grouping": "sbtab",
+        "start_date": "2021-04-03T17:39:29.387415",
+        "end_date": null,
+        "status": "Draft",
+        "version": "0.2",
+        "change_description": "Patched version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "study_field_data_type": "string",
+        "study_field_null_value_code": null,
+        "configured_codelist_uid": null,
+        "configured_term_uid": null,
+        "study_field_name_api": "unit1",
+        "is_dictionary_term": false
+      }
+    }
+  },
+  {
+    "name": "Test get specific (version=0.1)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?version=0.1"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "user_initials": "unknown-user",
+        "study_field_name": "unit1",
+        "study_field_grouping": "sbtab",
+        "start_date": "2021-04-03T17:39:29.387415",
+        "end_date": null,
+        "status": "Draft",
+        "version": "0.1",
+        "change_description": "Initial version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "study_field_data_type": "string",
+        "study_field_null_value_code": null,
+        "configured_codelist_uid": null,
+        "configured_term_uid": null,
+        "study_field_name_api": "unit1",
+        "is_dictionary_term": false
+      }
+    }
+  },
+  {
+    "name": "Test get specific (status=Final)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?status=Final"
+    },
+    "response": {
+      "code": 404,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "GET",
+        "type": "NotFoundException"
+      }
+    }
+  },
+  {
+    "name": "Test get specific (status=Retired)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?status=Retired"
+    },
+    "response": {
+      "code": 404,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "GET",
+        "type": "NotFoundException"
+      }
+    }
+  },
+  {
+    "name": "Test approve",
+    "request": {
+      "headers": {
+        "X-TEST-USER-ID": "Approver"
+      },
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/approvals"
+    },
+    "response": {
+      "code": 201,
+      "headers": {},
+      "result": {
+        "user_initials": "unknown-user",
+        "study_field_name": "unit1-patched",
+        "study_field_grouping": "sbtab",
+        "start_date": "2021-04-03T17:39:29.387415",
+        "end_date": null,
+        "status": "Final",
+        "version": "1.0",
+        "change_description": "Approved version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "study_field_data_type": "string",
+        "study_field_null_value_code": null,
+        "configured_codelist_uid": null,
+        "configured_term_uid": null,
+        "study_field_name_api": "unit1",
+        "is_dictionary_term": false
+      }
+    }
+  },
+  {
+    "name": "Test get all (after approval)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": [
+        {
+          "user_initials": "unknown-user",
+          "study_field_name": "unit1-patched",
+          "study_field_grouping": "sbtab",
+          "start_date": "2021-04-03T17:39:29.387415",
+          "end_date": null,
+          "status": "Final",
+          "version": "1.0",
+          "change_description": "Approved version",
+          "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+          "study_field_data_type": "string",
+          "study_field_null_value_code": null,
+          "configured_codelist_uid": null,
+          "configured_term_uid": null,
+          "study_field_name_api": "unit1",
+          "is_dictionary_term": false
+        }
+      ]
+    }
+  },
+  {
+    "name": "Test get by uid (after approval)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "user_initials": "unknown-user",
+        "study_field_name": "unit1-patched",
+        "study_field_grouping": "sbtab",
+        "start_date": "2021-04-03T17:39:29.387415",
+        "end_date": null,
+        "status": "Final",
+        "version": "1.0",
+        "change_description": "Approved version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "study_field_data_type": "string",
+        "study_field_null_value_code": null,
+        "configured_codelist_uid": null,
+        "configured_term_uid": null,
+        "study_field_name_api": "unit1",
+        "is_dictionary_term": false
+      }
+    }
+  },
+  {
+    "name": "Test get by uid (after approval, status=Final)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?status=Final"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "user_initials": "unknown-user",
+        "study_field_name": "unit1-patched",
+        "study_field_grouping": "sbtab",
+        "start_date": "2021-04-03T17:39:29.387415",
+        "end_date": null,
+        "status": "Final",
+        "version": "1.0",
+        "change_description": "Approved version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "study_field_data_type": "string",
+        "study_field_null_value_code": null,
+        "configured_codelist_uid": null,
+        "configured_term_uid": null,
+        "study_field_name_api": "unit1",
+        "is_dictionary_term": false
+      }
+    }
+  },
+  {
+    "name": "Test get by uid (after approval, version=1.0)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?version=1.0"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "user_initials": "unknown-user",
+        "study_field_name": "unit1-patched",
+        "study_field_grouping": "sbtab",
+        "start_date": "2021-04-03T17:39:29.387415",
+        "end_date": null,
+        "status": "Final",
+        "version": "1.0",
+        "change_description": "Approved version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "study_field_data_type": "string",
+        "study_field_null_value_code": null,
+        "configured_codelist_uid": null,
+        "configured_term_uid": null,
+        "study_field_name_api": "unit1",
+        "is_dictionary_term": false
+      }
+    }
+  },
+  {
+    "name": "Test approve final fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/approvals"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test reactivate final fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/activations"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test patch final fail",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "change_description": "Patched version 2 (failed)",
+        "study_field_name": "unit1-patched-fail",
+        "unit_dimension": "unit1-dimension-patched-fail",
+        "legacy_code": "unit1-legacy-code-patched-fail",
+        "study_field_data_type": "string",
+        "study_field_name_api": "unit1",
+        "is_dictionary_term": false
+      },
+      "url": "/configurations/{uid}"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "PATCH",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test delete final fail",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "request": {},
+      "url": "/configurations/{uid}"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "DELETE",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test inactivate",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "request": {},
+      "url": "/configurations/{uid}/activations"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "user_initials": "unknown-user",
+        "study_field_name": "unit1-patched",
+        "study_field_grouping": "sbtab",
+        "start_date": "2021-04-03T17:39:29.387415",
+        "end_date": null,
+        "status": "Retired",
+        "version": "1.0",
+        "change_description": "Inactivated version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "study_field_data_type": "string",
+        "study_field_null_value_code": null,
+        "configured_codelist_uid": null,
+        "configured_term_uid": null,
+        "study_field_name_api": "unit1",
+        "is_dictionary_term": false
+      }
+    }
+  },
+  {
+    "name": "Test retire retired fail",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "request": {},
+      "url": "/configurations/{uid}/activations"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "DELETE",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test POST /versions on retired fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/versions"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test approve retired fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/approvals"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test patch retired fail",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "change_description": "Patched version 2 (failed)",
+        "study_field_name": "unit1-patched-fail",
+        "unit_dimension": "unit1-dimension-patched-fail",
+        "legacy_code": "unit1-legacy-code-patched-fail",
+        "study_field_data_type": "string",
+        "study_field_name_api": "unit1",
+        "is_dictionary_term": false
+      },
+      "url": "/configurations/{uid}"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "PATCH",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test delete retired fail",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "request": {},
+      "url": "/configurations/{uid}"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "DELETE",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test reactivate",
+    "request": {
+      "headers": {
+        "X-TEST-USER-ID": "Reactiver"
+      },
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/activations"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "user_initials": "unknown-user",
+        "study_field_name": "unit1-patched",
+        "study_field_grouping": "sbtab",
+        "start_date": "2021-04-03T17:39:29.387415",
+        "end_date": null,
+        "status": "Final",
+        "version": "1.0",
+        "change_description": "Reactivated version",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "study_field_data_type": "string",
+        "study_field_null_value_code": null,
+        "configured_codelist_uid": null,
+        "configured_term_uid": null,
+        "study_field_name_api": "unit1",
+        "is_dictionary_term": false
+      }
+    }
+  },
+  {
+    "name": "Test approve final fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/approvals"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test reactivate final fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/activations"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test patch final fail",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "change_description": "Patched version 2 (failed)",
+        "study_field_name": "unit1-patched-fail",
+        "unit_dimension": "unit1-dimension-patched-fail",
+        "legacy_code": "unit1-legacy-code-patched-fail",
+        "study_field_data_type": "string",
+        "study_field_name_api": "unit1",
+        "is_dictionary_term": false
+      },
+      "url": "/configurations/{uid}"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "PATCH",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test delete final fail",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "request": {},
+      "url": "/configurations/{uid}"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "DELETE",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test POST /versions",
+    "request": {
+      "headers": {
+        "X-TEST-USER-ID": "Anonymous"
+      },
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/versions"
+    },
+    "response": {
+      "code": 201,
+      "headers": {},
+      "result": {
+        "user_initials": "unknown-user",
+        "study_field_name": "unit1-patched",
+        "study_field_grouping": "sbtab",
+        "start_date": "2021-04-03T17:39:29.387415",
+        "end_date": null,
+        "status": "Draft",
+        "version": "1.1",
+        "change_description": "New draft created",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "study_field_data_type": "string",
+        "study_field_null_value_code": null,
+        "configured_codelist_uid": null,
+        "configured_term_uid": null,
+        "study_field_name_api": "unit1",
+        "is_dictionary_term": false
+      }
+    }
+  },
+  {
+    "name": "Test retire draft fail",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "request": {},
+      "url": "/configurations/{uid}/activations"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "DELETE",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test reactivate draft fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/activations"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test POST /versions draft fail",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {},
+      "url": "/configurations/{uid}/versions"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "POST",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test delete draft that had been accepted fail",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "request": {},
+      "url": "/configurations/{uid}"
+    },
+    "response": {
+      "code": 400,
+      "headers": {},
+      "result": {
+        "message": "",
+        "time": "",
+        "path": "",
+        "method": "DELETE",
+        "type": "BusinessLogicException"
+      }
+    }
+  },
+  {
+    "name": "Test patch next major version",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "change_description": "Patched version 2",
+        "study_field_name": "unit1-patched-2",
+        "study_field_data_type": "string",
+        "study_field_name_api": "unit1",
+        "is_dictionary_term": false
+      },
+      "url": "/configurations/{uid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "start_date": "2021-04-03T17:39:29.387415",
+        "end_date": null,
+        "user_initials": "unknown-user",
+        "change_description": "Patched version 2",
+        "study_field_grouping": "sbtab",
+        "status": "Draft",
+        "version": "1.2",
+        "study_field_name": "unit1-patched-2",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "study_field_data_type": "string",
+        "study_field_null_value_code": null,
+        "configured_codelist_uid": null,
+        "configured_term_uid": null,
+        "study_field_name_api": "unit1",
+        "is_dictionary_term": false
+      }
+    }
+  },
+  {
+    "name": "Test get specific (latest)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "start_date": "2021-04-03T17:39:29.387415",
+        "end_date": null,
+        "user_initials": "unknown-user",
+        "change_description": "Patched version 2",
+        "study_field_grouping": "sbtab",
+        "status": "Draft",
+        "version": "1.2",
+        "study_field_name": "unit1-patched-2",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "study_field_data_type": "string",
+        "study_field_null_value_code": null,
+        "configured_codelist_uid": null,
+        "configured_term_uid": null,
+        "study_field_name_api": "unit1",
+        "is_dictionary_term": false
+      }
+    }
+  },
+  {
+    "name": "Test get specific (status=Final)",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}?status=Final"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": {
+        "start_date": "2021-04-03T17:39:29.387415",
+        "end_date": null,
+        "user_initials": "unknown-user",
+        "change_description": "Reactivated version",
+        "study_field_grouping": "sbtab",
+        "status": "Final",
+        "version": "1.0",
+        "study_field_name": "unit1-patched",
+        "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+        "study_field_data_type": "string",
+        "study_field_null_value_code": null,
+        "configured_codelist_uid": null,
+        "configured_term_uid": null,
+        "study_field_name_api": "unit1",
+        "is_dictionary_term": false
+      }
+    }
+  },
+  {
+    "name": "Test get versions",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/configurations/{uid}/versions"
+    },
+    "response": {
+      "code": 200,
+      "headers": {},
+      "result": [
+        {
+          "user_initials": "unknown-user",
+          "study_field_name": "unit1-patched-2",
+          "study_field_grouping": "sbtab",
+          "start_date": "2021-04-03T17:39:29.387415",
+          "end_date": null,
+          "status": "Draft",
+          "version": "1.2",
+          "change_description": "Patched version 2",
+          "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+          "study_field_data_type": "string",
+          "study_field_null_value_code": null,
+          "configured_codelist_uid": null,
+          "configured_term_uid": null,
+          "study_field_name_api": "unit1",
+          "is_dictionary_term": false
+        },
+        {
+          "user_initials": "unknown-user",
+          "study_field_name": "unit1-patched",
+          "study_field_grouping": "sbtab",
+          "start_date": "2021-04-03T17:39:29.387415",
+          "end_date": null,
+          "status": "Draft",
+          "version": "1.1",
+          "change_description": "New draft created",
+          "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+          "study_field_data_type": "string",
+          "study_field_null_value_code": null,
+          "configured_codelist_uid": null,
+          "configured_term_uid": null,
+          "study_field_name_api": "unit1",
+          "is_dictionary_term": false
+        },
+        {
+          "user_initials": "unknown-user",
+          "study_field_name": "unit1-patched",
+          "study_field_grouping": "sbtab",
+          "start_date": "2021-04-03T17:39:29.387415",
+          "end_date": null,
+          "status": "Final",
+          "version": "1.0",
+          "change_description": "Reactivated version",
+          "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+          "study_field_data_type": "string",
+          "study_field_null_value_code": null,
+          "configured_codelist_uid": null,
+          "configured_term_uid": null,
+          "study_field_name_api": "unit1",
+          "is_dictionary_term": false
+        },
+        {
+          "user_initials": "unknown-user",
+          "study_field_name": "unit1-patched",
+          "study_field_grouping": "sbtab",
+          "start_date": "2021-04-03T17:39:29.387415",
+          "end_date": null,
+          "status": "Retired",
+          "version": "1.0",
+          "change_description": "Inactivated version",
+          "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+          "study_field_data_type": "string",
+          "study_field_null_value_code": null,
+          "configured_codelist_uid": null,
+          "configured_term_uid": null,
+          "study_field_name_api": "unit1",
+          "is_dictionary_term": false
+        },
+        {
+          "user_initials": "unknown-user",
+          "study_field_name": "unit1-patched",
+          "study_field_grouping": "sbtab",
+          "start_date": "2021-04-03T17:39:29.387415",
+          "end_date": null,
+          "status": "Final",
+          "version": "1.0",
+          "change_description": "Approved version",
+          "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+          "study_field_data_type": "string",
+          "study_field_null_value_code": null,
+          "configured_codelist_uid": null,
+          "configured_term_uid": null,
+          "study_field_name_api": "unit1",
+          "is_dictionary_term": false
+        },
+        {
+          "user_initials": "unknown-user",
+          "study_field_name": "unit1-patched",
+          "study_field_grouping": "sbtab",
+          "start_date": "2021-04-03T17:39:29.387415",
+          "end_date": null,
+          "status": "Draft",
+          "version": "0.2",
+          "change_description": "Patched version",
+          "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+          "study_field_data_type": "string",
+          "study_field_null_value_code": null,
+          "configured_codelist_uid": null,
+          "configured_term_uid": null,
+          "study_field_name_api": "unit1",
+          "is_dictionary_term": false
+        },
+        {
+          "user_initials": "unknown-user",
+          "study_field_name": "unit1",
+          "study_field_grouping": "sbtab",
+          "start_date": "2021-04-03T17:39:29.387415",
+          "end_date": null,
+          "status": "Draft",
+          "version": "0.1",
+          "change_description": "Initial version",
+          "uid": "de2bc4d4-3269-4269-b128-7267ea6d1cb1",
+          "study_field_data_type": "string",
+          "study_field_null_value_code": null,
+          "configured_codelist_uid": null,
+          "configured_term_uid": null,
+          "study_field_name_api": "unit1",
+          "is_dictionary_term": false
+        }
+      ]
+    }
+  }
+]

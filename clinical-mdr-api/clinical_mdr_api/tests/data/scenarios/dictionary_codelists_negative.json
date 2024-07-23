@@ -1,0 +1,106 @@
+[
+    {
+        "name": "Test PATCH non draft codelist",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "name": "codelist name",
+                "template_parameter": true,
+                "change_description": "Changing codelist"
+            },
+            "url": "/dictionaries/codelists/codelist_root1_uid"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "The object is not in draft status.",
+                "method": "PATCH",
+                "path": "http://testserver/dictionaries/codelists/codelist_root1_uid",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test PATCH codelist name already exists",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "name": "name1",
+                "template_parameter": true,
+                "change_description": "Changing codelist"
+            },
+            "url": "/dictionaries/codelists/codelist_root2_uid"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "DictionaryCodelist with name (name1) already exists.",
+                "method": "PATCH",
+                "path": "http://testserver/dictionaries/codelists/codelist_root2_uid",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "ValidationException"
+            }
+        }
+    },
+    {
+        "name": "Test POST approve non DRAFT codelist",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/dictionaries/codelists/codelist_root1_uid/approvals"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "The object is not in draft status.",
+                "method": "POST",
+                "path": "http://testserver/dictionaries/codelists/codelist_root1_uid/approvals",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test POST add term that already is added to given codelist",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "term_uid": "term_root1_uid"
+            },
+            "url": "/dictionaries/codelists/codelist_root1_uid/terms"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "The codelist identified by codelist_root1_uid already has a term identified by term_root1_uid",
+                "method": "POST",
+                "path": "http://testserver/dictionaries/codelists/codelist_root1_uid/terms",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "ValidationException"
+            }
+        }
+    },
+    {
+        "name": "Test DELETE remove term that is not assigned to given codelist",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "url": "/dictionaries/codelists/codelist_root1_uid/terms/term_root3_uid"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "The codelist identified by codelist_root1_uid doesn't have a term identified by term_root3_uid",
+                "method": "DELETE",
+                "path": "http://testserver/dictionaries/codelists/codelist_root1_uid/terms/term_root3_uid",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "ValidationException"
+            }
+        }
+    }
+]

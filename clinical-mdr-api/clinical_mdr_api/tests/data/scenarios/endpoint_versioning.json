@@ -1,0 +1,327 @@
+[
+    {
+        "description": "Tests if there is no objecties in db",
+        "name": "Test if zero endpoints",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/endpoints"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "2",
+                "content-type": "application/json"
+            },
+            "result": {
+                "items": [],
+                "total": 0,
+                "page": 1,
+                "size": 10
+            }
+        }
+    },
+    {
+        "name": "Test if adding endpoint works",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "endpoint_template_uid": "{etuid}",
+                "library_name": "Test library",
+                "name": "Test objective",
+                "objective_uid": "{ouid}",
+                "parameter_terms": [
+                    {
+                        "conjunction": ",",
+                        "name": "Indication",
+                        "terms": [
+                            {
+                                "index": 1,
+                                "name": "Indication",
+                                "type": "Indication",
+                                "uid": "Indication-99991",
+                                "value": "type 2 diabetes"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "url": "/endpoints"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "393",
+                "content-type": "application/json"
+            },
+            "result": {
+                "change_description": "Initial version",
+                "end_date": null,
+                "endpoint_template": {
+                    "name": "Test [Indication]",
+                    "name_plain": "Test [Indication]",
+                    "guidance_text": null,
+                    "uid": "{otuid}",
+                    "sequence_id": "E1",
+                    "library_name": "Test library"
+                },
+                "library": {
+                    "is_editable": true,
+                    "name": "Test library"
+                },
+                "name": "Test [type 2 diabetes]",
+                "name_plain": "Test type 2 diabetes",
+                "parameter_terms": [
+                    {
+                        "conjunction": ",",
+                        "position": 1,
+                        "terms": [
+                            {
+                                "index": 1,
+                                "type": "Indication",
+                                "uid": "Indication-99991",
+                                "name": "type 2 diabetes"
+                            }
+                        ]
+                    }
+                ],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ],
+                "start_date": "2020-11-03T22:19:07+00:00",
+                "status": "Draft",
+                "study_count": null,
+                "uid": "55236767-3834-42d8-923d-ba8aba8eed18",
+                "user_initials": "unknown-user",
+                "version": "0.1"
+            },
+            "save": {
+                "uid": "uid"
+            }
+        }
+    },
+    {
+        "name": "Test if approval works",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/endpoints/{uid}/approvals"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "376",
+                "content-type": "application/json"
+            },
+            "result": {
+                "change_description": "Approved version",
+                "end_date": null,
+                "endpoint_template": {
+                    "name": "Test [Indication]",
+                    "name_plain": "Test [Indication]",
+                    "guidance_text": null,
+                    "uid": "{otuid}",
+                    "sequence_id": "E1",
+                    "library_name": "Test library"
+                },
+                "library": {
+                    "is_editable": true,
+                    "name": "Test library"
+                },
+                "name": "Test [type 2 diabetes]",
+                "name_plain": "Test type 2 diabetes",
+                "parameter_terms": [
+                    {
+                        "conjunction": ",",
+                        "position": 1,
+                        "terms": [
+                            {
+                                "index": 1,
+                                "type": "Indication",
+                                "uid": "Indication-99991",
+                                "name": "type 2 diabetes"
+                            }
+                        ]
+                    }
+                ],
+                "possible_actions": [
+                    "inactivate"
+                ],
+                "start_date": "2020-11-25T00:03:18+00:00",
+                "status": "Final",
+                "study_count": null,
+                "uid": "facdc47d-cf95-465d-a4c8-fa4ec5a23c8b",
+                "user_initials": "unknown-user",
+                "version": "1.0"
+            }
+        }
+    },
+    {
+        "name": "Test if second approval fails",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {},
+            "url": "/endpoints/{uid}/approvals"
+        },
+        "response": {
+            "code": 405,
+            "headers": {
+                "content-length": "31",
+                "content-type": "application/json"
+            },
+            "result": {
+                "detail": "Method Not Allowed"
+            }
+        }
+    },
+    {
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/endpoints/{uid}/approvals"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "186",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "The object is not in draft status.",
+                "method": "POST",
+                "path": "http://testserver/endpoints/a831a596-5e40-42a5-a2de-f9c0028e32e8/approvals",
+                "time": "2020-11-04T02:35:13.181265",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Check how many parameters are there (1)",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/endpoints/{uid}/parameters"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "2",
+                "content-type": "application/json"
+            },
+            "result": [
+                {
+                    "name": "Indication",
+                    "terms": [
+                        {
+                            "name": "breathing problems",
+                            "uid": "Indication-99993",
+                            "type": "Indication"
+                        },
+                        {
+                            "name": "coronary heart disease",
+                            "uid": "TemplateParameter_000004",
+                            "type": "Indication"
+                        },
+                        {
+                            "name": "type 2 diabetes",
+                            "uid": "Indication-99991",
+                            "type": "Indication"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "name": "Test patching aproved endpoint with missing field",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "name": "test{test-uid}",
+                "parameter_terms": [
+                    {
+                        "conjunction": ",",
+                        "position": 1,
+                        "terms": [
+                            {
+                                "index": 1,
+                                "type": "Indication",
+                                "uid": "Indication-99991",
+                                "name": "type 2 diabetes"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "url": "/endpoints/{uid}"
+        },
+        "response": {
+            "code": 422,
+            "headers": {
+                "content-length": "101",
+                "content-type": "application/json"
+            },
+            "result": {
+                "detail": [
+                    {
+                        "loc": [
+                            "body",
+                            "change_description"
+                        ],
+                        "msg": "field required",
+                        "type": "value_error.missing"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test patching approved objective",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "change_description": "Change test",
+                "name": "test{test-uid}",
+                "parameter_terms": [
+                    {
+                        "conjunction": ",",
+                        "name": "Indication",
+                        "terms": [
+                            {
+                                "index": 1,
+                                "type": "Indication",
+                                "uid": "Indication-99991",
+                                "name": "type 2 diabetes"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "url": "/endpoints/{uid}"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "178",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "The object is not in draft status.",
+                "method": "PATCH",
+                "path": "http://testserver/endpoints/1754bfdc-9237-4657-a4e3-950945416529",
+                "time": "2020-11-10T02:11:38.697632",
+                "type": "BusinessLogicException"
+            }
+        }
+    }
+]

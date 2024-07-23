@@ -1,0 +1,299 @@
+[
+    {
+        "name": "Test POST create dictionary term",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "dictionary_id": "dictionary_id5",
+                "name": "name5",
+                "name_sentence_case": "Name5",
+                "abbreviation": "abbreviation5",
+                "definition": "definition5",
+                "codelist_uid": "codelist_root1_uid",
+                "library_name": "SNOMED"
+            },
+            "url": "/dictionaries/terms"
+        },
+        "response": {
+            "code": 201,
+            "headers": {},
+            "result": {
+                "term_uid": "DictionaryTerm_000001",
+                "dictionary_id": "dictionary_id5",
+                "name": "name5",
+                "name_sentence_case": "Name5",
+                "abbreviation": "abbreviation5",
+                "definition": "definition5",
+                "library_name": "SNOMED",
+                "start_date": "2021-03-18T11:54:20.898Z",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test GET all dictionaries terms from given codelist",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/dictionaries/terms?codelist_uid=codelist_root1_uid&total_count=true"
+        },
+        "response": {
+            "code": 200,
+            "headers": {},
+            "result": {
+                "items": [
+                    {
+                        "term_uid": "DictionaryTerm_000001",
+                        "dictionary_id": "dictionary_id5",
+                        "name": "name5",
+                        "name_sentence_case": "Name5",
+                        "abbreviation": "abbreviation5",
+                        "definition": "definition5",
+                        "library_name": "SNOMED",
+                        "start_date": "2021-03-18T11:54:20.898Z",
+                        "end_date": null,
+                        "status": "Draft",
+                        "version": "0.1",
+                        "change_description": "Initial version",
+                        "user_initials": "TODO user initials",
+                        "possible_actions": [
+                            "approve",
+                            "delete",
+                            "edit"
+                        ]
+                    },
+                    {
+                        "term_uid": "term_root4_uid",
+                        "dictionary_id": "dictionary_id4",
+                        "name": "name4",
+                        "name_sentence_case": "Name4",
+                        "abbreviation": "abbreviation4",
+                        "definition": "definition4",
+                        "library_name": "SNOMED",
+                        "start_date": "2021-03-18T11:54:20.898Z",
+                        "end_date": null,
+                        "status": "Final",
+                        "version": "1.0",
+                        "change_description": "Approved version",
+                        "user_initials": "TODO user initials",
+                        "possible_actions": [
+                            "inactivate",
+                            "new_version"
+                        ]
+                    },
+                    {
+                        "term_uid": "term_root1_uid",
+                        "dictionary_id": "dictionary_id1",
+                        "name": "name1",
+                        "name_sentence_case": "Name1",
+                        "abbreviation": "abbreviation1",
+                        "definition": "definition1",
+                        "library_name": "SNOMED",
+                        "start_date": "2021-03-18T11:54:20.898Z",
+                        "end_date": null,
+                        "status": "Final",
+                        "version": "1.0",
+                        "change_description": "Approved version",
+                        "user_initials": "TODO user initials",
+                        "possible_actions": [
+                            "inactivate",
+                            "new_version"
+                        ]
+                    }
+                ],
+                "total": 3,
+                "page": 1,
+                "size": 10
+            }
+        }
+    },
+    {
+        "name": "Test POST /versions term",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/dictionaries/terms/term_root1_uid/versions"
+        },
+        "response": {
+            "code": 201,
+            "headers": {},
+            "result": {
+                "term_uid": "term_root1_uid",
+                "dictionary_id": "dictionary_id1",
+                "name": "name1",
+                "name_sentence_case": "Name1",
+                "abbreviation": "abbreviation1",
+                "definition": "definition1",
+                "library_name": "SNOMED",
+                "start_date": "2021-03-18T11:54:20.898Z",
+                "end_date": null,
+                "status": "Draft",
+                "version": "1.1",
+                "change_description": "New draft created",
+                "user_initials": "TODO user initials",
+                "possible_actions": [
+                    "approve",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test PATCH DRAFT term",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "name": "term new name",
+                "name_sentence_case": "Term new name",
+                "definition": "new_definition",
+                "change_description": "term patch"
+            },
+            "url": "/dictionaries/terms/term_root1_uid"
+        },
+        "response": {
+            "code": 200,
+            "headers": {},
+            "result": {
+                "term_uid": "term_root1_uid",
+                "dictionary_id": "dictionary_id1",
+                "name": "term new name",
+                "name_sentence_case": "Term new name",
+                "abbreviation": "abbreviation1",
+                "definition": "new_definition",
+                "library_name": "SNOMED",
+                "start_date": "2021-03-18T11:54:20.898Z",
+                "end_date": null,
+                "status": "Draft",
+                "version": "1.2",
+                "change_description": "term patch",
+                "user_initials": "TODO user initials",
+                "possible_actions": [
+                    "approve",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test POST approve term",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/dictionaries/terms/term_root2_uid/approvals"
+        },
+        "response": {
+            "code": 201,
+            "headers": {},
+            "result": {
+                "term_uid": "term_root2_uid",
+                "dictionary_id": "dictionary_id2",
+                "name": "name2",
+                "name_sentence_case": "Name2",
+                "abbreviation": "abbreviation2",
+                "definition": "definition2",
+                "library_name": "SNOMED",
+                "start_date": "2021-03-18T11:54:20.898Z",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Approved version",
+                "user_initials": "TODO user initials",
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test DELETE activations term",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "/dictionaries/terms/term_root2_uid/activations"
+        },
+        "response": {
+            "code": 200,
+            "headers": {},
+            "result": {
+                "term_uid": "term_root2_uid",
+                "dictionary_id": "dictionary_id2",
+                "name": "name2",
+                "name_sentence_case": "Name2",
+                "abbreviation": "abbreviation2",
+                "definition": "definition2",
+                "library_name": "SNOMED",
+                "start_date": "2021-03-18T11:54:20.898Z",
+                "end_date": null,
+                "status": "Retired",
+                "version": "1.0",
+                "change_description": "Inactivated version",
+                "user_initials": "TODO user initials",
+                "possible_actions": [
+                    "reactivate"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test POST activations term",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/dictionaries/terms/term_root2_uid/activations"
+        },
+        "response": {
+            "code": 200,
+            "headers": {},
+            "result": {
+                "term_uid": "term_root2_uid",
+                "dictionary_id": "dictionary_id2",
+                "name": "name2",
+                "name_sentence_case": "Name2",
+                "abbreviation": "abbreviation2",
+                "definition": "definition2",
+                "library_name": "SNOMED",
+                "start_date": "2021-03-18T11:54:20.898Z",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Reactivated version",
+                "user_initials": "TODO user initials",
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test DELETE  term",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "/dictionaries/terms/term_root5_uid"
+        },
+        "response": {
+            "code": 204,
+            "headers": {},
+            "result": null
+        }
+    }
+]

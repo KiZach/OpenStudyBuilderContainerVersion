@@ -1,0 +1,14 @@
+CT_CD_LIST_SUBMVAL,CT_NAME,NAME_SENTENSE_CASE,CT_SUBMVAL,DEFINITION,ORDER,CT_CD,NCI_PREFERRED_NAME
+REGISTID,ClinicalTrials.gov ID,clinicaltrials.gov id,CLINICALTRIALS.GOV,Sponsor terminology for Registry Identifier (FDA),1,,ClinicalTrials.gov ID
+REGISTID,EUDRACT ID,eudract id,EUDRACTID,Sponsor terminology for Registry Identifier (EMA),2,,EUDRACT ID
+REGISTID,Universal Trial Number (UTN),universal trial number (utn),UNIVERSALTRIALNUMBER,Sponsor terminology for Registry Identifier (UTN),3,,Universal Trial Number (UTN)
+REGISTID,Japanese Trial Registry ID (JAPIC),japanese trial registry id (japic),JAPANTRIALREGISTRYID,Sponsor terminology for Registry Identifier (PMDA),4,,Japanese Trial Registry ID (JAPIC)
+REGISTID,Investigational New Drug Application (IND) Number,investigational new drug application (ind) number,INVESTIGATIONALNEWDRUGAPPLICATION,Sponsor terminology for Registry Identifier (FDA),5,,Investigational New Drug Application (IND) Number
+REGISTID,WHO ID,who id,WHOID,Sponsor terminology for Registry Identifier (WHO),6,,WHO ID
+REGISTID,EU Trial Number,eu trial number,EUTRIALNUMBER,Sponsor terminology for Registry Identifier (EMA),7,,EU Trial Number
+REGISTID,CIV-ID/SIN Number,civ-id/sin number,CIVIDSINNUM,Sponsor terminology for Registry Identifier (EMA),8,,CIV-ID/SIN Number
+REGISTID,National Clinical Trial Number,national clinical trial number,NCTID,Sponsor terminology for Registry Identifier (FDA),9,,National Clinical Trial Number
+REGISTID,Japanese Trial Registry Number (jRCT),japanese trial registry number (jrct),JAPANTRIALREGISTRYNUMBER,Sponsor terminology for Registry Identifier (PMDA),10,,Japanese Trial Registry Number (jRCT)
+REGISTID,National Medical Products Administration (NMPA) Number,national medical products administration (nmpa) number,NMPANUMBER,Sponsor terminology for Registry Identifier (NMPA),11,,National Medical Products Administration (NMPA) Number
+REGISTID,EUDAMED SRN Number,eudamed srn number,EUDAMEDSRN,Sponsor terminology for Registry Identifier (EMA),12,,EUDAMED SRN Number
+REGISTID,Investigational Device Exemption (IDE) Number,investigational device exemption (ide) number,IDENUMBER,Sponsor terminology for Registry Identifier (FDA),13,,Investigational Device Exemption (IDE) Number

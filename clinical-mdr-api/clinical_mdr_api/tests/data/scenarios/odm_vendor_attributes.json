@@ -1,0 +1,680 @@
+[
+    {
+        "name": "Test getting empty list of ODM Vendor Attributes",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/vendor-attributes"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "2",
+                "content-type": "application/json"
+            },
+            "result": {
+                "items": [],
+                "total": 0,
+                "page": 1,
+                "size": 10
+            }
+        }
+    },
+    {
+        "name": "Test creating a new ODM Vendor Attribute with relation to ODM Vendor Namespace",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "nameOne",
+                "compatible_types": [
+                    "FormDef",
+                    "ItemRef"
+                ],
+                "data_type": "string",
+                "value_regex": null,
+                "vendor_namespace_uid": "odm_vendor_namespace1"
+            },
+            "url": "concepts/odms/vendor-attributes"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmVendorAttribute_000001",
+                "library_name": "Sponsor",
+                "name": "nameOne",
+                "compatible_types": [
+                    "FormDef",
+                    "ItemRef"
+                ],
+                "data_type": "string",
+                "value_regex": null,
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "vendor_namespace": {
+                    "uid": "odm_vendor_namespace1",
+                    "name": "nameOne",
+                    "prefix": "prefix",
+                    "url": "url1",
+                    "status": "Final",
+                    "version": "1.0",
+                    "possible_actions": [
+                        "inactivate",
+                        "new_version"
+                    ]
+                },
+                "vendor_element": null,
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test getting non empty list of ODM Vendor Attributes",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/vendor-attributes"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": {
+                "items": [
+                    {
+                        "uid": "OdmVendorAttribute_000001",
+                        "library_name": "Sponsor",
+                        "name": "nameOne",
+                        "compatible_types": [
+                            "FormDef",
+                            "ItemRef"
+                        ],
+                        "data_type": "string",
+                        "value_regex": null,
+                        "start_date": "2022-03-03T11:17:56.799074",
+                        "end_date": null,
+                        "status": "Draft",
+                        "version": "0.1",
+                        "change_description": "Initial version",
+                        "user_initials": "TODO user initials",
+                        "vendor_namespace": {
+                            "uid": "odm_vendor_namespace1",
+                            "name": "nameOne",
+                            "prefix": "prefix",
+                            "url": "url1",
+                            "status": "Final",
+                            "version": "1.0",
+                            "possible_actions": [
+                                "inactivate",
+                                "new_version"
+                            ]
+                        },
+                        "vendor_element": null,
+                        "possible_actions": [
+                            "approve",
+                            "delete",
+                            "edit"
+                        ]
+                    }
+                ],
+                "total": 0,
+                "page": 1,
+                "size": 10
+            }
+        }
+    },
+    {
+        "name": "Test getting possible header values of ODM Vendor Attributes",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/vendor-attributes/headers?field_name=name"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": [
+                "nameOne"
+            ]
+        }
+    },
+    {
+        "name": "Test getting a specific ODM Vendor Attribute",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/vendor-attributes/OdmVendorAttribute_000001"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmVendorAttribute_000001",
+                "library_name": "Sponsor",
+                "name": "nameOne",
+                "compatible_types": [
+                    "FormDef",
+                    "ItemRef"
+                ],
+                "data_type": "string",
+                "value_regex": null,
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO initials",
+                "vendor_namespace": {
+                    "uid": "odm_vendor_namespace1",
+                    "name": "nameOne",
+                    "prefix": "prefix",
+                    "url": "url1",
+                    "status": "Final",
+                    "version": "1.0",
+                    "possible_actions": [
+                        "inactivate",
+                        "new_version"
+                    ]
+                },
+                "vendor_element": null,
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test getting versions of a specific ODM Vendor Attribute",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/vendor-attributes/OdmVendorAttribute_000001/versions"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": [
+                {
+                    "uid": "OdmVendorAttribute_000001",
+                    "library_name": "Sponsor",
+                    "name": "nameOne",
+                    "compatible_types": [
+                        "FormDef",
+                        "ItemRef"
+                    ],
+                    "data_type": "string",
+                    "value_regex": null,
+                    "start_date": "2022-03-03T13:18:03.230000",
+                    "end_date": null,
+                    "status": "Draft",
+                    "version": "0.1",
+                    "change_description": "Initial version",
+                    "user_initials": "TODO initials",
+                    "vendor_namespace": {
+                        "uid": "odm_vendor_namespace1",
+                        "name": "nameOne",
+                        "prefix": "prefix",
+                        "url": "url1",
+                        "status": "Final",
+                        "version": "1.0",
+                        "possible_actions": [
+                            "inactivate",
+                            "new_version"
+                        ]
+                    },
+                    "vendor_element": null,
+                    "possible_actions": [
+                        "approve",
+                        "delete",
+                        "edit"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "name": "Test updating an existing ODM Vendor Attribute",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "new name",
+                "compatible_types": [
+                    "FormDef",
+                    "ItemRef"
+                ],
+                "data_type": "string",
+                "value_regex": "^[a-zA-Z]+$",
+                "vendor_namespace_uid": "odm_vendor_namespace1",
+                "change_description": "regex changed and name changed to new name"
+            },
+            "url": "concepts/odms/vendor-attributes/OdmVendorAttribute_000001"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmVendorAttribute_000001",
+                "library_name": "Sponsor",
+                "name": "new name",
+                "compatible_types": [
+                    "FormDef",
+                    "ItemRef"
+                ],
+                "data_type": "string",
+                "value_regex": "^[a-zA-Z]+$",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.2",
+                "change_description": "regex changed and name changed to new name",
+                "user_initials": "TODO initials",
+                "vendor_namespace": {
+                    "uid": "odm_vendor_namespace1",
+                    "name": "nameOne",
+                    "prefix": "prefix",
+                    "url": "url1",
+                    "status": "Final",
+                    "version": "1.0",
+                    "possible_actions": [
+                        "inactivate",
+                        "new_version"
+                    ]
+                },
+                "vendor_element": null,
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test approving an ODM Vendor Attribute",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/vendor-attributes/OdmVendorAttribute_000001/approvals"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmVendorAttribute_000001",
+                "library_name": "Sponsor",
+                "name": "new name",
+                "compatible_types": [
+                    "FormDef",
+                    "ItemRef"
+                ],
+                "data_type": "string",
+                "value_regex": "^[a-zA-Z]+$",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Approved version",
+                "user_initials": "TODO initials",
+                "vendor_namespace": {
+                    "uid": "odm_vendor_namespace1",
+                    "name": "nameOne",
+                    "prefix": "prefix",
+                    "url": "url1",
+                    "status": "Final",
+                    "version": "1.0",
+                    "possible_actions": [
+                        "inactivate",
+                        "new_version"
+                    ]
+                },
+                "vendor_element": null,
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test inactivating a specific ODM Vendor Attribute",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "concepts/odms/vendor-attributes/OdmVendorAttribute_000001/activations"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmVendorAttribute_000001",
+                "library_name": "Sponsor",
+                "name": "new name",
+                "compatible_types": [
+                    "FormDef",
+                    "ItemRef"
+                ],
+                "data_type": "string",
+                "value_regex": "^[a-zA-Z]+$",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Retired",
+                "version": "1.0",
+                "change_description": "Inactivated version",
+                "user_initials": "TODO initials",
+                "vendor_namespace": {
+                    "uid": "odm_vendor_namespace1",
+                    "name": "nameOne",
+                    "prefix": "prefix",
+                    "url": "url1",
+                    "status": "Final",
+                    "version": "1.0",
+                    "possible_actions": [
+                        "inactivate",
+                        "new_version"
+                    ]
+                },
+                "vendor_element": null,
+                "possible_actions": [
+                    "delete",
+                    "reactivate"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test reactivating a specific ODM Vendor Attribute",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/vendor-attributes/OdmVendorAttribute_000001/activations"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmVendorAttribute_000001",
+                "library_name": "Sponsor",
+                "name": "new name",
+                "compatible_types": [
+                    "FormDef",
+                    "ItemRef"
+                ],
+                "data_type": "string",
+                "value_regex": "^[a-zA-Z]+$",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Reactivated version",
+                "user_initials": "TODO initials",
+                "vendor_namespace": {
+                    "uid": "odm_vendor_namespace1",
+                    "name": "nameOne",
+                    "prefix": "prefix",
+                    "url": "url1",
+                    "status": "Final",
+                    "version": "1.0",
+                    "possible_actions": [
+                        "inactivate",
+                        "new_version"
+                    ]
+                },
+                "vendor_element": null,
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test creating a new ODM Vendor Attribute version",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/vendor-attributes/OdmVendorAttribute_000001/versions"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmVendorAttribute_000001",
+                "library_name": "Sponsor",
+                "name": "new name",
+                "compatible_types": [
+                    "FormDef",
+                    "ItemRef"
+                ],
+                "data_type": "string",
+                "value_regex": "^[a-zA-Z]+$",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "1.1",
+                "change_description": "New draft created",
+                "user_initials": "TODO user initials",
+                "vendor_namespace": {
+                    "uid": "odm_vendor_namespace1",
+                    "name": "nameOne",
+                    "prefix": "prefix",
+                    "url": "url1",
+                    "status": "Final",
+                    "version": "1.0",
+                    "possible_actions": [
+                        "inactivate",
+                        "new_version"
+                    ]
+                },
+                "vendor_element": null,
+                "possible_actions": [
+                    "approve",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Create a new ODM Vendor Attribute for deleting it",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "nameDelete",
+                "compatible_types": [
+                    "FormDef",
+                    "ItemRef"
+                ],
+                "data_type": "string",
+                "value_regex": "^[a-zA-Z]+$",
+                "vendor_namespace_uid": "odm_vendor_namespace1"
+            },
+            "url": "concepts/odms/vendor-attributes"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmVendorAttribute_000002",
+                "name": "nameDelete",
+                "compatible_types": [
+                    "FormDef",
+                    "ItemRef"
+                ],
+                "data_type": "string",
+                "value_regex": "^[a-zA-Z]+$",
+                "library_name": "Sponsor",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "vendor_namespace": {
+                    "uid": "odm_vendor_namespace1",
+                    "name": "nameOne",
+                    "prefix": "prefix",
+                    "url": "url1",
+                    "status": "Final",
+                    "version": "1.0",
+                    "possible_actions": [
+                        "inactivate",
+                        "new_version"
+                    ]
+                },
+                "vendor_element": null,
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test deleting a specific ODM Vendor Attribute",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "concepts/odms/vendor-attributes/OdmVendorAttribute_000002"
+        },
+        "response": {
+            "code": 204,
+            "headers": {
+                "content-length": "2",
+                "content-type": "application/json"
+            },
+            "result": null
+        }
+    },
+    {
+        "name": "Test getting UIDs of a specific ODM Vendor Attribute's active relationships",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/vendor-attributes/OdmVendorAttribute_000001/relationships"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": {
+                "OdmVendorNamespace": [
+                    "odm_vendor_namespace1"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test creating a new ODM Vendor Attribute with relation to ODM Vendor Element",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "nameOne",
+                "compatible_types": [],
+                "data_type": "string",
+                "value_regex": "^[a-zA-Z]+$",
+                "vendor_element_uid": "odm_vendor_element1"
+            },
+            "url": "concepts/odms/vendor-attributes"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmVendorAttribute_000003",
+                "library_name": "Sponsor",
+                "name": "nameOne",
+                "compatible_types": [],
+                "data_type": "string",
+                "value_regex": "^[a-zA-Z]+$",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "vendor_namespace": null,
+                "vendor_element": {
+                    "uid": "odm_vendor_element1",
+                    "name": "nameOne",
+                    "status": "Final",
+                    "version": "1.0",
+                    "possible_actions": [
+                        "inactivate",
+                        "new_version"
+                    ]
+                },
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    }
+]

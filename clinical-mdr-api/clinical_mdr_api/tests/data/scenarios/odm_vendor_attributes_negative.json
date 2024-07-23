@@ -1,0 +1,344 @@
+[
+    {
+        "name": "Create a new ODM Vendor Attribute of Vendor Namespace",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "nameOne",
+                "compatible_types": [
+                    "FormDef",
+                    "ItemRef"
+                ],
+                "data_type": "string",
+                "value_regex": null,
+                "vendor_namespace_uid": "odm_vendor_namespace1"
+            },
+            "url": "concepts/odms/vendor-attributes"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmVendorAttribute_000001",
+                "library_name": "Sponsor",
+                "name": "nameOne",
+                "compatible_types": [
+                    "FormDef",
+                    "ItemRef"
+                ],
+                "data_type": "string",
+                "value_regex": null,
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "vendor_namespace": {
+                    "uid": "odm_vendor_namespace1",
+                    "name": "nameOne",
+                    "prefix": "prefix",
+                    "url": "url1",
+                    "status": "Final",
+                    "version": "1.0",
+                    "possible_actions": [
+                        "inactivate",
+                        "new_version"
+                    ]
+                },
+                "vendor_element": null,
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Create a new ODM Vendor Attribute of Vendor Element",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "nameOne",
+                "compatible_types": [],
+                "data_type": "string",
+                "value_regex": null,
+                "vendor_element_uid": "odm_vendor_element1"
+            },
+            "url": "concepts/odms/vendor-attributes"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmVendorAttribute_000002",
+                "library_name": "Sponsor",
+                "name": "nameOne",
+                "compatible_types": [],
+                "data_type": "string",
+                "value_regex": null,
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "vendor_namespace": null,
+                "vendor_element": {
+                    "uid": "odm_vendor_element1",
+                    "name": "nameOne",
+                    "status": "Final",
+                    "version": "1.0",
+                    "possible_actions": [
+                        "inactivate",
+                        "new_version"
+                    ]
+                },
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test getting error for retrieving non-existent ODM Vendor Attribute",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/vendor-attributes/OdmVendorAttribute_000003"
+        },
+        "response": {
+            "code": 404,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "OdmVendorAttributeAR with uid OdmVendorAttribute_000003 does not exist or there's no version with requested status or version number.",
+                "time": "2022-03-07T12:20:39.613764",
+                "path": "http://testserver/concepts/odms/vendor-attributes/OdmVendorAttribute_000003",
+                "method": "GET",
+                "type": "NotFoundException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot create a new ODM Vendor Attribute belonging to ODM Vendor Namespace without providing compatible_types",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "nameTwo",
+                "compatible_types": [],
+                "data_type": "string",
+                "value_regex": null,
+                "vendor_namespace_uid": "odm_vendor_namespace1"
+            },
+            "url": "concepts/odms/vendor-attributes"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "type": "BusinessLogicException",
+                "message": "compatible_types must be provided for ODM Vendor Attributes belonging to ODM Vendor Namespace.",
+                "time": "2022-12-24T09: 47: 04.140510",
+                "path": "http://testserver/concepts/odms/vendor-attributes",
+                "method": "POST"
+            }
+        }
+    },
+    {
+        "name": "Test cannot create a new ODM Vendor Attribute belonging to ODM Vendor Element when providing compatible_types",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "nameTwo",
+                "compatible_types": [
+                    "FormDef"
+                ],
+                "data_type": "string",
+                "value_regex": null,
+                "vendor_element_uid": "odm_vendor_element1"
+            },
+            "url": "concepts/odms/vendor-attributes"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "type": "BusinessLogicException",
+                "message": "compatible_types must not be provided for ODM Vendor Attributes belonging to ODM Vendor Element.",
+                "time": "2022-12-24T09: 47: 04.140510",
+                "path": "http://testserver/concepts/odms/vendor-attributes",
+                "method": "POST"
+            }
+        }
+    },
+    {
+        "name": "Test cannot create a new ODM Vendor Attribute with invalid regex",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "nameOne",
+                "compatible_types": [
+                    "FormDef"
+                ],
+                "data_type": "string",
+                "value_regex": "(*'*(!'",
+                "vendor_namespace_uid": "odm_vendor_namespace1"
+            },
+            "url": "concepts/odms/vendor-attributes"
+        },
+        "response": {
+            "code": 422,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "detail": [
+                    {
+                        "loc": [
+                            "body",
+                            "value_regex"
+                        ],
+                        "msg": "Provided regex value ((*'*(!') for field 'value_regex' is invalid.",
+                        "type": "value_error"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test cannot create a new ODM Vendor Attribute of Vendor Namespace with existing name",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "nameOne",
+                "compatible_types": [
+                    "FormDef"
+                ],
+                "data_type": "string",
+                "vendor_namespace_uid": "odm_vendor_namespace1"
+            },
+            "url": "concepts/odms/vendor-attributes"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "ODM Vendor Attribute with ['name: nameOne'] already exists.",
+                "time": "2022-03-07T12: 14: 18.116363",
+                "path": "http://testserver/concepts/odms/vendor-attributes",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot create a new ODM Vendor Attribute of Vendor Element with existing name",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "nameOne",
+                "compatible_types": [],
+                "data_type": "string",
+                "vendor_element_uid": "odm_vendor_element1"
+            },
+            "url": "concepts/odms/vendor-attributes"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "ODM Vendor Attribute with ['name: nameOne'] already exists.",
+                "time": "2022-03-07T12: 14: 18.116363",
+                "path": "http://testserver/concepts/odms/vendor-attributes",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot inactivate an ODM Vendor Attribute that is in Draft status",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "concepts/odms/vendor-attributes/OdmVendorAttribute_000001/activations"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "Cannot retire draft version.",
+                "time": "2022-03-07T12:24:39.980123",
+                "path": "http://testserver/concepts/odms/vendor-attributes/OdmVendorAttribute_000001/activations",
+                "method": "DELETE",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot reactivate an ODM Vendor Attribute that is not retired",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/vendor-attributes/OdmVendorAttribute_000001/activations"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "Only RETIRED version can be reactivated.",
+                "time": "2022-03-07T12:27:17.572613",
+                "path": "http://testserver/concepts/odms/vendor-attributes/OdmVendorAttribute_000001/activations",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    }
+]

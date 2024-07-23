@@ -1,0 +1,84 @@
+[
+  {
+    "change_description": "Approved version",
+    "editable_instance": false,
+    "end_date": null,
+    "library": {
+      "is_editable": true,
+      "name": "User Defined"
+    },
+    "name": "test user defined [ActivityInstance]",
+    "name_plain": "test user defined [ActivityInstance]",
+    "parameters": [
+      {
+        "name": "ActivityInstance",
+        "values": null
+      }
+    ],
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-05-23T12:12:10.088959",
+    "status": "Final",
+    "uid": "TimeframeTemplate_000003",
+    "user_initials": "unknown-user",
+    "version": "1.0"
+  },
+  {
+    "change_description": "Approved version",
+    "editable_instance": false,
+    "end_date": null,
+    "library": {
+      "is_editable": true,
+      "name": "Sponsor"
+    },
+    "name": "test [ActivityInstance] and [DiseaseDisorder]",
+    "name_plain": "test [ActivityInstance] and [DiseaseDisorder]",
+    "parameters": [
+      {
+        "name": "ActivityInstance",
+        "values": null
+      },
+      {
+        "name": "DiseaseDisorder",
+        "values": null
+      }
+    ],
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-05-23T12:12:09.987649",
+    "status": "Final",
+    "uid": "TimeframeTemplate_000002",
+    "user_initials": "unknown-user",
+    "version": "1.0"
+  },
+  {
+    "change_description": "Approved version",
+    "editable_instance": false,
+    "end_date": null,
+    "library": {
+      "is_editable": true,
+      "name": "Sponsor"
+    },
+    "name": "test [ActivityInstance]",
+    "name_plain": "test [ActivityInstance]",
+    "parameters": [
+      {
+        "name": "ActivityInstance",
+        "values": null
+      }
+    ],
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-05-23T12:12:09.839990",
+    "status": "Final",
+    "uid": "TimeframeTemplate_000001",
+    "user_initials": "unknown-user",
+    "version": "1.0"
+  }
+]

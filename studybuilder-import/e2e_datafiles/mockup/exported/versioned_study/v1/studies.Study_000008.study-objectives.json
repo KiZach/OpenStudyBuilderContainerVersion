@@ -1,0 +1,60 @@
+[
+    {
+        "study_uid": "Study_000008",
+        "order": 1,
+        "project_number": "CDISC DEV",
+        "project_name": "CDISC Dev",
+        "study_objective_uid": "StudyObjective_000006",
+        "objective_level": {
+            "term_uid": "C85826_OBJPRIM",
+            "catalogue_name": "SDTM CT",
+            "codelist_uid": "CTCodelist_000001",
+            "sponsor_preferred_name": "Primary Objective",
+            "sponsor_preferred_name_sentence_case": "primary objective",
+            "order": 1,
+            "library_name": "CDISC",
+            "start_date": "2023-08-29T11:54:48.461398+00:00",
+            "end_date": null,
+            "status": "Final",
+            "version": "2.0",
+            "change_description": "Approved version",
+            "user_initials": "unknown-user",
+            "possible_actions": [
+                "inactivate",
+                "new_version"
+            ]
+        },
+        "objective": {
+            "uid": "Objective_000011",
+            "name": "Objective for v1",
+            "name_plain": "Objective for v1",
+            "start_date": "2023-10-03T08:05:53.122347+00:00",
+            "end_date": null,
+            "status": "Final",
+            "version": "1.0",
+            "change_description": "Approved version",
+            "user_initials": "unknown-user",
+            "possible_actions": [
+                "inactivate"
+            ],
+            "objective_template": {
+                "name": "Objective for v1",
+                "name_plain": "Objective for v1",
+                "uid": "ObjectiveTemplate_000010",
+                "sequence_id": "O10",
+                "library_name": "User Defined"
+            },
+            "parameter_terms": [],
+            "library": {
+                "name": "User Defined",
+                "is_editable": true
+            },
+            "study_count": 0
+        },
+        "start_date": "2023-10-03T08:05:53.464879+00:00",
+        "user_initials": "unknown-user",
+        "endpoint_count": 0,
+        "latest_objective": null,
+        "accepted_version": false
+    }
+]

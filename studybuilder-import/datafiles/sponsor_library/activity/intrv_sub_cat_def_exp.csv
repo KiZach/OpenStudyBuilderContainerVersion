@@ -1,0 +1,6 @@
+"CT_CD_LIST_SUBMVAL","CT_SUBMVAL","CT_NAME","DEFINITION",ORDER,CT_CD,NCI_PREFERRED_NAME,NAME_SUBMVAL
+"INTRV_SUB_CAT_DEF","BARIATRIC SURGERY INTRV_SUB_CAT","Bariatric Surgery","Bariatric surgery",1,,,
+"INTRV_SUB_CAT_DEF","FIRST DOSE AFTER CROSSOVER INTRV_SUB_CAT","First Dose After Crossover","First dose after the crossover period",3,,,
+"INTRV_SUB_CAT_DEF","KNEE SURGERY INTRV_SUB_CAT","Knee Surgery","Knee surgery",1,,,
+"INTRV_SUB_CAT_DEF","LONG-ACTING INTRV_SUB_CAT","Long-acting","Long-acting",125,,,
+"INTRV_SUB_CAT_DEF","SHORT-ACTING INTRV_SUB_CAT","Short-acting","Short-acting",190,,,

@@ -1,0 +1,82 @@
+version: 1
+disable_existing_loggers: false
+
+root:
+  level: DEBUG
+  handlers:
+    - console
+    - azure
+
+handlers:
+
+  console:
+    class: logging.StreamHandler
+    stream: ext://sys.stderr
+    filters:
+      - add_trace_context
+    formatter: log_trace_context
+
+  access:
+    class: logging.StreamHandler
+    stream: ext://sys.stdout
+    formatter: access
+
+  azure:
+    level: DEBUG
+    # Forwards the logs messages to Azure Monitor, uses a worker thread.
+    # Requires APPLICATIONINSIGHTS_CONNECTION_STRING environment variable
+    class: opencensus.ext.azure.log_exporter.AzureLogHandler
+    # Adds tracing context for correlation (filter runs multiple times if used for multiple handlers, but it's safe)
+    filters:
+      - add_trace_context
+
+
+filters:
+
+  add_trace_context:
+    (): clinical_mdr_api.telemetry.TracingContextFilter
+
+formatters:
+
+  console:
+    format: '%(asctime)s %(name)s %(levelname)s: %(message)s'
+
+  log_trace_context:
+    format: '%(asctime)s %(name)s %(levelname)s 00-%(traceId)s-%(spanId)s-%(traceSampled)02d: %(message)s'
+
+  default:
+    '()': uvicorn.logging.DefaultFormatter
+    fmt: '%(levelprefix)s %(message)s'
+    use_colors:
+
+  access:
+    '()': uvicorn.logging.AccessFormatter
+    fmt: '%(levelprefix)s %(client_addr)s - "%(request_line)s" %(status_code)s'
+
+loggers:
+
+  uvicorn:
+    level: INFO
+
+  uvicorn.error:
+    level: INFO
+
+  uvicorn.access:
+    # Skipp Uvicorn's access logging, we do it in TracingMiddleware with correlation ids
+    propagate: false
+
+  neo4j:
+    # Traces communication contents on debug severity
+    level: INFO
+
+  urllib3.connectionpool:
+    # Logs opening of HTTPS connections (as DEBUG), which is also triggered by Azure log exporter on delivery,
+    # that would lead to an endless stream of log messages, if left on DEBUG level.
+    level: INFO
+
+  # opencensus messages only to console to prevent infinite recursion if transport queue is full and emits an error msg.
+  opencensus:
+    level: INFO
+    handlers:
+      - console
+    propagate: false

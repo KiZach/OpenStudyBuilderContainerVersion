@@ -1,0 +1,60 @@
+[
+  {
+    "abbreviation": null,
+    "activities": [
+      {
+        "name": "HbA1c",
+        "uid": "Activity_000750"
+      }
+    ],
+    "activity_groups": [
+      {
+        "name": "Laboratory Assessments",
+        "uid": "ActivityGroup_000004"
+      }
+    ],
+    "activitySubgroups": [
+      {
+        "name": "Glucose Metabolism",
+        "uid": "ActivitySubGroup_000024"
+      }
+    ],
+    "adamParamCode": "HBA1CB",
+    "change_description": "Approved version",
+    "convertToSiUnit": null,
+    "convertToUsConventionalUnit": null,
+    "definition": null,
+    "end_date": null,
+    "legacyDescription": "HbA1c in blood_x000D_\nCDISC code: C64849_x000D_\nCDISC submission value: HBA1C_x000D_\nCDISC synonym(s): Hemoglobin A1C_x000D_\nCDISC Description: A measurement of the glycosylated hemoglobin in a biological specimen._x000D_\nNCI preferred term: Glycosylated Hemoglobin Measurement",
+    "library_name": "Sponsor",
+    "molecularWeight": null,
+    "name": "HbA1c",
+    "name_sentence_case": "hba1c",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "sdtmCat": null,
+    "sdtm_domain": {
+      "name": "LB",
+      "term_uid": "C48531_LB"
+    },
+    "sdtmSubcat": null,
+    "sdtmVariable": null,
+    "specimen": {
+      "name": "Blood",
+      "term_uid": "C12434_BLOOD"
+    },
+    "start_date": "2022-10-18T13:09:18.988571",
+    "status": "Final",
+    "testCode": null,
+    "topicCode": "HBA1C_BLOOD",
+    "type": "numeric-findings",
+    "uid": "NumericFinding_000191",
+    "unit_definition": null,
+    "unit_dimension": null,
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "valueSasDisplayFormat": null,
+    "version": "1.0"
+  }
+]

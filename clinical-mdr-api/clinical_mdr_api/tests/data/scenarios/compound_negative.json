@@ -1,0 +1,671 @@
+[
+   {
+      "name": "Test POST brand",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name": "Brand A"
+         },
+         "url": "/brands"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "Brand_000001",
+            "name": "Brand A"
+         }
+      }
+   },
+   {
+      "name": "Test POST brand",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name": "Brand B"
+         },
+         "url": "/brands"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "Brand_000002",
+            "name": "Brand B"
+         }
+      }
+   },
+   {
+      "name": "Test POST create compound",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name": "compound_name1",
+            "name_sentence_case": "compound_name_sentence_case1",
+            "definition": "compound_definition1",
+            "abbreviation": "abbv",
+            "dose_values_uids": [
+               "NumericValueWithUnit_000001",
+               "NumericValueWithUnit_000002"
+            ],
+            "strength_values_uids": [
+               "NumericValueWithUnit_000001",
+               "NumericValueWithUnit_000002"
+            ],
+            "delivery_devices_uids": [
+               "delivery_device_uid1",
+               "delivery_device_uid2"
+            ],
+            "dispensers_uids": [
+               "dispenser_uid1",
+               "dispenser_uid2"
+            ],
+            "projects_uids": [
+               "project_uid1",
+               "project_uid2"
+            ],
+            "brands_uids": [
+               "Brand_000001",
+               "Brand_000002"
+            ],
+            "half_life_uid": "NumericValueWithUnit_000001",
+            "dose_frequency_uids": [
+               "dose_frequency_uid1"
+            ],
+            "dosage_form_uids": [
+               "dosage_form_uid1"
+            ],
+            "route_of_administration_uids": [
+               "route_of_administration_uid1"
+            ],
+            "analyte_number": "analyte_number",
+            "nnc_short_number": "nnc_short_number",
+            "nnc_long_number": "nnc_long_number",
+            "is_sponsor_compound": true,
+            "is_name_inn": true,
+            "library_name": "Sponsor"
+         },
+         "url": "/concepts/compounds"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "Compound_000001",
+            "name": "compound_name1",
+            "name_sentence_case": "compound_name_sentence_case1",
+            "definition": "compound_definition1",
+            "abbreviation": "abbv",
+            "dose_values": [
+               {
+                  "uid": "NumericValueWithUnit_000001",
+                  "value": 1.23,
+                  "unit_definition_uid": "UnitDefinition_000001",
+                  "unit_label": "name_1"
+               },
+               {
+                  "uid": "NumericValueWithUnit_000002",
+                  "value": 3.21,
+                  "unit_definition_uid": "UnitDefinition_000001",
+                  "unit_label": "name_1"
+               }
+            ],
+            "strength_values": [
+               {
+                  "uid": "NumericValueWithUnit_000001",
+                  "value": 1.23,
+                  "unit_definition_uid": "UnitDefinition_000001",
+                  "unit_label": "name_1"
+               },
+               {
+                  "uid": "NumericValueWithUnit_000002",
+                  "value": 3.21,
+                  "unit_definition_uid": "UnitDefinition_000001",
+                  "unit_label": "name_1"
+               }
+            ],
+            "lag_times": [],
+            "delivery_devices": [
+               {
+                  "term_uid": "delivery_device_uid1",
+                  "name": "delivery_device_name1"
+               },
+               {
+                  "term_uid": "delivery_device_uid2",
+                  "name": "delivery_device_name2"
+               }
+            ],
+            "dispensers": [
+               {
+                  "term_uid": "dispenser_uid1",
+                  "name": "dispenser_name1"
+               },
+               {
+                  "term_uid": "dispenser_uid2",
+                  "name": "dispenser_name2"
+               }
+            ],
+            "projects": [
+               {
+                  "uid": "project_uid1",
+                  "project_number": "PRJ-001",
+                  "clinical_programme": {
+                     "uid": "cp_001",
+                     "name": "CP"
+                  },
+                  "name": "Project 1",
+                  "description": "Description 1"
+               },
+               {
+                  "uid": "project_uid2",
+                  "project_number": "PRJ-002",
+                  "clinical_programme": {
+                     "uid": "cp_001",
+                     "name": "CP"
+                  },
+                  "name": "Project 2",
+                  "description": "Description 2"
+               }
+            ],
+            "brands": [
+               {
+                  "uid": "Brand_000001",
+                  "name": "Brand A"
+               },
+               {
+                  "uid": "Brand_000002",
+                  "name": "Brand B"
+               }
+            ],
+            "half_life": {
+               "uid": "NumericValueWithUnit_000001",
+               "value": 1.23,
+               "unit_definition_uid": "UnitDefinition_000001",
+               "unit_label": "name_1"
+            },
+            "dose_frequencies": [
+               {
+                  "term_uid": "dose_frequency_uid1",
+                  "name": "dose_frequency_name1"
+               }
+            ],
+            "dosage_forms": [
+               {
+                  "term_uid": "dosage_form_uid1",
+                  "name": "dosage_form_name1"
+               }
+            ],
+            "routes_of_administration": [
+               {
+                  "term_uid": "route_of_administration_uid1",
+                  "name": "route_of_administration_name1"
+               }
+            ],
+            "analyte_number": "analyte_number",
+            "nnc_short_number": "nnc_short_number",
+            "nnc_long_number": "nnc_long_number",
+            "is_sponsor_compound": true,
+            "is_name_inn": true,
+            "substances": [],
+            "library_name": "Sponsor",
+            "status": "Draft",
+            "version": "0.1",
+            "change_description": "Initial version",
+            "user_initials": "TODO user initials",
+            "start_date": null,
+            "end_date": null,
+            "possible_actions": [
+               "approve",
+               "delete",
+               "edit"
+            ]
+         }
+      }
+   },
+   {
+      "name": "Test PATCH non-existent dose frequency",
+      "request": {
+         "headers": {},
+         "method": "PATCH",
+         "request": {
+            "dose_frequency_uids": [
+               "dose_frequency_non_existent_uid"
+            ],
+            "change_description": "Changing compound"
+         },
+         "url": "/concepts/compounds/Compound_000001"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "CompoundVO tried to connect to non-existent or non-final dose frequency identified by uid (dose_frequency_non_existent_uid)",
+            "method": "PATCH",
+            "path": "http://testserver/concepts/compounds/Compound_000001",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   },
+   {
+      "name": "Test PATCH non-existent dose value",
+      "request": {
+         "headers": {},
+         "method": "PATCH",
+         "request": {
+            "dose_values_uids": [
+               "dose_value_non_existent_uid"
+            ],
+            "change_description": "Changing compound"
+         },
+         "url": "/concepts/compounds/Compound_000001"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "CompoundVO tried to connect to non-existent dose value identified by uid (dose_value_non_existent_uid)",
+            "method": "PATCH",
+            "path": "http://testserver/concepts/compounds/Compound_000001",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   },
+   {
+      "name": "Test PATCH non-existent strength value",
+      "request": {
+         "headers": {},
+         "method": "PATCH",
+         "request": {
+            "strength_values_uids": [
+               "non_existent_uid"
+            ],
+            "change_description": "Changing compound"
+         },
+         "url": "/concepts/compounds/Compound_000001"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "CompoundVO tried to connect to non-existent strength value identified by uid (non_existent_uid)",
+            "method": "PATCH",
+            "path": "http://testserver/concepts/compounds/Compound_000001",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   },
+   {
+      "name": "Test PATCH non-existent dosage form",
+      "request": {
+         "headers": {},
+         "method": "PATCH",
+         "request": {
+            "dosage_form_uids": [
+               "dosage_form_non_existent_uid"
+            ],
+            "change_description": "Changing compound"
+         },
+         "url": "/concepts/compounds/Compound_000001"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "CompoundVO tried to connect to non-existent or non-final dosage form identified by uid (dosage_form_non_existent_uid)",
+            "method": "PATCH",
+            "path": "http://testserver/concepts/compounds/Compound_000001",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   },
+   {
+      "name": "Test PATCH non-existent route of administration",
+      "request": {
+         "headers": {},
+         "method": "PATCH",
+         "request": {
+            "route_of_administration_uids": [
+               "route_of_administration_non_existent_uid"
+            ],
+            "change_description": "Changing compound"
+         },
+         "url": "/concepts/compounds/Compound_000001"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "CompoundVO tried to connect to non-existent or non-final route of administration identified by uid (route_of_administration_non_existent_uid)",
+            "method": "PATCH",
+            "path": "http://testserver/concepts/compounds/Compound_000001",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   },
+   {
+      "name": "Test PATCH non-existent substance",
+      "request": {
+         "headers": {},
+         "method": "PATCH",
+         "request": {
+            "substance_terms_uids": [
+               "unii_non_existent_uid"
+            ],
+            "change_description": "Changing compound"
+         },
+         "url": "/concepts/compounds/Compound_000001"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "CompoundVO tried to connect to non-existent substance identified by uid (unii_non_existent_uid)",
+            "method": "PATCH",
+            "path": "http://testserver/concepts/compounds/Compound_000001",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   },
+   {
+      "name": "Test PATCH non-existent delivery device",
+      "request": {
+         "headers": {},
+         "method": "PATCH",
+         "request": {
+            "delivery_devices_uids": [
+               "non_existent_uid"
+            ],
+            "change_description": "Changing compound"
+         },
+         "url": "/concepts/compounds/Compound_000001"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "CompoundVO tried to connect to non-existent or non-final delivery device identified by uid (non_existent_uid)",
+            "method": "PATCH",
+            "path": "http://testserver/concepts/compounds/Compound_000001",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   },
+   {
+      "name": "Test PATCH non-existent dispenser",
+      "request": {
+         "headers": {},
+         "method": "PATCH",
+         "request": {
+            "dispensers_uids": [
+               "non_existent_uid"
+            ],
+            "change_description": "Changing compound"
+         },
+         "url": "/concepts/compounds/Compound_000001"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "CompoundVO tried to connect to non-existent or non-final dispenser identified by uid (non_existent_uid)",
+            "method": "PATCH",
+            "path": "http://testserver/concepts/compounds/Compound_000001",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   },
+   {
+      "name": "Test PATCH non-existent project",
+      "request": {
+         "headers": {},
+         "method": "PATCH",
+         "request": {
+            "projects_uids": [
+               "non_existent_uid"
+            ],
+            "change_description": "Changing compound"
+         },
+         "url": "/concepts/compounds/Compound_000001"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "CompoundVO tried to connect to non-existent project identified by uid (non_existent_uid)",
+            "method": "PATCH",
+            "path": "http://testserver/concepts/compounds/Compound_000001",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   },
+   {
+      "name": "Test PATCH non-existent brand",
+      "request": {
+         "headers": {},
+         "method": "PATCH",
+         "request": {
+            "brands_uids": [
+               "non_existent_uid"
+            ],
+            "change_description": "Changing compound"
+         },
+         "url": "/concepts/compounds/Compound_000001"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "CompoundVO tried to connect to non-existent brand identified by uid (non_existent_uid)",
+            "method": "PATCH",
+            "path": "http://testserver/concepts/compounds/Compound_000001",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   },
+   {
+      "name": "Test PATCH non-existent lag-time",
+      "request": {
+         "headers": {},
+         "method": "PATCH",
+         "request": {
+            "lag_times_uids": [
+               "non_existent_uid"
+            ],
+            "change_description": "Changing compound"
+         },
+         "url": "/concepts/compounds/Compound_000001"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "CompoundVO tried to connect to non-existent lag-time identified by uid (non_existent_uid)",
+            "method": "PATCH",
+            "path": "http://testserver/concepts/compounds/Compound_000001",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   },
+   {
+      "name": "Test POST - name already exists",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name": "compound_name1",
+            "name_sentence_case": "compound_name_sentence_case1",
+            "definition": "compound_definition1",
+            "dose_values_uids": [
+               "NumericValueWithUnit_000001",
+               "NumericValueWithUnit_000002"
+            ],
+            "strength_values_uids": [
+               "NumericValueWithUnit_000001",
+               "NumericValueWithUnit_000002"
+            ],
+            "dose_frequency_uids": [
+               "dose_frequency_uid1"
+            ],
+            "dosage_form_uids": [
+               "dosage_form_uid1"
+            ],
+            "route_of_administration_uids": [
+               "route_of_administration_uid1"
+            ],
+            "analyte_number": "analyte_number",
+            "nnc_short_number": "nnc_short_number",
+            "nnc_long_number": "nnc_long_number",
+            "is_sponsor_compound": true,
+            "is_name_inn": true,
+            "library_name": "Sponsor"
+         },
+         "url": "/concepts/compounds"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "Compound with name (compound_name1) already exists",
+            "method": "POST",
+            "path": "http://testserver/concepts/compounds",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   },
+   {
+      "name": "Test POST - name sentence case already exists",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name": "compound_name1xyz",
+            "name_sentence_case": "compound_name_sentence_case1",
+            "definition": "compound_definition1",
+            "dose_values_uids": [
+               "NumericValueWithUnit_000001",
+               "NumericValueWithUnit_000002"
+            ],
+            "strength_values_uids": [
+               "NumericValueWithUnit_000001",
+               "NumericValueWithUnit_000002"
+            ],
+            "dose_frequency_uids": [
+               "dose_frequency_uid1"
+            ],
+            "dosage_form_uids": [
+               "dosage_form_uid1"
+            ],
+            "route_of_administration_uids": [
+               "route_of_administration_uid1"
+            ],
+            "analyte_number": "analyte_number",
+            "nnc_short_number": "nnc_short_number",
+            "nnc_long_number": "nnc_long_number",
+            "is_sponsor_compound": true,
+            "is_name_inn": true,
+            "library_name": "Sponsor"
+         },
+         "url": "/concepts/compounds"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "Compound with name sentence case (compound_name_sentence_case1) already exists",
+            "method": "POST",
+            "path": "http://testserver/concepts/compounds",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   },
+   {
+      "name": "Test POST - analyte number already exists",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name": "compound_name1_XYZ",
+            "name_sentence_case": "compound_name_sentence_case1_XYZ",
+            "definition": "compound_definition1",
+            "analyte_number": "analyte_number",
+            "nnc_short_number": "nnc_short_number_XYZ",
+            "nnc_long_number": "nnc_long_number_XYZ",
+            "is_sponsor_compound": true,
+            "is_name_inn": true,
+            "library_name": "Sponsor"
+         },
+         "url": "/concepts/compounds"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "Compound with analyte number (analyte_number) already exists",
+            "method": "POST",
+            "path": "http://testserver/concepts/compounds",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   },
+   {
+      "name": "Test POST - nnc_short_number already exists",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name": "compound_name1_XYZ",
+            "name_sentence_case": "compound_name_sentence_case1_XYZ",
+            "definition": "compound_definition1_XYZ",
+            "analyte_number": "analyte_number_XYZ",
+            "nnc_short_number": "nnc_short_number",
+            "nnc_long_number": "nnc_long_number_XYZ",
+            "is_sponsor_compound": true,
+            "is_name_inn": true,
+            "library_name": "Sponsor"
+         },
+         "url": "/concepts/compounds"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "Compound with short number (nnc_short_number) already exists",
+            "method": "POST",
+            "path": "http://testserver/concepts/compounds",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   },
+   {
+      "name": "Test POST - nnc_long_number already exists",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name": "compound_name1_XYZ",
+            "name_sentence_case": "compound_name_sentence_case1_XYZ",
+            "definition": "compound_definition1_XYZ",
+            "analyte_number": "analyte_number_XYZ",
+            "nnc_short_number": "nnc_short_number_XYZ",
+            "nnc_long_number": "nnc_long_number",
+            "is_sponsor_compound": true,
+            "is_name_inn": true,
+            "library_name": "Sponsor"
+         },
+         "url": "/concepts/compounds"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "Compound with long number (nnc_long_number) already exists",
+            "method": "POST",
+            "path": "http://testserver/concepts/compounds",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   }
+]

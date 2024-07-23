@@ -1,0 +1,51 @@
+"CT_CD_LIST_SUBMVAL","CT_SUBMVAL","CT_NAME","DEFINITION",ORDER,CT_CD,NCI_PREFERRED_NAME,NAME_SUBMVAL
+"INTRV_CAT_DEF","24 HOUR URINE COLLECTION INTRV_CAT","24 Hour Urine Collection","24 Hour Urine Collection",1,,,
+"INTRV_CAT_DEF","ADMINISTRATION OF NON-TRIAL PRODUCT INTRV_CAT","Administration of Non-Trial Product","Administration of Non-Trial Product",10,,,
+"INTRV_CAT_DEF","ADMINISTRATION OF TRIAL PRODUCT INTRV_CAT","Administration of Trial Product","Administration of trial product
+",10,,,
+"INTRV_CAT_DEF","ALCOHOL ABUSE INTRV_CAT","Alcohol Abuse","The use of alcoholic beverages to excess, either on individual occasions (""binge drinking"") or as a regular practice. NCI",1,,,
+"INTRV_CAT_DEF","ALCOHOL CONSUMPTION INTRV_CAT","Alcohol Consumption","Alcohol Consumption",1,,,
+"INTRV_CAT_DEF","ANTI-DIABETIC TREATMENT INTRV_CAT","Anti-Diabetic Treatment","Anti-Diabetic Treatment",1,,,
+"INTRV_CAT_DEF","BIOLOGICS INTRV_CAT","Biologics","A biologic medical product, also known as a biological product, or more simply as a biologic or biological, is a medicinal product such as a vaccine, blood or blood component, allergenic, somatic cell, gene therapy, tissue, recombinant therapeutic protein, or living cells that are used as therapeutics to treat diseases.[1] Biologics are created by biologic processes, rather than being chemically synthesized (Wikipedia).",20,,,
+"INTRV_CAT_DEF","BLOOD TRANSFUSION INTRV_CAT","Blood Transfusion","Blood Transfusion",200,,,
+"INTRV_CAT_DEF","CARBOHYDRATE INTAKE INTRV_CAT","Carbohydrate Intake","Carbohydrate Intake",1,,,
+"INTRV_CAT_DEF","CLAMP TERMINATION INTRV_CAT","Clamp Termination","Clamp Termination",1,,,
+"INTRV_CAT_DEF","CONCOMITANT MEDICATION INTRV_CAT","Concomitant Medication","Concomitant medication",34,,,
+"INTRV_CAT_DEF","DIABETES CONCOMITANT MEDICATION INTRV_CAT","Diabetes Concomitant Medication","Category to used for the specific drug concomitant medication (diabetes)
+",1,,,
+"INTRV_CAT_DEF","DIURETIC CONCOMITANT MEDICATION INTRV_CAT","Diuretic Concomitant Medication","Diuretic concomitant medication",1,,,
+"INTRV_CAT_DEF","DOSE AS REPORTED AS PART OF HYPO INTRV_CAT","Dose as Reported as Part of Hypo","Dose as reported as part of hypoglycaemic episode",1,,,
+"INTRV_CAT_DEF","DRUG ACCOUNTABILITY INTRV_CAT","Drug Accountability","Drug accountability",46,,,
+"INTRV_CAT_DEF","DRUG CONSUMPTION INTRV_CAT","Drug Consumption","Drug Consumption",1,,,
+"INTRV_CAT_DEF","FRUCTOSE AND GLUCOSE CHALLENGE INTRV_CAT","Fructose and Glucose challenge","Category of Fructose and Glucose challenge - meal test
+",1,,,
+"INTRV_CAT_DEF","GASTROINTESTINAL INVESTIGATIONS INTRV_CAT","Gastrointestinal Investigations","The investigations relating to the stomach and the intestines.",1,,,
+"INTRV_CAT_DEF","GENERAL INTRV_CAT","General","General Category to be used for e.g. the non-drug specific concomittant medication
+",1,,,
+"INTRV_CAT_DEF","GROWTH HORMONE CONCOMITANT MEDICATION INTRV_CAT","Growth Hormone Concomitant Medication","Category to used for the specific drug concomitant medication (Growth hormone)
+",1,,,
+"INTRV_CAT_DEF","HAEMOPHILIA CONCOMITANT MEDICATION INTRV_CAT","Haemophilia Concomitant Medication","Category to used for the specific drug concomitant medication (haemophilia)
+",1,,,
+"INTRV_CAT_DEF","HAEMOPHILIA TREATMENT AND BLEED HISTORY INTRV_CAT","Haemophilia Treatment and Bleed History","Haemophilia Treatment and Bleed History",1,,,
+"INTRV_CAT_DEF","HYPOGLYCAEMIC INDUCTION INTRV_CAT","Hypoglycaemic Induction","Hypoglycaemic Induction",1,,,
+"INTRV_CAT_DEF","INSULIN INTRV_CAT","Insulin","Insulin as intervention for compound dosing",95,,,
+"INTRV_CAT_DEF","INSULIN ANALOGUE INTRV_CAT","Insulin Analogue","Insulin Analogue",90,,,
+"INTRV_CAT_DEF","MEAL INTRV_CAT","Meal","Meal category primarily to be used for Procedure Agents data (AG).",140,,,
+"INTRV_CAT_DEF","MEAL TEST INTRV_CAT","Meal Test","Meal Test
+",140,,,
+"INTRV_CAT_DEF","NICOTINE INTRV_CAT","Nicotine Use","No CDISC: Nicotine is a chemical compound that is present in tobacco and in Nicotine replacement products.
+",1,,,
+"INTRV_CAT_DEF","OAD INTRV_CAT","Oral Anti-diabetic Drug","OAD: Oral Anti-diabetic Drug",115,,,
+"INTRV_CAT_DEF","ORAL GLUCOSE TOLERANCE TEST INTRV_CAT","Oral Glucose Tolerance Test","Oral Glucose Tolerance Test",1,,,
+"INTRV_CAT_DEF","PAIN MEDICATION INTRV_CAT","Pain Medication","Pain Medication",1,,,
+"INTRV_CAT_DEF","PARKINSONS DISEASE INTRV_CAT","Parkinson's Disease","Parkinson's Disease",1,,,
+"INTRV_CAT_DEF","PREVENTIVE CARBOHYDRATE INTAKE INTRV_CAT","Preventive Carbohydrate Intake","Preventive Carbohydrate Intake",170,,,
+"INTRV_CAT_DEF","RESCUE MEDICATION INTRV_CAT","Rescue Medication","Rescue medication
+",1,,,
+"INTRV_CAT_DEF","SICKLE CELL DISEASE INTRV_CAT","Sickle Cell Disease","Sickle Cell Disease",1,,,
+"INTRV_CAT_DEF","SURGERY INTRV_CAT","Surgery","Surgery
+",1,,,
+"INTRV_CAT_DEF","TOBACCO INTRV_CAT","Tobacco Use","No CDISC: Tobacco can be smoked in a cigarette, pipe, or cigar. It can be chewed (called smokeless tobacco or chewing tobacco) or sniffed through the nose (called snuff).
+",1,,,
+"INTRV_CAT_DEF","VASO OCCLUSIVE CRISIS INTRV_CAT","Vaso Occlusive Crisis","Vaso Occlusive Crisis",1,,,
+"INTRV_CAT_DEF","WASHOUT MEDICATION INTRV_CAT","Washout Medication","Washout Medication",1,,,

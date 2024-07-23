@@ -1,0 +1,157 @@
+[
+   {
+      "name": "Test POST text value which is a TP",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name": "Text_value_name",
+            "name_sentence_case": "text_value_name",
+            "definition": "text_value_definition1",
+            "abbreviation": "abbv",
+            "template_parameter": true,
+            "library_name": "Sponsor"
+         },
+         "url": "/concepts/text-values"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "TextValue_000001",
+            "name": "Text_value_name",
+            "name_sentence_case": "text_value_name",
+            "definition": "text_value_definition1",
+            "abbreviation": "abbv",
+            "template_parameter": true,
+            "library_name": "Sponsor",
+            "status": null,
+            "version": null,
+            "change_description": null,
+            "user_initials": null,
+            "start_date": null,
+            "end_date": null
+         }
+      }
+   },
+   {
+      "name": "Test POST text value which is a TP existing text value is returned",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name": "Text_value_name",
+            "name_sentence_case": "text_value_name",
+            "definition": "text_value_definition1",
+            "abbreviation": "abbv",
+            "template_parameter": true,
+            "library_name": "Sponsor"
+         },
+         "url": "/concepts/text-values"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "TextValue_000001",
+            "name": "Text_value_name",
+            "name_sentence_case": "text_value_name",
+            "definition": "text_value_definition1",
+            "abbreviation": "abbv",
+            "template_parameter": true,
+            "library_name": "Sponsor",
+            "status": null,
+            "version": null,
+            "change_description": null,
+            "user_initials": null,
+            "start_date": null,
+            "end_date": null
+         }
+      }
+   },
+   {
+      "name": "Test POST text value which is not TP",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name": "Text_value_name2",
+            "name_sentence_case": "text_value_name2",
+            "definition": "text_value_definition2",
+            "abbreviation": "abbv",
+            "template_parameter": false,
+            "library_name": "Sponsor"
+         },
+         "url": "/concepts/text-values"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "TextValue_000002",
+            "name": "Text_value_name2",
+            "name_sentence_case": "text_value_name2",
+            "definition": "text_value_definition2",
+            "abbreviation": "abbv",
+            "template_parameter": false,
+            "library_name": "Sponsor",
+            "status": null,
+            "version": null,
+            "change_description": null,
+            "user_initials": null,
+            "start_date": null,
+            "end_date": null
+         }
+      }
+   },
+   {
+      "name": "Test GET all text values",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/concepts/text-values?total_count=true"
+      },
+      "response": {
+         "code": 200,
+         "headers": {},
+         "result": {
+            "items": [
+               {
+                  "uid": "TextValue_000001",
+                  "name": "Text_value_name",
+                  "name_sentence_case": "text_value_name",
+                  "definition": "text_value_definition1",
+                  "abbreviation": "abbv",
+                  "template_parameter": true,
+                  "library_name": "Sponsor",
+                  "status": null,
+                  "version": null,
+                  "change_description": null,
+                  "user_initials": null,
+                  "start_date": null,
+                  "end_date": null
+               },
+               {
+                  "uid": "TextValue_000002",
+                  "name": "Text_value_name2",
+                  "name_sentence_case": "text_value_name2",
+                  "definition": "text_value_definition2",
+                  "abbreviation": "abbv",
+                  "template_parameter": false,
+                  "library_name": "Sponsor",
+                  "status": null,
+                  "version": null,
+                  "change_description": null,
+                  "user_initials": null,
+                  "start_date": null,
+                  "end_date": null
+               }
+            ],
+            "total": 2,
+            "page": 1,
+            "size": 10
+         }
+      }
+   }
+]

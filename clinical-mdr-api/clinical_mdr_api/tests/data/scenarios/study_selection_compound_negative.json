@@ -1,0 +1,117 @@
+[
+    {
+        "name": "Test adding selection compound does not exists",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "compound_alias_uid": "TemplateParameter_000001_WRONG_UID",
+                "type_of_treatment_uid": "CTTerm_000001",
+                "route_of_administration_uid": "CTTerm_000002",
+                "dosage_form_uid": "CTTerm_000003",
+                "dispensed_in_uid": "CTTerm_000004",
+                "device_uid": "CTTerm_000005",
+                "formulation_uid": "CTTerm_000006",
+                "other_info": "some other information"
+            },
+            "url": "/studies/study_root/study-compounds"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "336",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "There is no approved compound alias identified by provided uid (TemplateParameter_000001_WRONG_UID)",
+                "method": "POST",
+                "path": "http://testserver/studies/study_root/study-compounds",
+                "time": "2020-11-03T23:42:41.518146",
+                "type": "ValidationException"
+            }
+        }
+    },
+    {
+        "name": "Test adding selection with both values and reason for missing",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "compound_alias_uid": "TemplateParameter_000002",
+                "type_of_treatment_uid": "CTTerm_000001",
+                "route_of_administration_uid": "CTTerm_000002",
+                "dosage_form_uid": "CTTerm_000003",
+                "dispensed_in_uid": "CTTerm_000004",
+                "device_uid": "CTTerm_000005",
+                "formulation_uid": "CTTerm_000006",
+                "other_info": "some other information",
+                "reason_for_missing_null_value_uid": "CTTerm_000007"
+            },
+            "url": "/studies/study_root/study-compounds"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "336",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "If reason_for_missing_null_value_uid has a value, all fields except type of treatment have to be empty",
+                "method": "POST",
+                "path": "http://testserver/studies/study_root/study-compounds",
+                "time": "2020-11-03T23:42:41.518146",
+                "type": "ValidationException"
+            }
+        }
+    },
+    {
+        "name": "Test adding selection not valid reason for missing",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "type_of_treatment_uid": "CTTerm_000001",
+                "reason_for_missing_null_value_uid": "UNK_NOT_VALID"
+            },
+            "url": "/studies/study_root/study-compounds"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "336",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "Unknown reason for missing value code provided for Reason For Missing",
+                "method": "POST",
+                "path": "http://testserver/studies/study_root/study-compounds",
+                "time": "2020-11-03T23:42:41.518146",
+                "type": "ValidationException"
+            }
+        }
+    },
+    {
+        "name": "Test get specific selection where no selection exists",
+        "request": {
+            "sleep": 2,
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/studies/study_root/study-compounds/study_compound_uid"
+        },
+        "response": {
+            "code": 404,
+            "headers": {
+                "content-length": "336",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "There is no selection between the study compound 'study_compound_uid' and the study",
+                "method": "GET",
+                "path": "http://testserver/studies/study_root/study-compounds/study_compound_uid",
+                "time": "2020-11-03T23:42:41.518146",
+                "type": "NotFoundException"
+            }
+        }
+    }
+]

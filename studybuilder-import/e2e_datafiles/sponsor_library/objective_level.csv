@@ -1,0 +1,4 @@
+CT_CD_LIST_SUBMVAL,CT_NAME,NAME_SENTENSE_CASE,CT_SUBMVAL,DEFINITION,ORDER,CT_CD,NCI_PREFERRED_NAME
+ObjectiveLevel,Primary Objective,primary objective,OBJPRIM,Trial Primary Objective,1,C85826_OBJPRIM,Trial Primary Objective
+ObjectiveLevel,Secondary Objective,secondary objective,OBJSEC,Trial Secondary Objective,2,C85827_OBJSEC,Trial Secondary Objective
+ObjectiveLevel,Exploratory Objective,exploratory objective,OBJEXP,Trial Exploratory Objective,3,C163559_OBJEXP,Trial Exploratory Objective

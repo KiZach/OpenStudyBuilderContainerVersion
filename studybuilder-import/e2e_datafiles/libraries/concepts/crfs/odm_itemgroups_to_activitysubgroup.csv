@@ -1,0 +1,5 @@
+uid_itemgroup,oid_itemgroup,name_activitysubgroup,order_number,mandatory,collection_exception_condition_oid
+G.DM.IC,G.DM.IC,GeneralDemography,1,TRUE,
+G.DM.DM,G.DM.DM,GeneralDemography,2,TRUE,
+G.VS.VS,G.VS.VS,Vital Signs,3,TRUE,
+G.VS.BPP,G.VS.BPP,Vital Signs,4,TRUE,

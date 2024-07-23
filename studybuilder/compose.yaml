@@ -1,0 +1,23 @@
+services:
+  frontend:
+    build:
+      args:
+        NGINX_IMAGE: ${NGINX_IMAGE:-nginx:alpine}
+        NODE_IMAGE: ${NODE_IMAGE:-node:lts-alpine}
+        PORT: ${UI_PORT:-8080}
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '5005:5005'
+    depends_on:
+      - 'api'
+      - 'documentation'
+    environment:
+      API_BASE_URL: '${API_PATH:-}'
+      DOC_BASE_URL: '${DOC_PATH:-}'
+      NEODASH_BASE_URL: '${NEODASH_PATH:-}'
+      OAUTH_ENABLED: '${OAUTH_ENABLED:-false}'
+      OAUTH_METADATA_URL: '${OAUTH_METADATA_URL:-}'
+      OAUTH_API_APP_ID: '${OAUTH_API_APP_ID:-}'
+      OAUTH_UI_APP_ID: '${OAUTH_UI_APP_ID:-}'
+      APPINSIGHTS_DISABLE: 'true'

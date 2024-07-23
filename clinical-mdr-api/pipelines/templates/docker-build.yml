@@ -1,0 +1,81 @@
+# Pipeline parameters
+parameters:
+
+  - name: SERVICE_CONN
+    type: string
+
+steps:
+
+  - task: AzureCLI@2
+    displayName: Log in to container registry
+    inputs:
+      azureSubscription: ${{parameters.SERVICE_CONN}}
+      scriptType: bash
+      scriptLocation: inlineScript
+      inlineScript: >-
+        az acr login -n '$(azmd.acrname)'
+
+  - task: AzureCLI@2
+    displayName: Build API image
+    name: api
+    inputs:
+      azureSubscription: ${{parameters.SERVICE_CONN}}
+      scriptType: bash
+      scriptLocation: inlineScript
+      inlineScript: |
+        set -ex
+      
+        IMAGE="`az acr repository show-tags -n '$(azmd.acrname)' --repository api --orderby time_desc --output tsv | grep '$(Build.SourceVersion)' | head -n 1`"
+      
+        if [ "_${IMAGE}_" == "__" ]
+        then
+          IMAGE='$(azmd.acrname).azurecr.io/api:$(Build.SourceVersion)'
+          echo "Building API docker image $IMAGE"
+        
+          API_IMAGE="$IMAGE" \
+          docker compose build --progress=plain \
+            --build-arg BUILD_BRANCH='$(Build.SourceBranchName)' \
+            --build-arg BUILD_COMMIT='$(Build.SourceVersion)' \
+            --build-arg BUILD_NUMBER='$(Build.BuildNumber)' \
+            --build-arg BUILD_TARGET=prod \
+            --build-arg PYTHON_IMAGE='$(azmd.acrname).azurecr.io/novo-python-3-11-3-slim:latest' \
+            api
+          
+          docker push "$IMAGE"
+        
+        fi
+        
+        echo "##vso[task.setvariable variable=image;isOutput=true;]$IMAGE"
+
+  - task: AzureCLI@2
+    displayName: Build Dev image
+    name: dev
+    inputs:
+      azureSubscription: ${{parameters.SERVICE_CONN}}
+      scriptType: bash
+      scriptLocation: inlineScript
+      inlineScript: |
+        set -ex
+      
+        IMAGE="`az acr repository show-tags -n '$(azmd.acrname)' --repository dev --orderby time_desc --output tsv | grep '$(Build.SourceVersion)' | head -n 1`"
+      
+        if [ "_${IMAGE}_" == "__" ]
+        then
+          IMAGE='$(azmd.acrname).azurecr.io/dev:$(Build.SourceVersion)'
+          echo "Building Dev docker image $IMAGE"
+        
+          DEV_IMAGE="$IMAGE" \
+          docker compose build --progress=plain \
+            --build-arg BUILD_BRANCH='$(Build.SourceBranchName)' \
+            --build-arg BUILD_COMMIT='$(Build.SourceVersion)' \
+            --build-arg BUILD_NUMBER='$(Build.BuildNumber)' \
+            --build-arg BUILD_TARGET=dev \
+            --build-arg PYTHON_IMAGE='$(azmd.acrname).azurecr.io/novo-python-3-11-3-slim:latest' \
+            --build-arg UID="$(id -u)" \
+            dev
+          
+          docker push "$IMAGE"
+        
+        fi
+        
+        echo "##vso[task.setvariable variable=image;isOutput=true;]$IMAGE"

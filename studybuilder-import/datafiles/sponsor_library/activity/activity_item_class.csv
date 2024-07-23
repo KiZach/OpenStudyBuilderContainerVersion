@@ -1,0 +1,274 @@
+ACTIVITY_INSTANCE_CLASS,ACTIVITY_ITEM_CLASS,DEFINITION,NCI_C_CODE,SPONSOR_CONCEPT_CODE,LEGACY_CDW_COLUMN,MANDATORY,ORDER,DATA_COLLECTION,SEMANTIC_ROLE,SEMANTIC_DATA_TYPE,CODELIST
+AdverseEvent,ae_number,Adverse event number,C83209,,,Yes,1,Yes,IDENTIFIER,TEXT,
+AdverseEvent,congenital,The serious event associated with congenital anomaly or birth defect.,C2849,,,No,2,Yes,RECOQUAL,TEXT,NY
+AdverseEvent,disability,The serious event resulting in persistent or significant disability/incapacity.,C68606,,,No,3,Yes,RECOQUAL,TEXT,NY
+AdverseEvent,death,The serious event resulting in death.,C93546,,,No,4,Yes,RECOQUAL,TEXT,NY
+AdverseEvent,hospitalisation,The serious event that requires or prolongs hospitalization.,C68605,,,No,5,Yes,RECOQUAL,TEXT,NY
+AdverseEvent,life_threatening,The serious event is life threatening.,C82508,,,No,6,Yes,RECOQUAL,TEXT,NY
+AdverseEvent,toxicity,Toxicity,C27990,,,No,7,Yes,RECOQUAL,TEXT,
+AdverseEvent,toxicity_grade,Records toxicity grade using a standard toxicity scale (such as the NCI CTCAE). Sponsor should specify which scale and version is used in the Sponsor Comments column of the Define.XML document.,C82528,,,No,8,Yes,RECOQUAL,TEXT,
+AdverseEvent,autopsy_performed,Was the autopsy performed?,,,,No,9,Yes,RECOQUAL,TEXT,NY
+AdverseEvent,ae_sequelae,Sequelae of the adverse event,,,,No,10,Yes,RECOQUAL,TEXT,
+AdverseEvent,medically_imp_serious_event,An important medical event with additional categories for seriousness.,C82521,,,No,11,Yes,RECOQUAL,TEXT,NY
+AdverseEventProduct,product,Trial product,,,,Yes,1,Yes,RECOQUAL,TEXT,
+AdverseEventProduct,product_given_prior_ae_onset,Trial product given prior to the onset of adverse event.,,,,No,2,Yes,RECOQUAL,TEXT,NY
+AdverseEventProduct,causality,Causality of the adverse event to the treatment,C142413,,,No,3,Yes,RECOQUAL,TEXT,AEREL
+AdverseEventProduct,action_taken,Changes made to the study treatment as a result of the adverse event.,C49499,,,No,4,Yes,RECOQUAL,TEXT,ACN
+AdverseEventProduct,technical_complaint_related,Adverse event related to a technical complaint,,,,No,5,Yes,RECOQUAL,TEXT,NY
+AssociatedPersonsAdverseEvent,congenital,The serious event associated with congenital anomaly or birth defect in an associated person.,C2849,,,No,1,Yes,RECOQUAL,TEXT,NY
+AssociatedPersonsAdverseEvent,disability,The serious event resulting in persistent or significant disability/incapacity in an associated person.,C68606,,,No,2,Yes,RECOQUAL,TEXT,NY
+AssociatedPersonsAdverseEvent,death,The serious event resulting in death of an associated person.,C93546,,,No,3,Yes,RECOQUAL,TEXT,NY
+AssociatedPersonsAdverseEvent,hospitalisation,The serious event that requires or prolongs hospitalization of an associated person.,C68605,,,No,4,Yes,RECOQUAL,TEXT,NY
+AssociatedPersonsAdverseEvent,life_threatening,The serious event is life threatening for an associated person.,C82508,,,No,5,Yes,RECOQUAL,TEXT,NY
+AssociatedPersonsAdverseEvent,toxicity,Toxicity related to an associated person,C27990,,,No,6,Yes,RECOQUAL,TEXT,
+AssociatedPersonsAdverseEvent,toxicity_grade,Records toxicity grade using a standard toxicity scale (such as the NCI CTCAE). Sponsor should specify which scale and version is used in the Sponsor Comments column of the Define.XML document.,C82528,,,No,7,Yes,RECOQUAL,TEXT,
+AssociatedPersonsAdverseEvent,autopsy_performed,Was the autopsy performed?,,,,No,8,Yes,RECOQUAL,TEXT,NY
+AssociatedPersonsAdverseEvent,ae_sequelae,Sequelae of the adverse event for an associated person.,,,,No,9,Yes,RECOQUAL,TEXT,
+AssociatedPersonsAdverseEvent,medically_imp_serious_event,An important medical event with additional categories for seriousness in relation to an associated person.,C82521,,,No,10,Yes,RECOQUAL,TEXT,NY
+AssociatedPersonsAdverseEventProduct,product,Trial product,,,,Yes,1,Yes,RECOQUAL,TEXT,
+AssociatedPersonsAdverseEventProduct,product_given_prior_ae_onset,Trial product given prior to the onset of adverse event.,,,,No,2,Yes,RECOQUAL,TEXT,NY
+AssociatedPersonsAdverseEventProduct,causality,Causality of the adverse event to the treatment in relation to an associated person.,C142413,,,No,3,Yes,RECOQUAL,TEXT,AEREL
+AssociatedPersonsAdverseEventProduct,action_taken,Changes made to the study treatment as a result of the adverse event in relation to an associated person.,C49499,,,No,4,Yes,RECOQUAL,TEXT,ACN
+AssociatedPersonsAdverseEventProduct,technical_complaint_related,Adverse event related to a technical complaint in relation to an associated person,,,,No,5,Yes,RECOQUAL,TEXT,NY
+AssociatedPersonsCategoricFinding,original_result,The result of a finding or assessment as originally received or collected for an associated person.,C117221,,,Yes,1,Yes,RESUQUAL,TEXT,HEP_CQ; QUEST_RESPONSE; YESNO
+AssociatedPersonsCompoundDosing,strength,"Amount of an active ingredient expressed quantitatively per dosage unit, per unit of volume, or per unit of weight, according to the pharmaceutical dose form.",C53294,,,No,1,Yes,RECOQUAL,FLOAT,
+AssociatedPersonsCompoundDosing,strength_unit,Unit for strength,C117055,,,No,2,Yes,RECOQUAL,TEXT,UNIT
+AssociatedPersonsCompoundDosing,reason_for_dose_ajdustment,Description of reason or explanation of why a dose is adjusted.,C82555,,,No,3,Yes,RECOQUAL,TEXT,
+AssociatedPersonsConcomitantMedication,continuing,Continuing,C53279,,,No,1,Yes,RECOQUAL,TEXT,NY
+AssociatedPersonsConcomitantMedication,primary_indication,Primary indication denotes why a medication was taken or administered.,C41184,,,No,2,Yes,RECOQUAL,TEXT,
+AssociatedPersonsConcomitantMedication,prim_indicat_ae_num,Adverse event number when primary indication is an adverse event.,C82543,,,No,3,Yes,RECOQUAL,FLOAT,
+AssociatedPersonsConcomitantMedication,prim_indicat_mh_num,Medical history sequence number when primary indication is an event from medical history.,,,,No,4,Yes,RECOQUAL,FLOAT,
+AssociatedPersonsConcomitantMedication,other_indication,Other indication as primary indication for concomitant medication,C41184,,,No,5,Yes,RECOQUAL,TEXT,
+AssociatedPersonsEvent,reference_id,Reference identifier,C82531,,,No,1,Yes,IDENTIFIER,TEXT,
+AssociatedPersonsEvent,term,Term for the medical condition or event related to an associated person.,C82571,,,Yes,2,Yes,TOPIC,TEXT,
+AssociatedPersonsEvent,start_datetime,Start date/time of the event related to an associated person.,C82517,,,Yes,3,Yes,TIMING,DATETIME,
+AssociatedPersonsEvent,end_datetime,End date/time of the event related to an associated person.,C82516,,,No,4,Yes,TIMING,DATETIME,
+AssociatedPersonsEvent,ap_event_category,Category of related records.,C25372,,,Yes,5,No,GROUQUAL,TEXT,DECAT; DSCAT; CECAT; HOCAT; MHCAT
+AssociatedPersonsEvent,ap_event_subcategory,Sub-Category of related records.,C25692,,,Yes,6,No,GROUQUAL,TEXT,DSSCAT; MHSCAT
+AssociatedPersonsEvent,prespecified,Used to indicate whether the event was pre-specified,C82510,,,No,7,No,RECOQUAL,TEXT,NY
+AssociatedPersonsEvent,occurrence,Used when the occurrence of specific events is solicited to indicate whether or not a clinical event occurred.,C82438,,,No,8,Yes,RECOQUAL,TEXT,NY
+AssociatedPersonsEvent,completion_status,The completion status indicates that a question was not answered.,C41202,,,No,9,Yes,RECOQUAL,TEXT,ND
+AssociatedPersonsEvent,reason_not_done,Describes the reason clinical event data was not collected. Used in conjunction with completion_status  when value is NOT DONE.,C82556,,,No,10,Yes,RECOQUAL,TEXT,NY
+AssociatedPersonsEvent,severity,The severity or intensity of the event.,C25676,,,No,11,Yes,RECOQUAL,TEXT,AESEV
+AssociatedPersonsEvent,serious,Used to indicate whether the event was serious,C82578,,,No,12,Yes,RECOQUAL,TEXT,NY
+AssociatedPersonsEvent,outcome,Description of the outcome of an event.,C20200,,,No,13,Yes,RECOQUAL,TEXT,OUT
+AssociatedPersonsEvent,evaluation_interval,Evaluation interval of the event,C82534,,,No,14,Yes,TIMING,TEXT,
+AssociatedPersonsFinding,reference_id,Reference identifier,C82531,,,No,1,Yes,IDENTIFIER,TEXT,
+AssociatedPersonsFinding,test_name_code,TEST and  TESTCD linkage to external or sponsor-defined controlled  terminology,,,,Yes,2,Yes,TOPIC,TEXT,SSTEST; SSTESTCD; VSTEST; VSTESTCD; FATEST; FATESTCD; MOTEST; MOTESTCD; PCTEST; PCTESTCD
+AssociatedPersonsFinding,repitition_number,Repitition number,,,,No,3,No,RECOQUAL,FLOAT,
+AssociatedPersonsFinding,test_detail,"Measurement, Test or Examination Detail",C117062,,,No,4,Yes,RECOQUAL,TEXT,
+AssociatedPersonsFinding,object_of_observation,Object of the observation,C82546,,,No,5,Yes,RECOQUAL,TEXT,
+AssociatedPersonsFinding,associated_persons_finding_category,Category of related records.,C25372,,,Yes,6,No,GROUQUAL,TEXT,CCCAT; FTCAT; IECAT; QSCAT; EGCAT; OECAT; PECAT; RPCAT; RSCAT; VSCAT
+AssociatedPersonsFinding,associated_persons_finding_subcategory,Sub-Category of related records.,C25692,,,Yes,7,No,GROUQUAL,TEXT,
+AssociatedPersonsFinding,position,Position of subject,C71148,,,No,8,Yes,RECOQUAL,TEXT,POSITION
+AssociatedPersonsFinding,normal_range_lower_limit,Lower Normal Limit,C82580,,,No,9,Yes,VARIQUAL,FLOAT,
+AssociatedPersonsFinding,normal_range_upper_limit,Upper Normal Limit,C70933,,,No,10,Yes,VARIQUAL,FLOAT,
+AssociatedPersonsFinding,normal_range_indicator,Reference Range Indicator,C82532,,,No,11,Yes,VARIQUAL,TEXT,NRIND
+AssociatedPersonsFinding,associated_persons_finding_result_category,Used to categorize the result of a finding.,C82498,,,No,12,Yes,VARIQUAL,TEXT,
+AssociatedPersonsFinding,completion_status,The completion status indicates that a question was not answered.,C41202,,,No,13,Yes,RECOQUAL,TEXT,ND
+AssociatedPersonsFinding,reason_not_done,Describes the reason data was not collected. Used in conjunction with completion_status  when value is NOT DONE.,C82556,,,No,14,Yes,RECOQUAL,TEXT,
+AssociatedPersonsFinding,loinc,LOINC code,C82502,,,No,15,Yes,SYNOQUAL,TEXT,
+AssociatedPersonsFinding,specimen,Defines the type of specimen used for a measurement.,C70713,,,No,16,Yes,RECOQUAL,TEXT,SPECTYPE; GENSMP
+AssociatedPersonsFinding,anatomical_region,"Defines the specific anatomical or biological region of a tissue, organ specimen or the region from which the specimen is obtained, as defined in the protocol",C170983,,,No,17,Yes,VARIQUAL,TEXT,
+AssociatedPersonsFinding,specimen_condition,Defines the condition of the specimen,C70714,,,No,18,Yes,RECOQUAL,TEXT,SPECCOND
+AssociatedPersonsFinding,method,Method of the test or examination,C82535,,,No,19,Yes,RECOQUAL,TEXT,METHOD; EGMETHOD
+AssociatedPersonsFinding,analysis_method,Analysis method applied to obtain a summarized result. Analysis method describes the method of secondary processing applied to a complex observation result,C117039,,,No,20,Yes,RECOQUAL,TEXT,
+AssociatedPersonsFinding,lead_to_collect_measurement,"The lead used for the measurement, examples, V1, V6, aVR, I, II, III.",C90013,,,No,21,Yes,RECOQUAL,TEXT,LOC
+AssociatedPersonsFinding,fasting_status,"Indicator used to identify fasting status such as Y, N, U, or null if not relevant.",C93566,,,No,22,Yes,RECOQUAL,TEXT,NY
+AssociatedPersonsFinding,vendor_name,Name or identifier of the laboratory or vendor who provided the test results.,C82537,,,No,23,Yes,RECOQUAL,TEXT,
+AssociatedPersonsFinding,evaluator,Role of the person who provided the evaluation.,C51824,,,No,24,Yes,RECOQUAL,TEXT,EVAL
+AssociatedPersonsFinding,evaluator_id,Used to distinguish multiple evaluators with the same role recorded in evaluator.,C117043,,,No,25,Yes,VARIQUAL,TEXT,MEDEVAL
+AssociatedPersonsFinding,collection_datetime,Date/time of collection,C82515,,,Yes,26,Yes,TIMING,DATETIME,
+AssociatedPersonsFinding,end_datetime,End Date/Time of Observation,C82516,,,No,27,Yes,TIMING,DATETIME,
+AssociatedPersonsFinding,time_point,Text description of time when a measurement or observation should be taken as defined in the protocol.,C82539,,,No,28,Yes,TIMING,TEXT,
+AssociatedPersonsFinding,elapsed_time,"Planned Elapsed time in ISO 8601 format which is relative to a planned fixed reference. It is to be used when there are repetitive measurements. It is not a clock time or a date/time variable, but an interval.",C82572,,,No,29,Yes,RECOQUAL,TEXT,
+AssociatedPersonsFinding,evaluation_interval,"Evaluation interval of the event in ISO 8601 format, e.g. P1W",C82534,,,No,30,Yes,TIMING,TEXT,
+AssociatedPersonsFinding,evaluation_interval_text,"Evaluation interval associated with an observation, where the interval is not able to be represented in ISO 8601 format",C117044,,,No,31,Yes,TIMING,TEXT,
+AssociatedPersonsIntervention,reference_id,Reference identifier,C82531,,,No,1,Yes,IDENTIFIER,TEXT,
+AssociatedPersonsIntervention,treatment,Treatment name,C82542,,,Yes,2,Yes,TOPIC,TEXT,
+AssociatedPersonsIntervention,mood,Mode or condition of the record specifying whether the intervention is intended to happen or has happened.,C117051,,,No,3,Yes,RECOQUAL,TEXT,
+AssociatedPersonsIntervention,ap_intervention_category,Category of related records.,C25372,,,No,4,No,GROUQUAL,TEXT,CMCAT; ECCAT; SUCAT
+AssociatedPersonsIntervention,ap_intervention_subcategory,Sub-Category of related records.,C25692,,,No,5,No,GROUQUAL,TEXT,MHSCAT; DSSCAT
+AssociatedPersonsIntervention,prespecified,Used to indicate whether the treatment was pre-specified,C82510,,,No,6,No,VARIQUAL,TEXT,NY
+AssociatedPersonsIntervention,occurrence,Used to indicate whether a treatment occurred when information about the occurrence is solicited.,C127786,,,No,7,Yes,RECOQUAL,TEXT,NY
+AssociatedPersonsIntervention,completion_status,The completion status indicates that a question was not answered.,C41202,,,No,8,Yes,RECOQUAL,TEXT,NY
+AssociatedPersonsIntervention,reason_not_done,Describes the reason intervention data was not collected. Used in conjunction with completion_status  when value is NOT DONE.,C82556,,,No,9,Yes,RECOQUAL,TEXT,
+AssociatedPersonsIntervention,dose,Amount of treatment in numeric format,C25488,,,No,10,Yes,RECOQUAL,FLOAT,
+AssociatedPersonsIntervention,dose_description,Amount of treatment in non-numeric format,C70961,,,No,11,Yes,RECOQUAL,TEXT,
+AssociatedPersonsIntervention,dose_unit,Unit for dose,C166259,,,No,12,Yes,VARIQUAL,TEXT,UNIT
+AssociatedPersonsIntervention,dose_form,Dose form for treatment,C42636,,,No,13,Yes,VARIQUAL,TEXT,FRM
+AssociatedPersonsIntervention,frequency,Number of repeated administrations of treatment,C71113,,,No,14,Yes,VARIQUAL,TEXT,FRQ
+AssociatedPersonsIntervention,total_daily_dose,Total daily dose of treatment,C70888,,,No,15,Yes,RECOQUAL,FLOAT,
+AssociatedPersonsIntervention,dose_regimen,Intended schedule or regimen for the Intervention,C71137,,,No,16,Yes,VARIQUAL,TEXT,
+AssociatedPersonsIntervention,route,Route of administration of treatment,C38114,,,No,17,Yes,VARIQUAL,TEXT,ROUTE
+AssociatedPersonsIntervention,lot_number,Lot number of treatment,C70848,,,No,18,Yes,RECOQUAL,TEXT,
+AssociatedPersonsIntervention,fasting_status,"Indicator used to identify fasting status such as Y, N, U, or null if not relevant.",C93566,,,No,19,Yes,RECOQUAL,TEXT,NY
+AssociatedPersonsIntervention,start_datetime,Start date/time of the treatment,C82517,,,Yes,20,Yes,TIMING,DATETIME,
+AssociatedPersonsIntervention,end_datetime,End date/time of the treatment,C82516,,,No,21,Yes,TIMING,DATETIME,
+AssociatedPersonsIntervention,evaluation_interval,Evaluation interval of the treatment,C82534,,,No,22,Yes,TIMING,TEXT,
+AssociatedPersonsMedicalHistory,continuing,Continuing,C53279,,,No,1,Yes,RECOQUAL,TEXT,NY
+AssociatedPersonsNumericFinding,unit_dimension,Unit dimension,C42568,,,Yes,1,Yes,VARIQUAL,TEXT,UNIT_DIMENSION
+AssociatedPersonsNumericFinding,standard_unit,Standardised unit,C82587,,,Yes,2,Yes,VARIQUAL,TEXT,UNIT
+AssociatedPersonsNumericFinding,original_unit,Original/collected unit,C82586,,,No,3,Yes,VARIQUAL,TEXT,UNIT
+AssociatedPersonsNumericFinding,original_result,Original result,C117221,,,No,4,Yes,RESUQUAL,FLOAT,
+AssociatedPersonsObservation,related_subject_id,Related subject,C117708,,,No,1,Yes,IDENTIFIER,TEXT,
+AssociatedPersonsObservation,related_device_id,Related device,C117710,,,No,2,Yes,RECOQUAL,TEXT,
+AssociatedPersonsObservation,study_relationship,"Subject, device or study relationship",C117709,,,Yes,3,Yes,RECOQUAL,TEXT,RELSUB
+AssociatedPersonsTextualFinding,original_result,Original result,C117221,,,Yes,1,Yes,RESUQUAL,TEXT,
+CategoricFinding,original_result,Original result,C117221,,,Yes,1,Yes,RESUQUAL,TEXT,HEP_CQ; QUEST_RESPONSE; YESNO
+Comments,reference_id,Reference identifier,C82531,,,No,1,Yes,IDENTIFIER,TEXT,
+Comments,comment_reference,Reference associated with the comment,C82504,,,No,2,Yes,RECOQUAL,TEXT,
+Comments,comment,Text of the comment,C70936,,,Yes,3,Yes,TOPIC,TEXT,
+Comments,evaluator,Role of the person who provided the evaluation.,C51824,,,No,4,Yes,RECOQUAL,TEXT,
+Comments,evaluator_id,Used to distinguish multiple evaluators with the same role recorded in evaluator.,C117043,,,No,5,Yes,VARIQUAL,TEXT,MEDEVAL
+Comments,datetime,Date/time of comment,C82515,,,No,6,Yes,TIMING,TEXT,
+CompoundDosing,strength,"Amount of an active ingredient expressed quantitatively per dosage unit, per unit of volume, or per unit of weight, according to the pharmaceutical dose form.",C53294,,,No,1,Yes,RECOQUAL,FLOAT,
+CompoundDosing,strength_unit,Unit for strength,C117055,,,No,2,Yes,RECOQUAL,TEXT,UNIT
+CompoundDosing,reason_for_dose_ajdustment,Description of reason or explanation of why a dose is adjusted.,C82555,,,No,3,Yes,RECOQUAL,TEXT,
+ConcomitantMedication,continuing,Continuing,C53279,,,No,1,Yes,RECOQUAL,TEXT,NY
+ConcomitantMedication,primary_indication,Primary indication denotes why a medication was taken or administered.,C41184,,,No,2,Yes,RECOQUAL,TEXT,
+ConcomitantMedication,prim_indicat_ae_num,Adverse event number when primary indication is an adverse event.,C83097,,,No,3,Yes,RECOQUAL,FLOAT,
+ConcomitantMedication,prim_indicat_mh_num,Medical history sequence number when primary indication is an event from medical history.,C83098,,,No,4,Yes,RECOQUAL,FLOAT,
+ConcomitantMedication,other_indication,Other indication as primary indication for concomitant medication,C41184,,,No,5,Yes,RECOQUAL,TEXT,
+Demographics,date_of_birth,Date of birth of the subject,C69259,,,Yes,1,Yes,RECOQUAL,TEXT,
+Demographics,age,Age of the subject,C25150,,,Yes,2,Yes,RECOQUAL,FLOAT,
+Demographics,age_unit,Unit of age of the subject,C50400,,,Yes,3,Yes,VARIQUAL,TEXT,AGEU
+Demographics,sex,Sex of the subject,C28421,,,Yes,4,Yes,RECOQUAL,TEXT,SEX
+Demographics,race,Race of the subject,C74457,,,Yes,5,Yes,RECOQUAL,TEXT,RACE
+Demographics,ethnicity,Ethnicity of the subject,C128690,,,Yes,6,Yes,RECOQUAL,TEXT,ETHNIC
+Disposition,decod,Dictionary-derived form of the event,C170991,,,Yes,1,No,SYNOQUAL,TEXT,NCOMPLT; PROTMLST
+Event,reference_id,Reference identifier,C82531,,,No,1,Yes,IDENTIFIER,TEXT,
+Event,term,Verbatim name of the observed event,C82571,,,Yes,2,Yes,TOPIC,TEXT,
+Event,start_datetime,Start date/time of the event,C82517,,,Yes,3,Yes,TIMING,DATETIME,
+Event,end_datetime,End date/time of the event,C82516,,,No,4,Yes,TIMING,DATETIME,
+Event,event_category,Category of related records.,C25372,,,Yes,5,No,GROUQUAL,TEXT,DECAT; DSCAT; CECAT; HOCAT; MHCAT
+Event,event_subcategory,Sub-Category of related records.,C25692,,,Yes,6,No,GROUQUAL,TEXT,DSSCAT; MHSCAT
+Event,prespecified,Used to indicate whether the event was pre-specified,C82510,,,No,7,No,RECOQUAL,TEXT,NY
+Event,occurrence,Used when the occurrence of specific events is solicited to indicate whether or not a clinical event occurred.,C82438,,,No,8,Yes,RECOQUAL,TEXT,NY
+Event,completion_status,The completion status indicates that a question was not answered.,C41202,,,No,9,Yes,RECOQUAL,TEXT,ND
+Event,reason_not_done,Describes the reason data was not collected. Used in conjunction with completion_status  when value is NOT DONE.,C82556,,,No,10,Yes,RECOQUAL,TEXT,NY
+Event,severity,The severity or intensity of the event.,C25676,,,No,11,Yes,RECOQUAL,TEXT,AESEV
+Event,serious,Used to indicate whether the event was serious,C82578,,,No,12,Yes,RECOQUAL,TEXT,NY
+Event,outcome,Description of the outcome of an event.,C20200,,,No,13,Yes,RECOQUAL,TEXT,OUT
+Event,evaluation_interval,Evaluation interval of the event,C82534,,,No,14,Yes,TIMING,TEXT,
+Finding,reference_id,Reference identifier,C82531,,,No,1,Yes,IDENTIFIER,TEXT,
+Finding,test_name_code,TEST and  TESTCD linkage to external or sponsor-defined controlled  terminology,,,,Yes,2,Yes,TOPIC,TEXT,SSTEST; SSTESTCD; VSTEST; VSTESTCD; FATEST; FATESTCD; MOTEST; MOTESTCD; PCTEST; PCTESTCD
+Finding,repitition_number,Repitition number,,,,No,3,No,RECOQUAL,FLOAT,
+Finding,test_detail,"Measurement, Test or Examination Detail",C117062,,,No,4,Yes,RECOQUAL,TEXT,
+Finding,object_of_observation,Object of the observation,C82546,,,No,5,Yes,RECOQUAL,TEXT,
+Finding,finding_category,Category of related records.,C25372,,,Yes,6,No,GROUQUAL,TEXT,CCCAT; FTCAT; IECAT; QSCAT; EGCAT; OECAT; PECAT; RPCAT; RSCAT; VSCAT
+Finding,finding_subcategory,Sub-Category of related records.,C25692,,,Yes,7,No,GROUQUAL,TEXT,
+Finding,position,Position of subject,C71148,,,No,8,Yes,RECOQUAL,TEXT,POSITION
+Finding,normal_range_lower_limit,Lower Normal Limit,C82580,,,No,9,Yes,VARIQUAL,FLOAT,
+Finding,normal_range_upper_limit,Upper Normal Limit,C70933,,,No,10,Yes,VARIQUAL,FLOAT,
+Finding,normal_range_indicator,Reference Range Indicator,C82532,,,No,11,Yes,VARIQUAL,TEXT,NRIND
+Finding,location,Location,C25341,,,No,12,Yes,RECOQUAL,CTTERM,
+Finding,laterality,Laterality,C25185,,,No,13,Yes,RECOQUAL,CTTERM,
+Finding,finding_result_category,Used to categorize the result of a finding.,C82498,,,No,14,Yes,VARIQUAL,TEXT,
+Finding,completion_status,The completion status indicates that a question was not answered.,C41202,,,No,15,Yes,RECOQUAL,TEXT,ND
+Finding,reason_not_done,Describes the reason data was not collected. Used in conjunction with completion_status  when value is NOT DONE.,C82556,,,No,16,Yes,RECOQUAL,TEXT,
+Finding,vendor_name,Name or identifier of the laboratory or vendor who provided the test results.,C82537,,,No,17,Yes,RECOQUAL,TEXT,
+Finding,loinc,LOINC code,C82502,,,No,18,Yes,SYNOQUAL,TEXT,
+Finding,specimen,Defines the type of specimen used for a measurement.,C70713,,,No,19,Yes,RECOQUAL,TEXT,SPECTYPE; GENSMP
+Finding,anatomical_region,"Defines the specific anatomical or biological region of a tissue, organ specimen or the region from which the specimen is obtained, as defined in the protocol",C170983,,,No,20,Yes,VARIQUAL,TEXT,
+Finding,specimen_condition,Defines the condition of the specimen,C70714,,,No,21,Yes,RECOQUAL,TEXT,SPECCOND
+Finding,method,Method of the test or examination,C82535,,,No,22,Yes,RECOQUAL,TEXT,METHOD; EGMETHOD
+Finding,analysis_method,Analysis method applied to obtain a summarized result. Analysis method describes the method of secondary processing applied to a complex observation result,C117039,,,No,23,Yes,RECOQUAL,TEXT,
+Finding,lead_to_collect_measurement,"The lead used for the measurement, examples, V1, V6, aVR, I, II, III.",C90013,,,No,24,Yes,RECOQUAL,TEXT,LOC
+Finding,fasting_status,"Indicator used to identify fasting status such as Y, N, U, or null if not relevant.",C93566,,,No,25,Yes,RECOQUAL,TEXT,NY
+Finding,evaluator,Role of the person who provided the evaluation.,C51824,,,No,26,Yes,RECOQUAL,TEXT,EVAL
+Finding,evaluator_id,Used to distinguish multiple evaluators with the same role recorded in evaluator.,C117043,,,No,27,Yes,VARIQUAL,TEXT,MEDEVAL
+Finding,collection_datetime,Date/time of collection,C82515,,,Yes,28,Yes,TIMING,DATETIME,
+Finding,end_datetime,End Date/Time of Observation,C82516,,,No,29,Yes,TIMING,DATETIME,
+Finding,time_point,Text description of time when a measurement or observation should be taken as defined in the protocol.,C82539,,,No,30,Yes,TIMING,TEXT,
+Finding,elapsed_time,"Planned Elapsed time in ISO 8601 format which is relative to a planned fixed reference. It is to be used when there are repetitive measurements. It is not a clock time or a date/time variable, but an interval.",C82572,,,No,31,Yes,RECOQUAL,TEXT,
+Finding,evaluation_interval,Evaluation interval of the finding,C82534,,,No,32,Yes,TIMING,TEXT,
+Finding,evaluation_interval_text,"Evaluation interval associated with an observation, where the interval is not able to be represented in ISO 8601 format",C117044,,,No,33,Yes,TIMING,TEXT,
+HypoglycaemicEpisode,glucose_level,Lowest glucose level,,,,No,1,Yes,RECOQUAL,FLOAT,
+HypoglycaemicEpisode,glucose_unit,Unit for glucose level,C48207,,,No,2,Yes,RECOQUAL,TEXT,UNIT
+HypoglycaemicEpisode,relation_to_physical_activity,Relation to physical activity,C189431,,,No,3,Yes,RECOQUAL,TEXT,NY
+HypoglycaemicEpisode,hypo_when_alseep,Occurrence of hypoglycaemic episode when the subject was asleep,,,,No,4,Yes,RECOQUAL,TEXT,NY
+HypoglycaemicEpisode,symptom_awake_subject,Subject awakened by symptoms of hypoglycaemic episode,,,,No,5,Yes,RECOQUAL,TEXT,NY
+HypoglycaemicEpisode,subject_need_help,Subject needed help,,,,No,6,Yes,RECOQUAL,TEXT,NY
+HypoglycaemicEpisode,last_meal_date,Last meal date,,,,No,7,Yes,RECOQUAL,DATETIME,
+HypoglycaemicEpisode,symptom_experienced_1,Symptom experienced for hypoglycaemic episode,,,,No,8,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,symptom_experienced_2,Symptom experienced for hypoglycaemic episode,,,,No,9,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,symptom_experienced_3,Symptom experienced for hypoglycaemic episode,,,,No,10,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,symptom_experienced_4,Symptom experienced for hypoglycaemic episode,,,,No,11,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,symptom_experienced_5,Symptom experienced for hypoglycaemic episode,,,,No,12,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,symptom_experienced_6,Symptom experienced for hypoglycaemic episode,,,,No,13,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,symptom_experienced_7,Symptom experienced for hypoglycaemic episode,,,,No,14,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,symptom_experienced_8,Symptom experienced for hypoglycaemic episode,,,,No,15,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,symptom_experienced_9,Symptom experienced for hypoglycaemic episode,,,,No,16,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,symptom_experienced_10,Symptom experienced for hypoglycaemic episode,,,,No,17,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,symptom_experienced_11,Symptom experienced for hypoglycaemic episode,,,,No,18,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,symptom_experienced_12,Symptom experienced for hypoglycaemic episode,,,,No,19,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,symptom_experienced_13,Symptom experienced for hypoglycaemic episode,,,,No,20,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,symptom_experienced_14,Symptom experienced for hypoglycaemic episode,,,,No,21,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,symptom_experienced_15,Symptom experienced for hypoglycaemic episode,,,,No,22,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,medical_person_help,If a medical person help needed to handle the hypoglycaemic episode,,,,No,23,Yes,RECOQUAL,TEXT,NY
+HypoglycaemicEpisode,place_subject_treated_1,Place where was the subject treated for hypoglycaemic episode,,,,No,24,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,place_subject_treated_2,Place where was the subject treated for hypoglycaemic episode,,,,No,25,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,transported_by_ambulance,If the subject was transported by ambulance,,,,No,26,Yes,RECOQUAL,TEXT,NY
+HypoglycaemicEpisode,seizure,If the subject experienced any convulsions or fits (seizure) during the hypoglycaemic episode,,,,No,27,Yes,RECOQUAL,TEXT,NY
+HypoglycaemicEpisode,subject_unconscious,If the subject pass out (loss of conscious/in a coma) during the hypoglycaemic episode,,,,No,28,Yes,RECOQUAL,TEXT,NY
+HypoglycaemicEpisode,type_of_treatment_1,If the subject pass out (loss of conscious/in a coma) during the hypoglycaemic episode,,,,No,29,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,type_of_treatment_2,If the subject pass out (loss of conscious/in a coma) during the hypoglycaemic episode,,,,No,30,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,type_of_treatment_3,If the subject pass out (loss of conscious/in a coma) during the hypoglycaemic episode,,,,No,31,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,type_of_treatment_4,If the subject pass out (loss of conscious/in a coma) during the hypoglycaemic episode,,,,No,32,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,subject_feel_better_after_treat,If the subject felt better after the treatment,,,,No,33,Yes,RECOQUAL,TEXT,NY
+HypoglycaemicEpisode,hypo_contributing_factors_1,Contributing factor to the hypoglycaemic episode,,,,No,34,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,hypo_contributing_factors_2,Contributing factor to the hypoglycaemic episode,,,,No,35,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,hypo_contributing_factors_3,Contributing factor to the hypoglycaemic episode,,,,No,36,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,hypo_contributing_factors_4,Contributing factor to the hypoglycaemic episode,,,,No,37,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,hypo_contributing_factors_5,Contributing factor to the hypoglycaemic episode,,,,No,38,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,hypo_contributing_factors_6,Contributing factor to the hypoglycaemic episode,,,,No,39,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,hypo_contributing_factors_7,Contributing factor to the hypoglycaemic episode,,,,No,40,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,hypo_contributing_factors_8,Contributing factor to the hypoglycaemic episode,,,,No,41,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,hypo_contributing_factors_9,Contributing factor to the hypoglycaemic episode,,,,No,42,Yes,RECOQUAL,TEXT,
+HypoglycaemicEpisode,hypo_contributing_factors_10,Contributing factor to the hypoglycaemic episode,,,,No,43,Yes,RECOQUAL,TEXT,
+Intervention,reference_id,Reference identifier,C82531,,,No,1,Yes,IDENTIFIER,TEXT,
+Intervention,treatment,Treatment name,C82542,,,Yes,2,Yes,TOPIC,TEXT,
+Intervention,mood,Mode or condition of the record specifying whether the intervention is intended to happen or has happened.,C117051,,,No,3,Yes,RECOQUAL,TEXT,
+Intervention,intervention_category,Category of related records.,C25372,,,No,4,No,GROUQUAL,TEXT,CMCAT; ECCAT; SUCAT
+Intervention,intervention_subcategory,Sub-Category of related records.,C25692,,,No,5,No,GROUQUAL,TEXT,MHSCAT; DSSCAT
+Intervention,prespecified,Used to indicate whether the treatment was pre-specified,C82510,,,No,6,No,VARIQUAL,TEXT,NY
+Intervention,occurrence,Used to indicate whether a treatment occurred when information about the occurrence is solicited.,C127786,,,No,7,Yes,RECOQUAL,TEXT,NY
+Intervention,completion_status,The completion status indicates that a question was not answered.,C41202,,,No,8,Yes,RECOQUAL,TEXT,NY
+Intervention,reason_not_done,Describes the reason data was not collected. Used in conjunction with completion_status  when value is NOT DONE.,C82556,,,No,9,Yes,RECOQUAL,TEXT,
+Intervention,dose,Amount of treatment in numeric format,C25488,,,No,10,Yes,RECOQUAL,FLOAT,
+Intervention,dose_description,Amount of treatment in non-numeric format,C70961,,,No,11,Yes,RECOQUAL,TEXT,
+Intervention,dose_unit,Unit for dose,C166259,,,No,12,Yes,VARIQUAL,TEXT,UNIT
+Intervention,dose_form,Dose form for treatment,C42636,,,No,13,Yes,VARIQUAL,TEXT,FRM
+Intervention,frequency,Intended schedule or regimen for the Intervention,C71113,,,No,14,Yes,VARIQUAL,TEXT,FRQ
+Intervention,total_daily_dose,Total daily dose of treatment,C70888,,,No,15,Yes,RECOQUAL,FLOAT,
+Intervention,dose_regimen,Intended schedule or regimen for the Intervention,C71137,,,No,16,Yes,VARIQUAL,TEXT,
+Intervention,route,Route of administration of treatment,C38114,,,No,17,Yes,VARIQUAL,TEXT,ROUTE
+Intervention,lot_number,Lot number of treatment,C70848,,,No,18,Yes,RECOQUAL,TEXT,
+Intervention,fasting_status,"Indicator used to identify fasting status such as Y, N, U, or null if not relevant.",C93566,,,No,19,Yes,RECOQUAL,TEXT,NY
+Intervention,start_datetime,Start date/time of the treatment,C82517,,,Yes,20,Yes,TIMING,DATETIME,
+Intervention,end_datetime,End date/time of the treatment,C82516,,,No,21,Yes,TIMING,DATETIME,
+Intervention,evaluation_interval,Evaluation interval of the intervention,C82534,,,No,22,Yes,TIMING,TEXT,
+MedicalHistory,continuing,Continuing,C53279,,,No,1,Yes,RECOQUAL,TEXT,NY
+NumericFinding,original_result,Original result,C117221,,,Yes,1,Yes,RESUQUAL,FLOAT,
+NumericFinding,original_unit,Original/collected unit,C82586,,,Yes,2,Yes,VARIQUAL,TEXT,UNIT
+NumericFinding,standard_unit,Standardised unit,C82587,,,Yes,3,Yes,VARIQUAL,TEXT,UNIT
+NumericFinding,unit_dimension,Unit dimension,C42568,,,No,4,Yes,VARIQUAL,TEXT,UNIT_DIMENSION
+NumericFinding,result_standard_unit,Result in the standardised unit,,,,No,16,No,RESUQUAL,FLOAT,
+Observation,domain,SDTM domain,C66734,,,Yes,1,No,IDENTIFIER,TEXT,DOMAIN
+Observation,study_id,Study identifier,C83082,,,Yes,2,No,IDENTIFIER,TEXT,
+Observation,group_id,group identifier,C82529,,,No,5,Yes,IDENTIFIER,TEXT,
+Observation,link_id,Link ID,C117050,,,No,6,Yes,IDENTIFIER,TEXT,
+Observation,link_group,Link Group ID,C117049,,,No,7,Yes,IDENTIFIER,TEXT,
+Observation,location,Location,C25341,,,No,8,Yes,RECOQUAL,TEXT,LOC
+Observation,laterality,Laterality,C25185,,,No,9,Yes,RECOQUAL,TEXT,LAT
+Observation,directionality,Anatomical location further detailing directionality,C54215,,,No,10,Yes,VARIQUAL,TEXT,DIR
+Observation,portion,"Anatomical location further detailing distribution. For e.g. ENTIRE, SINGLE, SEGMENT.",C103166,,,No,11,Yes,VARIQUAL,TEXT,PORTOT
+Observation,associated_persons_id,Associated persons identifier,,,,Yes,12,Yes,IDENTIFIER,TEXT,
+OtherQualifiers,other_qualifier_label,Label or description of non-standard or supplemental data,,,,Yes,1,Yes,RECOQUAL,TEXT,
+OtherQualifiers,other_integer_qualifier,Integer value of non-standard or supplemental data,,,,No,2,Yes,RECOQUAL,INTEGER,
+OtherQualifiers,other_float_qualifier,Float value of non-standard or supplemental data,,,,No,3,Yes,RECOQUAL,FLOAT,
+OtherQualifiers,other_text_qualifier,Text value of non-standard or supplemental data,,,,No,4,Yes,RECOQUAL,TEXT,
+SubjectObservation,subject_id,"A sequence of characters used to identify, name, or characterize a trial or study subject.",C83083,,,Yes,2,Yes,IDENTIFIER,TEXT,
+SubjectObservation,unique_subject_id,A unique identifier for a subject in a study.,C69256,,,Yes,3,No,IDENTIFIER,TEXT,
+TextualFinding,original_result,Original result,C117221,,,Yes,1,Yes,RESUQUAL,TEXT,

@@ -1,0 +1,200 @@
+[
+    {
+        "name": "Create a new ODM Description",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "name1",
+                "language": "ENG",
+                "description": "description1",
+                "instruction": "instruction1",
+                "sponsor_instruction": "sponsor_instruction1"
+            },
+            "url": "concepts/odms/descriptions"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmDescription_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "language": "ENG",
+                "description": "description1",
+                "instruction": "instruction1",
+                "sponsor_instruction": "sponsor_instruction1",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test cannot inactivate an ODM Description that is in Draft status",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "concepts/odms/descriptions/OdmDescription_000001/activations"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "Cannot retire draft version.",
+                "time": "2022-03-07T12:24:39.980123",
+                "path": "http://testserver/concepts/odms/descriptions/OdmDescription_000001/activations",
+                "method": "DELETE",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot reactivate an ODM Description that is not retired",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/descriptions/OdmDescription_000001/activations"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "Only RETIRED version can be reactivated.",
+                "time": "2022-03-07T12:27:17.572613",
+                "path": "http://testserver/concepts/odms/descriptions/OdmDescription_000001/activations",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Create an ODM Form and attach the ODM Descriptio to it",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "oid1",
+                "sdtm_version": "0.1",
+                "repeating": "No",
+                "descriptions": [
+                    "OdmDescription_000001"
+                ],
+                "alias_uids": []
+            },
+            "url": "concepts/odms/forms"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmForm_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "sdtm_version": "0.1",
+                "repeating": "No",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "scope": null,
+                "descriptions": [
+                    {
+                        "uid": "OdmDescription_000001",
+                        "name": "name1",
+                        "language": "ENG",
+                        "description": "description1",
+                        "instruction": "instruction1",
+                        "sponsor_instruction": "sponsor_instruction1",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [],
+                "activity_groups": [],
+                "item_groups": [],
+                "vendor_elements": [],
+                "vendor_attributes": [],
+                "vendor_element_attributes": [],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test cannot delete an ODM Descriptio that is being used",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "concepts/odms/descriptions/OdmDescription_000001"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "This ODM Description is in use.",
+                "time": "2022-03-07T12:27:17.572613",
+                "path": "http://testserver/concepts/odms/descriptions/OdmDescription_000001",
+                "method": "DELETE",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot delete non-existent ODM Description",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "concepts/odms/descriptions/wrong_uid"
+        },
+        "response": {
+            "code": 404,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "type": "NotFoundException",
+                "message": "ODM Description identified by uid (wrong_uid) does not exist.",
+                "time": "2022-11-24T08:43:42.862157",
+                "path": "http://testserver/concepts/odms/descriptions/wrong_uid",
+                "method": "DELETE"
+            }
+        }
+    }
+]

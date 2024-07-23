@@ -1,0 +1,54 @@
+@startuml
+
+package ApiClients <<Cloud>> {
+}
+
+package Service1 {
+}
+
+package Service2 {
+}
+
+
+package Database <<Database>> {
+}
+
+package AggregateX {
+    class AggregateXAR
+}
+
+package AggregateY {
+    class AggregateYAR
+}
+
+package AggregateXRepository {
+    interface AggregateXRepositoryInterface
+
+    class AggregateXRepositoryImpl
+
+    AggregateXRepositoryInterface <|.. AggregateXRepositoryImpl
+}
+
+package AggregateYRepository {
+    interface AggregateYRepositoryInterface
+
+    class AggregateYRepositoryImpl
+
+    AggregateYRepositoryInterface <|.. AggregateYRepositoryImpl
+}
+
+Service1 ..> AggregateX
+Service1 ..> AggregateY
+
+AggregateY <.. AggregateYRepository
+AggregateYRepositoryImpl ..> Database
+Service1 ...> AggregateXRepositoryInterface
+Service1 ...> AggregateYRepositoryInterface
+Service2 ...> AggregateYRepositoryInterface
+Service2 ..> AggregateY
+AggregateX <.. AggregateXRepository
+AggregateXRepositoryImpl ..> Database
+ApiClients ..> Service1
+ApiClients ..> Service2
+
+@enduml

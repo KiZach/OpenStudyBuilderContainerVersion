@@ -1,0 +1,724 @@
+[
+   {
+      "name": "Test POST create activity",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name": "new_name",
+            "name_sentence_case": "new_name",
+            "nci_concept_id": "C12345",
+            "definition": "definition",
+            "abbreviation": "abbv",
+            "library_name": "Sponsor",
+            "activity_groupings": [
+               {
+                  "activity_subgroup_uid": "activity_subgroup_root1",
+                  "activity_group_uid": "activity_group_root1"
+               },
+               {
+                  "activity_subgroup_uid": "activity_subgroup_root3",
+                  "activity_group_uid": "activity_group_root3"
+               }
+            ],
+            "is_data_collected": true,
+            "is_multiple_selection_allowed": false
+         },
+         "url": "/concepts/activities/activities"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "Activity_000001",
+            "name": "new_name",
+            "name_sentence_case": "new_name",
+            "nci_concept_id": "C12345",
+            "definition": "definition",
+            "abbreviation": "abbv",
+            "library_name": "Sponsor",
+            "activity_groupings": [
+               {
+                  "activity_subgroup_uid": "activity_subgroup_root1",
+                  "activity_subgroup_name": "name1",
+                  "activity_group_uid": "activity_group_root1",
+                  "activity_group_name": "name1"
+               },
+               {
+                  "activity_subgroup_uid": "activity_subgroup_root3",
+                  "activity_subgroup_name": "name3",
+                  "activity_group_uid": "activity_group_root3",
+                  "activity_group_name": "name3"
+               }
+            ],
+            "is_data_collected": true,
+            "is_multiple_selection_allowed": false,
+            "is_finalized": false,
+            "is_used_by_legacy_instances": false,
+            "start_date": "2021-03-18T11:54:20.898Z",
+            "end_date": null,
+            "status": "Draft",
+            "version": "0.1",
+            "change_description": "Initial version",
+            "user_initials": "TODO user initials",
+            "possible_actions": [
+               "approve",
+               "delete",
+               "edit"
+            ],
+            "request_rationale": null,
+            "is_request_final": false,
+            "is_request_rejected": false,
+            "contact_person": null,
+            "reason_for_rejecting": null,
+            "requester_study_id": null,
+            "replaced_by_activity": null
+         }
+      }
+   },
+   {
+      "name": "Test GET all activities",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/concepts/activities/activities?total_count=true"
+      },
+      "response": {
+         "code": 200,
+         "headers": {},
+         "result": {
+            "items": [
+               {
+                  "uid": "activity_root1",
+                  "name": "name1",
+                  "name_sentence_case": "name1",
+                  "nci_concept_id": null,
+                  "definition": "definition1",
+                  "abbreviation": "abbv",
+                  "library_name": "Sponsor",
+                  "activity_groupings": [
+                     {
+                        "activity_subgroup_uid": "activity_subgroup_root1",
+                        "activity_subgroup_name": "name1",
+                        "activity_group_uid": "activity_group_root1",
+                        "activity_group_name": "name1"
+                     }
+                  ],
+                  "is_data_collected": false,
+                  "is_multiple_selection_allowed": true,
+                  "is_finalized": false,
+                  "is_used_by_legacy_instances": false,
+                  "start_date": "2021-03-18T11:54:20.898Z",
+                  "end_date": null,
+                  "status": "Final",
+                  "version": "1.0",
+                  "change_description": "Approved version",
+                  "user_initials": "TODO user initials",
+                  "possible_actions": [
+                     "inactivate",
+                     "new_version"
+                  ],
+                  "request_rationale": null,
+                  "is_request_final": false,
+                  "is_request_rejected": false,
+                  "contact_person": null,
+                  "reason_for_rejecting": null,
+                  "requester_study_id": null,
+                  "replaced_by_activity": null
+               },
+               {
+                  "uid": "activity_root2",
+                  "name": "name2",
+                  "name_sentence_case": "name2",
+                  "nci_concept_id": null,
+                  "definition": "definition2",
+                  "abbreviation": "abbv",
+                  "library_name": "Sponsor",
+                  "activity_groupings": [
+                     {
+                        "activity_subgroup_uid": "activity_subgroup_root2",
+                        "activity_subgroup_name": "name2",
+                        "activity_group_uid": "activity_group_root2",
+                        "activity_group_name": "name2"
+                     }
+                  ],
+                  "is_data_collected": false,
+                  "is_multiple_selection_allowed": true,
+                  "is_finalized": false,
+                  "is_used_by_legacy_instances": false,
+                  "start_date": "2021-03-18T11:54:20.898Z",
+                  "end_date": null,
+                  "status": "Draft",
+                  "version": "0.1",
+                  "change_description": "New draft version",
+                  "user_initials": "TODO user initials",
+                  "possible_actions": [
+                     "approve",
+                     "delete",
+                     "edit"
+                  ],
+                  "request_rationale": null,
+                  "is_request_final": false,
+                  "is_request_rejected": false,
+                  "contact_person": null,
+                  "reason_for_rejecting": null,
+                  "requester_study_id": null,
+                  "replaced_by_activity": null
+               },
+               {
+                  "uid": "activity_root3",
+                  "name": "name3",
+                  "name_sentence_case": "name3",
+                  "nci_concept_id": null,
+                  "definition": "definition3",
+                  "abbreviation": "abbv",
+                  "library_name": "Sponsor",
+                  "activity_groupings": [
+                     {
+                        "activity_subgroup_uid": "activity_subgroup_root3",
+                        "activity_subgroup_name": "name3",
+                        "activity_group_uid": "activity_group_root3",
+                        "activity_group_name": "name3"
+                     }
+                  ],
+                  "is_data_collected": false,
+                  "is_multiple_selection_allowed": true,
+                  "is_finalized": false,
+                  "is_used_by_legacy_instances": false,
+                  "start_date": "2021-03-18T11:54:20.898Z",
+                  "end_date": null,
+                  "status": "Final",
+                  "version": "1.0",
+                  "change_description": "Approved version",
+                  "user_initials": "TODO user initials",
+                  "possible_actions": [
+                     "inactivate",
+                     "new_version"
+                  ],
+                  "request_rationale": null,
+                  "is_request_final": false,
+                  "is_request_rejected": false,
+                  "contact_person": null,
+                  "reason_for_rejecting": null,
+                  "requester_study_id": null,
+                  "replaced_by_activity": null
+               },
+               {
+                  "uid": "Activity_000001",
+                  "name": "new_name",
+                  "name_sentence_case": "new_name",
+                  "nci_concept_id": "C12345",
+                  "definition": "definition",
+                  "abbreviation": "abbv",
+                  "library_name": "Sponsor",
+                  "activity_groupings": [
+                     {
+                        "activity_subgroup_uid": "activity_subgroup_root1",
+                        "activity_subgroup_name": "name1",
+                        "activity_group_uid": "activity_group_root1",
+                        "activity_group_name": "name1"
+                     },
+                     {
+                        "activity_subgroup_uid": "activity_subgroup_root3",
+                        "activity_subgroup_name": "name3",
+                        "activity_group_uid": "activity_group_root3",
+                        "activity_group_name": "name3"
+                     }
+                  ],
+                  "is_data_collected": true,
+                  "is_multiple_selection_allowed": false,
+                  "is_finalized": false,
+                  "is_used_by_legacy_instances": false,
+                  "start_date": "2021-03-18T11:54:20.898Z",
+                  "end_date": null,
+                  "status": "Draft",
+                  "version": "0.1",
+                  "change_description": "Initial version",
+                  "user_initials": "TODO user initials",
+                  "possible_actions": [
+                     "approve",
+                     "delete",
+                     "edit"
+                  ],
+                  "request_rationale": null,
+                  "is_request_final": false,
+                  "is_request_rejected": false,
+                  "contact_person": null,
+                  "reason_for_rejecting": null,
+                  "requester_study_id": null,
+                  "replaced_by_activity": null
+               }
+            ],
+            "total": 4,
+            "page": 1,
+            "size": 10
+         }
+      }
+   },
+   {
+      "name": "Test GET all activities from a given activity sub group",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/concepts/activities/activities?activity_subgroup_uid=activity_subgroup_root2&total_count=true"
+      },
+      "response": {
+         "code": 200,
+         "headers": {},
+         "result": {
+            "items": [
+               {
+                  "uid": "activity_root2",
+                  "name": "name2",
+                  "name_sentence_case": "name2",
+                  "nci_concept_id": null,
+                  "definition": "definition2",
+                  "abbreviation": "abbv",
+                  "library_name": "Sponsor",
+                  "activity_groupings": [
+                     {
+                        "activity_subgroup_uid": "activity_subgroup_root2",
+                        "activity_subgroup_name": "name2",
+                        "activity_group_uid": "activity_group_root2",
+                        "activity_group_name": "name2"
+                     }
+                  ],
+                  "is_data_collected": false,
+                  "is_multiple_selection_allowed": true,
+                  "is_finalized": false,
+                  "is_used_by_legacy_instances": false,
+                  "start_date": "2021-03-18T11:54:20.898Z",
+                  "end_date": null,
+                  "status": "Draft",
+                  "version": "0.1",
+                  "change_description": "New draft version",
+                  "user_initials": "TODO user initials",
+                  "possible_actions": [
+                     "approve",
+                     "delete",
+                     "edit"
+                  ],
+                  "request_rationale": null,
+                  "is_request_final": false,
+                  "is_request_rejected": false,
+                  "contact_person": null,
+                  "reason_for_rejecting": null,
+                  "requester_study_id": null,
+                  "replaced_by_activity": null
+               }
+            ],
+            "total": 1,
+            "page": 1,
+            "size": 10
+         }
+      }
+   },
+   {
+      "name": "Test GET all activities with a given name",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/concepts/activities/activities?activity_names[]=name2&total_count=true"
+      },
+      "response": {
+         "code": 200,
+         "headers": {},
+         "result": {
+            "items": [
+               {
+                  "uid": "activity_root2",
+                  "name": "name2",
+                  "name_sentence_case": "name2",
+                  "nci_concept_id": null,
+                  "definition": "definition2",
+                  "abbreviation": "abbv",
+                  "library_name": "Sponsor",
+                  "activity_groupings": [
+                     {
+                        "activity_subgroup_uid": "activity_subgroup_root2",
+                        "activity_subgroup_name": "name2",
+                        "activity_group_uid": "activity_group_root2",
+                        "activity_group_name": "name2"
+                     }
+                  ],
+                  "is_data_collected": false,
+                  "is_multiple_selection_allowed": true,
+                  "is_finalized": false,
+                  "is_used_by_legacy_instances": false,
+                  "start_date": "2021-03-18T11:54:20.898Z",
+                  "end_date": null,
+                  "status": "Draft",
+                  "version": "0.1",
+                  "change_description": "New draft version",
+                  "user_initials": "TODO user initials",
+                  "possible_actions": [
+                     "approve",
+                     "delete",
+                     "edit"
+                  ],
+                  "request_rationale": null,
+                  "is_request_final": false,
+                  "is_request_rejected": false,
+                  "contact_person": null,
+                  "reason_for_rejecting": null,
+                  "requester_study_id": null,
+                  "replaced_by_activity": null
+               }
+            ],
+            "total": 1,
+            "page": 1,
+            "size": 10
+         }
+      }
+   },
+   {
+      "name": "Test GET all activities from a given activity sub group using name",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/concepts/activities/activities?activity_subgroup_names[]=name2&total_count=true"
+      },
+      "response": {
+         "code": 200,
+         "headers": {},
+         "result": {
+            "items": [
+               {
+                  "uid": "activity_root2",
+                  "name": "name2",
+                  "name_sentence_case": "name2",
+                  "nci_concept_id": null,
+                  "definition": "definition2",
+                  "abbreviation": "abbv",
+                  "library_name": "Sponsor",
+                  "activity_groupings": [
+                     {
+                        "activity_subgroup_uid": "activity_subgroup_root2",
+                        "activity_subgroup_name": "name2",
+                        "activity_group_uid": "activity_group_root2",
+                        "activity_group_name": "name2"
+                     }
+                  ],
+                  "is_data_collected": false,
+                  "is_multiple_selection_allowed": true,
+                  "is_finalized": false,
+                  "is_used_by_legacy_instances": false,
+                  "start_date": "2021-03-18T11:54:20.898Z",
+                  "end_date": null,
+                  "status": "Draft",
+                  "version": "0.1",
+                  "change_description": "New draft version",
+                  "user_initials": "TODO user initials",
+                  "possible_actions": [
+                     "approve",
+                     "delete",
+                     "edit"
+                  ],
+                  "request_rationale": null,
+                  "is_request_final": false,
+                  "is_request_rejected": false,
+                  "contact_person": null,
+                  "reason_for_rejecting": null,
+                  "requester_study_id": null,
+                  "replaced_by_activity": null
+               }
+            ],
+            "total": 1,
+            "page": 1,
+            "size": 10
+         }
+      }
+   },
+   {
+      "name": "Test GET all activities from a given activity group using name",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/concepts/activities/activities?activity_group_names[]=name2&total_count=true"
+      },
+      "response": {
+         "code": 200,
+         "headers": {},
+         "result": {
+            "items": [
+               {
+                  "uid": "activity_root2",
+                  "name": "name2",
+                  "name_sentence_case": "name2",
+                  "nci_concept_id": null,
+                  "definition": "definition2",
+                  "abbreviation": "abbv",
+                  "library_name": "Sponsor",
+                  "activity_groupings": [
+                     {
+                        "activity_subgroup_uid": "activity_subgroup_root2",
+                        "activity_subgroup_name": "name2",
+                        "activity_group_uid": "activity_group_root2",
+                        "activity_group_name": "name2"
+                     }
+                  ],
+                  "is_data_collected": false,
+                  "is_multiple_selection_allowed": true,
+                  "is_finalized": false,
+                  "is_used_by_legacy_instances": false,
+                  "start_date": "2021-03-18T11:54:20.898Z",
+                  "end_date": null,
+                  "status": "Draft",
+                  "version": "0.1",
+                  "change_description": "New draft version",
+                  "user_initials": "TODO user initials",
+                  "possible_actions": [
+                     "approve",
+                     "delete",
+                     "edit"
+                  ],
+                  "request_rationale": null,
+                  "is_request_final": false,
+                  "is_request_rejected": false,
+                  "contact_person": null,
+                  "reason_for_rejecting": null,
+                  "requester_study_id": null,
+                  "replaced_by_activity": null
+               }
+            ],
+            "total": 1,
+            "page": 1,
+            "size": 10
+         }
+      }
+   },
+   {
+      "name": "Test POST approve activity",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {},
+         "url": "/concepts/activities/activities/Activity_000001/approvals"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "Activity_000001",
+            "name": "new_name",
+            "name_sentence_case": "new_name",
+            "nci_concept_id": "C12345",
+            "definition": "definition",
+            "abbreviation": "abbv",
+            "library_name": "Sponsor",
+            "activity_groupings": [
+               {
+                  "activity_subgroup_uid": "activity_subgroup_root1",
+                  "activity_subgroup_name": "name1",
+                  "activity_group_uid": "activity_group_root1",
+                  "activity_group_name": "name1"
+               },
+               {
+                  "activity_subgroup_uid": "activity_subgroup_root3",
+                  "activity_subgroup_name": "name3",
+                  "activity_group_uid": "activity_group_root3",
+                  "activity_group_name": "name3"
+               }
+            ],
+            "is_data_collected": true,
+            "is_multiple_selection_allowed": false,
+            "is_finalized": false,
+            "is_used_by_legacy_instances": false,
+            "start_date": "2021-03-18T11:54:20.898Z",
+            "end_date": null,
+            "status": "Final",
+            "version": "1.0",
+            "change_description": "Approved version",
+            "user_initials": "TODO user initials",
+            "possible_actions": [
+               "inactivate",
+               "new_version"
+            ],
+            "request_rationale": null,
+            "is_request_final": false,
+            "is_request_rejected": false,
+            "contact_person": null,
+            "reason_for_rejecting": null,
+            "requester_study_id": null,
+            "replaced_by_activity": null
+         }
+      }
+   },
+   {
+      "name": "Test POST /versions activity",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {},
+         "url": "/concepts/activities/activities/Activity_000001/versions"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "Activity_000001",
+            "name": "new_name",
+            "name_sentence_case": "new_name",
+            "nci_concept_id": "C12345",
+            "definition": "definition",
+            "abbreviation": "abbv",
+            "library_name": "Sponsor",
+            "activity_groupings": [
+               {
+                  "activity_subgroup_uid": "activity_subgroup_root1",
+                  "activity_subgroup_name": "name1",
+                  "activity_group_uid": "activity_group_root1",
+                  "activity_group_name": "name1"
+               },
+               {
+                  "activity_subgroup_uid": "activity_subgroup_root3",
+                  "activity_subgroup_name": "name3",
+                  "activity_group_uid": "activity_group_root3",
+                  "activity_group_name": "name3"
+               }
+            ],
+            "is_data_collected": true,
+            "is_multiple_selection_allowed": false,
+            "is_finalized": false,
+            "is_used_by_legacy_instances": false,
+            "start_date": "2021-03-18T11:54:20.898Z",
+            "end_date": null,
+            "status": "Draft",
+            "version": "1.1",
+            "change_description": "New draft created",
+            "user_initials": "TODO user initials",
+            "possible_actions": [
+               "approve",
+               "edit"
+            ],
+            "request_rationale": null,
+            "is_request_final": false,
+            "is_request_rejected": false,
+            "contact_person": null,
+            "reason_for_rejecting": null,
+            "requester_study_id": null,
+            "replaced_by_activity": null
+         }
+      }
+   },
+   {
+      "name": "Test DELETE activations activity",
+      "request": {
+         "headers": {},
+         "method": "DELETE",
+         "request": {},
+         "url": "/concepts/activities/activities/activity_root1/activations"
+      },
+      "response": {
+         "code": 200,
+         "headers": {},
+         "result": {
+            "uid": "activity_root1",
+            "name": "name1",
+            "name_sentence_case": "name1",
+            "nci_concept_id": null,
+            "definition": "definition1",
+            "abbreviation": "abbv",
+            "library_name": "Sponsor",
+            "activity_groupings": [
+               {
+                  "activity_subgroup_uid": "activity_subgroup_root1",
+                  "activity_subgroup_name": "name1",
+                  "activity_group_uid": "activity_group_root1",
+                  "activity_group_name": "name1"
+               }
+            ],
+            "is_data_collected": false,
+            "is_multiple_selection_allowed": true,
+            "is_finalized": false,
+            "is_used_by_legacy_instances": false,
+            "start_date": "2021-03-18T11:54:20.898Z",
+            "end_date": null,
+            "status": "Retired",
+            "version": "1.0",
+            "change_description": "Inactivated version",
+            "user_initials": "TODO user initials",
+            "possible_actions": [
+               "reactivate"
+            ],
+            "request_rationale": null,
+            "is_request_final": false,
+            "is_request_rejected": false,
+            "contact_person": null,
+            "reason_for_rejecting": null,
+            "requester_study_id": null,
+            "replaced_by_activity": null
+         }
+      }
+   },
+   {
+      "name": "Test POST activations activity",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {},
+         "url": "/concepts/activities/activities/activity_root1/activations"
+      },
+      "response": {
+         "code": 200,
+         "headers": {},
+         "result": {
+            "uid": "activity_root1",
+            "name": "name1",
+            "name_sentence_case": "name1",
+            "nci_concept_id": null,
+            "definition": "definition1",
+            "abbreviation": "abbv",
+            "library_name": "Sponsor",
+            "activity_groupings": [
+               {
+                  "activity_subgroup_uid": "activity_subgroup_root1",
+                  "activity_subgroup_name": "name1",
+                  "activity_group_uid": "activity_group_root1",
+                  "activity_group_name": "name1"
+               }
+            ],
+            "is_data_collected": false,
+            "is_multiple_selection_allowed": true,
+            "is_finalized": false,
+            "is_used_by_legacy_instances": false,
+            "start_date": "2021-03-18T11:54:20.898Z",
+            "end_date": null,
+            "status": "Final",
+            "version": "1.0",
+            "change_description": "Reactivated version",
+            "user_initials": "TODO user initials",
+            "possible_actions": [
+               "inactivate",
+               "new_version"
+            ],
+            "request_rationale": null,
+            "is_request_final": false,
+            "is_request_rejected": false,
+            "contact_person": null,
+            "reason_for_rejecting": null,
+            "requester_study_id": null,
+            "replaced_by_activity": null
+         }
+      }
+   },
+   {
+      "name": "Test DELETE activity",
+      "request": {
+         "headers": {},
+         "method": "DELETE",
+         "request": {},
+         "url": "/concepts/activities/activities/activity_root2"
+      },
+      "response": {
+         "code": 204,
+         "headers": {},
+         "result": null
+      }
+   }
+]

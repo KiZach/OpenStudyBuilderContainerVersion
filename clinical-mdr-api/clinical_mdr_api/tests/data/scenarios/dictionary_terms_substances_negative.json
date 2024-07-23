@@ -1,0 +1,244 @@
+[
+    {
+        "name": "Test POST create MED-RT dictionary term (pharmacological class)",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "dictionary_id": "dictionary_id_pharma_class",
+                "name": "name_pharma_class",
+                "name_sentence_case": "name_pharma_class",
+                "abbreviation": "abbreviation_pharma_class",
+                "definition": "definition_pharma_class",
+                "codelist_uid": "codelist_pclass_uid",
+                "library_name": "MED-RT"
+            },
+            "url": "/dictionaries/terms"
+        },
+        "response": {
+            "code": 201,
+            "headers": {},
+            "result": {
+                "term_uid": "DictionaryTerm_000001",
+                "dictionary_id": "dictionary_id_pharma_class",
+                "name": "name_pharma_class",
+                "name_sentence_case": "name_pharma_class",
+                "abbreviation": "abbreviation_pharma_class",
+                "definition": "definition_pharma_class",
+                "library_name": "MED-RT",
+                "start_date": "2021-03-18T11:54:20.898Z",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test POST create substance dictionary term",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "dictionary_id": "dictionary_id_substance",
+                "name": "name_substance",
+                "name_sentence_case": "name_substance",
+                "abbreviation": "abbreviation_substance",
+                "definition": "definition_substance",
+                "codelist_uid": "codelist_unii_uid",
+                "library_name": "UNII",
+                "pclass_uid": "DictionaryTerm_000001"
+            },
+            "url": "/dictionaries/substances"
+        },
+        "response": {
+            "code": 201,
+            "headers": {},
+            "result": {
+                "term_uid": "DictionaryTerm_000002",
+                "dictionary_id": "dictionary_id_substance",
+                "name": "name_substance",
+                "name_sentence_case": "name_substance",
+                "abbreviation": "abbreviation_substance",
+                "definition": "definition_substance",
+                "library_name": "UNII",
+                "start_date": "2021-03-18T11:54:20.898Z",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ],
+                "pclass": {
+                    "term_uid": "DictionaryTerm_000001",
+                    "name": "name_pharma_class",
+                    "dictionary_id": "dictionary_id_pharma_class"
+                }
+            }
+        }
+    },
+    {
+        "name": "Test POST create substance dictionary term with name 'name_substance3'",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "dictionary_id": "dictionary_id_substance",
+                "name": "name_substance3",
+                "name_sentence_case": "name_substance3",
+                "abbreviation": "abbreviation_substance",
+                "definition": "definition_substance",
+                "codelist_uid": "codelist_unii_uid",
+                "library_name": "UNII",
+                "pclass_uid": "DictionaryTerm_000001"
+            },
+            "url": "/dictionaries/substances"
+        },
+        "response": {
+            "code": 201,
+            "headers": {},
+            "result": {
+                "term_uid": "DictionaryTerm_000003",
+                "dictionary_id": "dictionary_id_substance",
+                "name": "name_substance3",
+                "name_sentence_case": "name_substance3",
+                "abbreviation": "abbreviation_substance",
+                "definition": "definition_substance",
+                "library_name": "UNII",
+                "start_date": "2021-03-18T11:54:20.898Z",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ],
+                "pclass": {
+                    "term_uid": "DictionaryTerm_000001",
+                    "name": "name_pharma_class",
+                    "dictionary_id": "dictionary_id_pharma_class"
+                }
+            }
+        }
+    },
+    {
+        "name": "Test POST approve substance term with name 'name_substance3'",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/dictionaries/terms/DictionaryTerm_000003/approvals"
+        },
+        "response": {
+            "code": 201,
+            "headers": {},
+            "result": {
+                "term_uid": "DictionaryTerm_000003",
+                "dictionary_id": "dictionary_id_substance",
+                "name": "name_substance3",
+                "name_sentence_case": "name_substance3",
+                "abbreviation": "abbreviation_substance",
+                "definition": "definition_substance",
+                "library_name": "UNII",
+                "start_date": "2021-03-18T11:54:20.898Z",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Approved version",
+                "user_initials": "TODO user initials",
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test PATCH non matching sentence case",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "name": "new sentence case name",
+                "definition": "definition",
+                "change_description": "Changing codelist"
+            },
+            "url": "/dictionaries/substances/DictionaryTerm_000002"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "name_substance is not an independent case version of new sentence case name",
+                "method": "PATCH",
+                "path": "http://testserver/dictionaries/substances/DictionaryTerm_000002",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "ValidationException"
+            }
+        }
+    },
+    {
+        "name": "Test PATCH term name already exists",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "name": "name_substance3",
+                "name_sentence_case": "name_substance3",
+                "definition": "definition",
+                "change_description": "Changing term"
+            },
+            "url": "/dictionaries/substances/DictionaryTerm_000002"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "DictionaryTerm with name (name_substance3) already exists in DictionaryCodelist identified by (codelist_unii_uid)",
+                "method": "PATCH",
+                "path": "http://testserver/dictionaries/substances/DictionaryTerm_000002",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "ValidationException"
+            }
+        }
+    },
+    {
+        "name": "Test POST term name already exists",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "dictionary_id": "dictionary_id_substance",
+                "name": "name_substance3",
+                "name_sentence_case": "name_substance3",
+                "abbreviation": "abbreviation_substance",
+                "definition": "definition_substance",
+                "codelist_uid": "codelist_unii_uid",
+                "library_name": "UNII",
+                "pclass_uid": "DictionaryTerm_000001"
+            },
+            "url": "/dictionaries/substances"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "DictionaryTerm with name (name_substance3) already exists in DictionaryCodelist identified by (codelist_unii_uid)",
+                "method": "POST",
+                "path": "http://testserver/dictionaries/substances",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "ValidationException"
+            }
+        }
+    }
+]

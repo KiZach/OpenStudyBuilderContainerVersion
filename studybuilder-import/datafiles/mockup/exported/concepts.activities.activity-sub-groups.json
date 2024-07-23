@@ -1,0 +1,310 @@
+[
+  {
+    "abbreviation": null,
+    "activity_groups": [{
+      "name": "General",
+      "uid": "ActivityGroup_000003"
+    }],
+    "change_description": "Approved version",
+    "definition": null,
+    "end_date": null,
+    "library_name": "Sponsor",
+    "name": "Physical Examination - early ph1",
+    "name_sentence_case": "physical examination - early ph1",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:56:30.312113",
+    "status": "Final",
+    "uid": "ActivitySubGroup_000004",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activity_groups": [{
+      "name": "General",
+      "uid": "ActivityGroup_000003"
+    }],
+    "change_description": "Approved version",
+    "definition": null,
+    "end_date": null,
+    "library_name": "Sponsor",
+    "name": "Adverse Event",
+    "name_sentence_case": "adverse event",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:56:31.478157",
+    "status": "Final",
+    "uid": "ActivitySubGroup_000012",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activity_groups": [{
+      "name": "Laboratory Assessments",
+      "uid": "ActivityGroup_000004"
+    }],
+    "change_description": "Approved version",
+    "definition": null,
+    "end_date": null,
+    "library_name": "Sponsor",
+    "name": "Biochemistry",
+    "name_sentence_case": "biochemistry",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:56:32.018997",
+    "status": "Final",
+    "uid": "ActivitySubGroup_000016",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activity_groups": [{
+      "name": "Laboratory Assessments",
+      "uid": "ActivityGroup_000004"
+    }],
+    "change_description": "Approved version",
+    "definition": null,
+    "end_date": null,
+    "library_name": "Sponsor",
+    "name": "Glucose Metabolism",
+    "name_sentence_case": "glucose metabolism",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:56:33.082446",
+    "status": "Final",
+    "uid": "ActivitySubGroup_000024",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activity_groups": [{
+      "name": "General",
+      "uid": "ActivityGroup_000003"
+    }],
+    "change_description": "Approved version",
+    "definition": null,
+    "end_date": null,
+    "library_name": "Sponsor",
+    "name": "Vital Signs",
+    "name_sentence_case": "vital signs",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:56:33.573564",
+    "status": "Final",
+    "uid": "ActivitySubGroup_000027",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activity_groups": [{
+      "name": "General",
+      "uid": "ActivityGroup_000003"
+    }],
+    "change_description": "Approved version",
+    "definition": null,
+    "end_date": null,
+    "library_name": "Sponsor",
+    "name": "Body Measurements",
+    "name_sentence_case": "body measurements",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:56:33.703089",
+    "status": "Final",
+    "uid": "ActivitySubGroup_000028",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activity_groups": [{
+      "name": "General",
+      "uid": "ActivityGroup_000003"
+    }],
+    "change_description": "Approved version",
+    "definition": null,
+    "end_date": null,
+    "library_name": "Sponsor",
+    "name": "Informed Consent and Demography",
+    "name_sentence_case": "informed consent and demography",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:56:35.768398",
+    "status": "Final",
+    "uid": "ActivitySubGroup_000041",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activity_groups": [{
+      "name": "General",
+      "uid": "ActivityGroup_000003"
+    }],
+    "change_description": "Approved version",
+    "definition": null,
+    "end_date": null,
+    "library_name": "Sponsor",
+    "name": "Eligibility Criteria",
+    "name_sentence_case": "eligibility criteria",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:56:37.780622",
+    "status": "Final",
+    "uid": "ActivitySubGroup_000054",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activity_groups": [{
+      "name": "General",
+      "uid": "ActivityGroup_000003"
+    }],
+    "change_description": "Approved version",
+    "definition": null,
+    "end_date": null,
+    "library_name": "Sponsor",
+    "name": "End of Study",
+    "name_sentence_case": "end of study",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:56:37.991817",
+    "status": "Final",
+    "uid": "ActivitySubGroup_000056",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activity_groups": [{
+      "name": "Laboratory Assessments",
+      "uid": "ActivityGroup_000004"
+    }],
+    "change_description": "Approved version",
+    "definition": null,
+    "end_date": null,
+    "library_name": "Sponsor",
+    "name": "Haematology",
+    "name_sentence_case": "haematology",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:56:38.399427",
+    "status": "Final",
+    "uid": "ActivitySubGroup_000059",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activity_groups": [{
+      "name": "Laboratory Assessments",
+      "uid": "ActivityGroup_000004"
+    }],
+    "change_description": "Approved version",
+    "definition": null,
+    "end_date": null,
+    "library_name": "Sponsor",
+    "name": "Lipids",
+    "name_sentence_case": "lipids",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:56:38.840240",
+    "status": "Final",
+    "uid": "ActivitySubGroup_000062",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activity_groups": [{
+      "name": "General",
+      "uid": "ActivityGroup_000003"
+    }],
+    "change_description": "Approved version",
+    "definition": null,
+    "end_date": null,
+    "library_name": "Sponsor",
+    "name": "Self Measured Plasma Glucose",
+    "name_sentence_case": "self measured plasma glucose",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:56:39.589539",
+    "status": "Final",
+    "uid": "ActivitySubGroup_000066",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activity_groups": [{
+      "name": "General",
+      "uid": "ActivityGroup_000003"
+    }],
+    "change_description": "Approved version",
+    "definition": null,
+    "end_date": null,
+    "library_name": "Sponsor",
+    "name": "Medical History/Concomitant Illness",
+    "name_sentence_case": "medical history/concomitant illness",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:56:44.117110",
+    "status": "Final",
+    "uid": "ActivitySubGroup_000097",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "activity_groups": [{
+      "name": "General",
+      "uid": "ActivityGroup_000003"
+    }],
+    "change_description": "Approved version",
+    "definition": null,
+    "end_date": null,
+    "library_name": "Sponsor",
+    "name": "Randomisation",
+    "name_sentence_case": "randomisation",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:56:53.537911",
+    "status": "Final",
+    "uid": "ActivitySubGroup_000157",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  }
+]

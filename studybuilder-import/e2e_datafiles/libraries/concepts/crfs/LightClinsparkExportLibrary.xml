@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ODM xmlns="http://www.cdisc.org/ns/odm/v1.3" FileType="Snapshot" Granularity="Metadata"
+    FileOID="ODM.1665487443144" CreationDateTime="2022-10-11T13:24:03+02:00" ODMVersion="1.3.2">
+    <Study OID="S.2">
+        <GlobalVariables>
+            <StudyName>Global Standards CRF Library</StudyName>
+            <StudyDescription />
+            <ProtocolName>Global Standards CRF Library</ProtocolName>
+        </GlobalVariables>
+
+
+        <BasicDefinitions>
+            <MeasurementUnit OID="MU.46" Name="m">
+                <Symbol>
+                    <TranslatedText xml:lang="en">m</TranslatedText>
+                </Symbol>
+            </MeasurementUnit>
+            <MeasurementUnit OID="MU.27" Name="kg">
+                <Symbol>
+                    <TranslatedText xml:lang="en">kg</TranslatedText>
+                </Symbol>
+            </MeasurementUnit>
+            <MeasurementUnit OID="MU.48" Name="kg/m^2">
+                <Symbol>
+                    <TranslatedText xml:lang="en">kg/m^2</TranslatedText>
+                </Symbol>
+            </MeasurementUnit>
+            <MeasurementUnit OID="MU.40" Name="years">
+                <Symbol>
+                    <TranslatedText xml:lang="en">years</TranslatedText>
+                </Symbol>
+            </MeasurementUnit>
+            <MeasurementUnit OID="MU.28" Name="mmHg">
+                <Symbol>
+                    <TranslatedText xml:lang="en">mmHg</TranslatedText>
+                </Symbol>
+            </MeasurementUnit>
+            <MeasurementUnit OID="MU.29" Name="BEATS/MIN_VS">
+                <Symbol>
+                    <TranslatedText xml:lang="en">beats/min</TranslatedText>
+                </Symbol>
+            </MeasurementUnit>
+            <MeasurementUnit OID="MU.45" Name="&lt;IMP unit&gt;">
+                <Symbol>
+                    <TranslatedText xml:lang="en">&lt;IMP unit&gt;</TranslatedText>
+                </Symbol>
+            </MeasurementUnit>
+            <MeasurementUnit OID="MU.50" Name="mL">
+                <Symbol>
+                    <TranslatedText xml:lang="en">mL</TranslatedText>
+                </Symbol>
+            </MeasurementUnit>
+        </BasicDefinitions>
+
+
+        <MetaDataVersion OID="SM.4" Name="Global Standards CRF Library Metadata">
+            <FormDef OID="F.47" Name="Informed Consent" Repeating="No">
+                <ItemGroupRef ItemGroupOID="IG.124" OrderNumber="1" Mandatory="Yes" />
+            </FormDef>
+            <FormDef OID="F.98" Name="Demography" Repeating="Yes">
+                <ItemGroupRef ItemGroupOID="IG.262" OrderNumber="1" Mandatory="Yes" />
+            </FormDef>
+            <FormDef OID="F.52" Name="Body Measurements (with BMI)" Repeating="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">Body Measurements form including weight, height
+                        and BMI calculation. Expected use for screening visit.</TranslatedText>
+                </Description>
+                <ItemGroupRef ItemGroupOID="IG.153" OrderNumber="2" Mandatory="Yes" />
+            </FormDef>
+            <FormDef OID="F.37" Name="Vital Signs (Single Measurement)" Repeating="Yes">
+                <ItemGroupRef ItemGroupOID="IG.72" OrderNumber="1" Mandatory="Yes" />
+            </FormDef>
+            <FormDef OID="F.38" Name="Administration of &lt;Investigational medicinal product&gt;"
+                Repeating="Yes">
+                <ItemGroupRef ItemGroupOID="IG.97" OrderNumber="1" Mandatory="Yes" />
+                <ItemGroupRef ItemGroupOID="IG.98" OrderNumber="2" Mandatory="Yes" />
+                <ItemGroupRef ItemGroupOID="IG.99" OrderNumber="3" Mandatory="Yes" />
+                <ItemGroupRef ItemGroupOID="IG.267" OrderNumber="4" Mandatory="Yes" />
+            </FormDef>
+
+
+            <ItemGroupDef OID="IG.124" Name="Informed Consent" Repeating="No" Domain="DS"
+                Purpose="Tabulation">
+                <ItemRef ItemOID="I.579" OrderNumber="1" Mandatory="Yes" />
+                <ItemRef ItemOID="I.661" OrderNumber="2" Mandatory="Yes" />
+                <ItemRef ItemOID="I.566" OrderNumber="3" Mandatory="Yes" />
+                <ItemRef ItemOID="I.567" OrderNumber="4" Mandatory="Yes" />
+                <ItemRef ItemOID="I.568" OrderNumber="5" Mandatory="No" />
+            </ItemGroupDef>
+            <ItemGroupDef OID="IG.262" Name="Demography" Repeating="No" Domain="DM"
+                Purpose="Tabulation">
+                <Description>
+                    <TranslatedText xml:lang="en">Demographics</TranslatedText>
+                </Description>
+                <ItemRef ItemOID="I.1056" OrderNumber="1" Mandatory="Yes" />
+                <ItemRef ItemOID="I.1057" OrderNumber="2" Mandatory="Yes" />
+                <ItemRef ItemOID="I.1058" OrderNumber="3" Mandatory="No" />
+                <ItemRef ItemOID="I.1059" OrderNumber="4" Mandatory="No" />
+                <ItemRef ItemOID="I.1060" OrderNumber="5" Mandatory="No" />
+                <ItemRef ItemOID="I.1061" OrderNumber="6" Mandatory="No" />
+                <ItemRef ItemOID="I.1062" OrderNumber="7" Mandatory="No" />
+                <ItemRef ItemOID="I.1063" OrderNumber="8" Mandatory="Yes" />
+                <ItemRef ItemOID="I.1260" OrderNumber="9" Mandatory="Yes" />
+            </ItemGroupDef>
+            <ItemGroupDef OID="IG.153" Name="Body Measurements" Repeating="No" Domain="VS"
+                Purpose="Tabulation">
+                <Description>
+                    <TranslatedText xml:lang="en">Body Measurements</TranslatedText>
+                </Description>
+                <ItemRef ItemOID="I.596" OrderNumber="1" Mandatory="Yes" />
+                <ItemRef ItemOID="I.597" OrderNumber="2" Mandatory="Yes" />
+                <ItemRef ItemOID="I.637" OrderNumber="3" Mandatory="Yes" />
+                <ItemRef ItemOID="I.600" OrderNumber="4" Mandatory="Yes" />
+                <ItemRef ItemOID="I.601" OrderNumber="5" Mandatory="Yes" />
+                <ItemRef ItemOID="I.621" OrderNumber="6" Mandatory="Yes" MethodOID="M.2" />
+            </ItemGroupDef>
+            <ItemGroupDef OID="IG.72" Name="Vital Signs" Repeating="No" Domain="VS"
+                Purpose="Tabulation">
+                <Description>
+                    <TranslatedText xml:lang="en">Vital Signs</TranslatedText>
+                </Description>
+                <ItemRef ItemOID="I.406" OrderNumber="1" Mandatory="Yes" />
+                <ItemRef ItemOID="I.354" OrderNumber="2" Mandatory="Yes" />
+                <ItemRef ItemOID="I.355" OrderNumber="4" Mandatory="Yes" />
+                <ItemRef ItemOID="I.356" OrderNumber="5" Mandatory="Yes" />
+                <ItemRef ItemOID="I.347" OrderNumber="6" Mandatory="Yes" />
+            </ItemGroupDef>
+            <ItemGroupDef OID="IG.97"
+                Name="Prescribed dose of &lt;Investigational medicinal product&gt;" Repeating="No"
+                Domain="EC" Purpose="Tabulation">
+                <Description>
+                    <TranslatedText xml:lang="en">Exposure as Collected</TranslatedText>
+                </Description>
+                <ItemRef ItemOID="I.754" OrderNumber="1" Mandatory="Yes" MethodOID="M.34" />
+                <ItemRef ItemOID="I.471" OrderNumber="2" Mandatory="Yes" />
+                <ItemRef ItemOID="I.473" OrderNumber="3" Mandatory="Yes" />
+                <ItemRef ItemOID="I.475" OrderNumber="4" Mandatory="Yes" />
+                <ItemRef ItemOID="I.474" OrderNumber="5" Mandatory="Yes" />
+                <ItemRef ItemOID="I.595" OrderNumber="6" Mandatory="Yes" />
+                <ItemRef ItemOID="I.559" OrderNumber="7" Mandatory="Yes" />
+                <ItemRef ItemOID="I.561" OrderNumber="8" Mandatory="Yes" />
+            </ItemGroupDef>
+            <ItemGroupDef OID="IG.98" Name="Preparation for dosing" Repeating="No"
+                Purpose="Tabulation">
+                <ItemRef ItemOID="I.585" OrderNumber="1" Mandatory="Yes" />
+                <ItemRef ItemOID="I.586" OrderNumber="2" Mandatory="No" />
+                <ItemRef ItemOID="I.588" OrderNumber="3" Mandatory="Yes" />
+                <ItemRef ItemOID="I.592" OrderNumber="4" Mandatory="Yes" />
+                <ItemRef ItemOID="I.593" OrderNumber="5" Mandatory="Yes" />
+            </ItemGroupDef>
+            <ItemGroupDef OID="IG.99"
+                Name="Administration of &lt;Investigational medicinal product&gt;" Repeating="No"
+                Domain="EC" Purpose="Tabulation">
+                <Description>
+                    <TranslatedText xml:lang="en">Exposure as Collected</TranslatedText>
+                </Description>
+                <ItemRef ItemOID="I.754" OrderNumber="1" Mandatory="Yes" MethodOID="M.34" />
+                <ItemRef ItemOID="I.471" OrderNumber="2" Mandatory="Yes" />
+                <ItemRef ItemOID="I.473" OrderNumber="3" Mandatory="Yes" />
+                <ItemRef ItemOID="I.475" OrderNumber="4" Mandatory="Yes" />
+                <ItemRef ItemOID="I.474" OrderNumber="5" Mandatory="Yes" />
+                <ItemRef ItemOID="I.565" OrderNumber="6" Mandatory="Yes" />
+                <ItemRef ItemOID="I.578" OrderNumber="7" Mandatory="Yes" />
+                <ItemRef ItemOID="I.576" OrderNumber="8" Mandatory="Yes" />
+                <ItemRef ItemOID="I.580" OrderNumber="9" Mandatory="Yes" />
+                <ItemRef ItemOID="I.581" OrderNumber="10" Mandatory="Yes" />
+                <ItemRef ItemOID="I.582" OrderNumber="11" Mandatory="Yes" />
+                <ItemRef ItemOID="I.583" OrderNumber="12" Mandatory="Yes" />
+                <ItemRef ItemOID="I.560" OrderNumber="13" Mandatory="Yes" />
+                <ItemRef ItemOID="I.561" OrderNumber="14" Mandatory="Yes" />
+                <ItemRef ItemOID="I.562" OrderNumber="15" Mandatory="Yes" />
+                <ItemRef ItemOID="I.563" OrderNumber="16" Mandatory="Yes" />
+                <ItemRef ItemOID="I.564" OrderNumber="17" Mandatory="Yes" />
+            </ItemGroupDef>
+            <ItemGroupDef OID="IG.267" Name="Post dose" Repeating="No" Purpose="Tabulation">
+                <ItemRef ItemOID="I.589" OrderNumber="1" Mandatory="Yes" />
+                <ItemRef ItemOID="I.590" OrderNumber="2" Mandatory="Yes" />
+                <ItemRef ItemOID="I.594" OrderNumber="3" Mandatory="Yes" />
+            </ItemGroupDef>
+
+
+            <ItemDef OID="I.579" Name="DS_DSCAT" DataType="text" Length="18" SASFieldName="DSCAT"
+                Origin="CRF" SDSVarName="DS:DSCAT">
+                <Question>
+                    <TranslatedText xml:lang="en">DSCAT</TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID="CL.72" />
+            </ItemDef>
+            <ItemDef OID="I.661" Name="DS_DSDECOD" DataType="text" Length="43"
+                SASFieldName="DSDECOD" Origin="CRF" SDSVarName="DS:DSDECOD">
+                <Question>
+                    <TranslatedText xml:lang="en">DSDECOD</TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID="CL.75" />
+            </ItemDef>
+            <ItemDef OID="I.566" Name="ICFVER_eS" DataType="string" Length="200" Origin="Protocol"
+                SDSVarName="DS:ICFVER">
+                <Question>
+                    <TranslatedText xml:lang="en">ICF Version</TranslatedText>
+                </Question>
+            </ItemDef>
+            <ItemDef OID="I.567" Name="DS_inf_consent_DSSTDTC" DataType="datetime"
+                SASFieldName="DSSTDTC" Origin="CRF" SDSVarName="DS:DSSTDTC">
+                <Question>
+                    <TranslatedText xml:lang="en">Date and time informed consent obtained</TranslatedText>
+                </Question>
+            </ItemDef>
+            <ItemDef OID="I.568" Name="ICFNOTES_eS" DataType="text" Length="999" Origin="Protocol">
+                <Question>
+                    <TranslatedText xml:lang="en">ICF Notes</TranslatedText>
+                </Question>
+            </ItemDef>
+            <ItemDef OID="I.596" Name="VS_fasting_FASTING" DataType="string" Length="1"
+                SASFieldName="FASTING" Origin="CRF" Comment="Optional in eCRF"
+                SDSVarName="VS:FASTING">
+                <Question>
+                    <TranslatedText xml:lang="en">Was the subject fasting when the body measurement
+                        was done?</TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID="CL.90" />
+            </ItemDef>
+            <ItemDef OID="I.597" Name="VS_VSCAT" DataType="text" Length="16" SASFieldName="VSCAT"
+                Origin="CRF" SDSVarName="VS:VSCAT">
+                <Question>
+                    <TranslatedText xml:lang="en">VSCAT</TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID="CL.78" />
+            </ItemDef>
+            <ItemDef OID="I.637" Name="VS_date and time of exam_VSDTC" DataType="datetime"
+                SASFieldName="VSDTC" Origin="CRF" SDSVarName="VS:VSDTC">
+                <Question>
+                    <TranslatedText xml:lang="en">Date and time of examination</TranslatedText>
+                </Question>
+            </ItemDef>
+            <ItemDef OID="I.600" Name="VS_height_VSTESTCD-VSORRES" DataType="float" Length="1"
+                SignificantDigits="2" SASFieldName="VSTESTCD" SDSVarName="HEIGHT" Origin="CRF">
+                <Question>
+                    <TranslatedText xml:lang="en">Height</TranslatedText>
+                </Question>
+                <MeasurementUnitRef MeasurementUnitOID="MU.46" />
+                <RangeCheck Comparator="GE" SoftHard="Hard">
+                    <CheckValue>0.00</CheckValue>
+                </RangeCheck>
+                <RangeCheck Comparator="GE" SoftHard="Soft">
+                    <CheckValue>1.40</CheckValue>
+                </RangeCheck>
+                <RangeCheck Comparator="LE" SoftHard="Soft">
+                    <CheckValue>2.20</CheckValue>
+                </RangeCheck>
+                <RangeCheck Comparator="LE" SoftHard="Hard">
+                    <CheckValue>3.50</CheckValue>
+                </RangeCheck>
+            </ItemDef>
+            <ItemDef OID="I.601" Name="VS_weight_VSTESTCD-VSORRES" DataType="float" Length="3"
+                SignificantDigits="2" SASFieldName="VSTESTCD" SDSVarName="WEIGHT" Origin="CRF">
+                <Question>
+                    <TranslatedText xml:lang="en">Body weight</TranslatedText>
+                </Question>
+                <MeasurementUnitRef MeasurementUnitOID="MU.27" />
+                <RangeCheck Comparator="GE" SoftHard="Hard">
+                    <CheckValue>0.00</CheckValue>
+                </RangeCheck>
+                <RangeCheck Comparator="GE" SoftHard="Soft">
+                    <CheckValue>30.00</CheckValue>
+                </RangeCheck>
+                <RangeCheck Comparator="LE" SoftHard="Soft">
+                    <CheckValue>350.00</CheckValue>
+                </RangeCheck>
+                <RangeCheck Comparator="LE" SoftHard="Hard">
+                    <CheckValue>1000.00</CheckValue>
+                </RangeCheck>
+            </ItemDef>
+            <ItemDef OID="I.621" Name="VS_BMI_VSORRES-VSTESTCD" DataType="float" Length="4"
+                SignificantDigits="1" SASFieldName="VSTESTCD" SDSVarName="BMI" Origin="Protocol"
+                Comment="Optional in eCRF">
+                <Question>
+                    <TranslatedText xml:lang="en">BMI</TranslatedText>
+                </Question>
+                <MeasurementUnitRef MeasurementUnitOID="MU.48" />
+            </ItemDef>
+            <ItemDef OID="I.1056" Name="DM_age_AGECOLL" DataType="integer" Length="3"
+                SASFieldName="AGECOLL" Origin="CRF" SDSVarName="DM:AGE">
+                <Description>
+                    <TranslatedText xml:lang="en">Age</TranslatedText>
+                </Description>
+                <Question>
+                    <TranslatedText xml:lang="en">Age</TranslatedText>
+                </Question>
+                <MeasurementUnitRef MeasurementUnitOID="MU.40" />
+            </ItemDef>
+            <ItemDef OID="I.1057" Name="DM Sex" DataType="string" Length="100" SASFieldName="SEX"
+                Origin="CRF" SDSVarName="DM:SEX">
+                <Description>
+                    <TranslatedText xml:lang="en">Sex</TranslatedText>
+                </Description>
+                <Question>
+                    <TranslatedText xml:lang="en">Sex</TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID="CL.194" />
+            </ItemDef>
+            <ItemDef OID="I.1058" Name="DM Race - American Indian Or Alaska Native"
+                DataType="boolean" SASFieldName="RACE1" Origin="CRF" SDSVarName="DM:RACE">
+                <Description>
+                    <TranslatedText xml:lang="en">Race - American Indian Or Alaska Native</TranslatedText>
+                </Description>
+                <Question>
+                    <TranslatedText xml:lang="en">Subject self-reported race - American Indian Or
+                        Alaska Native</TranslatedText>
+                </Question>
+            </ItemDef>
+            <ItemDef OID="I.1059" Name="DM Race - Asian" DataType="boolean" SASFieldName="RACE2"
+                Origin="CRF" SDSVarName="DM:RACE">
+                <Description>
+                    <TranslatedText xml:lang="en">Race - Asian</TranslatedText>
+                </Description>
+                <Question>
+                    <TranslatedText xml:lang="en">Subject self-reported race - Asian</TranslatedText>
+                </Question>
+            </ItemDef>
+            <ItemDef OID="I.1060" Name="DM Race - Black Or African American" DataType="boolean"
+                SASFieldName="RACE3" Origin="CRF" SDSVarName="DM:RACE">
+                <Description>
+                    <TranslatedText xml:lang="en">Race - Black Or African American</TranslatedText>
+                </Description>
+                <Question>
+                    <TranslatedText xml:lang="en">Subject self-reported race - Black or African
+                        American</TranslatedText>
+                </Question>
+            </ItemDef>
+            <ItemDef OID="I.1061" Name="DM Race - Native Hawaiian Or Other Pacific Islander"
+                DataType="boolean" SASFieldName="RACE4" Origin="CRF" SDSVarName="DM:RACE">
+                <Description>
+                    <TranslatedText xml:lang="en">Race - Native Hawaiian Or Other Pacific Islander</TranslatedText>
+                </Description>
+                <Question>
+                    <TranslatedText xml:lang="en">Subject self-reported race - Native Hawaiian or
+                        Other Pacific Islander</TranslatedText>
+                </Question>
+            </ItemDef>
+            <ItemDef OID="I.1062" Name="DM Race - White" DataType="boolean" SASFieldName="RACE5"
+                Origin="CRF" SDSVarName="DM:RACE">
+                <Description>
+                    <TranslatedText xml:lang="en">Race - White</TranslatedText>
+                </Description>
+                <Question>
+                    <TranslatedText xml:lang="en">Subject self-reported race - White</TranslatedText>
+                </Question>
+            </ItemDef>
+            <ItemDef OID="I.1063" Name="DM Ethnicity" DataType="string" Length="100"
+                SASFieldName="ETHNIC" Origin="CRF" SDSVarName="DM:ETHNIC">
+                <Description>
+                    <TranslatedText xml:lang="en">Ethnicity</TranslatedText>
+                </Description>
+                <Question>
+                    <TranslatedText xml:lang="en">Subject self-reported ethnicity</TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID="CL.193" />
+            </ItemDef>
+            <ItemDef OID="I.1260" Name="DM_previous _subject_number_PREVSUBJ" DataType="integer"
+                Length="6" SASFieldName="PREVSUBJ" Origin="CRF" Comment="Optional in the CRF"
+                SDSVarName="DM:PREVUBJ">
+                <Question>
+                    <TranslatedText xml:lang="en">Previous Subject No.</TranslatedText>
+                </Question>
+            </ItemDef>
+            <ItemDef OID="I.406" Name="VS_VSCAT" DataType="text" Length="16" SASFieldName="VSCAT"
+                Origin="CRF" Comment="optional in CRF" SDSVarName="">
+                <Question>
+                    <TranslatedText xml:lang="en">VSCAT</TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID="CL.78" />
+            </ItemDef>
+            <ItemDef OID="I.354" Name="VS_date of exam_VSDTC" DataType="date" SASFieldName="VSDTC"
+                Origin="CRF">
+                <Question>
+                    <TranslatedText xml:lang="en">Date of examination</TranslatedText>
+                </Question>
+            </ItemDef>
+            <ItemDef OID="I.355" Name="VS_syst_blood_pres_ORRES_SYSBP" DataType="integer" Length="3"
+                SASFieldName="VSTESTCD" SDSVarName="SYSBP" Origin="CRF">
+                <Question>
+                    <TranslatedText xml:lang="en">Systolic blood pressure</TranslatedText>
+                </Question>
+                <MeasurementUnitRef MeasurementUnitOID="MU.28" />
+                <RangeCheck Comparator="GE" SoftHard="Hard">
+                    <CheckValue>50</CheckValue>
+                </RangeCheck>
+                <RangeCheck Comparator="GE" SoftHard="Soft">
+                    <CheckValue>91</CheckValue>
+                </RangeCheck>
+                <RangeCheck Comparator="LE" SoftHard="Soft">
+                    <CheckValue>139</CheckValue>
+                </RangeCheck>
+                <RangeCheck Comparator="LE" SoftHard="Hard">
+                    <CheckValue>260</CheckValue>
+                </RangeCheck>
+            </ItemDef>
+            <ItemDef OID="I.356" Name="VS_diast_blood_pres_ORRES_DIABP" DataType="integer"
+                Length="3" SASFieldName="VSTESTCD" SDSVarName="DIABP" Origin="CRF">
+                <Question>
+                    <TranslatedText xml:lang="en">Diastolic blood pressure</TranslatedText>
+                </Question>
+                <MeasurementUnitRef MeasurementUnitOID="MU.28" />
+                <RangeCheck Comparator="GE" SoftHard="Hard">
+                    <CheckValue>31</CheckValue>
+                </RangeCheck>
+                <RangeCheck Comparator="GE" SoftHard="Soft">
+                    <CheckValue>52</CheckValue>
+                </RangeCheck>
+                <RangeCheck Comparator="LE" SoftHard="Soft">
+                    <CheckValue>90</CheckValue>
+                </RangeCheck>
+                <RangeCheck Comparator="LE" SoftHard="Hard">
+                    <CheckValue>201</CheckValue>
+                </RangeCheck>
+            </ItemDef>
+            <ItemDef OID="I.347" Name="VS_pulse_ORRES_PULSE" DataType="integer" Length="3"
+                SASFieldName="VSTESTCD" SDSVarName="PULSE" Origin="CRF" Comment="optional in CRF">
+                <Question>
+                    <TranslatedText xml:lang="en">Pulse</TranslatedText>
+                </Question>
+                <MeasurementUnitRef MeasurementUnitOID="MU.29" />
+                <RangeCheck Comparator="GE" SoftHard="Hard">
+                    <CheckValue>1</CheckValue>
+                </RangeCheck>
+                <RangeCheck Comparator="GE" SoftHard="Soft">
+                    <CheckValue>50</CheckValue>
+                </RangeCheck>
+                <RangeCheck Comparator="LE" SoftHard="Soft">
+                    <CheckValue>100</CheckValue>
+                </RangeCheck>
+                <RangeCheck Comparator="LE" SoftHard="Hard">
+                    <CheckValue>210</CheckValue>
+                </RangeCheck>
+                <Alias Context="CDASH" Name="PULSE.VSORRES" />
+                <Alias Context="CDASH/SDTM" Name="VSORRES+VSORRESU" />
+            </ItemDef>
+            <ItemDef OID="I.754" Name="EC_seq_no_ECREFID" DataType="integer" Length="3"
+                SASFieldName="ECREFID" Origin="CRF" Comment="Optional in eCRF">
+                <Question>
+                    <TranslatedText xml:lang="en">Seq. no.</TranslatedText>
+                </Question>
+            </ItemDef>
+            <ItemDef OID="I.471" Name="EC_ECCAT" DataType="string" Length="31" SASFieldName="ECCAT"
+                Origin="CRF">
+                <Question>
+                    <TranslatedText xml:lang="en">ECCAT</TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID="CL.105" />
+            </ItemDef>
+            <ItemDef OID="I.473" Name="EC_ECMOOD" DataType="string" Length="9" SASFieldName="ECMOOD"
+                Origin="CRF">
+                <Question>
+                    <TranslatedText xml:lang="en">ECMOOD</TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID="CL.99" />
+            </ItemDef>
+            <ItemDef OID="I.475" Name="EC_ECPRESP" DataType="string" Length="1"
+                SASFieldName="ECPRESP" Origin="CRF">
+                <Question>
+                    <TranslatedText xml:lang="en">ECPRESP</TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID="CL.107" />
+            </ItemDef>
+            <ItemDef OID="I.474" Name="EC_&lt;IMP&gt;_ECTRT" DataType="string" Length="7"
+                SASFieldName="ECTRT" Origin="CRF">
+                <Question>
+                    <TranslatedText xml:lang="en">&lt;Investigational medicinal product&gt;</TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID="CL.106" />
+            </ItemDef>
+            <ItemDef OID="I.595" Name="EC_datetime_prescription_ECSTDTC" DataType="partialDatetime"
+                SASFieldName="ECSTDTC" Origin="CRF">
+                <Question>
+                    <TranslatedText xml:lang="en">Start date and time of prescription</TranslatedText>
+                </Question>
+            </ItemDef>
+            <ItemDef OID="I.559" Name="EC_prescribed_dose_ECDOSE" DataType="integer" Length="3"
+                SASFieldName="ECDOSE" Origin="CRF">
+                <Question>
+                    <TranslatedText xml:lang="en">Prescribed dose</TranslatedText>
+                </Question>
+                <MeasurementUnitRef MeasurementUnitOID="MU.45" />
+            </ItemDef>
+            <ItemDef OID="I.561" Name="EC_dose_form_ECDOSFRM" DataType="string" Length="9"
+                SASFieldName="ECDOSFRM" Origin="CRF">
+                <Question>
+                    <TranslatedText xml:lang="en">Dose form</TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID="CL.100" />
+            </ItemDef>
+            <ItemDef OID="I.585" Name="EC_req_met_eS" DataType="string" Length="1" Origin="Protocol">
+                <Question>
+                    <TranslatedText xml:lang="en">Requirements for dosing met?</TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID="CL.90" />
+            </ItemDef>
+            <ItemDef OID="I.586" Name="EC_morph_inj_site_eS" DataType="text" Length="200"
+                Origin="Protocol">
+                <Question>
+                    <TranslatedText xml:lang="en">Morphology of injection site</TranslatedText>
+                </Question>
+            </ItemDef>
+            <ItemDef OID="I.588" Name="EC_dun_eS" DataType="integer" Length="6" Origin="Protocol">
+                <Question>
+                    <TranslatedText xml:lang="en">DUN (Dispensing Unit No.)</TranslatedText>
+                </Question>
+            </ItemDef>
+            <ItemDef OID="I.592" Name="EC_no_inj_eS" DataType="integer" Length="1" Origin="Protocol">
+                <Question>
+                    <TranslatedText xml:lang="en">Number of injections</TranslatedText>
+                </Question>
+            </ItemDef>
+            <ItemDef OID="I.593" Name="EC_volume_eS" DataType="float" Length="4"
+                SignificantDigits="1" Origin="Protocol">
+                <Question>
+                    <TranslatedText xml:lang="en">Volume administered</TranslatedText>
+                </Question>
+                <MeasurementUnitRef MeasurementUnitOID="MU.50" />
+            </ItemDef>
+            <ItemDef OID="I.565" Name="EC_adm_imp_ECOCCUR" DataType="string" Length="1"
+                SASFieldName="ECOCCUR" Origin="CRF">
+                <Question>
+                    <TranslatedText xml:lang="en">Has the investigational medicinal product been
+                        administered to the subject?</TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID="CL.90" />
+            </ItemDef>
+            <ItemDef OID="I.578" Name="EC_specify_reason_ECREASOC" DataType="text" Length="200"
+                SASFieldName="ECREASOC" Origin="CRF">
+                <Question>
+                    <TranslatedText xml:lang="en">Specify reason</TranslatedText>
+                </Question>
+            </ItemDef>
+            <ItemDef OID="I.576" Name="EC_type_of_treatment_ECSCAT" DataType="string" Length="30"
+                SASFieldName="ECSCAT" Origin="CRF" Comment="Optional in eCRF">
+                <Question>
+                    <TranslatedText xml:lang="en">Type of treatment</TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID="CL.98" />
+            </ItemDef>
+            <ItemDef OID="I.580" Name="EC_bleed_no_ECXB" DataType="integer" Length="3"
+                SASFieldName="ECXB" Origin="CRF" Comment="Optional in eCRF">
+                <Question>
+                    <TranslatedText xml:lang="en">Bleeding episode no.</TranslatedText>
+                </Question>
+            </ItemDef>
+            <ItemDef OID="I.581" Name="EC_surgery_no_ECPR" DataType="integer" Length="3"
+                SASFieldName="ECPR" Origin="CRF" Comment="Optional in eCRF">
+                <Question>
+                    <TranslatedText xml:lang="en">Surgery no.</TranslatedText>
+                </Question>
+            </ItemDef>
+            <ItemDef OID="I.582" Name="EC_start_datetime_ECSTDTC" DataType="datetime"
+                SASFieldName="ECSTDTC" Origin="CRF">
+                <Question>
+                    <TranslatedText xml:lang="en">Start date and time of administration</TranslatedText>
+                </Question>
+            </ItemDef>
+            <ItemDef OID="I.583" Name="EC_end_datetime_ECENDTC" DataType="datetime"
+                SASFieldName="ECENDTC" Origin="CRF" Comment="Optional in eCRF">
+                <Question>
+                    <TranslatedText xml:lang="en">End date and time of administration</TranslatedText>
+                </Question>
+            </ItemDef>
+            <ItemDef OID="I.560" Name="EC_dose_ECDOSE" DataType="integer" Length="3"
+                SASFieldName="ECDOSE" Origin="CRF">
+                <Question>
+                    <TranslatedText xml:lang="en">Actual Dose</TranslatedText>
+                </Question>
+                <MeasurementUnitRef MeasurementUnitOID="MU.45" />
+            </ItemDef>
+            <ItemDef OID="I.562" Name="EC_route_ECROUTE" DataType="string" Length="12"
+                SASFieldName="ECROUTE" Origin="CRF" Comment="Optional in eCRF">
+                <Question>
+                    <TranslatedText xml:lang="en">Route</TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID="CL.101" />
+            </ItemDef>
+            <ItemDef OID="I.563" Name="EC_laterality_ECLAT" DataType="string" Length="5"
+                SASFieldName="ECLAT" Origin="CRF" Comment="Optional in eCRF">
+                <Question>
+                    <TranslatedText xml:lang="en">Laterality</TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID="CL.102" />
+            </ItemDef>
+            <ItemDef OID="I.564" Name="EC_inj_site_ECLOC" DataType="string" Length="14"
+                SASFieldName="ECLOC" Origin="CRF" Comment="Optional in eCRF">
+                <Question>
+                    <TranslatedText xml:lang="en">Injection site</TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID="CL.103" />
+            </ItemDef>
+            <ItemDef OID="I.589" Name="EC_admin_by_eS" DataType="text" Length="4" Origin="Protocol">
+                <Question>
+                    <TranslatedText xml:lang="en">Administered by</TranslatedText>
+                </Question>
+            </ItemDef>
+            <ItemDef OID="I.590" Name="EC_check_by_eS" DataType="text" Length="4" Origin="Protocol">
+                <Question>
+                    <TranslatedText xml:lang="en">Checked by</TranslatedText>
+                </Question>
+            </ItemDef>
+            <ItemDef OID="I.594" Name="EC_comment_eS" DataType="text" Length="200" Origin="Protocol">
+                <Question>
+                    <TranslatedText xml:lang="en">Comment</TranslatedText>
+                </Question>
+            </ItemDef>
+
+
+            <CodeList OID="CL.90" Name="No Yes Response" DataType="string">
+                <Description>
+                    <TranslatedText xml:lang="en">NY</TranslatedText>
+                </Description>
+                <CodeListItem CodedValue="Y" Rank="1.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Yes</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="N" Rank="2.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">No</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+            </CodeList>
+
+            <CodeList OID="CL.72" Name="DS_DSCAT" DataType="text">
+                <Description>
+                    <TranslatedText xml:lang="en">DSCAT</TranslatedText>
+                </Description>
+                <CodeListItem CodedValue="DISPOSITION EVENT" Rank="1.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Disposition event</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="PROTOCOL MILESTONE" Rank="2.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Protocol milestone</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="OTHER EVENT" Rank="3.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Other event</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+            </CodeList>
+
+            <CodeList OID="CL.75" Name="DS_DSTERM" DataType="text">
+                <Description>
+                    <TranslatedText xml:lang="en">NCOMPLT</TranslatedText>
+                </Description>
+                <CodeListItem CodedValue="FIRST DATE ON TRIAL PRODUCT" Rank="1.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">First date on trial product</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="LAST DATE ON TRIAL PRODUCT" Rank="2.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Last date on trial product</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="TREATMENT DISCONTINUATION" Rank="3.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Treatment discontinuation</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="TREATMENT UNBLINDED" Rank="4.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Treatment unblinded</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="INFORMED CONSENT OBTAINED" Rank="5.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Informed consent obtained</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="ELIGIBILITY CRITERIA MET" Rank="6.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Eligibility criteria met</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="RANDOMIZED" Rank="7.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Randomized</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="FUTURE RESEARCH BIOSAMPLE CONSENT OBTAINED" Rank="8.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Future research biosample consent obtained</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="FUTURE RESEARCH BIOSAMPLE CONSENT WITHDRAWN" Rank="9.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Future research biosample consent withdrawn</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+            </CodeList>
+
+            <CodeList OID="CL.78" Name="VS_VSCAT" DataType="text">
+                <Description>
+                    <TranslatedText xml:lang="en">VSCAT</TranslatedText>
+                </Description>
+                <CodeListItem CodedValue="VITAL SIGNS" Rank="1.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Vital Signs</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="BODY MEASUREMENT" Rank="2.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Body measurement</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+            </CodeList>
+
+            <CodeList OID="CL.194" Name="DM Sex" DataType="string">
+                <Description>
+                    <TranslatedText xml:lang="en">SEX</TranslatedText>
+                </Description>
+                <CodeListItem CodedValue="F" Rank="1.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">FEMALE</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="M" Rank="2.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">MALE</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+            </CodeList>
+
+            <CodeList OID="CL.105" Name="EC_ECCAT" DataType="string" SASFormatName="ECCAT">
+                <Description>
+                    <TranslatedText xml:lang="en">Category of Treatment</TranslatedText>
+                </Description>
+                <CodeListItem CodedValue="ADMINISTRATION OF TRIAL PRODUCT" Rank="1.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Administration of trial product</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+            </CodeList>
+
+            <CodeList OID="CL.99" Name="EC_ECMOOD" DataType="string" SASFormatName="ECMOOD">
+                <Description>
+                    <TranslatedText xml:lang="en">Mood</TranslatedText>
+                </Description>
+                <CodeListItem CodedValue="SCHEDULED" Rank="1.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Scheduled</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="PERFORMED" Rank="2.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Performed</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+            </CodeList>
+
+            <CodeList OID="CL.107" Name="Yes" DataType="string">
+                <Description>
+                    <TranslatedText xml:lang="en">NY</TranslatedText>
+                </Description>
+                <CodeListItem CodedValue="Y" Rank="1.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Yes</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+            </CodeList>
+
+            <CodeList OID="CL.106" Name="EC_ECTRT&lt;IMP1&gt;" DataType="string"
+                SASFormatName="ECTRT">
+                <Description>
+                    <TranslatedText xml:lang="en">Name of Treatment</TranslatedText>
+                </Description>
+                <CodeListItem CodedValue="&lt;IMP 1&gt;" Rank="1.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">&lt;Investigational medicinal product 1&gt;</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="&lt;IMP 2&gt;" Rank="2.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">&lt;Investigational medicinal product 2&gt;</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="&lt;IMP 3&gt;" Rank="3.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">&lt;Investigational medicinal product 3&gt;</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+            </CodeList>
+
+            <CodeList OID="CL.100" Name="EC_dose_form" DataType="string" SASFormatName="ECDOSFRM">
+                <Description>
+                    <TranslatedText xml:lang="en">FRM</TranslatedText>
+                </Description>
+                <CodeListItem CodedValue="TABLET" Rank="1.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Tablet</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="INJECTION" Rank="2.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Injection</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+            </CodeList>
+
+            <CodeList OID="CL.98" Name="EC_type_of_treatment" DataType="string">
+                <Description>
+                    <TranslatedText xml:lang="en">TREATMENT TYPE</TranslatedText>
+                </Description>
+                <CodeListItem CodedValue="PRE-PROPHYLAXIS REGIMEN" Rank="1.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Pre-prophylaxis dose</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="SCHEDULED PREVENTIVE TREATMENT" Rank="2.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Trial scheduled prophylaxis dose</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="PHYSICAL ACTIVITY" Rank="3.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Upcoming physical activity</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="OTHER PREVENTIVE TREATMENT" Rank="4.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Other preventive treatment</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="TREATMENT OF BLEED" Rank="5.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Treatment of bleeding episode</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="SURGERY" Rank="6.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Surgery</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+            </CodeList>
+
+            <CodeList OID="CL.101" Name="EC_route" DataType="string" SASFormatName="ECROUTE">
+                <Description>
+                    <TranslatedText xml:lang="en">ROUTE</TranslatedText>
+                </Description>
+                <CodeListItem CodedValue="SUBCUTANEOUS" Rank="1.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Subcutaneous</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="ORAL" Rank="2.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Oral</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+            </CodeList>
+
+            <CodeList OID="CL.102" Name="EC_laterality" DataType="string" SASFormatName="ECLAT">
+                <Description>
+                    <TranslatedText xml:lang="en">LAT</TranslatedText>
+                </Description>
+                <CodeListItem CodedValue="RIGHT" Rank="1.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Right</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="LEFT" Rank="2.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Left</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+            </CodeList>
+
+            <CodeList OID="CL.103" Name="EC_injection_site" DataType="string" SASFormatName="ECLOC">
+                <Description>
+                    <TranslatedText xml:lang="en">LOC</TranslatedText>
+                </Description>
+                <CodeListItem CodedValue="UPPER ARM" Rank="1.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Upper arm (arm)</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="THIGH" Rank="2.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Thigh</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="ABDOMINAL SKIN" Rank="3.00">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Stomach (abdominal skin)</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+            </CodeList>
+
+
+            <MethodDef OID="M.2" Name="BMEA_03_GD_BMI" Type="Computation">
+                <Description>
+                    <TranslatedText xml:lang="en">Calculation of BMI based on height and weight</TranslatedText>
+                </Description>
+                <FormalExpression
+                    Context="Global derivation: BMEA_03_GD. FH standard calculation used."><![CDATA[var HEIGHT_FORM_STUDY_EVENT = 'VISIT 1'; var HEIGHT_FORM_NAME = 'Body Measurements (with BMI)' var bmi = null; var fixedNum = itemJson.item.significantDigits + 1; var weight = findFirstItemValueByName(formJson, 'VS_weight_VSTESTCD-VSORRES'); // update Study Event and Form Name as needed to look up previously-collected data var heightForm = findFormData(HEIGHT_FORM_STUDY_EVENT, HEIGHT_FORM_NAME); var height = findFirstItemValueByName(heightForm[0],'VS_height_VSTESTCD-VSORRES') if (height && weight) { //BMI = ( Weight in Kilograms / ( Height in Meters x Height in Meters ) ) //var heightMtr = (height / 100); bmi = (Math.round((weight / (height * height)) * 10) / 10); } return {'value': bmi.toPrecision(fixedNum +1), 'measurementUnitName': 'kg/m2'};]]></FormalExpression>
+            </MethodDef>
+        </MetaDataVersion>
+    </Study>
+</ODM>

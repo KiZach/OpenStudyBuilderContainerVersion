@@ -1,0 +1,26 @@
+CT_CD_LIST_SUBMVAL,CT_NAME,NAME_SENTENSE_CASE,CT_SUBMVAL,DEFINITION,ORDER,CT_CD,NCI_PREFERRED_NAME
+DATATYPE,Text,text,TEXT,Text data type (free text),1,,Text
+DATATYPE,Integer,integer,INTEGER,Integer data type (please specify the lenght),2,,Integer
+DATATYPE,Float,float,FLOAT,Float data type (please specify the lenght and the number of digit after the floating separator),3,,Float
+DATATYPE,Date,date,DATE,Date data type (yyyy-mm-dd),4,,Date
+DATATYPE,Time,time,TIME,Time data type (hh:mm),5,,Time
+DATATYPE,Date Time,date time,DATETIME,Date time data type (yy-mm-dd hh:mm),6,,Date time
+DATATYPE,String,string,STRING,String data type,7,,String
+DATATYPE,Boolean,boolean,BOOLEAN,Boolean data type,8,,Boolean
+DATATYPE,Double,double,DOUBLE,Double data type,9,,Double
+DATATYPE,Hex Binary,hex binary,HEXBINARY,hex Binary data type,10,,Hex binary
+DATATYPE,Base 64 Binary,base 64 binary,BASE64BINARY,Base 64 Binary data type,11,,Base 64 binary
+DATATYPE,hex Float,hex float,HEXFLOAT,hex Float data type,12,,Hex float
+DATATYPE,Base64 Float,base 64 float,BASE64FLOAT,Base 64 Float data type,13,,Base64 float
+DATATYPE,Partial Date,partial date,PARTIALDATE,Partial Date data type,14,,Partial date
+DATATYPE,Partial Time,partial time,PARTIALTIME,Partial Time data type,15,,Partial time
+DATATYPE,Partial Date Time,partial date time,PARTIALDATETIME,Partial Date Time data type,16,,Partial date time
+DATATYPE,Duration Date Time,duration date time,DURATIONDATETIME,Duration Date Time data type,17,,Duration date time
+DATATYPE,Intervale Date Time,interval date time,INTERVALDATETIME,Interval Date Time data type,18,,Intervale date time
+DATATYPE,Incomplete Date Time,incomplete date time,INCOMPLETEDATETIME,Incomplete Date Time data type,19,,Incomplete date time
+DATATYPE,Incomplete Date,incomplete date,INCOMPLETEDATE,Incomplete Date data type,20,,Incomplete date
+DATATYPE,Incomplete Time,incomplete time,INCOMPLETETIME,Incomplete Time data type,21,,Incomplete time
+DATATYPE,URI,uri,URI,URI data type,22,,Uri
+DATATYPE,Comment,comment,COMMENT,Term to describe an ODM ItemDef as a Comment,23,,Comment (not ODM specified)
+DATATYPE,BIT,bit,BIT,Term to describe a BIT that can only have 0 and 1,24,,BIT (Sponsor Term)
+DATATYPE,CTterm,ctterm,CTTERM,CTTerm data type,25,,CTTerm

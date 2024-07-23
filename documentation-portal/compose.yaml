@@ -1,0 +1,10 @@
+services:
+  documentation:
+    build:
+      args:
+        NGINX_IMAGE: ${NGINX_IMAGE:-nginx:alpine}
+        NODE_IMAGE: ${NODE_IMAGE:-node:lts-alpine3.14}
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "5006:5006"

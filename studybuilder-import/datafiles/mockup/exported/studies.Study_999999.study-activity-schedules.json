@@ -1,0 +1,112 @@
+[
+  {
+    "note": null,
+    "start_date": "2022-10-05T14:22:19.753162",
+    "study_activity_name": "Ethnicity",
+    "study_activity_schedule_uid": "StudyActivitySchedule_000001",
+    "study_activity_uid": "StudyActivity_000001",
+    "study_uid": "Study_999999",
+    "study_visit_name": "Visit 1",
+    "study_visit_uid": "StudyVisit_000001",
+    "user_initials": "unknown-user"
+  },
+  {
+    "note": null,
+    "start_date": "2022-10-05T14:22:35.904537",
+    "study_activity_name": "Systolic Blood Pressure",
+    "study_activity_schedule_uid": "StudyActivitySchedule_000011",
+    "study_activity_uid": "StudyActivity_000010",
+    "study_uid": "Study_999999",
+    "study_visit_name": "Visit 3",
+    "study_visit_uid": "StudyVisit_000003",
+    "user_initials": "unknown-user"
+  },
+  {
+    "note": null,
+    "start_date": "2022-10-05T14:22:34.857563",
+    "study_activity_name": "Diastolic Blood Pressure",
+    "study_activity_schedule_uid": "StudyActivitySchedule_000010",
+    "study_activity_uid": "StudyActivity_000009",
+    "study_uid": "Study_999999",
+    "study_visit_name": "Visit 3",
+    "study_visit_uid": "StudyVisit_000003",
+    "user_initials": "unknown-user"
+  },
+  {
+    "note": null,
+    "start_date": "2022-10-05T14:22:33.807216",
+    "study_activity_name": "Systolic Blood Pressure",
+    "study_activity_schedule_uid": "StudyActivitySchedule_000009",
+    "study_activity_uid": "StudyActivity_000010",
+    "study_uid": "Study_999999",
+    "study_visit_name": "Visit 2",
+    "study_visit_uid": "StudyVisit_000002",
+    "user_initials": "unknown-user"
+  },
+  {
+    "note": null,
+    "start_date": "2022-10-05T14:22:33.180038",
+    "study_activity_name": "Diastolic Blood Pressure",
+    "study_activity_schedule_uid": "StudyActivitySchedule_000008",
+    "study_activity_uid": "StudyActivity_000009",
+    "study_uid": "Study_999999",
+    "study_visit_name": "Visit 2",
+    "study_visit_uid": "StudyVisit_000002",
+    "user_initials": "unknown-user"
+  },
+  {
+    "note": null,
+    "start_date": "2022-10-05T14:22:32.331730",
+    "study_activity_name": "Systolic Blood Pressure",
+    "study_activity_schedule_uid": "StudyActivitySchedule_000007",
+    "study_activity_uid": "StudyActivity_000010",
+    "study_uid": "Study_999999",
+    "study_visit_name": "Visit 1",
+    "study_visit_uid": "StudyVisit_000001",
+    "user_initials": "unknown-user"
+  },
+  {
+    "note": null,
+    "start_date": "2022-10-05T14:22:31.748409",
+    "study_activity_name": "Diastolic Blood Pressure",
+    "study_activity_schedule_uid": "StudyActivitySchedule_000006",
+    "study_activity_uid": "StudyActivity_000009",
+    "study_uid": "Study_999999",
+    "study_visit_name": "Visit 1",
+    "study_visit_uid": "StudyVisit_000001",
+    "user_initials": "unknown-user"
+  },
+  {
+    "note": null,
+    "start_date": "2022-10-05T14:22:21.229540",
+    "study_activity_name": "Race",
+    "study_activity_schedule_uid": "StudyActivitySchedule_000004",
+    "study_activity_uid": "StudyActivity_000004",
+    "study_uid": "Study_999999",
+    "study_visit_name": "Visit 1",
+    "study_visit_uid": "StudyVisit_000001",
+    "user_initials": "unknown-user"
+  },
+  {
+    "note": null,
+    "start_date": "2022-10-05T14:22:20.716719",
+    "study_activity_name": "Sex",
+    "study_activity_schedule_uid": "StudyActivitySchedule_000003",
+    "study_activity_uid": "StudyActivity_000003",
+    "study_uid": "Study_999999",
+    "study_visit_name": "Visit 1",
+    "study_visit_uid": "StudyVisit_000001",
+    "user_initials": "unknown-user"
+  },
+  {
+    "note": null,
+    "start_date": "2022-10-05T14:22:20.377238",
+    "study_activity_name": "Date of Birth",
+    "study_activity_schedule_uid": "StudyActivitySchedule_000002",
+    "study_activity_uid": "StudyActivity_000002",
+    "study_uid": "Study_999999",
+    "study_visit_name": "Visit 1",
+    "study_visit_uid": "StudyVisit_000001",
+    "user_initials": "unknown-user"
+  }
+]

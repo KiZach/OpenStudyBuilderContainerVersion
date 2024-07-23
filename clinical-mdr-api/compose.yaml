@@ -1,0 +1,75 @@
+services:
+
+  # Database service for building and tests in pipeline
+  database:
+    image: ${NEO4J_IMAGE:-neo4j:5.9.0-enterprise}
+    ports:
+      - "${BIND_ADDRESS:-127.0.0.1}:${NEO4J_BOLT_PORT:-5087}:7687"
+      - "${BIND_ADDRESS:-127.0.0.1}:${NEO4J_HTTP_PORT:-5074}:7474"
+    environment:
+      NEO4J_AUTH: "neo4j/changeme1234"
+      NEO4J_ACCEPT_LICENSE_AGREEMENT: "yes"
+      NEO4J_apoc_import_file_enabled: "true"
+      NEO4J_apoc_export_file_enabled: "true"
+      NEO4J_apoc_trigger_enabled: "true"
+      NEO4J_server_memory_heap_initial__size: "4G"
+      NEO4J_server_memory_heap_max__size: "4G"
+      NEO4J_server_memory_pagecache_size: "3G"
+      NEO4J_server_default__listen__address: "0.0.0.0"
+      NEO4J_server_default__advertised__address: "localhost"
+      NEO4J_metrics_jmx_enabled: "true"
+      NEO4J_dbms_max__databases: 1000
+      NEO4J_PLUGINS: '["apoc"]'
+    healthcheck:
+      test: wget --quiet --spider --timeout 2 --tries 1 "http://localhost:7474/" || exit 1
+      interval: 10s
+      timeout: 3s
+      retries: 3
+      start_period: 60s
+
+  # Clinical-MDR API service for running tests in pipeline
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        PYTHON_IMAGE: ${PYTHON_IMAGE:-python:3.11.3-slim}
+        TARGET: ${BUILD_TARGET:-prod}
+    image: ${API_IMAGE:-}
+    environment:
+      NEO4J_DSN: "${NEO4J_DSN:-bolt://neo4j:changeme1234@database:7687}/neo4j"
+      ALLOW_ORIGIN_REGEX: "${ALLOW_ORIGIN_REGEX:-.*}"
+      OAUTH_ENABLED: "${OAUTH_ENABLED:-False}"
+      OAUTH_RBAC_ENABLED: "${OAUTH_RBAC_ENABLED:-False}"
+      OIDC_METADATA_DOCUMENT: "${OIDC_METADATA_DOCUMENT:-}"
+      OAUTH_METADATA_URL: "${OAUTH_METADATA_URL:-}"
+      OAUTH_APP_ID: "${OAUTH_APP_ID:-}"
+      OAUTH_API_APP_ID: "${OAUTH_API_APP_ID:-}"
+      OAUTH_APP_SECRET: "${OAUTH_APP_SECRET:-}"
+      OAUTH_API_APP_SECRET: "${OAUTH_API_APP_SECRET:-}"
+      OAUTH_CLIENT_ID: "${OAUTH_CLIENT_ID:-}"
+      OAUTH_SWAGGER_APP_ID: "${OAUTH_SWAGGER_APP_ID:-}"
+      MS_GRAPH_INTEGRATION_ENABLED: "${MS_GRAPH_INTEGRATION_ENABLED:-}"
+      MS_GRAPH_GROUPS_QUERY: "${MS_GRAPH_GROUPS_QUERY:-}"
+      APPLICATIONINSIGHTS_CONNECTION_STRING: "${APPLICATIONINSIGHTS_CONNECTION_STRING:-}"
+      UVICORN_LOG_CONFIG: "${UVICORN_LOG_CONFIG:-}"
+    ports:
+      - "${BIND_ADDRESS:-127.0.0.1}:${API_PORT:-8000}:8000"
+
+  # Clinical-MDR API service for running tests in pipeline
+  dev:
+    extends:
+      file: compose.yaml
+      service: api
+    build:
+      args:
+        TARGET: ${BUILD_TARGET:-dev}
+        UID: ${UID:-1000}
+    environment:
+      EXPIRED_ACCESS_TOKEN: "${EXPIRED_ACCESS_TOKEN:-}"
+    image: ${DEV_IMAGE:-}
+    user: ${UID:-1000}
+    volumes:
+      - type: bind
+        source: ./reports
+        target: /app/reports

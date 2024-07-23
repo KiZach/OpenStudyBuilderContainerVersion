@@ -1,0 +1,17 @@
+{
+  "name": "MdrUserGuide",
+  "version": "1.0.0",
+  "description": "MDR Study Builder Application Documentation Portal",
+  "main": "index.js",
+  "author": "Nicolas de Saint Jorre",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "vuepress": "^1.8.2"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "update-config": "node scripts/update-config.js"
+  }
+}

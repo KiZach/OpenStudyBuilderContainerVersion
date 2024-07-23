@@ -1,0 +1,21 @@
+"CD_LIST_ID","CD_VAL","CD_VAL_LB","CD_VAL_LB_LC","CD_VAL_SHORT","DEF_COMPLETE","STATUS","description","CT_CD_LIST_SUBMVAL","CT_SUBMVAL","CT_CD","PKG_NM"
+"TYPE_OF_ADM","INJECTION","Injection","injection","C42946A","Y","A","CDISC code: C42946
+CDISC submission value: INJECTION
+CDISC synonym: 
+CDISC Description: A sterile preparation intended for parenteral use; five distinct classes of injections exist as defined by the USP. (NCI)
+NCI preferred term: Injectable Dosage Form","FRM","INJECTION","C42946","SDTM_2020-12-18"
+"TYPE_OF_ADM","TABLET","Tablet","tablet","C42998A","Y","A","CDISC code: C42998
+CDISC submission value: TABLET
+CDISC synonym: tab
+CDISC Description: A solid dosage form containing medicinal substances with or without suitable diluents. (NCI)
+NCI preferred term: Tablet Dosage Form","FRM","TABLET","C42998","SDTM_2020-12-18"
+"TYPE_OF_ADM","CAPSULE","Capsule","capsule","C25158A","Y","A","CDISC code: C25158
+CDISC submission value: CAPSULE
+CDISC synonym: cap
+CDISC Description: A solid pharmaceutical dosage form that contains medicinal agent within either a hard or soft soluble container or shell, usually used for the oral administration of medicine. The shells are made of a suitable form of gelatin or other substance. (NCI)
+NCI preferred term: Capsule Dosage Form
+","FRM","CAPSULE","C25158","SDTM_2020-12-18"
+"TYPE_OF_ADM","SYRUP","Syrup","syrup","SYRUP","Y","A","Code: C42996
+CDISC Submission Value: SYRUP
+CDISC Definition: An oral solution containing high concentrations of sucrose or other sugars; the term has also been used to include any other liquid dosage form prepared in a sweet and viscid vehicle, including oral suspensions. (NCI)
+NCI Preferred Term: Syrup Dosage Form","FRM","SYRUP","C42996","SDTM_2020-12-18"

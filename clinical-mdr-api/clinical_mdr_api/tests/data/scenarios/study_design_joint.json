@@ -1,0 +1,3374 @@
+[
+  {
+    "name": "Test if the study design cells connected to branch_arm update the connection the updated one",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/studies/study_root/study-branch-arms"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "2",
+        "content-type": "application/json"
+      },
+      "result": [
+        {
+          "study_uid": "study_root",
+          "order": 1,
+          "study_version": null,
+          "branch_arm_uid": "StudyBranchArm_000001",
+          "name": "Branch_Arm_Name_1_edit",
+          "short_name": "Branch_Arm_Short_Name_1",
+          "code": "Branch_Arm_code_1",
+          "description": "desc...",
+          "colour_code": "colour...",
+          "randomization_group": "Branch_Arm_randomizationGroup",
+          "number_of_subjects": 100,
+          "arm_root": {
+            "study_uid": "study_root",
+            "order": 2,
+            "arm_uid": "StudyArm_000003",
+            "name": null,
+            "short_name": null,
+            "code": null,
+            "description": null,
+            "arm_colour": null,
+            "randomization_group": null,
+            "number_of_subjects": null,
+            "arm_type": {
+              "term_uid": "ArmType_0001",
+              "catalogue_name": "catalogue",
+              "codelists": [
+                {
+                  "codelist_uid": "CTCodelist_00004",
+                  "order": 1
+                }
+              ],
+              "sponsor_preferred_name": "Arm Type",
+              "sponsor_preferred_name_sentence_case": "Arm type",
+              "library_name": "Sponsor",
+              "start_date": "2022-05-25T18:33:23.904142",
+              "end_date": null,
+              "status": "Final",
+              "version": "1.0",
+              "change_description": "Approved version",
+              "user_initials": "TODO user initials",
+              "possible_actions": [
+                "inactivate",
+                "new_version"
+              ]
+            },
+            "start_date": "2022-05-06T18:30:24.320000",
+            "user_initials": "TODO user initials",
+            "end_date": null,
+            "status": null,
+            "change_type": null,
+            "accepted_version": null
+          },
+          "start_date": "2022-05-06T20:30:25.219786",
+          "user_initials": "test",
+          "end_date": null,
+          "status": null,
+          "change_type": null,
+          "accepted_version": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "Test if the StudyDesignCells relations update arm_root",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "url": "/studies/study_root/study-branch-arms/StudyBranchArm_000001"
+    },
+    "response": {
+      "code": 204,
+      "headers": {},
+      "result": null
+    }
+  },
+  {
+    "name": "Test adding selection StudyBranchArm to switch the  StudyDeisgnCells from the StudyBranchArm to the StudyArm",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "BranchArm_Name_7",
+        "short_name": "BranchArm_Short_Name_7",
+        "code": "BranchArm_code_7",
+        "description": "desc...",
+        "colour_code": "desc...",
+        "randomization_group": "Randomization_Group_7",
+        "number_of_subjects": 2,
+        "arm_uid": "StudyArm_000003"
+      },
+      "url": "/studies/study_root/study-branch-arms"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "study_uid": "study_root",
+        "study_version": null,
+        "branch_arm_uid": "StudyBranchArm_000005",
+        "order": 1,
+        "name": "BranchArm_Name_7",
+        "short_name": "BranchArm_Short_Name_7",
+        "code": "BranchArm_code_7",
+        "start_date": "2020-06-26T00:00:00",
+        "end_date": null,
+        "status": null,
+        "change_type": null,
+        "accepted_version": null,
+        "arm_root": {
+          "study_uid": "study_root",
+          "arm_uid": "StudyArm_000003",
+          "order": 2,
+          "name": null,
+          "short_name": null,
+          "code": null,
+          "start_date": null,
+          "end_date": null,
+          "status": null,
+          "change_type": null,
+          "accepted_version": null,
+          "arm_type": {
+            "term_uid": "ArmType_0001",
+            "catalogue_name": "catalogue",
+            "codelists": [
+              {
+                "codelist_uid": "CTCodelist_00004",
+                "order": 1
+              }
+            ],
+            "sponsor_preferred_name": "Arm Type",
+            "sponsor_preferred_name_sentence_case": "Arm type",
+            "library_name": "Sponsor",
+            "start_date": "2022-05-25T18:33:23.904142",
+            "end_date": null,
+            "status": "Final",
+            "version": "1.0",
+            "change_description": "Approved version",
+            "user_initials": "TODO user initials",
+            "possible_actions": [
+              "inactivate",
+              "new_version"
+            ]
+          },
+          "description": null,
+          "arm_colour": null,
+          "number_of_subjects": null,
+          "randomization_group": null,
+          "user_initials": null
+        },
+        "description": "desc...",
+        "colour_code": "desc...",
+        "number_of_subjects": 2,
+        "randomization_group": "Randomization_Group_7",
+        "user_initials": "TODO initials"
+      },
+      "save": {
+        "branch_arm_uid": "branch_arm_uid"
+      }
+    }
+  },
+  {
+    "name": "Test get audit trail for all design cells, should expect to the study design cell_00001 and study design cell_000002 to switch from Arm_000003 to BranchArm_000005 ",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/studies/study_root/study-design-cells/audit-trail/"
+    },
+    "headers": {
+      "content-length": "336",
+      "content-type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "results": [
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000001",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000005",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-18T00:36:29.737948",
+          "order": 1,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000001",
+          "study_arm_uid": "StudyArm_000003",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-18T00:36:24.922706",
+          "order": 1,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000001",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000001",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-18T00:35:46.604720",
+          "order": 1,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000001",
+          "study_arm_uid": "StudyArm_000003",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Create",
+          "modified": "2022-08-18T00:35:44.940534",
+          "order": 1,
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000002",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000005",
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-18T00:36:29.871404",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000002",
+          "study_arm_uid": "StudyArm_000003",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-18T00:36:28.051897",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000002",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000001",
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-18T00:35:46.940031",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000002",
+          "study_arm_uid": "StudyArm_000003",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Create",
+          "modified": "2022-08-18T00:35:45.335529",
+          "order": 2,
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000003",
+          "study_arm_uid": "StudyArm_000001",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000003",
+          "transition_rule": null,
+          "change_type": "Create",
+          "modified": "2022-08-18T00:35:45.467315",
+          "order": 3,
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000004",
+          "study_arm_uid": "StudyArm_000005",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Create",
+          "modified": "2022-08-18T00:35:47.636768",
+          "order": 4,
+          "changes": {}
+        }
+      ]
+    }
+  },
+  {
+    "name": "Test adding selection StudyBranchArm to then test delete on many StudyBranchArms so after not switch the StudyDesignCells but delete them",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "BranchArm_Name_9",
+        "short_name": "BranchArm_Short_Name_9",
+        "code": "BranchArm_code_9",
+        "description": "desc...",
+        "colour_code": "desc...",
+        "randomization_group": "Randomization_Group_9",
+        "number_of_subjects": 2,
+        "arm_uid": "StudyArm_000003"
+      },
+      "url": "/studies/study_root/study-branch-arms"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "study_uid": "study_root",
+        "study_version": null,
+        "branch_arm_uid": "StudyBranchArm_000007",
+        "order": 2,
+        "name": "BranchArm_Name_9",
+        "short_name": "BranchArm_Short_Name_9",
+        "code": "BranchArm_code_9",
+        "start_date": "2020-06-26T00:00:00",
+        "end_date": null,
+        "status": null,
+        "change_type": null,
+        "accepted_version": null,
+        "arm_root": {
+          "study_uid": "study_root",
+          "arm_uid": "StudyArm_000003",
+          "order": 2,
+          "name": null,
+          "short_name": null,
+          "code": null,
+          "start_date": null,
+          "end_date": null,
+          "status": null,
+          "change_type": null,
+          "accepted_version": null,
+          "arm_type": {
+            "term_uid": "ArmType_0001",
+            "catalogue_name": "catalogue",
+            "codelists": [
+              {
+                "codelist_uid": "CTCodelist_00004",
+                "order": 1
+              }
+            ],
+            "sponsor_preferred_name": "Arm Type",
+            "sponsor_preferred_name_sentence_case": "Arm type",
+            "library_name": "Sponsor",
+            "start_date": "2022-05-25T18:33:23.904142",
+            "end_date": null,
+            "status": "Final",
+            "version": "1.0",
+            "change_description": "Approved version",
+            "user_initials": "TODO user initials",
+            "possible_actions": [
+              "inactivate",
+              "new_version"
+            ]
+          },
+          "description": null,
+          "arm_colour": null,
+          "number_of_subjects": null,
+          "randomization_group": null,
+          "user_initials": null
+        },
+        "description": "desc...",
+        "colour_code": "desc...",
+        "number_of_subjects": 2,
+        "randomization_group": "Randomization_Group_9",
+        "user_initials": "TODO initials"
+      },
+      "save": {
+        "branch_arm_uid": "branch_arm_uid"
+      }
+    }
+  },
+  {
+    "name": "Test adding DesignCell to the many StudyBranch",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "study_branch_arm_uid": "StudyBranchArm_000007",
+        "study_epoch_uid": "StudyEpoch_000001",
+        "study_element_uid": "StudyElement_000001",
+        "transition_rule": "Transition_Rule_3"
+      },
+      "url": "/studies/study_root/study-design-cells"
+    },
+    "headers": {
+      "content-length": "336",
+      "content-type": "application/json"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "results": {
+        "study_uid": "study_root",
+        "study_version": null,
+        "design_cell_uid": "StudyDesignCell_000005",
+        "study_arm_uid": null,
+        "study_arm_name": null,
+        "study_branch_arm_uid": "StudyBranchArm_000007",
+        "study_branch_arm_name": "BranchArm_Name_9",
+        "study_epoch_uid": "StudyEpoch_000001",
+        "study_epoch_name": "Epoch Subtype 1",
+        "study_element_uid": "StudyElement_000001",
+        "study_element_name": "Element_Name_1",
+        "transition_rule": null,
+        "start_date": "2022-05-24T05:19:45.543839",
+        "user_initials": "unknown-user",
+        "order": 5
+      }
+    }
+  },
+  {
+    "name": " ADD STUDY TITLE Test to have multiple study value relationships attached",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "current_metadata": {
+          "study_description": {
+            "study_title": "new title"
+          }
+        }
+      },
+      "url": "/studies/study_root"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": {
+        "uid": "study_root",
+        "possible_actions": [
+          "delete",
+          "lock",
+          "release"
+        ],
+        "study_parent_part": null,
+        "study_subpart_uids": [],
+        "current_metadata": {
+          "identification_metadata": {
+            "study_number": "0",
+            "subpart_id": null,
+            "study_acronym": null,
+            "study_subpart_acronym": null,
+            "project_number": "123",
+            "description": null,
+            "project_name": "name",
+            "clinical_programme_name": "Test CP",
+            "study_id": "some_id-0",
+            "registry_identifiers": {
+              "ct_gov_id": null,
+              "ct_gov_id_null_value_code": null,
+              "eudract_id": null,
+              "eudract_id_null_value_code": null,
+              "universal_trial_number_utn": null,
+              "universal_trial_number_utn_null_value_code": null,
+              "japanese_trial_registry_id_japic": null,
+              "japanese_trial_registry_id_japic_null_value_code": null,
+              "investigational_new_drug_application_number_ind": null,
+              "investigational_new_drug_application_number_ind_null_value_code": null,
+              "eu_trial_number": null,
+              "eu_trial_number_null_value_code": null,
+              "civ_id_sin_number": null,
+              "civ_id_sin_number_null_value_code": null,
+              "national_clinical_trial_number": null,
+              "national_clinical_trial_number_null_value_code": null,
+              "japanese_trial_registry_number_jrct": null,
+              "japanese_trial_registry_number_jrct_null_value_code": null,
+              "national_medical_products_administration_nmpa_number": null,
+              "national_medical_products_administration_nmpa_number_null_value_code": null,
+              "eudamed_srn_number": null,
+              "eudamed_srn_number_null_value_code": null,
+              "investigational_device_exemption_ide_number": null,
+              "investigational_device_exemption_ide_number_null_value_code": null
+            }
+          },
+          "version_metadata": {
+            "study_status": "DRAFT",
+            "version_number": null,
+            "version_timestamp": "2023-09-11T14:55:21.841136+00:00",
+            "version_author": null,
+            "version_description": null
+          },
+          "study_description": {
+            "study_title": null,
+            "study_short_title": null
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": " LOCK STUDY Test to have multiple study value relationships attached",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "change_description": "Lock 1"
+      },
+      "url": "/studies/study_root/locks"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      }
+    }
+  },
+  {
+    "name": " UNLOCK STUDY Test to have multiple study value relationships attached",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "request": {},
+      "url": "/studies/study_root/locks"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      }
+    }
+  },
+  {
+    "name": "Test patch specific - try to patch the StudyArm of a StudyBranchArm that has StudyDesignCell connected to it  ",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "arm_uid": "StudyArm_000001"
+      },
+      "url": "/studies/study_root/study-branch-arms/StudyBranchArm_000007"
+    },
+    "response": {
+      "code": 400,
+      "result": {
+        "message": "Cannot change StudyArm when the specific BranchArm (StudyBranchArm_000007) has connected StudyDesignCells",
+        "method": "PATCH",
+        "path": "http://testserver/studies/study_root/study-branch-arms/StudyBranchArm_000007",
+        "time": "2020-11-10T01:51:17.884429",
+        "type": "ValidationException"
+      }
+    }
+  },
+  {
+    "name": "Test test if the cascade delete of StudyDesignCells on the study_arm works",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "url": "/studies/study_root/study-arms/StudyArm_000005"
+    },
+    "response": {
+      "code": 204,
+      "headers": {},
+      "result": null
+    }
+  },
+  {
+    "name": "Test get audit trail for all design cells, should expect  to delete the study design cell 000004 change of order of study design cell 00005 ",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/studies/study_root/study-design-cells/audit-trail/"
+    },
+    "headers": {
+      "content-length": "336",
+      "content-type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "results": [
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000001",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000005",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-18T01:09:12.025786",
+          "order": 1,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000001",
+          "study_arm_uid": "StudyArm_000003",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-18T01:09:11.261693",
+          "order": 1,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000001",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000001",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-18T01:08:39.020181",
+          "order": 1,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000001",
+          "study_arm_uid": "StudyArm_000003",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Create",
+          "modified": "2022-08-18T01:08:37.091628",
+          "order": 1,
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000002",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000005",
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-18T01:09:12.163055",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000002",
+          "study_arm_uid": "StudyArm_000003",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-18T01:09:11.402550",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000002",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000001",
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-18T01:08:39.388787",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000002",
+          "study_arm_uid": "StudyArm_000003",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Create",
+          "modified": "2022-08-18T01:08:37.551502",
+          "order": 2,
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000003",
+          "study_arm_uid": "StudyArm_000001",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000003",
+          "transition_rule": null,
+          "change_type": "Create",
+          "modified": "2022-08-18T01:08:37.699663",
+          "order": 3,
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000004",
+          "study_arm_uid": "StudyArm_000005",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Delete",
+          "modified": "2022-08-18T01:09:25.802254",
+          "order": 4,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000004",
+          "study_arm_uid": "StudyArm_000005",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Create",
+          "modified": "2022-08-18T01:08:40.174903",
+          "order": 4,
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000005",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000007",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-18T01:09:26.260200",
+          "order": 4,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": true
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000005",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000007",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Create",
+          "modified": "2022-08-18T01:09:12.687131",
+          "order": 5,
+          "changes": {}
+        }
+      ]
+    }
+  },
+  {
+    "name": " LOCK STUDY Test to have multiple study value relationships attached",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "change_description": "Lock 1"
+      },
+      "url": "/studies/study_root/locks"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      }
+    }
+  },
+  {
+    "name": " UNLOCK STUDY Test to have multiple study value relationships attached",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "request": {},
+      "url": "/studies/study_root/locks"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      }
+    }
+  },
+  {
+    "name": "Test patch specific - set name",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "name": "New_Element_Name_2",
+        "element_subtype_uid": "ElementType_0001"
+      },
+      "url": "/studies/study_root/study-elements/StudyElement_000001"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": {
+        "study_uid": "study_root",
+        "order": 1,
+        "study_version": null,
+        "element_uid": "StudyElement_000001",
+        "name": "New_Element_Name_2",
+        "short_name": "short_element 1",
+        "code": "Element_code_1",
+        "description": "desc...",
+        "planned_duration": null,
+        "start_rule": null,
+        "end_rule": null,
+        "element_colour": null,
+        "study_compound_dosing_count": 0,
+        "element_type": null,
+        "element_subtype": {
+          "term_uid": "ElementType_0001",
+          "catalogue_name": "catalogue",
+          "codelists": [
+            {
+              "codelist_uid": "CTCodelist_ElementType",
+              "order": 1
+            }
+          ],
+          "sponsor_preferred_name": "Element Type",
+          "sponsor_preferred_name_sentence_case": "Element type",
+          "library_name": "Sponsor",
+          "start_date": "2022-05-26T09:03:34.123047",
+          "end_date": null,
+          "status": "Final",
+          "version": "1.0",
+          "change_description": "Approved version",
+          "user_initials": "TODO user initials",
+          "possible_actions": [
+            "inactivate",
+            "new_version"
+          ]
+        },
+        "start_date": "2022-05-26T09:04:02.802214",
+        "user_initials": "unknown-user",
+        "end_date": null,
+        "status": null,
+        "change_type": null,
+        "accepted_version": null
+      }
+    }
+  },
+  {
+    "name": "Test adding selection StudyBranchArm and then deleting it to test that the nested branches on arms are just the one with study_value connected to them",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "BranchArm_Name_10",
+        "short_name": "BranchArm_Short_Name_10",
+        "code": "BranchArm_code_10",
+        "description": "desc...",
+        "colour_code": "desc...",
+        "randomization_group": "Randomization_Group_10",
+        "number_of_subjects": 2,
+        "arm_uid": "StudyArm_000003"
+      },
+      "url": "/studies/study_root/study-branch-arms"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "study_uid": "study_root",
+        "study_version": null,
+        "branch_arm_uid": "StudyBranchArm_000009",
+        "order": 3,
+        "name": "BranchArm_Name_10",
+        "short_name": "BranchArm_Short_Name_10",
+        "code": "BranchArm_code_10",
+        "start_date": "2020-06-26T00:00:00",
+        "end_date": null,
+        "status": null,
+        "change_type": null,
+        "accepted_version": null,
+        "arm_root": {
+          "study_uid": "study_root",
+          "arm_uid": "StudyArm_000003",
+          "order": 2,
+          "name": null,
+          "short_name": null,
+          "code": null,
+          "start_date": null,
+          "end_date": null,
+          "status": null,
+          "change_type": null,
+          "accepted_version": null,
+          "arm_type": {
+            "term_uid": "ArmType_0001",
+            "catalogue_name": "catalogue",
+            "codelists": [
+              {
+                "codelist_uid": "CTCodelist_00004",
+                "order": 1
+              }
+            ],
+            "sponsor_preferred_name": "Arm Type",
+            "sponsor_preferred_name_sentence_case": "Arm type",
+            "library_name": "Sponsor",
+            "start_date": "2022-05-25T18:33:23.904142",
+            "end_date": null,
+            "status": "Final",
+            "version": "1.0",
+            "change_description": "Approved version",
+            "user_initials": "TODO user initials",
+            "possible_actions": [
+              "inactivate",
+              "new_version"
+            ]
+          },
+          "description": null,
+          "arm_colour": null,
+          "number_of_subjects": null,
+          "randomization_group": null,
+          "user_initials": null
+        },
+        "description": "desc...",
+        "colour_code": "desc...",
+        "number_of_subjects": 2,
+        "randomization_group": "Randomization_Group_10",
+        "user_initials": "TODO initials"
+      },
+      "save": {
+        "branch_arm_uid": "branch_arm_uid"
+      }
+    }
+  },
+  {
+    "name": "Test adding DesignCell to the many StudyBranch",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "study_branch_arm_uid": "StudyBranchArm_000009",
+        "study_epoch_uid": "StudyEpoch_000001",
+        "study_element_uid": "StudyElement_000001",
+        "transition_rule": "Transition_Rule_4"
+      },
+      "url": "/studies/study_root/study-design-cells"
+    },
+    "headers": {
+      "content-length": "336",
+      "content-type": "application/json"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "results": {
+        "study_uid": "study_root",
+        "study_version": null,
+        "design_cell_uid": "StudyDesignCell_000006",
+        "study_arm_uid": null,
+        "study_arm_name": null,
+        "study_branch_arm_uid": "StudyBranchArm_000009",
+        "study_branch_arm_name": "BranchArm_Name_10",
+        "study_epoch_uid": "StudyEpoch_000001",
+        "study_epoch_name": "Epoch Subtype 1",
+        "study_element_uid": "StudyElement_000001",
+        "study_element_name": "New_Element_Name_2",
+        "transition_rule": null,
+        "start_date": "2022-05-24T05:19:45.543839",
+        "user_initials": "unknown-user",
+        "order": 5
+      }
+    }
+  },
+  {
+    "name": "Test delete StudyBranchArms to then be sure that the connected branches are just those who actually has study_value connection",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "url": "/studies/study_root/study-branch-arms/StudyBranchArm_000009"
+    },
+    "response": {
+      "code": 204,
+      "headers": {},
+      "result": null
+    }
+  },
+  {
+    "name": "be sure that the connected branches are just those who actually has study_value connection",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/studies/study_root/study-arms/StudyArm_000003"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": {
+        "study_uid": "study_root",
+        "order": 2,
+        "study_version": null,
+        "arm_uid": "StudyArm_000003",
+        "name": "Arm_Name_2",
+        "short_name": "Arm_Short_Name_2",
+        "code": "Arm_code_2",
+        "description": "desc...",
+        "arm_colour": null,
+        "randomization_group": "Arm_randomizationGroup2",
+        "number_of_subjects": 100,
+        "arm_type": {
+          "term_uid": "ArmType_0001",
+          "catalogue_name": "catalogue",
+          "codelists": [
+            {
+              "codelist_uid": "CTCodelist_00004",
+              "order": 1
+            }
+          ],
+          "sponsor_preferred_name": "Arm Type",
+          "sponsor_preferred_name_sentence_case": "Arm type",
+          "library_name": "Sponsor",
+          "start_date": "2022-07-15T12:46:20.688175",
+          "end_date": null,
+          "status": "Final",
+          "version": "1.0",
+          "change_description": "Approved version",
+          "user_initials": "TODO user initials",
+          "possible_actions": [
+            "inactivate",
+            "new_version"
+          ]
+        },
+        "start_date": "2022-07-15T12:46:20.981552",
+        "user_initials": "test",
+        "end_date": null,
+        "status": null,
+        "change_type": null,
+        "accepted_version": null,
+        "arm_connected_branch_arms": [
+          {
+            "study_uid": "study_root",
+            "order": 1,
+            "branch_arm_uid": "StudyBranchArm_000005",
+            "name": "BranchArm_Name_7",
+            "short_name": "BranchArm_Short_Name_7",
+            "code": "BranchArm_code_7",
+            "description": "desc...",
+            "colour_code": "desc...",
+            "randomization_group": "Randomization_Group_7",
+            "number_of_subjects": 2,
+            "start_date": "2022-07-15T12:47:00.095941",
+            "user_initials": "test",
+            "end_date": null,
+            "status": null,
+            "change_type": null,
+            "accepted_version": null
+          },
+          {
+            "study_uid": "study_root",
+            "order": 2,
+            "branch_arm_uid": "StudyBranchArm_000007",
+            "name": "BranchArm_Name_9",
+            "short_name": "BranchArm_Short_Name_9",
+            "code": "BranchArm_code_9",
+            "description": "desc...",
+            "colour_code": "desc...",
+            "randomization_group": "Randomization_Group_9",
+            "number_of_subjects": 2,
+            "start_date": "2022-07-15T12:47:00.095978",
+            "user_initials": "test",
+            "end_date": null,
+            "status": null,
+            "change_type": null,
+            "accepted_version": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "Test patch specific - set arm type Uid to null ",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "arm_type_uid": ""
+      },
+      "url": "/studies/study_root/study-arms/StudyArm_000003"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": {
+        "study_uid": "study_root",
+        "order": 2,
+        "study_version": null,
+        "arm_uid": "StudyArm_000003",
+        "name": "Arm_Name_2",
+        "short_name": "Arm_Short_Name_2",
+        "code": "Arm_code_2",
+        "description": "desc...",
+        "arm_colour": null,
+        "randomization_group": "Arm_randomizationGroup2",
+        "number_of_subjects": 100,
+        "arm_type": null,
+        "start_date": "2022-06-15T16:09:43.164169",
+        "user_initials": "unknown-user",
+        "end_date": null,
+        "status": null,
+        "change_type": null,
+        "accepted_version": null,
+        "arm_connected_branch_arms": [
+          {
+            "study_uid": "study_root",
+            "order": 1,
+            "branch_arm_uid": "StudyBranchArm_000005",
+            "name": "BranchArm_Name_7",
+            "short_name": "BranchArm_Short_Name_7",
+            "code": "BranchArm_code_7",
+            "description": "desc...",
+            "colour_code": "desc...",
+            "randomization_group": "Randomization_Group_7",
+            "number_of_subjects": 2,
+            "start_date": "2022-06-15T17:00:12.290719",
+            "user_initials": "unknown-user",
+            "end_date": null,
+            "status": null,
+            "change_type": null,
+            "accepted_version": null
+          },
+          {
+            "study_uid": "study_root",
+            "order": 2,
+            "branch_arm_uid": "StudyBranchArm_000007",
+            "name": "BranchArm_Name_9",
+            "short_name": "BranchArm_Short_Name_9",
+            "code": "BranchArm_code_9",
+            "description": "desc...",
+            "colour_code": "desc...",
+            "randomization_group": "Randomization_Group_9",
+            "number_of_subjects": 2,
+            "start_date": "2022-06-15T17:00:12.290660",
+            "user_initials": "unknown-user",
+            "end_date": null,
+            "status": null,
+            "change_type": null,
+            "accepted_version": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "Test test if the cascade delete on the study_arm works with design cells",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "url": "/studies/study_root/study-arms/StudyArm_000003"
+    },
+    "response": {
+      "code": 204,
+      "headers": {},
+      "result": null
+    }
+  },
+  {
+    "name": "Test get audit trail for all design cells, should expect  0005 to be switched to arm and then deleted the 0002 and 0001 should be just deleted not switched and the 00003 to be reordered",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/studies/study_root/study-design-cells/audit-trail/"
+    },
+    "headers": {
+      "content-length": "336",
+      "content-type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "results": [
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000001",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000005",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Delete",
+          "modified": "2022-08-19T01:35:31.175407",
+          "order": 1,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000001",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000005",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:35:21.149125",
+          "order": 1,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000001",
+          "study_arm_uid": "StudyArm_000003",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:35:20.569759",
+          "order": 1,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000001",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000001",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:34:49.809828",
+          "order": 1,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000001",
+          "study_arm_uid": "StudyArm_000003",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Create",
+          "modified": "2022-08-19T01:34:48.181840",
+          "order": 1,
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000002",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000005",
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Delete",
+          "modified": "2022-08-19T01:35:30.954534",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000002",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000005",
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:35:21.279787",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000002",
+          "study_arm_uid": "StudyArm_000003",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:35:20.684697",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000002",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000001",
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:34:50.137539",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000002",
+          "study_arm_uid": "StudyArm_000003",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Create",
+          "modified": "2022-08-19T01:34:48.565867",
+          "order": 2,
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000003",
+          "study_arm_uid": "StudyArm_000001",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000003",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:35:31.271720",
+          "order": 1,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": true
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000003",
+          "study_arm_uid": "StudyArm_000001",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000003",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:35:31.066456",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": true
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000003",
+          "study_arm_uid": "StudyArm_000001",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000003",
+          "transition_rule": null,
+          "change_type": "Create",
+          "modified": "2022-08-19T01:34:48.696455",
+          "order": 3,
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000004",
+          "study_arm_uid": "StudyArm_000005",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Delete",
+          "modified": "2022-08-19T01:35:25.973751",
+          "order": 4,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000004",
+          "study_arm_uid": "StudyArm_000005",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Create",
+          "modified": "2022-08-19T01:34:50.876689",
+          "order": 4,
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000005",
+          "study_arm_uid": "StudyArm_000003",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Delete",
+          "modified": "2022-08-19T01:35:30.788049",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000005",
+          "study_arm_uid": "StudyArm_000003",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:35:30.223431",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000005",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000007",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:35:30.223431",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": true
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000005",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000007",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:35:30.223431",
+          "order": 3,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": true
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000005",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000007",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:35:26.361193",
+          "order": 4,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": true
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000005",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000007",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Create",
+          "modified": "2022-08-19T01:35:21.754358",
+          "order": 5,
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000006",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000009",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Delete",
+          "modified": "2022-08-19T01:35:27.379857",
+          "order": 5,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000006",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000009",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Create",
+          "modified": "2022-08-19T01:35:27.206656",
+          "order": 5,
+          "changes": {}
+        }
+      ]
+    }
+  },
+  {
+    "name": " LOCK STUDY Test to have multiple study value relationships attached",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "change_description": "Lock 1"
+      },
+      "url": "/studies/study_root/locks"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      }
+    }
+  },
+  {
+    "name": " UNLOCK STUDY Test to have multiple study value relationships attached",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "request": {},
+      "url": "/studies/study_root/locks"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      }
+    }
+  },
+  {
+    "name": "Test if the cascade delete works with StudyElement",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "url": "/studies/study_root/study-elements/StudyElement_000003"
+    },
+    "response": {
+      "code": 204,
+      "headers": {},
+      "result": null
+    }
+  },
+  {
+    "name": "Test get audit trail for all design cells, should expect to the study design cell_00003 to be deleted ",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/studies/study_root/study-design-cells/audit-trail/"
+    },
+    "headers": {
+      "content-length": "336",
+      "content-type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "results": [
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000001",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000005",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Delete",
+          "modified": "2022-08-19T01:43:33.690992",
+          "order": 1,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000001",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000005",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:42:30.687820",
+          "order": 1,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000001",
+          "study_arm_uid": "StudyArm_000003",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:42:30.135816",
+          "order": 1,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000001",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000001",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:42:00.629947",
+          "order": 1,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000001",
+          "study_arm_uid": "StudyArm_000003",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Create",
+          "modified": "2022-08-19T01:41:59.075177",
+          "order": 1,
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000002",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000005",
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Delete",
+          "modified": "2022-08-19T01:43:33.497029",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000002",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000005",
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:42:30.796511",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000002",
+          "study_arm_uid": "StudyArm_000003",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:42:30.235400",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000002",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000001",
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:42:00.940370",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000002",
+          "study_arm_uid": "StudyArm_000003",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Create",
+          "modified": "2022-08-19T01:41:59.464912",
+          "order": 2,
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000003",
+          "study_arm_uid": "StudyArm_000001",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000003",
+          "transition_rule": null,
+          "change_type": "Delete",
+          "modified": "2022-08-19T01:43:34.256641",
+          "order": 1,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000003",
+          "study_arm_uid": "StudyArm_000001",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000003",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:43:33.775274",
+          "order": 1,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": true
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000003",
+          "study_arm_uid": "StudyArm_000001",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000003",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:43:33.585247",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": true
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000003",
+          "study_arm_uid": "StudyArm_000001",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000003",
+          "transition_rule": null,
+          "change_type": "Create",
+          "modified": "2022-08-19T01:41:59.578465",
+          "order": 3,
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000004",
+          "study_arm_uid": "StudyArm_000005",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Delete",
+          "modified": "2022-08-19T01:43:30.076268",
+          "order": 4,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000004",
+          "study_arm_uid": "StudyArm_000005",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Create",
+          "modified": "2022-08-19T01:42:01.562179",
+          "order": 4,
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000005",
+          "study_arm_uid": "StudyArm_000003",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Delete",
+          "modified": "2022-08-19T01:35:30.788049",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000005",
+          "study_arm_uid": "StudyArm_000003",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:35:30.223431",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000005",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000007",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:35:30.223431",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": true
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000005",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000007",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:35:30.223431",
+          "order": 3,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": true
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000005",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000007",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:35:26.361193",
+          "order": 4,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": true
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000005",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000007",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Create",
+          "modified": "2022-08-19T01:35:21.754358",
+          "order": 5,
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000006",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000009",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Delete",
+          "modified": "2022-08-19T01:43:31.386697",
+          "order": 5,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000006",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000009",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Create",
+          "modified": "2022-08-19T01:43:31.220251",
+          "order": 5,
+          "changes": {}
+        }
+      ]
+    }
+  },
+  {
+    "name": "Test adding DesignCell to have the scenario of having many StudyBranch",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "study_arm_uid": "StudyArm_000001",
+        "study_epoch_uid": "StudyEpoch_000001",
+        "study_element_uid": "StudyElement_000001",
+        "transition_rule": "Transition_Rule_4"
+      },
+      "url": "/studies/study_root/study-design-cells"
+    },
+    "headers": {
+      "content-length": "336",
+      "content-type": "application/json"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "results": {
+        "study_uid": "study_root",
+        "study_version": null,
+        "design_cell_uid": "StudyDesignCell_000007",
+        "study_arm_uid": "StudyArm_000001",
+        "study_arm_name": "last_edit_arm_name",
+        "study_branch_arm_uid": null,
+        "study_branch_arm_name": null,
+        "study_epoch_uid": "StudyEpoch_000001",
+        "study_epoch_name": "Epoch Subtype 1",
+        "study_element_uid": "StudyElement_000001",
+        "study_element_name": "New_Element_Name_2",
+        "transition_rule": null,
+        "start_date": "2022-06-21T18:16:46.917417",
+        "user_initials": "unknown-user",
+        "order": 1
+      }
+    }
+  },
+  {
+    "name": " LOCK STUDY Test to have multiple study value relationships attached",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "change_description": "Lock 1"
+      },
+      "url": "/studies/study_root/locks"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      }
+    }
+  },
+  {
+    "name": " UNLOCK STUDY Test to have multiple study value relationships attached",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "request": {},
+      "url": "/studies/study_root/locks"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      }
+    }
+  },
+  {
+    "name": "Test if the cascade delete on the study_epochs works deleting StudyDesignCells attached to it",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "url": "/studies/study_root/study-epochs/StudyEpoch_000001"
+    },
+    "response": {
+      "code": 204,
+      "headers": {},
+      "result": null
+    }
+  },
+  {
+    "name": "Test the StudyEpoch Delete functionality actually deletes the StudyEpoch",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/studies/study_root/study-epochs"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "2",
+        "content-type": "application/json"
+      },
+      "result": {
+        "items": [
+          {
+            "study_uid": "study_root",
+            "study_version": null,
+            "start_rule": "New start rule",
+            "end_rule": "New end rule",
+            "epoch": "EpochSubType_0001",
+            "epoch_subtype": "EpochSubType_0001",
+            "duration_unit": null,
+            "order": 1,
+            "description": "test_description",
+            "duration": 0,
+            "color_hash": "#1100FF",
+            "uid": "StudyEpoch_000002",
+            "epoch_name": "Epoch Subtype",
+            "epoch_subtype_name": "Epoch Subtype",
+            "epoch_type": "EpochType_0001",
+            "epoch_type_name": "Epoch Type",
+            "start_day": null,
+            "end_day": null,
+            "start_week": null,
+            "end_week": null,
+            "start_date": "2022-06-23 16:15:43",
+            "status": "DRAFT",
+            "user_initials": "TODO Initials",
+            "possible_actions": [
+              "edit",
+              "delete",
+              "lock",
+              "reorder"
+            ],
+            "change_description": "Initial Version",
+            "study_visit_count": 0
+          }
+        ],
+        "total": 0,
+        "page": 1,
+        "size": 10
+      }
+    }
+  },
+  {
+    "name": "Test get audit trail for all design cells, should expect to the study design cell_00004 to be deleted and the study design cell_000005 to change order ",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/studies/study_root/study-design-cells/audit-trail/"
+    },
+    "headers": {
+      "content-length": "336",
+      "content-type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "results": [
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000001",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000005",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Delete",
+          "modified": "2022-08-19T01:49:39.851190",
+          "order": 1,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000001",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000005",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:49:30.255567",
+          "order": 1,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000001",
+          "study_arm_uid": "StudyArm_000003",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:49:29.633071",
+          "order": 1,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000001",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000001",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:48:58.411604",
+          "order": 1,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000001",
+          "study_arm_uid": "StudyArm_000003",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Create",
+          "modified": "2022-08-19T01:48:56.719502",
+          "order": 1,
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000002",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000005",
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Delete",
+          "modified": "2022-08-19T01:49:39.605062",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000002",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000005",
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:49:30.392729",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000002",
+          "study_arm_uid": "StudyArm_000003",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:49:29.753676",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000002",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000001",
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:48:58.777355",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000002",
+          "study_arm_uid": "StudyArm_000003",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Create",
+          "modified": "2022-08-19T01:48:57.104671",
+          "order": 2,
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000003",
+          "study_arm_uid": "StudyArm_000001",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000003",
+          "transition_rule": null,
+          "change_type": "Delete",
+          "modified": "2022-08-19T01:49:40.734050",
+          "order": 1,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000003",
+          "study_arm_uid": "StudyArm_000001",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000003",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:49:39.975940",
+          "order": 1,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": true
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000003",
+          "study_arm_uid": "StudyArm_000001",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000003",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:49:39.716713",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": true
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000003",
+          "study_arm_uid": "StudyArm_000001",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000003",
+          "transition_rule": null,
+          "change_type": "Create",
+          "modified": "2022-08-19T01:48:57.233329",
+          "order": 3,
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000004",
+          "study_arm_uid": "StudyArm_000005",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Delete",
+          "modified": "2022-08-19T01:49:36.110417",
+          "order": 4,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000004",
+          "study_arm_uid": "StudyArm_000005",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000002",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Create",
+          "modified": "2022-08-19T01:48:59.450805",
+          "order": 4,
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000005",
+          "study_arm_uid": "StudyArm_000003",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Delete",
+          "modified": "2022-08-19T01:35:30.788049",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000005",
+          "study_arm_uid": "StudyArm_000003",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:35:30.223431",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": true,
+            "study_branch_arm_uid": true,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000005",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000007",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:35:30.223431",
+          "order": 2,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": true
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000005",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000007",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:35:30.223431",
+          "order": 3,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": false,
+            "modified": true,
+            "order": true
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000005",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000007",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Edit",
+          "modified": "2022-08-19T01:35:26.361193",
+          "order": 4,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": true
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000005",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000007",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Create",
+          "modified": "2022-08-19T01:35:21.754358",
+          "order": 5,
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000006",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000009",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Delete",
+          "modified": "2022-08-19T01:49:37.548058",
+          "order": 5,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000006",
+          "study_arm_uid": null,
+          "study_branch_arm_uid": "StudyBranchArm_000009",
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Create",
+          "modified": "2022-08-19T01:49:37.380974",
+          "order": 5,
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000007",
+          "study_arm_uid": "StudyArm_000001",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Delete",
+          "modified": "2022-08-19T01:49:41.766462",
+          "order": 1,
+          "changes": {
+            "study_uid": false,
+            "study_design_cell_uid": false,
+            "study_arm_uid": false,
+            "study_branch_arm_uid": false,
+            "study_epoch_uid": false,
+            "study_element_uid": false,
+            "transition_rule": false,
+            "change_type": true,
+            "modified": true,
+            "order": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "study_design_cell_uid": "StudyDesignCell_000007",
+          "study_arm_uid": "StudyArm_000001",
+          "study_branch_arm_uid": null,
+          "study_epoch_uid": "StudyEpoch_000001",
+          "study_element_uid": "StudyElement_000001",
+          "transition_rule": null,
+          "change_type": "Create",
+          "modified": "2022-08-19T01:49:41.153926",
+          "order": 1,
+          "changes": {}
+        }
+      ]
+    }
+  },
+  {
+    "name": "The remained StudyDesignCells should be cascade deleted after deleting the StudyEpoch",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/studies/study_root/study-design-cells"
+    },
+    "headers": {
+      "content-length": "336",
+      "content-type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "results": []
+    }
+  },
+  {
+    "name": "Test test if the cascade delete on the study_arm works with cohorts",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "url": "/studies/study_root/study-arms/StudyArm_000001"
+    },
+    "response": {
+      "code": 204,
+      "headers": {},
+      "result": null
+    }
+  },
+  {
+    "name": "Test adding selection StudyBranchArm to test that the Business exception has to be raise if a study design cell is trying to connect to an Arm that has BranchArms connected to it ",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "BranchArm_Name_15",
+        "short_name": "BranchArm_Short_Name_15",
+        "code": "BranchArm_code_15",
+        "description": "desc...",
+        "colour_code": "desc...",
+        "randomization_group": "Randomization_Group_15",
+        "number_of_subjects": 10,
+        "arm_uid": "StudyArm_000007"
+      },
+      "url": "/studies/study_root/study-branch-arms"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "study_uid": "study_root",
+        "order": 1,
+        "study_version": null,
+        "branch_arm_uid": "StudyBranchArm_000015",
+        "name": "BranchArm_Name_15",
+        "short_name": "BranchArm_Short_Name_15",
+        "code": "BranchArm_code_15",
+        "description": "desc...",
+        "colour_code": "desc...",
+        "randomization_group": "Randomization_Group_15",
+        "number_of_subjects": 10,
+        "start_date": "2022-08-22T23:04:24.356850",
+        "user_initials": "unknown-user",
+        "end_date": null,
+        "status": null,
+        "change_type": null,
+        "accepted_version": false,
+        "arm_root": {
+          "study_uid": "study_root",
+          "order": 1,
+          "arm_uid": "StudyArm_000007",
+          "name": "Arm_Name_9",
+          "short_name": "Arm_Short_Name_9",
+          "code": "Arm_code_9",
+          "description": "desc...",
+          "arm_colour": null,
+          "randomization_group": "Arm_randomizationGroup9",
+          "number_of_subjects": 100,
+          "arm_type": {
+            "term_uid": "ArmType_0001",
+            "catalogue_name": "catalogue",
+            "codelists": [
+              {
+                "codelist_uid": "CTCodelist_00004",
+                "order": 1
+              }
+            ],
+            "sponsor_preferred_name": "Arm Type",
+            "sponsor_preferred_name_sentence_case": "Arm type",
+            "library_name": "Sponsor",
+            "start_date": "2022-08-22T23:03:21.482985",
+            "end_date": null,
+            "status": "Final",
+            "version": "1.0",
+            "change_description": "Approved version",
+            "user_initials": "TODO user initials",
+            "possible_actions": [
+              "inactivate",
+              "new_version"
+            ]
+          },
+          "start_date": "2022-08-22T23:04:24.199491",
+          "user_initials": "unknown-user",
+          "end_date": null,
+          "status": null,
+          "change_type": null,
+          "accepted_version": false
+        }
+      },
+      "save": {
+        "branch_arm_uid": "branch_arm_uid"
+      }
+    }
+  },
+  {
+    "name": " LOCK STUDY Test to have multiple study value relationships attached",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "change_description": "Lock 1"
+      },
+      "url": "/studies/study_root/locks"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      }
+    }
+  },
+  {
+    "name": " UNLOCK STUDY Test to have multiple study value relationships attached",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "request": {},
+      "url": "/studies/study_root/locks"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      }
+    }
+  },
+  {
+    "name": "Test adding DesignCell that has a StudyArm assigned that has StudyBranchArms connected to it raise the Business ",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "study_arm_uid": "StudyArm_000007",
+        "study_branch_arm_uid": "StudyBranchArm_000015",
+        "study_epoch_uid": "StudyEpoch_000002",
+        "study_element_uid": "StudyElement_000002",
+        "transition_rule": "Transition_Rule_4"
+      },
+      "url": "/studies/study_root/study-design-cells"
+    },
+    "headers": {
+      "content-length": "336",
+      "content-type": "application/json"
+    },
+    "response": {
+      "code": 400,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "results": {
+        "type": "BusinessLogicException",
+        "message": "The Study Arm with uid StudyArm_000007 cannot be assigned to a Study Design Cell because it has Study Branch Arms assigned to it",
+        "time": "2022-08-22T23:07:33.958163",
+        "path": "http://testserver/studies/study_root/study-design-cells",
+        "method": "POST"
+      }
+    }
+  }
+]

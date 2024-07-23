@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Test get catalogue changes end datetime older than start datetime",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "http://testserver/ct/catalogues/changes?catalogue_name=catalogue&comparison_type=attributes&start_datetime=2020-06-26T00:00:00&end_datetime=2020-03-27T00:00:00"
+        },
+        "response": {
+            "code": 400,
+            "headers": {},
+            "result": {
+                "message": "End datetime (2020-03-27 00:00:00) can't be older than start datetime (2020-06-26 00:00:00)",
+                "method": "GET",
+                "path": "http://testserver/ct/catalogues/changes?catalogue_name=catalogue&comparison_type=attributes&start_datetime=2020-06-26T00:00:00&end_datetime=2020-03-27T00:00:00",
+                "time": "2020-11-03T23:42:41.518146",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test get catalogue changes non-existent catalogue passed",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "http://testserver/ct/catalogues/changes?catalogue_name=non_existent_catalogue&comparison_type=attributes&start_datetime=2020-03-27T00:00:00&end_datetime=2020-06-26T00:00:00"
+        },
+        "response": {
+            "code": 400,
+            "headers": {},
+            "result": {
+                "message": "There is no catalogue identified by provided catalogue name (non_existent_catalogue)",
+                "method": "GET",
+                "path": "http://testserver/ct/catalogues/changes?catalogue_name=non_existent_catalogue&comparison_type=attributes&start_datetime=2020-03-27T00:00:00&end_datetime=2020-06-26T00:00:00",
+                "time": "2020-11-03T23:42:41.518146",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test get catalogue changes not valid comparison type passed",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "http://testserver/ct/catalogues/changes?catalogue_name=catalogue&comparison_type=invalid_type&start_datetime=2020-03-27T00:00:00&end_datetime=2020-06-26T00:00:00"
+        },
+        "response": {
+            "code": 400,
+            "headers": {},
+            "result": {
+                "message": "The following type (invalid_type) is not valid catalogue comparison type.",
+                "method": "GET",
+                "path": "http://testserver/ct/catalogues/changes?catalogue_name=catalogue&comparison_type=invalid_type&start_datetime=2020-03-27T00:00:00&end_datetime=2020-06-26T00:00:00",
+                "time": "2020-11-03T23:42:41.518146",
+                "type": "BusinessLogicException"
+            }
+        }
+    }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "abbreviation": null,
+    "change_description": "Approved version",
+    "definition": "Definition not provided",
+    "end_date": null,
+    "library_name": "Sponsor",
+    "name": "General",
+    "name_sentence_case": "general",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:56:27.926393",
+    "status": "Final",
+    "uid": "ActivityGroup_000003",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": null,
+    "change_description": "Approved version",
+    "definition": "Definition not provided",
+    "end_date": null,
+    "library_name": "Sponsor",
+    "name": "Laboratory Assessments",
+    "name_sentence_case": "laboratory assessments",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:56:28.048042",
+    "status": "Final",
+    "uid": "ActivityGroup_000004",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  }
+]

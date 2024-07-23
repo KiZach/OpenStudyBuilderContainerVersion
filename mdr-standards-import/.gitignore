@@ -1,0 +1,8 @@
+.env
+.idea
+.vscode
+__pycache__
+loaded_packages.txt
+json_data/**
+cdisc_data/packages/**
+**/.DS_Store

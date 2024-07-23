@@ -1,0 +1,159 @@
+[
+   {
+      "name": "Test POST study duration days which is a TP",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "value": 1.23,
+            "definition": "study_duration_days_definition1",
+            "abbreviation": "abbv",
+            "template_parameter": true,
+            "library_name": "Sponsor"
+         },
+         "url": "/concepts/study-duration-days"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "StudyDurationDays_000001",
+            "name": "1.23 days",
+            "value": 1.23,
+            "name_sentence_case": "1.23 days",
+            "definition": "study_duration_days_definition1",
+            "abbreviation": "abbv",
+            "template_parameter": true,
+            "library_name": "Sponsor",
+            "status": null,
+            "version": null,
+            "change_description": null,
+            "user_initials": null,
+            "start_date": null,
+            "end_date": null
+         }
+      }
+   },
+   {
+      "name": "Test POST study duration days which is a TP existing study duration days is returned",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "value": 1.23,
+            "definition": "study_duration_days_definition1",
+            "abbreviation": "abbv",
+            "template_parameter": true,
+            "library_name": "Sponsor"
+         },
+         "url": "/concepts/study-duration-days"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "StudyDurationDays_000001",
+            "name": "1.23 days",
+            "value": 1.23,
+            "name_sentence_case": "1.23 days",
+            "definition": "study_duration_days_definition1",
+            "abbreviation": "abbv",
+            "template_parameter": true,
+            "library_name": "Sponsor",
+            "status": null,
+            "version": null,
+            "change_description": null,
+            "user_initials": null,
+            "start_date": null,
+            "end_date": null
+         }
+      }
+   },
+   {
+      "name": "Test POST study duration days which is not TP",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "value": 1.234,
+            "definition": "study_duration_days_definition2",
+            "abbreviation": "abbv",
+            "template_parameter": false,
+            "library_name": "Sponsor"
+         },
+         "url": "/concepts/study-duration-days"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "StudyDurationDays_000002",
+            "name": "1.234 days",
+            "value": 1.234,
+            "name_sentence_case": "1.234 days",
+            "definition": "study_duration_days_definition2",
+            "abbreviation": "abbv",
+            "template_parameter": false,
+            "library_name": "Sponsor",
+            "status": null,
+            "version": null,
+            "change_description": null,
+            "user_initials": null,
+            "start_date": null,
+            "end_date": null
+         }
+      }
+   },
+   {
+      "name": "Test GET all study duration days",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/concepts/study-duration-days?total_count=true"
+      },
+      "response": {
+         "code": 200,
+         "headers": {},
+         "result": {
+            "items": [
+               {
+                  "uid": "StudyDurationDays_000001",
+                  "name": "1.23 days",
+                  "value": 1.23,
+                  "name_sentence_case": "1.23 days",
+                  "definition": "study_duration_days_definition1",
+                  "abbreviation": "abbv",
+                  "template_parameter": true,
+                  "library_name": "Sponsor",
+                  "status": null,
+                  "version": null,
+                  "change_description": null,
+                  "user_initials": null,
+                  "start_date": null,
+                  "end_date": null
+               },
+               {
+                  "uid": "StudyDurationDays_000002",
+                  "name": "1.234 days",
+                  "value": 1.234,
+                  "name_sentence_case": "1.234 days",
+                  "definition": "study_duration_days_definition2",
+                  "abbreviation": "abbv",
+                  "template_parameter": false,
+                  "library_name": "Sponsor",
+                  "status": null,
+                  "version": null,
+                  "change_description": null,
+                  "user_initials": null,
+                  "start_date": null,
+                  "end_date": null
+               }
+            ],
+            "total": 2,
+            "page": 1,
+            "size": 10
+         }
+      }
+   }
+]

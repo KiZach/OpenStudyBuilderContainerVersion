@@ -1,0 +1,1426 @@
+{
+    "_links": {
+        "parentProduct": {
+            "href": "/mdr/sdtm/1-4",
+            "title": "Study Data Tabulation Model Version 1.4",
+            "type": "Foundational Model"
+        },
+        "priorVersion": {
+            "href": "/mdr/sdtm/1-3/classes/GeneralObservations",
+            "title": "General Observation Class",
+            "type": "Class"
+        },
+        "self": {
+            "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+            "title": "General Observation Class",
+            "type": "Class"
+        },
+        "subclasses": [
+            {
+                "href": "/mdr/sdtm/1-4/classes/Interventions",
+                "title": "Interventions Observation Class",
+                "type": "Class"
+            },
+            {
+                "href": "/mdr/sdtm/1-4/classes/Events",
+                "title": "Events Observation Class",
+                "type": "Class"
+            },
+            {
+                "href": "/mdr/sdtm/1-4/classes/Findings",
+                "title": "Findings Observation Class",
+                "type": "Class"
+            }
+        ]
+    },
+    "classVariables": [
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/STUDYID",
+                    "title": "Study Identifier",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/STUDYID",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.STUDYID",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/STUDYID",
+                    "title": "Study Identifier",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Unique identifier for a study.",
+            "label": "Study Identifier",
+            "name": "STUDYID",
+            "ordinal": "1",
+            "role": "Identifier",
+            "roleDescription": "Identifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/DOMAIN",
+                    "title": "Domain Abbreviation",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/DOMAIN",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.DOMAIN",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/DOMAIN",
+                    "title": "Domain Abbreviation",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Two-character abbreviation for the domain most relevant to the observation. The Domain abbreviation is also used as a prefix for variables to ensure uniqueness when datasets are merged.",
+            "label": "Domain Abbreviation",
+            "name": "DOMAIN",
+            "ordinal": "2",
+            "role": "Identifier",
+            "roleDescription": "Identifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/USUBJID",
+                    "title": "Unique Subject Identifier",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/USUBJID",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.USUBJID",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/USUBJID",
+                    "title": "Unique Subject Identifier",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Identifier used to uniquely identify a subject across all studies for all applications or submissions involving the product.",
+            "label": "Unique Subject Identifier",
+            "name": "USUBJID",
+            "ordinal": "3",
+            "role": "Identifier",
+            "roleDescription": "Identifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/POOLID",
+                    "title": "Pool Identifier",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/POOLID",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.POOLID",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/POOLID",
+                    "title": "Pool Identifier",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "An identifier used to identify a result from a group of subjects that is not assignable to a specific subject.",
+            "label": "Pool Identifier",
+            "name": "POOLID",
+            "ordinal": "4",
+            "role": "Identifier",
+            "roleDescription": "Identifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/SPDEVID",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.SPDEVID",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/SPDEVID",
+                    "title": "Sponsor Device Identifier",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Sponsor-defined identifier for a device",
+            "label": "Sponsor Device Identifier",
+            "name": "SPDEVID",
+            "ordinal": "5",
+            "role": "Identifier",
+            "roleDescription": "Identifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/--SEQ",
+                    "title": "Sequence Number",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--SEQ",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--SEQ",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--SEQ",
+                    "title": "Sequence Number",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Sequence number to ensure uniqueness of records within a dataset for a subject (or within a parameter, in the case of the Trial Summary domain). May be any valid number (including decimals) and does not have to start at 1.",
+            "label": "Sequence Number",
+            "name": "--SEQ",
+            "ordinal": "6",
+            "role": "Identifier",
+            "roleDescription": "Identifier",
+            "simpleDatatype": "Num"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/--GRPID",
+                    "title": "Group ID",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--GRPID",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--GRPID",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--GRPID",
+                    "title": "Group ID",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Optional group identifier, used to link together a block of related records within a subject in a domain. Also used to link together a block of related records in the Trial Summary dataset (Section 3.4).",
+            "label": "Group ID",
+            "name": "--GRPID",
+            "ordinal": "7",
+            "role": "Identifier",
+            "roleDescription": "Identifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/--REFID",
+                    "title": "Reference ID",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--REFID",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--REFID",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--REFID",
+                    "title": "Reference ID",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Optional internal or external identifier such as lab specimen ID, or UUID for an ECG waveform or a medical image.",
+            "label": "Reference ID",
+            "name": "--REFID",
+            "ordinal": "8",
+            "role": "Identifier",
+            "roleDescription": "Identifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/--SPID",
+                    "title": "Sponsor ID",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--SPID",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--SPID",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--SPID",
+                    "title": "Sponsor-Defined Identifier",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Sponsor-defined identifier. Example: pre-printed line identifier on a Concomitant Medications page.",
+            "label": "Sponsor-Defined Identifier",
+            "name": "--SPID",
+            "ordinal": "9",
+            "role": "Identifier",
+            "roleDescription": "Identifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/--LNKID",
+                    "title": "Link ID",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--LNKID",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--LNKID",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--LNKID",
+                    "title": "Link ID",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Identifier used to link related records across domains. This may be a one-to-one or a one-to-many relationship. For Example: A single tumor may have multiple measurements/assessments performed at each study visit.",
+            "label": "Link ID",
+            "name": "--LNKID",
+            "ordinal": "10",
+            "role": "Identifier",
+            "roleDescription": "Identifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/--LNKGRP",
+                    "title": "Link Group ID",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--LNKGRP",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--LNKGRP",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--LNKGRP",
+                    "title": "Link Group ID",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Identifier used to link related records across domains. This will usually be a many-to-one relationship. For example: Multiple tumor measurements/assessments will contribute to a single response to therapy determination record.",
+            "label": "Link Group ID",
+            "name": "--LNKGRP",
+            "ordinal": "11",
+            "role": "Identifier",
+            "roleDescription": "Identifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/VISITNUM",
+                    "title": "Visit Number",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/VISITNUM",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.VISITNUM",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/VISITNUM",
+                    "title": "Visit Number",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Clinical encounter number. Numeric version of VISIT, used for sorting.",
+            "label": "Visit Number",
+            "name": "VISITNUM",
+            "ordinal": "12",
+            "role": "Timing",
+            "roleDescription": "Timing",
+            "simpleDatatype": "Num"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/VISIT",
+                    "title": "Visit Name",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/VISIT",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.VISIT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/VISIT",
+                    "title": "Visit Name",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Protocol-defined description of a clinical encounter.",
+            "label": "Visit Name",
+            "name": "VISIT",
+            "ordinal": "13",
+            "role": "Timing",
+            "roleDescription": "Timing",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/VISITDY",
+                    "title": "Planned Study Day of Visit",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/VISITDY",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.VISITDY",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/VISITDY",
+                    "title": "Planned Study Day of Visit",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Planned study day of VISIT. Should be an integer.",
+            "label": "Planned Study Day of Visit",
+            "name": "VISITDY",
+            "ordinal": "14",
+            "role": "Timing",
+            "roleDescription": "Timing",
+            "simpleDatatype": "Num"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/TAETORD",
+                    "title": "Planned Order of Element within Arm",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/TAETORD",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.TAETORD",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/TAETORD",
+                    "title": "Planned Order of Element within Arm",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Number that gives the planned order of the Element within the Arm (see Trial Arms, Section 3.2.2).",
+            "label": "Planned Order of Element within Arm",
+            "name": "TAETORD",
+            "ordinal": "15",
+            "role": "Timing",
+            "roleDescription": "Timing",
+            "simpleDatatype": "Num"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/EPOCH",
+                    "title": "Epoch",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/EPOCH",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.EPOCH",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/EPOCH",
+                    "title": "Epoch",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Epoch associated with the start date/time of the observation, or the date/time of collection if start date/time is not collected. (See Section 3.2.2).",
+            "label": "Epoch",
+            "name": "EPOCH",
+            "ordinal": "16",
+            "role": "Timing",
+            "roleDescription": "Timing",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/--DTC",
+                    "title": "Date/Time of Collection",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--DTC",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--DTC",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--DTC",
+                    "title": "Date/Time of Collection",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Collection date and time of an observation represented in IS0 8601 character format.",
+            "label": "Date/Time of Collection",
+            "name": "--DTC",
+            "ordinal": "17",
+            "role": "Timing",
+            "roleDescription": "Timing",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/--STDTC",
+                    "title": "Start Date/Time of Observation",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--STDTC",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--STDTC",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--STDTC",
+                    "title": "Start Date/Time of Observation",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Start date/time of an observation represented in IS0 8601 character format.",
+            "label": "Start Date/Time of Observation",
+            "name": "--STDTC",
+            "ordinal": "18",
+            "role": "Timing",
+            "roleDescription": "Timing",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/--ENDTC",
+                    "title": "End Date/Time of Observation",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--ENDTC",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--ENDTC",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--ENDTC",
+                    "title": "End Date/Time of Observation",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "End date/time of the observation represented in IS0 8601 character format.",
+            "label": "End Date/Time of Observation",
+            "name": "--ENDTC",
+            "ordinal": "19",
+            "role": "Timing",
+            "roleDescription": "Timing",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/--DY",
+                    "title": "Study Day of Visit/Collection/Exam",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--DY",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--DY",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--DY",
+                    "title": "Study Day of Visit/Collection/Exam",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Actual study day of visit/collection/exam expressed in integer days relative to the sponsor-defined RFSTDTC in Demographics.",
+            "label": "Study Day of Visit/Collection/Exam",
+            "name": "--DY",
+            "ordinal": "20",
+            "role": "Timing",
+            "roleDescription": "Timing",
+            "simpleDatatype": "Num"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/--STDY",
+                    "title": "Study Day of Start of Observation",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--STDY",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--STDY",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--STDY",
+                    "title": "Study Day of Start of Observation",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Actual study day of start of observation expressed in integer days relative to the sponsor-defined RFSTDTC in Demographics.",
+            "label": "Study Day of Start of Observation",
+            "name": "--STDY",
+            "ordinal": "21",
+            "role": "Timing",
+            "roleDescription": "Timing",
+            "simpleDatatype": "Num"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/--ENDY",
+                    "title": "Study Day of End of Observation",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--ENDY",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--ENDY",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--ENDY",
+                    "title": "Study Day of End of Observation",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Actual study day of end of observation expressed in integer days relative to the sponsor-defined RFSTDTC in Demographics.",
+            "label": "Study Day of End of Observation",
+            "name": "--ENDY",
+            "ordinal": "22",
+            "role": "Timing",
+            "roleDescription": "Timing",
+            "simpleDatatype": "Num"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/--DUR",
+                    "title": "Duration",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--DUR",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--DUR",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--DUR",
+                    "title": "Duration",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Collected duration of an event, intervention, or finding represented in ISO 8601 character format. Used only if collected on the CRF and not derived.",
+            "label": "Duration",
+            "name": "--DUR",
+            "ordinal": "23",
+            "role": "Timing",
+            "roleDescription": "Timing",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/--TPT",
+                    "title": "Planned Time Point Name",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--TPT",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--TPT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--TPT",
+                    "title": "Planned Time Point Name",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Text description of time when a measurement or observation should be taken as defined in the protocol. This may be represented as an elapsed time relative to a fixed reference point, such as time of last dose. See --TPTNUM and --TPTREF.",
+            "label": "Planned Time Point Name",
+            "name": "--TPT",
+            "ordinal": "24",
+            "role": "Timing",
+            "roleDescription": "Timing",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/--TPTNUM",
+                    "title": "Planned Time Point Number",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--TPTNUM",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--TPTNUM",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--TPTNUM",
+                    "title": "Planned Time Point Number",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Numeric version of planned time point used in sorting.",
+            "label": "Planned Time Point Number",
+            "name": "--TPTNUM",
+            "ordinal": "25",
+            "role": "Timing",
+            "roleDescription": "Timing",
+            "simpleDatatype": "Num"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/--ELTM",
+                    "title": "Planned Elapsed Time from Time Point Ref",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--ELTM",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--ELTM",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--ELTM",
+                    "title": "Planned Elapsed Time from Time Point Ref",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Planned Elapsed time in ISO 8601 character format relative to a planned fixed reference (--TPTREF) such as \"Previous Dose\" or \"Previous Meal\". This variable is useful where there are repetitive measures. Not a clock time or a date/time variable, but an interval, represented as ISO duration.",
+            "label": "Planned Elapsed Time from Time Point Ref",
+            "name": "--ELTM",
+            "ordinal": "26",
+            "role": "Timing",
+            "roleDescription": "Timing",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/--TPTREF",
+                    "title": "Time Point Reference",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--TPTREF",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--TPTREF",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--TPTREF",
+                    "title": "Time Point Reference",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Description of the fixed reference point referred to by --ELTM, --TPTNUM, and --TPT. Examples: PREVIOUS DOSE, PREVIOUS MEAL.",
+            "label": "Time Point Reference",
+            "name": "--TPTREF",
+            "ordinal": "27",
+            "role": "Timing",
+            "roleDescription": "Timing",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/--RFTDTC",
+                    "title": "Date/Time of Reference Time Point",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--RFTDTC",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--RFTDTC",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--RFTDTC",
+                    "title": "Date/Time of Reference Time Point",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Date/time for a fixed reference time point defined by --TPTREF in ISO 8601 character format.",
+            "label": "Date/Time of Reference Time Point",
+            "name": "--RFTDTC",
+            "ordinal": "28",
+            "role": "Timing",
+            "roleDescription": "Timing",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/--STRF",
+                    "title": "Start Relative to Reference Period",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--STRF",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--STRF",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--STRF",
+                    "title": "Start Relative to Reference Period",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Identifies the start of the observation as being before, during, or after the sponsor-defined reference period. The sponsor-defined reference period is a continuous period of time defined by a discrete starting point and a discrete ending point represented by RFSTDTC and RFENDTC in Demographics.  Note: This variable will be deprecated (phased out) in a future (post SDTM v1.4) release. The functionality of this variable can be replaced by the use of --STRTPT with --STTPT = RFSTDTC.",
+            "label": "Start Relative to Reference Period",
+            "name": "--STRF",
+            "ordinal": "29",
+            "role": "Timing",
+            "roleDescription": "Timing",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/--ENRF",
+                    "title": "End Relative to Reference Period",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--ENRF",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--ENRF",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--ENRF",
+                    "title": "End Relative to Reference Period",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Identifies the end of the observation as being before, during or after the sponsor-defined reference period. The sponsor-defined reference period is a continuous period of time defined by a discrete starting point and a discrete ending point represented by RFSTDTC and RFENDTC in Demographics.  Note: This variable will be deprecated (phased out) in a future (post SDTM v1.4) release. The functionality of this variable can be replaced by the use of --ENRTPT with --ENTPT = RFENDTC.",
+            "label": "End Relative to Reference Period",
+            "name": "--ENRF",
+            "ordinal": "30",
+            "role": "Timing",
+            "roleDescription": "Timing",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/--EVLINT",
+                    "title": "Evaluation Interval",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--EVLINT",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--EVLINT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--EVLINT",
+                    "title": "Evaluation Interval",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Duration of interval associated with an observation such as a finding --TESTCD, represented in ISO 8601 character format. Example: -P2M to represent a period of the past 2 months as the evaluation interval for a question from a questionnaire such as SF-36.",
+            "label": "Evaluation Interval",
+            "name": "--EVLINT",
+            "ordinal": "31",
+            "role": "Timing",
+            "roleDescription": "Timing",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--EVINTX",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--EVINTX",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--EVINTX",
+                    "title": "Evaluation Interval Text",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Evaluation interval associated with an observation, where the interval is not able to be represented in ISO 8601 format. Examples: LIFETIME, LAST NIGHT, RECENTLY, OVER THE LAST FEW WEEKS.",
+            "label": "Evaluation Interval Text",
+            "name": "--EVINTX",
+            "ordinal": "32",
+            "role": "Timing",
+            "roleDescription": "Timing",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/--STRTPT",
+                    "title": "Start Relative to Reference Time Point",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--STRTPT",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--STRTPT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--STRTPT",
+                    "title": "Start Relative to Reference Time Point",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Identifies the start of the observation as being before or after the sponsor-defined reference time point defined by variable --STTPT.",
+            "label": "Start Relative to Reference Time Point",
+            "name": "--STRTPT",
+            "ordinal": "33",
+            "role": "Timing",
+            "roleDescription": "Timing",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/--STTPT",
+                    "title": "Start Reference Time Point",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--STTPT",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--STTPT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--STTPT",
+                    "title": "Start Reference Time Point",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Description or date/time in ISO 8601 or other character format of the sponsor-defined reference point referred to by --STRTPT. Examples: \"2003-12-15\" or \"VISIT 1\".",
+            "label": "Start Reference Time Point",
+            "name": "--STTPT",
+            "ordinal": "34",
+            "role": "Timing",
+            "roleDescription": "Timing",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/--ENRTPT",
+                    "title": "End Relative to Reference Time Point",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--ENRTPT",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--ENRTPT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--ENRTPT",
+                    "title": "End Relative to Reference Time Point",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Identifies the end of the observation as being before or after the sponsor-defined reference time point defined by variable --ENTPT.",
+            "label": "End Relative to Reference Time Point",
+            "name": "--ENRTPT",
+            "ordinal": "35",
+            "role": "Timing",
+            "roleDescription": "Timing",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/--ENTPT",
+                    "title": "End Reference Time Point",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--ENTPT",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--ENTPT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--ENTPT",
+                    "title": "End Reference Time Point",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "Description or date/time in ISO 8601 or other character format of the sponsor-defined reference point referred to by --ENRTPT. Examples: \"2003-12-25\" or \"VISIT 2\".",
+            "label": "End Reference Time Point",
+            "name": "--ENTPT",
+            "ordinal": "36",
+            "role": "Timing",
+            "roleDescription": "Timing",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--STINT",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--STINT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--STINT",
+                    "title": "Planned Start of Assessment Interval",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "The start of a planned evaluation or assessment interval in ISO 8601 character format relative to the Time Point Reference (--TPTREF).",
+            "label": "Planned Start of Assessment Interval",
+            "name": "--STINT",
+            "ordinal": "37",
+            "role": "Timing",
+            "roleDescription": "Timing",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--ENINT",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--ENINT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--ENINT",
+                    "title": "Planned End of Assessment Interval",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "The end of a planned evaluation or assessment interval in ISO 8601 character format relative to the Time Point Reference (--TPTREF).",
+            "label": "Planned End of Assessment Interval",
+            "name": "--ENINT",
+            "ordinal": "38",
+            "role": "Timing",
+            "roleDescription": "Timing",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentClass": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations",
+                    "title": "General Observation Class",
+                    "type": "Class"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtm/1-4",
+                    "title": "Study Data Tabulation Model Version 1.4",
+                    "type": "Foundational Model"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtm/1-3/classes/GeneralObservations/variables/--DETECT",
+                    "title": "Time in Days to Detection",
+                    "type": "Class Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtm/classes/GeneralObservations/variables/--DETECT",
+                    "title": "Version-agnostic anchor resource for SDTM variable GeneralObservations.--DETECT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtm/1-4/classes/GeneralObservations/variables/--DETECT",
+                    "title": "Time in Days to Detection",
+                    "type": "Class Variable"
+                }
+            },
+            "description": "The number of days from the start of dosing to the earliest detection of a condition or pathogen.",
+            "label": "Time in Days to Detection",
+            "name": "--DETECT",
+            "ordinal": "39",
+            "role": "Timing",
+            "roleDescription": "Timing",
+            "simpleDatatype": "Num"
+        }
+    ],
+    "description": "The majority of observations collected during a study can be divided among three general classes: Interventions, Events, or Findings.  Datasets based on any of the general observation classes share a set of common Identifier and Timing variables. As a general rule, any valid Identifier or Timing variable is permissible for use in any submission dataset based on a general observation class. (Source: SDTM v1.4, Section 2.2)",
+    "label": "General Observation Class",
+    "name": "General Observations",
+    "ordinal": "1"
+}

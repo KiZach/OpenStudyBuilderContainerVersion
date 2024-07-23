@@ -1,0 +1,729 @@
+{
+    "_links": {
+        "parentClass": {
+            "href": "/mdr/cdashig/2-2/classes/Findings",
+            "title": "Findings",
+            "type": "Class"
+        },
+        "parentProduct": {
+            "href": "/mdr/cdashig/2-2",
+            "title": "Clinical Data Acquisition Standards Harmonization Implementation Guide for Human Clinical Trials Version 2.2",
+            "type": "Implementation Guide"
+        },
+        "priorVersion": {
+            "href": "/mdr/cdashig/2-1/domains/DA",
+            "title": "Drug Accountability",
+            "type": "CDASH Domain"
+        },
+        "scenarios": [
+            {
+                "href": "/mdr/cdashig/2-2/scenarios/DA.HorizontalGeneric",
+                "title": "Horizontal-Generic",
+                "type": "CDASH Scenario"
+            }
+        ],
+        "self": {
+            "href": "/mdr/cdashig/2-2/domains/DA",
+            "title": "Drug Accountability",
+            "type": "CDASH Domain"
+        }
+    },
+    "description": "A findings domain that contains the accountability of study drug, such as information on the receipt, dispensing, return, and packaging. (Source: CDISC Controlled Terminology, DOMAIN, C49578, 2021-06-25)",
+    "fields": [
+        {
+            "_links": {
+                "implements": {
+                    "href": "/mdr/cdash/1-2/classes/Identifiers/fields/STUDYID",
+                    "title": "Study Identifier",
+                    "type": "Class Variable"
+                },
+                "parentDomain": {
+                    "href": "/mdr/cdashig/2-2/domains/DA",
+                    "title": "Drug Accountability",
+                    "type": "CDASH Domain"
+                },
+                "parentProduct": {
+                    "href": "/mdr/cdashig/2-2",
+                    "title": "Clinical Data Acquisition Standards Harmonization Implementation Guide for Human Clinical Trials Version 2.2",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/cdashig/2-1/domains/DA/fields/STUDYID",
+                    "title": "Study Identifier",
+                    "type": "Data Collection Field"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/cdashig/domains/DA/fields/STUDYID",
+                    "title": "Study Identifier",
+                    "type": "Root Data Element"
+                },
+                "sdtmigDatasetMappingTargets": [
+                    {
+                        "href": "/mdr/sdtmig/3-3/datasets/DA/variables/STUDYID",
+                        "title": "Study Identifier",
+                        "type": "SDTM Dataset Variable"
+                    }
+                ],
+                "self": {
+                    "href": "/mdr/cdashig/2-2/domains/DA/fields/STUDYID",
+                    "title": "Study Identifier",
+                    "type": "Data Collection Field"
+                }
+            },
+            "core": "HR",
+            "definition": "A unique identifier for a study.",
+            "implementationNotes": "Although this field is not typically captured on a CRF, it should be displayed clearly on the CRF and/or in the EDC system. This field can be included into the database or populated during SDTM-based dataset creation before submission.",
+            "label": "Study Identifier",
+            "mappingInstructions": "Maps directly to the SDTMIG variable listed in the SDTMIG Target column.",
+            "name": "STUDYID",
+            "ordinal": "1",
+            "prompt": "[Protocol/Study]",
+            "questionText": "What is the study identifier?",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "implements": {
+                    "href": "/mdr/cdash/1-2/classes/Identifiers/fields/SITEID",
+                    "title": "Study Site Identifier",
+                    "type": "Class Variable"
+                },
+                "parentDomain": {
+                    "href": "/mdr/cdashig/2-2/domains/DA",
+                    "title": "Drug Accountability",
+                    "type": "CDASH Domain"
+                },
+                "parentProduct": {
+                    "href": "/mdr/cdashig/2-2",
+                    "title": "Clinical Data Acquisition Standards Harmonization Implementation Guide for Human Clinical Trials Version 2.2",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/cdashig/2-1/domains/DA/fields/SITEID",
+                    "title": "Study Site Identifier",
+                    "type": "Data Collection Field"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/cdashig/domains/DA/fields/SITEID",
+                    "title": "Study Site Identifier",
+                    "type": "Root Data Element"
+                },
+                "sdtmigDatasetMappingTargets": [
+                    {
+                        "href": "/mdr/sdtmig/3-3/datasets/DM/variables/SITEID",
+                        "title": "Study Site Identifier",
+                        "type": "SDTM Dataset Variable"
+                    }
+                ],
+                "self": {
+                    "href": "/mdr/cdashig/2-2/domains/DA/fields/SITEID",
+                    "title": "Study Site Identifier",
+                    "type": "Data Collection Field"
+                }
+            },
+            "core": "HR",
+            "definition": "A unique identifier for a site within a study.",
+            "implementationNotes": "Paper: This is typically pre-printed in the header of each CRF page for single-site studies. For studies with multiple sites, this field may be left blank so that the number can be recorded by the site, or it may be pre-printed on the CRFs that are shipped to each site. \\n EDC: This should be pre-populated.",
+            "label": "Study Site Identifier",
+            "mappingInstructions": "Maps directly to the SDTMIG variable listed in the SDTMIG Target column.",
+            "name": "SITEID",
+            "ordinal": "2",
+            "prompt": "Site (Identifier)",
+            "questionText": "What is the site identifier?",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "implements": {
+                    "href": "/mdr/cdash/1-2/classes/Identifiers/fields/SUBJID",
+                    "title": "Subject Identifier for the Study",
+                    "type": "Class Variable"
+                },
+                "parentDomain": {
+                    "href": "/mdr/cdashig/2-2/domains/DA",
+                    "title": "Drug Accountability",
+                    "type": "CDASH Domain"
+                },
+                "parentProduct": {
+                    "href": "/mdr/cdashig/2-2",
+                    "title": "Clinical Data Acquisition Standards Harmonization Implementation Guide for Human Clinical Trials Version 2.2",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/cdashig/2-1/domains/DA/fields/SUBJID",
+                    "title": "Subject Identifier for the Study",
+                    "type": "Data Collection Field"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/cdashig/domains/DA/fields/SUBJID",
+                    "title": "Subject Identifier for the Study",
+                    "type": "Root Data Element"
+                },
+                "sdtmigDatasetMappingTargets": [
+                    {
+                        "href": "/mdr/sdtmig/3-3/datasets/DM/variables/SUBJID",
+                        "title": "Subject Identifier for the Study",
+                        "type": "SDTM Dataset Variable"
+                    }
+                ],
+                "self": {
+                    "href": "/mdr/cdashig/2-2/domains/DA/fields/SUBJID",
+                    "title": "Subject Identifier for the Study",
+                    "type": "Data Collection Field"
+                }
+            },
+            "completionInstructions": "Record the identifier for the subject.",
+            "core": "HR",
+            "definition": "A unique subject identifier within a site and a study.",
+            "implementationNotes": "Paper: This is typically recorded in the header of each CRF page. EDC: The subject identifiers may be system generated. This CDASH variable is typically collected in all CDASH domains. However, this CDASH variable is populated only in the SDTMIG DM domain. For more information, refer to the SDTMIG.",
+            "label": "Subject Identifier for the Study",
+            "mappingInstructions": "Maps directly to the SDTMIG variable listed in the SDTMIG Target column.",
+            "name": "SUBJID",
+            "ordinal": "3",
+            "prompt": "Subject",
+            "questionText": "What is the subject identifier?",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "implements": {
+                    "href": "/mdr/cdash/1-2/classes/Timing/fields/VISIT",
+                    "title": "Visit Name",
+                    "type": "Class Variable"
+                },
+                "parentDomain": {
+                    "href": "/mdr/cdashig/2-2/domains/DA",
+                    "title": "Drug Accountability",
+                    "type": "CDASH Domain"
+                },
+                "parentProduct": {
+                    "href": "/mdr/cdashig/2-2",
+                    "title": "Clinical Data Acquisition Standards Harmonization Implementation Guide for Human Clinical Trials Version 2.2",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/cdashig/2-1/domains/DA/fields/VISIT",
+                    "title": "Visit Name",
+                    "type": "Data Collection Field"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/cdashig/domains/DA/fields/VISIT",
+                    "title": "Visit Name",
+                    "type": "Root Data Element"
+                },
+                "sdtmigDatasetMappingTargets": [
+                    {
+                        "href": "/mdr/sdtmig/3-3/datasets/DA/variables/VISIT",
+                        "title": "Visit Name",
+                        "type": "SDTM Dataset Variable"
+                    }
+                ],
+                "self": {
+                    "href": "/mdr/cdashig/2-2/domains/DA/fields/VISIT",
+                    "title": "Visit Name",
+                    "type": "Data Collection Field"
+                }
+            },
+            "core": "R/C",
+            "definition": "The name of a clinical encounter that encompasses planned and unplanned trial interventions, procedures, and assessments that may be performed on a subject.",
+            "implementationNotes": "The name of the clinical encounter is typically pre-printed on the CRF or displayed in the EDC for any visit-based data collection, most often in Findings domains. This Visit text description is then available in any EDC data extract for that Findings domain.",
+            "label": "Visit Name",
+            "mappingInstructions": "Maps directly to the SDTMIG variable listed in the SDTMIG Target column.",
+            "name": "VISIT",
+            "ordinal": "4",
+            "prompt": "[Visit]",
+            "questionText": "What is the visit name?",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "parentDomain": {
+                    "href": "/mdr/cdashig/2-2/domains/DA",
+                    "title": "Drug Accountability",
+                    "type": "CDASH Domain"
+                },
+                "parentProduct": {
+                    "href": "/mdr/cdashig/2-2",
+                    "title": "Clinical Data Acquisition Standards Harmonization Implementation Guide for Human Clinical Trials Version 2.2",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/cdashig/2-1/domains/DA/fields/VISDAT",
+                    "title": "Visit Date",
+                    "type": "Data Collection Field"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/cdashig/domains/DA/fields/VISDAT",
+                    "title": "Visit Date",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/cdashig/2-2/domains/DA/fields/VISDAT",
+                    "title": "Visit Date",
+                    "type": "Data Collection Field"
+                }
+            },
+            "completionInstructions": "Record the [date/start date] of the visit using this format (DD-MON-YYYY).",
+            "core": "R/C",
+            "definition": "Date the clinical encounter occurred (or started).",
+            "implementationNotes": "The date the drug accountability assessments were collected can be determined from the Visit Date variable (VISDAT) and applying that date to all of the observations at that visit, or the collection date can be included on the DA CRF using the date (DADAT) field.",
+            "label": "Visit Date",
+            "mappingInstructions": "This field is not an SDTM variable. The date of a measurement, test, observation can be determined from the date/time of visit (VISDAT/VISTIM) and then concatenating the CDASH VISDAT/VISTIM components and populating the SDTMIG variable DADTC in ISO 8601 format.",
+            "name": "VISDAT",
+            "ordinal": "5",
+            "prompt": "(Visit) Date",
+            "questionText": "What [is/was] the date of the visit?",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "codelist": [
+                    {
+                        "href": "/mdr/root/ct/sdtmct/codelists/C66742",
+                        "title": "Version-agnostic anchor resource for codelist C66742",
+                        "type": "Root Value Domain"
+                    }
+                ],
+                "implements": {
+                    "href": "/mdr/cdash/1-2/classes/Findings/fields/--PERF",
+                    "title": "[Observation] Performed",
+                    "type": "Class Variable"
+                },
+                "parentDomain": {
+                    "href": "/mdr/cdashig/2-2/domains/DA",
+                    "title": "Drug Accountability",
+                    "type": "CDASH Domain"
+                },
+                "parentProduct": {
+                    "href": "/mdr/cdashig/2-2",
+                    "title": "Clinical Data Acquisition Standards Harmonization Implementation Guide for Human Clinical Trials Version 2.2",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/cdashig/2-1/domains/DA/fields/DAPERF",
+                    "title": "Drug Accountability Performed",
+                    "type": "Data Collection Field"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/cdashig/domains/DA/fields/DAPERF",
+                    "title": "Drug Accountability Performed",
+                    "type": "Root Data Element"
+                },
+                "sdtmigDatasetMappingTargets": [
+                    {
+                        "href": "/mdr/sdtmig/3-3/datasets/DA/variables/DASTAT",
+                        "title": "Completion Status",
+                        "type": "SDTM Dataset Variable"
+                    }
+                ],
+                "self": {
+                    "href": "/mdr/cdashig/2-2/domains/DA/fields/DAPERF",
+                    "title": "Drug Accountability Performed",
+                    "type": "Data Collection Field"
+                }
+            },
+            "completionInstructions": "Indicate whether or not drug accountability was performed.",
+            "core": "O",
+            "definition": "An indication of whether a planned drug accountability assessment was performed.",
+            "implementationNotes": "This may be implemented on a CRF page level on a visit-by-visit basis. This general prompt question is used as a data management tool to verify that missing results are confirmed missing.",
+            "label": "Drug Accountability Performed",
+            "mappingInstructions": "This does not map directly to an SDTMIG variable. May be used to derive a value into the SDTMIG variable DASTAT. If DAPERF=\"N\", the value of DASTAT will be \"NOT DONE\". If DAPERF=\"Y\", DASTAT should be null. A combination of SDTMIG variables ( e.g., DACAT and DASCAT, DATPT) is used to indicate that multiple tests were not done. In this situation, the SDTMIG variable DATESTCD would be populated as DAALL and an appropriate test name (DATEST) provided. See SDTMIG for additional information.",
+            "name": "DAPERF",
+            "ordinal": "6",
+            "prompt": "Drug Accountability Performed",
+            "questionText": "Was drug accountability performed?",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "implements": {
+                    "href": "/mdr/cdash/1-2/classes/Findings/fields/--CAT",
+                    "title": "Category",
+                    "type": "Class Variable"
+                },
+                "parentDomain": {
+                    "href": "/mdr/cdashig/2-2/domains/DA",
+                    "title": "Drug Accountability",
+                    "type": "CDASH Domain"
+                },
+                "parentProduct": {
+                    "href": "/mdr/cdashig/2-2",
+                    "title": "Clinical Data Acquisition Standards Harmonization Implementation Guide for Human Clinical Trials Version 2.2",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/cdashig/2-1/domains/DA/fields/DACAT",
+                    "title": "DA Category of Assessment",
+                    "type": "Data Collection Field"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/cdashig/domains/DA/fields/DACAT",
+                    "title": "DA Category of Assessment",
+                    "type": "Root Data Element"
+                },
+                "sdtmigDatasetMappingTargets": [
+                    {
+                        "href": "/mdr/sdtmig/3-3/datasets/DA/variables/DACAT",
+                        "title": "Category",
+                        "type": "SDTM Dataset Variable"
+                    }
+                ],
+                "self": {
+                    "href": "/mdr/cdashig/2-2/domains/DA/fields/DACAT",
+                    "title": "DA Category of Assessment",
+                    "type": "Data Collection Field"
+                }
+            },
+            "completionInstructions": "Record the type of treatment dispensed/returned.",
+            "core": "O",
+            "definition": "A grouping of topic-variable values based on user-defined characteristics.",
+            "implementationNotes": "Sponsor-defined controlled terminology. This would most commonly be pre-printed on the CRF or screen and pre-populated in the data management system. This is not typically a question to which the site would provide an answer. If the protocol allows dispensing different types of treatment (e.g., study medication, rescue medication, run-in medication) the CRF can capture the type of treatment using DACAT. This may be pre-printed on the CRF. If DACAT is not collected (e.g., it is self-evident from the protocol design), it can be populated during the SDTM-based dataset creation process. See SDTMIG DA domain examples for populating DACAT and DASCAT.",
+            "label": "DA Category of Assessment",
+            "mappingInstructions": "Maps directly to the SDTMIG variable listed in the SDTMIG Target column.",
+            "name": "DACAT",
+            "ordinal": "7",
+            "prompt": "[Treatment Type]; NULL",
+            "questionText": "What was the type of treatment for which drug accountability was assessed?",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "implements": {
+                    "href": "/mdr/cdash/1-2/classes/Findings/fields/--SCAT",
+                    "title": "Subcategory",
+                    "type": "Class Variable"
+                },
+                "parentDomain": {
+                    "href": "/mdr/cdashig/2-2/domains/DA",
+                    "title": "Drug Accountability",
+                    "type": "CDASH Domain"
+                },
+                "parentProduct": {
+                    "href": "/mdr/cdashig/2-2",
+                    "title": "Clinical Data Acquisition Standards Harmonization Implementation Guide for Human Clinical Trials Version 2.2",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/cdashig/2-1/domains/DA/fields/DASCAT",
+                    "title": "DA Subcategory of Assessment",
+                    "type": "Data Collection Field"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/cdashig/domains/DA/fields/DASCAT",
+                    "title": "DA Subcategory of Assessment",
+                    "type": "Root Data Element"
+                },
+                "sdtmigDatasetMappingTargets": [
+                    {
+                        "href": "/mdr/sdtmig/3-3/datasets/DA/variables/DASCAT",
+                        "title": "Subcategory",
+                        "type": "SDTM Dataset Variable"
+                    }
+                ],
+                "self": {
+                    "href": "/mdr/cdashig/2-2/domains/DA/fields/DASCAT",
+                    "title": "DA Subcategory of Assessment",
+                    "type": "Data Collection Field"
+                }
+            },
+            "completionInstructions": "Record the name of the study treatment dispensed/returned (e.g., Bottle A, Bottle B).",
+            "core": "O",
+            "definition": "A sub-division of the DACAT values based on user-defined characteristics.",
+            "implementationNotes": "Sponsor-defined controlled terminology. This would most commonly be pre-printed on the CRF or screen and pre-populated in the data management system. This is not typically a question to which the site would provide an answer. If known at the time of data collection, the treatment name may be collected in DASCAT (with appropriate grouping values, but different from those for DACAT). See SDTMIG DA domain examples for populating DACAT and DASCAT. DASCAT can only be used if there is an DACAT, and it must be a subcategorization of DACAT.",
+            "label": "DA Subcategory of Assessment",
+            "mappingInstructions": "Maps directly to the SDTMIG variable listed in the SDTMIG Target column.",
+            "name": "DASCAT",
+            "ordinal": "8",
+            "prompt": "[Treatment Name]; NULL",
+            "questionText": "What was the name of the treatment for which drug accountability was assessed?",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "implements": {
+                    "href": "/mdr/cdash/1-2/classes/Timing/fields/--DAT",
+                    "title": "Collection Date",
+                    "type": "Class Variable"
+                },
+                "parentDomain": {
+                    "href": "/mdr/cdashig/2-2/domains/DA",
+                    "title": "Drug Accountability",
+                    "type": "CDASH Domain"
+                },
+                "parentProduct": {
+                    "href": "/mdr/cdashig/2-2",
+                    "title": "Clinical Data Acquisition Standards Harmonization Implementation Guide for Human Clinical Trials Version 2.2",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/cdashig/2-1/domains/DA/fields/DADAT",
+                    "title": "Drug Accountability Date",
+                    "type": "Data Collection Field"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/cdashig/domains/DA/fields/DADAT",
+                    "title": "Drug Accountability Date",
+                    "type": "Root Data Element"
+                },
+                "sdtmigDatasetMappingTargets": [
+                    {
+                        "href": "/mdr/sdtmig/3-3/datasets/DA/variables/DADTC",
+                        "title": "Date/Time of Collection",
+                        "type": "SDTM Dataset Variable"
+                    }
+                ],
+                "self": {
+                    "href": "/mdr/cdashig/2-2/domains/DA/fields/DADAT",
+                    "title": "Drug Accountability Date",
+                    "type": "Data Collection Field"
+                }
+            },
+            "completionInstructions": "Record the exact date the study treatment was (dispensed or returned), using this format (DD-MON-YYYY).",
+            "core": "R/C",
+            "definition": "The date the study treatment was dispensed or returned, represented in an unambiguous date format (e.g., DD-MON-YYYY).",
+            "implementationNotes": "The date study treatment dispensed/returned should be recorded for each dispensation for a study with multiple periods or multiple products dispensed.",
+            "label": "Drug Accountability Date",
+            "mappingInstructions": "This does not map directly to an SDTMIG variable. For the SDTM submission dataset, concatenate all collected CDASH DATE and TIME components and populate the SDTMIG variable DADTC in ISO 8601 format.",
+            "name": "DADAT",
+            "ordinal": "9",
+            "prompt": "Date",
+            "questionText": "What was the date the drug accountability assessment was performed?",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "implements": {
+                    "href": "/mdr/cdash/1-2/classes/Identifiers/fields/--REFID",
+                    "title": "Reference ID",
+                    "type": "Class Variable"
+                },
+                "parentDomain": {
+                    "href": "/mdr/cdashig/2-2/domains/DA",
+                    "title": "Drug Accountability",
+                    "type": "CDASH Domain"
+                },
+                "parentProduct": {
+                    "href": "/mdr/cdashig/2-2",
+                    "title": "Clinical Data Acquisition Standards Harmonization Implementation Guide for Human Clinical Trials Version 2.2",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/cdashig/2-1/domains/DA/fields/DAREFID",
+                    "title": "Drug Accountability Reference ID",
+                    "type": "Data Collection Field"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/cdashig/domains/DA/fields/DAREFID",
+                    "title": "Drug Accountability Reference ID",
+                    "type": "Root Data Element"
+                },
+                "sdtmigDatasetMappingTargets": [
+                    {
+                        "href": "/mdr/sdtmig/3-3/datasets/DA/variables/DAREFID",
+                        "title": "Reference ID",
+                        "type": "SDTM Dataset Variable"
+                    }
+                ],
+                "self": {
+                    "href": "/mdr/cdashig/2-2/domains/DA/fields/DAREFID",
+                    "title": "Drug Accountability Reference ID",
+                    "type": "Data Collection Field"
+                }
+            },
+            "completionInstructions": "Record treatment label identifier.",
+            "core": "O",
+            "definition": "An internal or external identifier such as treatment label identifier (e.g., kit number, bottle label, vial identifier).",
+            "implementationNotes": "For the SDTM submission dataset, DAREFID should be used to tie together a block of related records and to link dispensed product to returned product. The packaging identifier (e.g., kit number, bottle label, vial identifier) may be collected in different ways (e.g., affixing label onto CRF, scanning a bar code). For some study dosing regimens, greater granularity for treatment identifiers may be needed. In this situation, sponsors may need to use additional identifier variables.",
+            "label": "Drug Accountability Reference ID",
+            "mappingInstructions": "Maps directly to the SDTMIG variable listed in the SDTMIG Target column.",
+            "name": "DAREFID",
+            "ordinal": "10",
+            "prompt": "Treatment Label Identifier",
+            "questionText": "What was the treatment label identifier?",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "codelist": [
+                    {
+                        "href": "/mdr/root/ct/sdtmct/codelists/C78731",
+                        "title": "Version-agnostic anchor resource for codelist C78731",
+                        "type": "Root Value Domain"
+                    }
+                ],
+                "implements": {
+                    "href": "/mdr/cdash/1-2/classes/Findings/fields/--TEST",
+                    "title": "Name of Measurement, Test, or Exam",
+                    "type": "Class Variable"
+                },
+                "parentDomain": {
+                    "href": "/mdr/cdashig/2-2/domains/DA",
+                    "title": "Drug Accountability",
+                    "type": "CDASH Domain"
+                },
+                "parentProduct": {
+                    "href": "/mdr/cdashig/2-2",
+                    "title": "Clinical Data Acquisition Standards Harmonization Implementation Guide for Human Clinical Trials Version 2.2",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/cdashig/2-1/domains/DA/fields/DATEST",
+                    "title": "Name of Accountability Assessment",
+                    "type": "Data Collection Field"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/cdashig/domains/DA/fields/DATEST",
+                    "title": "Name of Accountability Assessment",
+                    "type": "Root Data Element"
+                },
+                "sdtmigDatasetMappingTargets": [
+                    {
+                        "href": "/mdr/sdtmig/3-3/datasets/DA/variables/DATEST",
+                        "title": "Name of Accountability Assessment",
+                        "type": "SDTM Dataset Variable"
+                    },
+                    {
+                        "href": "/mdr/sdtmig/3-3/datasets/DA/variables/DATESTCD",
+                        "title": "Short Name of Accountability Assessment",
+                        "type": "SDTM Dataset Variable"
+                    }
+                ],
+                "self": {
+                    "href": "/mdr/cdashig/2-2/domains/DA/fields/DATEST",
+                    "title": "Name of Accountability Assessment",
+                    "type": "Data Collection Field"
+                }
+            },
+            "completionInstructions": "Record the name of the drug accountability assessment if not pre-printed on the CRF. If collected on the CRF, the sponsor may provide additional instructions to ensure the data is entered as intended.",
+            "core": "HR",
+            "definition": "Descriptive name of the measurement or finding (e.g., dispensed, returned).",
+            "implementationNotes": "Required to identify which test the result is for. It is recommended that the test names pre-printed on the CRF rather than collected in a field that requires the site to enter text. If the form is laid out as a grid, then words such as \"Test\" can be included as the column heading. For a study with multiple periods or multiple products dispensed, drug accountability amounts should be assessed for each dispensation.",
+            "label": "Name of Accountability Assessment",
+            "mappingInstructions": "Maps directly to the SDTMIG variable listed in the SDTMIG Target column. The SDTMIG variable DATESTCD may be determined from the value collected in the CDASH field DATEST. The SDTMIG variables DATESTCD and DATEST are required in the SDTM submission datasets. Use appropriate CDISC Controlled Terminology for the test and test code.",
+            "name": "DATEST",
+            "ordinal": "11",
+            "prompt": "[Drug Accountability Test Name]",
+            "questionText": "What was the drug accountability being assessed?",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "implements": {
+                    "href": "/mdr/cdash/1-2/classes/Findings/fields/--ORRES",
+                    "title": "Result or Finding in Original Units",
+                    "type": "Class Variable"
+                },
+                "parentDomain": {
+                    "href": "/mdr/cdashig/2-2/domains/DA",
+                    "title": "Drug Accountability",
+                    "type": "CDASH Domain"
+                },
+                "parentProduct": {
+                    "href": "/mdr/cdashig/2-2",
+                    "title": "Clinical Data Acquisition Standards Harmonization Implementation Guide for Human Clinical Trials Version 2.2",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/cdashig/2-1/domains/DA/fields/DAORRES",
+                    "title": "DA Assessment Result in Original Units",
+                    "type": "Data Collection Field"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/cdashig/domains/DA/fields/DAORRES",
+                    "title": "DA Assessment Result in Original Units",
+                    "type": "Root Data Element"
+                },
+                "sdtmigDatasetMappingTargets": [
+                    {
+                        "href": "/mdr/sdtmig/3-3/datasets/DA/variables/DAORRES",
+                        "title": "Result or Finding in Original Units",
+                        "type": "SDTM Dataset Variable"
+                    }
+                ],
+                "self": {
+                    "href": "/mdr/cdashig/2-2/domains/DA/fields/DAORRES",
+                    "title": "DA Assessment Result in Original Units",
+                    "type": "Data Collection Field"
+                }
+            },
+            "completionInstructions": "Record the actual amount of treatment dispensed or returned.",
+            "core": "HR",
+            "definition": "Result of the drug accountability assessment as originally dispensed or returned (e.g., actual amount).",
+            "implementationNotes": "For a study with multiple periods or multiple products dispensed, drug accountability amounts should be assessed for each dispensation.",
+            "label": "DA Assessment Result in Original Units",
+            "mappingInstructions": "Maps directly to the SDTMIG variable listed in the SDTMIG Target column.",
+            "name": "DAORRES",
+            "ordinal": "12",
+            "prompt": "Amount",
+            "questionText": "What is the result of the drug accountability assessment?",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "codelist": [
+                    {
+                        "href": "/mdr/root/ct/sdtmct/codelists/C71620",
+                        "title": "Version-agnostic anchor resource for codelist C71620",
+                        "type": "Root Value Domain"
+                    },
+                    {
+                        "href": "/mdr/root/ct/cdashct/codelists/C78421",
+                        "title": "Version-agnostic anchor resource for codelist C78421",
+                        "type": "Root Value Domain"
+                    }
+                ],
+                "implements": {
+                    "href": "/mdr/cdash/1-2/classes/Findings/fields/--ORRESU",
+                    "title": "Original Units",
+                    "type": "Class Variable"
+                },
+                "parentDomain": {
+                    "href": "/mdr/cdashig/2-2/domains/DA",
+                    "title": "Drug Accountability",
+                    "type": "CDASH Domain"
+                },
+                "parentProduct": {
+                    "href": "/mdr/cdashig/2-2",
+                    "title": "Clinical Data Acquisition Standards Harmonization Implementation Guide for Human Clinical Trials Version 2.2",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/cdashig/2-1/domains/DA/fields/DAORRESU",
+                    "title": "DA Original Units",
+                    "type": "Data Collection Field"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/cdashig/domains/DA/fields/DAORRESU",
+                    "title": "DA Original Units",
+                    "type": "Root Data Element"
+                },
+                "sdtmigDatasetMappingTargets": [
+                    {
+                        "href": "/mdr/sdtmig/3-3/datasets/DA/variables/DAORRESU",
+                        "title": "Original Units",
+                        "type": "SDTM Dataset Variable"
+                    }
+                ],
+                "self": {
+                    "href": "/mdr/cdashig/2-2/domains/DA/fields/DAORRESU",
+                    "title": "DA Original Units",
+                    "type": "Data Collection Field"
+                }
+            },
+            "completionInstructions": "Record or select the original units in which these data were collected, if not pre-printed on CRF.",
+            "core": "HR",
+            "definition": "The unit of the result as originally received or collected.",
+            "implementationNotes": "Should be pre-printed on the CRF with the associated test when possible, rather than collected in a free-text field.",
+            "label": "DA Original Units",
+            "mappingInstructions": "Maps directly to the SDTMIG variable listed in the SDTMIG Target column.",
+            "name": "DAORRESU",
+            "ordinal": "13",
+            "prompt": "Unit",
+            "questionText": "What was the unit?",
+            "simpleDatatype": "Char"
+        }
+    ],
+    "label": "Drug Accountability",
+    "name": "DA",
+    "ordinal": "6"
+}

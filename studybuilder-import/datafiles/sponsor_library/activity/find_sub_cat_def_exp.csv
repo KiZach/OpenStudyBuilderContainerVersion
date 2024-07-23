@@ -1,0 +1,714 @@
+"CT_CD_LIST_SUBMVAL","CT_SUBMVAL","CT_NAME","DEFINITION",ORDER,CT_CD,NCI_PREFERRED_NAME,NAME_SUBMVAL
+"FIND_SUB_CAT_DEF","ABERRANT MOTOR BEHAVIOR FIND_SUB_CAT","Aberrant Motor Behavior","ABERRANT MOTOR BEHAVIOR subcategory for Neuropsychiatric Inventory (NPI) (copyright JL Cummings, 1994, all rights reserved; permission for commercial use required; npiTEST.net)",1,,,
+"FIND_SUB_CAT_DEF","ABILITY TO DO THINGS - NEED TO DO FIND_SUB_CAT","Ability to Do Things You Need to Do",,1,,,
+"FIND_SUB_CAT_DEF","ABILITY TO DO THINGS - WOULD LIKE TO DO FIND_SUB_CAT","Ability to Do Things You Would Like to","Ability to Do Things You Would Like to Do subcategory for Patient Global Impression",1,,,
+"FIND_SUB_CAT_DEF","ABILITY TO WALK FIND_SUB_CAT","Ability to Walk","Ability to Walk subcategory for Patient Global Impression",1,,,
+"FIND_SUB_CAT_DEF","ABOUT SCHOOL FIND_SUB_CAT","About School","Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Children's Long Version Age Group II
+
+Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Children's Long Version Age Group III
+
+About School",1,,,
+"FIND_SUB_CAT_DEF","ABOUT YOUR FAMILY FIND_SUB_CAT","About Your Family","Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Children's Long Version Age Group III
+
+About your Family",1,,,
+"FIND_SUB_CAT_DEF","ABOUT YOUR FRIENDS FIND_SUB_CAT","About Your Friends","Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Children's Long Version Age Group III
+
+About your Friends",1,,,
+"FIND_SUB_CAT_DEF","ABSTRACTION FIND_SUB_CAT","Abstraction","Subcategory for Montreal Cognitive Assessment (MoCA) with individual items.",1,,,
+"FIND_SUB_CAT_DEF","ACS ANGIOGRAPHY FIND_SUB_CAT","ACS Angiography","Was angiography performed?
+",1,,,
+"FIND_SUB_CAT_DEF","ACS CHANGE IN CARDIAC BIOMARKER FIND_SUB_CAT","ACS Changes in Cardiac Biomarkers","Was the diagnosis supported by a change in cardiac biomarkers?
+",1,,,
+"FIND_SUB_CAT_DEF","ACS CORONARY REVASCULARISATION FIND_SUB_CAT","ACS Coronary Revascularisation","Was coronary revascularisation performed?
+",1,,,
+"FIND_SUB_CAT_DEF","ACS ECG CHANGES FIND_SUB_CAT","ACS ECG Changes","Were there any clinically significant ECG changes?
+",1,,,
+"FIND_SUB_CAT_DEF","ACS STRESS TESTING FIND_SUB_CAT","ACS Stress Testing","Was stress testing performed?
+",1,,,
+"FIND_SUB_CAT_DEF","ACTIONS TAKEN TO ENSURE GLYCAEMIC CONTROL FIND_SUB_CAT","Actions Taken to Ensure Glycaemic Contro","Actions Taken to Ensure Glycaemic Control
+",1,,,
+"FIND_SUB_CAT_DEF","ACUTE CORONARY SYNDROME FIND_SUB_CAT","Acute Coronary Syndrome","Sponsor-defined:
+Acute Coronary Syndrome Adverse Event Reporting
+",1,,,
+"FIND_SUB_CAT_DEF","ACUTE GALLSTONE DISEASE FIND_SUB_CAT","Acute gallstone disease","Sponsor-defined: Acute gallstone disease
+Adverse Event Reporting",1,,,
+"FIND_SUB_CAT_DEF","ACUTE KIDNEY INJURY BIOPSY FIND_SUB_CAT","AKI Biopsy","Acute Kidney Injury: Kidney Biopsy details",1,,,
+"FIND_SUB_CAT_DEF","ACUTE KIDNEY INJURY CONDITIONS FIND_SUB_CAT","AKI Conditions","Acute Kidney Injury: Was there evidence or suspicion of conditions which could explain or have contributed to the event",1,,,
+"FIND_SUB_CAT_DEF","ACUTE KIDNEY INJURY IMAGING FIND_SUB_CAT","AKI Imaging","Acute Kidney Injury: Imaging details",1,,,
+"FIND_SUB_CAT_DEF","ACUTE KIDNEY INJURY NEPHROTOXIC TREATMENTS FIND_SUB_CAT","AKI Nephrotoxic Treatment","Acute Kidney Injury: Has the subject received any nephrotoxic drug(s)/agent(s) within the last 3 months",1,,,
+"FIND_SUB_CAT_DEF","ACUTE KIDNEY INJURY PRESENT FIND_SUB_CAT","AKI Presence of Event","Acute Kidney Injury: How did the event present itself",1,,,
+"FIND_SUB_CAT_DEF","ACUTE PANCREATITIS SIGNS AND SYMPTOMS FIND_SUB_CAT","APAN Acute Pancreatitis Signs and Symp","Acute Pancreatitis Signs and Symptoms 
+Were other signs/symptoms present during the course of the event?",1,,,
+"FIND_SUB_CAT_DEF","AE OUTCOME MOTHER FIND_SUB_CAT","AE Outcome Mother","AE Outcome Mother
+",1,,,
+"FIND_SUB_CAT_DEF","AGE FIND_SUB_CAT","Age","Age subcategory for e.g. inclusion or exclusion criteria
+",11,,,
+"FIND_SUB_CAT_DEF","AGITATION/AGGRESSION FIND_SUB_CAT","Agitation/Aggression","AGITATION/AGGRESSION subcategory for Neuropsychiatric Inventory (NPI) (copyright JL Cummings, 1994, all rights reserved; permission for commercial use required; npiTEST.net)",1,,,
+"FIND_SUB_CAT_DEF","ANXIETY FIND_SUB_CAT","Anxiety","ANXIETY subcategory for Neuropsychiatric Inventory (NPI) (copyright JL Cummings, 1994, all rights reserved; permission for commercial use required; npiTEST.net)",1,,,
+"FIND_SUB_CAT_DEF","APATHY/INDIFFERENCE FIND_SUB_CAT","Apathy/Indifference","APATHY/INDIFFERENCE subcategory for Neuropsychiatric Inventory (NPI) (copyright JL Cummings, 1994, all rights reserved; permission for commercial use required; npiTEST.net)",1,,,
+"FIND_SUB_CAT_DEF","APPETITE AND EATING DISORDERS FIND_SUB_CAT","Appetite and Eating Disorders","APPETITE AND EATING DISORDERS subcategory for Neuropsychiatric Inventory (NPI) (copyright JL Cummings, 1994, all rights reserved; permission for commercial use required; npiTEST.net)",1,,,
+"FIND_SUB_CAT_DEF","ARMS FIND_SUB_CAT","Arms","Arms subcategory for Pediatric Hemophilia Activities List Parents' version.
+An activities questionnaire for children and teenagers aged 4-17 with haemophilia V0.12",1,,,
+"FIND_SUB_CAT_DEF","ARRHYTHMIA CLASSIFICATION FIND_SUB_CAT","Arrhythmia Classification","Arrhythmia classification",1,,,
+"FIND_SUB_CAT_DEF","ARRHYTHMIA LIKELY CAUSE FIND_SUB_CAT","Arrhythmia Likely Cause","Arrhythmia likely cause",1,,,
+"FIND_SUB_CAT_DEF","ARRHYTHMIA TREATMENT FIND_SUB_CAT","Arrhythmia Treatment","Arrhythmia treatment",1,,,
+"FIND_SUB_CAT_DEF","ATTENTION FIND_SUB_CAT","Attention","Subcategory for Montreal Cognitive Assessment (MoCA) with individual items.",1,,,
+"FIND_SUB_CAT_DEF","ATTENTION AND CALCULATION (SERIAL 7S) FIND_SUB_CAT","Attention and Calculation (Serial 7S)","Attention and calculation (serial 7s) subcategory for Mini-Mental State Examination (MMSE) (MMSE Copyright 1975, 1998, 2001 by MiniMental, LLC All rights reserved. Published 2001 by Psychological Assessment Resources, Inc. May not be reproduced in whole or in part in any form or by any means without written permission of Psychological Assessment Resources, Inc.).",1,,,
+"FIND_SUB_CAT_DEF","BARRIERS IN INSULIN TREATMENT FIND_SUB_CAT","Barriers in Insulin Treatment","Barriers in Insulin Treatment",257,,,
+"FIND_SUB_CAT_DEF","BES FIND_SUB_CAT","Binge Eating Scale","Binge Eating Scale
+",21,,,
+"FIND_SUB_CAT_DEF","BLEEDS FIND_SUB_CAT","Bleeds","Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group I (4-7 years).
+
+Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group II (8-12 years).
+
+Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group III (13-16 years).
+
+Bleeds",1,,,
+"FIND_SUB_CAT_DEF","BMI FIND_SUB_CAT","BMI","BMI subcategory for e.g. inclusion or exclusion criteria
+",22,,,
+"FIND_SUB_CAT_DEF","BODY ESTEEM FIND_SUB_CAT","Body Esteem","BODY ESTEEM subcategory for Impact of Weight on Quality of Life Kids Questionnaire",1,,,
+"FIND_SUB_CAT_DEF","BURDEN FIND_SUB_CAT","Burden","Burden",103,,,
+"FIND_SUB_CAT_DEF","BURDEN OF DISEASE PREDOMINANT REASON FIND_SUB_CAT","Burden of Disease Predominant Reason","Burden of disease predominant reason",1,,,
+"FIND_SUB_CAT_DEF","C-SSRS FIND_SUB_CAT","Columbia Suicidality Sev. Rating Scale","Columbia Suicidality Severity Rating Scale
+",30,,,
+"FIND_SUB_CAT_DEF","CAREGIVER HEALTH CARE RESOURCE UTILISATION FIND_SUB_CAT","CG Health Care Resource Utilisation","Caregiver Health Care Resource Utilisation subcategory for the Resource Utilisation in Dementia Questionnaire",4,,,
+"FIND_SUB_CAT_DEF","CAREGIVER TIME FIND_SUB_CAT","Caregiver Time","Caregiver Time subcategory for the Resource Utilisation in Dementia Questionnaire",2,,,
+"FIND_SUB_CAT_DEF","CAREGIVER WORK STATUS FIND_SUB_CAT","Caregiver Work Status","Caregiver Work Status subcategory for the Resource Utilisation in Dementia Questionnaire",3,,,
+"FIND_SUB_CAT_DEF","CENTRE/HOSPITAL FIND_SUB_CAT","Center/Hospital","Center/Hospital",105,,,
+"FIND_SUB_CAT_DEF","CEREBROVASCULAR CONDITIONS FIND_SUB_CAT","CEE Conditions","Were any conditions present that may have contributed to this event?
+",1,,,
+"FIND_SUB_CAT_DEF","CEREBROVASCULAR EVENT FIND_SUB_CAT","Cerebrovascular event","Sponsor-defined: Cerebrovascular event
+Adverse Event Reporting
+CDISC has 3 different strokes:
+1. HEMORRHAGIC STROKE (Hemorrhagic Cerebrovascular Accident) C95803
+2. ISCHEMIC STROKE (Ischemic Cerebrovascular Accident) C95802
+3. UNDETERMINED STROKE (Cerebrovascular Accident) C3390",1,,,
+"FIND_SUB_CAT_DEF","CEREBROVASCULAR NEUROLOGIC SYMPTOMS FIND_SUB_CAT","CEE Neurologic Symptoms","Were there neurologic signs/symptoms of motor and/or sensory loss?
+",1,,,
+"FIND_SUB_CAT_DEF","CEREBROVASCULAR SIGNS AND SYMPTOMS FIND_SUB_CAT","CEE Signs and Symptoms","Were any of the following signs/symptoms present?
+",1,,,
+"FIND_SUB_CAT_DEF","CEREBROVASCULAR TREATMENT FIND_SUB_CAT","CEE Treatment","Was any treatment(s) given for this condition?
+",1,,,
+"FIND_SUB_CAT_DEF","CEREBROVASCULAR TYPE FIND_SUB_CAT","CEE Type","Type of cerebrovascular event
+",1,,,
+"FIND_SUB_CAT_DEF","CHAIN AMYLOIDOSIS EXCLUDED FIND_SUB_CAT","Chain Amyloidosis Excluded","Chain Amyloidosis Excluded",1,,,
+"FIND_SUB_CAT_DEF","CHOI 2011 FIND_SUB_CAT","Choi 2011","Actigraph - CHOI 2011",1,,,
+"FIND_SUB_CAT_DEF","CHRONIC PANCREATITIS HISTORY COMPLICATIONS FIND_SUB_CAT","Chronic Pancreatitis History Complicatio","Chronic Pancreatitis History Complications
+",1,,,
+"FIND_SUB_CAT_DEF","CHRONIC PANCREATITIS HISTORY DIAGNOSIS FIND_SUB_CAT","Chronic Pancreatitis History Diagnosis","Chronic Pancreatitis History Diagnosis",1,,,
+"FIND_SUB_CAT_DEF","CHRONIC PANCREATITIS HISTORY PRIMARY AETIOLOGY FIND_SUB_CAT","Chron Pancreatitis His Primary Aetiology","Chronic Pancreatitis History Primary Aetiology",1,,,
+"FIND_SUB_CAT_DEF","COGNITIVE RESTRAINT FIND_SUB_CAT","Cognitive Restraint","Three Factor Eating Questionnaire (TFEQ)
+",1,,,
+"FIND_SUB_CAT_DEF","COMMANDS FIND_SUB_CAT","Commands","Subcategory for Alzheimer's Disease Assessment Scale - Cognitive Behavior Version 13 (ADAS-Cog V13) - Commands",1,,,
+"FIND_SUB_CAT_DEF","COMMUNICATING FIND_SUB_CAT","Communicating","Communicating",6,,,
+"FIND_SUB_CAT_DEF","COMPREHENSIO FIND_SUB_CAT","Comprehension","Subcategory for Alzheimer's Disease Assessment Scale - Cognitive Behavior Version 13 (ADAS-Cog V13) - Comprehension",1,,,
+"FIND_SUB_CAT_DEF","COMPREHENSION FIND_SUB_CAT","Comprehension","Comprehension subcategory for Mini-Mental State Examination (MMSE) (MMSE Copyright 1975, 1998, 2001 by MiniMental, LLC All rights reserved. Published 2001 by Psychological Assessment Resources, Inc. May not be reproduced in whole or in part in any form or by any means without written permission of Psychological Assessment Resources, Inc.).",1,,,
+"FIND_SUB_CAT_DEF","CONSTRUCTIONAL PRAXIS FIND_SUB_CAT","Constructional Praxis","Subcategory for Alzheimer's Disease Assessment Scale - Cognitive Behavior Version 13 (ADAS-Cog V13) - Constructional Praxis",1,,,
+"FIND_SUB_CAT_DEF","CRANIAL NERVES FIND_SUB_CAT","Cranial Nerves","Cranial Nerves subcategory for Clinical Neuropathy Assessment. Neuropathy Impairment Score (NIS). Dyck et al: Ann Neurol 8:590-596, 1980; Revised, Neurol 41:799-807, 1991 and Neurol 45:1115-1121, 1995",1,,,
+"FIND_SUB_CAT_DEF","DATA COLLECTION TIME FIND_SUB_CAT","Data Collection Time","Actigraph - Data collection time",1,,,
+"FIND_SUB_CAT_DEF","DAY-TO-DAY ACTIVITIES FIND_SUB_CAT","Day-to-Day Activities","Day To Day Activities Sub Category for NASH CHECK Questionnaire",1,,,
+"FIND_SUB_CAT_DEF","DEALING WITH HAEMOPHILIA FIND_SUB_CAT","Dealing with Haemophilia","Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group II (8-12 years).
+
+Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group III (13-16 years).
+
+Dealing with Haemophilia",1,,,
+"FIND_SUB_CAT_DEF","DECLINE 3.0 MMOL/L FIND_SUB_CAT","Decline 3.0 mmol/L","Decline 3.0 mmol/L",1,,,
+"FIND_SUB_CAT_DEF","DECLINE 3.9 MMOL/L FIND_SUB_CAT","Decline 3.9 mmol/L","Decline 3.9 mmol/L",1,,,
+"FIND_SUB_CAT_DEF","DECLINE 5.5 MMOL/L FIND_SUB_CAT","Decline 5.5 mmol/L","Decline 5.5 mmol/L",1,,,
+"FIND_SUB_CAT_DEF","DELAYED RECALL FIND_SUB_CAT","Delayed Recall","Subcategory for Montreal Cognitive Assessment (MoCA) with individual items.",1,,,
+"FIND_SUB_CAT_DEF","DELAYED WORD RECALL FIND_SUB_CAT","Delayed Word Recall","Subcategory for Alzheimer's Disease Assessment Scale - Cognitive Behavior Version 13 (ADAS-Cog V13) - Delayed Word Recall",1,,,
+"FIND_SUB_CAT_DEF","DELIVERY FIND_SUB_CAT","Delivery","Delivery",41,,,
+"FIND_SUB_CAT_DEF","DELUSIONS FIND_SUB_CAT","Delusions","DELUSIONS subcategory for Neuropsychiatric Inventory (NPI) (copyright JL Cummings, 1994, all rights reserved; permission for commercial use required; npiTEST.net)",1,,,
+"FIND_SUB_CAT_DEF","DENTAL STATUS FIND_SUB_CAT","Dental Status","Dental Status subcategory for Abnormal Involuntary Movement Scale. 
+(Guy W. Ed. ECDEU Assessment Manual for Psychopharmacology. Rockville MD: US Dept of Health, Education and Welfare. 1976, Publication No. (ADM) 76-338)",1,,,
+"FIND_SUB_CAT_DEF","DEPRESSION RISK FACTORS FIND_SUB_CAT","Depression Risk Factors","Depression Risk Factors
+",1,,,
+"FIND_SUB_CAT_DEF","DEPRESSION SIGNS AND SYMPTOMS FIND_SUB_CAT","Depression Signs and Symptoms","Depression Signs and Symptoms
+",1,,,
+"FIND_SUB_CAT_DEF","DEPRESSION TREATMENT FIND_SUB_CAT","Depression Treatment","Depression Treatment
+",1,,,
+"FIND_SUB_CAT_DEF","DEPRESSION/DYSPHORIA FIND_SUB_CAT","Depression/Dysphoria","DEPRESSION/DYSPHORIA subcategory for Neuropsychiatric Inventory (NPI) (copyright JL Cummings, 1994, all rights reserved; permission for commercial use required; npiTEST.net)",1,,,
+"FIND_SUB_CAT_DEF","DESCRIPTION OF PRIMARY CAREGIVER FIND_SUB_CAT","Description of Primary Caregiver","Description of Primary Caregiver subcategory for the Resource Utilisation in Dementia Questionnaire",1,,,
+"FIND_SUB_CAT_DEF","DEVICE USABILITY 1 FIND_SUB_CAT","Device Usability 1","Device Usability 1 questionnaire-like form (visit 1)",1,,,
+"FIND_SUB_CAT_DEF","DEVICE USABILITY 2 FIND_SUB_CAT","Device Usability 2","Device Usability 2 questionnaire-like form (visit 2)",1,,,
+"FIND_SUB_CAT_DEF","DEVICE USABILITY 3 FIND_SUB_CAT","Device Usability 3","Device Usability 3 questionnaire-like form (visit 3)",1,,,
+"FIND_SUB_CAT_DEF","DHP FIND_SUB_CAT","Diabetes Health Profile","Diabetes Health Profile Questionnaire (DHP)",41,,,
+"FIND_SUB_CAT_DEF","DIABETES SEVERITY FIND_SUB_CAT","Diabetes Severity","Diabetes Severity subcategory for Patient Global Impression",1,,,
+"FIND_SUB_CAT_DEF","DIABETIC RETINOPATHY FIND_SUB_CAT","Diabetic retinopathy","Sponsor-defined: Diabetic retinopathy
+Adverse Event Reporting",1,,,
+"FIND_SUB_CAT_DEF","DIAGNOSED BY FIND_SUB_CAT","Diagnosed by","ATTR diagnosed by",1,,,
+"FIND_SUB_CAT_DEF","DIFFERENTIAL COUNT FIND_SUB_CAT","Differential count","Differential count",43,,,
+"FIND_SUB_CAT_DEF","DIFFICULTY PERFORMING DAILY ACTIVITIES FIND_SUB_CAT","Difficulty Performing Daily Activities","DIFFICULTY PERFORMING DAILY ACTIVITIES subcategory for WOMAC Osteoarthritis Index NRS V3.1",1,,,
+"FIND_SUB_CAT_DEF","DISEASE FIND_SUB_CAT","Disease","Disease subcategory for e.g. inclusion or exclusion criteria
+",43,,,
+"FIND_SUB_CAT_DEF","DISINHIBITION FIND_SUB_CAT","Disinhibition","DISINHIBITION subcategory for Neuropsychiatric Inventory (NPI) (copyright JL Cummings, 1994, all rights reserved; permission for commercial use required; npiTEST.net)",1,,,
+"FIND_SUB_CAT_DEF","DOMAIN 1: CARDIOVASCULAR INCLUDING FALLS FIND_SUB_CAT","Domain 1: Cardiovascular Including Falls","Domain 1: Cardiovascular including falls subcategory for Non-Motor Symptom Assessment Scale for Parkinson's Disease. The Non-Motor Symptoms Scale (NMSS) is a 30-item rater-based scale to assess a wide range of non-motor symptoms in patients with Parkinson's disease (PD). The NMSS measures the severity and frequency of non-motor symptoms across nine dimensions. The scale can be used for patients at all stages of PD. 2007",1,,,
+"FIND_SUB_CAT_DEF","DOMAIN 2: SLEEP/FATIGUE FIND_SUB_CAT","Domain 2: Sleep/Fatigue","Domain 2: Sleep/fatigue subcategory for Non-Motor Symptom Assessment Scale for Parkinson's Disease. The Non-Motor Symptoms Scale (NMSS) is a 30-item rater-based scale to assess a wide range of non-motor symptoms in patients with Parkinson's disease (PD). The NMSS measures the severity and frequency of non-motor symptoms across nine dimensions. The scale can be used for patients at all stages of PD. 2007",2,,,
+"FIND_SUB_CAT_DEF","DOMAIN 3: MOOD/COGNITION FIND_SUB_CAT","Domain 3: Mood/Cognition","Domain 3: Mood/Cognition subcategory for Non-Motor Symptom Assessment Scale for Parkinson's Disease. The Non-Motor Symptoms Scale (NMSS) is a 30-item rater-based scale to assess a wide range of non-motor symptoms in patients with Parkinson's disease (PD). The NMSS measures the severity and frequency of non-motor symptoms across nine dimensions. The scale can be used for patients at all stages of PD. 2007",3,,,
+"FIND_SUB_CAT_DEF","DOMAIN 4: PERCEPTUAL PROBLEMS/HALLUCINATIONS FIND_SUB_CAT","Domain 4: Perceptual Problems/Hallucinat","Domain 4: Perceptual problems/hallucinations subcategory for Non-Motor Symptom Assessment Scale for Parkinson's Disease. The Non-Motor Symptoms Scale (NMSS) is a 30-item rater-based scale to assess a wide range of non-motor symptoms in patients with Parkinson's disease (PD). The NMSS measures the severity and frequency of non-motor symptoms across nine dimensions. The scale can be used for patients at all stages of PD. 2007",4,,,
+"FIND_SUB_CAT_DEF","DOMAIN 5: ATTENTION/MEMORY FIND_SUB_CAT","Domain 5: Attention/Memory","Domain 5: Attention/memory subcategory for Non-Motor Symptom Assessment Scale for Parkinson's Disease. The Non-Motor Symptoms Scale (NMSS) is a 30-item rater-based scale to assess a wide range of non-motor symptoms in patients with Parkinson's disease (PD). The NMSS measures the severity and frequency of non-motor symptoms across nine dimensions. The scale can be used for patients at all stages of PD. 2007",5,,,
+"FIND_SUB_CAT_DEF","DOMAIN 6: GASTROINTESTINAL TRACT FIND_SUB_CAT","Domain 6: Gastrointestinal Tract","Domain 6: Gastrointestinal tract subcategory for Non-Motor Symptom Assessment Scale for Parkinson's Disease. The Non-Motor Symptoms Scale (NMSS) is a 30-item rater-based scale to assess a wide range of non-motor symptoms in patients with Parkinson's disease (PD). The NMSS measures the severity and frequency of non-motor symptoms across nine dimensions. The scale can be used for patients at all stages of PD. 2007",6,,,
+"FIND_SUB_CAT_DEF","DOMAIN 7: URINARY FIND_SUB_CAT","Domain 7: Urinary","Domain 7: Urinary subcategory for Non-Motor Symptom Assessment Scale for Parkinson's Disease. The Non-Motor Symptoms Scale (NMSS) is a 30-item rater-based scale to assess a wide range of non-motor symptoms in patients with Parkinson's disease (PD). The NMSS measures the severity and frequency of non-motor symptoms across nine dimensions. The scale can be used for patients at all stages of PD. 2007",7,,,
+"FIND_SUB_CAT_DEF","DOMAIN 8: SEXUAL FUNCTION FIND_SUB_CAT","Domain 8: Sexual Function","Domain 8: Sexual function subcategory for Non-Motor Symptom Assessment Scale for Parkinson's Disease. The Non-Motor Symptoms Scale (NMSS) is a 30-item rater-based scale to assess a wide range of non-motor symptoms in patients with Parkinson's disease (PD). The NMSS measures the severity and frequency of non-motor symptoms across nine dimensions. The scale can be used for patients at all stages of PD. 2007",8,,,
+"FIND_SUB_CAT_DEF","DOMAIN 9: MISCELLANEOUS FIND_SUB_CAT","Domain 9: Miscellaneous","Domain 9: Miscellaneous subcategory for Non-Motor Symptom Assessment Scale for Parkinson's Disease. The Non-Motor Symptoms Scale (NMSS) is a 30-item rater-based scale to assess a wide range of non-motor symptoms in patients with Parkinson's disease (PD). The NMSS measures the severity and frequency of non-motor symptoms across nine dimensions. The scale can be used for patients at all stages of PD. 2007",9,,,
+"FIND_SUB_CAT_DEF","DOSING FIND_SUB_CAT","Dosing","Dosing",3,,,
+"FIND_SUB_CAT_DEF","DPM FIND_SUB_CAT","Diabetes Productivity Measure","Diabetes Productivity Measure",45,,,
+"FIND_SUB_CAT_DEF","DTR-QOL FIND_SUB_CAT","DTR-QOL","Sponsor defined: Diabetes Therapy Related -Quality of life Questionnaire",1,,,
+"FIND_SUB_CAT_DEF","DTSQ FIND_SUB_CAT","Diabetes Treatment Satisfaction","Diabetes Treatment Satisfaction Questionnaire (DTSQ)",47,,,
+"FIND_SUB_CAT_DEF","DUE CHANGES DEFAULT SETTINGS FIND_SUB_CAT","Patient Changes Default Settings","Device Use Error - Patient changes default settings on study phone",1,,,
+"FIND_SUB_CAT_DEF","DUE MISUNDERSTAND DOSE FIND_SUB_CAT","Misunderstands Dose Recommendation","Device Use Error - Patient misunderstands insulin icodec dose recommendation from DoseGuide App",1,,,
+"FIND_SUB_CAT_DEF","DUE NO DOSE RECOMMENDATION FIND_SUB_CAT","Patient Receives No Dose Recommendation","Device Use Error - Patient receives no dose recommendation",1,,,
+"FIND_SUB_CAT_DEF","DUE OTHER FIND_SUB_CAT","Other","Device Use Error - Other",1,,,
+"FIND_SUB_CAT_DEF","DUE ROOT CAUSE ASSESSMENT FIND_SUB_CAT","Investigators Root Cause Assessment","Device Use Error - Investigators root cause assessment of the error",1,,,
+"FIND_SUB_CAT_DEF","DUE TRAINING BEFORE USE FIND_SUB_CAT","Training Before Use of DoseGuide App","Device Use Error - Training before use of the DoseGuide App",1,,,
+"FIND_SUB_CAT_DEF","DUE WRONG INPUT DATA FIND_SUB_CAT","Patient Provides Wrong Input Data","Device Use Error - Patient provides wrong input data, leading to receiving incorrect dose recommendation",1,,,
+"FIND_SUB_CAT_DEF","Device Specific Questionnaire I FIND_SUB_CAT","Device Specific Questionnaire I","Device Specific Questionnaire I",40,,,
+"FIND_SUB_CAT_DEF","Device Specific Questionnaire II FIND_SUB_CAT","Device Specific Questionnaire II","Device Specific Questionnaire II",40,,,
+"FIND_SUB_CAT_DEF","Diab-MedSat FIND_SUB_CAT","Diabetes Medication Satisfaction","Diabetes Medication Satisfaction Questionnaire",42,,,
+"FIND_SUB_CAT_DEF","Diet and Activity Information Questionnaire FIND_SUB_CAT","Diet and Activity Information","Diet and Activity Information for Type 1 Diabetes",40,,,
+"FIND_SUB_CAT_DEF","EASE AND CONVENIENCE FIND_SUB_CAT","Ease and Convenience","Ease and Convenience",101,,,
+"FIND_SUB_CAT_DEF","EASE OF USE FIND_SUB_CAT","Ease of use","Ease of use subcategory for Injection Device Experience and Acceptance (IDEA) Questionnaire V1.0",1,,,
+"FIND_SUB_CAT_DEF","ECHOCARDIOGRAPHY FIND_SUB_CAT","Echocardiography","Echocardiography",1,,,
+"FIND_SUB_CAT_DEF","EFFICACY FIND_SUB_CAT","Efficacy","Efficacy",102,,,
+"FIND_SUB_CAT_DEF","ELATION/EUPHORIA FIND_SUB_CAT","Elation/Euphoria","ELATION/EUPHORIA subcategory for Neuropsychiatric Inventory (NPI) (copyright JL Cummings, 1994, all rights reserved; permission for commercial use required; npiTEST.net)",1,,,
+"FIND_SUB_CAT_DEF","EMOTIONAL EATING FIND_SUB_CAT","Emotional Eating","Three Factor Eating Questionnaire (TFEQ)",1,,,
+"FIND_SUB_CAT_DEF","EMOTIONAL FUNCTIONING FIND_SUB_CAT","Emotional Functioning","Emotional Functioning subcategory for PedsQL Quality of Life Inventory Acute V4",1,,,
+"FIND_SUB_CAT_DEF","EMOTIONS AND LIFESTYLE FIND_SUB_CAT","Emotions and Lifestyle","Emotions and Lifestyle Sub Category for NASH CHECK Questionnaire",1,,,
+"FIND_SUB_CAT_DEF","ENERGY FIND_SUB_CAT","Energy","Energy subcategory for Patient Global Impression",1,,,
+"FIND_SUB_CAT_DEF","ERROR DURING ADMINISTRATION FIND_SUB_CAT","Error During Administration","Error during administration",1,,,
+"FIND_SUB_CAT_DEF","ERROR DURING STORAGE AND HANDLING FIND_SUB_CAT","Error During Storage and Handling","Error during storage and handling",1,,,
+"FIND_SUB_CAT_DEF","ESS FIND_SUB_CAT","Epworth Sleepiness Scale","CDISC code: C103517
+CDISC submission value: ESS
+CDISC synonyms: ESS01
+CDISC definition: Epworth Sleepiness Scale (ESS) (copyright Murray W. Johns, 1990-1997. All rights reserved.).
+NCI preferred term: Epworth Sleepiness Scale Questionnaire",55,,,
+"FIND_SUB_CAT_DEF","EXAMINATION OF THE PATIENT FIND_SUB_CAT","Examination of the Patient","EXAMINATION OF THE PATIENT subcategory for DN4 (Douleur Neuropathique 4 Questions) Questionnaire. Neuropathic pain screening tool. 2005. Bouhassira D. All rights reserved.",2,,,
+"FIND_SUB_CAT_DEF","EXPERIENCE FIND_SUB_CAT","Experience","Experience subcategory for Injection Device Experience and Acceptance (IDEA) Questionnaire V1.0",1,,,
+"FIND_SUB_CAT_DEF","EXTREMITY MOVEMENTS FIND_SUB_CAT","Extremity Movements","Extremity Movements subcategory for Abnormal Involuntary Movement Scale. 
+(Guy W. Ed. ECDEU Assessment Manual for Psychopharmacology. Rockville MD: US Dept of Health, Education and Welfare. 1976, Publication No. (ADM) 76-338)",1,,,
+"FIND_SUB_CAT_DEF","EYE RELATED EVENT OCCULAR OR INTRAOCCULAR INTERVENTION FIND_SUB_CAT","Eye Related Event Occular/Intraoccular","Eye Related Event Occular/Intraoccular
+",1,,,
+"FIND_SUB_CAT_DEF","EYE RELATED EVENT SIGNS AND SYMPTOMS FIND_SUB_CAT","Eye Related Event Signs and Symptoms","Eye related event signs and symptoms
+",1,,,
+"FIND_SUB_CAT_DEF","FACIAL AND ORAL MOVEMENTS FIND_SUB_CAT","Facial and Oral Movements","Facial and Oral Movements subcategory for Abnormal Involuntary Movement Scale (AIMS) (Guy W. Ed. ECDEU Assessment Manual for Psychopharmacology. Rockville MD: US Dept of Health, Education and Welfare. 1976, Publication No. (ADM) 76-338).",1,,,
+"FIND_SUB_CAT_DEF","FAMILY FIND_SUB_CAT","Family","Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group I (4-7 years).
+
+Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group II (8-12 years).
+
+Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group III (13-16 years).
+
+Family",1,,,
+"FIND_SUB_CAT_DEF","FAMILY PLANNING FIND_SUB_CAT","Family Planning","Hemophilia Quality of Life Questionnaire Adult Version (Haem-A-QoL)
+
+Family Planning",1,,,
+"FIND_SUB_CAT_DEF","FAMILY RELATIONS FIND_SUB_CAT","Family Relations","FAMILY RELATIONS subcategory for Impact of Weight on Quality of Life Kids Questionnaire",1,,,
+"FIND_SUB_CAT_DEF","FEEL MENTALLY FIND_SUB_CAT","Feel Mentally","Feel Mentally subcategory for Patient Global Impression",1,,,
+"FIND_SUB_CAT_DEF","FEELING FIND_SUB_CAT","Feeling","Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group I (4-7 years).
+
+Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group II (8-12 years).
+
+Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group III (13-16 years).
+
+Feeling",1,,,
+"FIND_SUB_CAT_DEF","FEELING ABOUT YOURSELF FIND_SUB_CAT","Feeling About Yourself","Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Children's Long Version Age Group II
+
+Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Children's Long Version Age Group III
+
+Feeling About Yourself",1,,,
+"FIND_SUB_CAT_DEF","FOSQ FIND_SUB_CAT","Functional Outcomes Sleep Questionnaire","Functional Outcomes of Sleep Questionnaire (FOSQ)",65,,,
+"FIND_SUB_CAT_DEF","FRIENDS FIND_SUB_CAT","Friends","Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group I (4-7 years).
+
+Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group II (8-12 years).
+
+Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group III (13-16 years).
+
+Friends",1,,,
+"FIND_SUB_CAT_DEF","FUNCTIONS OF THE ARMS FIND_SUB_CAT","Functions of the Arms","Functions of the arms subcategory for Hemophilia Activities List. V2.0",1,,,
+"FIND_SUB_CAT_DEF","FUNCTIONS OF THE LEGS FIND_SUB_CAT","Functions of the Legs","Functions of the legs subcategory for Hemophilia Activities List. V2.0",1,,,
+"FIND_SUB_CAT_DEF","FUTURE FIND_SUB_CAT","Future","Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group III (13-16 years).
+
+Future",1,,,
+"FIND_SUB_CAT_DEF","GALLBLADDER DISEASE FINDINGS ABNORMAL FIND_SUB_CAT","Gallbladder Disease Abnormal Finding","Gallbladder disease abnormal finding",1,,,
+"FIND_SUB_CAT_DEF","GALLBLADDER DISEASE IMAGING FIND_SUB_CAT","Gallbladder Disease Imaging","Gallbladder disease imaging",1,,,
+"FIND_SUB_CAT_DEF","GALLBLADDER DISEASE LABORATORY TEST FIND_SUB_CAT","Gallbladder Disease Laboratory Test","Gallbladder disease laboratory test",1,,,
+"FIND_SUB_CAT_DEF","GALLBLADDER DISEASE PRIMARY INDICATION FOR IMAGING FIND_SUB_CAT","Gallbladder Primary Indicat for Imaging","Gallbladder disease primary indication for imaging",1,,,
+"FIND_SUB_CAT_DEF","GALLBLADDER DISEASE RISK FACTORS FIND_SUB_CAT","Gallbladder Disease Risk Factor","Gallbladder disease risk factor
+",1,,,
+"FIND_SUB_CAT_DEF","GALLBLADDER DISEASE SIGNS AND SYMPTOMS FIND_SUB_CAT","Gallbladder Disease Signs and Symptoms","Gallbladder disease signs and symptoms",1,,,
+"FIND_SUB_CAT_DEF","GALLBLADDER DISEASE TREATMENT FIND_SUB_CAT","Gallbladder Disease Treatment","Gallbladder disease treatment",1,,,
+"FIND_SUB_CAT_DEF","GALLBLADDER IMAGING FIND_SUB_CAT","AGB Imaging Performed","Acute Gallbladder: Was imaging performed?",1,,,
+"FIND_SUB_CAT_DEF","GALLBLADDER RISK FACTORS FIND_SUB_CAT","AGB Relevant Risk/Confounding Factors","Acute Gallbladder: Were there any relevant risk/confounding factors identified?",1,,,
+"FIND_SUB_CAT_DEF","GALLBLADDER SIGNS AND SYMPTOMS FIND_SUB_CAT","AGB Signs and Symptoms","Acute Gallbladder: Which signs/symptoms were present during the course of the event?",1,,,
+"FIND_SUB_CAT_DEF","GALLBLADDER TREATMENT FIND_SUB_CAT","AGB Treatments Given","Acute Gallbladder: Was any treatment(s) given for this condition?",1,,,
+"FIND_SUB_CAT_DEF","GALLSTONE IMAGING FIND_SUB_CAT","AGD Imaging Performed","Acute Gallstone: Was imaging performed?
+",1,,,
+"FIND_SUB_CAT_DEF","GALLSTONE LABORATORY TEST FIND_SUB_CAT","AGD Laboratory Tests","Acute Gallstone: Laboratory tests
+",1,,,
+"FIND_SUB_CAT_DEF","GALLSTONE RISK FACTORS FIND_SUB_CAT","AGD Relevant Risk/Confounding Factors","Acute Gallstone: Were there any relevant risk/confounding factors identified?
+",1,,,
+"FIND_SUB_CAT_DEF","GALLSTONE SIGNS AND SYMPTOMS FIND_SUB_CAT","AGD Signs and Symptoms","Acute Gallstone: Which signs/symptoms were present during the course of the event?
+",1,,,
+"FIND_SUB_CAT_DEF","GALLSTONE TREATMENT FIND_SUB_CAT","AGD Treatments Given","Acute Gallstone: Was any treatment(s) given for this condition?
+",1,,,
+"FIND_SUB_CAT_DEF","GASTRO INTESTINAL SYMPTOMS QUESTIONNAIRE FIND_SUB_CAT","Gastro Intestinal Symptoms Questionnaire","Gastro Intestinal Symptoms Questionnaire
+",70,,,
+"FIND_SUB_CAT_DEF","GENERAL FIND_SUB_CAT","General","General subcategory for e.g. inclusion or exclusion criteria
+",71,,,
+"FIND_SUB_CAT_DEF","GENERAL FEELING FIND_SUB_CAT","General Feeling","Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Children's Long Version Age Group II
+
+Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Children's Long Version Age Group III
+
+General Feeling
+
+",1,,,
+"FIND_SUB_CAT_DEF","GENERAL SATISFACTION FIND_SUB_CAT","General Satisfaction with the Treatment","General Satisfaction with the Treatment",106,,,
+"FIND_SUB_CAT_DEF","GLOBAL HEALTH FIND_SUB_CAT","Global Health","Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group I (4-7 years).
+
+Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group II (8-12 years).
+
+Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group III (13-16 years).
+
+Global Health
+",1,,,
+"FIND_SUB_CAT_DEF","GLOBAL JUDGMENTS FIND_SUB_CAT","Global Judgments","Global Judgments subcategory for Abnormal Involuntary Movement Scale. 
+(Guy W. Ed. ECDEU Assessment Manual for Psychopharmacology. Rockville MD: US Dept of Health, Education and Welfare. 1976, Publication No. (ADM) 76-338)",1,,,
+"FIND_SUB_CAT_DEF","HAEMATOLOGY FIND_SUB_CAT","Haematology","Haematology",80,,,
+"FIND_SUB_CAT_DEF","HAEMODYNAMIC ASSESSMENT FIND_SUB_CAT","Haemodynamic Assessment","Haemodynamic assessment",1,,,
+"FIND_SUB_CAT_DEF","HALLUCINATIONS FIND_SUB_CAT","Hallucinations","HALLUCINATIONS subcategory for Neuropsychiatric Inventory (NPI) (copyright JL Cummings, 1994, all rights reserved; permission for commercial use required; npiTEST.net)",1,,,
+"FIND_SUB_CAT_DEF","HAQ FIND_SUB_CAT","Health Assessment Questionnaire","CDISC code: Sponsor defined
+Health Assessment Questionnaire (HAQ)",80,,,
+"FIND_SUB_CAT_DEF","HEART FAILURE FIND_SUB_CAT","Heart failure","Sponsor-defined: Heart failure 
+Adverse Event Reporting
+The term is taken part of several different CDISC terms, but it does not exist as an independent term.",1,,,
+"FIND_SUB_CAT_DEF","HEART FAILURE IMAGING FIND_SUB_CAT","HFE Imaging","Was the diagnosis supported by imaging?
+",1,,,
+"FIND_SUB_CAT_DEF","HEART FAILURE SIGNS AND SYMPTOMS FIND_SUB_CAT","HFE Signs and Symptoms","Were any signs/symptoms present during the course of the event?",1,,,
+"FIND_SUB_CAT_DEF","HEART FAILURE SUPPORTIVE SYMPTOMS FIND_SUB_CAT","HFE Supportive Symptoms","Were any of the following signs/symptoms supportive of the diagnosis?",1,,,
+"FIND_SUB_CAT_DEF","HEPATIC EVENT ABNORMAL IMAGING FINDINGS FIND_SUB_CAT","Hepatic Event Abnormal Imaging Findings","Sponsor defined: Hepatic Event Abnormal Imaging Findings
+",1,,,
+"FIND_SUB_CAT_DEF","HEPATIC EVENT ALCOHOL CONSUMPTION FIND_SUB_CAT","Hepatic Event Alcohol Consumption","Hepatic Event Alcohol Consumption
+",1,,,
+"FIND_SUB_CAT_DEF","HEPATIC EVENT ASCITES FIND_SUB_CAT","Hepatic Event Ascites","Hepatic Event Ascites",1,,,
+"FIND_SUB_CAT_DEF","HEPATIC EVENT CAUSE FIND_SUB_CAT","Hepatic Event Cause","Hepatic Event Cause
+",1,,,
+"FIND_SUB_CAT_DEF","HEPATIC EVENT ETIOLOGY FIND_SUB_CAT","Hepatic Event Etiology","Sponsor defined: Hepatic Event Etiology
+",1,,,
+"FIND_SUB_CAT_DEF","HEPATIC EVENT IMAGING FIND_SUB_CAT","Hepatic Event Imaging","Hepatic Event Imaging
+",1,,,
+"FIND_SUB_CAT_DEF","HEPATIC EVENT LIVER BIOPSY FIND_SUB_CAT","Hepatic Event Liver Biopsy","Sponsor defined: Hepatic Event Liver Biopsy
+",1,,,
+"FIND_SUB_CAT_DEF","HEPATIC EVENT SIGNS AND SYMPTOMS FIND_SUB_CAT","Hepatic Event Signs and Symptoms","Hepatic Event Signs and Symptoms",1,,,
+"FIND_SUB_CAT_DEF","HEPATIC EVENT TREATMENT FIND_SUB_CAT","Hepatic Event Treatment","Hepatic Event Treatment
+",1,,,
+"FIND_SUB_CAT_DEF","HEPATIC EVENT UNSPECIFIED TEST FIND_SUB_CAT","Hepatic Event Unspecified Test","Hepatic Event Unspecified Test
+",1,,,
+"FIND_SUB_CAT_DEF","HEPATOTOXICITY EVENT FIND_SUB_CAT","Hepatotoxicity event","Sponsor defined: Hepatotoxicity adverse event reporting.",1,,,
+"FIND_SUB_CAT_DEF","HISTORY FIND_SUB_CAT","History","History subcategory for Michigan Neuropathy Screening Instrument (MNSI) (copyright University of Michigan, 2000, All rights reserved). Patient Version.",1,,,
+"FIND_SUB_CAT_DEF","HOUSEHOLD TASKS FIND_SUB_CAT","Household Tasks","Household tasks subcategory for Hemophilia Activities List. V2.0",1,,,
+"FIND_SUB_CAT_DEF","HOUSEWORK, HOUSE MAINTENANCE, AND CARING FOR FAMILY FIND_SUB_CAT","Housework, House Maintenance, and Caring","HOUSEWORK, HOUSE MAINTENANCE, AND CARING FOR FAMILY subcategory for International Physical Activity Questionnaire (October 2002) Long Last 7 Days Self-Administered Version
+",3,,,
+"FIND_SUB_CAT_DEF","HYPERSENSITIVITY REACTION FIND_SUB_CAT","Hypersensitivity reaction","Sponsor-defined: Hypersensitivity reaction
+Adverse Event Reporting",1,,,
+"FIND_SUB_CAT_DEF","HYPERSENSITIVITY RISK FACTORS FIND_SUB_CAT","Hypersensitivity risk factors","Hypersensitivity Reaction: Were there any relevant risk/confounding factors identified?
+",1,,,
+"FIND_SUB_CAT_DEF","HYPERSENSITIVITY TREATMENT FIND_SUB_CAT","Hypersensitivity treatment","Hypersensitivity Reaction: Was any treatment(s) given for this condition?
+",1,,,
+"FIND_SUB_CAT_DEF","HYPERSENSIVITY SIGNS AND SYMPTOMS FIND_SUB_CAT","Hypersensivity signs and symptoms","Hypersensitivity Reaction: Which signs/symptoms were present during the course of the event?",1,,,
+"FIND_SUB_CAT_DEF","HYPERSENSIVITY UNSPECIFIED TEST FIND_SUB_CAT","Hypersensivity unspecified test","Hypersensitivity Reaction: 
+Relevant immunological blood tests Entry",1,,,
+"FIND_SUB_CAT_DEF","HYPOGLYCAEMIC IMPAIRMENT FIND_SUB_CAT","Hypoglycaemic impairment","Hypoglycaemic impairment
+",83,,,
+"FIND_SUB_CAT_DEF","IDEATIONAL PRAXIS FIND_SUB_CAT","Ideational Praxis","Subcategory for Alzheimer's Disease Assessment Scale - Cognitive Behavior Version 13 (ADAS-Cog V13) - Ideational Praxis",1,,,
+"FIND_SUB_CAT_DEF","IMPACT ON LIFE FIND_SUB_CAT","Impact on Life","Impact on Life subcategory for Patient Global Impression",1,,,
+"FIND_SUB_CAT_DEF","INCREASED CREATINE KINASE FIND_SUB_CAT","Increased Creatine Kinase","Increased Creatine Kinase
+",1,,,
+"FIND_SUB_CAT_DEF","INF FINDINGS FIND_SUB_CAT","Infusion site reac findings","Objective findings based on examination",1,,,
+"FIND_SUB_CAT_DEF","INF LOCAL SYMPTOMS FIND_SUB_CAT","Local Sympt Related Infusion Site React","Infusion Site Reaction: Local symptoms associated with the infusion site reaction.",1,,,
+"FIND_SUB_CAT_DEF","INF OBJECTIVE SIGNS FIND_SUB_CAT","Objective signs infusion site react","Infusion Site Reaction: Local objective signs based on examination.",1,,,
+"FIND_SUB_CAT_DEF","INF RISK FACTORS FIND_SUB_CAT","Infusion site reac risks","Were there any relevant risk/confounding factors identified?",1,,,
+"FIND_SUB_CAT_DEF","INF SIGNS AND SYMPTOMS FIND_SUB_CAT","Infusion site reac signs and symptoms","Were there any local symptoms associated with this reaction?",1,,,
+"FIND_SUB_CAT_DEF","INF TREATMENT FIND_SUB_CAT","Infusion site reac treatment","Was any treatment(s) given for this condition?",1,,,
+"FIND_SUB_CAT_DEF","INJECTION SITE REACTION FIND_SUB_CAT","Injection site reaction","Sponsor-defined: Injection site reaction
+Adverse Event Reporting",1,,,
+"FIND_SUB_CAT_DEF","INJECTIONS FIND_SUB_CAT","Injections","Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group I (4-7 years).
+
+Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group II (8-12 years).
+
+Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group III (13-16 years).
+
+Injections",1,,,
+"FIND_SUB_CAT_DEF","INTENSITY OF IDEATION FIND_SUB_CAT","Intensity of Ideation","Intensity of ideation, Columbia-Suicide Severity Rating Scale 
+",1,,,
+"FIND_SUB_CAT_DEF","INTERVIEW OF THE PATIENT FIND_SUB_CAT","Interview of the Patient","INTERVIEW OF THE PATIENT subcategory for DN4 (Douleur Neuropathique 4 Questions) Questionnaire. Neuropathic pain screening tool. 2005. Bouhassira D. All rights reserved.",1,,,
+"FIND_SUB_CAT_DEF","IRRITABILITY/LABILITY FIND_SUB_CAT","Irritability/Lability","IRRITABILITY/LABILITY subcategory for Neuropsychiatric Inventory (NPI) (copyright JL Cummings, 1994, all rights reserved; permission for commercial use required; npiTEST.net)",1,,,
+"FIND_SUB_CAT_DEF","ISR FINDINGS FIND_SUB_CAT","ISR Obj findings Based on Examination","Injection site reactions: Objective findings based on examination
+",1,,,
+"FIND_SUB_CAT_DEF","ISR LOCAL SIGNS FIND_SUB_CAT","Local Signs","Were there any local objective signs associated with the injection site reaction?",1,,,
+"FIND_SUB_CAT_DEF","ISR LOCAL SYMPTOMS FIND_SUB_CAT","Local Symptoms","Were there any local symptoms associated with the injection site reaction?",1,,,
+"FIND_SUB_CAT_DEF","ISR RISK FACTORS FIND_SUB_CAT","ISR Relevant Risk/Confounding Factors","Injection site reactions: Were there any relevant risk/confounding factors identified?
+",1,,,
+"FIND_SUB_CAT_DEF","ISR SIGNS AND SYMPTOMS FIND_SUB_CAT","ISR Signs and Symptoms","Injection site reactions:Were there any local symptoms associated with the reaction?
+",1,,,
+"FIND_SUB_CAT_DEF","ISR TREATMENT FIND_SUB_CAT","ISR Treatments Given","Injection site reactions: Was any treatment(s) given for this condition?
+",1,,,
+"FIND_SUB_CAT_DEF","ITSQ FIND_SUB_CAT","Insulin Treatment Satisfaction Questionn","Insulin Treatment Satisfaction Questionnaire (ITSQ)",97,,,
+"FIND_SUB_CAT_DEF","IWQOL FIND_SUB_CAT","Impact of Weight on Quality of Life","Impact of Weight on Quality of Life (IWQOL)",98,,,
+"FIND_SUB_CAT_DEF","International Physical Activity Questionnaire (IPAQ) FIND_SUB_CAT","International Physical Activity Question","International Physical Activity Questionnaire (IPAQ)",90,,,
+"FIND_SUB_CAT_DEF","JOB-RELATED PHYSICAL ACTIVITY FIND_SUB_CAT","Job-Related Physical Activity","JOB-RELATED subcategory for International Physical Activity Questionnaire (October 2002) Long Last 7 Days Self-Administered Version",1,,,
+"FIND_SUB_CAT_DEF","JOINT PAIN FIND_SUB_CAT","Joint Pain","Patient Global Impression of Change (PGIC) ? Joint Pain v1.0 ? 14 Jan 2020 (Novo Nordisk A/S)",1,,,
+"FIND_SUB_CAT_DEF","KAROLINSKA SLEEPINESS SCALE FIND_SUB_CAT","Karolinska Sleepiness Scale","Karolinska Sleepiness Scale",241,,,
+"FIND_SUB_CAT_DEF","KNEE PAIN FIND_SUB_CAT","Knee Pain","Knee Pain subcategory for Patient Global Impression",1,,,
+"FIND_SUB_CAT_DEF","LABORATORY FIND_SUB_CAT","LAB","LAB subcategory for e.g. inclusion or exclusion criteria
+",112,,,
+"FIND_SUB_CAT_DEF","LACTIC ACIDOSIS SYMPTOMS AND SIGNS FIND_SUB_CAT","Lactic acidosis symptoms and signs","Sponsor defined: Lactic acidosis signs and symptoms
+",1,,,
+"FIND_SUB_CAT_DEF","LANGUAGE FIND_SUB_CAT","Language","Subcategory for Montreal Cognitive Assessment (MoCA) with individual items.",1,,,
+"FIND_SUB_CAT_DEF","LEGS FIND_SUB_CAT","Legs","Legs subcategory for Pediatric Hemophilia Activities List Parents' version.
+An activities questionnaire for children and teenagers aged 4-17 with haemophilia V0.12",1,,,
+"FIND_SUB_CAT_DEF","LEISURE ACTIVITIES AND SPORTS FIND_SUB_CAT","Leisure Activities and Sports","Leisure activities and sports subcategory for Hemophilia Activities List. V2.0",1,,,
+"FIND_SUB_CAT_DEF","LYING DOWN/SITTING/KNEELING/STANDING FIND_SUB_CAT","Lying Down/Sitting/Kneeling/Standing","Lying down/sitting/kneeling/standing subcategory for Hemophilia Activities List. V2.0",1,,,
+"FIND_SUB_CAT_DEF","MALIGNANT NEOPLASM DRUG EXPOSURE FIND_SUB_CAT","Malignant Neoplasm Drug Exposure","Malignant Neoplasm Drug Exposure
+",1,,,
+"FIND_SUB_CAT_DEF","MALIGNANT NEOPLASM IMAGING FIND_SUB_CAT","Malignant Neoplasm Imaging","Malignant Neoplasm Imaging
+",1,,,
+"FIND_SUB_CAT_DEF","MALIGNANT NEOPLASM INVESTIGATION FIND_SUB_CAT","Malignant Neoplasm Investigation","Malignant Neoplasm Investigation",1,,,
+"FIND_SUB_CAT_DEF","MALIGNANT NEOPLASM PATHOLOGIC EXAMINATION FIND_SUB_CAT","Malignant Neoplasm Pathologic Examinatio","Malignant Neoplasm Pathologic Examination
+",1,,,
+"FIND_SUB_CAT_DEF","MALIGNANT NEOPLASM PRIOR SCREENING FIND_SUB_CAT","Malignant Neoplasm Prior Screening","Malignant Neoplasm Prior Screening
+",1,,,
+"FIND_SUB_CAT_DEF","MALIGNANT NEOPLASM RISK FACTORS FIND_SUB_CAT","Malignant Neoplasm Risk Factors","Malignant Neoplasm Risk Factors
+",1,,,
+"FIND_SUB_CAT_DEF","MALIGNANT NEOPLASM SIGNS AND SYMPTOMS FIND_SUB_CAT","Malignant Neoplasm Signs And Symptoms","Malignant Neoplasm Signs And Symptoms",1,,,
+"FIND_SUB_CAT_DEF","MALIGNANT NEOPLASM TREATMENT FIND_SUB_CAT","Malignant Neoplasm Treatment","Malignant Neoplasm Treatment
+",1,,,
+"FIND_SUB_CAT_DEF","MAXIMUM WEIGHT FIND_SUB_CAT","Maximum Weight","Maximum weight sub category for the Weight history project standard",1,,,
+"FIND_SUB_CAT_DEF","MCS FIND_SUB_CAT","Medication Compliance Scale","Medication Compliance Scale",113,,,
+"FIND_SUB_CAT_DEF","MEAL-TIME INSULIN BOLUS  FIND_SUB_CAT","Meal-time insulin bolus","Meal-time insulin bolus questionnaire
+",110,,,
+"FIND_SUB_CAT_DEF","MEASURES TAKEN FOR GLYCAEMIC CONTROL FIND_SUB_CAT","Measures Taken for Glyacaemic Control","Measures Taken for Glycaemic Control
+",1,,,
+"FIND_SUB_CAT_DEF","METHODS FOR WEIGHT LOSS FIND_SUB_CAT","Methods for Weight Loss","Methods for weight loss sub category for the Weight history project standard",2,,,
+"FIND_SUB_CAT_DEF","MUSCLE WEAKNESS FIND_SUB_CAT","Muscle Weakness","Muscle Weakness subcategory for Clinical Neuropathy Assessment. Neuropathy Impairment Score (NIS). Dyck et al: Ann Neurol 8:590-596, 1980; Revised, Neurol 41:799-807, 1991 and Neurol 45:1115-1121, 1995",2,,,
+"FIND_SUB_CAT_DEF","MYOCARDIAL INFLAMMATION DIAGNOSIS FIND_SUB_CAT","Myocardial Inflammation Diagnosis","Myocardial Inflammation Diagnosis",1,,,
+"FIND_SUB_CAT_DEF","NAMING FIND_SUB_CAT","Naming","Naming subcategory for Mini-Mental State Examination (MMSE) (MMSE Copyright 1975, 1998, 2001 by MiniMental, LLC All rights reserved. Published 2001 by Psychological Assessment Resources, Inc. May not be reproduced in whole or in part in any form or by any means without written permission of Psychological Assessment Resources, Inc.).
+
+Also used as subcategory for Montreal Cognitive Assessment (MoCA) with individual items.",1,,,
+"FIND_SUB_CAT_DEF","NAMING OBJECTS/FINGERS FIND_SUB_CAT","Naming Objects/Fingers","Subcategory for Alzheimer's Disease Assessment Scale - Cognitive Behavior Version 13 (ADAS-Cog V13) - Naming Objects/Fingers",1,,,
+"FIND_SUB_CAT_DEF","NAUSEA QUESTIONNAIRE FIND_SUB_CAT","Nausea Questionnaire","Nausea Questionnaire",1,,,
+"FIND_SUB_CAT_DEF","NEOPLASM FIND_SUB_CAT","Neoplasm","Sponsor-defined: Neoplasm 
+Adverse Event Reporting
+CDISC: C88025 - as a codelist
+CDISC code: C88025
+CDISC submission value: NEOPLASM
+CDISC synonym(s): Neoplasm Type
+CDISC definition: The terminology that includes concepts relevant to benign or malignant tissue growth.
+NCI preferred term: CDISC SEND Tumor Findings Results Terminology",1,,,
+"FIND_SUB_CAT_DEF","NEOPLASM DRUG EXPOSURE FIND_SUB_CAT","NEO Drug Exposure","Neoplasm: Number of years of exposure to [drug class] prior to trial start?
+",1,,,
+"FIND_SUB_CAT_DEF","NEOPLASM IMAGING FIND_SUB_CAT","NEO Imaging Performed","Neoplasm: Was diagnostic imaging performed?
+",1,,,
+"FIND_SUB_CAT_DEF","NEOPLASM INVESTIGATION FIND_SUB_CAT","NEO Investigation","What led to investigation of the event?
+",1,,,
+"FIND_SUB_CAT_DEF","NEOPLASM PATHOLOGIC EXAMINATION FIND_SUB_CAT","NEO Pathologic Examination Performed","Neoplasm: Was a pathologic examination performed?",1,,,
+"FIND_SUB_CAT_DEF","NEOPLASM PRIOR SCREENING FIND_SUB_CAT","NEO Screen Procedures prior Event and IP","Neoplasm: Has the subject undergone screening procedures for this type of event prior to administration of trial product?
+",1,,,
+"FIND_SUB_CAT_DEF","NEOPLASM RISK FACTORS FIND_SUB_CAT","NEO Relevant Risk/Confounding Factors","Neoplasm: Were there any relevant risk/confounding factors identified?
+",1,,,
+"FIND_SUB_CAT_DEF","NEOPLASM SIGNS AND SYMPTOMS FIND_SUB_CAT","NEO Signs and Symptoms","Neoplasm: Were symptoms/signs (including test results) suggestive of this neoplasm present prior to administration of trial product?
+",1,,,
+"FIND_SUB_CAT_DEF","NEOPLASM TREATMENT FIND_SUB_CAT","NEO Treatments Given","Neoplasm: Was any treatment(s) given for this condition?
+",1,,,
+"FIND_SUB_CAT_DEF","NEOPLASM UNSPECIFIED TEST FIND_SUB_CAT","NEO Unspecified Tests","Neoplasm: Relevant Laboratory tests performed to confirm the event and/or outcome
+",1,,,
+"FIND_SUB_CAT_DEF","NUMBER CANCELLATION FIND_SUB_CAT","Number Cancellation","Subcategory for Alzheimer's Disease Assessment Scale - Cognitive Behavior Version 13 (ADAS-Cog V13) - Number Cancellation",1,,,
+"FIND_SUB_CAT_DEF","NURSERY SCHOOL OR KINDERGARTEN FIND_SUB_CAT","Nursery School/Kindergarten","Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group I (4-7 years).
+
+Nursery School/Kindergarten",1,,,
+"FIND_SUB_CAT_DEF","OGTT FIND_SUB_CAT","OGTT","Assessments related to Oral Glucose Tolerance Test",262,,,
+"FIND_SUB_CAT_DEF","OPEN QUESTIONS FIND_SUB_CAT","Open Questions","Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group I (4-7 years).
+
+Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group II (8-12 years).
+
+Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group III (13-16 years).
+
+Open Questions",1,,,
+"FIND_SUB_CAT_DEF","ORIENTATIO FIND_SUB_CAT","Orientation","Subcategory for Alzheimer's Disease Assessment Scale - Cognitive Behavior Version 13 (ADAS-Cog V13) - Orientation",1,,,
+"FIND_SUB_CAT_DEF","ORIENTATION FIND_SUB_CAT","Orientation","Subcategory for Montreal Cognitive Assessment (MoCA) with individual items.",1,,,
+"FIND_SUB_CAT_DEF","ORIENTATION TO PLACE FIND_SUB_CAT","Orientation to Place","Orientation to place subcategory for Mini-Mental State Examination (MMSE) (MMSE Copyright 1975, 1998, 2001 by MiniMental, LLC All rights reserved. Published 2001 by Psychological Assessment Resources, Inc. May not be reproduced in whole or in part in any form or by any means without written permission of Psychological Assessment Resources, Inc.).",1,,,
+"FIND_SUB_CAT_DEF","ORIENTATION TO TIME FIND_SUB_CAT","Orientation to Time","Orientation to time subcategory for Mini-Mental State Examination (MMSE) (MMSE Copyright 1975, 1998, 2001 by MiniMental, LLC All rights reserved. Published 2001 by Psychological Assessment Resources, Inc. May not be reproduced in whole or in part in any form or by any means without written permission of Psychological Assessment Resources, Inc.).",1,,,
+"FIND_SUB_CAT_DEF","OTHER PD ASSESSMENTS FIND_SUB_CAT","Other PD assessments","Other PD assessments
+",115,,,
+"FIND_SUB_CAT_DEF","OTHER PERSONS FIND_SUB_CAT","Other Persons","Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group I (4-7 years).
+
+Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group II (8-12 years).
+
+Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group III (13-16 years).
+
+Other Persons",1,,,
+"FIND_SUB_CAT_DEF","OTHER PK ASSESSMENTS FIND_SUB_CAT","Other PK assessments","Other PK assessments
+",115,,,
+"FIND_SUB_CAT_DEF","PAIN FIND_SUB_CAT","Pain","Visual Analogue Scale (VAS) - Pain
+",116,,,
+"FIND_SUB_CAT_DEF","PANCREATITIS FIND_SUB_CAT","Pancreatitis","Sponsor-defined: Pancreatitis 
+Adverse Event Reporting
+",1,,,
+"FIND_SUB_CAT_DEF","PANCREATITIS COMPLICATIONS FIND_SUB_CAT","PAN Complications during the Event","Pancreatitis: Were any acute complications present during the course of the event?
+",1,,,
+"FIND_SUB_CAT_DEF","PANCREATITIS HISTORY COMPLICATIONS FIND_SUB_CAT","Pancreatitis History Complications","Pancreatitis History Complications
+",1,,,
+"FIND_SUB_CAT_DEF","PANCREATITIS HISTORY DIAGNOSIS FIND_SUB_CAT","Pancreatitis History Diagnosis","Pancreatitis History Diagnosis",1,,,
+"FIND_SUB_CAT_DEF","PANCREATITIS HISTORY PRIMARY AETIOLOGY FIND_SUB_CAT","Pancreatitis History Primary Aetiology","Pancreatitis History Primary Aetiology
+",1,,,
+"FIND_SUB_CAT_DEF","PANCREATITIS IMAGING FIND_SUB_CAT","PAN Imaging Performed","Pancreatitis: Was imaging performed?
+",1,,,
+"FIND_SUB_CAT_DEF","PANCREATITIS IMAGING ACUTE FIND_SUB_CAT","PAN Imaging Performed, Acute","Pancreatitis: Was imaging performed? - Acute",1,,,
+"FIND_SUB_CAT_DEF","PANCREATITIS IMAGING CHRONIC FIND_SUB_CAT","PAN Imaging Performed, Chronic","Pancreatitis: Was imaging performed? - Chronic
+",1,,,
+"FIND_SUB_CAT_DEF","PANCREATITIS LABORATORY TEST FIND_SUB_CAT","PAN Laboratory Tests","Pancreatitis: Laboratory Tests
+",1,,,
+"FIND_SUB_CAT_DEF","PANCREATITIS RISK FACTORS FIND_SUB_CAT","PAN Relevant Risk/Confounding Factors","Pancreatitis: Were there any relevant risk/confounding factors identified?
+",1,,,
+"FIND_SUB_CAT_DEF","PANCREATITIS SIGNS AND SYMPTOMS FIND_SUB_CAT","PAN Signs and Symptoms","Pancreatitis:Were other signs/symptoms present during the course of the event?
+",1,,,
+"FIND_SUB_CAT_DEF","PART I: NON-MOTOR ASPECTS OF EXPERIENCES OF DAILY LIVING (NM-EDL) FIND_SUB_CAT","Part I: Non-Motor Experience Daily Livin","Part I: Non-Motor Aspects of Experiences of Daily Living (nM-EDL) subcategory for The Movement Disorder Society (MDS)-sponsored Revision of the Unified Parkinson's Disease Rating Scale (UPDRS)",1,,,
+"FIND_SUB_CAT_DEF","PART II: MOTOR ASPECTS OF EXPERIENCES OF DAILY LIVING (M-EDL) FIND_SUB_CAT","Part II: Motor Experience of Daily Livin","Part II: Motor Aspects of Experiences of Daily Living (M-EDL) subcategory for The Movement Disorder Society (MDS)-sponsored Revision of the Unified Parkinson's Disease Rating Scale (UPDRS)",2,,,
+"FIND_SUB_CAT_DEF","PART III: MOTOR EXAMINATION FIND_SUB_CAT","Part III: Motor Examination","Part III: Motor Examination subcategory for The Movement Disorder Society (MDS)-sponsored Revision of the Unified Parkinson's Disease Rating Scale (UPDRS)",3,,,
+"FIND_SUB_CAT_DEF","PART IV: MOTOR COMPLICATIONS FIND_SUB_CAT","Part IV: Motor Complications","Part IV: Motor Complications subcategory for The Movement Disorder Society (MDS)-sponsored Revision of the Unified Parkinson's Disease Rating Scale (UPDRS)",4,,,
+"FIND_SUB_CAT_DEF","PARTNERSHIP AND SEXUALITY FIND_SUB_CAT","Partnership and Sexuality","Hemophilia Quality of Life Questionnaire Adult Version (Haem-A-QoL)
+
+Partnership And Sexuality",1,,,
+"FIND_SUB_CAT_DEF","PATIENT HEALTH CARE RESOURCE UTILISATION FIND_SUB_CAT","Patient Health Care Resource Utilisation","Patient Health Care Resource Utilisation subcategory for the Resource Utilisation in Dementia Questionnaire",6,,,
+"FIND_SUB_CAT_DEF","PATIENT LIVING ACCOMMODATION FIND_SUB_CAT","Patient Living Accommodation","Patient Living Accommodation subcategory for the Resource Utilisation in Dementia Questionnaire",5,,,
+"FIND_SUB_CAT_DEF","PD AFTER MULTIPLE DOSE FIND_SUB_CAT","PD after multiple dose","PD after multiple dose
+",116,,,
+"FIND_SUB_CAT_DEF","PD AFTER SINGLE DOSE FIND_SUB_CAT","PD after single dose","PD after single dose
+",116,,,
+"FIND_SUB_CAT_DEF","PERCEIVED SUPPORT FIND_SUB_CAT","Perceived Support","Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group II (8-12 years).
+
+Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group III (13-16 years).
+
+Perceived Support",1,,,
+"FIND_SUB_CAT_DEF","PG LEVEL NADIR FIND_SUB_CAT","PG Level Nadir","PG Level Nadir",1,,,
+"FIND_SUB_CAT_DEF","PHARMACOSCINTIGRAPHY FIND_SUB_CAT","Pharmacoscintigraphy","It is a technique, that provides information on the deposition, dispersion and movement of a formulation combined with PK assessments to provide information concerning the sites of release and absorption.",116,,,
+"FIND_SUB_CAT_DEF","PHQ-9 FIND_SUB_CAT","Patient Health Questionnaire - 9","Patient Health Questionnaire - 9
+",116,,,
+"FIND_SUB_CAT_DEF","PHYSICAL ASSESSMENT FIND_SUB_CAT","Physical Assessment","Physical Assessment subcategory for Michigan Neuropathy Screening Instrument (MNSI) (copyright University of Michigan, 2000, All rights reserved). Patient Version",2,,,
+"FIND_SUB_CAT_DEF","PHYSICAL COMFORT FIND_SUB_CAT","Physical Comfort","PHYSICAL COMFORT subcategory for Impact of Weight on Quality of Life Kids Questionnaire",1,,,
+"FIND_SUB_CAT_DEF","PHYSICAL FUNCTIONING FIND_SUB_CAT","Physical Functioning","Physical Functioning subcategory for Patient Global Impression",1,,,
+"FIND_SUB_CAT_DEF","PHYSICAL HEALTH FIND_SUB_CAT","Physical Health","Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group I (4-7 years).
+
+Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group II (8-12 years).
+
+Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group III (13-16 years).
+
+Physical Health
+",1,,,
+"FIND_SUB_CAT_DEF","PHYSICAL HEALTH DURING THE PAST WEEK FIND_SUB_CAT","Physical Health During the Past Week","Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Children's Long Version Age Group II
+
+Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Children's Long Version Age Group III
+
+Physical Health During the Past Week",1,,,
+"FIND_SUB_CAT_DEF","PK AFTER MULTIPLE DOSE FIND_SUB_CAT","PK after multiple dose","PK after multiple dose
+",116,,,
+"FIND_SUB_CAT_DEF","PK AFTER SINGLE DOSE FIND_SUB_CAT","PK after single dose","PK after single dose
+",116,,,
+"FIND_SUB_CAT_DEF","PLANNING FIND_SUB_CAT","Planning","Planning",4,,,
+"FIND_SUB_CAT_DEF","PLASMA GLUCOSE OVERVIEW FIND_SUB_CAT","Plasma Glucose Overview","Plasma Glucose Overview",1,,,
+"FIND_SUB_CAT_DEF","PRE-ECLAMPSIA RISK FACTORS FIND_SUB_CAT","Pre-Eclampsia Risk Factors","Pre-Eclampsia Risk Factors
+",1,,,
+"FIND_SUB_CAT_DEF","PRE-ECLAMPSIA TREATMENT FIND_SUB_CAT","Pre-Eclampsia Treatment","Pre-eclampsia Treatment
+",1,,,
+"FIND_SUB_CAT_DEF","PREDISPOSTION FACTORS-BREAST NEOPLASM FIND_SUB_CAT","Predisposition Factors-Breast Neoplasm","Subcategory for Risk factors for Breast Neoplasm - Predisposition factors-Breast Neoplasm",1,,,
+"FIND_SUB_CAT_DEF","PREDISPOSTION FACTORS-SKIN CANCER FIND_SUB_CAT","Predisposition Factors-Skin Cancer","Subcategory for Risk factors for Skin Cancer - Predisposition factors-Skin Cancer",1,,,
+"FIND_SUB_CAT_DEF","PREGNANCY FIND_SUB_CAT","Pregnancy","Pregnancy",116,,,
+"FIND_SUB_CAT_DEF","PRESCRIPTION MEDICATION FOR OBESITY FIND_SUB_CAT","Prescription Medication for Obesity","Prescription Medication for Obesity sub category for the Weight history project standard",3,,,
+"FIND_SUB_CAT_DEF","PREVIOUS IMAGE FIND_SUB_CAT","Previous Image","Previous ATTR image",1,,,
+"FIND_SUB_CAT_DEF","PREVIOUS TREATMENT FIND_SUB_CAT","Previous Treatment","Previous treatment for ATTR",1,,,
+"FIND_SUB_CAT_DEF","QMHS FIND_SUB_CAT","QMHS","QualityMetric Health Outcomes Scoring (QMHS) Software - Scored questionnaire type
+",1,,,
+"FIND_SUB_CAT_DEF","QUALITY OF LIFE FIND_SUB_CAT","Quality of Life","Quality of Life subcategory for Patient Global Impression",1,,,
+"FIND_SUB_CAT_DEF","Questionnaire for diagnosing binge eating disorder and bulimia nervosa FIND_SUB_CAT","Quest. eating disorder + bulimia nervosa","Questionnaire for diagnosing binge eating disorder and bulimia nervosa
+",117,,,
+"FIND_SUB_CAT_DEF","REASON FOR NOT BEING ABLE TO SWALLOW TABLET FIND_SUB_CAT","Reason Not Being Able to Swallow Tablet","Reason not being able to swallow tablet",1,,,
+"FIND_SUB_CAT_DEF","RECALL FIND_SUB_CAT","Recall","Recall subcategory for Mini-Mental State Examination (MMSE) (MMSE Copyright 1975, 1998, 2001 by MiniMental, LLC All rights reserved. Published 2001 by Psychological Assessment Resources, Inc. May not be reproduced in whole or in part in any form or by any means without written permission of Psychological Assessment Resources, Inc.).",1,,,
+"FIND_SUB_CAT_DEF","RECOVERY 3.0 MMOL/L FIND_SUB_CAT","Recovery 3.0 mmol/L","Recovery 3.0 mmol/L",1,,,
+"FIND_SUB_CAT_DEF","RECOVERY 3.9 MMOL/L FIND_SUB_CAT","Recovery 3.9 mmol/L","Recovery 3.9 mmol/L",1,,,
+"FIND_SUB_CAT_DEF","RECOVERY 5.5 MMOL/L FIND_SUB_CAT","Recovery 5.5 mmol/L","Recovery 5.5 mmol/L",1,,,
+"FIND_SUB_CAT_DEF","RECREATION, SPORT, AND LEISURE-TIME PHYSICAL ACTIVITY FIND_SUB_CAT","Recreation, Sport, and Leisure-Time Phys","RECREATION, SPORT, AND LEISURE-TIME subcategory for International Physical Activity Questionnaire (October 2002) Long Last 7 Days Self-Administered Version",4,,,
+"FIND_SUB_CAT_DEF","REFLEXES FIND_SUB_CAT","Reflexes","Reflexes subcategory for Clinical Neuropathy Assessment. Neuropathy Impairment Score (NIS). Dyck et al: Ann Neurol 8:590-596, 1980; Revised, Neurol 41:799-807, 1991 and Neurol 45:1115-1121, 1995",1,,,
+"FIND_SUB_CAT_DEF","REGISTRATION FIND_SUB_CAT","Registration","Registration subcategory for Mini-Mental State Examination (MMSE) (MMSE Copyright 1975, 1998, 2001 by MiniMental, LLC All rights reserved. Published 2001 by Psychological Assessment Resources, Inc. May not be reproduced in whole or in part in any form or by any means without written permission of Psychological Assessment Resources, Inc.).",1,,,
+"FIND_SUB_CAT_DEF","RELATIONSHIPS FIND_SUB_CAT","Relationships","Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group III (13-16 years).
+
+Relationships",1,,,
+"FIND_SUB_CAT_DEF","REMEMBERING FIND_SUB_CAT","Remembering","Remembering",5,,,
+"FIND_SUB_CAT_DEF","REMEMBERING TEST INSTRUCTIONS FIND_SUB_CAT","Remembering Test Instructions","Subcategory for Alzheimer's Disease Assessment Scale - Cognitive Behavior Version 13 (ADAS-Cog V13) - Remembering Test Instructions",1,,,
+"FIND_SUB_CAT_DEF","RENAL CONDITIONS FIND_SUB_CAT","REE Conditions Contributed to the Event","Renal: Was there evidence or suspicion of conditions which could explain or have contributed to the event?
+",1,,,
+"FIND_SUB_CAT_DEF","RENAL EVENT FIND_SUB_CAT","Renal event","Sponsor-defined: Renal event
+Adverse Event Reporting",1,,,
+"FIND_SUB_CAT_DEF","RENAL IMAGING FIND_SUB_CAT","REE Diagnosis Supported by Imaging","Renal:Was the diagnosis supported by imaging?
+",1,,,
+"FIND_SUB_CAT_DEF","RENAL LABORATORY TEST FIND_SUB_CAT","REE Laboratory Tests","Renal: Relevant laboratory tests
+",1,,,
+"FIND_SUB_CAT_DEF","RENAL NEPHROTOXIC AGENTS FIND_SUB_CAT","REE Nephrotoxic Agents within last 3 Mth","Renal: Has the subject received any nephrotoxic agents within the last 3 months?
+",1,,,
+"FIND_SUB_CAT_DEF","RENAL UNSPECIFIED TEST FIND_SUB_CAT","REE Unspecified Tests","Renal: Relevant laboratory tests
+",1,,,
+"FIND_SUB_CAT_DEF","RETINOPATHY CONDITIONS FIND_SUB_CAT","Retinopathy Conditions","Which of the following relevant conditions had occurred or were present prior to baseline
+",1,,,
+"FIND_SUB_CAT_DEF","RETINOPATHY DISEASES FIND_SUB_CAT","DMR Diseases","Disease(s) found on ophthalmoscopy / fundoscopy / fundus photography
+",1,,,
+"FIND_SUB_CAT_DEF","RETINOPATHY IDENTIFIED FIND_SUB_CAT","DMR Identified","How was this event of diabetic retinopathy identified?
+",1,,,
+"FIND_SUB_CAT_DEF","RETINOPATHY OTHER FINDINGS FIND_SUB_CAT","DMR Other Findings","Other Findings",1,,,
+"FIND_SUB_CAT_DEF","RETINOPATHY RESULTS FIND_SUB_CAT","DMR Results","Retinopathy Results
+",1,,,
+"FIND_SUB_CAT_DEF","RETINOPATHY STAGE FIND_SUB_CAT","Retinopathy Stage","Retinopathy Stage
+",1,,,
+"FIND_SUB_CAT_DEF","RETINOPATHY TREATMENT FIND_SUB_CAT","Retinopathy Treatment","What treatment(s) did the subject receive for this condition?
+",1,,,
+"FIND_SUB_CAT_DEF","RETINOPATHY TYPE FIND_SUB_CAT","DMR Type","Type of eye disease
+",1,,,
+"FIND_SUB_CAT_DEF","RETINOPATHY VISUAL ACUITY FIND_SUB_CAT","Retinopathy Visual Acuity","Retinopathy Visual Acuity
+",1,,,
+"FIND_SUB_CAT_DEF","REVASCULARISATION PROCEDURE FIND_SUB_CAT","Revascularisation procedure","Sponsor-defined: Revascularisation procedure
+Adverse Event Reporting",1,,,
+"FIND_SUB_CAT_DEF","SCHOOL FUNCTIONING FIND_SUB_CAT","School Functioning","School Functioning subcategory for PedsQL Quality of Life Inventory Acute V4",1,,,
+"FIND_SUB_CAT_DEF","SCREEN FOR ALCOHOL FIND_SUB_CAT","Screen for Alcohol","Screen for Alcohol, used as a sub category for the urinalysis category
+",119,,,
+"FIND_SUB_CAT_DEF","SCREEN FOR DRUGS FIND_SUB_CAT","Screen for drugs","Screen for drugs",119,,,
+"FIND_SUB_CAT_DEF","SECTION A: YOUR EXPERIENCE BEFORE YOU STARTED THE STUDY FIND_SUB_CAT","Section A","Section A: Your experience before you started the study subcategory for the Study Participant Feedback Questionnaire V1.0. Prepared by TransCelerate Patient Experience Initiative Team.",1,,,
+"FIND_SUB_CAT_DEF","SECTION B: YOUR EXPERIENCE DURING THE TRIAL FIND_SUB_CAT","Section B","Section B: Your experience during the trial subcategory for the Study Participant Feedback Questionnaire V1.0. Prepared by TransCelerate Patient Experience Initiative Team.",2,,,
+"FIND_SUB_CAT_DEF","SECTION C: YOUR EXPERIENCE AT THE END OF THE TRIAL FIND_SUB_CAT","Section C","Section C: Your experience at the end of th trial subcategory for the Study Participant Feedback Questionnaire V1.0. Prepared by TransCelerate Patient Experience Initiative Team.",3,,,
+"FIND_SUB_CAT_DEF","SELF CARE FIND_SUB_CAT","Self Care","Self care subcategory for Hemophilia Activities List. V2.0",1,,,
+"FIND_SUB_CAT_DEF","SENSATION - G. TOE FIND_SUB_CAT","Sensation - G. Toe","Sensation - G. Toe subcategory for Clinical Neuropathy Assessment. Neuropathy Impairment Score (NIS). Dyck et al: Ann Neurol 8:590-596, 1980; Revised, Neurol 41:799-807, 1991 and Neurol 45:1115-1121, 1995",5,,,
+"FIND_SUB_CAT_DEF","SENSATION - I. FINGER FIND_SUB_CAT","Sensation - I. Finger","Sensation - I. Finger subcategory for Clinical Neuropathy Assessment. Neuropathy Impairment Score (NIS). Dyck et al: Ann Neurol 8:590-596, 1980; Revised, Neurol 41:799-807, 1991 and Neurol 45:1115-1121, 1995",4,,,
+"FIND_SUB_CAT_DEF","SF-36 FIND_SUB_CAT","SF-36 Health Survey","SF-36 Health Survey",119,,,
+"FIND_SUB_CAT_DEF","SIGNS LED TO DIAGNOSIS FIND_SUB_CAT","Signs Led to Diagnosis","Signs Led to Diagnosis
+",1,,,
+"FIND_SUB_CAT_DEF","SITTING/KNEELING/STANDING FIND_SUB_CAT","Sitting/Kneeling/Standing","Sitting/kneeling/standing subcategory for Pediatric Hemophilia Activities List",1,,,
+"FIND_SUB_CAT_DEF","SLEEP AND NIGHTTIME BEHAVIOR DISORDERS FIND_SUB_CAT","Sleep and Nighttime Behavior Disorders","SLEEP AND NIGHTTIME BEHAVIOR DISORDERS subcategory for Neuropsychiatric Inventory (NPI) (copyright JL Cummings, 1994, all rights reserved; permission for commercial use required; npiTEST.net)",1,,,
+"FIND_SUB_CAT_DEF","SOCIAL FUNCTIONING FIND_SUB_CAT","Social Functioning","Social Functioning subcategory for PedsQL Quality of Life Inventory Acute V4",1,,,
+"FIND_SUB_CAT_DEF","SOCIAL LIFE FIND_SUB_CAT","Social Life","SOCIAL LIFE subcategory for Impact of Weight on Quality of Life Kids Questionnaire",1,,,
+"FIND_SUB_CAT_DEF","SOP FIND_SUB_CAT","SOP","SOP subcategory for e.g. inclusion or exclusion criteria that are mandated by SOP
+",119,,,
+"FIND_SUB_CAT_DEF","SPECIALIST/NURSES FIND_SUB_CAT","Specialist/Nurses","Specialist/Nurses",104,,,
+"FIND_SUB_CAT_DEF","SPOKEN LANGUAGE ABILITY FIND_SUB_CAT","Spoken Language Ability","Subcategory for Alzheimer's Disease Assessment Scale - Cognitive Behavior Version 13 (ADAS-Cog V13) - Spoken Language Ability",1,,,
+"FIND_SUB_CAT_DEF","SPORTS AND LEISURE FIND_SUB_CAT","Sports and Leisure","Hemophilia Quality of Life Questionnaire Adult Version (Haem-A-QoL)
+
+Sports and Leisure",1,,,
+"FIND_SUB_CAT_DEF","SPORTS AND SCHOOL FIND_SUB_CAT","Sports and School","Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group II (8-12 years).
+
+Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group III (13-16 years).
+
+Sports and School",1,,,
+"FIND_SUB_CAT_DEF","SPS-6 FIND_SUB_CAT","Stanford presenteeism scale-6","Sponsor defined: Stanford presenteeism scale-6",1,,,
+"FIND_SUB_CAT_DEF","STAIR CLIMBING FIND_SUB_CAT","WIQ Stair Climbing","Stair Climbing subcategory for Walking Impairment Questionnaire",1,,,
+"FIND_SUB_CAT_DEF","STAUDENMAYER 2015 ACTIVITY INTENSITY FIND_SUB_CAT","Staudenmayer 2015 Activity Intensity","Actigraph - Staudenmayer 2015 Activity Intensity",1,,,
+"FIND_SUB_CAT_DEF","STAUDENMAYER 2015 SEDENTARY FIND_SUB_CAT","Staudenmayer 2015 Sedentary","Actigraph - Staudenmayer 2015 Sedentary",1,,,
+"FIND_SUB_CAT_DEF","STIFFNESS FIND_SUB_CAT","Stiffness","STIFFNESS subcategory for WOMAC Osteoarthritis Index NRS V3.1",1,,,
+"FIND_SUB_CAT_DEF","SUICIDAL BEHAVIOUR FIND_SUB_CAT","Suicidal Behaviour","Suicidal behaviour, Columbia-Suicide Severity Rating Scale 
+",1,,,
+"FIND_SUB_CAT_DEF","SUICIDAL IDEATION FIND_SUB_CAT","Suicidal Ideation","Suicidal ideation, Columbia-Suicide Severity Rating Scale 
+",1,,,
+"FIND_SUB_CAT_DEF","SYMPTOMS FIND_SUB_CAT","Symptoms","Symptoms subcategory for e.g. inclusion or exclusion criteria
+",119,,,
+"FIND_SUB_CAT_DEF","THYROID DISEASE FIND_SUB_CAT","Thyroid disease","Sponsor-defined: Thyroid disease 
+Adverse Event Reporting
+The term is taken part of several different CDISC terms, but it does not exist as an independent term.",1,,,
+"FIND_SUB_CAT_DEF","THYROID FAMILY HISTORY FIND_SUB_CAT","Thyroid family history","SHARP form: Thyroid Disease
+SCAT: Thyroid family history
+Question: Is there any relevant family history?
+",1,,,
+"FIND_SUB_CAT_DEF","THYROID IMAGING FIND_SUB_CAT","Thyroid imaging","SHARP form: Thyroid Disease
+SCAT: Thyroid imaging
+Question: Was diagnostic imaging performed during the course of this event?
+",1,,,
+"FIND_SUB_CAT_DEF","THYROID IMAGING PRIOR FIND_SUB_CAT","Thyroid imaging prior","SHARP form: Thyroid Disease
+SCAT: Thyroid imaging prior
+Question: Was thyroid imaging performed at any time prior to this event?
+",1,,,
+"FIND_SUB_CAT_DEF","THYROID MALIGNANT FIND_SUB_CAT","Thyroid malignant","SHARP form: Thyroid Disease
+SCAT: Thyroid malignant
+Question: Has a thyroidectomy been performed?
+",1,,,
+"FIND_SUB_CAT_DEF","THYROID RISK FACTORS FIND_SUB_CAT","Thyroid risk factors","SHARP form: Thyroid Disease
+SCAT: Thyroid risk factors
+Question: Were there any relevant risk/confounding factors identified?
+",1,,,
+"FIND_SUB_CAT_DEF","THYROID SIGNS AND SYMPTOMS FIND_SUB_CAT","Thyroid signs and symptoms","SHARP form: Thyroid Disease
+SCAT: Thyroid signs and symptoms
+Question: Were symptoms/signs suggestive of this condition present at trial start?
+",1,,,
+"FIND_SUB_CAT_DEF","THYROID SYMPTOMS LEAD TO INVESTIGATION FIND_SUB_CAT","Thyroid symptoms lead to investigation","SHARP form: Thyroid Disease
+SCAT: Thyroid symptoms lead to investigation
+Question: Did any of the following signs/symptoms lead to further investigation(s) of this event?
+",1,,,
+"FIND_SUB_CAT_DEF","THYROID TREATMENT FIND_SUB_CAT","Thyroid treatment","SHARP form: Thyroid Disease
+SCAT: Thyroid treatment
+Question: Was any treatment(s) given for this condition?",1,,,
+"FIND_SUB_CAT_DEF","THYROID UNSPECIFIED TEST FIND_SUB_CAT","Thyroid unspecified test","SHARP form: Thyroid Disease
+SCAT: Thyroid unspecified test
+Question: Other Relevant Laboratory Data (performed to confirm the event and/or its outcome)
+",1,,,
+"FIND_SUB_CAT_DEF","TIME SPENT SITTING FIND_SUB_CAT","Time Spent Sitting","TIME SPENT SITTING subcategory for International Physical Activity Questionnaire (October 2002) Long Last 7 Days Self-Administered Version",5,,,
+"FIND_SUB_CAT_DEF","TIMING FIND_SUB_CAT","Timing","Timing",2,,,
+"FIND_SUB_CAT_DEF","TRACY 2018 FIND_SUB_CAT","Tracy 2018","Actigraph - TRACY 2018",1,,,
+"FIND_SUB_CAT_DEF","TRANSPORT & PHYSICAL ACTIVITY FIND_SUB_CAT","Transport & Physical Activity","TRANSPORT subcategory for International Physical Activity Questionnaire (October 2002) Long Last 7 Days Self-Administered Version",2,,,
+"FIND_SUB_CAT_DEF","TREATING FIND_SUB_CAT","Treating","Treating",1,,,
+"FIND_SUB_CAT_DEF","TREATMENT FIND_SUB_CAT","Treatment","Treatment subcategory for e.g. inclusion or exclusion criteria
+
+In addition will also be used as QSSCAT for the following questionnaires:
+-Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group I (4-7 years).
+-Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group II (8-12 years).
+-Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group III (13-16 years).",120,,,
+"FIND_SUB_CAT_DEF","TRIAL PRODUCT FIND_SUB_CAT","Trial Product","Trial product(s) involved in medication error
+Trial product(s)",260,,,
+"FIND_SUB_CAT_DEF","TRIM-AGHD FIND_SUB_CAT","TRIM Growth hormone defiency in adults","Sponsor-defined
+TRIM-AGHD: Assessing the impact of growth hormone defiency in adults",1,,,
+"FIND_SUB_CAT_DEF","TRIM-Diabetes FIND_SUB_CAT","TRIM-D","Treatment Related Impact Measure - Diabetes",120,,,
+"FIND_SUB_CAT_DEF","TRIM-Hypo FIND_SUB_CAT","TRIM-HYPO","Treatment Related Impact Measure ? Hypoglyceamic Events",260,,,
+"FIND_SUB_CAT_DEF","TRIM-Weight FIND_SUB_CAT","TRIM-W","Treatment Related Impact Measure ? Weight",120,,,
+"FIND_SUB_CAT_DEF","TRUNK MOVEMENTS FIND_SUB_CAT","Trunk Movements","Trunk Movements subcategory for Abnormal Involuntary Movement Scale. 
+(Guy W. Ed. ECDEU Assessment Manual for Psychopharmacology. Rockville MD: US Dept of Health, Education and Welfare. 1976, Publication No. (ADM) 76-338)",1,,,
+"FIND_SUB_CAT_DEF","TSQM-9 FIND_SUB_CAT","Treatment Satisfaction Quest. Med.","Treatment Satisfaction Questionnaire for Medication
+TSQM-9",324,,,
+"FIND_SUB_CAT_DEF","Treatment Burden - CGHD-Observer FIND_SUB_CAT","Treatment Burden - CGHD-Observe","Treatment Burden - CGHD-Observe Question",1,,,
+"FIND_SUB_CAT_DEF","Treatment Preference Questionnaire FIND_SUB_CAT","Treatment Preference Questionnaire","Treatment Preference Questionnaire",321,,,
+"FIND_SUB_CAT_DEF","UNCONTROLLED EATING FIND_SUB_CAT","Uncontrolled Eating","Three Factor Eating Questionnaire (TFEQ)",1,,,
+"FIND_SUB_CAT_DEF","UNIVERSITY OF WEST FLORIDA 2019 ADULT FIND_SUB_CAT","University of West Florida 2019 Adult","Actigraph - University of West Florida 2019 Adult",1,,,
+"FIND_SUB_CAT_DEF","USE OF ITEM FIND_SUB_CAT","Use of Item","Subject used item, subcategory for 6- Minute Walk Test",1,,,
+"FIND_SUB_CAT_DEF","USE OF TRANSPORT FIND_SUB_CAT","Use of Transport","Use of transport subcategory for Pediatric Hemophilia Activities List",1,,,
+"FIND_SUB_CAT_DEF","USE OF TRANSPORTATION FIND_SUB_CAT","Use of Transportation","Use of transportation subcategory for Hemophilia Activities List. V2.0",1,,,
+"FIND_SUB_CAT_DEF","VECTOR MAGNITUDE FIND_SUB_CAT","Vector Magnitude","Actigraph - Vector Magnitude",1,,,
+"FIND_SUB_CAT_DEF","VIEW OF HIMSELF FIND_SUB_CAT","View of Himself","Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group I (4-7 years).
+
+Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group II (8-12 years).
+
+Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Parent's Long Version Age Group III (13-16 years).
+
+View of Himself",1,,,
+"FIND_SUB_CAT_DEF","VIEW OF YOURSELF FIND_SUB_CAT","View of Yourself","Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Children's Long Version Age Group II
+
+Hemophilia Quality of Life (HAEMO-QOL) Questionnaire Children's Long Version Age Group III
+
+View of Yourself",1,,,
+"FIND_SUB_CAT_DEF","VISUOSPATIAL/EXECUTIVE FIND_SUB_CAT","Visuospatial/executive","Subcategories for Montreal Cognitive Assessment (MoCA) with individual items.",1,,,
+"FIND_SUB_CAT_DEF","WALK QUICKLY FIND_SUB_CAT","Walk Quickly","Walk Quickly subcategory for Patient Global Impression",1,,,
+"FIND_SUB_CAT_DEF","WALKING DISTANCE FIND_SUB_CAT","WIQ Walking Distance","Walking Distance subcategory for Walking Impairment Questionnaire",1,,,
+"FIND_SUB_CAT_DEF","WALKING IMPAIRMENT - DIFFERENTIAL DIAGNOSIS FIND_SUB_CAT","WIQ Diagnosis","Walking Impairment - Differential Diagnosis subcategory for Walking Impairment Questionnaire",1,,,
+"FIND_SUB_CAT_DEF","WALKING IMPAIRMENT - PAD SPECIFIC QUESTIONS FIND_SUB_CAT","WIQ PAD Specific","Walking Impairment - PAD Specific Questions subcategory for Walking Impairment Questionnaire",1,,,
+"FIND_SUB_CAT_DEF","WALKING SPEED FIND_SUB_CAT","WIQ Walking Speed","Walking Speed subcategory for Walking Impairment Questionnaire",1,,,
+"FIND_SUB_CAT_DEF","WORD FINDING DIFFICULTY FIND_SUB_CAT","Word Finding Difficulty","Subcategory for Alzheimer's Disease Assessment Scale - Cognitive Behavior Version 13 (ADAS-Cog V13) - Word Finding Difficulty",1,,,
+"FIND_SUB_CAT_DEF","WORD RECALL FIND_SUB_CAT","Word Recall","Subcategory for Alzheimer's Disease Assessment Scale - Cognitive Behavior Version 13 (ADAS-Cog V13) - Word Recall",1,,,
+"FIND_SUB_CAT_DEF","WORD RECOGNITION FIND_SUB_CAT","Word Recognition","Subcategory for Alzheimer's Disease Assessment Scale - Cognitive Behavior Version 13 (ADAS-Cog V13) - Word Recognition",1,,,
+"FIND_SUB_CAT_DEF","WORK AND SCHOOL FIND_SUB_CAT","Work and School","Hemophilia Quality of Life Questionnaire Adult Version (Haem-A-QoL)
+
+Work and School",1,,,
+"FIND_SUB_CAT_DEF","WPAI-SHP FIND_SUB_CAT","Work Productivity and Activity Impairmen","Work Productivity and Activity Impairment Questionnaire: Specific Health Problem
+CDISC Code: C100779 (2016-06-24 package)
+CDISC Submission Value: WPAI-SHP
+CDISC synonyms: Work Productivity and Activity Impairment Questionnaire - Specific Health Problem V2.0 Questionnaire Test Name
+CDISC Definition: The Work Productivity and Activity Impairment - Specific Health Problems Questionnaire Version 2.0 (WPAI01) (http://www.reillyassociates.net/WPAI_SHP.html).
+NCI Preferred Term: Work Productivity and Activity Impairment Specific Health Problems Version 2.0 Questionnaire",1,,,
+"FIND_SUB_CAT_DEF","WRSS_V2.0 FIND_SUB_CAT","Weight Related Sign and Symptom v2.0","Sponsor Defined: Weight Related Sign and Symptom measure version 2.0",1,,,

@@ -1,0 +1,11 @@
+CT_CD_LIST_SUBMVAL,CT_NAME,NAME_SENTENSE_CASE,CT_SUBMVAL,DEFINITION,ORDER,CT_CD,NCI_PREFERRED_NAME
+ROLE,Identifier,identifier,IDENTIFIER,Sponsor terminology for Identifier role,1,,Identifier
+ROLE,Topic,topic,TOPIC,Sponsor terminology for Topic role,2,,Topic
+ROLE,Timing,timing,TIMING,Sponsor terminology for Timing role,3,,Timing
+ROLE,Grouping Qualifier,grouping qualifier,GROUQUAL,Sponsor terminology for Grouping Qualifier role,4,,Grouping qualifier
+ROLE,Record Qualifier,record qualifier,RECOQUAL,Sponsor terminology for Record Qualifier role,4,,Record qualifier
+ROLE,Variable Qualifier,variable qualifier,VARIQUAL,Sponsor terminology for Variable Qualifier role,5,,Variable qualifier
+ROLE,Result Qualifier,result qualifier,RESUQUAL,Sponsor terminology for Result Qualifier role,6,,Result qualifier
+ROLE,Rule Variable Qualifier,rule variable qualifier,RULEVARI,Sponsor terminology for Rule Variable Qualifier role,7,,Rule variable qualifier
+ROLE,Synonym Qualifier,synonym qualifier,SYNOQUAL,Sponsor terminology for Synonym Qualifier role,8,,Synonym qualifier
+ROLE,Timing Variable,timing variable,TIMING,Sponsor terminology for Timing Variable role,9,,Timing variable

@@ -1,0 +1,5 @@
+library,dictionary_codelist_name,template_parameter
+SNOMED,DiseaseDisorder,Y
+MED-RT,PClass,N
+UNII,UNII,N
+UCUM,UCUM,N

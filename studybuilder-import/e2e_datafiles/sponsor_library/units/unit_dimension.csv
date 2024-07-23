@@ -1,0 +1,91 @@
+"library","catalogue","CD_LIST_ID","CD_VAL","CD_VAL_LB","CD_VAL_STD","DEF_COMPLETE","CD_LIST_VAL_STATUS","description","CD_VAL_SORT_SEQ"
+"Sponsor","SDTM CT","UNIT_DIMENSION","WEIGHT","Weight","Y","Y","A","Weight","123"
+"Sponsor","SDTM CT","UNIT_DIMENSION","VOLUMETRIC RADIOACTIVITY","Volumetric radioactivity","Y","Y","A","Volumetric radioactivity concentration
+","122"
+"Sponsor","SDTM CT","UNIT_DIMENSION","VOLUMETRIC FLOW RATE","Volumetric flow rate","Y","Y","A","Volumetric flow rate","122"
+"Sponsor","SDTM CT","UNIT_DIMENSION","VOLUME PER AREA","Volumen per Area","Y","Y","A","Volume as defined by the amount of a three dimensional space occupied by an object or the capacity of a space or container divided by area as defined by the extent of a 2-dimensional surface enclosed within a boundary.","103"
+"Sponsor","SDTM CT","UNIT_DIMENSION","VOLUME","Volume","Y","Y","A","Example: mL (for millilitre).
+Wikipedia: The volume of any solid, liquid, or gas is how much three-dimensional space it occupies, often quantified numerically.","122"
+"Sponsor","SDTM CT","UNIT_DIMENSION","VELOCITY","Velocity","Y","Y","A","Measure of speed and velocity","121"
+"Sponsor","SDTM CT","UNIT_DIMENSION","U_IU Concentration","U/IU Concentration","Y","Y","A","U/IU Concentration. Combining Unit Concentration and IU concentration
+","121"
+"Sponsor","SDTM CT","UNIT_DIMENSION","U CONCENTRATION","U Concentration","Y","Y","A","Unit Concentration codelist to capture concentrations measured in U/ml, U/L ect.
+","121"
+"Sponsor","SDTM CT","UNIT_DIMENSION","TIME TIMES CONCENTRATION","Time times concentration","N","N","A","Time times concentration","202001"
+"Sponsor","SDTM CT","UNIT_DIMENSION","TIME","Time","Y","Y","A","Examples: s (for seconds), min (for minutes).
+Wikipedia: A component of the measuring system used to sequence events, to compare the durations of events and the intervals between them, and to quantify the motions of objects.","120"
+"Sponsor","SDTM CT","UNIT_DIMENSION","TEMPERATURE","Temperature","Y","Y","A","Temperature","120"
+"Sponsor","SDTM CT","UNIT_DIMENSION","SCORE","Score","Y","Y","A","Score - often used in questionnaires, where the response is on e.g a scale from 1-10, i.e. no unit. Also to be used for scales like VAS scales 
+","119"
+"Sponsor","SDTM CT","UNIT_DIMENSION","RESPIRATORY RATE","Respiratory rate","Y","Y","A","Example: breaths/min (for Respiratory rate).","118"
+"Sponsor","SDTM CT","UNIT_DIMENSION","RELATIVE WEIGHT","Relative weight","Y","Y","A","Relative weight e.g. nmol/kg","231"
+"Sponsor","SDTM CT","UNIT_DIMENSION","RELATIVE VOLUME","Relative volume","Y","Y","A","Example: mL/kg","118"
+"Sponsor","SDTM CT","UNIT_DIMENSION","RELATIVE MASS FLOW RATE","Relative Mass Flow Rate","Y","Y","A","Mass of a substance relative to bodyweight that passes through a given surface per unit time, e.g. mg/kg/min.","118"
+"Sponsor","SDTM CT","UNIT_DIMENSION","RELATIVE FLOW RATE","Relative flow rate","Y","Y","A","Example: mL/h/kg","118"
+"Sponsor","SDTM CT","UNIT_DIMENSION","RELATIVE DOSE UNIT","Relative Dose Unit","Y","Y","A","Relative dose unit, to be used for derived variables in subj_num_find reg. dosing that are not mapped to subj_comp_dos
+","117"
+"Sponsor","SDTM CT","UNIT_DIMENSION","RADIOACTIVITY","Radioactivity","Y","Y","A","Radioactivity","116"
+"Sponsor","SDTM CT","UNIT_DIMENSION","PRESSURE","Pressure","Y","Y","A","Example: mmHg.
+The force applied to a unit area of surface.","116"
+"Sponsor","SDTM CT","UNIT_DIMENSION","PERCENTAGE","Percentage","Y","Y","A","Percentage. Example % for HbA1c","116"
+"Sponsor","SDTM CT","UNIT_DIMENSION","OSMOLALITY","Osmolality","Y","Y","A","CDISC submission value:OSMLTY
+CDISC code: C74801
+CDISC synonym: Osmolality
+CDISC definition: A measurement of the osmoles of solute per unit of biological specimen.
+","501"
+"Sponsor","SDTM CT","UNIT_DIMENSION","OPTICAL DENSITY","Optical Density","Y","Y","A","Optical Density","1"
+"Sponsor","SDTM CT","UNIT_DIMENSION","NO UNIT","no unit","N","Y","A","no unit","1"
+"Sponsor","SDTM CT","UNIT_DIMENSION","MICROSCOPY","Microscopy","Y","Y","A","Microscopy
+","115"
+"Sponsor","SDTM CT","UNIT_DIMENSION","MICROSCOPE DEPENDENT COUNTS","Microscope dependent counts","N","Y","A","A dimention to contain the countscounts dependent on the microscope making the counting possible.","116"
+"Sponsor","SDTM CT","UNIT_DIMENSION","MASS FRACTION","Mass fraction","Y","Y","A","Example: mg/kg","113"
+"Sponsor","SDTM CT","UNIT_DIMENSION","MASS FLOW RATE","Mass Flow Rate","Y","Y","A","Mass of a substance that passes through a given surface per unit time(wikipedia), e.g. mg/min.","113"
+"Sponsor","SDTM CT","UNIT_DIMENSION","LENGTH PER TIME","Length per time","N","Y","A","Sponsor defined: Length per time","201505"
+"Sponsor","SDTM CT","UNIT_DIMENSION","LENGTH","Length","Y","Y","A","Length","112"
+"Sponsor","SDTM CT","UNIT_DIMENSION","IU CONCENTRATION","IU Concentration","Y","Y","A","International Unit Concentration codelist to capture concentrations measured in IU/ml, IU/L ect.","109"
+"Sponsor","SDTM CT","UNIT_DIMENSION","INHIBITOR ACTIVITY","Inhibitor activity","N","Y","A","Sponsor defined: Inhibitor activity
+","1"
+"Sponsor","SDTM CT","UNIT_DIMENSION","FLOW","Flow","Y","Y","A","Example: mL/s.
+Volume per time","106"
+"Sponsor","SDTM CT","UNIT_DIMENSION","EQUIVALENT RATE","Equivalent Rate","N","Y","A","Equivalent Rate
+The equivalent of a substance is the amount of the substance multiplied by its valence.  For example, 1 mEq = 39 mg of potassium or 23 mg of sodium or  35.4 mg of chlorine.","112"
+"Sponsor","SDTM CT","UNIT_DIMENSION","ENERGY EXPENDITURE","Energy Expenditure","Y","Y","A","Used to measure energy burned per unit of time, e.g cal/hr, kJ/min?","105"
+"Sponsor","SDTM CT","UNIT_DIMENSION","ENERGY","Energy","Y","Y","A","Energy
+CDISC not found
+","105"
+"Sponsor","SDTM CT","UNIT_DIMENSION","ELIMINATION","Elimination","Y","Y","A","Measure of elimination per time unit. Used for terminal half life
+","104"
+"Sponsor","SDTM CT","UNIT_DIMENSION","DOSE UNIT RATIO","Dose unit ratio","Y","Y","A","Dose unit ratio - e.g. for the Insulin:Carbohydrate ratio","105"
+"Sponsor","SDTM CT","UNIT_DIMENSION","DOSE UNIT PER TIME","Dose unit per time","Y","Y","A","Dose unit per time
+","104"
+"Sponsor","SDTM CT","UNIT_DIMENSION","INSULIN DOSE UNIT","Insulin Dose Unit","Y","Y","A","Dose unit, to be used for derived variables in subj_num_find reg. dosing that are not mapped to subj_comp_dos
+","104"
+"Sponsor","SDTM CT","UNIT_DIMENSION","DOSE RATE","Dose Rate","Y","Y","A","Unit used to measure the amount per weight per unit of time, e.g. mg/kg/min. Can also be used for Infusion rates, oxidation rates, calorimetic rates etc.
+NCI definition: The strength of a treatment given over a period of time.","104"
+"Sponsor","SDTM CT","UNIT_DIMENSION","DICHOTOMY","Dichotomy","Y","Y","A","A dimension to hold numeric boolean- like units
+","104"
+"Sponsor","SDTM CT","UNIT_DIMENSION","DEGREES","Degrees","Y","Y","A","CDISC submission value:deg
+CDISC code: C68667
+CDISC synonym: Degree Unit of Plane Angle
+CDISC definition: A unit of plane angle measurement equal to the length of the arc cut out by the angle, divided by the circumference of the circle, and multiplied by 360. The symbol for degrees is a small superscript circle. One radian is about 57 degrees and one degree is pi/180 radians.(NCI)","15"
+"Sponsor","SDTM CT","UNIT_DIMENSION","DECIBEL PER LENGTH","Decibel per length","N","N","A","Decibel per length
+Eg: dB/m","240"
+"Sponsor","SDTM CT","UNIT_DIMENSION","COUNT PER TIME","Count per time","Y","Y","A","Count per time","99"
+"Sponsor","SDTM CT","UNIT_DIMENSION","COUNT","Count","Y","Y","A","Dimension that holds outcomes(numbers) of count variables","103"
+"Sponsor","SDTM CT","UNIT_DIMENSION","CONCENTRATION PER UNIT","Concentration per unit","N","Y","A","Concentration per unit, example: mmol/L/U","103"
+"Sponsor","SDTM CT","UNIT_DIMENSION","CONCENTRATION PER TIME PER DOSE","Concentration per time per dose","N","Y","A","Sponsor defined: Concentration per time per dose","201506"
+"Sponsor","SDTM CT","UNIT_DIMENSION","CONCENTRATION PER TIME","Concentration per time","Y","Y","A","Example: mg/dL/h","103"
+"Sponsor","SDTM CT","UNIT_DIMENSION","CONCENTRATION","Concentration","Y","Y","A","Concentration. Example mmol/L","103"
+"Sponsor","SDTM CT","UNIT_DIMENSION","CELL COUNT","Cell count","Y","Y","A","Cell count. Example 10^9/L","103"
+"Sponsor","SDTM CT","UNIT_DIMENSION","BMI","BMI","Y","Y","A","Example: kg/m2.
+CDISC: A general indicator of the body fat an individual is carrying based upon the ratio of weight to height. (NCI)","102"
+"Sponsor","SDTM CT","UNIT_DIMENSION","BLOOD FLOW","Blood flow","Y","Y","A","Blood flow
+","102"
+"Sponsor","SDTM CT","UNIT_DIMENSION","BEAT RATE","Beat rate","Y","Y","A","Example: beats/min (for pulse or heart).","102"
+"Sponsor","SDTM CT","UNIT_DIMENSION","AREA","Area","Y","Y","A","Area is a quantity expressing the two-dimensional size of a defined part of a surface, typically a region bounded by a closed curve.","101"
+"Sponsor","SDTM CT","UNIT_DIMENSION","ARBITRARINESS","Arbitrariness","Y","Y","A","Dimension for arbitrary units
+","101"
+"Sponsor","SDTM CT","UNIT_DIMENSION","ACIDITY","Acidity","Y","Y","A","Measure measure of the acidity or basicity of a solution","101"
+"Sponsor","SDTM CT","UNIT_DIMENSION","ENDPOINT UNITS","Endpoint Units","Y","Y","A","A unit dimension to hold units for the unit column in the endpoint table. Units in this dimension are not necesarily real units and don´t have linkage to CT or conversion logic defined.","101"
+"Sponsor","SDTM CT","UNIT_DIMENSION","AREA PER TIME","Area per Time","Y","Y","A","A unit dimension to hold units of area divided by time.","201"
+"Sponsor","SDTM CT","UNIT_DIMENSION","DOSE UNIT","Dose Unit","Y","Y","A","A unit dimension to hold dose units","202"

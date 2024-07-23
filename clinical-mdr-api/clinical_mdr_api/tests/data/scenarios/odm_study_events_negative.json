@@ -1,0 +1,251 @@
+[
+    {
+        "name": "Create a new ODM Study Event",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "oid1",
+                "effective_date": "2022-04-21",
+                "retired_date": "2022-04-21",
+                "description": "description1"
+            },
+            "url": "concepts/odms/study-events"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmStudyEvent_000001",
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "oid1",
+                "effective_date": "2022-04-21",
+                "retired_date": "2022-04-21",
+                "description": "description1",
+                "display_in_tree": true,
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "forms": [],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test cannot create a new ODM Study Event with existing name",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "oid1",
+                "effective_date": "2022-04-21",
+                "retired_date": "2022-04-21",
+                "form_uids": []
+            },
+            "url": "concepts/odms/study-events"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "ODM Study Event with ['name: name1', 'OID: oid1'] already exists.",
+                "time": "2022-03-07T12: 14: 18.116363",
+                "path": "http://testserver/concepts/odms/study-events",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test getting error for retrieving non-existent ODM Study Event",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/study-events/OdmStudyEvent_000002"
+        },
+        "response": {
+            "code": 404,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "OdmStudyEventAR with uid OdmStudyEvent_000002 does not exist or there's no version with requested status or version number.",
+                "time": "2022-03-07T12:20:39.613764",
+                "path": "http://testserver/concepts/odms/study-events/OdmStudyEvent_000002",
+                "method": "GET",
+                "type": "NotFoundException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot inactivate an ODM Study Event that is in Draft status",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "concepts/odms/study-events/OdmStudyEvent_000001/activations"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "Cannot retire draft version.",
+                "time": "2022-03-07T12:24:39.980123",
+                "path": "http://testserver/concepts/odms/study-events/OdmStudyEvent_000001/activations",
+                "method": "DELETE",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot reactivate an ODM Study Event that is not retired",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/study-events/OdmStudyEvent_000001/activations"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "Only RETIRED version can be reactivated.",
+                "time": "2022-03-07T12:27:17.572613",
+                "path": "http://testserver/concepts/odms/study-events/OdmStudyEvent_000001/activations",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Approve ODM Study Event",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/study-events/OdmStudyEvent_000001/approvals"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "start_date": "2022-09-28T13:09:05.052653",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "user_initials": "TODO user initials",
+                "change_description": "Approved version",
+                "uid": "OdmStudyEvent_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "effective_date": "2022-04-21",
+                "retired_date": "2022-04-21",
+                "description": "description1",
+                "display_in_tree": true,
+                "forms": [],
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Inactivate ODM Study Event",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "concepts/odms/study-events/OdmStudyEvent_000001/activations"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "start_date": "2022-09-28T13:15:41.238896",
+                "end_date": null,
+                "status": "Retired",
+                "version": "1.0",
+                "user_initials": "TODO user initials",
+                "change_description": "Inactivated version",
+                "uid": "OdmStudyEvent_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "effective_date": "2022-04-21",
+                "retired_date": "2022-04-21",
+                "description": "description1",
+                "display_in_tree": true,
+                "forms": [],
+                "possible_actions": [
+                    "delete",
+                    "reactivate"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test cannot add ODM Forms to an ODM Study Event that is in Retired status",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": [
+                {
+                    "uid": "odm_form1",
+                    "order_number": 1,
+                    "mandatory": "Yes",
+                    "locked": "No",
+                    "collection_exception_condition_oid": "None"
+                }
+            ],
+            "url": "concepts/odms/study-events/OdmStudyEvent_000001/forms"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "The object is inactive",
+                "time": "2022-03-07T12:30:50.195156",
+                "path": "http://testserver/concepts/odms/study-events/OdmStudyEvent_000001/forms",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    }
+]

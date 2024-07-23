@@ -1,0 +1,96 @@
+[
+  {
+    "accepted_version": false,
+    "brand_name": null,
+    "endpoint_count": 0,
+    "latest_objective": null,
+    "objective": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "library": {
+        "is_editable": true,
+        "name": "Sponsor"
+      },
+      "name": "To compare the effect of [NPH Insulin] relative to [Metformin] on [1,5 AG (Anhydroglucitol)]",
+      "name_plain": "To compare the effect of [NPH Insulin] relative to [Metformin] on [1,5 AG (Anhydroglucitol)]",
+      "objective_template": {
+        "name": "To compare the effect of [Compound] relative to [Comparator] on [ActivityInstance]",
+        "name_plain": "To compare the effect of [Compound] relative to [Comparator] on [ActivityInstance]",
+        "uid": "ObjectiveTemplate_000004"
+      },
+      "parameter_terms": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "terms": [
+            {
+              "index": 1,
+              "name": "NPH Insulin",
+              "type": "Comparator",
+              "uid": "Compound_000002"
+            }
+          ]
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "terms": [
+            {
+              "index": 1,
+              "name": "Metformin",
+              "type": "Compound",
+              "uid": "Compound_000001"
+            }
+          ]
+        },
+        {
+          "conjunction": "",
+          "position": 3,
+          "terms": [
+            {
+              "index": 1,
+              "name": "1,5 AG (Anhydroglucitol)",
+              "type": "ActivityInstance",
+              "uid": "NumericFinding_000145"
+            }
+          ]
+        }
+      ],
+      "possible_actions": [
+        "inactivate"
+      ],
+      "start_date": "2022-05-24T09:57:41.019121",
+      "status": "Final",
+      "study_count": null,
+      "uid": "Objective_000005",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "objective_level": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000001",
+      "end_date": null,
+      "library_name": "CDISC",
+      "order": 2,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "Secondary Objective",
+      "sponsor_preferred_name_sentence_case": "secondary objective",
+      "start_date": "2022-05-23T11:56:54.749976",
+      "status": "Final",
+      "term_uid": "C85827_OBJSEC",
+      "user_initials": "unknown-user",
+      "version": "6.0"
+    },
+    "order": 1,
+    "project_name": "CDISC Dev",
+    "project_number": "CDISC DEV",
+    "start_date": "2022-05-24T09:57:41.256149",
+    "study_objective_uid": "StudyObjective_000001",
+    "study_uid": "Study_000001",
+    "user_initials": "unknown-user"
+  }
+]

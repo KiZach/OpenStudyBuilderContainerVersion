@@ -1,0 +1,206 @@
+[
+    {
+        "current_metadata": {
+            "identification_metadata": {
+                "clinical_programme_name": "CDISC Development programme",
+                "project_name": "CDISC Dev",
+                "project_number": "CDISC DEV",
+                "registry_identifiers": {
+                    "ct_gov_id": null,
+                    "ct_gov_id_null_value_code": null,
+                    "eudract_id": null,
+                    "eudract_id_null_value_code": null,
+                    "investigational_new_drug_application_number_ind": null,
+                    "investigational_new_drug_application_number_ind_null_value_code": null,
+                    "japanese_trial_registry_id_japic": null,
+                    "japanese_trial_registry_id_japic_null_value_code": null,
+                    "universal_trial_number_utn": null,
+                    "universal_trial_number_utn_null_value_code": null,
+                    "eu_trial_number": null,
+                    "eu_trial_number_null_value_code": null,
+                    "civ_id_sin_number": null,
+                    "civ_id_sin_number_null_value_code": null,
+                    "national_clinical_trial_number_null_value_code": null,
+                    "national_clinical_trial_number": null,
+                    "japanese_trial_registry_number_jrct_null_value_code": null,
+                    "japanese_trial_registry_number_jrct": null,
+                    "national_medical_products_administration_nmpa_number_null_value_code": null,
+                    "national_medical_products_administration_nmpa_number": null,
+                    "eudamed_srn_number_null_value_code": null,
+                    "eudamed_srn_number": null,
+                    "investigational_device_exemption_ide_number": null,
+                    "investigational_device_exemption_ide_number_null_value_code": null
+                },
+                "study_acronym": null,
+                "study_id": "CDISC DEV-9999",
+                "study_number": "9999"
+            },
+            "version_metadata": {
+                "version_author": null,
+                "version_description": null,
+                "version_number": null,
+                "study_status": "DRAFT",
+                "version_timestamp": "2022-06-20T23:35:02.378816"
+            }
+        },
+        "project_number": "CDISC DEV",
+        "study_acronym": null,
+        "study_id": "CDISC DEV-9999",
+        "study_number": "9999",
+        "study_status": "DRAFT",
+        "uid": "Study_000001"
+    },
+    {
+        "current_metadata": {
+            "identification_metadata": {
+                "clinical_programme_name": "CDISC Development programme",
+                "project_name": "CDISC Dev",
+                "project_number": "CDISC DEV",
+                "registry_identifiers": {
+                    "ct_gov_id": null,
+                    "ct_gov_id_null_value_code": null,
+                    "eudract_id": null,
+                    "eudract_id_null_value_code": null,
+                    "investigational_new_drug_application_number_ind": null,
+                    "investigational_new_drug_application_number_ind_null_value_code": null,
+                    "japanese_trial_registry_id_japic": null,
+                    "japanese_trial_registry_id_japic_null_value_code": null,
+                    "universal_trial_number_utn": null,
+                    "universal_trial_number_utn_null_value_code": null,
+                    "eu_trial_number": null,
+                    "eu_trial_number_null_value_code": null,
+                    "civ_id_sin_number": null,
+                    "civ_id_sin_number_null_value_code": null,
+                    "national_clinical_trial_number_null_value_code": null,
+                    "national_clinical_trial_number": null,
+                    "japanese_trial_registry_number_jrct_null_value_code": null,
+                    "japanese_trial_registry_number_jrct": null,
+                    "national_medical_products_administration_nmpa_number_null_value_code": null,
+                    "national_medical_products_administration_nmpa_number": null,
+                    "eudamed_srn_number_null_value_code": null,
+                    "eudamed_srn_number": null,
+                    "investigational_device_exemption_ide_number": null,
+                    "investigational_device_exemption_ide_number_null_value_code": null
+                },
+                "study_acronym": null,
+                "study_id": "CDISC DEV-1234",
+                "study_number": "1234"
+            },
+            "version_metadata": {
+                "version_author": null,
+                "version_description": null,
+                "version_number": null,
+                "study_status": "DRAFT",
+                "version_timestamp": "2022-06-20T23:35:02.378816"
+            }
+        },
+        "project_number": "CDISC DEV",
+        "study_acronym": null,
+        "study_id": "CDISC DEV-1234",
+        "study_number": "1234",
+        "study_status": "DRAFT",
+        "uid": "Study_000002"
+    },
+    {
+        "current_metadata": {
+            "identification_metadata": {
+                "clinical_programme_name": "CDISC Development programme",
+                "project_name": "CDISC Dev",
+                "project_number": "CDISC DEV",
+                "registry_identifiers": {
+                    "ct_gov_id": null,
+                    "ct_gov_id_null_value_code": null,
+                    "eudract_id": null,
+                    "eudract_id_null_value_code": null,
+                    "investigational_new_drug_application_number_ind": null,
+                    "investigational_new_drug_application_number_ind_null_value_code": null,
+                    "japanese_trial_registry_id_japic": null,
+                    "japanese_trial_registry_id_japic_null_value_code": null,
+                    "universal_trial_number_utn": null,
+                    "universal_trial_number_utn_null_value_code": null,
+                    "eu_trial_number": null,
+                    "eu_trial_number_null_value_code": null,
+                    "civ_id_sin_number": null,
+                    "civ_id_sin_number_null_value_code": null,
+                    "national_clinical_trial_number_null_value_code": null,
+                    "national_clinical_trial_number": null,
+                    "japanese_trial_registry_number_jrct_null_value_code": null,
+                    "japanese_trial_registry_number_jrct": null,
+                    "national_medical_products_administration_nmpa_number_null_value_code": null,
+                    "national_medical_products_administration_nmpa_number": null,
+                    "eudamed_srn_number_null_value_code": null,
+                    "eudamed_srn_number": null,
+                    "investigational_device_exemption_ide_number": null,
+                    "investigational_device_exemption_ide_number_null_value_code": null
+                },
+                "study_acronym": "Study with epoch and without visits defined",
+                "study_id": "CDISC DEV-2345",
+                "study_number": "2345"
+            },
+            "version_metadata": {
+                "version_author": null,
+                "version_description": null,
+                "version_number": null,
+                "study_status": "DRAFT",
+                "version_timestamp": "2022-06-20T23:35:02.378816"
+            }
+        },
+        "project_number": "CDISC DEV",
+        "study_acronym": null,
+        "study_id": "CDISC DEV-2345",
+        "study_number": "2345",
+        "study_status": "DRAFT",
+        "uid": "Study_000003"
+    },
+    {
+        "current_metadata": {
+            "identification_metadata": {
+                "clinical_programme_name": "CDISC Development programme",
+                "project_name": "CDISC Dev",
+                "project_number": "CDISC DEV",
+                "registry_identifiers": {
+                    "ct_gov_id": null,
+                    "ct_gov_id_null_value_code": null,
+                    "eudract_id": null,
+                    "eudract_id_null_value_code": null,
+                    "investigational_new_drug_application_number_ind": null,
+                    "investigational_new_drug_application_number_ind_null_value_code": null,
+                    "japanese_trial_registry_id_japic": null,
+                    "japanese_trial_registry_id_japic_null_value_code": null,
+                    "universal_trial_number_utn": null,
+                    "universal_trial_number_utn_null_value_code": null,
+                    "eu_trial_number": null,
+                    "eu_trial_number_null_value_code": null,
+                    "civ_id_sin_number": null,
+                    "civ_id_sin_number_null_value_code": null,
+                    "national_clinical_trial_number_null_value_code": null,
+                    "national_clinical_trial_number": null,
+                    "japanese_trial_registry_number_jrct_null_value_code": null,
+                    "japanese_trial_registry_number_jrct": null,
+                    "national_medical_products_administration_nmpa_number_null_value_code": null,
+                    "national_medical_products_administration_nmpa_number": null,
+                    "eudamed_srn_number_null_value_code": null,
+                    "eudamed_srn_number": null,
+                    "investigational_device_exemption_ide_number": null,
+                    "investigational_device_exemption_ide_number_null_value_code": null
+                },
+                "study_acronym": "Study with no definitions",
+                "study_id": "CDISC DEV-3456",
+                "study_number": "3456"
+            },
+            "version_metadata": {
+                "version_author": null,
+                "version_description": null,
+                "version_number": null,
+                "study_status": "DRAFT",
+                "version_timestamp": "2022-06-20T23:35:02.378816"
+            }
+        },
+        "project_number": "CDISC DEV",
+        "study_acronym": null,
+        "study_id": "CDISC DEV-3456",
+        "study_number": "3456",
+        "study_status": "DRAFT",
+        "uid": "Study_000004"
+    }
+]

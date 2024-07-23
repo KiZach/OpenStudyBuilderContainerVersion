@@ -1,0 +1,301 @@
+[
+    {
+        "name": "Test empty list",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/endpoints"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "2",
+                "content-type": "application/json"
+            },
+            "result": {
+                "items": [],
+                "total": 0,
+                "page": 1,
+                "size": 10
+            }
+        }
+    },
+    {
+        "name": "Test adding endpoint wrong parameter",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "endpoint_template_uid": "{etuid}",
+                "library_name": "Test library",
+                "name": "Test endpoint",
+                "objective_uid": "{ouid}",
+                "parameter_terms": [
+                    {
+                        "conjunction": "and",
+                        "position": 1,
+                        "terms": [
+                            {
+                                "index": 1,
+                                "name": "type 2 diabetes",
+                                "type": "Indication",
+                                "uid": "Indication_000001"
+                            },
+                            {
+                                "index": 2,
+                                "name": "coronary heart disease",
+                                "type": "Indication",
+                                "uid": "Indication-99992"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "url": "/endpoints"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "148",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "One or more of the specified template parameters can not be found.",
+                "method": "POST",
+                "path": "http://testserver/endpoints",
+                "time": "2020-11-11T02:03:45.621381",
+                "type": "ValidationException"
+            }
+        }
+    },
+    {
+        "name": "Test previewing endpoint",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "endpoint_template_uid": "{etuid}",
+                "library_name": "Test library",
+                "name": "Test objective",
+                "objective_uid": "{ouid}",
+                "parameter_terms": [
+                    {
+                        "conjunction": "and",
+                        "position": 1,
+                        "terms": [
+                            {
+                                "index": 1,
+                                "name": "type 2 diabetes",
+                                "type": "Indication",
+                                "uid": "Indication-99991"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "url": "/endpoints/preview"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "change_description": "Initial version",
+                "end_date": null,
+                "endpoint_template": {
+                    "name": "Test [Indication]",
+                    "name_plain": "Test [Indication]",
+                    "guidance_text": null,
+                    "uid": "{otuid}",
+                    "sequence_id": "E1",
+                    "library_name": "Test library"
+                },
+                "library": {
+                    "is_editable": true,
+                    "name": "Test library"
+                },
+                "name": "Test [type 2 diabetes]",
+                "name_plain": "Test type 2 diabetes",
+                "parameter_terms": [
+                    {
+                        "conjunction": "and",
+                        "position": 1,
+                        "terms": [
+                            {
+                                "index": 1,
+                                "name": "type 2 diabetes",
+                                "type": "Indication",
+                                "uid": "Indication-99991"
+                            }
+                        ]
+                    }
+                ],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ],
+                "start_date": "2020-11-25T00:34:19+00:00",
+                "status": "Draft",
+                "study_count": null,
+                "uid": "64b411b1-b022-4b95-8b9b-52c300d6f988",
+                "user_initials": "unknown-user",
+                "version": "0.1"
+            }
+        }
+    },
+    {
+        "name": "Test adding endpoint",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "endpoint_template_uid": "{etuid}",
+                "library_name": "Test library",
+                "name": "Test objective",
+                "objective_uid": "{ouid}",
+                "parameter_terms": [
+                    {
+                        "conjunction": "and",
+                        "position": 1,
+                        "terms": [
+                            {
+                                "index": 1,
+                                "name": "type 2 diabetes",
+                                "type": "Indication",
+                                "uid": "Indication-99991"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "url": "/endpoints"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "change_description": "Initial version",
+                "end_date": null,
+                "endpoint_template": {
+                    "name": "Test [Indication]",
+                    "name_plain": "Test [Indication]",
+                    "guidance_text": null,
+                    "uid": "{otuid}",
+                    "sequence_id": "E1",
+                    "library_name": "Test library"
+                },
+                "library": {
+                    "is_editable": true,
+                    "name": "Test library"
+                },
+                "name": "Test [type 2 diabetes]",
+                "name_plain": "Test type 2 diabetes",
+                "parameter_terms": [
+                    {
+                        "conjunction": "and",
+                        "position": 1,
+                        "terms": [
+                            {
+                                "index": 1,
+                                "name": "type 2 diabetes",
+                                "type": "Indication",
+                                "uid": "Indication-99991"
+                            }
+                        ]
+                    }
+                ],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ],
+                "start_date": "2020-11-25T00:34:19+00:00",
+                "status": "Draft",
+                "study_count": null,
+                "uid": "64b411b1-b022-4b95-8b9b-52c300d6f988",
+                "user_initials": "unknown-user",
+                "version": "0.1"
+            }
+        }
+    },
+    {
+        "name": "Test adding the same endpoint name",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "endpoint_template_uid": "{etuid}",
+                "library_name": "Test library",
+                "name": "Test objective",
+                "objective_uid": "{ouid}",
+                "parameter_terms": [
+                    {
+                        "conjunction": "and",
+                        "position": 1,
+                        "terms": [
+                            {
+                                "index": 1,
+                                "name": "type 2 diabetes",
+                                "type": "Indication",
+                                "uid": "Indication-99991"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "url": "/endpoints"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "138",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "The specified object already exists.",
+                "method": "POST",
+                "path": "http://testserver/endpoints",
+                "time": "2020-11-10T01:32:16.234697",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test list studies",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/endpoints/64b411b1-b022-4b95-8b9b-52c300d6f988/studies/"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "2",
+                "content-type": "application/json"
+            },
+            "result": []
+        }
+    },
+    {
+        "name": "Test DELETE",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "/endpoints/Endpoint_000002"
+        },
+        "response": {
+            "code": 204,
+            "headers": {},
+            "result": null
+        }
+    }
+]

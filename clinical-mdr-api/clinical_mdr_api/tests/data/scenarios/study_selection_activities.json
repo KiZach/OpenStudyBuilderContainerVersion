@@ -1,0 +1,1089 @@
+[
+   {
+      "name": "Test getting empty list",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/studies/study_root/study-activities"
+      },
+      "response": {
+         "code": 200,
+         "headers": {
+            "content-length": "2",
+            "content-type": "application/json"
+         },
+         "result": {
+            "items": [],
+            "total": 0,
+            "page": 1,
+            "size": 10
+         }
+      }
+   },
+   {
+      "name": "Test getting empty list for all studies",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/study-activities"
+      },
+      "response": {
+         "code": 200,
+         "headers": {
+            "content-length": "2",
+            "content-type": "application/json"
+         },
+         "result": {
+            "items": [],
+            "total": 0,
+            "page": 1,
+            "size": 10
+         }
+      }
+   },
+   {
+      "name": "Test adding selection",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "activity_uid": "activity_root1",
+            "activity_subgroup_uid": "activity_subgroup_root1",
+            "activity_group_uid": "activity_group_root1",
+            "soa_group_term_uid": "term_efficacy_uid"
+         },
+         "url": "/studies/study_root/study-activities"
+      },
+      "response": {
+         "code": 201,
+         "headers": {
+            "content-length": "1039",
+            "content-type": "application/json"
+         },
+         "result": {
+            "study_uid": "study_root",
+            "order": 1,
+            "study_version": null,
+            "study_activity_uid": "StudyActivity_000001",
+            "study_activity_subgroup": {
+               "study_activity_subgroup_uid": "StudyActivitySubGroup_000001",
+               "activity_subgroup_uid": "activity_subgroup_root1",
+               "activity_subgroup_name": "name1"
+            },
+            "study_activity_group": {
+               "study_activity_group_uid": "StudyActivityGroup_000001",
+               "activity_group_uid": "activity_group_root1",
+               "activity_group_name": "name1"
+            },
+            "study_soa_group": {
+               "study_soa_group_uid": "StudySoAGroup_000001",
+               "soa_group_term_uid": "term_efficacy_uid",
+               "soa_group_name": "EFFICACY"
+            },
+            "show_activity_group_in_protocol_flowchart": true,
+            "show_activity_subgroup_in_protocol_flowchart": true,
+            "show_activity_in_protocol_flowchart": false,
+            "show_soa_group_in_protocol_flowchart": false,
+            "activity": {
+               "uid": "activity_root1",
+               "name": "name1",
+               "name_sentence_case": "name1",
+               "nci_concept_id": null,
+               "definition": "definition1",
+               "abbreviation": "abbv",
+               "library_name": "Sponsor",
+               "start_date": "2021-10-26T12:13:11.513000",
+               "end_date": null,
+               "status": "Final",
+               "version": "1.0",
+               "change_description": "Approved version",
+               "user_initials": "TODO initials",
+               "possible_actions": [
+                  "inactivate",
+                  "new_version"
+               ],
+               "activity_groupings": [
+                  {
+                     "activity_subgroup_uid": "activity_subgroup_root1",
+                     "activity_subgroup_name": "name1",
+                     "activity_group_uid": "activity_group_root1",
+                     "activity_group_name": "name1"
+                  }
+               ],
+               "request_rationale": null,
+               "is_request_final": false,
+               "is_request_rejected": false,
+               "contact_person": null,
+               "reason_for_rejecting": null,
+               "requester_study_id": null,
+               "is_data_collected": false,
+               "is_multiple_selection_allowed": true,
+               "is_finalized": false,
+               "is_used_by_legacy_instances": false,
+               "replaced_by_activity": null
+            },
+            "start_date": "2021-10-06T14:39:31.561994",
+            "user_initials": "unknown-user",
+            "latest_activity": null,
+            "accepted_version": false
+         },
+         "save": {
+            "study_activity_uid": "study_activity_uid"
+         }
+      }
+   },
+   {
+      "name": "Test get all list non empty",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/studies/study_root/study-activities"
+      },
+      "response": {
+         "code": 200,
+         "headers": {
+            "content-length": "340",
+            "content-type": "application/json"
+         },
+         "result": {
+            "items": [
+               {
+                  "study_uid": "study_root",
+                  "order": 1,
+                  "study_version": null,
+                  "study_activity_uid": "StudyActivity_000001",
+                  "study_activity_subgroup": {
+                     "study_activity_subgroup_uid": "StudyActivitySubGroup_000001",
+                     "activity_subgroup_uid": "activity_subgroup_root1",
+                     "activity_subgroup_name": "name1"
+                  },
+                  "study_activity_group": {
+                     "study_activity_group_uid": "StudyActivityGroup_000001",
+                     "activity_group_uid": "activity_group_root1",
+                     "activity_group_name": "name1"
+                  },
+                  "study_soa_group": {
+                     "study_soa_group_uid": "StudySoAGroup_000001",
+                     "soa_group_term_uid": "term_efficacy_uid",
+                     "soa_group_name": "EFFICACY"
+                  },
+                  "show_activity_group_in_protocol_flowchart": true,
+                  "show_activity_subgroup_in_protocol_flowchart": true,
+                  "show_activity_in_protocol_flowchart": false,
+                  "show_soa_group_in_protocol_flowchart": false,
+                  "activity": {
+                     "uid": "activity_root1",
+                     "name": "name1",
+                     "name_sentence_case": "name1",
+                     "nci_concept_id": null,
+                     "definition": "definition1",
+                     "abbreviation": "abbv",
+                     "library_name": "Sponsor",
+                     "start_date": "2021-10-26T12:13:11.513000",
+                     "end_date": null,
+                     "status": "Final",
+                     "version": "1.0",
+                     "change_description": "Approved version",
+                     "user_initials": "TODO initials",
+                     "possible_actions": [
+                        "inactivate",
+                        "new_version"
+                     ],
+                     "activity_groupings": [
+                        {
+                           "activity_subgroup_uid": "activity_subgroup_root1",
+                           "activity_subgroup_name": "name1",
+                           "activity_group_uid": "activity_group_root1",
+                           "activity_group_name": "name1"
+                        }
+                     ],
+                     "request_rationale": null,
+                     "is_request_final": false,
+                     "is_request_rejected": false,
+                     "contact_person": null,
+                     "reason_for_rejecting": null,
+                     "requester_study_id": null,
+                     "is_data_collected": false,
+                     "is_multiple_selection_allowed": true,
+                     "is_finalized": false,
+                     "is_used_by_legacy_instances": false,
+                     "replaced_by_activity": null
+                  },
+                  "start_date": "2021-10-06T14:39:31.561994",
+                  "user_initials": "unknown-user",
+                  "latest_activity": null,
+                  "accepted_version": false
+               }
+            ],
+            "total": 0,
+            "page": 1,
+            "size": 10
+         }
+      }
+   },
+   {
+      "name": "Test get all for all studies",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/study-activities"
+      },
+      "response": {
+         "code": 200,
+         "headers": {
+            "content-length": "340",
+            "content-type": "application/json"
+         },
+         "result": {
+            "total": 0,
+            "page": 1,
+            "size": 10,
+            "items": [
+               {
+                  "study_uid": "study_root",
+                  "order": 1,
+                  "study_version": null,
+                  "study_activity_uid": "StudyActivity_000001",
+                  "study_activity_subgroup": {
+                     "study_activity_subgroup_uid": "StudyActivitySubGroup_000001",
+                     "activity_subgroup_uid": "activity_subgroup_root1",
+                     "activity_subgroup_name": "name1"
+                  },
+                  "study_activity_group": {
+                     "study_activity_group_uid": "StudyActivityGroup_000001",
+                     "activity_group_uid": "activity_group_root1",
+                     "activity_group_name": "name1"
+                  },
+                  "study_soa_group": {
+                     "study_soa_group_uid": "StudySoAGroup_000001",
+                     "soa_group_term_uid": "term_efficacy_uid",
+                     "soa_group_name": "EFFICACY"
+                  },
+                  "show_activity_group_in_protocol_flowchart": true,
+                  "show_activity_subgroup_in_protocol_flowchart": true,
+                  "show_activity_in_protocol_flowchart": false,
+                  "show_soa_group_in_protocol_flowchart": false,
+                  "activity": {
+                     "uid": "activity_root1",
+                     "name": "name1",
+                     "name_sentence_case": "name1",
+                     "nci_concept_id": null,
+                     "definition": "definition1",
+                     "abbreviation": "abbv",
+                     "library_name": "Sponsor",
+                     "start_date": "2021-10-26T12:13:11.513000",
+                     "end_date": null,
+                     "status": "Final",
+                     "version": "1.0",
+                     "change_description": "Approved version",
+                     "user_initials": "TODO initials",
+                     "possible_actions": [
+                        "inactivate",
+                        "new_version"
+                     ],
+                     "activity_groupings": [
+                        {
+                           "activity_subgroup_uid": "activity_subgroup_root1",
+                           "activity_subgroup_name": "name1",
+                           "activity_group_uid": "activity_group_root1",
+                           "activity_group_name": "name1"
+                        }
+                     ],
+                     "request_rationale": null,
+                     "is_request_final": false,
+                     "is_request_rejected": false,
+                     "contact_person": null,
+                     "reason_for_rejecting": null,
+                     "requester_study_id": null,
+                     "is_data_collected": false,
+                     "is_multiple_selection_allowed": true,
+                     "is_finalized": false,
+                     "is_used_by_legacy_instances": false,
+                     "replaced_by_activity": null
+                  },
+                  "start_date": "2021-10-06T14:39:31.561994",
+                  "user_initials": "unknown-user",
+                  "latest_activity": null,
+                  "accepted_version": false
+               }
+            ]
+         }
+      }
+   },
+   {
+      "name": "Test get all for all studies with filter on activity name",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/study-activities?activity_names=name1"
+      },
+      "response": {
+         "code": 200,
+         "headers": {
+            "content-length": "340",
+            "content-type": "application/json"
+         },
+         "result": {
+            "total": 0,
+            "page": 1,
+            "size": 10,
+            "items": [
+               {
+                  "study_uid": "study_root",
+                  "order": 1,
+                  "study_version": null,
+                  "study_activity_uid": "StudyActivity_000001",
+                  "study_activity_subgroup": {
+                     "study_activity_subgroup_uid": "StudyActivitySubGroup_000001",
+                     "activity_subgroup_uid": "activity_subgroup_root1",
+                     "activity_subgroup_name": "name1"
+                  },
+                  "study_activity_group": {
+                     "study_activity_group_uid": "StudyActivityGroup_000001",
+                     "activity_group_uid": "activity_group_root1",
+                     "activity_group_name": "name1"
+                  },
+                  "study_soa_group": {
+                     "study_soa_group_uid": "StudySoAGroup_000001",
+                     "soa_group_term_uid": "term_efficacy_uid",
+                     "soa_group_name": "EFFICACY"
+                  },
+                  "show_activity_group_in_protocol_flowchart": true,
+                  "show_activity_subgroup_in_protocol_flowchart": true,
+                  "show_activity_in_protocol_flowchart": false,
+                  "show_soa_group_in_protocol_flowchart": false,
+                  "activity": {
+                     "uid": "activity_root1",
+                     "name": "name1",
+                     "name_sentence_case": "name1",
+                     "nci_concept_id": null,
+                     "definition": "definition1",
+                     "abbreviation": "abbv",
+                     "library_name": "Sponsor",
+                     "start_date": "2021-10-26T12:13:11.513000",
+                     "end_date": null,
+                     "status": "Final",
+                     "version": "1.0",
+                     "change_description": "Approved version",
+                     "user_initials": "TODO initials",
+                     "possible_actions": [
+                        "inactivate",
+                        "new_version"
+                     ],
+                     "activity_groupings": [
+                        {
+                           "activity_subgroup_uid": "activity_subgroup_root1",
+                           "activity_subgroup_name": "name1",
+                           "activity_group_uid": "activity_group_root1",
+                           "activity_group_name": "name1"
+                        }
+                     ],
+                     "request_rationale": null,
+                     "is_request_final": false,
+                     "is_request_rejected": false,
+                     "contact_person": null,
+                     "reason_for_rejecting": null,
+                     "requester_study_id": null,
+                     "is_data_collected": false,
+                     "is_multiple_selection_allowed": true,
+                     "is_finalized": false,
+                     "is_used_by_legacy_instances": false,
+                     "replaced_by_activity": null
+                  },
+                  "start_date": "2021-10-06T14:39:31.561994",
+                  "user_initials": "unknown-user",
+                  "latest_activity": null,
+                  "accepted_version": false
+               }
+            ]
+         }
+      }
+   },
+   {
+      "name": "Test get all for all studies with filter on activity sub group name",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/study-activities?activity_subgroup_names=name1"
+      },
+      "response": {
+         "code": 200,
+         "headers": {
+            "content-length": "340",
+            "content-type": "application/json"
+         },
+         "result": {
+            "total": 0,
+            "page": 1,
+            "size": 10,
+            "items": [
+               {
+                  "study_uid": "study_root",
+                  "order": 1,
+                  "study_version": null,
+                  "study_activity_uid": "StudyActivity_000001",
+                  "study_activity_subgroup": {
+                     "study_activity_subgroup_uid": "StudyActivitySubGroup_000001",
+                     "activity_subgroup_uid": "activity_subgroup_root1",
+                     "activity_subgroup_name": "name1"
+                  },
+                  "study_activity_group": {
+                     "study_activity_group_uid": "StudyActivityGroup_000001",
+                     "activity_group_uid": "activity_group_root1",
+                     "activity_group_name": "name1"
+                  },
+                  "study_soa_group": {
+                     "study_soa_group_uid": "StudySoAGroup_000001",
+                     "soa_group_term_uid": "term_efficacy_uid",
+                     "soa_group_name": "EFFICACY"
+                  },
+                  "show_activity_group_in_protocol_flowchart": true,
+                  "show_activity_subgroup_in_protocol_flowchart": true,
+                  "show_activity_in_protocol_flowchart": false,
+                  "show_soa_group_in_protocol_flowchart": false,
+                  "activity": {
+                     "uid": "activity_root1",
+                     "name": "name1",
+                     "name_sentence_case": "name1",
+                     "nci_concept_id": null,
+                     "definition": "definition1",
+                     "abbreviation": "abbv",
+                     "library_name": "Sponsor",
+                     "start_date": "2021-10-26T12:13:11.513000",
+                     "end_date": null,
+                     "status": "Final",
+                     "version": "1.0",
+                     "change_description": "Approved version",
+                     "user_initials": "TODO initials",
+                     "possible_actions": [
+                        "inactivate",
+                        "new_version"
+                     ],
+                     "activity_groupings": [
+                        {
+                           "activity_subgroup_uid": "activity_subgroup_root1",
+                           "activity_subgroup_name": "name1",
+                           "activity_group_uid": "activity_group_root1",
+                           "activity_group_name": "name1"
+                        }
+                     ],
+                     "request_rationale": null,
+                     "is_request_final": false,
+                     "is_request_rejected": false,
+                     "contact_person": null,
+                     "reason_for_rejecting": null,
+                     "requester_study_id": null,
+                     "is_data_collected": false,
+                     "is_multiple_selection_allowed": true,
+                     "is_finalized": false,
+                     "is_used_by_legacy_instances": false,
+                     "replaced_by_activity": null
+                  },
+                  "start_date": "2021-10-06T14:39:31.561994",
+                  "user_initials": "unknown-user",
+                  "latest_activity": null,
+                  "accepted_version": false
+               }
+            ]
+         }
+      }
+   },
+   {
+      "name": "Test get all for all studies with filter on activity group name",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/study-activities?activity_group_names=name1"
+      },
+      "response": {
+         "code": 200,
+         "headers": {
+            "content-length": "340",
+            "content-type": "application/json"
+         },
+         "result": {
+            "total": 0,
+            "page": 1,
+            "size": 10,
+            "items": [
+               {
+                  "study_uid": "study_root",
+                  "order": 1,
+                  "study_version": null,
+                  "study_activity_uid": "StudyActivity_000001",
+                  "study_activity_subgroup": {
+                     "study_activity_subgroup_uid": "StudyActivitySubGroup_000001",
+                     "activity_subgroup_uid": "activity_subgroup_root1",
+                     "activity_subgroup_name": "name1"
+                  },
+                  "study_activity_group": {
+                     "study_activity_group_uid": "StudyActivityGroup_000001",
+                     "activity_group_uid": "activity_group_root1",
+                     "activity_group_name": "name1"
+                  },
+                  "study_soa_group": {
+                     "study_soa_group_uid": "StudySoAGroup_000001",
+                     "soa_group_term_uid": "term_efficacy_uid",
+                     "soa_group_name": "EFFICACY"
+                  },
+                  "show_activity_group_in_protocol_flowchart": true,
+                  "show_activity_subgroup_in_protocol_flowchart": true,
+                  "show_activity_in_protocol_flowchart": false,
+                  "show_soa_group_in_protocol_flowchart": false,
+                  "activity": {
+                     "uid": "activity_root1",
+                     "name": "name1",
+                     "name_sentence_case": "name1",
+                     "nci_concept_id": null,
+                     "definition": "definition1",
+                     "abbreviation": "abbv",
+                     "library_name": "Sponsor",
+                     "start_date": "2021-10-26T12:13:11.513000",
+                     "end_date": null,
+                     "status": "Final",
+                     "version": "1.0",
+                     "change_description": "Approved version",
+                     "user_initials": "TODO initials",
+                     "possible_actions": [
+                        "inactivate",
+                        "new_version"
+                     ],
+                     "activity_groupings": [
+                        {
+                           "activity_subgroup_uid": "activity_subgroup_root1",
+                           "activity_subgroup_name": "name1",
+                           "activity_group_uid": "activity_group_root1",
+                           "activity_group_name": "name1"
+                        }
+                     ],
+                     "request_rationale": null,
+                     "is_request_final": false,
+                     "is_request_rejected": false,
+                     "contact_person": null,
+                     "reason_for_rejecting": null,
+                     "requester_study_id": null,
+                     "is_data_collected": false,
+                     "is_multiple_selection_allowed": true,
+                     "is_finalized": false,
+                     "is_used_by_legacy_instances": false,
+                     "replaced_by_activity": null
+                  },
+                  "start_date": "2021-10-06T14:39:31.561994",
+                  "user_initials": "unknown-user",
+                  "latest_activity": null,
+                  "accepted_version": false
+               }
+            ]
+         }
+      }
+   },
+   {
+      "name": "Test patch specific",
+      "request": {
+         "headers": {},
+         "method": "PATCH",
+         "request": {
+            "soa_group_term_uid": "term_efficacy_uid"
+         },
+         "url": "/studies/study_root/study-activities/{study_activity_uid}"
+      },
+      "response": {
+         "code": 200,
+         "headers": {
+            "content-length": "389",
+            "content-type": "application/json"
+         },
+         "result": {
+            "study_uid": "study_root",
+            "order": 1,
+            "study_version": null,
+            "study_activity_uid": "StudyActivity_000001",
+            "study_activity_subgroup": {
+               "study_activity_subgroup_uid": "StudyActivitySubGroup_000001",
+               "activity_subgroup_uid": "activity_subgroup_root1",
+               "activity_subgroup_name": "name1"
+            },
+            "study_activity_group": {
+               "study_activity_group_uid": "StudyActivityGroup_000001",
+               "activity_group_uid": "activity_group_root1",
+               "activity_group_name": "name1"
+            },
+            "study_soa_group": {
+               "study_soa_group_uid": "StudySoAGroup_000001",
+               "soa_group_term_uid": "term_efficacy_uid",
+               "soa_group_name": "EFFICACY"
+            },
+            "show_activity_group_in_protocol_flowchart": true,
+            "show_activity_subgroup_in_protocol_flowchart": true,
+            "show_activity_in_protocol_flowchart": false,
+            "show_soa_group_in_protocol_flowchart": false,
+            "activity": {
+               "uid": "activity_root1",
+               "name": "name1",
+               "name_sentence_case": "name1",
+               "nci_concept_id": null,
+               "definition": "definition1",
+               "abbreviation": "abbv",
+               "library_name": "Sponsor",
+               "start_date": "2021-10-26T12:13:11.513000",
+               "end_date": null,
+               "status": "Final",
+               "version": "1.0",
+               "change_description": "Approved version",
+               "user_initials": "TODO initials",
+               "possible_actions": [
+                  "inactivate",
+                  "new_version"
+               ],
+               "activity_groupings": [
+                  {
+                     "activity_subgroup_uid": "activity_subgroup_root1",
+                     "activity_subgroup_name": "name1",
+                     "activity_group_uid": "activity_group_root1",
+                     "activity_group_name": "name1"
+                  }
+               ],
+               "request_rationale": null,
+               "is_request_final": false,
+               "is_request_rejected": false,
+               "contact_person": null,
+               "reason_for_rejecting": null,
+               "requester_study_id": null,
+               "is_data_collected": false,
+               "is_multiple_selection_allowed": true,
+               "is_finalized": false,
+               "is_used_by_legacy_instances": false,
+               "replaced_by_activity": null
+            },
+            "start_date": "2021-10-06T14:39:31.561994",
+            "user_initials": "unknown-user",
+            "latest_activity": null,
+            "accepted_version": false
+         }
+      }
+   },
+   {
+      "name": "Test all history of specific selection",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/studies/study_root/study-activities/{study_activity_uid}/audit-trail/"
+      },
+      "response": {
+         "code": 200,
+         "headers": {
+            "content-length": "389",
+            "content-type": "application/json"
+         },
+         "result": [
+            {
+               "study_uid": "study_root",
+               "order": 1,
+               "study_activity_uid": "StudyActivity_000001",
+               "study_activity_subgroup": {
+                  "study_activity_subgroup_uid": "StudyActivitySubGroup_000001",
+                  "activity_subgroup_uid": "activity_subgroup_root1",
+                  "activity_subgroup_name": "name1"
+               },
+               "study_activity_group": {
+                  "study_activity_group_uid": "StudyActivityGroup_000001",
+                  "activity_group_uid": "activity_group_root1",
+                  "activity_group_name": "name1"
+               },
+               "study_soa_group": {
+                  "study_soa_group_uid": "StudySoAGroup_000001",
+                  "soa_group_term_uid": "term_efficacy_uid",
+                  "soa_group_name": "EFFICACY"
+               },
+               "activity": {
+                  "uid": "activity_root1",
+                  "name": "name1",
+                  "name_sentence_case": "name1",
+                  "nci_concept_id": null,
+                  "definition": "definition1",
+                  "abbreviation": "abbv",
+                  "library_name": "Sponsor",
+                  "start_date": "2021-10-26T12:43:37.326000",
+                  "end_date": null,
+                  "status": "Final",
+                  "version": "1.0",
+                  "change_description": "Approved version",
+                  "user_initials": "TODO initials",
+                  "possible_actions": [
+                     "inactivate",
+                     "new_version"
+                  ],
+                  "activity_groupings": [
+                     {
+                        "activity_subgroup_uid": "activity_subgroup_root1",
+                        "activity_subgroup_name": "name1",
+                        "activity_group_uid": "activity_group_root1",
+                        "activity_group_name": "name1"
+                     }
+                  ],
+                  "request_rationale": null,
+                  "is_request_final": false,
+                  "is_request_rejected": false,
+                  "contact_person": null,
+                  "reason_for_rejecting": null,
+                  "requester_study_id": null,
+                  "is_data_collected": false,
+                  "is_multiple_selection_allowed": true,
+                  "is_finalized": false,
+                  "is_used_by_legacy_instances": false,
+                  "replaced_by_activity": null
+               },
+               "show_activity_group_in_protocol_flowchart": true,
+               "show_activity_subgroup_in_protocol_flowchart": true,
+               "show_activity_in_protocol_flowchart": false,
+               "show_soa_group_in_protocol_flowchart": false,
+               "start_date": "2021-10-26T14:43:38.283186",
+               "user_initials": "unknown-user",
+               "end_date": null,
+               "change_type": "Edit"
+            },
+            {
+               "study_uid": "study_root",
+               "order": 1,
+               "study_activity_uid": "StudyActivity_000001",
+               "study_activity_subgroup": {
+                  "study_activity_subgroup_uid": "StudyActivitySubGroup_000001",
+                  "activity_subgroup_uid": "activity_subgroup_root1",
+                  "activity_subgroup_name": "name1"
+               },
+               "study_activity_group": {
+                  "study_activity_group_uid": "StudyActivityGroup_000001",
+                  "activity_group_uid": "activity_group_root1",
+                  "activity_group_name": "name1"
+               },
+               "study_soa_group": {
+                  "study_soa_group_uid": "StudySoAGroup_000001",
+                  "soa_group_term_uid": "term_efficacy_uid",
+                  "soa_group_name": "EFFICACY"
+               },
+               "activity": {
+                  "uid": "activity_root1",
+                  "name": "name1",
+                  "name_sentence_case": "name1",
+                  "nci_concept_id": null,
+                  "definition": "definition1",
+                  "abbreviation": "abbv",
+                  "library_name": "Sponsor",
+                  "start_date": "2021-10-26T12:47:20.037000",
+                  "end_date": null,
+                  "status": "Final",
+                  "version": "1.0",
+                  "change_description": "Approved version",
+                  "user_initials": "TODO initials",
+                  "possible_actions": [
+                     "inactivate",
+                     "new_version"
+                  ],
+                  "activity_groupings": [
+                     {
+                        "activity_subgroup_uid": "activity_subgroup_root1",
+                        "activity_subgroup_name": "name1",
+                        "activity_group_uid": "activity_group_root1",
+                        "activity_group_name": "name1"
+                     }
+                  ],
+                  "request_rationale": null,
+                  "is_request_final": false,
+                  "is_request_rejected": false,
+                  "contact_person": null,
+                  "reason_for_rejecting": null,
+                  "requester_study_id": null,
+                  "is_data_collected": false,
+                  "is_multiple_selection_allowed": true,
+                  "is_finalized": false,
+                  "is_used_by_legacy_instances": false,
+                  "replaced_by_activity": null
+               },
+               "show_activity_group_in_protocol_flowchart": true,
+               "show_activity_subgroup_in_protocol_flowchart": true,
+               "show_activity_in_protocol_flowchart": false,
+               "show_soa_group_in_protocol_flowchart": false,
+               "start_date": "2021-10-26T14:47:20.439545",
+               "user_initials": "unknown-user",
+               "end_date": "2021-10-26T14:47:21.016095",
+               "change_type": "Create"
+            }
+         ]
+      }
+   },
+   {
+      "name": "Test adding selection 2",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "activity_uid": "activity_root3",
+            "activity_subgroup_uid": "activity_subgroup_root3",
+            "activity_group_uid": "activity_group_root3",
+            "soa_group_term_uid": "term_efficacy_uid"
+         },
+         "url": "/studies/study_root/study-activities"
+      },
+      "response": {
+         "code": 201,
+         "headers": {
+            "content-length": "1039",
+            "content-type": "application/json"
+         },
+         "result": {
+            "study_uid": "study_root",
+            "order": 2,
+            "study_version": null,
+            "study_activity_uid": "StudyActivity_000002",
+            "study_activity_subgroup": {
+               "study_activity_subgroup_uid": "StudyActivitySubGroup_000002",
+               "activity_subgroup_uid": "activity_subgroup_root3",
+               "activity_subgroup_name": "name3"
+            },
+            "study_activity_group": {
+               "study_activity_group_uid": "StudyActivityGroup_000002",
+               "activity_group_uid": "activity_group_root3",
+               "activity_group_name": "name3"
+            },
+            "study_soa_group": {
+               "study_soa_group_uid": "StudySoAGroup_000001",
+               "soa_group_term_uid": "term_efficacy_uid",
+               "soa_group_name": "EFFICACY"
+            },
+            "show_activity_group_in_protocol_flowchart": true,
+            "show_activity_subgroup_in_protocol_flowchart": true,
+            "show_activity_in_protocol_flowchart": false,
+            "show_soa_group_in_protocol_flowchart": false,
+            "activity": {
+               "uid": "activity_root3",
+               "name": "name3",
+               "name_sentence_case": "name3",
+               "nci_concept_id": null,
+               "definition": "definition3",
+               "abbreviation": "abbv",
+               "library_name": "Sponsor",
+               "start_date": "2021-10-26T12:13:11.513000",
+               "end_date": null,
+               "status": "Final",
+               "version": "1.0",
+               "change_description": "Approved version",
+               "user_initials": "TODO initials",
+               "possible_actions": [
+                  "inactivate",
+                  "new_version"
+               ],
+               "activity_groupings": [
+                  {
+                     "activity_subgroup_uid": "activity_subgroup_root3",
+                     "activity_subgroup_name": "name3",
+                     "activity_group_uid": "activity_group_root3",
+                     "activity_group_name": "name3"
+                  }
+               ],
+               "request_rationale": null,
+               "is_request_final": false,
+               "is_request_rejected": false,
+               "contact_person": null,
+               "reason_for_rejecting": null,
+               "requester_study_id": null,
+               "is_data_collected": false,
+               "is_multiple_selection_allowed": true,
+               "is_finalized": false,
+               "is_used_by_legacy_instances": false,
+               "replaced_by_activity": null
+            },
+            "start_date": "2021-10-06T14:39:31.561994",
+            "user_initials": "unknown-user",
+            "latest_activity": null,
+            "accepted_version": false
+         }
+      }
+   },
+   {
+      "name": "Test get specific",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/studies/study_root/study-activities/{study_activity_uid}"
+      },
+      "response": {
+         "code": 200,
+         "headers": {
+            "content-length": "389",
+            "content-type": "application/json"
+         },
+         "result": {
+            "study_uid": "study_root",
+            "order": 1,
+            "study_version": null,
+            "study_activity_uid": "StudyActivity_000001",
+            "study_activity_subgroup": {
+               "study_activity_subgroup_uid": "StudyActivitySubGroup_000001",
+               "activity_subgroup_uid": "activity_subgroup_root1",
+               "activity_subgroup_name": "name1"
+            },
+            "study_activity_group": {
+               "study_activity_group_uid": "StudyActivityGroup_000001",
+               "activity_group_uid": "activity_group_root1",
+               "activity_group_name": "name1"
+            },
+            "study_soa_group": {
+               "study_soa_group_uid": "StudySoAGroup_000001",
+               "soa_group_term_uid": "term_efficacy_uid",
+               "soa_group_name": "EFFICACY"
+            },
+            "show_activity_group_in_protocol_flowchart": true,
+            "show_activity_subgroup_in_protocol_flowchart": true,
+            "show_activity_in_protocol_flowchart": false,
+            "show_soa_group_in_protocol_flowchart": false,
+            "activity": {
+               "uid": "activity_root1",
+               "name": "name1",
+               "name_sentence_case": "name1",
+               "nci_concept_id": null,
+               "definition": "definition1",
+               "abbreviation": "abbv",
+               "library_name": "Sponsor",
+               "start_date": "2021-10-26T12:13:11.513000",
+               "end_date": null,
+               "status": "Final",
+               "version": "1.0",
+               "change_description": "Approved version",
+               "user_initials": "TODO initials",
+               "possible_actions": [
+                  "inactivate",
+                  "new_version"
+               ],
+               "activity_groupings": [
+                  {
+                     "activity_subgroup_uid": "activity_subgroup_root1",
+                     "activity_subgroup_name": "name1",
+                     "activity_group_uid": "activity_group_root1",
+                     "activity_group_name": "name1"
+                  }
+               ],
+               "request_rationale": null,
+               "is_request_final": false,
+               "is_request_rejected": false,
+               "contact_person": null,
+               "reason_for_rejecting": null,
+               "requester_study_id": null,
+               "is_data_collected": false,
+               "is_multiple_selection_allowed": true,
+               "is_finalized": false,
+               "is_used_by_legacy_instances": false,
+               "replaced_by_activity": null
+            },
+            "start_date": "2021-10-06T14:39:31.561994",
+            "user_initials": "unknown-user",
+            "latest_activity": null,
+            "accepted_version": false
+         }
+      }
+   },
+   {
+      "name": "Test reorder specific",
+      "request": {
+         "headers": {},
+         "method": "PATCH",
+         "request": {
+            "new_order": 2
+         },
+         "url": "/studies/study_root/study-activities/{study_activity_uid}/order"
+      },
+      "response": {
+         "code": 200,
+         "headers": {
+            "content-length": "389",
+            "content-type": "application/json"
+         },
+         "result": {
+            "study_uid": "study_root",
+            "order": 2,
+            "study_version": null,
+            "study_activity_uid": "StudyActivity_000001",
+            "study_activity_subgroup": {
+               "study_activity_subgroup_uid": "StudyActivitySubGroup_000001",
+               "activity_subgroup_uid": "activity_subgroup_root1",
+               "activity_subgroup_name": "name1"
+            },
+            "study_activity_group": {
+               "study_activity_group_uid": "StudyActivityGroup_000001",
+               "activity_group_uid": "activity_group_root1",
+               "activity_group_name": "name1"
+            },
+            "study_soa_group": {
+               "study_soa_group_uid": "StudySoAGroup_000001",
+               "soa_group_term_uid": "term_efficacy_uid",
+               "soa_group_name": "EFFICACY"
+            },
+            "show_activity_group_in_protocol_flowchart": true,
+            "show_activity_subgroup_in_protocol_flowchart": true,
+            "show_activity_in_protocol_flowchart": false,
+            "show_soa_group_in_protocol_flowchart": false,
+            "activity": {
+               "uid": "activity_root1",
+               "name": "name1",
+               "name_sentence_case": "name1",
+               "nci_concept_id": null,
+               "definition": "definition1",
+               "abbreviation": "abbv",
+               "library_name": "Sponsor",
+               "start_date": "2021-10-26T12:13:11.513000",
+               "end_date": null,
+               "status": "Final",
+               "version": "1.0",
+               "change_description": "Approved version",
+               "user_initials": "TODO initials",
+               "possible_actions": [
+                  "inactivate",
+                  "new_version"
+               ],
+               "activity_groupings": [
+                  {
+                     "activity_subgroup_uid": "activity_subgroup_root1",
+                     "activity_subgroup_name": "name1",
+                     "activity_group_uid": "activity_group_root1",
+                     "activity_group_name": "name1"
+                  }
+               ],
+               "request_rationale": null,
+               "is_request_final": false,
+               "is_request_rejected": false,
+               "contact_person": null,
+               "reason_for_rejecting": null,
+               "requester_study_id": null,
+               "is_data_collected": false,
+               "is_multiple_selection_allowed": true,
+               "is_finalized": false,
+               "is_used_by_legacy_instances": false,
+               "replaced_by_activity": null
+            },
+            "start_date": "2021-10-06T14:39:31.561994",
+            "user_initials": "unknown-user",
+            "latest_activity": null,
+            "accepted_version": false
+         }
+      }
+   },
+   {
+      "name": "Test delete specific",
+      "request": {
+         "headers": {},
+         "method": "DELETE",
+         "url": "/studies/study_root/study-activities/{study_activity_uid}"
+      },
+      "response": {
+         "code": 204
+      }
+   }
+]

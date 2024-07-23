@@ -1,0 +1,147 @@
+[
+        {
+                "name": "Test PATCH non matching sentence case",
+                "request": {
+                        "headers": {},
+                        "method": "PATCH",
+                        "request": {
+                                "name": "new sentence case name",
+                                "definition": "definition",
+                                "change_description": "Changing codelist"
+                        },
+                        "url": "/dictionaries/terms/term_root1_uid"
+                },
+                "response": {
+                        "code": 400,
+                        "result": {
+                                "message": "Name1 is not an independent case version of new sentence case name",
+                                "method": "PATCH",
+                                "path": "http://testserver/dictionaries/terms/term_root1_uid",
+                                "time": "2020-11-10T01:51:17.884429",
+                                "type": "ValidationException"
+                        }
+                }
+        },
+        {
+                "name": "Test PATCH non draft term",
+                "request": {
+                        "headers": {},
+                        "method": "PATCH",
+                        "request": {
+                                "definition": "definition",
+                                "change_description": "Changing codelist"
+                        },
+                        "url": "/dictionaries/terms/term_root1_uid"
+                },
+                "response": {
+                        "code": 400,
+                        "result": {
+                                "message": "The object is not in draft status.",
+                                "method": "PATCH",
+                                "path": "http://testserver/dictionaries/terms/term_root1_uid",
+                                "time": "2020-11-10T01:51:17.884429",
+                                "type": "BusinessLogicException"
+                        }
+                }
+        },
+        {
+                "name": "Test PATCH term name already exists",
+                "request": {
+                        "headers": {},
+                        "method": "PATCH",
+                        "request": {
+                                "name": "name1",
+                                "name_sentence_case": "Name1",
+                                "definition": "definition",
+                                "change_description": "Changing term"
+                        },
+                        "url": "/dictionaries/terms/term_root4_uid"
+                },
+                "response": {
+                        "code": 400,
+                        "result": {
+                                "message": "DictionaryTerm with name (name1) already exists in DictionaryCodelist identified by (codelist_root1_uid)",
+                                "method": "PATCH",
+                                "path": "http://testserver/dictionaries/terms/term_root4_uid",
+                                "time": "2020-11-10T01:51:17.884429",
+                                "type": "ValidationException"
+                        }
+                }
+        },
+        {
+                "name": "Test POST approve non DRAFT term",
+                "request": {
+                        "headers": {},
+                        "method": "POST",
+                        "request": {},
+                        "url": "/dictionaries/terms/term_root1_uid/approvals"
+                },
+                "response": {
+                        "code": 400,
+                        "result": {
+                                "message": "The object is not in draft status.",
+                                "method": "POST",
+                                "path": "http://testserver/dictionaries/terms/term_root1_uid/approvals",
+                                "time": "2020-11-10T01:51:17.884429",
+                                "type": "BusinessLogicException"
+                        }
+                }
+        },
+        {
+                "name": "Test DELETE activations non FINAL term",
+                "request": {
+                        "headers": {},
+                        "method": "DELETE",
+                        "request": {},
+                        "url": "/dictionaries/terms/term_root2_uid/activations"
+                },
+                "response": {
+                        "code": 400,
+                        "result": {
+                                "message": "Cannot retire draft version.",
+                                "method": "DELETE",
+                                "path": "http://testserver/dictionaries/terms/term_root2_uid/activations",
+                                "time": "2020-11-10T01:51:17.884429",
+                                "type": "BusinessLogicException"
+                        }
+                }
+        },
+        {
+                "name": "Test POST activations non retired term",
+                "request": {
+                        "headers": {},
+                        "method": "POST",
+                        "request": {},
+                        "url": "/dictionaries/terms/term_root2_uid/activations"
+                },
+                "response": {
+                        "code": 400,
+                        "result": {
+                                "message": "Only RETIRED version can be reactivated.",
+                                "method": "POST",
+                                "path": "http://testserver/dictionaries/terms/term_root2_uid/activations",
+                                "time": "2020-11-10T01:51:17.884429",
+                                "type": "BusinessLogicException"
+                        }
+                }
+        },
+        {
+                "name": "Test DELETE accepted object",
+                "request": {
+                        "headers": {},
+                        "method": "DELETE",
+                        "request": {},
+                        "url": "/dictionaries/terms/term_root1_uid"
+                },
+                "response": {
+                        "code": 400,
+                        "result": {
+                                "message": "Object has been accepted",
+                                "method": "DELETE",
+                                "path": "http://testserver/dictionaries/terms/term_root1_uid",
+                                "time": "2020-11-10T01:51:17.884429",
+                                "type": "BusinessLogicException"
+                        }
+                }
+        }
+]

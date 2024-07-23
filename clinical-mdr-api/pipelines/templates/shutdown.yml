@@ -1,0 +1,17 @@
+steps:
+
+  # Shut down all concurrent pipeline jobs if this job has failed
+  - task: PowerShell@2
+    condition: not(Succeeded())
+    displayName: "Shut down all pipeline jobs"
+    inputs:
+      targetType: 'inline'
+      script: |
+        $uri = "https://dev.azure.com/novonordiskit/Clinical-MDR/_apis/build/builds/$(Build.BuildId)?api-version=7.0"
+
+        $json = @{status="Cancelling"} | ConvertTo-Json -Compress
+
+        $build = Invoke-RestMethod -Uri $uri -Method Patch -Headers @{Authorization = "Bearer $(System.AccessToken)"} -ContentType "application/json" -Body $json
+
+        Write-Host $build
+      pwsh: true

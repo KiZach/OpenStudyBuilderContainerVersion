@@ -1,0 +1,531 @@
+[
+    {
+        "name": "Test getting empty list of ODM Aliases",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/aliases"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "2",
+                "content-type": "application/json"
+            },
+            "result": {
+                "items": [],
+                "total": 0,
+                "page": 1,
+                "size": 10
+            }
+        }
+    },
+    {
+        "name": "Test creating a new ODM Alias",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "name1",
+                "context": "context1"
+            },
+            "url": "concepts/odms/aliases"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmAlias_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "context": "context1",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test getting non empty list of ODM Aliases",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/aliases"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": {
+                "items": [
+                    {
+                        "uid": "OdmAlias_000001",
+                        "name": "name1",
+                        "library_name": "Sponsor",
+                        "context": "context1",
+                        "start_date": "2022-03-03T11:17:56.799074",
+                        "end_date": null,
+                        "status": "Draft",
+                        "version": "0.1",
+                        "change_description": "Initial version",
+                        "user_initials": "TODO user initials",
+                        "possible_actions": [
+                            "approve",
+                            "delete",
+                            "edit"
+                        ]
+                    }
+                ],
+                "total": 0,
+                "page": 1,
+                "size": 10
+            }
+        }
+    },
+    {
+        "name": "Test getting possible header values of ODM Aliases",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/aliases/headers?field_name=name"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": [
+                "name1"
+            ]
+        }
+    },
+    {
+        "name": "Test getting versions of a specific ODM Alias",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/aliases/OdmAlias_000001/versions"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": [
+                {
+                    "uid": "OdmAlias_000001",
+                    "name": "name1",
+                    "library_name": "Sponsor",
+                    "context": "context1",
+                    "start_date": "2022-03-03T11:17:56.799074",
+                    "end_date": null,
+                    "status": "Draft",
+                    "version": "0.1",
+                    "change_description": "Initial version",
+                    "user_initials": "TODO user initials",
+                    "possible_actions": [
+                        "approve",
+                        "delete",
+                        "edit"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "name": "Test updating an existing ODM Alias",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "new name",
+                "context": "context1",
+                "change_description": "name changed"
+            },
+            "url": "concepts/odms/aliases/OdmAlias_000001"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmAlias_000001",
+                "name": "new name",
+                "library_name": "Sponsor",
+                "context": "context1",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.2",
+                "change_description": "name changed",
+                "user_initials": "TODO user initials",
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test approving an ODM Alias",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/aliases/OdmAlias_000001/approvals"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmAlias_000001",
+                "name": "new name",
+                "library_name": "Sponsor",
+                "context": "context1",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Approved version",
+                "user_initials": "TODO initials",
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test inactivating a specific ODM Alias",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "concepts/odms/aliases/OdmAlias_000001/activations"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmAlias_000001",
+                "name": "new name",
+                "library_name": "Sponsor",
+                "context": "context1",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Retired",
+                "version": "1.0",
+                "change_description": "Inactivated version",
+                "user_initials": "TODO initials",
+                "possible_actions": [
+                    "delete",
+                    "reactivate"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test reactivating a specific ODM Alias",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/aliases/OdmAlias_000001/activations"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmAlias_000001",
+                "name": "new name",
+                "library_name": "Sponsor",
+                "context": "context1",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Reactivated version",
+                "user_initials": "TODO initials",
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test creating a new ODM Alias version",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/aliases/OdmAlias_000001/versions"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmAlias_000001",
+                "name": "new name",
+                "library_name": "Sponsor",
+                "context": "context1",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "1.1",
+                "change_description": "New draft created",
+                "user_initials": "TODO user initials",
+                "possible_actions": [
+                    "approve",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Create a new ODM Alias for batch and delete",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "name": "batch name",
+                "library_name": "Sponsor",
+                "context": "context1"
+            },
+            "url": "concepts/odms/aliases"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmAlias_000002",
+                "library_name": "Sponsor",
+                "name": "batch name",
+                "context": "context1",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test batch opreations for ODM Alias",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": [
+                {
+                    "method": "POST",
+                    "content": {
+                        "name": "new batch name",
+                        "context": "new batch context"
+                    }
+                },
+                {
+                    "method": "PATCH",
+                    "content": {
+                        "uid": "OdmAlias_000002",
+                        "context": "new context",
+                        "change_description": "context changed"
+                    }
+                }
+            ],
+            "url": "concepts/odms/aliases/batch"
+        },
+        "response": {
+            "code": 207,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": [
+                {
+                    "response_code": 201,
+                    "content": {
+                        "start_date": "2022-03-21T16:09:29.582953",
+                        "end_date": null,
+                        "status": "Draft",
+                        "version": "0.1",
+                        "user_initials": "TODO user initials",
+                        "change_description": "Initial version",
+                        "uid": "OdmAlias_000003",
+                        "name": "new batch name",
+                        "context": "new batch context",
+                        "library_name": "Sponsor",
+                        "possible_actions": [
+                            "approve",
+                            "delete",
+                            "edit"
+                        ]
+                    }
+                },
+                {
+                    "response_code": 200,
+                    "content": {
+                        "uid": "OdmAlias_000002",
+                        "library_name": "Sponsor",
+                        "name": "batch name",
+                        "context": "new context",
+                        "start_date": "2022-03-03T11:17:56.799074",
+                        "end_date": null,
+                        "status": "Draft",
+                        "version": "0.2",
+                        "change_description": "context changed",
+                        "user_initials": "TODO user initials",
+                        "possible_actions": [
+                            "approve",
+                            "delete",
+                            "edit"
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Test deleting a specific ODM Alias",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "concepts/odms/aliases/OdmAlias_000003"
+        },
+        "response": {
+            "code": 204,
+            "headers": {
+                "content-length": "2",
+                "content-type": "application/json"
+            },
+            "result": null
+        }
+    },
+    {
+        "name": "Create a new ODM Form with relation to ODM Alias",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "oid1",
+                "sdtm_version": "0.1",
+                "repeating": "No",
+                "scope_uid": null,
+                "descriptions": [],
+                "alias_uids": [
+                    "OdmAlias_000001"
+                ]
+            },
+            "url": "concepts/odms/forms"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmForm_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "sdtm_version": "0.1",
+                "repeating": "No",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "scope": null,
+                "descriptions": [],
+                "aliases": [
+                    {
+                        "uid": "OdmAlias_000001",
+                        "context": "context1",
+                        "name": "new name",
+                        "version": "1.1"
+                    }
+                ],
+                "activity_groups": [],
+                "item_groups": [],
+                "vendor_elements": [],
+                "vendor_attributes": [],
+                "vendor_element_attributes": [],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test getting UIDs of a specific ODM Alias' active relationships",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/aliases/OdmAlias_000001/relationships"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": {
+                "OdmForm": [
+                    "OdmForm_000001"
+                ]
+            }
+        }
+    }
+]

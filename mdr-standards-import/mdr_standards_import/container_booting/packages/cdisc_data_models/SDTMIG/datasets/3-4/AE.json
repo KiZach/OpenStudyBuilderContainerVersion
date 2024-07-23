@@ -1,0 +1,2620 @@
+{
+    "_links": {
+        "parentClass": {
+            "href": "/mdr/sdtmig/3-4/classes/Events",
+            "title": "Events",
+            "type": "Class"
+        },
+        "parentProduct": {
+            "href": "/mdr/sdtmig/3-4",
+            "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+            "type": "Implementation Guide"
+        },
+        "priorVersion": {
+            "href": "/mdr/sdtmig/3-3/datasets/AE",
+            "title": "Adverse Events",
+            "type": "SDTM Dataset"
+        },
+        "self": {
+            "href": "/mdr/sdtmig/3-4/datasets/AE",
+            "title": "Adverse Events",
+            "type": "SDTM Dataset"
+        }
+    },
+    "datasetStructure": "One record per adverse event per subject",
+    "datasetVariables": [
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/GeneralObservations/variables/STUDYID",
+                    "title": "Study Identifier",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/STUDYID",
+                    "title": "Study Identifier",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/STUDYID",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.STUDYID",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/STUDYID",
+                    "title": "Study Identifier",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Req",
+            "description": "Unique identifier for a study.",
+            "label": "Study Identifier",
+            "name": "STUDYID",
+            "ordinal": "1",
+            "role": "Identifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/GeneralObservations/variables/DOMAIN",
+                    "title": "Domain Abbreviation",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/DOMAIN",
+                    "title": "Domain Abbreviation",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/DOMAIN",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.DOMAIN",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/DOMAIN",
+                    "title": "Domain Abbreviation",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Req",
+            "description": "Two-character abbreviation for the domain.",
+            "label": "Domain Abbreviation",
+            "name": "DOMAIN",
+            "ordinal": "2",
+            "role": "Identifier",
+            "simpleDatatype": "Char",
+            "valueList": [
+                "AE"
+            ]
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/GeneralObservations/variables/USUBJID",
+                    "title": "Unique Subject Identifier",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/USUBJID",
+                    "title": "Unique Subject Identifier",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/USUBJID",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.USUBJID",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/USUBJID",
+                    "title": "Unique Subject Identifier",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Req",
+            "description": "Identifier used to uniquely identify a subject across all studies for all applications or submissions involving the product.",
+            "label": "Unique Subject Identifier",
+            "name": "USUBJID",
+            "ordinal": "3",
+            "role": "Identifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/GeneralObservations/variables/SPDEVID",
+                    "title": "Sponsor Device Identifier",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/SPDEVID",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.SPDEVID",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/SPDEVID",
+                    "title": "Sponsor Device Identifier",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "A sequence of characters used by the sponsor to uniquely identify a specific device. Used to represent a device associated in some way with the adverse event. SPDEVID values are defined in the Device Identifiers (DI) domain.",
+            "label": "Sponsor Device Identifier",
+            "name": "SPDEVID",
+            "ordinal": "4",
+            "role": "Identifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/GeneralObservations/variables/--SEQ",
+                    "title": "Sequence Number",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AESEQ",
+                    "title": "Sequence Number",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AESEQ",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AESEQ",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AESEQ",
+                    "title": "Sequence Number",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Req",
+            "description": "Sequence number given to ensure uniqueness of subject records within a domain. May be any valid number.",
+            "label": "Sequence Number",
+            "name": "AESEQ",
+            "ordinal": "5",
+            "role": "Identifier",
+            "simpleDatatype": "Num"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/GeneralObservations/variables/--GRPID",
+                    "title": "Group ID",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AEGRPID",
+                    "title": "Group ID",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AEGRPID",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AEGRPID",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AEGRPID",
+                    "title": "Group ID",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "Used to tie together a block of related records in a single domain for a subject.",
+            "label": "Group ID",
+            "name": "AEGRPID",
+            "ordinal": "6",
+            "role": "Identifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/GeneralObservations/variables/--REFID",
+                    "title": "Reference ID",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AEREFID",
+                    "title": "Reference ID",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AEREFID",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AEREFID",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AEREFID",
+                    "title": "Reference ID",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "Internal or external identifier such as a serial number on an SAE reporting form.",
+            "label": "Reference ID",
+            "name": "AEREFID",
+            "ordinal": "7",
+            "role": "Identifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/GeneralObservations/variables/--SPID",
+                    "title": "Sponsor-Defined Identifier",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AESPID",
+                    "title": "Sponsor-Defined Identifier",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AESPID",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AESPID",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AESPID",
+                    "title": "Sponsor-Defined Identifier",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "Sponsor-defined identifier. It may be preprinted on the CRF as an explicit line identifier or defined in the sponsor's operational database. Example: Line number on an Adverse Events CRF page.",
+            "label": "Sponsor-Defined Identifier",
+            "name": "AESPID",
+            "ordinal": "8",
+            "role": "Identifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--TERM",
+                    "title": "Reported Term",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AETERM",
+                    "title": "Reported Term for the Adverse Event",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AETERM",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AETERM",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AETERM",
+                    "title": "Reported Term for the Adverse Event",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Req",
+            "description": "Verbatim name of the event.",
+            "label": "Reported Term for the Adverse Event",
+            "name": "AETERM",
+            "ordinal": "9",
+            "role": "Topic",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--MODIFY",
+                    "title": "Modified Reported Term",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AEMODIFY",
+                    "title": "Modified Reported Term",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AEMODIFY",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AEMODIFY",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AEMODIFY",
+                    "title": "Modified Reported Term",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "If AETERM is modified to facilitate coding, then AEMODIFY will contain the modified text.",
+            "label": "Modified Reported Term",
+            "name": "AEMODIFY",
+            "ordinal": "10",
+            "role": "Synonym Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--LLT",
+                    "title": "Lowest Level Term",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AELLT",
+                    "title": "Lowest Level Term",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AELLT",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AELLT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AELLT",
+                    "title": "Lowest Level Term",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Exp",
+            "describedValueDomain": "MedDRA",
+            "description": "Dictionary-derived text description of the lowest level term.",
+            "label": "Lowest Level Term",
+            "name": "AELLT",
+            "ordinal": "11",
+            "role": "Variable Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--LLTCD",
+                    "title": "Lowest Level Term Code",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AELLTCD",
+                    "title": "Lowest Level Term Code",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AELLTCD",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AELLTCD",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AELLTCD",
+                    "title": "Lowest Level Term Code",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Exp",
+            "describedValueDomain": "MedDRA",
+            "description": "Dictionary-derived code for the lowest level term.",
+            "label": "Lowest Level Term Code",
+            "name": "AELLTCD",
+            "ordinal": "12",
+            "role": "Variable Qualifier",
+            "simpleDatatype": "Num"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--DECOD",
+                    "title": "Dictionary-Derived Term",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AEDECOD",
+                    "title": "Dictionary-Derived Term",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AEDECOD",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AEDECOD",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AEDECOD",
+                    "title": "Dictionary-Derived Term",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Req",
+            "describedValueDomain": "MedDRA",
+            "description": "Dictionary-derived text description of AETERM or AEMODIFY. Equivalent to the Preferred Term (PT in MedDRA). The sponsor is expected to provide the dictionary name and version used to map the terms utilizing the external codelist element in the Define-XML document.",
+            "label": "Dictionary-Derived Term",
+            "name": "AEDECOD",
+            "ordinal": "13",
+            "role": "Synonym Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--PTCD",
+                    "title": "Preferred Term Code",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AEPTCD",
+                    "title": "Preferred Term Code",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AEPTCD",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AEPTCD",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AEPTCD",
+                    "title": "Preferred Term Code",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Exp",
+            "describedValueDomain": "MedDRA",
+            "description": "Dictionary-derived code for the preferred term.",
+            "label": "Preferred Term Code",
+            "name": "AEPTCD",
+            "ordinal": "14",
+            "role": "Variable Qualifier",
+            "simpleDatatype": "Num"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--HLT",
+                    "title": "High Level Term",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AEHLT",
+                    "title": "High Level Term",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AEHLT",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AEHLT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AEHLT",
+                    "title": "High Level Term",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Exp",
+            "describedValueDomain": "MedDRA",
+            "description": "Dictionary-derived text description of the high level term for the primary system organ class (SOC).",
+            "label": "High Level Term",
+            "name": "AEHLT",
+            "ordinal": "15",
+            "role": "Variable Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--HLTCD",
+                    "title": "High Level Term Code",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AEHLTCD",
+                    "title": "High Level Term Code",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AEHLTCD",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AEHLTCD",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AEHLTCD",
+                    "title": "High Level Term Code",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Exp",
+            "describedValueDomain": "MedDRA",
+            "description": "Dictionary-derived code for the high level term for the primary SOC.",
+            "label": "High Level Term Code",
+            "name": "AEHLTCD",
+            "ordinal": "16",
+            "role": "Variable Qualifier",
+            "simpleDatatype": "Num"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--HLGT",
+                    "title": "High Level Group Term",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AEHLGT",
+                    "title": "High Level Group Term",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AEHLGT",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AEHLGT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AEHLGT",
+                    "title": "High Level Group Term",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Exp",
+            "describedValueDomain": "MedDRA",
+            "description": "Dictionary-derived text description of the high level group term for the primary SOC.",
+            "label": "High Level Group Term",
+            "name": "AEHLGT",
+            "ordinal": "17",
+            "role": "Variable Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--HLGTCD",
+                    "title": "High Level Group Term Code",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AEHLGTCD",
+                    "title": "High Level Group Term Code",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AEHLGTCD",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AEHLGTCD",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AEHLGTCD",
+                    "title": "High Level Group Term Code",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Exp",
+            "describedValueDomain": "MedDRA",
+            "description": "Dictionary-derived code for the high level group term for the primary SOC.",
+            "label": "High Level Group Term Code",
+            "name": "AEHLGTCD",
+            "ordinal": "18",
+            "role": "Variable Qualifier",
+            "simpleDatatype": "Num"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--CAT",
+                    "title": "Category",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AECAT",
+                    "title": "Category for Adverse Event",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AECAT",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AECAT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AECAT",
+                    "title": "Category for Adverse Event",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "Used to define a category of related records. Examples: \"BLEEDING\", \"NEUROPSYCHIATRIC\".",
+            "label": "Category for Adverse Event",
+            "name": "AECAT",
+            "ordinal": "19",
+            "role": "Grouping Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--SCAT",
+                    "title": "Subcategory",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AESCAT",
+                    "title": "Subcategory for Adverse Event",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AESCAT",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AESCAT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AESCAT",
+                    "title": "Subcategory for Adverse Event",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "A further categorization of adverse event. Example: \"NEUROLOGIC\".",
+            "label": "Subcategory for Adverse Event",
+            "name": "AESCAT",
+            "ordinal": "20",
+            "role": "Grouping Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "codelist": [
+                    {
+                        "href": "/mdr/root/ct/sdtmct/codelists/C66742",
+                        "title": "Version-agnostic anchor resource for codelist C66742",
+                        "type": "Root Value Domain"
+                    }
+                ],
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--PRESP",
+                    "title": "Pre-Specified",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AEPRESP",
+                    "title": "Pre-Specified Adverse Event",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AEPRESP",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AEPRESP",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AEPRESP",
+                    "title": "Pre-Specified Adverse Event",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "A value of \"Y\" indicates that this adverse event was prespecified on the CRF. Values are null for spontaneously reported events (i.e., those collected as free-text verbatim terms).",
+            "label": "Pre-Specified Adverse Event",
+            "name": "AEPRESP",
+            "ordinal": "21",
+            "role": "Variable Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--BODSYS",
+                    "title": "Body System or Organ Class",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AEBODSYS",
+                    "title": "Body System or Organ Class",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AEBODSYS",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AEBODSYS",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AEBODSYS",
+                    "title": "Body System or Organ Class",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Exp",
+            "description": "Dictionary derived. Body system or organ class used by the sponsor from the coding dictionary (e.g., MedDRA). When using a multi-axial dictionary such as MedDRA, this should contain the SOC used for the sponsor's analyses and summary tables, which may not necessarily be the primary SOC.",
+            "label": "Body System or Organ Class",
+            "name": "AEBODSYS",
+            "ordinal": "22",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--BDSYCD",
+                    "title": "Body System or Organ Class Code",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AEBDSYCD",
+                    "title": "Body System or Organ Class Code",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AEBDSYCD",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AEBDSYCD",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AEBDSYCD",
+                    "title": "Body System or Organ Class Code",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Exp",
+            "describedValueDomain": "MedDRA",
+            "description": "Dictionary derived. Code for the body system or organ class used by the sponsor. When using a multi-axial dictionary such as MedDRA, this should contain the SOC used for the sponsor's analyses and summary tables, which may not necessarily be the primary SOC.",
+            "label": "Body System or Organ Class Code",
+            "name": "AEBDSYCD",
+            "ordinal": "23",
+            "role": "Variable Qualifier",
+            "simpleDatatype": "Num"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--SOC",
+                    "title": "Primary System Organ Class",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AESOC",
+                    "title": "Primary System Organ Class",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AESOC",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AESOC",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AESOC",
+                    "title": "Primary System Organ Class",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Exp",
+            "describedValueDomain": "MedDRA",
+            "description": "Dictionary-derived text description of the primary SOC. Will be the same as AEBODSYS if the primary SOC was used for analysis.",
+            "label": "Primary System Organ Class",
+            "name": "AESOC",
+            "ordinal": "24",
+            "role": "Variable Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--SOCCD",
+                    "title": "Primary System Organ Class Code",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AESOCCD",
+                    "title": "Primary System Organ Class Code",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AESOCCD",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AESOCCD",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AESOCCD",
+                    "title": "Primary System Organ Class Code",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Exp",
+            "describedValueDomain": "MedDRA",
+            "description": "Dictionary-derived code for the primary SOC. Will be the same as AEBDSYCD if the primary SOC was used for analysis.",
+            "label": "Primary System Organ Class Code",
+            "name": "AESOCCD",
+            "ordinal": "25",
+            "role": "Variable Qualifier",
+            "simpleDatatype": "Num"
+        },
+        {
+            "_links": {
+                "codelist": [
+                    {
+                        "href": "/mdr/root/ct/sdtmct/codelists/C74456",
+                        "title": "Version-agnostic anchor resource for codelist C74456",
+                        "type": "Root Value Domain"
+                    }
+                ],
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--LOC",
+                    "title": "Location of Event",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AELOC",
+                    "title": "Location of Event",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AELOC",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AELOC",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AELOC",
+                    "title": "Location of Event",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "Describes anatomical location relevant for the event (e.g., \"ARM\" for skin rash).",
+            "label": "Location of Event",
+            "name": "AELOC",
+            "ordinal": "26",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "codelist": [
+                    {
+                        "href": "/mdr/root/ct/sdtmct/codelists/C66769",
+                        "title": "Version-agnostic anchor resource for codelist C66769",
+                        "type": "Root Value Domain"
+                    }
+                ],
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--SEV",
+                    "title": "Severity/Intensity",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AESEV",
+                    "title": "Severity/Intensity",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AESEV",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AESEV",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AESEV",
+                    "title": "Severity/Intensity",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "The severity or intensity of the event. Examples: \"MILD\", \"MODERATE\", \"SEVERE\".",
+            "label": "Severity/Intensity",
+            "name": "AESEV",
+            "ordinal": "27",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "codelist": [
+                    {
+                        "href": "/mdr/root/ct/sdtmct/codelists/C66742",
+                        "title": "Version-agnostic anchor resource for codelist C66742",
+                        "type": "Root Value Domain"
+                    }
+                ],
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--SER",
+                    "title": "Serious Event",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AESER",
+                    "title": "Serious Event",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AESER",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AESER",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AESER",
+                    "title": "Serious Event",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Exp",
+            "description": "Is this a serious event? Valid values are \"Y\" and \"N\".",
+            "label": "Serious Event",
+            "name": "AESER",
+            "ordinal": "28",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "codelist": [
+                    {
+                        "href": "/mdr/root/ct/sdtmct/codelists/C66767",
+                        "title": "Version-agnostic anchor resource for codelist C66767",
+                        "type": "Root Value Domain"
+                    }
+                ],
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--ACN",
+                    "title": "Action Taken with Study Treatment",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AEACN",
+                    "title": "Action Taken with Study Treatment",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AEACN",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AEACN",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AEACN",
+                    "title": "Action Taken with Study Treatment",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Exp",
+            "description": "Describes changes to the study treatment as a result of the event. AEACN is specifically for the relationship to study treatment. AEACNOTH is for actions unrelated to dose adjustments of study treatment. Examples of AEACN values include ICH E2B values: \"DRUG WITHDRAWN\", \"DOSE REDUCED\", \"DOSE INCREASED\", \"DOSE NOT CHANGED\", \"UNKNOWN\" and \"NOT APPLICABLE\".",
+            "label": "Action Taken with Study Treatment",
+            "name": "AEACN",
+            "ordinal": "29",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--ACNOTH",
+                    "title": "Other Action Taken",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AEACNOTH",
+                    "title": "Other Action Taken",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AEACNOTH",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AEACNOTH",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AEACNOTH",
+                    "title": "Other Action Taken",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "Describes other actions taken as a result of the event that are unrelated to dose adjustments of study treatment. Usually reported as free text. Example: \"TREATMENT UNBLINDED. PRIMARY CARE PHYSICIAN NOTIFIED\".",
+            "label": "Other Action Taken",
+            "name": "AEACNOTH",
+            "ordinal": "30",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "codelist": [
+                    {
+                        "href": "/mdr/root/ct/sdtmct/codelists/C111110",
+                        "title": "Version-agnostic anchor resource for codelist C111110",
+                        "type": "Root Value Domain"
+                    }
+                ],
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--ACNDEV",
+                    "title": "Action Taken with Device",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AEACNDEV",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AEACNDEV",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AEACNDEV",
+                    "title": "Action Taken with Device",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "An action taken with a device as the result of the event. The device may or may not be a device under study.",
+            "label": "Action Taken with Device",
+            "name": "AEACNDEV",
+            "ordinal": "31",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--REL",
+                    "title": "Causality",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AEREL",
+                    "title": "Causality",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AEREL",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AEREL",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AEREL",
+                    "title": "Causality",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Exp",
+            "description": "Records the investigator's opinion as to the causality of the event to the treatment. ICH does not establish any required or recommended terms for non-device relatedness. ICH E2A and E2B examples include (up-cased here for alignment to SDTM conventions) terms such as \"NOT RELATED\", \"UNLIKELY RELATED\", \"POSSIBLY RELATED\", \"RELATED\", but these example terms do not establish any conventions or expectations. Controlled terminology may be defined in the future. Check with regulatory authority for population of this variable.",
+            "label": "Causality",
+            "name": "AEREL",
+            "ordinal": "32",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--RLDEV",
+                    "title": "Relationship of Event to Device",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AERLDEV",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AERLDEV",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AERLDEV",
+                    "title": "Relationship of Event to Device",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "A judgment as to the likelihood that the device caused the adverse event. The relationship is to a device identified in the data (i.e., has an SPDEVID). The device may be ancillary or under study. \\n Terminology: \\n * In the EU, follow the European Commission Guidelines on Medical Devices, Clinical Investigations: SAE Reporting (MEDDEV 2.7/3) (e.g., Not Related, Unlikely, Possible, Probable, Causal Relationship), with device-specific definitions. \\n * No required Controlled Terminology in US.",
+            "label": "Relationship of Event to Device",
+            "name": "AERLDEV",
+            "ordinal": "33",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--RELNST",
+                    "title": "Relationship to Non-Study Treatment",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AERELNST",
+                    "title": "Relationship to Non-Study Treatment",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AERELNST",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AERELNST",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AERELNST",
+                    "title": "Relationship to Non-Study Treatment",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "Records the investigator's opinion as to whether the event may have been due to a treatment other than study drug. May be reported as free text. Example: \"MORE LIKELY RELATED TO ASPIRIN USE\".",
+            "label": "Relationship to Non-Study Treatment",
+            "name": "AERELNST",
+            "ordinal": "34",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--PATT",
+                    "title": "Pattern of Event",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AEPATT",
+                    "title": "Pattern of Adverse Event",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AEPATT",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AEPATT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AEPATT",
+                    "title": "Pattern of Adverse Event",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "Used to indicate the pattern of the event over time. Examples: \"INTERMITTENT\", \"CONTINUOUS\", \"SINGLE EVENT\".",
+            "label": "Pattern of Adverse Event",
+            "name": "AEPATT",
+            "ordinal": "35",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "codelist": [
+                    {
+                        "href": "/mdr/root/ct/sdtmct/codelists/C66768",
+                        "title": "Version-agnostic anchor resource for codelist C66768",
+                        "type": "Root Value Domain"
+                    }
+                ],
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--OUT",
+                    "title": "Outcome of Event",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AEOUT",
+                    "title": "Outcome of Adverse Event",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AEOUT",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AEOUT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AEOUT",
+                    "title": "Outcome of Adverse Event",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "Description of the outcome of an event.",
+            "label": "Outcome of Adverse Event",
+            "name": "AEOUT",
+            "ordinal": "36",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "codelist": [
+                    {
+                        "href": "/mdr/root/ct/sdtmct/codelists/C66742",
+                        "title": "Version-agnostic anchor resource for codelist C66742",
+                        "type": "Root Value Domain"
+                    }
+                ],
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--SCAN",
+                    "title": "Involves Cancer",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AESCAN",
+                    "title": "Involves Cancer",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AESCAN",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AESCAN",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AESCAN",
+                    "title": "Involves Cancer",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "Was the serious event associated with the development of cancer? Valid values are \"Y\" and \"N\". This is a legacy seriousness criterion. It is not included in ICH E2A or E2B.",
+            "label": "Involves Cancer",
+            "name": "AESCAN",
+            "ordinal": "37",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "codelist": [
+                    {
+                        "href": "/mdr/root/ct/sdtmct/codelists/C66742",
+                        "title": "Version-agnostic anchor resource for codelist C66742",
+                        "type": "Root Value Domain"
+                    }
+                ],
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--SCONG",
+                    "title": "Congenital Anomaly or Birth Defect",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AESCONG",
+                    "title": "Congenital Anomaly or Birth Defect",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AESCONG",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AESCONG",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AESCONG",
+                    "title": "Congenital Anomaly or Birth Defect",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "Was the serious event associated with congenital anomaly or birth defect? Valid values are \"Y\" and \"N\".",
+            "label": "Congenital Anomaly or Birth Defect",
+            "name": "AESCONG",
+            "ordinal": "38",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "codelist": [
+                    {
+                        "href": "/mdr/root/ct/sdtmct/codelists/C66742",
+                        "title": "Version-agnostic anchor resource for codelist C66742",
+                        "type": "Root Value Domain"
+                    }
+                ],
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--SDISAB",
+                    "title": "Persist or Signif Disability/Incapacity",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AESDISAB",
+                    "title": "Persist or Signif Disability/Incapacity",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AESDISAB",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AESDISAB",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AESDISAB",
+                    "title": "Persist or Signif Disability/Incapacity",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "Did the serious event result in persistent or significant disability/incapacity? Valid values are \"Y\" and \"N\".",
+            "label": "Persist or Signif Disability/Incapacity",
+            "name": "AESDISAB",
+            "ordinal": "39",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "codelist": [
+                    {
+                        "href": "/mdr/root/ct/sdtmct/codelists/C66742",
+                        "title": "Version-agnostic anchor resource for codelist C66742",
+                        "type": "Root Value Domain"
+                    }
+                ],
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--SDTH",
+                    "title": "Results in Death",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AESDTH",
+                    "title": "Results in Death",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AESDTH",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AESDTH",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AESDTH",
+                    "title": "Results in Death",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "Did the serious event result in death? Valid values are \"Y\" and \"N\".",
+            "label": "Results in Death",
+            "name": "AESDTH",
+            "ordinal": "40",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "codelist": [
+                    {
+                        "href": "/mdr/root/ct/sdtmct/codelists/C66742",
+                        "title": "Version-agnostic anchor resource for codelist C66742",
+                        "type": "Root Value Domain"
+                    }
+                ],
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--SHOSP",
+                    "title": "Requires or Prolongs Hospitalization",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AESHOSP",
+                    "title": "Requires or Prolongs Hospitalization",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AESHOSP",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AESHOSP",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AESHOSP",
+                    "title": "Requires or Prolongs Hospitalization",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "Did the serious event require or prolong hospitalization? Valid values are \"Y\" and \"N\".",
+            "label": "Requires or Prolongs Hospitalization",
+            "name": "AESHOSP",
+            "ordinal": "41",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "codelist": [
+                    {
+                        "href": "/mdr/root/ct/sdtmct/codelists/C66742",
+                        "title": "Version-agnostic anchor resource for codelist C66742",
+                        "type": "Root Value Domain"
+                    }
+                ],
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--SLIFE",
+                    "title": "Is Life Threatening",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AESLIFE",
+                    "title": "Is Life Threatening",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AESLIFE",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AESLIFE",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AESLIFE",
+                    "title": "Is Life Threatening",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "Was the serious event life-threatening? Valid values are \"Y\" and \"N\".",
+            "label": "Is Life Threatening",
+            "name": "AESLIFE",
+            "ordinal": "42",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "codelist": [
+                    {
+                        "href": "/mdr/root/ct/sdtmct/codelists/C66742",
+                        "title": "Version-agnostic anchor resource for codelist C66742",
+                        "type": "Root Value Domain"
+                    }
+                ],
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--SOD",
+                    "title": "Occurred with Overdose",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AESOD",
+                    "title": "Occurred with Overdose",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AESOD",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AESOD",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AESOD",
+                    "title": "Occurred with Overdose",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "Did the serious event occur with an overdose? Valid values are \"Y\" and \"N\". This is a legacy seriousness criterion. It is not included in ICH E2A or E2B.",
+            "label": "Occurred with Overdose",
+            "name": "AESOD",
+            "ordinal": "43",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "codelist": [
+                    {
+                        "href": "/mdr/root/ct/sdtmct/codelists/C66742",
+                        "title": "Version-agnostic anchor resource for codelist C66742",
+                        "type": "Root Value Domain"
+                    }
+                ],
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--SMIE",
+                    "title": "Other Medically Important Serious Event",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AESMIE",
+                    "title": "Other Medically Important Serious Event",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AESMIE",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AESMIE",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AESMIE",
+                    "title": "Other Medically Important Serious Event",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "Do additional categories for seriousness apply? Valid values are \"Y\" and \"N\".",
+            "label": "Other Medically Important Serious Event",
+            "name": "AESMIE",
+            "ordinal": "44",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "codelist": [
+                    {
+                        "href": "/mdr/root/ct/sdtmct/codelists/C66742",
+                        "title": "Version-agnostic anchor resource for codelist C66742",
+                        "type": "Root Value Domain"
+                    }
+                ],
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--SINTV",
+                    "title": "Needs Intervention to Prevent Impairment",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AESINTV",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AESINTV",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AESINTV",
+                    "title": "Needs Intervention to Prevent Impairment",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "Records whether medical or surgical intervention was necessary to preclude permanent impairment of a body function, or to prevent permanent damage to a body structure, with either situation suspected to be due to the use of a medical product. This variable is used in conjunction with the other \"seriousness\" variables (e.g., fatal, life-threatening). It is part of the US federal government definition of a serious adverse event; see 21 CFR Part 803.3(w)(3).",
+            "label": "Needs Intervention to Prevent Impairment",
+            "name": "AESINTV",
+            "ordinal": "45",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "codelist": [
+                    {
+                        "href": "/mdr/root/ct/sdtmct/codelists/C66742",
+                        "title": "Version-agnostic anchor resource for codelist C66742",
+                        "type": "Root Value Domain"
+                    }
+                ],
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--UNANT",
+                    "title": "Unanticipated Adverse Device Effect",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AEUNANT",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AEUNANT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AEUNANT",
+                    "title": "Unanticipated Adverse Device Effect",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "Any serious adverse effect on health or safety or any life-threatening problem or death caused by or associated with a device, if that effect, problem, or death was not previously identified in nature, severity, or degree of incidence in the investigational plan or application (including a supplementary plan or application), \\n or \\n any other unanticipated serious problem associated with a device that relates to the rights, safety, or welfare of subjects. (21 CFR Part 812.3(s)). \\n This variable applies only to serious AEs and should hold collected data; if the value is derived, it should be held in ADaM.",
+            "label": "Unanticipated Adverse Device Effect",
+            "name": "AEUNANT",
+            "ordinal": "46",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--RLPRT",
+                    "title": "Rel of AE to Device-Related Procedure",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AERLPRT",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AERLPRT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AERLPRT",
+                    "title": "Rel of AE to Non-Dev-Rel Study Activity",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "The investigator's opinion as to the causality of the event as related to other protocol-required activities, actions, or assessments (e.g., medication changes, tests/assessments, other procedures). The relationship is to a protocol-specified, non-device-related activity where the device is identified in the data (i.e., has an SPDEVID). The device may be ancillary or under study. \\n Terminology: \\n * In the EU, follow the European Commission Guidelines on Medical Devices, Clinical Investigations: SAE Reporting (MEDDEV 2.7/3) (e.g., Not Related, Unlikely, Possible, Probable, Causal Relationship), with device-specific definitions. \\n * No required Controlled Terminology in US.",
+            "label": "Rel of AE to Non-Dev-Rel Study Activity",
+            "name": "AERLPRT",
+            "ordinal": "47",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--RLPRC",
+                    "title": "Rel of AE to Non-Dev-Rel Study Activity",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AERLPRC",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AERLPRC",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AERLPRC",
+                    "title": "Rel of AE to Device-Related Procedure",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "The investigator's opinion as to the likelihood that the device-related study procedure (e.g., implant/insertion, revision/adjustment, explant/removal) caused the AE. The relationship is to a device-related procedure where the device is identified in the data (i.e., has an SPDEVID). The device may be ancillary or under study. \\n Terminology: \\n * In the EU, follow the European Commission Guidelines on Medical Devices, Clinical Investigations: SAE Reporting (MEDDEV 2.7/3) (e.g., Not Related, Unlikely, Possible, Probable, Causal Relationship), with device-specific definitions. \\n * No required Controlled Terminology in US.",
+            "label": "Rel of AE to Device-Related Procedure",
+            "name": "AERLPRC",
+            "ordinal": "48",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "codelist": [
+                    {
+                        "href": "/mdr/root/ct/sdtmct/codelists/C66742",
+                        "title": "Version-agnostic anchor resource for codelist C66742",
+                        "type": "Root Value Domain"
+                    }
+                ],
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--CONTRT",
+                    "title": "Concomitant or Additional Trtmnt Given",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AECONTRT",
+                    "title": "Concomitant or Additional Trtmnt Given",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AECONTRT",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AECONTRT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AECONTRT",
+                    "title": "Concomitant or Additional Trtmnt Given",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "Was another treatment given because of the occurrence of the event? Valid values are \"Y\" and \"N\".",
+            "label": "Concomitant or Additional Trtmnt Given",
+            "name": "AECONTRT",
+            "ordinal": "49",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/Events/variables/--TOXGR",
+                    "title": "Toxicity Grade",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AETOXGR",
+                    "title": "Standard Toxicity Grade",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AETOXGR",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AETOXGR",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AETOXGR",
+                    "title": "Standard Toxicity Grade",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "Toxicity grade according to a standard toxicity scale (e.g., Common Terminology Criteria for Adverse Events, CTCAE). Sponsors should specify the name of the scale and version used in the metadata (see assumption 7d). If value is from a numeric scale, represent only the number (e.g., \"2\", not \"Grade 2\").",
+            "label": "Standard Toxicity Grade",
+            "name": "AETOXGR",
+            "ordinal": "50",
+            "role": "Record Qualifier",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/GeneralObservations/variables/TAETORD",
+                    "title": "Planned Order of Element Within Arm",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/TAETORD",
+                    "title": "Planned Order of Element within Arm",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/TAETORD",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.TAETORD",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/TAETORD",
+                    "title": "Planned Order of Element within Arm",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "Number that gives the planned order of the element within the arm.",
+            "label": "Planned Order of Element within Arm",
+            "name": "TAETORD",
+            "ordinal": "51",
+            "role": "Timing",
+            "simpleDatatype": "Num"
+        },
+        {
+            "_links": {
+                "codelist": [
+                    {
+                        "href": "/mdr/root/ct/sdtmct/codelists/C99079",
+                        "title": "Version-agnostic anchor resource for codelist C99079",
+                        "type": "Root Value Domain"
+                    }
+                ],
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/GeneralObservations/variables/EPOCH",
+                    "title": "Epoch",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/EPOCH",
+                    "title": "Epoch",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/EPOCH",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.EPOCH",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/EPOCH",
+                    "title": "Epoch",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "Epoch associated with the start date/time of the adverse event. Examples: \"SCREENING\", \"TREATMENT\", \"FOLLOW-UP\".",
+            "label": "Epoch",
+            "name": "EPOCH",
+            "ordinal": "52",
+            "role": "Timing",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/GeneralObservations/variables/--STDTC",
+                    "title": "Start Date/Time of Observation",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AESTDTC",
+                    "title": "Start Date/Time of Adverse Event",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AESTDTC",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AESTDTC",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AESTDTC",
+                    "title": "Start Date/Time of Adverse Event",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Exp",
+            "describedValueDomain": "ISO 8601 datetime or interval",
+            "description": "Start date/time of the adverse event represented in ISO 8601 character format.",
+            "label": "Start Date/Time of Adverse Event",
+            "name": "AESTDTC",
+            "ordinal": "53",
+            "role": "Timing",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/GeneralObservations/variables/--ENDTC",
+                    "title": "End Date/Time of Observation",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AEENDTC",
+                    "title": "End Date/Time of Adverse Event",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AEENDTC",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AEENDTC",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AEENDTC",
+                    "title": "End Date/Time of Adverse Event",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Exp",
+            "describedValueDomain": "ISO 8601 datetime or interval",
+            "description": "End date/time of the adverse event represented in ISO 8601 character format.",
+            "label": "End Date/Time of Adverse Event",
+            "name": "AEENDTC",
+            "ordinal": "54",
+            "role": "Timing",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/GeneralObservations/variables/--STDY",
+                    "title": "Study Day of Start of Observation",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AESTDY",
+                    "title": "Study Day of Start of Adverse Event",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AESTDY",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AESTDY",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AESTDY",
+                    "title": "Study Day of Start of Adverse Event",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "Study day of start of adverse event relative to the sponsor-defined RFSTDTC.",
+            "label": "Study Day of Start of Adverse Event",
+            "name": "AESTDY",
+            "ordinal": "55",
+            "role": "Timing",
+            "simpleDatatype": "Num"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/GeneralObservations/variables/--ENDY",
+                    "title": "Study Day of End of Observation",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AEENDY",
+                    "title": "Study Day of End of Adverse Event",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AEENDY",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AEENDY",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AEENDY",
+                    "title": "Study Day of End of Adverse Event",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "Study day of end of event relative to the sponsor-defined RFSTDTC.",
+            "label": "Study Day of End of Adverse Event",
+            "name": "AEENDY",
+            "ordinal": "56",
+            "role": "Timing",
+            "simpleDatatype": "Num"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/GeneralObservations/variables/--DUR",
+                    "title": "Collected Duration",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AEDUR",
+                    "title": "Duration of Adverse Event",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AEDUR",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AEDUR",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AEDUR",
+                    "title": "Duration of Adverse Event",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "describedValueDomain": "ISO 8601 duration",
+            "description": "Collected duration and unit of an adverse event. Used only if collected on the CRF and not derived from start and end date/times. Example: \"P1DT2H\" (for 1 day, 2 hours).",
+            "label": "Duration of Adverse Event",
+            "name": "AEDUR",
+            "ordinal": "57",
+            "role": "Timing",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "codelist": [
+                    {
+                        "href": "/mdr/root/ct/sdtmct/codelists/C66728",
+                        "title": "Version-agnostic anchor resource for codelist C66728",
+                        "type": "Root Value Domain"
+                    }
+                ],
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/GeneralObservations/variables/--ENRF",
+                    "title": "End Relative to Reference Period",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AEENRF",
+                    "title": "End Relative to Reference Period",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AEENRF",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AEENRF",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AEENRF",
+                    "title": "End Relative to Reference Period",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "Describes the end of the event relative to the sponsor-defined reference period. The sponsor-defined reference period is a continuous period of time defined by a discrete starting point (RFSTDTC) and a discrete ending point (RFENDTC) of the trial. \\n Not all values of the codelist are allowable for this variable. See Section 4.4.7, Use of Relative Timing Variables.",
+            "label": "End Relative to Reference Period",
+            "name": "AEENRF",
+            "ordinal": "58",
+            "role": "Timing",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "codelist": [
+                    {
+                        "href": "/mdr/root/ct/sdtmct/codelists/C66728",
+                        "title": "Version-agnostic anchor resource for codelist C66728",
+                        "type": "Root Value Domain"
+                    }
+                ],
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/GeneralObservations/variables/--ENRTPT",
+                    "title": "End Relative to Reference Time Point",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AEENRTPT",
+                    "title": "End Relative to Reference Time Point",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AEENRTPT",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AEENRTPT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AEENRTPT",
+                    "title": "End Relative to Reference Time Point",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "Identifies the end of the event as being before or after the reference time point defined by variable AEENTPT. \\n Not all values of the codelist are allowable for this variable. See Section 4.4.7, Use of Relative Timing Variables.",
+            "label": "End Relative to Reference Time Point",
+            "name": "AEENRTPT",
+            "ordinal": "59",
+            "role": "Timing",
+            "simpleDatatype": "Char"
+        },
+        {
+            "_links": {
+                "modelClassVariable": {
+                    "href": "/mdr/sdtm/2-0/classes/GeneralObservations/variables/--ENTPT",
+                    "title": "End Reference Time Point",
+                    "type": "SDTM Class Variable"
+                },
+                "parentDataset": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE",
+                    "title": "Adverse Events",
+                    "type": "SDTM Dataset"
+                },
+                "parentProduct": {
+                    "href": "/mdr/sdtmig/3-4",
+                    "title": "Study Data Tabulation Model Implementation Guide: Human Clinical Trials",
+                    "type": "Implementation Guide"
+                },
+                "priorVersion": {
+                    "href": "/mdr/sdtmig/3-3/datasets/AE/variables/AEENTPT",
+                    "title": "End Reference Time Point",
+                    "type": "SDTM Dataset Variable"
+                },
+                "rootItem": {
+                    "href": "/mdr/root/sdtmig/datasets/AE/variables/AEENTPT",
+                    "title": "Version-agnostic anchor resource for SDTMIG variable AE.AEENTPT",
+                    "type": "Root Data Element"
+                },
+                "self": {
+                    "href": "/mdr/sdtmig/3-4/datasets/AE/variables/AEENTPT",
+                    "title": "End Reference Time Point",
+                    "type": "SDTM Dataset Variable"
+                }
+            },
+            "core": "Perm",
+            "description": "Description of date/time in ISO 8601 character format of the reference point referred to by AEENRTPT. Examples: \"2003-12-25\", \"VISIT 2\".",
+            "label": "End Reference Time Point",
+            "name": "AEENTPT",
+            "ordinal": "60",
+            "role": "Timing",
+            "simpleDatatype": "Char"
+        }
+    ],
+    "description": "An events domain that contains data describing untoward medical occurrences in a patient or subjects that are administered a pharmaceutical product and which may not necessarily have a causal relationship with the treatment.",
+    "label": "Adverse Events",
+    "name": "AE",
+    "ordinal": "1"
+}

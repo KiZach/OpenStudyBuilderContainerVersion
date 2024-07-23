@@ -1,0 +1,144 @@
+[
+    {
+        "name": "Test GET all activity sub group non-existent Library passed",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/concepts/activities/activity-groups?library=non-existent"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "There is no library identified by provided library name (non-existent)",
+                "method": "GET",
+                "path": "http://testserver/concepts/activities/activity-groups?library=non-existent",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test POST new activity group name already exists",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "name": "name1",
+                "name_sentence_case": "name1",
+                "definition": "definition3",
+                "library_name": "Sponsor"
+            },
+            "url": "/concepts/activities/activity-groups"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "Activity Group with ['name: name1'] already exists.",
+                "method": "POST",
+                "path": "http://testserver/concepts/activities/activity-groups",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test PATCH activity group name already exists",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "name": "name1",
+                "name_sentence_case": "name1",
+                "change_description": "Test change"
+            },
+            "url": "/concepts/activities/activity-groups/activity_group_root2"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "Activity Group with ['name: name1'] already exists.",
+                "method": "PATCH",
+                "path": "http://testserver/concepts/activities/activity-groups/activity_group_root2",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test POST approve non DRAFT activity group",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/concepts/activities/activity-groups/activity_group_root1/approvals"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "The object is not in draft status.",
+                "method": "POST",
+                "path": "http://testserver/concepts/activities/activity-groups/activity_group_root1/approvals",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test DELETE activations non FINAL activity group",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "/concepts/activities/activity-groups/activity_group_root2/activations"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "Cannot retire draft version.",
+                "method": "DELETE",
+                "path": "http://testserver/concepts/activities/activity-groups/activity_group_root2/activations",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test POST activations non retired activity group",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/concepts/activities/activity-groups/activity_group_root2/activations"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "Only RETIRED version can be reactivated.",
+                "method": "POST",
+                "path": "http://testserver/concepts/activities/activity-groups/activity_group_root2/activations",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test DELETE accepted object",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "/concepts/activities/activity-groups/activity_group_root1"
+        },
+        "response": {
+            "code": 400,
+            "result": {
+                "message": "Object has been accepted",
+                "method": "DELETE",
+                "path": "http://testserver/concepts/activities/activity-groups/activity_group_root1",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "BusinessLogicException"
+            }
+        }
+    }
+]

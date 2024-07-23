@@ -1,0 +1,12 @@
+[submodule "mdr_standards_import"]
+	path = mdr_standards_import
+	url = ../mdr-standards-import
+[submodule "neo4j_mdr_db"]
+	path = neo4j_mdr_db
+	url = ../neo4j-mdr-db
+[submodule "clinical_mdr_api"]
+	path = clinical_mdr_api
+	url = ../clinical-mdr-api
+[submodule "studybuilder_import"]
+	path = studybuilder_import
+	url = ../studybuilder-import

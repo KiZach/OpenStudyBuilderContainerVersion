@@ -1,0 +1,7 @@
+"library","name","first_value","first_conjunction","second_value","second_conjunction","indication","category","testing"
+"Sponsor","test [ActivityInstance]","Body Weight",,,,,,
+"Sponsor","test [ActivityInstance]","Body Weight+Body Temperature","and",,,,,
+"Sponsor","test [ActivityInstance] and [DiseaseDisorder]","Body Temperature",,"Growth Hormone Deficiency Children",,,,
+"Sponsor","test [ActivityInstance]","Body Weight",,,,,,
+"User Defined","test user defined [ActivityInstance]","Body Weight",,,,,,
+"Sponsor","To compare the effect of [Compound] relative to [Comparator] on [ActivityInstance]",,,,,"Heart failure","Safety|Efficacy","No"

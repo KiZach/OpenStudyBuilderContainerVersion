@@ -1,0 +1,11 @@
+CT_CD_LIST_SUBMVAL,CT_SUBMVAL,CT_NAME,NAME_SENTENSE_CASE,ORDER,DEFINITION
+CRITCAT,Demography,Demography,demography,1,Demography
+CRITCAT,Diseases,Diseases,diseases,2,Diseases
+CRITCAT,Lifestyle Factors,Lifestyle Factors,lifestyle factors,3,Lifestyle Factors
+CRITCAT,Medications,Medications,medications,4,Medications
+CRITCAT,Body Measurements,Body Measurements,body measurements,5,Body Measurements
+CRITCAT,Vital Signs,Vital Signs,vital signs,6,Vital Signs
+CRITCAT,Laboratory Parameters,Laboratory Parameters,laboratory parameters,7,Laboratory Parameters
+CRITCAT,Physical Findings,Physical Findings,physical findings,8,Physical Findings
+CRITCAT,ECG Findings,ECG Findings,ECG findings,9,ECG Findings
+CRITCAT,GCP Related,GCP Related,GCP related,10,GCP Related

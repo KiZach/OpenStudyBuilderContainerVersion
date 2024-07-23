@@ -1,0 +1,5 @@
+CT_CD_LIST_SUBMVAL,CT_NAME,NAME_SENTENSE_CASE,CT_SUBMVAL,DEFINITION,ORDER,CT_CD,NCI_PREFERRED_NAME
+ARM_TYPE,Investigational Arm,investigational arm,INVESTIGATIONAL ARM TYPE,An arm where subjects receive investigational treatment,1,,Investigational arm
+ARM_TYPE,Comparator Arm,comparator arm,COMPARATOR ARM TYPE,An arm where subjects receive comparator treatment,2,,Comparator arm
+ARM_TYPE,Placebo Arm,placebo arm,PLACEBO ARM TYPE,An arm where subjects receive placebo treatment,3,,Placebo arm
+ARM_TYPE,Observational Arm,observational arm,OBSERVATIONAL ARM TYPE,An arm where subjects are observed without any protocol specified treatment,4,,Observational Arm

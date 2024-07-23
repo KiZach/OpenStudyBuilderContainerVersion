@@ -1,0 +1,8 @@
+CT_CD_LIST_SUBMVAL,CT_SUBMVAL,CT_NAME,NAME_SENTENSE_CASE,ORDER,DEFINITION
+UNIT_SUBSET,Age Unit,Age Unit,age unit,1,Subset of units for age
+UNIT_SUBSET,Dose Unit,Dose Unit,dose unit,2,Subset of units for dosing
+UNIT_SUBSET,Study Time,Study Time,study time,3,Subset of units for study time
+UNIT_SUBSET,Time Unit,Time Unit,time unit,4,Subsets of all units for time
+UNIT_SUBSET,Strength Unit,Strength Unit,strength unit,5,Subset of units related to definition of compound strength
+UNIT_SUBSET,Study Preferred Time Unit,Study Preferred Time Unit,study preferred time unit,6,Subset of all unit that Study can choose as preferred time unit
+UNIT_SUBSET,Endpoint Unit,Endpoint Unit,endpoint unit,7,Subset of all units that can be chosen in the unit column in the endpoint table

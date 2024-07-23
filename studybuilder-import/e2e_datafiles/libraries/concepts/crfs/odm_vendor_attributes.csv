@@ -1,0 +1,2 @@
+name,compatible_types,data_type,value_regex
+displayAsTable,FormDef|ItemGroupDef|ItemDef,string,^(Yes|No)$

@@ -1,0 +1,110 @@
+########################################################################################
+####  Documentation portal build validation, required to pass before merging a PR  #####
+########################################################################################
+
+trigger:
+- main
+- release/*
+
+variables:
+  # Azure Resource Manager connection created during pipeline creation
+  azureServiceConnectionId: 'clinicalmdr-iac-poc'
+
+pool:
+  name: 'clinical-mdr-dev-vmss'
+
+jobs:
+- job: Install_and_build
+  displayName: 'Install modules and build app'
+  steps:
+    - checkout: self
+      persistCredentials: true
+
+    # Checkout source repo
+    - script: |
+        git fetch -a
+
+        if [[ "$(Build.Reason)" == "PullRequest" ]]; then
+          gitbranch=`echo $(System.PullRequest.SourceBranch) | sed 's/^refs\/heads\///'`
+        else
+          gitbranch=`echo $(Build.SourceBranch) | sed 's/^refs\/heads\///'`
+        fi
+
+        echo "##vso[task.setvariable variable=gitbranch;isOutput=true;]$gitbranch"
+
+        git checkout $gitbranch
+        git pull
+      displayName: 'Checkout git branch'
+      name: gitref
+
+    # Install Nodejs
+    - task: NodeTool@0
+      inputs:
+        versionSpec: '12.x'
+      displayName: 'Install Node.js'
+
+    # Install Yarn
+    - task: YarnInstaller@3
+      inputs:
+        versionSpec: '1.x'
+      displayName: 'Install Yarn'
+
+    # Install packages of the vue app
+    - task: Bash@3
+      inputs:
+        targetType: 'inline'
+        script: 'yarn install'
+      displayName: 'Install required packages'
+      
+    # Build the app for production (creates the directory docs/.vuepress/dist containing html, js, css and img files)
+    - task: Bash@3
+      inputs:
+        targetType: 'inline'
+        script: 'yarn docs:build'
+      displayName: 'yarn build'
+
+    - script: |
+        npx license-checker --excludePrivatePackages --production | grep "licenseFile" | rev | cut -d " " -f1 | rev | grep -i "license" > files.txt
+        echo "## Third party library licenses descriptions" > sbom.md
+        while read line; do echo $line | rev | cut -d '/' -f2 | rev | awk '{ print "### License for 3rd party library " $1 }' >> sbom.md; echo '```' >> sbom.md && cat $line >> sbom.md && echo ' ' >> sbom.md && echo '```' >> sbom.md; done < files.txt
+        #tail -n +4 sbom.md > tmp && mv tmp sbom.md # include after nnsbom fix
+        tail -n +2 sbom.md > tmp && mv tmp sbom.md
+        echo "No third-party licenses to include for this component. Created with [Vuepress](https://github.com/vuejs/vuepress)" >> sbom.md
+        cat sbom.md
+
+        if [[ "$(Build.SourceBranchName)" != "main" && "$(Build.Reason)" == "PullRequest" && `git diff --exit-code sbom.md` ]]; then
+          git config --global user.email pipeline@studybuilder.com
+          git config --global user.name "Pipeline $(Build.BuildNumber)"
+          git add sbom.md
+          pwsh -NoLogo -NonInteractive -File CheckSbom.ps1 -token $(System.AccessToken) -pullRequestId $(System.PullRequest.PullRequestId) -projectName $(System.TeamProject) -repositoryName $(Build.Repository.Name)
+          git commit sbom.md -m "Pipeline $(Build.BuildNumber) committed changes to SBOM"
+          git push https://$SYSTEM_ACCESSTOKEN@dev.azure.com/novonordiskit/Clinical-MDR/_git/documentation-portal $(gitref.gitbranch)
+        fi
+      env:
+        SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+      displayName: Generate full sbom for Documentation Portal
+
+    - task: WhiteSource@21
+      inputs:
+        cwd: '$(System.DefaultWorkingDirectory)'
+
+    # Sonarqube scanning
+    - task: SonarQubePrepare@5
+      displayName: SonarQube Prepare
+      inputs:
+        SonarQube: 'Sonarqube-ClinicalMDR-DEV'
+        scannerMode: 'CLI'
+        configMode: 'manual'
+        cliProjectKey: 'documentation-portal'
+        cliProjectName: 'documentation-portal'
+        cliSources: './docs/.vuepress/dist'
+        extraProperties: |
+          sonar.verbose=true
+
+    - task: SonarQubeAnalyze@5
+      displayName: SonarQube Analyze
+      
+    - task: SonarQubePublish@5
+      displayName: SonarQube Publish
+      inputs:
+        pollingTimeoutSec: '300'

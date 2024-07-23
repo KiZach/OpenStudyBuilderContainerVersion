@@ -1,0 +1,422 @@
+[
+  {
+    "study_uid": "Study_999999",
+    "order": 1,
+    "show_activity_group_in_protocol_flowchart": true,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "show_activity_in_protocol_flowchart": false,
+    "study_activity_uid": "StudyActivity_000001",
+    "activity": {
+      "uid": "Activity_000963",
+      "name": "Ethnicity",
+      "name_sentence_case": "Ethnicity",
+      "definition": null,
+      "abbreviation": null,
+      "library_name": "Sponsor",
+      "start_date": "2022-04-21T06:58:21.635967",
+      "end_date": null,
+      "status": "Final",
+      "version": "1.0",
+      "change_description": "Approved version",
+      "user_initials": "unknown-user",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "activity_groupings": [
+        {
+          "activity_group_name": "Informed Consent and Demography",
+          "activity_subgroup_name": "Informed Consent and Demography",
+          "activity_group_uid": "ActivityGroup_87",
+          "activity_subgroup_uid": "ActivitySubGroup_87"
+        },
+        {
+          "activity_group_name": "Demography",
+          "activity_subgroup_name": "Demography",
+          "activity_group_uid": "ActivityGroup_88",
+          "activity_subgroup_uid": "ActivitySubGroup_88"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_87"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_87"
+    },
+    "flowchart_group": {
+      "term_uid": "CTTerm_000061",
+      "catalogue_name": "SDTM CT",
+      "codelist_uid": "CTCodelist_000022",
+      "sponsor_preferred_name": "SAFETY",
+      "sponsor_preferred_name_sentence_case": "safety",
+      "order": null,
+      "library_name": "Sponsor",
+      "start_date": "2022-04-21T06:51:54.706377",
+      "end_date": null,
+      "status": "Final",
+      "version": "1.0",
+      "change_description": "Approved version",
+      "user_initials": "unknown-user",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ]
+    },
+    "note": null,
+    "start_date": "2022-04-27T12:35:08.120823",
+    "user_initials": "unknown-user",
+    "latest_activity": null,
+    "accepted_version": false
+  },
+  {
+    "study_uid": "Study_999999",
+    "order": 2,
+    "showActivityGroupInProtocolFlowchart": true,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "show_activity_in_protocol_flowchart": false,
+    "study_activity_uid": "StudyActivity_000002",
+    "activity": {
+      "uid": "Activity_000964",
+      "name": "Date of Birth",
+      "name_sentence_case": "Date of Birth",
+      "definition": null,
+      "abbreviation": null,
+      "library_name": "Sponsor",
+      "start_date": "2022-04-21T06:58:21.707181",
+      "end_date": null,
+      "status": "Final",
+      "version": "1.0",
+      "change_description": "Approved version",
+      "user_initials": "unknown-user",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "activity_groupings": [
+        {
+          "activity_group_name": "Informed Consent and Demography",
+          "activity_subgroup_name": "Informed Consent and Demography",
+          "activity_group_uid": "ActivityGroup_75",
+          "activity_subgroup_uid": "ActivitySubGroup_75"
+        },
+        {
+          "activity_group_name": "Demography",
+          "activity_subgroup_name": "Demography",
+          "activity_group_uid": "ActivityGroup_76",
+          "activity_subgroup_uid": "ActivitySubGroup_76"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_75"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_75"
+    },
+    "flowchart_group": {
+      "term_uid": "CTTerm_000061",
+      "catalogue_name": "SDTM CT",
+      "codelist_uid": "CTCodelist_000022",
+      "sponsor_preferred_name": "SAFETY",
+      "sponsor_preferred_name_sentence_case": "safety",
+      "order": null,
+      "library_name": "Sponsor",
+      "start_date": "2022-04-21T06:51:54.706377",
+      "end_date": null,
+      "status": "Final",
+      "version": "1.0",
+      "change_description": "Approved version",
+      "user_initials": "unknown-user",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ]
+    },
+    "note": null,
+    "start_date": "2022-04-27T12:35:08.866828",
+    "user_initials": "unknown-user",
+    "latest_activity": null,
+    "accepted_version": false
+  },
+  {
+    "study_uid": "Study_999999",
+    "order": 3,
+    "showActivityGroupInProtocolFlowchart": true,
+    "show_activity_sungroup_in_protocol_flowchart": true,
+    "show_activity_in_protocol_flowchart": false,
+    "study_activity_uid": "StudyActivity_000003",
+    "activity": {
+      "uid": "Activity_000965",
+      "name": "Sex",
+      "name_sentence_case": "Sex",
+      "definition": null,
+      "abbreviation": null,
+      "library_name": "Sponsor",
+      "start_date": "2022-04-21T06:58:21.784302",
+      "end_date": null,
+      "status": "Final",
+      "version": "1.0",
+      "change_description": "Approved version",
+      "user_initials": "unknown-user",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "activity_groupings": [
+        {
+          "activity_group_name": "Informed Consent and Demography",
+          "activity_subgroup_name": "Informed Consent and Demography",
+          "activity_group_uid": "ActivityGroup_206",
+          "activity_subgroup_uid": "ActivitySubGroup_206"
+        },
+        {
+          "activity_group_name": "Demography",
+          "activity_subgroup_name": "Demography",
+          "activity_group_uid": "ActivityGroup_207",
+          "activity_subgroup_uid": "ActivitySubGroup_207"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_206"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_206"
+    },
+    "flowchart_group": {
+      "term_uid": "CTTerm_000061",
+      "catalogue_name": "SDTM CT",
+      "codelist_uid": "CTCodelist_000022",
+      "sponsor_preferred_name": "SAFETY",
+      "sponsor_preferred_name_sentence_case": "safety",
+      "order": null,
+      "library_name": "Sponsor",
+      "start_date": "2022-04-21T06:51:54.706377",
+      "end_date": null,
+      "status": "Final",
+      "version": "1.0",
+      "change_description": "Approved version",
+      "user_initials": "unknown-user",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ]
+    },
+    "note": null,
+    "start_date": "2022-04-27T12:35:09.120267",
+    "user_initials": "unknown-user",
+    "latest_activity": null,
+    "accepted_version": false
+  },
+  {
+    "study_uid": "Study_999999",
+    "order": 4,
+    "showActivityGroupInProtocolFlowchart": true,
+    "show_activity_sungroup_in_protocol_flowchart": true,
+    "show_activity_in_protocol_flowchart": false,
+    "study_activity_uid": "StudyActivity_000004",
+    "activity": {
+      "uid": "Activity_000966",
+      "name": "Race",
+      "name_sentence_case": "Race",
+      "definition": null,
+      "abbreviation": null,
+      "library_name": "Sponsor",
+      "start_date": "2022-04-21T06:58:21.859642",
+      "end_date": null,
+      "status": "Final",
+      "version": "1.0",
+      "change_description": "Approved version",
+      "user_initials": "unknown-user",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "activity_groupings": [
+        {
+          "activity_group_name": "Informed Consent and Demography",
+          "activity_subgroup_name": "Informed Consent and Demography",
+          "activity_group_uid": "ActivityGroup_192",
+          "activity_subgroup_uid": "ActivitySubGroup_192"
+        },
+        {
+          "activity_group_name": "Demography",
+          "activity_subgroup_name": "Demography",
+          "activity_group_uid": "ActivityGroup_193",
+          "activity_subgroup_uid": "ActivitySubGroup_193"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_192"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_192"
+    },
+    "flowchart_group": {
+      "term_uid": "CTTerm_000061",
+      "catalogue_name": "SDTM CT",
+      "codelist_uid": "CTCodelist_000022",
+      "sponsor_preferred_name": "SAFETY",
+      "sponsor_preferred_name_sentence_case": "safety",
+      "order": null,
+      "library_name": "Sponsor",
+      "start_date": "2022-04-21T06:51:54.706377",
+      "end_date": null,
+      "status": "Final",
+      "version": "1.0",
+      "change_description": "Approved version",
+      "user_initials": "unknown-user",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ]
+    },
+    "note": null,
+    "start_date": "2022-04-27T12:35:09.271360",
+    "user_initials": "unknown-user",
+    "latest_activity": null,
+    "accepted_version": false
+  },
+  {
+    "study_uid": "Study_999999",
+    "order": 9,
+    "showActivityGroupInProtocolFlowchart": true,
+    "show_activity_sungroup_in_protocol_flowchart": true,
+    "show_activity_in_protocol_flowchart": false,
+    "study_activity_uid": "StudyActivity_000009",
+    "activity": {
+      "uid": "Activity_001088",
+      "name": "Diastolic Blood Pressure",
+      "name_sentence_case": "Diastolic Blood Pressure",
+      "definition": null,
+      "abbreviation": null,
+      "library_name": "Sponsor",
+      "start_date": "2022-04-21T06:58:31.981853",
+      "end_date": null,
+      "status": "Final",
+      "version": "1.0",
+      "change_description": "Approved version",
+      "user_initials": "unknown-user",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "activity_groupings": [
+        {
+          "activity_group_name": "Vital Signs",
+          "activity_subgroup_name": "Vital Signs",
+          "activity_group_uid": "ActivityGroup_61",
+          "activity_subgroup_uid": "ActivitySubGroup_61"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_61"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_61"
+    },
+    "flowchart_group": {
+      "term_uid": "CTTerm_000059",
+      "catalogue_name": "SDTM CT",
+      "codelist_uid": "CTCodelist_000022",
+      "sponsor_preferred_name": "EFFICACY",
+      "sponsor_preferred_name_sentence_case": "efficacy",
+      "order": null,
+      "library_name": "Sponsor",
+      "start_date": "2022-04-21T06:51:54.495523",
+      "end_date": null,
+      "status": "Final",
+      "version": "1.0",
+      "change_description": "Approved version",
+      "user_initials": "unknown-user",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ]
+    },
+    "note": null,
+    "start_date": "2022-04-27T12:39:09.079059",
+    "user_initials": "unknown-user",
+    "latest_activity": null,
+    "accepted_version": false
+  },
+  {
+    "study_uid": "Study_999999",
+    "order": 10,
+    "showActivityGroupInProtocolFlowchart": true,
+    "show_activity_sungroup_in_protocol_flowchart": true,
+    "show_activity_in_protocol_flowchart": false,
+    "study_activity_uid": "StudyActivity_000010",
+    "activity": {
+      "uid": "Activity_001102",
+      "name": "Systolic Blood Pressure",
+      "name_sentence_case": "Systolic Blood Pressure",
+      "definition": null,
+      "abbreviation": null,
+      "library_name": "Sponsor",
+      "start_date": "2022-04-21T06:58:33.067690",
+      "end_date": null,
+      "status": "Final",
+      "version": "1.0",
+      "change_description": "Approved version",
+      "user_initials": "unknown-user",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "activity_groupings": [
+        {
+          "activity_group_name": "Vital Signs",
+          "activity_subgroup_name": "Vital Signs",
+          "activity_group_uid": "ActivityGroup_62",
+          "activity_subgroup_uid": "ActivitySubGroup_62"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_62"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_62"
+    },
+    "flowchart_group": {
+      "term_uid": "CTTerm_000059",
+      "catalogue_name": "SDTM CT",
+      "codelist_uid": "CTCodelist_000022",
+      "sponsor_preferred_name": "EFFICACY",
+      "sponsor_preferred_name_sentence_case": "efficacy",
+      "order": null,
+      "library_name": "Sponsor",
+      "start_date": "2022-04-21T06:51:54.495523",
+      "end_date": null,
+      "status": "Final",
+      "version": "1.0",
+      "change_description": "Approved version",
+      "user_initials": "unknown-user",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ]
+    },
+    "note": null,
+    "start_date": "2022-04-27T12:39:09.236512",
+    "user_initials": "unknown-user",
+    "latest_activity": null,
+    "accepted_version": false
+  }
+]

@@ -1,0 +1,116 @@
+[
+    {
+        "study_uid": "Study_000002",
+        "order": 1,
+        "cohort_uid": "StudyCohort_000001",
+        "name": "Humain Insulin cohort",
+        "short_name": "HIC",
+        "code": "HIC01",
+        "description": "This is the Humain Insulin Cohort",
+        "colour_code": "#2E7D32FF",
+        "number_of_subjects": 10,
+        "start_date": "2022-11-29T14:34:21.643346",
+        "user_initials": "unknown-user",
+        "end_date": null,
+        "status": null,
+        "change_type": null,
+        "accepted_version": false,
+        "branch_arm_roots": null,
+        "arm_roots": [
+            {
+                "study_uid": "Study_000002",
+                "order": 1,
+                "arm_uid": "StudyArm_000001",
+                "name": "Human Insulin",
+                "short_name": "Human Insulin",
+                "code": "A",
+                "description": null,
+                "arm_colour": "#9FA8DAFF",
+                "randomization_group": "A",
+                "number_of_subjects": 50,
+                "arm_type": {
+                    "term_uid": "CTTerm_000084",
+                    "catalogue_name": "SDTM CT",
+                    "codelist_uid": "CTCodelist_000022",
+                    "sponsor_preferred_name": "Investigational Arm",
+                    "sponsor_preferred_name_sentence_case": "investigational arm",
+                    "order": 1,
+                    "library_name": "Sponsor",
+                    "start_date": "2022-11-28T11:29:14.513564",
+                    "end_date": null,
+                    "status": "Final",
+                    "version": "1.0",
+                    "change_description": "Approved version",
+                    "user_initials": "unknown-user",
+                    "possible_actions": [
+                        "inactivate",
+                        "new_version"
+                    ]
+                },
+                "start_date": "2022-11-28T11:33:17.410404",
+                "user_initials": "unknown-user",
+                "end_date": null,
+                "status": null,
+                "change_type": null,
+                "accepted_version": false
+            }
+        ]
+    },
+    {
+        "study_uid": "Study_000002",
+        "order": 2,
+        "cohort_uid": "StudyCohort_000002",
+        "name": "Metformin Cohort",
+        "short_name": "MC",
+        "code": "MC01",
+        "description": "This is the Metformin Cohort description",
+        "colour_code": "#FDD835FF",
+        "number_of_subjects": 10,
+        "start_date": "2022-11-29T14:35:20.357085",
+        "user_initials": "unknown-user",
+        "end_date": null,
+        "status": null,
+        "change_type": null,
+        "accepted_version": false,
+        "branch_arm_roots": null,
+        "arm_roots": [
+            {
+                "study_uid": "Study_000002",
+                "order": 2,
+                "arm_uid": "StudyArm_000003",
+                "name": "Metformin",
+                "short_name": "Metformin",
+                "code": "B",
+                "description": null,
+                "arm_colour": "#81C784FF",
+                "randomization_group": "B",
+                "number_of_subjects": 50,
+                "arm_type": {
+                    "term_uid": "CTTerm_000083",
+                    "catalogue_name": "SDTM CT",
+                    "codelist_uid": "CTCodelist_000022",
+                    "sponsor_preferred_name": "Comparator Arm",
+                    "sponsor_preferred_name_sentence_case": "comparator arm",
+                    "order": 2,
+                    "library_name": "Sponsor",
+                    "start_date": "2022-11-28T11:29:14.435062",
+                    "end_date": null,
+                    "status": "Final",
+                    "version": "1.0",
+                    "change_description": "Approved version",
+                    "user_initials": "unknown-user",
+                    "possible_actions": [
+                        "inactivate",
+                        "new_version"
+                    ]
+                },
+                "start_date": "2022-11-28T11:33:18.439247",
+                "user_initials": "unknown-user",
+                "end_date": null,
+                "status": null,
+                "change_type": null,
+                "accepted_version": false
+            }
+        ]
+    }
+]

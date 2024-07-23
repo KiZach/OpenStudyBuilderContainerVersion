@@ -1,0 +1,289 @@
+[
+  {
+    "compound": {
+      "abbreviation": null,
+      "analyte_number": "anTBD005",
+      "brands": [],
+      "change_description": "Approved version",
+      "definition": null,
+      "delivery_devices": [],
+      "dispensers": [],
+      "dosage_forms": [
+        {
+          "name": "Injectable",
+          "term_uid": "C42946_INJECTION"
+        }
+      ],
+      "dose_frequencies": [],
+      "dose_values": [],
+      "end_date": null,
+      "half_life": {
+        "uid": "NumericValueWithUnit_000026",
+        "unit_definition_uid": "UnitDefinition_000343",
+        "unit_label": "hour",
+        "value": 6.6
+      },
+      "is_name_inn": true,
+      "is_sponsor_compound": true,
+      "lag_times": [
+        {
+          "sdtm_domain_label": "Adverse Event Domain",
+          "sdtm_domain_uid": "C49562_AE",
+          "unit_definition_uid": "UnitDefinition_000354",
+          "unit_label": "days",
+          "value": 7.0
+        }
+      ],
+      "library_name": "Sponsor",
+      "name": "NPH Insulin",
+      "name_sentence_case": "nph insulin",
+      "nnc_long_number": null,
+      "nnc_short_number": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "projects": [],
+      "routes_of_administration": [
+        {
+          "name": "Subcutaneous",
+          "term_uid": "C38299_SUBCUTANEOUS"
+        }
+      ],
+      "start_date": "2022-10-18T13:18:29.541666",
+      "status": "Final",
+      "strength_values": [
+        {
+          "uid": "NumericValueWithUnit_000019",
+          "unit_definition_uid": "UnitDefinition_000244",
+          "unit_label": "IU/mL",
+          "value": 100.0
+        }
+      ],
+      "substances": [
+        {
+          "pclass_id": "N0000175944",
+          "pclass_name": "Insulin",
+          "pclassterm_uid": "DictionaryTerm_000054",
+          "substance_name": "INSULIN HUMAN",
+          "substanceterm_uid": "DictionaryTerm_001026",
+          "substance_unii": "1Y17CTI5SR"
+        }
+      ],
+      "uid": "Compound_000006",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "compound_alias": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "compound": {
+        "name": "NPH Insulin",
+        "uid": "Compound_000006"
+      },
+      "definition": null,
+      "end_date": null,
+      "is_preferred_synonym": true,
+      "library_name": "Sponsor",
+      "name": "NPH Insulin",
+      "name_sentence_case": "nph insulin",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T13:18:30.506299",
+      "status": "Final",
+      "uid": "CompoundAlias_000006",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "device": null,
+    "dispensed_in": null,
+    "dosage_form": {
+      "name": "Injectable",
+      "term_uid": "C42946_INJECTION"
+    },
+    "formulation": null,
+    "order": 1,
+    "other_info": null,
+    "project_name": "CDISC Dev",
+    "project_number": "CDISC DEV",
+    "reason_for_missing_null_value": null,
+    "route_of_administration": {
+      "name": "Subcutaneous",
+      "term_uid": "C38299_SUBCUTANEOUS"
+    },
+    "start_date": "2022-10-20T06:29:42.193099",
+    "strength_value": {
+      "uid": "NumericValueWithUnit_000019",
+      "unit_definition_uid": "UnitDefinition_000244",
+      "unit_label": "IU/mL",
+      "value": 100.0
+    },
+    "study_compound_dosing_count": 1,
+    "study_compound_uid": "StudyCompound_000001",
+    "study_uid": "Study_000002",
+    "type_of_treatment": {
+      "name": "Investigational Product",
+      "term_uid": "CTTerm_000125"
+    },
+    "user_initials": "MT"
+  },
+  {
+    "compound": {
+      "abbreviation": null,
+      "analyte_number": null,
+      "brands": [],
+      "change_description": "Approved version",
+      "definition": null,
+      "delivery_devices": [],
+      "dispensers": [
+        {
+          "name": "Blister",
+          "term_uid": "CTTerm_000132"
+        }
+      ],
+      "dosage_forms": [
+        {
+          "name": "Tablet",
+          "term_uid": "C42998_TABLET"
+        }
+      ],
+      "dose_frequencies": [],
+      "dose_values": [
+        {
+          "uid": "NumericValueWithUnit_000022",
+          "unit_definition_uid": "UnitDefinition_000229",
+          "unit_label": "mg",
+          "value": 500.0
+        }
+      ],
+      "end_date": null,
+      "half_life": {
+        "uid": "NumericValueWithUnit_000021",
+        "unit_definition_uid": "UnitDefinition_000343",
+        "unit_label": "hour",
+        "value": 6.5
+      },
+      "is_name_inn": true,
+      "is_sponsor_compound": false,
+      "lag_times": [
+        {
+          "sdtm_domain_label": "Adverse Event Domain",
+          "sdtm_domain_uid": "C49562_AE",
+          "unit_definition_uid": "UnitDefinition_000354",
+          "unit_label": "days",
+          "value": 7.0
+        }
+      ],
+      "library_name": "Sponsor",
+      "name": "Metformin",
+      "name_sentence_case": "metformin",
+      "nnc_long_number": null,
+      "nnc_short_number": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "projects": [],
+      "routes_of_administration": [
+        {
+          "name": "Oral",
+          "term_uid": "C38288_ORAL"
+        }
+      ],
+      "start_date": "2022-10-18T13:18:15.950053",
+      "status": "Final",
+      "strength_values": [
+        {
+          "uid": "NumericValueWithUnit_000022",
+          "unit_definition_uid": "UnitDefinition_000229",
+          "unit_label": "mg",
+          "value": 500.0
+        },
+        {
+          "uid": "NumericValueWithUnit_000023",
+          "unit_definition_uid": "UnitDefinition_000229",
+          "unit_label": "mg",
+          "value": 850.0
+        },
+        {
+          "uid": "NumericValueWithUnit_000024",
+          "unit_definition_uid": "UnitDefinition_000229",
+          "unit_label": "mg",
+          "value": 1000.0
+        }
+      ],
+      "substances": [
+        {
+          "pclass_id": "N0000175565",
+          "pclass_name": "Biguanide",
+          "pclassterm_uid": "DictionaryTerm_000043",
+          "substance_name": "METFORMIN",
+          "substanceterm_uid": "DictionaryTerm_001048",
+          "substance_unii": "9100L32L2N"
+        }
+      ],
+      "uid": "Compound_000003",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "compound_alias": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "compound": {
+        "name": "Metformin",
+        "uid": "Compound_000003"
+      },
+      "definition": null,
+      "end_date": null,
+      "is_preferred_synonym": true,
+      "library_name": "Sponsor",
+      "name": "Metformin",
+      "name_sentence_case": "metformin",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T13:18:16.956538",
+      "status": "Final",
+      "uid": "CompoundAlias_000003",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "device": null,
+    "dispensed_in": {
+      "name": "Blister",
+      "term_uid": "CTTerm_000132"
+    },
+    "dosage_form": {
+      "name": "Tablet",
+      "term_uid": "C42998_TABLET"
+    },
+    "formulation": null,
+    "order": 2,
+    "other_info": null,
+    "project_name": "CDISC Dev",
+    "project_number": "CDISC DEV",
+    "reason_for_missing_null_value": null,
+    "route_of_administration": {
+      "name": "Oral",
+      "term_uid": "C38288_ORAL"
+    },
+    "start_date": "2022-10-20T06:30:33.853084",
+    "strength_value": {
+      "uid": "NumericValueWithUnit_000022",
+      "unit_definition_uid": "UnitDefinition_000229",
+      "unit_label": "mg",
+      "value": 500.0
+    },
+    "study_compound_dosing_count": 1,
+    "study_compound_uid": "StudyCompound_000003",
+    "study_uid": "Study_000002",
+    "type_of_treatment": {
+      "name": "Comparative Treatment",
+      "term_uid": "CTTerm_000127"
+    },
+    "user_initials": "MT"
+  }
+]

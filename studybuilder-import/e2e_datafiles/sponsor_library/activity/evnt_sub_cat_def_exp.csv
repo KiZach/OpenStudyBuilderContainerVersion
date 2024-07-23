@@ -1,0 +1,8 @@
+"CT_CD_LIST_SUBMVAL","CT_SUBMVAL","CT_NAME","DEFINITION",ORDER,CT_CD,NCI_PREFERRED_NAME,NAME_SUBMVAL
+"EVNT_SUB_CAT_DEF","ACQUIRED EVNT_SUB_CAT","Acquired","Acquired",1,,,
+"EVNT_SUB_CAT_DEF","ADVERSE EVENT EVNT_SUB_CAT","Adverse event","Adverse Event",10,,,
+"EVNT_SUB_CAT_DEF","CONGENITAL EVNT_SUB_CAT","Congenital","Congenital",1,,,
+"EVNT_SUB_CAT_DEF","PREDISPOSING FACTORS EVNT_SUB_CAT","Predisposing Factors","Predisposing Factors",1,,,
+"EVNT_SUB_CAT_DEF","PREMATURE DISCONTINUATION OF TRIAL PRODUCT EVNT_SUB_CAT","Trial Product Premature Discontinued","Premature discontinuation of trial product",160,,,
+"EVNT_SUB_CAT_DEF","RUN-IN FAILURE EVNT_SUB_CAT","Run-in Failure","Run-in failure",1,,,
+"EVNT_SUB_CAT_DEF","SCREENING FAILURE EVNT_SUB_CAT","Screening Failure","Screening Failure",1,,,

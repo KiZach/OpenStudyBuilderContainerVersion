@@ -1,0 +1,82 @@
+[
+    {
+        "study_uid": "Study_000008",
+        "order": 1,
+        "project_number": "CDISC DEV",
+        "project_name": "CDISC Dev",
+        "study_compound_uid": "StudyCompound_000035",
+        "compound": {
+            "start_date": "2023-08-29T12:06:32.792397+00:00",
+            "end_date": null,
+            "status": "Final",
+            "version": "1.0",
+            "change_description": "Approved version",
+            "user_initials": "unknown-user",
+            "uid": "Compound_000003",
+            "name": "Olaparib",
+            "name_sentence_case": "olaparib",
+            "definition": null,
+            "abbreviation": null,
+            "library_name": "Sponsor",
+            "possible_actions": [
+                "inactivate",
+                "new_version"
+            ],
+            "analyte_number": null,
+            "nnc_short_number": null,
+            "nnc_long_number": null,
+            "is_sponsor_compound": true,
+            "is_name_inn": true,
+            "substances": [],
+            "dose_values": [],
+            "strength_values": [],
+            "lag_times": [],
+            "delivery_devices": [],
+            "dispensers": [],
+            "projects": [],
+            "brands": [],
+            "half_life": null,
+            "dose_frequencies": [],
+            "dosage_forms": [],
+            "routes_of_administration": []
+        },
+        "compound_alias": {
+            "start_date": "2023-08-29T12:06:35.679283+00:00",
+            "end_date": null,
+            "status": "Final",
+            "version": "1.0",
+            "change_description": "Approved version",
+            "user_initials": "unknown-user",
+            "uid": "CompoundAlias_000005",
+            "name": "OLAPARIB",
+            "name_sentence_case": "olaparib",
+            "definition": null,
+            "abbreviation": null,
+            "library_name": "Sponsor",
+            "possible_actions": [
+                "inactivate",
+                "new_version"
+            ],
+            "compound": {
+                "uid": "Compound_000003",
+                "name": "Olaparib"
+            },
+            "is_preferred_synonym": false
+        },
+        "type_of_treatment": {
+            "term_uid": "CTTerm_000125",
+            "name": "Investigational Product"
+        },
+        "route_of_administration": null,
+        "strength_value": null,
+        "dosage_form": null,
+        "dispensed_in": null,
+        "device": null,
+        "formulation": null,
+        "other_info": null,
+        "reason_for_missing_null_value": null,
+        "study_compound_dosing_count": 0,
+        "start_date": "2023-10-03T12:29:59.162063+00:00",
+        "user_initials": "unknown-user"
+    }
+]

@@ -1,0 +1,120 @@
+[
+   {
+      "name": "Test POST time point",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name_sentence_case": "time_point_name_sentence_case1",
+            "definition": "time_point_definition1",
+            "abbreviation": "abbv",
+            "template_parameter": true,
+            "library_name": "Sponsor",
+            "numeric_value_uid": "NumericValue_000001",
+            "unit_definition_uid": "UnitDefinition_000001",
+            "time_reference_uid": "term_root_final"
+         },
+         "url": "/concepts/time-points"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "TimePoint_000001",
+            "name": "1.23 name_1 after term_value_name1",
+            "name_sentence_case": "time_point_name_sentence_case1",
+            "definition": "time_point_definition1",
+            "abbreviation": "abbv",
+            "template_parameter": true,
+            "library_name": "Sponsor",
+            "status": null,
+            "version": null,
+            "change_description": null,
+            "user_initials": null,
+            "start_date": null,
+            "end_date": null,
+            "numeric_value_uid": "NumericValue_000001",
+            "unit_definition_uid": "UnitDefinition_000001",
+            "time_reference_uid": "term_root_final"
+         }
+      }
+   },
+   {
+      "name": "Test POST non-existent numeric value",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name_sentence_case": "time_point_name_sentence_case1",
+            "definition": "time_point_definition1",
+            "library_name": "Sponsor",
+            "numeric_value_uid": "NumericValue_NON_EXISTENT",
+            "unit_definition_uid": "UnitDefinition_000001",
+            "time_reference_uid": "term_root_final"
+         },
+         "url": "/concepts/time-points"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "TimePointVO tried to connect to non-existent numeric value identified by uid (NumericValue_NON_EXISTENT)",
+            "method": "POST",
+            "path": "http://testserver/concepts/time-points",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   },
+   {
+      "name": "Test POST non-existent unit definition",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name_sentence_case": "time_point_name_sentence_case1",
+            "definition": "time_point_definition1",
+            "library_name": "Sponsor",
+            "numeric_value_uid": "NumericValue_000001",
+            "unit_definition_uid": "UnitDefinition_NON_EXISTENT",
+            "time_reference_uid": "term_root_final"
+         },
+         "url": "/concepts/time-points"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "TimePointVO tried to connect to non-existent unit definition identified by uid (UnitDefinition_NON_EXISTENT)",
+            "method": "POST",
+            "path": "http://testserver/concepts/time-points",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   },
+   {
+      "name": "Test POST non-existent time reference",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name_sentence_case": "time_point_name_sentence_case1",
+            "definition": "time_point_definition1",
+            "library_name": "Sponsor",
+            "numeric_value_uid": "NumericValue_000001",
+            "unit_definition_uid": "UnitDefinition_000001",
+            "time_reference_uid": "TimeReference_NON_EXISTENT"
+         },
+         "url": "/concepts/time-points"
+      },
+      "response": {
+         "code": 400,
+         "result": {
+            "message": "TimePointVO tried to connect to non-existent CTTermRoot identified by uid (TimeReference_NON_EXISTENT)",
+            "method": "POST",
+            "path": "http://testserver/concepts/time-points",
+            "time": "2020-11-10T01:51:17.884429",
+            "type": "ValidationException"
+         }
+      }
+   }
+]

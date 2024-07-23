@@ -1,0 +1,11 @@
+const LIBRARY_SPONSOR = 'Sponsor'
+const LIBRARY_USER_DEFINED = 'User Defined'
+const LIBRARY_REQUESTED = 'Requested'
+const LIBRARY_UCUM = 'UCUM'
+
+export default {
+  LIBRARY_SPONSOR,
+  LIBRARY_USER_DEFINED,
+  LIBRARY_REQUESTED,
+  LIBRARY_UCUM,
+}

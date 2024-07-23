@@ -1,0 +1,6 @@
+"CT_CD_LIST_SUBMVAL","CT_SUBMVAL","CT_NAME","NAME_SENTENSE_CASE","ORDER","DEFINITION"
+"EPCHALLC","CURRENT VISIT","Current Visit","current visit","1","Assign subject visit to Epoch defined for the visit."
+"EPCHALLC","PREVIOUS VISIT","Previous Visit","previous visit","2","Assign subject visit to Epoch defined for previous epoch, as this visit defines the beginnening of the next epoch."
+"EPCHALLC","DATE CURRENT VISIT","Date Current Visit","date current visit","3","Assign subject visit to the epoch based on visit data, if subject visit is on the start data of the epoch then assign to this epoch."
+"EPCHALLC","DATE PREVIOUS VISIT","Date Previous Visit","date previous visit","4","Assign subject visit to the epoch based on visit data, if subject visit is on the start data of the epoch then assign to the previous epoch."
+"EPCHALLC","ACTUAL TREATMENT","Actual Treatment","actual treatment","5","Assign subject visit based on visit date and the actual treatment dates for a treatment epoch."

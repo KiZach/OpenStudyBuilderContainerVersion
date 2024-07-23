@@ -1,0 +1,159 @@
+[
+   {
+      "name": "Test POST study day which is a TP",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "value": 1.23,
+            "definition": "study_day_definition1",
+            "abbreviation": "abbv",
+            "template_parameter": true,
+            "library_name": "Sponsor"
+         },
+         "url": "/concepts/study-days"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "StudyDay_000001",
+            "name": "Day 1.23",
+            "value": 1.23,
+            "name_sentence_case": "day 1.23",
+            "definition": "study_day_definition1",
+            "abbreviation": "abbv",
+            "template_parameter": true,
+            "library_name": "Sponsor",
+            "status": null,
+            "version": null,
+            "change_description": null,
+            "user_initials": null,
+            "start_date": null,
+            "end_date": null
+         }
+      }
+   },
+   {
+      "name": "Test POST study day which is a TP existing study day is returned",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "value": 1.23,
+            "definition": "study_day_definition1",
+            "abbreviation": "abbv",
+            "template_parameter": true,
+            "library_name": "Sponsor"
+         },
+         "url": "/concepts/study-days"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "StudyDay_000001",
+            "name": "Day 1.23",
+            "value": 1.23,
+            "name_sentence_case": "day 1.23",
+            "definition": "study_day_definition1",
+            "abbreviation": "abbv",
+            "template_parameter": true,
+            "library_name": "Sponsor",
+            "status": null,
+            "version": null,
+            "change_description": null,
+            "user_initials": null,
+            "start_date": null,
+            "end_date": null
+         }
+      }
+   },
+   {
+      "name": "Test POST study day which is not TP",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "value": 1.234,
+            "definition": "study_day_definition2",
+            "abbreviation": "abbv",
+            "template_parameter": false,
+            "library_name": "Sponsor"
+         },
+         "url": "/concepts/study-days"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "StudyDay_000002",
+            "name": "Day 1.234",
+            "value": 1.234,
+            "name_sentence_case": "day 1.234",
+            "definition": "study_day_definition2",
+            "abbreviation": "abbv",
+            "template_parameter": false,
+            "library_name": "Sponsor",
+            "status": null,
+            "version": null,
+            "change_description": null,
+            "user_initials": null,
+            "start_date": null,
+            "end_date": null
+         }
+      }
+   },
+   {
+      "name": "Test GET all study days",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/concepts/study-days?total_count=true"
+      },
+      "response": {
+         "code": 200,
+         "headers": {},
+         "result": {
+            "items": [
+               {
+                  "uid": "StudyDay_000001",
+                  "name": "Day 1.23",
+                  "value": 1.23,
+                  "name_sentence_case": "day 1.23",
+                  "definition": "study_day_definition1",
+                  "abbreviation": "abbv",
+                  "template_parameter": true,
+                  "library_name": "Sponsor",
+                  "status": null,
+                  "version": null,
+                  "change_description": null,
+                  "user_initials": null,
+                  "start_date": null,
+                  "end_date": null
+               },
+               {
+                  "uid": "StudyDay_000002",
+                  "name": "Day 1.234",
+                  "value": 1.234,
+                  "name_sentence_case": "day 1.234",
+                  "definition": "study_day_definition2",
+                  "abbreviation": "abbv",
+                  "template_parameter": false,
+                  "library_name": "Sponsor",
+                  "status": null,
+                  "version": null,
+                  "change_description": null,
+                  "user_initials": null,
+                  "start_date": null,
+                  "end_date": null
+               }
+            ],
+            "total": 2,
+            "page": 1,
+            "size": 10
+         }
+      }
+   }
+]

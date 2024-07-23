@@ -1,0 +1,602 @@
+[
+    {
+        "name": "Test getting empty list of ODM Study Events",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/study-events"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "2",
+                "content-type": "application/json"
+            },
+            "result": {
+                "items": [],
+                "total": 0,
+                "page": 1,
+                "size": 10
+            }
+        }
+    },
+    {
+        "name": "Test creating a new ODM Study Event",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "oid1",
+                "effective_date": "2022-04-21",
+                "retired_date": "2022-04-21",
+                "description": "description1",
+                "display_in_tree": false
+            },
+            "url": "concepts/odms/study-events"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmStudyEvent_000001",
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "oid1",
+                "effective_date": "2022-04-21",
+                "retired_date": "2022-04-21",
+                "description": "description1",
+                "display_in_tree": false,
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "forms": [],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test getting non empty list of ODM Study Events",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/study-events"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": {
+                "items": [
+                    {
+                        "uid": "OdmStudyEvent_000001",
+                        "library_name": "Sponsor",
+                        "name": "name1",
+                        "oid": "oid1",
+                        "effective_date": "2022-04-21",
+                        "retired_date": "2022-04-21",
+                        "description": "description1",
+                        "display_in_tree": false,
+                        "start_date": "2022-03-03T11:17:56.799074",
+                        "end_date": null,
+                        "status": "Draft",
+                        "version": "0.1",
+                        "change_description": "Initial version",
+                        "user_initials": "TODO user initials",
+                        "forms": [],
+                        "possible_actions": [
+                            "approve",
+                            "delete",
+                            "edit"
+                        ]
+                    }
+                ],
+                "total": 0,
+                "page": 1,
+                "size": 10
+            }
+        }
+    },
+    {
+        "name": "Test getting possible header values of ODM Study Events",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/study-events/headers?field_name=name"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": [
+                "name1"
+            ]
+        }
+    },
+    {
+        "name": "Test getting a specific ODM Study Event",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/study-events/OdmStudyEvent_000001"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmStudyEvent_000001",
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "oid1",
+                "effective_date": "2022-04-21",
+                "retired_date": "2022-04-21",
+                "description": "description1",
+                "display_in_tree": false,
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "forms": [],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test getting versions of a specific ODM Study Event",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/study-events/OdmStudyEvent_000001/versions"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": [
+                {
+                    "uid": "OdmStudyEvent_000001",
+                    "library_name": "Sponsor",
+                    "name": "name1",
+                    "oid": "oid1",
+                    "effective_date": "2022-04-21",
+                    "retired_date": "2022-04-21",
+                    "description": "description1",
+                    "display_in_tree": false,
+                    "start_date": "2022-03-03T11:17:56.799074",
+                    "end_date": null,
+                    "status": "Draft",
+                    "version": "0.1",
+                    "change_description": "Initial version",
+                    "user_initials": "TODO user initials",
+                    "forms": [],
+                    "possible_actions": [
+                        "approve",
+                        "delete",
+                        "edit"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "name": "Test updating an existing ODM Study Event",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "new oid1",
+                "effective_date": "2022-04-21",
+                "retired_date": "2022-04-21",
+                "display_in_tree": true,
+                "change_description": "oid and display_in_tree changed"
+            },
+            "url": "concepts/odms/study-events/OdmStudyEvent_000001"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmStudyEvent_000001",
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "new oid1",
+                "effective_date": "2022-04-21",
+                "retired_date": "2022-04-21",
+                "description": "description1",
+                "display_in_tree": true,
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.2",
+                "change_description": "oid and display_in_tree changed",
+                "user_initials": "TODO user initials",
+                "forms": [],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test approving an ODM Study Event",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/study-events/OdmStudyEvent_000001/approvals"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmStudyEvent_000001",
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "new oid1",
+                "effective_date": "2022-04-21",
+                "retired_date": "2022-04-21",
+                "description": "description1",
+                "display_in_tree": true,
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Approved version",
+                "user_initials": "TODO initials",
+                "forms": [],
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test inactivating a specific ODM Study Event",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "concepts/odms/study-events/OdmStudyEvent_000001/activations"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmStudyEvent_000001",
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "new oid1",
+                "effective_date": "2022-04-21",
+                "retired_date": "2022-04-21",
+                "description": "description1",
+                "display_in_tree": true,
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Retired",
+                "version": "1.0",
+                "change_description": "Inactivated version",
+                "user_initials": "TODO initials",
+                "forms": [],
+                "possible_actions": [
+                    "delete",
+                    "reactivate"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test reactivating a specific ODM Study Event",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/study-events/OdmStudyEvent_000001/activations"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmStudyEvent_000001",
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "new oid1",
+                "effective_date": "2022-04-21",
+                "retired_date": "2022-04-21",
+                "description": "description1",
+                "display_in_tree": true,
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Reactivated version",
+                "user_initials": "TODO initials",
+                "forms": [],
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test adding ODM Forms to a specific ODM Study Event",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": [
+                {
+                    "uid": "odm_form1",
+                    "order_number": 1,
+                    "mandatory": "Yes",
+                    "locked": "Yes",
+                    "collection_exception_condition_oid": "None"
+                }
+            ],
+            "url": "concepts/odms/study-events/OdmStudyEvent_000001/forms"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmStudyEvent_000001",
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "new oid1",
+                "effective_date": "2022-04-21",
+                "retired_date": "2022-04-21",
+                "description": "description1",
+                "display_in_tree": true,
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Reactivated version",
+                "user_initials": "TODO initials",
+                "forms": [
+                    {
+                        "uid": "odm_form1",
+                        "name": "name1",
+                        "order_number": 1,
+                        "mandatory": "Yes",
+                        "locked": "Yes",
+                        "collection_exception_condition_oid": "None"
+                    }
+                ],
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test overriding ODM Forms from a specific ODM Study Event",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": [
+                {
+                    "uid": "odm_form2",
+                    "order_number": 2,
+                    "mandatory": "Yes",
+                    "locked": "Yes",
+                    "collection_exception_condition_oid": "None"
+                }
+            ],
+            "url": "concepts/odms/study-events/OdmStudyEvent_000001/forms?override=true"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmStudyEvent_000001",
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "new oid1",
+                "effective_date": "2022-04-21",
+                "retired_date": "2022-04-21",
+                "description": "description1",
+                "display_in_tree": true,
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Reactivated version",
+                "user_initials": "TODO initials",
+                "forms": [
+                    {
+                        "uid": "odm_form2",
+                        "name": "name2",
+                        "order_number": 2,
+                        "mandatory": "Yes",
+                        "locked": "Yes",
+                        "collection_exception_condition_oid": "None"
+                    }
+                ],
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test creating a new ODM Study Event version",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/study-events/OdmStudyEvent_000001/versions"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmStudyEvent_000001",
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "new oid1",
+                "effective_date": "2022-04-21",
+                "retired_date": "2022-04-21",
+                "description": "description1",
+                "display_in_tree": true,
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "1.1",
+                "change_description": "New draft created",
+                "user_initials": "TODO user initials",
+                "forms": [
+                    {
+                        "uid": "odm_form2",
+                        "name": "name2",
+                        "order_number": 2,
+                        "mandatory": "Yes",
+                        "locked": "Yes",
+                        "collection_exception_condition_oid": "None"
+                    }
+                ],
+                "possible_actions": [
+                    "approve",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Create a new ODM Study Event for deleting it",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "name1 - delete",
+                "oid": "oid1",
+                "effective_date": "2022-04-21",
+                "retired_date": "2022-04-21",
+                "description": "description1"
+            },
+            "url": "concepts/odms/study-events"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmStudyEvent_000002",
+                "library_name": "Sponsor",
+                "name": "name1 - delete",
+                "oid": "oid1",
+                "effective_date": "2022-04-21",
+                "retired_date": "2022-04-21",
+                "description": "description1",
+                "display_in_tree": true,
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "forms": [],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test deleting a specific ODM Study Event",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "concepts/odms/study-events/OdmStudyEvent_000002"
+        },
+        "response": {
+            "code": 204,
+            "headers": {
+                "content-length": "2",
+                "content-type": "application/json"
+            },
+            "result": null
+        }
+    },
+    {
+        "name": "Test getting UIDs of a specific ODM Study Event's active relationships",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/study-events/OdmStudyEvent_000001/relationships"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": {}
+        }
+    }
+]

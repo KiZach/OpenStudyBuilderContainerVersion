@@ -1,0 +1,79 @@
+[
+  {
+    "name": "No Date Specified, sorting by ct_scope and ct_ver",
+    "request": {
+        "headers": {},
+        "method": "GET",
+        "request": {},
+        "url": "/listings/libraries/all/gcmd/cdisc-ct-ver?sort_by=%7B%22ct_scope%22%3Atrue%2C%22ct_ver%22%3Atrue%7D&page_number=1&page_size=0&total_count=false"
+    },
+    "response": {
+        "code": 200,
+        "headers": {
+            "content-length": "2",
+            "content-type": "application/json"
+        },
+        "result": {
+          "items": [
+
+            {
+              "ct_scope": "catalogue",
+              "ct_ver": "2020-03-27",
+              "pkg_nm": "old_package"
+            },
+            {
+              "ct_scope": "catalogue",
+              "ct_ver": "2020-06-26",
+              "pkg_nm": "new_package"
+            },
+              {
+              "ct_scope": "catalogue2",
+              "ct_ver": "2020-06-26",
+              "pkg_nm": "package1"
+            },
+            {
+              "ct_scope": "catalogue3",
+              "ct_ver": "2020-06-26",
+              "pkg_nm": "package2"
+            }
+          ],
+          "total": 0,
+          "page": 1,
+          "size": 0
+        }
+    }
+  },
+  {
+    "name": "Date Specified, filtering on catalogue",
+    "request": {
+        "headers": {},
+        "method": "GET",
+        "request": {},
+        "url": "/listings/libraries/all/gcmd/cdisc-ct-ver?catalogue_name=catalogue,catalogue2&sort_by=%7B%22ct_scope%22%3Atrue%7D&after_specified_date=2020-06-20"
+    },
+    "response": {
+        "code": 200,
+        "headers": {
+            "content-length": "2",
+            "content-type": "application/json"
+        },
+        "result": {
+          "items": [
+             {
+              "ct_scope": "catalogue",
+              "ct_ver": "2020-06-26",
+              "pkg_nm": "new_package"
+            },
+              {
+              "ct_scope": "catalogue2",
+              "ct_ver": "2020-06-26",
+              "pkg_nm": "package1"
+            }
+          ],
+          "total": 0,
+          "page": 1,
+          "size": 10
+        }
+    }
+  }
+]

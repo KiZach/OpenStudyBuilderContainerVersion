@@ -1,0 +1,225 @@
+[
+    {
+        "name": "Test reorder term ",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "codelist_uid": "editable_cr",
+                "new_order": 5
+            },
+            "url": "/ct/terms/term_root_draft/order"
+        },
+        "response": {
+            "code": 200,
+            "headers": {},
+            "result": {
+                "term_uid": "term_root_draft",
+                "catalogue_name": "SDTM CT",
+                "codelists": [
+                    {
+                        "codelist_uid": "editable_cr",
+                        "order": 5
+                    }
+                ],
+                "concept_id": null,
+                "code_submission_value": "code_submission_value",
+                "name_submission_value": "name_submission_value",
+                "nci_preferred_name": "nci_preferred_name",
+                "definition": "definition",
+                "sponsor_preferred_name": "term_value_name2",
+                "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+                "library_name": "Sponsor",
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test PATCH term names draft term",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "sponsor_preferred_name": "sponsor_preferred_name",
+                "sponsor_preferred_name_sentence_case": "sponsor_preferred_name_sentence_case",
+                "change_description": "Term name update"
+            },
+            "url": "/ct/terms/term_root_draft/names"
+        },
+        "response": {
+            "code": 200,
+            "headers": {},
+            "result": {
+                "term_uid": "term_root_draft",
+                "catalogue_name": "SDTM CT",
+                "codelists": [
+                    {
+                        "codelist_uid": "editable_cr",
+                        "order": 5
+                    }
+                ],
+                "sponsor_preferred_name": "sponsor_preferred_name",
+                "sponsor_preferred_name_sentence_case": "sponsor_preferred_name_sentence_case",
+                "change_description": "Term name update",
+                "library_name": "Sponsor",
+                "start_date": "2021-04-06T12:38:32.069969",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.2",
+                "user_initials": "unknown-user",
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test POST names approve term",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/ct/terms/term_root_draft/names/approvals"
+        },
+        "response": {
+            "code": 201,
+            "headers": {},
+            "result": {
+                "term_uid": "term_root_draft",
+                "catalogue_name": "SDTM CT",
+                "codelists": [
+                    {
+                        "codelist_uid": "editable_cr",
+                        "order": 5
+                    }
+                ],
+                "sponsor_preferred_name": "sponsor_preferred_name",
+                "sponsor_preferred_name_sentence_case": "sponsor_preferred_name_sentence_case",
+                "change_description": "Approved version",
+                "library_name": "Sponsor",
+                "start_date": "2021-04-06T12:38:32.069969",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "user_initials": "unknown-user",
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test DELETE names activations term",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "/ct/terms/term_root_draft/names/activations"
+        },
+        "response": {
+            "code": 200,
+            "headers": {},
+            "result": {
+                "term_uid": "term_root_draft",
+                "catalogue_name": "SDTM CT",
+                "codelists": [
+                    {
+                        "codelist_uid": "editable_cr",
+                        "order": 5
+                    }
+                ],
+                "sponsor_preferred_name": "sponsor_preferred_name",
+                "sponsor_preferred_name_sentence_case": "sponsor_preferred_name_sentence_case",
+                "change_description": "Inactivated version",
+                "library_name": "Sponsor",
+                "start_date": "2021-04-06T12:38:32.069969",
+                "end_date": null,
+                "status": "Retired",
+                "version": "1.0",
+                "user_initials": "unknown-user",
+                "possible_actions": [
+                    "reactivate"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test POST names reactivate term",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/ct/terms/term_root_draft/names/activations"
+        },
+        "response": {
+            "code": 200,
+            "headers": {},
+            "result": {
+                "term_uid": "term_root_draft",
+                "catalogue_name": "SDTM CT",
+                "codelists": [
+                    {
+                        "codelist_uid": "editable_cr",
+                        "order": 5
+                    }
+                ],
+                "sponsor_preferred_name": "sponsor_preferred_name",
+                "sponsor_preferred_name_sentence_case": "sponsor_preferred_name_sentence_case",
+                "change_description": "Reactivated version",
+                "library_name": "Sponsor",
+                "start_date": "2021-04-06T12:38:32.069969",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "user_initials": "unknown-user",
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test POST /names/versions",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/ct/terms/term_root_draft/names/versions"
+        },
+        "response": {
+            "code": 201,
+            "headers": {},
+            "result": {
+                "term_uid": "term_root_draft",
+                "catalogue_name": "SDTM CT",
+                "codelists": [
+                    {
+                        "codelist_uid": "editable_cr",
+                        "order": 5
+                    }
+                ],
+                "sponsor_preferred_name": "sponsor_preferred_name",
+                "sponsor_preferred_name_sentence_case": "sponsor_preferred_name_sentence_case",
+                "change_description": "New draft created",
+                "library_name": "Sponsor",
+                "start_date": "2021-04-06T12:38:32.069969",
+                "end_date": null,
+                "status": "Draft",
+                "version": "1.1",
+                "user_initials": "unknown-user",
+                "possible_actions": [
+                    "approve",
+                    "edit"
+                ]
+            }
+        }
+    }
+]

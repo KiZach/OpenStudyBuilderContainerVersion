@@ -1,0 +1,106 @@
+trigger:
+  batch: true # Whether to batch changes per branch.
+  branches:
+    include:
+    - main
+    - release/*
+
+pool:
+  name: "clinical-mdr-dev-vmss"
+
+parameters:
+
+  - name: SERVICE_CONN
+    type: string
+    default: IaCAgent-ClinicalMDR-DEV
+
+stages:
+
+  - stage: build
+    displayName: 'Build'
+    jobs:
+
+    - job: build_sbom
+      displayName: "Build SBOM"
+      timeoutInMinutes: 10
+      continueOnError: false
+
+      steps:
+
+        - checkout: self
+          persistCredentials: true
+
+        - template: pipelines/templates/azure-config.yaml
+
+        - task: AzureCLI@2
+          displayName: Log in to container registry
+          inputs:
+            azureSubscription: ${{parameters.SERVICE_CONN}}
+            scriptType: bash
+            scriptLocation: inlineScript
+            inlineScript: >-
+              az acr login -n '$(azmd.acrname)'
+
+        - task: AzureCLI@2
+          displayName: Build docker image
+          inputs:
+            azureSubscription: ${{parameters.SERVICE_CONN}}
+            scriptType: bash
+            scriptLocation: inlineScript
+            inlineScript: |-
+              docker compose build --progress=plain \
+                --build-arg BUILD_BRANCH='$(Build.SourceBranchName)' \
+                --build-arg BUILD_COMMIT='$(Build.SourceVersion)' \
+                --build-arg BUILD_NUMBER='$(Build.BuildNumber)' \
+                --build-arg PYTHON_IMAGE='$(azmd.acrname).azurecr.io/novo-python-3-11-3-slim:latest' \
+                export
+
+        # Checkout git branch
+        - script: |
+            set -ex
+            
+            git fetch -a
+      
+            if [[ '$(Build.Reason)' == 'PullRequest' ]]; then
+              gitbranch='$(System.PullRequest.SourceBranch)'
+            else
+              gitbranch='$(Build.SourceBranch)'
+            fi
+            gitbranch="${gitbranch#refs/heads/}"
+      
+            echo "##vso[task.setvariable variable=gitbranch;isOutput=true;]$gitbranch"
+      
+            git checkout "$gitbranch"
+            git pull
+          displayName: Checkout git branch
+          name: gitref
+
+        # Build SBOM
+        - script: >-
+            docker compose run --rm export pipenv run build-sbom > sbom.md
+          displayName: Build SBOM
+
+        # Commit SBOM
+        - script: |
+            set -ex
+            
+            if [[ '$(Build.Reason)' == 'PullRequest' ]] && ! git diff --exit-code --quiet sbom.md ; then
+              git config --global user.email 'pipeline@studybuilder.com'
+              git config --global user.name 'Pipeline $(Build.BuildNumber)'
+            
+              if [[ '$(Build.SourceBranchName)' != 'main' ]] ; then
+                # Post a comment on pull-request that the SBOM has been changed #
+                pwsh -NoLogo -NonInteractive -File pipelines/scripts/make-sbom-comment-on-pr.ps1 -token '$(System.AccessToken)' -pullRequestId '$(System.PullRequest.PullRequestId)' -projectName '$(System.TeamProject)' -repositoryName '$(Build.Repository.Name)'
+              fi
+            
+              # Commit changes #
+              git add sbom.md
+              git commit sbom.md -m 'Pipeline $(Build.BuildNumber) committed changes to SBOM'
+              gitbranch='$(System.PullRequest.SourceBranch)'
+              gitbranch="${gitbranch#refs/heads/}"
+              git push 'https://$(System.AccessToken)@dev.azure.com/novonordiskit/Clinical-MDR/_git/$(Build.Repository.Name)' "$gitbranch"          
+            fi
+          displayName: "Commit sbom.md"
+
+        # Ensure cleanup, including docker shutdown
+        - template: pipelines/templates/docker-cleanup.yml

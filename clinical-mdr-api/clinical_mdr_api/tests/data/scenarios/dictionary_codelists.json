@@ -1,0 +1,291 @@
+[
+    {
+        "name": "Test GET dictionary codelists",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/dictionaries/codelists?library=SNOMED"
+        },
+        "response": {
+            "code": 200,
+            "headers": {},
+            "result": {
+                "items": [
+                    {
+                        "codelist_uid": "codelist_root1_uid",
+                        "name": "name1",
+                        "template_parameter": true,
+                        "library_name": "SNOMED",
+                        "start_date": "2021-03-18T11:54:20.898Z",
+                        "end_date": null,
+                        "status": "Final",
+                        "version": "1.0",
+                        "change_description": "Approved version",
+                        "user_initials": "TODO initials",
+                        "possible_actions": [
+                            "new_version"
+                        ]
+                    },
+                    {
+                        "codelist_uid": "codelist_root2_uid",
+                        "name": "name2",
+                        "template_parameter": false,
+                        "library_name": "SNOMED",
+                        "start_date": "2021-03-18T11:54:20.898Z",
+                        "end_date": null,
+                        "status": "Draft",
+                        "version": "0.1",
+                        "change_description": "New draft version",
+                        "user_initials": "TODO user initials",
+                        "possible_actions": [
+                            "approve",
+                            "edit"
+                        ]
+                    }
+                ],
+                "size": 10,
+                "page": 1,
+                "total": 0
+            }
+        }
+    },
+    {
+        "name": "Test POST /versions codelist",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/dictionaries/codelists/codelist_root1_uid/versions"
+        },
+        "response": {
+            "code": 201,
+            "headers": {},
+            "result": {
+                "codelist_uid": "codelist_root1_uid",
+                "name": "name1",
+                "template_parameter": true,
+                "library_name": "SNOMED",
+                "start_date": "2021-03-18T11:54:20.898Z",
+                "end_date": null,
+                "status": "Draft",
+                "version": "1.1",
+                "change_description": "New draft created",
+                "user_initials": "TODO user initials",
+                "possible_actions": [
+                    "approve",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test PATCH DRAFT codelist that is TP",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "name": "codelist new name",
+                "template_parameter": true,
+                "change_description": "changing codelist name"
+            },
+            "url": "/dictionaries/codelists/codelist_root1_uid"
+        },
+        "response": {
+            "code": 200,
+            "headers": {},
+            "result": {
+                "codelist_uid": "codelist_root1_uid",
+                "name": "codelist new name",
+                "template_parameter": true,
+                "library_name": "SNOMED",
+                "start_date": "2021-03-18T11:54:20.898Z",
+                "end_date": null,
+                "status": "Draft",
+                "version": "1.2",
+                "change_description": "changing codelist name",
+                "user_initials": "TODO user initials",
+                "possible_actions": [
+                    "approve",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test PATCH DRAFT codelist that is not TP",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "name": "codelist patched name",
+                "template_parameter": true,
+                "change_description": "changing codelist name"
+            },
+            "url": "/dictionaries/codelists/codelist_root2_uid"
+        },
+        "response": {
+            "code": 200,
+            "headers": {},
+            "result": {
+                "codelist_uid": "codelist_root2_uid",
+                "name": "codelist patched name",
+                "template_parameter": true,
+                "library_name": "SNOMED",
+                "start_date": "2021-03-18T11:54:20.898Z",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.2",
+                "change_description": "changing codelist name",
+                "user_initials": "TODO user initials",
+                "possible_actions": [
+                    "approve",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test POST approve codelist",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/dictionaries/codelists/codelist_root2_uid/approvals"
+        },
+        "response": {
+            "code": 201,
+            "headers": {},
+            "result": {
+                "codelist_uid": "codelist_root2_uid",
+                "name": "codelist patched name",
+                "template_parameter": true,
+                "library_name": "SNOMED",
+                "start_date": "2021-03-18T11:54:20.898Z",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Approved version",
+                "user_initials": "TODO user initials",
+                "possible_actions": [
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test POST approve codelist",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "/dictionaries/codelists/codelist_root1_uid/approvals"
+        },
+        "response": {
+            "code": 201,
+            "headers": {},
+            "result": {
+                "codelist_uid": "codelist_root1_uid",
+                "name": "codelist new name",
+                "template_parameter": true,
+                "library_name": "SNOMED",
+                "start_date": "2021-03-18T11:54:20.898Z",
+                "end_date": null,
+                "status": "Final",
+                "version": "2.0",
+                "change_description": "Approved version",
+                "user_initials": "TODO user initials",
+                "possible_actions": [
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test POST add term that is not assigned to given codelist yet",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "term_uid": "term_root3_uid"
+            },
+            "url": "/dictionaries/codelists/codelist_root1_uid/terms"
+        },
+        "response": {
+            "code": 201,
+            "headers": {},
+            "result": {
+                "codelist_uid": "codelist_root1_uid",
+                "name": "codelist new name",
+                "template_parameter": true,
+                "library_name": "SNOMED",
+                "start_date": "2021-03-18T11:54:20.898Z",
+                "end_date": null,
+                "status": "Final",
+                "version": "2.0",
+                "change_description": "Approved version",
+                "user_initials": "TODO user initials",
+                "possible_actions": [
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test DELETE remove term that is assigned to given codelist",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "url": "/dictionaries/codelists/codelist_root1_uid/terms/term_root3_uid"
+        },
+        "response": {
+            "code": 201,
+            "headers": {},
+            "result": {
+                "codelist_uid": "codelist_root1_uid",
+                "name": "codelist new name",
+                "template_parameter": true,
+                "library_name": "SNOMED",
+                "start_date": "2021-03-18T11:54:20.898Z",
+                "end_date": null,
+                "status": "Final",
+                "version": "2.0",
+                "change_description": "Approved version",
+                "user_initials": "TODO user initials",
+                "possible_actions": [
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test POST add term that is was assigned and then deleted",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "term_uid": "term_root3_uid"
+            },
+            "url": "/dictionaries/codelists/codelist_root1_uid/terms"
+        },
+        "response": {
+            "code": 201,
+            "headers": {},
+            "result": {
+                "codelist_uid": "codelist_root1_uid",
+                "name": "codelist new name",
+                "template_parameter": true,
+                "library_name": "SNOMED",
+                "start_date": "2021-03-18T11:54:20.898Z",
+                "end_date": null,
+                "status": "Final",
+                "version": "2.0",
+                "change_description": "Approved version",
+                "user_initials": "TODO user initials",
+                "possible_actions": [
+                    "new_version"
+                ]
+            }
+        }
+    }
+]

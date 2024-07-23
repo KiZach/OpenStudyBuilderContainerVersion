@@ -1,0 +1,2207 @@
+[
+  {
+    "name": "Test getting empty list",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/studies/study_root/study-cohorts"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "2",
+        "content-type": "application/json"
+      },
+      "result": {
+        "items": [],
+        "total": 0,
+        "page": 1,
+        "size": 10
+      }
+    }
+  },
+  {
+    "name": "Test adding selection",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "Cohort_Name_1",
+        "short_name": "Cohort_Short_Name_1",
+        "code": "Cohort_code_1",
+        "description": "desc...",
+        "colour_code": "colour_code_1",
+        "number_of_subjects": 1,
+        "arm_uids": [
+          "StudyArm_000001",
+          "StudyArm_000002"
+        ]
+      },
+      "url": "/studies/study_root/study-cohorts"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "study_uid": "study_root",
+        "study_version": null,
+        "cohort_uid": "StudyCohort_000001",
+        "order": 1,
+        "name": "Cohort_Name_1",
+        "short_name": "Cohort_Short_Name_1",
+        "code": "Cohort_code_1",
+        "start_date": "2020-06-26T00:00:00",
+        "end_date": null,
+        "status": null,
+        "change_type": null,
+        "accepted_version": null,
+        "branch_arm_roots": null,
+        "arm_roots": [
+          {
+            "study_uid": "study_root",
+            "order": 1,
+            "arm_uid": "StudyArm_000001",
+            "name": "StudyArm_000001",
+            "short_name": "StudyArm_000001",
+            "code": null,
+            "description": null,
+            "arm_colour": null,
+            "randomization_group": null,
+            "number_of_subjects": null,
+            "arm_type": {
+              "term_uid": "term_root_final",
+              "catalogue_name": "SDTM CT",
+              "codelists": [
+                {
+                  "codelist_uid": "ct_codelist_root_endpoint",
+                  "order": 1
+                }
+              ],
+              "sponsor_preferred_name": "term_value_name1",
+              "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+              "library_name": "Sponsor",
+              "start_date": "2022-07-11T09:19:17.315000",
+              "end_date": null,
+              "status": "Final",
+              "version": "1.0",
+              "change_description": "Approved version",
+              "user_initials": "TODO initials",
+              "possible_actions": [
+                "inactivate",
+                "new_version"
+              ]
+            },
+            "start_date": "2022-07-11T09:19:17.865000",
+            "user_initials": "TODO user initials",
+            "end_date": null,
+            "status": null,
+            "change_type": null,
+            "accepted_version": null
+          },
+          {
+            "study_uid": "study_root",
+            "order": 2,
+            "arm_uid": "StudyArm_000002",
+            "name": "StudyArm_000002",
+            "short_name": "StudyArm_000002",
+            "code": null,
+            "description": null,
+            "arm_colour": null,
+            "randomization_group": null,
+            "number_of_subjects": null,
+            "arm_type": {
+              "term_uid": "term_root_final_non_edit",
+              "catalogue_name": "SDTM CT",
+              "codelists": [
+                {
+                  "codelist_uid": "non_editable_cr",
+                  "order": 3
+                }
+              ],
+              "sponsor_preferred_name": "term_value_name3",
+              "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+              "library_name": "CDISC",
+              "start_date": "2022-07-11T09:19:17.315000",
+              "end_date": null,
+              "status": "Final",
+              "version": "1.0",
+              "change_description": "Approved version",
+              "user_initials": "TODO initials",
+              "possible_actions": [
+                "inactivate",
+                "new_version"
+              ]
+            },
+            "start_date": "2022-07-11T09:19:17.865000",
+            "user_initials": "TODO user initials",
+            "end_date": null,
+            "status": null,
+            "change_type": null,
+            "accepted_version": null
+          }
+        ],
+        "description": "desc...",
+        "number_of_subjects": 1,
+        "colour_code": "colour_code_1",
+        "user_initials": "TODO initials"
+      },
+      "save": {
+        "cohort_uid": "cohort_uid"
+      }
+    }
+  },
+  {
+    "name": "Test get all list non empty",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/studies/study_root/study-cohorts"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "340",
+        "content-type": "application/json"
+      },
+      "result": {
+        "total": 0,
+        "page": 1,
+        "size": 10,
+        "items": [
+          {
+            "study_uid": "study_root",
+            "study_version": null,
+            "cohort_uid": "StudyCohort_000001",
+            "order": 1,
+            "name": "Cohort_Name_1",
+            "short_name": "Cohort_Short_Name_1",
+            "code": "Cohort_code_1",
+            "start_date": "2020-06-26T00:00:00",
+            "end_date": null,
+            "status": null,
+            "change_type": null,
+            "accepted_version": null,
+            "branch_arm_roots": null,
+            "arm_roots": [
+              {
+                "study_uid": "study_root",
+                "order": 1,
+                "arm_uid": "StudyArm_000001",
+                "name": "StudyArm_000001",
+                "short_name": "StudyArm_000001",
+                "code": null,
+                "description": null,
+                "arm_colour": null,
+                "randomization_group": null,
+                "number_of_subjects": null,
+                "arm_type": {
+                  "term_uid": "term_root_final",
+                  "catalogue_name": "SDTM CT",
+                  "codelists": [
+                    {
+                      "codelist_uid": "ct_codelist_root_endpoint",
+                      "order": 1
+                    }
+                  ],
+                  "sponsor_preferred_name": "term_value_name1",
+                  "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+                  "library_name": "Sponsor",
+                  "start_date": "2022-07-11T09:19:17.315000",
+                  "end_date": null,
+                  "status": "Final",
+                  "version": "1.0",
+                  "change_description": "Approved version",
+                  "user_initials": "TODO initials",
+                  "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                  ]
+                },
+                "start_date": "2022-07-11T09:19:17.865000",
+                "user_initials": "TODO user initials",
+                "end_date": null,
+                "status": null,
+                "change_type": null,
+                "accepted_version": null
+              },
+              {
+                "study_uid": "study_root",
+                "order": 2,
+                "arm_uid": "StudyArm_000002",
+                "name": "StudyArm_000002",
+                "short_name": "StudyArm_000002",
+                "code": null,
+                "description": null,
+                "arm_colour": null,
+                "randomization_group": null,
+                "number_of_subjects": null,
+                "arm_type": {
+                  "term_uid": "term_root_final_non_edit",
+                  "catalogue_name": "SDTM CT",
+                  "codelists": [
+                    {
+                      "codelist_uid": "non_editable_cr",
+                      "order": 3
+                    }
+                  ],
+                  "sponsor_preferred_name": "term_value_name3",
+                  "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+                  "library_name": "CDISC",
+                  "start_date": "2022-07-11T09:19:17.315000",
+                  "end_date": null,
+                  "status": "Final",
+                  "version": "1.0",
+                  "change_description": "Approved version",
+                  "user_initials": "TODO initials",
+                  "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                  ]
+                },
+                "start_date": "2022-07-11T09:19:17.865000",
+                "user_initials": "TODO user initials",
+                "end_date": null,
+                "status": null,
+                "change_type": null,
+                "accepted_version": null
+              }
+            ],
+            "description": "desc...",
+            "number_of_subjects": 1,
+            "colour_code": "colour_code_1",
+            "user_initials": "TODO initials"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "Test get specific",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/studies/study_root/study-cohorts/{cohort_uid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": {
+        "study_uid": "study_root",
+        "study_version": null,
+        "cohort_uid": "StudyCohort_000001",
+        "order": 1,
+        "name": "Cohort_Name_1",
+        "short_name": "Cohort_Short_Name_1",
+        "code": "Cohort_code_1",
+        "start_date": "2020-06-26T00:00:00",
+        "end_date": null,
+        "status": null,
+        "change_type": null,
+        "accepted_version": null,
+        "branch_arm_roots": null,
+        "arm_roots": [
+          {
+            "study_uid": "study_root",
+            "order": 1,
+            "arm_uid": "StudyArm_000001",
+            "name": "StudyArm_000001",
+            "short_name": "StudyArm_000001",
+            "code": null,
+            "description": null,
+            "arm_colour": null,
+            "randomization_group": null,
+            "number_of_subjects": null,
+            "arm_type": {
+              "term_uid": "term_root_final",
+              "catalogue_name": "SDTM CT",
+              "codelists": [
+                {
+                  "codelist_uid": "ct_codelist_root_endpoint",
+                  "order": 1
+                }
+              ],
+              "sponsor_preferred_name": "term_value_name1",
+              "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+              "library_name": "Sponsor",
+              "start_date": "2022-07-11T09:19:17.315000",
+              "end_date": null,
+              "status": "Final",
+              "version": "1.0",
+              "change_description": "Approved version",
+              "user_initials": "TODO initials",
+              "possible_actions": [
+                "inactivate",
+                "new_version"
+              ]
+            },
+            "start_date": "2022-07-11T09:19:17.865000",
+            "user_initials": "TODO user initials",
+            "end_date": null,
+            "status": null,
+            "change_type": null,
+            "accepted_version": null
+          },
+          {
+            "study_uid": "study_root",
+            "order": 2,
+            "arm_uid": "StudyArm_000002",
+            "name": "StudyArm_000002",
+            "short_name": "StudyArm_000002",
+            "code": null,
+            "description": null,
+            "arm_colour": null,
+            "randomization_group": null,
+            "number_of_subjects": null,
+            "arm_type": {
+              "term_uid": "term_root_final_non_edit",
+              "catalogue_name": "SDTM CT",
+              "codelists": [
+                {
+                  "codelist_uid": "non_editable_cr",
+                  "order": 3
+                }
+              ],
+              "sponsor_preferred_name": "term_value_name3",
+              "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+              "library_name": "CDISC",
+              "start_date": "2022-07-11T09:19:17.315000",
+              "end_date": null,
+              "status": "Final",
+              "version": "1.0",
+              "change_description": "Approved version",
+              "user_initials": "TODO initials",
+              "possible_actions": [
+                "inactivate",
+                "new_version"
+              ]
+            },
+            "start_date": "2022-07-11T09:19:17.865000",
+            "user_initials": "TODO user initials",
+            "end_date": null,
+            "status": null,
+            "change_type": null,
+            "accepted_version": null
+          }
+        ],
+        "description": "desc...",
+        "number_of_subjects": 1,
+        "colour_code": "colour_code_1",
+        "user_initials": "TODO initials"
+      }
+    }
+  },
+  {
+    "name": "Test patch specific - set name",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "name": "New_Cohort_Name_1"
+      },
+      "url": "/studies/study_root/study-cohorts/{cohort_uid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": {
+        "study_uid": "study_root",
+        "study_version": null,
+        "cohort_uid": "StudyCohort_000001",
+        "order": 1,
+        "name": "New_Cohort_Name_1",
+        "short_name": "Cohort_Short_Name_1",
+        "code": "Cohort_code_1",
+        "start_date": "2020-06-26T00:00:00",
+        "end_date": null,
+        "status": null,
+        "change_type": null,
+        "accepted_version": null,
+        "branch_arm_roots": null,
+        "arm_roots": [
+          {
+            "study_uid": "study_root",
+            "order": 1,
+            "arm_uid": "StudyArm_000001",
+            "name": "StudyArm_000001",
+            "short_name": "StudyArm_000001",
+            "code": null,
+            "description": null,
+            "arm_colour": null,
+            "randomization_group": null,
+            "number_of_subjects": null,
+            "arm_type": {
+              "term_uid": "term_root_final",
+              "catalogue_name": "SDTM CT",
+              "codelists": [
+                {
+                  "codelist_uid": "ct_codelist_root_endpoint",
+                  "order": 1
+                }
+              ],
+              "sponsor_preferred_name": "term_value_name1",
+              "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+              "library_name": "Sponsor",
+              "start_date": "2022-07-11T09:19:17.315000",
+              "end_date": null,
+              "status": "Final",
+              "version": "1.0",
+              "change_description": "Approved version",
+              "user_initials": "TODO initials",
+              "possible_actions": [
+                "inactivate",
+                "new_version"
+              ]
+            },
+            "start_date": "2022-07-11T09:19:17.865000",
+            "user_initials": "TODO user initials",
+            "end_date": null,
+            "status": null,
+            "change_type": null,
+            "accepted_version": null
+          },
+          {
+            "study_uid": "study_root",
+            "order": 2,
+            "arm_uid": "StudyArm_000002",
+            "name": "StudyArm_000002",
+            "short_name": "StudyArm_000002",
+            "code": null,
+            "description": null,
+            "arm_colour": null,
+            "randomization_group": null,
+            "number_of_subjects": null,
+            "arm_type": {
+              "term_uid": "term_root_final_non_edit",
+              "catalogue_name": "SDTM CT",
+              "codelists": [
+                {
+                  "codelist_uid": "non_editable_cr",
+                  "order": 3
+                }
+              ],
+              "sponsor_preferred_name": "term_value_name3",
+              "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+              "library_name": "CDISC",
+              "start_date": "2022-07-11T09:19:17.315000",
+              "end_date": null,
+              "status": "Final",
+              "version": "1.0",
+              "change_description": "Approved version",
+              "user_initials": "TODO initials",
+              "possible_actions": [
+                "inactivate",
+                "new_version"
+              ]
+            },
+            "start_date": "2022-07-11T09:19:17.865000",
+            "user_initials": "TODO user initials",
+            "end_date": null,
+            "status": null,
+            "change_type": null,
+            "accepted_version": null
+          }
+        ],
+        "description": "desc...",
+        "number_of_subjects": 1,
+        "colour_code": "colour_code_1",
+        "user_initials": "TODO initials"
+      }
+    }
+  },
+  {
+    "name": "Test all history of specific selection",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/studies/study_root/study-cohorts/{cohort_uid}/audit-trail/"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": [
+        {
+          "study_uid": "study_root",
+          "order": 1,
+          "project_number": null,
+          "project_name": null,
+          "study_version": null,
+          "cohort_uid": "StudyCohort_000001",
+          "name": "New_Cohort_Name_1",
+          "short_name": "Cohort_Short_Name_1",
+          "code": "Cohort_code_1",
+          "description": "desc...",
+          "colour_code": "colour_code_1",
+          "number_of_subjects": 1,
+          "start_date": "2022-08-08T07:26:43.017048",
+          "user_initials": "unknown-user",
+          "end_date": null,
+          "status": null,
+          "change_type": "Edit",
+          "accepted_version": false,
+          "branch_arm_roots_uids": null,
+          "arm_roots_uids": [
+            "StudyArm_000001",
+            "StudyArm_000002"
+          ],
+          "changes": {
+            "study_uid": false,
+            "order": false,
+            "project_number": false,
+            "project_name": false,
+            "study_version": false,
+            "cohort_uid": false,
+            "name": true,
+            "short_name": false,
+            "code": false,
+            "description": false,
+            "colour_code": false,
+            "number_of_subjects": false,
+            "start_date": true,
+            "user_initials": false,
+            "end_date": true,
+            "status": false,
+            "change_type": true,
+            "accepted_version": false,
+            "branch_arm_roots_uids": false,
+            "arm_roots_uids": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "order": 1,
+          "project_number": null,
+          "project_name": null,
+          "study_version": null,
+          "cohort_uid": "StudyCohort_000001",
+          "name": "Cohort_Name_1",
+          "short_name": "Cohort_Short_Name_1",
+          "code": "Cohort_code_1",
+          "description": "desc...",
+          "colour_code": "colour_code_1",
+          "number_of_subjects": 1,
+          "start_date": "2022-08-08T07:26:42.240473",
+          "user_initials": "unknown-user",
+          "end_date": "2022-08-08T07:26:43.017048",
+          "status": null,
+          "change_type": "Create",
+          "accepted_version": false,
+          "branch_arm_roots_uids": null,
+          "arm_roots_uids": [
+            "StudyArm_000001",
+            "StudyArm_000002"
+          ],
+          "changes": {}
+        }
+      ]
+    }
+  },
+  {
+    "name": "Test 2nd adding selection",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "Cohort_Name_2",
+        "short_name": "Cohort_Short_Name_2",
+        "code": "Cohort_code_2",
+        "description": "desc...",
+        "colour_code": "colour_code_2",
+        "number_of_subjects": 1,
+        "arm_uids": [
+          "StudyArm_000001"
+        ]
+      },
+      "url": "/studies/study_root/study-cohorts"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "study_uid": "study_root",
+        "study_version": null,
+        "cohort_uid": "StudyCohort_000002",
+        "order": 2,
+        "name": "Cohort_Name_2",
+        "short_name": "Cohort_Short_Name_2",
+        "code": "Cohort_code_2",
+        "start_date": "2020-06-26T00:00:00",
+        "end_date": null,
+        "status": null,
+        "change_type": null,
+        "accepted_version": null,
+        "branch_arm_roots": null,
+        "arm_roots": [
+          {
+            "study_uid": "study_root",
+            "order": 1,
+            "arm_uid": "StudyArm_000001",
+            "name": "StudyArm_000001",
+            "short_name": "StudyArm_000001",
+            "code": null,
+            "description": null,
+            "arm_colour": null,
+            "randomization_group": null,
+            "number_of_subjects": null,
+            "arm_type": {
+              "term_uid": "term_root_final",
+              "catalogue_name": "SDTM CT",
+              "codelists": [
+                {
+                  "codelist_uid": "ct_codelist_root_endpoint",
+                  "order": 1
+                }
+              ],
+              "sponsor_preferred_name": "term_value_name1",
+              "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+              "library_name": "Sponsor",
+              "start_date": "2022-07-11T09:19:17.315000",
+              "end_date": null,
+              "status": "Final",
+              "version": "1.0",
+              "change_description": "Approved version",
+              "user_initials": "TODO initials",
+              "possible_actions": [
+                "inactivate",
+                "new_version"
+              ]
+            },
+            "start_date": "2022-07-11T09:19:17.865000",
+            "user_initials": "TODO user initials",
+            "end_date": null,
+            "status": null,
+            "change_type": null,
+            "accepted_version": null
+          }
+        ],
+        "description": "desc...",
+        "number_of_subjects": 1,
+        "colour_code": "colour_code_2",
+        "user_initials": "TODO initials"
+      },
+      "save": {
+        "cohort_uid": "cohort_uid"
+      }
+    }
+  },
+  {
+    "name": "Test DELETE -- delete the 1st to test the reordering for the 2nd to be eq. to 1 ",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "url": "/studies/study_root/study-cohorts/StudyCohort_000001"
+    },
+    "response": {
+      "code": 204,
+      "headers": {},
+      "result": null
+    }
+  },
+  {
+    "name": "Test 3rd adding selection",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "Cohort_Name_3",
+        "short_name": "Cohort_Short_Name_3",
+        "code": "Cohort_code_3",
+        "description": "desc...",
+        "colour_code": "colour_code_3",
+        "number_of_subjects": 3,
+        "arm_uids": [
+          "StudyArm_000001"
+        ]
+      },
+      "url": "/studies/study_root/study-cohorts"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "study_uid": "study_root",
+        "study_version": null,
+        "cohort_uid": "StudyCohort_000003",
+        "order": 2,
+        "name": "Cohort_Name_3",
+        "short_name": "Cohort_Short_Name_3",
+        "code": "Cohort_code_3",
+        "start_date": "2020-06-26T00:00:00",
+        "end_date": null,
+        "status": null,
+        "change_type": null,
+        "accepted_version": null,
+        "branch_arm_roots": null,
+        "arm_roots": [
+          {
+            "study_uid": "study_root",
+            "order": 1,
+            "arm_uid": "StudyArm_000001",
+            "name": "StudyArm_000001",
+            "short_name": "StudyArm_000001",
+            "code": null,
+            "description": null,
+            "arm_colour": null,
+            "randomization_group": null,
+            "number_of_subjects": null,
+            "arm_type": {
+              "term_uid": "term_root_final",
+              "catalogue_name": "SDTM CT",
+              "codelists": [
+                {
+                  "codelist_uid": "ct_codelist_root_endpoint",
+                  "order": 1
+                }
+              ],
+              "sponsor_preferred_name": "term_value_name1",
+              "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+              "library_name": "Sponsor",
+              "start_date": "2022-07-11T09:19:17.315000",
+              "end_date": null,
+              "status": "Final",
+              "version": "1.0",
+              "change_description": "Approved version",
+              "user_initials": "TODO initials",
+              "possible_actions": [
+                "inactivate",
+                "new_version"
+              ]
+            },
+            "start_date": "2022-07-11T09:19:17.865000",
+            "user_initials": "TODO user initials",
+            "end_date": null,
+            "status": null,
+            "change_type": null,
+            "accepted_version": null
+          }
+        ],
+        "description": "desc...",
+        "number_of_subjects": 3,
+        "colour_code": "colour_code_3",
+        "user_initials": "TODO initials"
+      },
+      "save": {
+        "cohort_uid": "cohort_uid"
+      }
+    }
+  },
+  {
+    "name": "Test 4rd adding selection for another ARM",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "Cohort_Name_4",
+        "short_name": "Cohort_Short_Name_4",
+        "code": "Cohort_code_4",
+        "description": "desc...",
+        "colour_code": "colour_code_4",
+        "number_of_subjects": 4,
+        "arm_uids": [
+          "StudyArm_000002"
+        ]
+      },
+      "url": "/studies/study_root/study-cohorts"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "study_uid": "study_root",
+        "study_version": null,
+        "cohort_uid": "StudyCohort_000004",
+        "order": 3,
+        "name": "Cohort_Name_4",
+        "short_name": "Cohort_Short_Name_4",
+        "code": "Cohort_code_4",
+        "start_date": "2020-06-26T00:00:00",
+        "end_date": null,
+        "status": null,
+        "change_type": null,
+        "accepted_version": null,
+        "branch_arm_roots": null,
+        "arm_roots": [
+          {
+            "study_uid": "study_root",
+            "order": 2,
+            "arm_uid": "StudyArm_000002",
+            "name": "StudyArm_000002",
+            "short_name": "StudyArm_000002",
+            "code": null,
+            "description": null,
+            "arm_colour": null,
+            "randomization_group": null,
+            "number_of_subjects": null,
+            "arm_type": {
+              "term_uid": "term_root_final_non_edit",
+              "catalogue_name": "SDTM CT",
+              "codelists": [
+                {
+                  "codelist_uid": "non_editable_cr",
+                  "order": 3
+                }
+              ],
+              "sponsor_preferred_name": "term_value_name3",
+              "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+              "library_name": "CDISC",
+              "start_date": "2022-07-11T09:19:17.315000",
+              "end_date": null,
+              "status": "Final",
+              "version": "1.0",
+              "change_description": "Approved version",
+              "user_initials": "TODO initials",
+              "possible_actions": [
+                "inactivate",
+                "new_version"
+              ]
+            },
+            "start_date": "2022-07-11T09:19:17.865000",
+            "user_initials": "TODO user initials",
+            "end_date": null,
+            "status": null,
+            "change_type": null,
+            "accepted_version": null
+          }
+        ],
+        "description": "desc...",
+        "number_of_subjects": 4,
+        "colour_code": "colour_code_4",
+        "user_initials": "TODO initials"
+      },
+      "save": {
+        "cohort_uid": "cohort_uid"
+      }
+    }
+  },
+  {
+    "name": "Test 5th adding selection for another ARM",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "Cohort_Name_5",
+        "short_name": "Cohort_Short_Name_5",
+        "code": "Cohort_code_5",
+        "description": "desc...",
+        "colour_code": "colour_code_5",
+        "number_of_subjects": 5,
+        "arm_uids": null,
+        "branch_arm_uid": null
+      },
+      "url": "/studies/study_root/study-cohorts"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "study_uid": "study_root",
+        "study_version": null,
+        "cohort_uid": "StudyCohort_000005",
+        "order": 4,
+        "name": "Cohort_Name_5",
+        "short_name": "Cohort_Short_Name_5",
+        "code": "Cohort_code_5",
+        "start_date": "2020-06-26T00:00:00",
+        "end_date": null,
+        "status": null,
+        "change_type": null,
+        "accepted_version": null,
+        "branch_arm_roots": null,
+        "arm_roots": null,
+        "description": "desc...",
+        "number_of_subjects": 5,
+        "colour_code": "colour_code_5",
+        "user_initials": "TODO initials"
+      },
+      "save": {
+        "cohort_uid": "cohort_uid"
+      }
+    }
+  },
+  {
+    "name": "Test reorder specific",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "new_order": 5
+      },
+      "url": "/studies/study_root/study-cohorts/StudyCohort_000003/order"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": {
+        "study_uid": "study_root",
+        "study_version": null,
+        "cohort_uid": "StudyCohort_000003",
+        "order": 4,
+        "name": "Cohort_Name_3",
+        "short_name": "Cohort_Short_Name_3",
+        "code": "Cohort_code_3",
+        "start_date": "2020-06-26T00:00:00",
+        "end_date": null,
+        "status": null,
+        "change_type": null,
+        "accepted_version": null,
+        "branch_arm_roots": null,
+        "arm_roots": [
+          {
+            "study_uid": "study_root",
+            "order": 1,
+            "arm_uid": "StudyArm_000001",
+            "name": "StudyArm_000001",
+            "short_name": "StudyArm_000001",
+            "code": null,
+            "description": null,
+            "arm_colour": null,
+            "randomization_group": null,
+            "number_of_subjects": null,
+            "arm_type": {
+              "term_uid": "term_root_final",
+              "catalogue_name": "SDTM CT",
+              "codelists": [
+                {
+                  "codelist_uid": "ct_codelist_root_endpoint",
+                  "order": 1
+                }
+              ],
+              "sponsor_preferred_name": "term_value_name1",
+              "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+              "library_name": "Sponsor",
+              "start_date": "2022-07-11T09:19:17.315000",
+              "end_date": null,
+              "status": "Final",
+              "version": "1.0",
+              "change_description": "Approved version",
+              "user_initials": "TODO initials",
+              "possible_actions": [
+                "inactivate",
+                "new_version"
+              ]
+            },
+            "start_date": "2022-07-11T09:19:17.865000",
+            "user_initials": "TODO user initials",
+            "end_date": null,
+            "status": null,
+            "change_type": null,
+            "accepted_version": null
+          }
+        ],
+        "description": "desc...",
+        "number_of_subjects": 3,
+        "colour_code": "colour_code_3",
+        "user_initials": "TODO initials"
+      }
+    }
+  },
+  {
+    "name": "Test adding selection",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "Cohort_Name_6",
+        "short_name": "Cohort_Short_Name_6",
+        "code": "Cohort_code_6",
+        "description": "desc...",
+        "colour_code": "colour_code_6",
+        "number_of_subjects": 1,
+        "arm_uids": [
+          "StudyArm_000002"
+        ],
+        "branch_arm_uids": [
+          "StudyBranchArm_000001"
+        ]
+      },
+      "url": "/studies/study_root/study-cohorts"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "study_uid": "study_root",
+        "study_version": null,
+        "cohort_uid": "StudyCohort_000006",
+        "order": 5,
+        "name": "Cohort_Name_6",
+        "short_name": "Cohort_Short_Name_6",
+        "code": "Cohort_code_6",
+        "start_date": "2020-06-26T00:00:00",
+        "end_date": null,
+        "status": null,
+        "change_type": null,
+        "accepted_version": null,
+        "branch_arm_roots": [
+          {
+            "study_uid": "study_root",
+            "order": 1,
+            "study_version": null,
+            "branch_arm_uid": "StudyBranchArm_000001",
+            "name": "Branch_Arm_Name_1",
+            "short_name": "Branch_Arm_Short_Name_1",
+            "code": "Branch_Arm_code_1",
+            "description": "desc...",
+            "colour_code": "colour...",
+            "randomization_group": "Branch_Arm_randomizationGroup",
+            "number_of_subjects": 100,
+            "start_date": "2022-07-12T02:35:33.253116",
+            "user_initials": "test",
+            "end_date": null,
+            "status": null,
+            "change_type": null,
+            "accepted_version": null,
+            "arm_root": {
+              "study_uid": "study_root",
+              "order": 1,
+              "arm_uid": "StudyArm_000001",
+              "name": "StudyArm_000001",
+              "short_name": "StudyArm_000001",
+              "code": null,
+              "description": null,
+              "arm_colour": null,
+              "randomization_group": null,
+              "number_of_subjects": null,
+              "arm_type": {
+                "term_uid": "term_root_final",
+                "catalogue_name": "SDTM CT",
+                "codelists": [
+                  {
+                    "codelist_uid": "ct_codelist_root_endpoint",
+                    "order": 1
+                  }
+                ],
+                "sponsor_preferred_name": "term_value_name1",
+                "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+                "library_name": "Sponsor",
+                "start_date": "2022-07-12T00:35:32.641000",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Approved version",
+                "user_initials": "TODO initials",
+                "possible_actions": [
+                  "inactivate",
+                  "new_version"
+                ]
+              },
+              "start_date": "2022-07-12T00:35:33.132000",
+              "user_initials": "TODO user initials",
+              "end_date": null,
+              "status": null,
+              "change_type": null,
+              "accepted_version": null
+            }
+          }
+        ],
+        "arm_roots": [
+          {
+            "study_uid": "study_root",
+            "order": 2,
+            "arm_uid": "StudyArm_000002",
+            "name": "StudyArm_000002",
+            "short_name": "StudyArm_000002",
+            "code": null,
+            "description": null,
+            "arm_colour": null,
+            "randomization_group": null,
+            "number_of_subjects": null,
+            "arm_type": {
+              "term_uid": "term_root_final_non_edit",
+              "catalogue_name": "SDTM CT",
+              "codelists": [
+                {
+                  "codelist_uid": "non_editable_cr",
+                  "order": 3
+                }
+              ],
+              "sponsor_preferred_name": "term_value_name3",
+              "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+              "library_name": "CDISC",
+              "start_date": "2022-07-11T09:19:17.315000",
+              "end_date": null,
+              "status": "Final",
+              "version": "1.0",
+              "change_description": "Approved version",
+              "user_initials": "TODO initials",
+              "possible_actions": [
+                "inactivate",
+                "new_version"
+              ]
+            },
+            "start_date": "2022-07-11T09:19:17.865000",
+            "user_initials": "TODO user initials",
+            "end_date": null,
+            "status": null,
+            "change_type": null,
+            "accepted_version": null
+          }
+        ],
+        "description": "desc...",
+        "number_of_subjects": 1,
+        "colour_code": "colour_code_6",
+        "user_initials": "TODO initials"
+      },
+      "save": {
+        "cohort_uid": "cohort_uid"
+      }
+    }
+  },
+  {
+    "name": "Test adding selection",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "Cohort_Name_7",
+        "short_name": "Cohort_Short_Name_7",
+        "code": "Cohort_code_7",
+        "description": "desc...",
+        "colour_code": "colour_code_7",
+        "number_of_subjects": 1,
+        "arm_uids": [
+          "StudyArm_000002"
+        ],
+        "branch_arm_uids": [
+          "StudyBranchArm_000001",
+          "StudyBranchArm_000003"
+        ]
+      },
+      "url": "/studies/study_root/study-cohorts"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "study_uid": "study_root",
+        "study_version": null,
+        "cohort_uid": "StudyCohort_000007",
+        "order": 6,
+        "name": "Cohort_Name_7",
+        "short_name": "Cohort_Short_Name_7",
+        "code": "Cohort_code_7",
+        "start_date": "2020-06-26T00:00:00",
+        "end_date": null,
+        "status": null,
+        "change_type": null,
+        "accepted_version": null,
+        "branch_arm_roots": [
+          {
+            "study_uid": "study_root",
+            "order": 1,
+            "study_version": null,
+            "branch_arm_uid": "StudyBranchArm_000001",
+            "name": "Branch_Arm_Name_1",
+            "short_name": "Branch_Arm_Short_Name_1",
+            "code": "Branch_Arm_code_1",
+            "description": "desc...",
+            "colour_code": "colour...",
+            "randomization_group": "Branch_Arm_randomizationGroup",
+            "number_of_subjects": 100,
+            "start_date": "2022-07-19T06:26:47.414375",
+            "user_initials": "test",
+            "end_date": null,
+            "status": null,
+            "change_type": null,
+            "accepted_version": null,
+            "arm_root": {
+              "study_uid": "study_root",
+              "order": 1,
+              "arm_uid": "StudyArm_000001",
+              "name": "StudyArm_000001",
+              "short_name": "StudyArm_000001",
+              "code": null,
+              "description": null,
+              "arm_colour": null,
+              "randomization_group": null,
+              "number_of_subjects": null,
+              "arm_type": {
+                "term_uid": "term_root_final",
+                "catalogue_name": "SDTM CT",
+                "codelists": [
+                  {
+                    "codelist_uid": "ct_codelist_root_endpoint",
+                    "order": 1
+                  }
+                ],
+                "sponsor_preferred_name": "term_value_name1",
+                "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+                "library_name": "Sponsor",
+                "start_date": "2022-07-19T04:26:46.814000",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Approved version",
+                "user_initials": "TODO initials",
+                "possible_actions": [
+                  "inactivate",
+                  "new_version"
+                ]
+              },
+              "start_date": "2022-07-19T04:26:47.280000",
+              "user_initials": "TODO user initials",
+              "end_date": null,
+              "status": null,
+              "change_type": null,
+              "accepted_version": null
+            }
+          },
+          {
+            "study_uid": "study_root",
+            "order": 2,
+            "study_version": null,
+            "branch_arm_uid": "StudyBranchArm_000003",
+            "name": "Branch_Arm_Name_2",
+            "short_name": "Branch_Arm_Short_Name_2",
+            "code": "Branch_Arm_code_2",
+            "description": "desc...",
+            "colour_code": "colour...2",
+            "randomization_group": "Branch_Arm_randomizationGroup2",
+            "number_of_subjects": 20,
+            "start_date": "2022-07-19T06:26:47.875549",
+            "user_initials": "test",
+            "end_date": null,
+            "status": null,
+            "change_type": null,
+            "accepted_version": null,
+            "arm_root": {
+              "study_uid": "study_root",
+              "order": 1,
+              "arm_uid": "StudyArm_000001",
+              "name": "StudyArm_000001",
+              "short_name": "StudyArm_000001",
+              "code": null,
+              "description": null,
+              "arm_colour": null,
+              "randomization_group": null,
+              "number_of_subjects": null,
+              "arm_type": {
+                "term_uid": "term_root_final",
+                "catalogue_name": "SDTM CT",
+                "codelists": [
+                  {
+                    "codelist_uid": "ct_codelist_root_endpoint",
+                    "order": 1
+                  }
+                ],
+                "sponsor_preferred_name": "term_value_name1",
+                "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+                "library_name": "Sponsor",
+                "start_date": "2022-07-19T04:26:46.814000",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Approved version",
+                "user_initials": "TODO initials",
+                "possible_actions": [
+                  "inactivate",
+                  "new_version"
+                ]
+              },
+              "start_date": "2022-07-19T04:26:47.280000",
+              "user_initials": "TODO user initials",
+              "end_date": null,
+              "status": null,
+              "change_type": null,
+              "accepted_version": null
+            }
+          }
+        ],
+        "arm_roots": [
+          {
+            "study_uid": "study_root",
+            "order": 2,
+            "arm_uid": "StudyArm_000002",
+            "name": "StudyArm_000002",
+            "short_name": "StudyArm_000002",
+            "code": null,
+            "description": null,
+            "arm_colour": null,
+            "randomization_group": null,
+            "number_of_subjects": null,
+            "arm_type": {
+              "term_uid": "term_root_final_non_edit",
+              "catalogue_name": "SDTM CT",
+              "codelists": [
+                {
+                  "codelist_uid": "non_editable_cr",
+                  "order": 3
+                }
+              ],
+              "sponsor_preferred_name": "term_value_name3",
+              "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+              "library_name": "CDISC",
+              "start_date": "2022-07-11T09:19:17.315000",
+              "end_date": null,
+              "status": "Final",
+              "version": "1.0",
+              "change_description": "Approved version",
+              "user_initials": "TODO initials",
+              "possible_actions": [
+                "inactivate",
+                "new_version"
+              ]
+            },
+            "start_date": "2022-07-11T09:19:17.865000",
+            "user_initials": "TODO user initials",
+            "end_date": null,
+            "status": null,
+            "change_type": null,
+            "accepted_version": null
+          }
+        ],
+        "description": "desc...",
+        "number_of_subjects": 1,
+        "colour_code": "colour_code_7",
+        "user_initials": "TODO initials"
+      },
+      "save": {
+        "cohort_uid": "cohort_uid"
+      }
+    }
+  },
+  {
+    "name": "Test StudyBranchArm DELETE -- to ensure that the studybrancharm-cohort  relationship is being updated ",
+    "request": {
+      "headers": {},
+      "method": "DELETE",
+      "url": "/studies/study_root/study-branch-arms/StudyBranchArm_000003"
+    },
+    "response": {
+      "code": 204,
+      "headers": {},
+      "result": null
+    }
+  },
+  {
+    "name": "Test get specific",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/studies/study_root/study-cohorts/StudyCohort_000007"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": {
+        "study_uid": "study_root",
+        "order": 6,
+        "study_version": null,
+        "cohort_uid": "StudyCohort_000007",
+        "name": "Cohort_Name_7",
+        "short_name": "Cohort_Short_Name_7",
+        "code": "Cohort_code_7",
+        "description": "desc...",
+        "colour_code": "colour_code_7",
+        "number_of_subjects": 1,
+        "branch_arm_roots": [
+          {
+            "study_uid": "study_root",
+            "order": 1,
+            "study_version": null,
+            "branch_arm_uid": "StudyBranchArm_000001",
+            "name": "Branch_Arm_Name_1",
+            "short_name": "Branch_Arm_Short_Name_1",
+            "code": "Branch_Arm_code_1",
+            "description": "desc...",
+            "colour_code": "colour...",
+            "randomization_group": "Branch_Arm_randomizationGroup",
+            "number_of_subjects": 100,
+            "start_date": "2022-07-19T08:03:09.189904",
+            "user_initials": "test",
+            "end_date": null,
+            "status": null,
+            "change_type": null,
+            "accepted_version": null,
+            "arm_root": {
+              "study_uid": "study_root",
+              "order": 1,
+              "arm_uid": "StudyArm_000001",
+              "name": "StudyArm_000001",
+              "short_name": "StudyArm_000001",
+              "code": null,
+              "description": null,
+              "arm_colour": null,
+              "randomization_group": null,
+              "number_of_subjects": null,
+              "arm_type": {
+                "term_uid": "term_root_final",
+                "catalogue_name": "SDTM CT",
+                "codelists": [
+                  {
+                    "codelist_uid": "ct_codelist_root_endpoint",
+                    "order": 1
+                  }
+                ],
+                "sponsor_preferred_name": "term_value_name1",
+                "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+                "library_name": "Sponsor",
+                "start_date": "2022-07-19T06:03:08.567000",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Approved version",
+                "user_initials": "TODO initials",
+                "possible_actions": [
+                  "inactivate",
+                  "new_version"
+                ]
+              },
+              "start_date": "2022-07-19T06:03:09.077000",
+              "user_initials": "TODO user initials",
+              "end_date": null,
+              "status": null,
+              "change_type": null,
+              "accepted_version": null
+            }
+          }
+        ],
+        "arm_roots": [
+          {
+            "study_uid": "study_root",
+            "order": 2,
+            "arm_uid": "StudyArm_000002",
+            "name": "StudyArm_000002",
+            "short_name": "StudyArm_000002",
+            "code": null,
+            "description": null,
+            "arm_colour": null,
+            "randomization_group": null,
+            "number_of_subjects": null,
+            "arm_type": {
+              "term_uid": "term_root_final_non_edit",
+              "catalogue_name": "SDTM CT",
+              "codelists": [
+                {
+                  "codelist_uid": "non_editable_cr",
+                  "order": 3
+                }
+              ],
+              "sponsor_preferred_name": "term_value_name3",
+              "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+              "library_name": "CDISC",
+              "start_date": "2022-07-19T06:03:08.567000",
+              "end_date": null,
+              "status": "Final",
+              "version": "1.0",
+              "change_description": "Approved version",
+              "user_initials": "TODO initials",
+              "possible_actions": [
+                "inactivate",
+                "new_version"
+              ]
+            },
+            "start_date": "2022-07-19T06:03:09.077000",
+            "user_initials": "TODO user initials",
+            "end_date": null,
+            "status": null,
+            "change_type": null,
+            "accepted_version": null
+          }
+        ],
+        "start_date": "2022-07-19T08:03:40.392436",
+        "user_initials": "unknown-user",
+        "end_date": null,
+        "status": null,
+        "change_type": null,
+        "accepted_version": null
+      }
+    }
+  },
+  {
+    "name": "Test all history of all selection study cohort",
+    "request": {
+      "headers": {},
+      "method": "GET",
+      "request": {},
+      "url": "/studies/study_root/study-cohort/audit-trail"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": [
+        {
+          "study_uid": "study_root",
+          "order": 1,
+          "project_number": null,
+          "project_name": null,
+          "study_version": null,
+          "cohort_uid": "StudyCohort_000001",
+          "name": "New_Cohort_Name_1",
+          "short_name": "Cohort_Short_Name_1",
+          "code": "Cohort_code_1",
+          "description": "desc...",
+          "colour_code": "colour_code_1",
+          "number_of_subjects": 1,
+          "start_date": "2022-08-08T07:54:40.076018",
+          "user_initials": "unknown-user",
+          "end_date": null,
+          "status": null,
+          "change_type": "Delete",
+          "accepted_version": false,
+          "branch_arm_roots_uids": null,
+          "arm_roots_uids": [
+            "StudyArm_000001",
+            "StudyArm_000002"
+          ],
+          "changes": {
+            "study_uid": false,
+            "order": false,
+            "project_number": false,
+            "project_name": false,
+            "study_version": false,
+            "cohort_uid": false,
+            "name": false,
+            "short_name": false,
+            "code": false,
+            "description": false,
+            "colour_code": false,
+            "number_of_subjects": false,
+            "start_date": true,
+            "user_initials": false,
+            "end_date": true,
+            "status": false,
+            "change_type": true,
+            "accepted_version": false,
+            "branch_arm_roots_uids": false,
+            "arm_roots_uids": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "order": 1,
+          "project_number": null,
+          "project_name": null,
+          "study_version": null,
+          "cohort_uid": "StudyCohort_000001",
+          "name": "New_Cohort_Name_1",
+          "short_name": "Cohort_Short_Name_1",
+          "code": "Cohort_code_1",
+          "description": "desc...",
+          "colour_code": "colour_code_1",
+          "number_of_subjects": 1,
+          "start_date": "2022-08-08T07:54:39.544924",
+          "user_initials": "unknown-user",
+          "end_date": "2022-08-08T07:54:40.076018",
+          "status": null,
+          "change_type": "Edit",
+          "accepted_version": false,
+          "branch_arm_roots_uids": null,
+          "arm_roots_uids": [
+            "StudyArm_000001",
+            "StudyArm_000002"
+          ],
+          "changes": {
+            "study_uid": false,
+            "order": false,
+            "project_number": false,
+            "project_name": false,
+            "study_version": false,
+            "cohort_uid": false,
+            "name": true,
+            "short_name": false,
+            "code": false,
+            "description": false,
+            "colour_code": false,
+            "number_of_subjects": false,
+            "start_date": true,
+            "user_initials": false,
+            "end_date": true,
+            "status": false,
+            "change_type": true,
+            "accepted_version": false,
+            "branch_arm_roots_uids": false,
+            "arm_roots_uids": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "order": 1,
+          "project_number": null,
+          "project_name": null,
+          "study_version": null,
+          "cohort_uid": "StudyCohort_000001",
+          "name": "Cohort_Name_1",
+          "short_name": "Cohort_Short_Name_1",
+          "code": "Cohort_code_1",
+          "description": "desc...",
+          "colour_code": "colour_code_1",
+          "number_of_subjects": 1,
+          "start_date": "2022-08-08T07:54:38.762710",
+          "user_initials": "unknown-user",
+          "end_date": "2022-08-08T07:54:39.544924",
+          "status": null,
+          "change_type": "Create",
+          "accepted_version": false,
+          "branch_arm_roots_uids": null,
+          "arm_roots_uids": [
+            "StudyArm_000001",
+            "StudyArm_000002"
+          ],
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "order": 1,
+          "project_number": null,
+          "project_name": null,
+          "study_version": null,
+          "cohort_uid": "StudyCohort_000002",
+          "name": "Cohort_Name_2",
+          "short_name": "Cohort_Short_Name_2",
+          "code": "Cohort_code_2",
+          "description": "desc...",
+          "colour_code": "colour_code_2",
+          "number_of_subjects": 1,
+          "start_date": "2022-08-08T07:54:40.052914",
+          "user_initials": "unknown-user",
+          "end_date": null,
+          "status": null,
+          "change_type": "Edit",
+          "accepted_version": false,
+          "branch_arm_roots_uids": null,
+          "arm_roots_uids": [
+            "StudyArm_000001"
+          ],
+          "changes": {
+            "study_uid": false,
+            "order": true,
+            "project_number": false,
+            "project_name": false,
+            "study_version": false,
+            "cohort_uid": false,
+            "name": false,
+            "short_name": false,
+            "code": false,
+            "description": false,
+            "colour_code": false,
+            "number_of_subjects": false,
+            "start_date": true,
+            "user_initials": false,
+            "end_date": true,
+            "status": false,
+            "change_type": true,
+            "accepted_version": false,
+            "branch_arm_roots_uids": false,
+            "arm_roots_uids": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "order": 2,
+          "project_number": null,
+          "project_name": null,
+          "study_version": null,
+          "cohort_uid": "StudyCohort_000002",
+          "name": "Cohort_Name_2",
+          "short_name": "Cohort_Short_Name_2",
+          "code": "Cohort_code_2",
+          "description": "desc...",
+          "colour_code": "colour_code_2",
+          "number_of_subjects": 1,
+          "start_date": "2022-08-08T07:54:39.841331",
+          "user_initials": "unknown-user",
+          "end_date": "2022-08-08T07:54:40.052914",
+          "status": null,
+          "change_type": "Create",
+          "accepted_version": false,
+          "branch_arm_roots_uids": null,
+          "arm_roots_uids": [
+            "StudyArm_000001"
+          ],
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "order": 4,
+          "project_number": null,
+          "project_name": null,
+          "study_version": null,
+          "cohort_uid": "StudyCohort_000003",
+          "name": "Cohort_Name_3",
+          "short_name": "Cohort_Short_Name_3",
+          "code": "Cohort_code_3",
+          "description": "desc...",
+          "colour_code": "colour_code_3",
+          "number_of_subjects": 3,
+          "start_date": "2022-08-08T07:54:40.514081",
+          "user_initials": "unknown-user",
+          "end_date": null,
+          "status": null,
+          "change_type": "Edit",
+          "accepted_version": false,
+          "branch_arm_roots_uids": null,
+          "arm_roots_uids": [
+            "StudyArm_000001"
+          ],
+          "changes": {
+            "study_uid": false,
+            "order": true,
+            "project_number": false,
+            "project_name": false,
+            "study_version": false,
+            "cohort_uid": false,
+            "name": false,
+            "short_name": false,
+            "code": false,
+            "description": false,
+            "colour_code": false,
+            "number_of_subjects": false,
+            "start_date": true,
+            "user_initials": false,
+            "end_date": true,
+            "status": false,
+            "change_type": true,
+            "accepted_version": false,
+            "branch_arm_roots_uids": false,
+            "arm_roots_uids": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "order": 2,
+          "project_number": null,
+          "project_name": null,
+          "study_version": null,
+          "cohort_uid": "StudyCohort_000003",
+          "name": "Cohort_Name_3",
+          "short_name": "Cohort_Short_Name_3",
+          "code": "Cohort_code_3",
+          "description": "desc...",
+          "colour_code": "colour_code_3",
+          "number_of_subjects": 3,
+          "start_date": "2022-08-08T07:54:40.162217",
+          "user_initials": "unknown-user",
+          "end_date": "2022-08-08T07:54:40.514081",
+          "status": null,
+          "change_type": "Create",
+          "accepted_version": false,
+          "branch_arm_roots_uids": null,
+          "arm_roots_uids": [
+            "StudyArm_000001"
+          ],
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "order": 2,
+          "project_number": null,
+          "project_name": null,
+          "study_version": null,
+          "cohort_uid": "StudyCohort_000004",
+          "name": "Cohort_Name_4",
+          "short_name": "Cohort_Short_Name_4",
+          "code": "Cohort_code_4",
+          "description": "desc...",
+          "colour_code": "colour_code_4",
+          "number_of_subjects": 4,
+          "start_date": "2022-08-08T07:54:40.534262",
+          "user_initials": "unknown-user",
+          "end_date": null,
+          "status": null,
+          "change_type": "Edit",
+          "accepted_version": false,
+          "branch_arm_roots_uids": null,
+          "arm_roots_uids": [
+            "StudyArm_000002"
+          ],
+          "changes": {
+            "study_uid": false,
+            "order": true,
+            "project_number": false,
+            "project_name": false,
+            "study_version": false,
+            "cohort_uid": false,
+            "name": false,
+            "short_name": false,
+            "code": false,
+            "description": false,
+            "colour_code": false,
+            "number_of_subjects": false,
+            "start_date": true,
+            "user_initials": false,
+            "end_date": true,
+            "status": false,
+            "change_type": true,
+            "accepted_version": false,
+            "branch_arm_roots_uids": false,
+            "arm_roots_uids": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "order": 3,
+          "project_number": null,
+          "project_name": null,
+          "study_version": null,
+          "cohort_uid": "StudyCohort_000004",
+          "name": "Cohort_Name_4",
+          "short_name": "Cohort_Short_Name_4",
+          "code": "Cohort_code_4",
+          "description": "desc...",
+          "colour_code": "colour_code_4",
+          "number_of_subjects": 4,
+          "start_date": "2022-08-08T07:54:40.288606",
+          "user_initials": "unknown-user",
+          "end_date": "2022-08-08T07:54:40.534262",
+          "status": null,
+          "change_type": "Create",
+          "accepted_version": false,
+          "branch_arm_roots_uids": null,
+          "arm_roots_uids": [
+            "StudyArm_000002"
+          ],
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "order": 3,
+          "project_number": null,
+          "project_name": null,
+          "study_version": null,
+          "cohort_uid": "StudyCohort_000005",
+          "name": "Cohort_Name_5",
+          "short_name": "Cohort_Short_Name_5",
+          "code": "Cohort_code_5",
+          "description": "desc...",
+          "colour_code": "colour_code_5",
+          "number_of_subjects": 5,
+          "start_date": "2022-08-08T07:54:40.551393",
+          "user_initials": "unknown-user",
+          "end_date": null,
+          "status": null,
+          "change_type": "Edit",
+          "accepted_version": false,
+          "branch_arm_roots_uids": null,
+          "arm_roots_uids": null,
+          "changes": {
+            "study_uid": false,
+            "order": true,
+            "project_number": false,
+            "project_name": false,
+            "study_version": false,
+            "cohort_uid": false,
+            "name": false,
+            "short_name": false,
+            "code": false,
+            "description": false,
+            "colour_code": false,
+            "number_of_subjects": false,
+            "start_date": true,
+            "user_initials": false,
+            "end_date": true,
+            "status": false,
+            "change_type": true,
+            "accepted_version": false,
+            "branch_arm_roots_uids": false,
+            "arm_roots_uids": false
+          }
+        },
+        {
+          "study_uid": "study_root",
+          "order": 4,
+          "project_number": null,
+          "project_name": null,
+          "study_version": null,
+          "cohort_uid": "StudyCohort_000005",
+          "name": "Cohort_Name_5",
+          "short_name": "Cohort_Short_Name_5",
+          "code": "Cohort_code_5",
+          "description": "desc...",
+          "colour_code": "colour_code_5",
+          "number_of_subjects": 5,
+          "start_date": "2022-08-08T07:54:40.413824",
+          "user_initials": "unknown-user",
+          "end_date": "2022-08-08T07:54:40.551393",
+          "status": null,
+          "change_type": "Create",
+          "accepted_version": false,
+          "branch_arm_roots_uids": null,
+          "arm_roots_uids": null,
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "order": 5,
+          "project_number": null,
+          "project_name": null,
+          "study_version": null,
+          "cohort_uid": "StudyCohort_000006",
+          "name": "Cohort_Name_6",
+          "short_name": "Cohort_Short_Name_6",
+          "code": "Cohort_code_6",
+          "description": "desc...",
+          "colour_code": "colour_code_6",
+          "number_of_subjects": 1,
+          "start_date": "2022-08-08T07:54:40.691210",
+          "user_initials": "unknown-user",
+          "end_date": null,
+          "status": null,
+          "change_type": "Create",
+          "accepted_version": false,
+          "branch_arm_roots_uids": [
+            "StudyBranchArm_000001"
+          ],
+          "arm_roots_uids": [
+            "StudyArm_000002"
+          ],
+          "changes": {}
+        },
+        {
+          "study_uid": "study_root",
+          "order": 6,
+          "project_number": null,
+          "project_name": null,
+          "study_version": null,
+          "cohort_uid": "StudyCohort_000007",
+          "name": "Cohort_Name_7",
+          "short_name": "Cohort_Short_Name_7",
+          "code": "Cohort_code_7",
+          "description": "desc...",
+          "colour_code": "colour_code_7",
+          "number_of_subjects": 1,
+          "start_date": "2022-08-08T07:54:40.940448",
+          "user_initials": "unknown-user",
+          "end_date": null,
+          "status": null,
+          "change_type": "Create",
+          "accepted_version": false,
+          "branch_arm_roots_uids": [
+            "StudyBranchArm_000001",
+            "StudyBranchArm_000003",
+            "StudyBranchArm_000003"
+          ],
+          "arm_roots_uids": [
+            "StudyArm_000002",
+            "StudyArm_000002",
+            "StudyArm_000002"
+          ],
+          "changes": {}
+        }
+      ]
+    }
+  },
+  {
+    "name": "Test adding selection 8 to ensure that the only required fields are the name and short name fields",
+    "request": {
+      "headers": {},
+      "method": "POST",
+      "request": {
+        "name": "Cohort_Name_8",
+        "short_name": "Cohort_Short_Name_8"
+      },
+      "url": "/studies/study_root/study-cohorts"
+    },
+    "response": {
+      "code": 201,
+      "headers": {
+        "content-length": "336",
+        "content-type": "application/json"
+      },
+      "result": {
+        "study_uid": "study_root",
+        "order": 7,
+        "study_version": null,
+        "cohort_uid": "StudyCohort_000008",
+        "name": "Cohort_Name_8",
+        "short_name": "Cohort_Short_Name_8",
+        "code": null,
+        "description": null,
+        "colour_code": null,
+        "number_of_subjects": null,
+        "branch_arm_roots": null,
+        "arm_roots": null,
+        "start_date": "2022-08-04T07:35:09.630201",
+        "user_initials": "unknown-user",
+        "end_date": null,
+        "status": null,
+        "change_type": null,
+        "accepted_version": false
+      }
+    }
+  },
+  {
+    "name": "Test patch number_of_subjects as null",
+    "request": {
+      "headers": {},
+      "method": "PATCH",
+      "request": {
+        "number_of_subjects": null
+      },
+      "url": "/studies/study_root/study-cohorts/{cohort_uid}"
+    },
+    "response": {
+      "code": 200,
+      "headers": {
+        "content-length": "389",
+        "content-type": "application/json"
+      },
+      "result": {
+        "study_uid": "study_root",
+        "order": 6,
+        "study_version": null,
+        "cohort_uid": "StudyCohort_000007",
+        "name": "Cohort_Name_7",
+        "short_name": "Cohort_Short_Name_7",
+        "code": "Cohort_code_7",
+        "description": "desc...",
+        "colour_code": "colour_code_7",
+        "number_of_subjects": null,
+        "start_date": "2022-08-22T06:42:26.133476",
+        "user_initials": "unknown-user",
+        "end_date": null,
+        "status": null,
+        "change_type": null,
+        "accepted_version": false,
+        "branch_arm_roots": [
+          {
+            "study_uid": "study_root",
+            "order": 1,
+            "study_version": null,
+            "branch_arm_uid": "StudyBranchArm_000001",
+            "name": "Branch_Arm_Name_1",
+            "short_name": "Branch_Arm_Short_Name_1",
+            "code": "Branch_Arm_code_1",
+            "description": "desc...",
+            "colour_code": "colour...",
+            "randomization_group": "Branch_Arm_randomizationGroup",
+            "number_of_subjects": 100,
+            "start_date": "2022-08-22T06:41:54.441404",
+            "user_initials": "test",
+            "end_date": null,
+            "status": null,
+            "change_type": null,
+            "accepted_version": false,
+            "arm_root": {
+              "study_uid": "study_root",
+              "order": 1,
+              "arm_uid": "StudyArm_000001",
+              "name": "StudyArm_000001",
+              "short_name": "StudyArm_000001",
+              "code": null,
+              "description": null,
+              "arm_colour": null,
+              "randomization_group": null,
+              "number_of_subjects": null,
+              "arm_type": {
+                "term_uid": "term_root_final",
+                "catalogue_name": "SDTM CT",
+                "codelists": [
+                  {
+                    "codelist_uid": "ct_codelist_root_endpoint",
+                    "order": 1
+                  }
+                ],
+                "sponsor_preferred_name": "term_value_name1",
+                "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+                "library_name": "Sponsor",
+                "start_date": "2022-08-22T04:41:53.812000",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Approved version",
+                "user_initials": "TODO initials",
+                "possible_actions": [
+                  "inactivate",
+                  "new_version"
+                ]
+              },
+              "start_date": "2022-08-22T04:41:54.268000",
+              "user_initials": "TODO user initials",
+              "end_date": null,
+              "status": null,
+              "change_type": null,
+              "accepted_version": null
+            }
+          }
+        ],
+        "arm_roots": [
+          {
+            "study_uid": "study_root",
+            "order": 2,
+            "arm_uid": "StudyArm_000002",
+            "name": "StudyArm_000002",
+            "short_name": "StudyArm_000002",
+            "code": null,
+            "description": null,
+            "arm_colour": null,
+            "randomization_group": null,
+            "number_of_subjects": null,
+            "arm_type": {
+              "term_uid": "term_root_final_non_edit",
+              "catalogue_name": "SDTM CT",
+              "codelists": [
+                {
+                  "codelist_uid": "non_editable_cr",
+                  "order": 3
+                }
+              ],
+              "sponsor_preferred_name": "term_value_name3",
+              "sponsor_preferred_name_sentence_case": "term_value_name_sentence_case",
+              "library_name": "CDISC",
+              "start_date": "2022-08-22T04:41:53.812000",
+              "end_date": null,
+              "status": "Final",
+              "version": "1.0",
+              "change_description": "Approved version",
+              "user_initials": "TODO initials",
+              "possible_actions": [
+                "inactivate",
+                "new_version"
+              ]
+            },
+            "start_date": "2022-08-22T04:41:54.268000",
+            "user_initials": "TODO user initials",
+            "end_date": null,
+            "status": null,
+            "change_type": null,
+            "accepted_version": null
+          }
+        ]
+      }
+    }
+  }
+]

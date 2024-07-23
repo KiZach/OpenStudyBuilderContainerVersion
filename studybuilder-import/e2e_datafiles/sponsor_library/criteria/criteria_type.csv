@@ -1,0 +1,7 @@
+CT_CD_LIST_SUBMVAL,CT_SUBMVAL,CT_NAME,NAME_SENTENSE_CASE,ORDER,DEFINITION
+CRITRTP,Inclusion Criteria,Inclusion Criteria,inclusion criteria,1,Criteria for inclusion into the study
+CRITRTP,Exclusion Criteria,Exclusion Criteria,exclusion criteria,2,Criteria for exclusion from the study
+CRITRTP,Run-in Criteria,Run-in Criteria,run-in criteria,3,Criteria for run-in period in the study
+CRITRTP,Randomisation Criteria,Randomisation Criteria,randomisation criteria,4,Criteria for randomisation in the study
+CRITRTP,Dosing Criteria,Dosing Criteria,dosing criteria,5,Criteria for dosing in the study
+CRITRTP,Withdrawal Criteria,Withdrawal Criteria,withdrawal criteria,6,Criteria for withdrawal from the study

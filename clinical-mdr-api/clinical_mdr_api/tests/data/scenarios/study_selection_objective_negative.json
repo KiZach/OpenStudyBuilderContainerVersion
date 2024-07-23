@@ -1,0 +1,78 @@
+[
+    {
+        "name": "Test adding selection objective does not exists",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "objective_uid": "Objective_000001_does_not_exists",
+                "objective_level": "Primary"
+            },
+            "url": "/studies/study_root/study-objectives"
+        },
+        "response": {
+            "code": 404,
+            "headers": {
+                "content-length": "336",
+                "content-type": "application/json"
+            },
+            "result": {
+                "type": "NotFoundException",
+                "message": "No ObjectiveRoot with UID (Objective_000001_does_not_exists) found in given status, date and version.",
+                "time": "2024-02-14T12:14:30.722911",
+                "path": "http://testserver/studies/study_root/study-objectives",
+                "method": "POST"
+            }
+        }
+    },
+    {
+        "name": "Test selection objective is retired",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "objective_uid": "Objective_000005",
+                "objective_level": "Primary"
+            },
+            "url": "/studies/study_root/study-objectives"
+        },
+        "response": {
+            "code": 404,
+            "headers": {
+                "content-length": "336",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "No ObjectiveRoot with UID (Objective_000005) found in given status, date and version.",
+                "method": "POST",
+                "path": "http://testserver/studies/study_root/study-objectives",
+                "time": "2020-11-03T23:42:41.518146",
+                "type": "NotFoundException"
+            }
+        }
+    },
+    {
+        "name": "Test get specific selection where no selection exists",
+        "request": {
+            "sleep": 2,
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "/studies/study_root/study-objectives/study_objective_uid"
+        },
+        "response": {
+            "code": 404,
+            "headers": {
+                "content-length": "336",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "The study objective with uid (study_objective_uid) does not exist",
+                "method": "GET",
+                "path": "http://testserver/studies/study_root/study-objectives/study_objective_uid",
+                "time": "2020-11-03T23:42:41.518146",
+                "type": "NotFoundException"
+            }
+        }
+    }
+]

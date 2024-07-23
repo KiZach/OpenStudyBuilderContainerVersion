@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Test get packages changes new package older than old package",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "http://testserver/ct/packages/changes?catalogue_name=catalogue&old_package_date=2020-06-26&new_package_date=2020-03-27"
+        },
+        "response": {
+            "code": 400,
+            "headers": {},
+            "result": {
+                "message": "New package can't be older than old package",
+                "method": "GET",
+                "path": "http://testserver/ct/packages/changes?catalogue_name=catalogue&old_package_date=2020-06-26&new_package_date=2020-03-27",
+                "time": "2020-11-03T23:42:41.518146",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test get packages changes non-existent catalogue passed",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "http://testserver/ct/packages/changes?catalogue_name=non_existent_catalogue&old_package_date=2020-03-27&new_package_date=2020-06-26"
+        },
+        "response": {
+            "code": 400,
+            "headers": {},
+            "result": {
+                "message": "There is no catalogue identified by provided catalogue name (non_existent_catalogue)",
+                "method": "GET",
+                "path": "http://testserver/ct/packages/changes?catalogue_name=non_existent_catalogue&old_package_date=2020-03-27&new_package_date=2020-06-26",
+                "time": "2020-11-03T23:42:41.518146",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test get packages changes non-existent date for given catalogue",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "http://testserver/ct/packages/changes?catalogue_name=catalogue&old_package_date=2020-03-27&new_package_date=2020-06-01"
+        },
+        "response": {
+            "code": 400,
+            "headers": {},
+            "result": {
+                "message": "There is no package with the following date (2020-06-01) for the following catalogue (catalogue)",
+                "method": "GET",
+                "path": "http://testserver/ct/packages/changes?catalogue_name=catalogue&old_package_date=2020-03-27&new_package_date=2020-06-01",
+                "time": "2020-11-03T23:42:41.518146",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test get packages dates non-existent catalogue passed",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "http://testserver/ct/packages/dates?catalogue_name=non_existent_catalogue"
+        },
+        "response": {
+            "code": 400,
+            "headers": {},
+            "result": {
+                "message": "There is no catalogue identified by provided catalogue name (non_existent_catalogue)",
+                "method": "GET",
+                "path": "http://testserver/ct/packages/dates?catalogue_name=non_existent_catalogue",
+                "time": "2020-11-03T23:42:41.518146",
+                "type": "BusinessLogicException"
+            }
+        }
+    }
+]

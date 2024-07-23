@@ -1,0 +1,5 @@
+Metadata-Version: 1.1
+Name: opencensus-ext-azure
+Version: 1.1.7
+Summary: OpenCensus Azure Monitor Exporter
+License: Apache-2.0

@@ -1,0 +1,2186 @@
+[
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "Randomized",
+      "name_sentence_case": "randomized",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T13:03:12.119527",
+      "status": "Final",
+      "uid": "Activity_001909",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_name": "Randomisation",
+          "activity_subgroup_name": "Randomisation",
+          "activity_group_uid": "ActivityGroup_194",
+          "activity_subgroup_uid": "ActivitySubGroup_194"
+        },
+        {
+          "activity_group_name": "Randomisation Criteria and Randomisation",
+          "activity_subgroup_name": "Randomisation Criteria and Randomisation",
+          "activity_group_uid": "ActivityGroup_195",
+          "activity_subgroup_uid": "ActivitySubGroup_195"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_194"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_194"
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SUBJECT RELATED INFORMATION",
+      "sponsor_preferred_name_sentence_case": "subject related information",
+      "start_date": "2022-10-18T12:53:17.537289",
+      "status": "Final",
+      "term_uid": "CTTerm_000069",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 1,
+    "show_activity_group_in_protocol_flowchart": true,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:20:38.422345",
+    "study_activity_uid": "StudyActivity_000007",
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "End of Study",
+      "name_sentence_case": "end of study",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T12:58:51.443142",
+      "status": "Final",
+      "uid": "Activity_000574",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_name": "End of Study",
+          "activity_subgroup_name": "End of Study",
+          "activity_group_uid": "ActivityGroup_81",
+          "activity_subgroup_uid": "ActivitySubGroup_81"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_81"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_81"
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SUBJECT RELATED INFORMATION",
+      "sponsor_preferred_name_sentence_case": "subject related information",
+      "start_date": "2022-10-18T12:53:17.537289",
+      "status": "Final",
+      "term_uid": "CTTerm_000069",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 2,
+    "show_activity_group_in_protocol_flowchart": true,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:20:38.527198",
+    "study_activity_uid": "StudyActivity_000008",
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "Cardiovascular System",
+      "name_sentence_case": "cardiovascular system",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T12:58:01.716369",
+      "status": "Final",
+      "uid": "Activity_000318",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_uid": "ActivityGroup_000003",
+          "activity_group_name": "General",
+          "activity_subgroup_uid": "ActivitySubGroup_000004",
+          "activity_subgroup_name": "Physical Examination - early ph1"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_000004"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_000003"
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SUBJECT RELATED INFORMATION",
+      "sponsor_preferred_name_sentence_case": "subject related information",
+      "start_date": "2022-10-18T12:53:17.537289",
+      "status": "Final",
+      "term_uid": "CTTerm_000069",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 3,
+    "show_activity_group_in_protocol_flowchart": true,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:20:38.303696",
+    "study_activity_uid": "StudyActivity_000009",
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "Abdomen",
+      "name_sentence_case": "abdomen",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T12:57:23.866604",
+      "status": "Final",
+      "uid": "Activity_000122",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_uid": "ActivityGroup_000003",
+          "activity_group_name": "General",
+          "activity_subgroup_uid": "ActivitySubGroup_000004",
+          "activity_subgroup_name": "Physical Examination - early ph1"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_000004"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_000003"
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SUBJECT RELATED INFORMATION",
+      "sponsor_preferred_name_sentence_case": "subject related information",
+      "start_date": "2022-10-18T12:53:17.537289",
+      "status": "Final",
+      "term_uid": "CTTerm_000069",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 4,
+    "show_activity_group_in_protocol_flowchart": true,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:20:39.630376",
+    "study_activity_uid": "StudyActivity_000010",
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "Central and Peripheral Nervous System",
+      "name_sentence_case": "central and peripheral nervous system",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T12:58:02.369507",
+      "status": "Final",
+      "uid": "Activity_000321",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_uid": "ActivityGroup_000003",
+          "activity_group_name": "General",
+          "activity_subgroup_uid": "ActivitySubGroup_000004",
+          "activity_subgroup_name": "Physical Examination - early ph1"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_000004"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_000003"
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SUBJECT RELATED INFORMATION",
+      "sponsor_preferred_name_sentence_case": "subject related information",
+      "start_date": "2022-10-18T12:53:17.537289",
+      "status": "Final",
+      "term_uid": "CTTerm_000069",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 5,
+    "show_activity_group_in_protocol_flowchart": false,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:20:39.297481",
+    "study_activity_uid": "StudyActivity_000011",
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "Gastrointestinal System incl. Mouth",
+      "name_sentence_case": "gastrointestinal system incl. mouth",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T12:59:05.174954",
+      "status": "Final",
+      "uid": "Activity_000642",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_uid": "ActivityGroup_000003",
+          "activity_group_name": "General",
+          "activity_subgroup_uid": "ActivitySubGroup_000004",
+          "activity_subgroup_name": "Physical Examination - early ph1"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_000004"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_000003"
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SUBJECT RELATED INFORMATION",
+      "sponsor_preferred_name_sentence_case": "subject related information",
+      "start_date": "2022-10-18T12:53:17.537289",
+      "status": "Final",
+      "term_uid": "CTTerm_000069",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 6,
+    "show_activity_group_in_protocol_flowchart": true,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:20:38.168698",
+    "study_activity_uid": "StudyActivity_000012",
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "General Appearance",
+      "name_sentence_case": "general appearance",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T12:59:05.520156",
+      "status": "Final",
+      "uid": "Activity_000644",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_uid": "ActivityGroup_000003",
+          "activity_group_name": "General",
+          "activity_subgroup_uid": "ActivitySubGroup_000004",
+          "activity_subgroup_name": "Physical Examination - early ph1"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_000004"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_000003"
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SUBJECT RELATED INFORMATION",
+      "sponsor_preferred_name_sentence_case": "subject related information",
+      "start_date": "2022-10-18T12:53:17.537289",
+      "status": "Final",
+      "term_uid": "CTTerm_000069",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 7,
+    "show_activity_group_in_protocol_flowchart": true,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:20:39.842541",
+    "study_activity_uid": "StudyActivity_000013",
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "Musculoskeletal System",
+      "name_sentence_case": "musculoskeletal system",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T13:01:08.022561",
+      "status": "Final",
+      "uid": "Activity_001262",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_uid": "ActivityGroup_000003",
+          "activity_group_name": "General",
+          "activity_subgroup_uid": "ActivitySubGroup_000004",
+          "activity_subgroup_name": "Physical Examination - early ph1"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_000004"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_000003"
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SUBJECT RELATED INFORMATION",
+      "sponsor_preferred_name_sentence_case": "subject related information",
+      "start_date": "2022-10-18T12:53:17.537289",
+      "status": "Final",
+      "term_uid": "CTTerm_000069",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 8,
+    "show_activity_group_in_protocol_flowchart": false,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:20:38.961941",
+    "study_activity_uid": "StudyActivity_000014",
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "Respiratory System",
+      "name_sentence_case": "respiratory system",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T13:03:13.254816",
+      "status": "Final",
+      "uid": "Activity_001915",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_uid": "ActivityGroup_000003",
+          "activity_group_name": "General",
+          "activity_subgroup_uid": "ActivitySubGroup_000004",
+          "activity_subgroup_name": "Physical Examination - early ph1"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_000004"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_000003"
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SUBJECT RELATED INFORMATION",
+      "sponsor_preferred_name_sentence_case": "subject related information",
+      "start_date": "2022-10-18T12:53:17.537289",
+      "status": "Final",
+      "term_uid": "CTTerm_000069",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 9,
+    "show_activity_group_in_protocol_flowchart": false,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:20:38.637112",
+    "study_activity_uid": "StudyActivity_000015",
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "Weight",
+      "name_sentence_case": "weight",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T12:58:01.164578",
+      "status": "Final",
+      "uid": "Activity_000315",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_name": "Body Measurements",
+          "activity_subgroup_name": "Body Measurements",
+          "activity_group_uid": "ActivityGroup_60",
+          "activity_subgroup_uid": "ActivitySubGroup_60"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_60"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_60"
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SUBJECT RELATED INFORMATION",
+      "sponsor_preferred_name_sentence_case": "subject related information",
+      "start_date": "2022-10-18T12:53:17.537289",
+      "status": "Final",
+      "term_uid": "CTTerm_000069",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 10,
+    "show_activity_group_in_protocol_flowchart": false,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:20:38.743718",
+    "study_activity_uid": "StudyActivity_000016",
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "Height",
+      "name_sentence_case": "height",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T12:59:26.826469",
+      "status": "Final",
+      "uid": "Activity_000753",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_name": "Body Measurements",
+          "activity_subgroup_name": "Body Measurements",
+          "activity_group_uid": "ActivityGroup_109",
+          "activity_subgroup_uid": "ActivitySubGroup_109"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_109"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_109"
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SUBJECT RELATED INFORMATION",
+      "sponsor_preferred_name_sentence_case": "subject related information",
+      "start_date": "2022-10-18T12:53:17.537289",
+      "status": "Final",
+      "term_uid": "CTTerm_000069",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 11,
+    "show_activity_group_in_protocol_flowchart": false,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:20:38.843776",
+    "study_activity_uid": "StudyActivity_000017",
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "Eligibility Criteria Met",
+      "name_sentence_case": "eligibility criteria met",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T12:58:50.849620",
+      "status": "Final",
+      "uid": "Activity_000571",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_name": "Eligibility Criteria",
+          "activity_subgroup_name": "Eligibility Criteria",
+          "activity_group_uid": "ActivityGroup_80",
+          "activity_subgroup_uid": "ActivitySubGroup_80"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_80"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_80"
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SUBJECT RELATED INFORMATION",
+      "sponsor_preferred_name_sentence_case": "subject related information",
+      "start_date": "2022-10-18T12:53:17.537289",
+      "status": "Final",
+      "term_uid": "CTTerm_000069",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 12,
+    "show_activity_group_in_protocol_flowchart": false,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:20:39.409115",
+    "study_activity_uid": "StudyActivity_000018",
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "HbA1c",
+      "name_sentence_case": "hba1c",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T12:59:26.204025",
+      "status": "Final",
+      "uid": "Activity_000750",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_name": "Laboratory Assessments",
+          "activity_subgroup_name": "Glucose Metabolism",
+          "activity_group_uid": "ActivityGroup_107",
+          "activity_subgroup_uid": "ActivitySubGroup_107"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_107"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_107"
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "EFFICACY",
+      "sponsor_preferred_name_sentence_case": "efficacy",
+      "start_date": "2022-10-18T12:53:16.631249",
+      "status": "Final",
+      "term_uid": "CTTerm_000064",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 13,
+    "show_activity_group_in_protocol_flowchart": true,
+    "show_activity_in_protocol_flowchart": true,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:20:26.475115",
+    "study_activity_uid": "StudyActivity_000019",
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "Mean glucose",
+      "name_sentence_case": "mean glucose",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T12:59:08.769077",
+      "status": "Final",
+      "uid": "Activity_000660",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_uid": "ActivityGroup_000003",
+          "activity_group_name": "General",
+          "activity_subgroup_uid": "ActivitySubGroup_000066",
+          "activity_subgroup_name": "Self Measured Plasma Glucose"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_000066"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_000003"
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "EFFICACY",
+      "sponsor_preferred_name_sentence_case": "efficacy",
+      "start_date": "2022-10-18T12:53:16.631249",
+      "status": "Final",
+      "term_uid": "CTTerm_000064",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 14,
+    "show_activity_group_in_protocol_flowchart": false,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:16:28.617476",
+    "study_activity_uid": "StudyActivity_000020",
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "HDL Cholesterol",
+      "name_sentence_case": "hdl cholesterol",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T12:59:26.463251",
+      "status": "Final",
+      "uid": "Activity_000751",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_uid": "ActivityGroup_000004",
+          "activity_group_name": "Laboratory Assessments",
+          "activity_subgroup_uid": "ActivitySubGroup_000062",
+          "activity_subgroup_name": "Lipids"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_000062"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_000004"
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SAFETY",
+      "sponsor_preferred_name_sentence_case": "safety",
+      "start_date": "2022-10-18T12:53:16.815888",
+      "status": "Final",
+      "term_uid": "CTTerm_000065",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 15,
+    "show_activity_group_in_protocol_flowchart": true,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:08:32.192010",
+    "study_activity_uid": "StudyActivity_000021",
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "LDL Cholesterol",
+      "name_sentence_case": "ldl cholesterol",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T13:00:58.419956",
+      "status": "Final",
+      "uid": "Activity_001211",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_uid": "ActivityGroup_000004",
+          "activity_group_name": "Laboratory Assessments",
+          "activity_subgroup_uid": "ActivitySubGroup_000062",
+          "activity_subgroup_name": "Lipids"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_000062"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_000004"
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SAFETY",
+      "sponsor_preferred_name_sentence_case": "safety",
+      "start_date": "2022-10-18T12:53:16.815888",
+      "status": "Final",
+      "term_uid": "CTTerm_000065",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 16,
+    "show_activity_group_in_protocol_flowchart": true,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:08:32.599135",
+    "study_activity_uid": "StudyActivity_000022",
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "Cholesterol",
+      "name_sentence_case": "cholesterol",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T13:03:56.765215",
+      "status": "Final",
+      "uid": "Activity_002136",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_uid": "ActivityGroup_000004",
+          "activity_group_name": "Laboratory Assessments",
+          "activity_subgroup_uid": "ActivitySubGroup_000062",
+          "activity_subgroup_name": "Lipids"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_000062"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_000004"
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SAFETY",
+      "sponsor_preferred_name_sentence_case": "safety",
+      "start_date": "2022-10-18T12:53:16.815888",
+      "status": "Final",
+      "term_uid": "CTTerm_000065",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 17,
+    "show_activity_group_in_protocol_flowchart": true,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:08:32.884022",
+    "study_activity_uid": "StudyActivity_000023",
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "Albumin",
+      "name_sentence_case": "albumin",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T12:57:53.404951",
+      "status": "Final",
+      "uid": "Activity_000274",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_name": "AE Requiring Additional Data",
+          "activity_subgroup_name": "Laboratory Assessment",
+          "activity_group_uid": "ActivityGroup_36",
+          "activity_subgroup_uid": "ActivitySubGroup_36"
+        },
+        {
+          "activity_group_name": "Laboratory Assessments",
+          "activity_subgroup_name": "Urinalysis",
+          "activity_group_uid": "ActivityGroup_40",
+          "activity_subgroup_uid": "ActivitySubGroup_40"
+        },
+        {
+          "activity_group_name": "Laboratory Assessments",
+          "activity_subgroup_name": "Biochemistry",
+          "activity_group_uid": "ActivityGroup_41",
+          "activity_subgroup_uid": "ActivitySubGroup_41"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_36"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_36"
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SAFETY",
+      "sponsor_preferred_name_sentence_case": "safety",
+      "start_date": "2022-10-18T12:53:16.815888",
+      "status": "Final",
+      "term_uid": "CTTerm_000065",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 18,
+    "show_activity_group_in_protocol_flowchart": true,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:08:33.144024",
+    "study_activity_uid": "StudyActivity_000024",
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "Alanine Aminotransferase",
+      "name_sentence_case": "alanine aminotransferase",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T12:57:54.259841",
+      "status": "Final",
+      "uid": "Activity_000278",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_name": "AE Requiring Additional Data",
+          "activity_subgroup_name": "Laboratory Assessment",
+          "activity_group_uid": "ActivityGroup_43",
+          "activity_subgroup_uid": "ActivitySubGroup_43"
+        },
+        {
+          "activity_group_name": "Laboratory Assessments",
+          "activity_subgroup_name": "Biochemistry",
+          "activity_group_uid": "ActivityGroup_44",
+          "activity_subgroup_uid": "ActivitySubGroup_44"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_43"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_43"
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SAFETY",
+      "sponsor_preferred_name_sentence_case": "safety",
+      "start_date": "2022-10-18T12:53:16.815888",
+      "status": "Final",
+      "term_uid": "CTTerm_000065",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 19,
+    "show_activity_group_in_protocol_flowchart": true,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:08:33.406377",
+    "study_activity_uid": "StudyActivity_000025",
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "Creatine Kinase MM",
+      "name_sentence_case": "creatine kinase mm",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T12:58:07.688485",
+      "status": "Final",
+      "uid": "Activity_000347",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_uid": "ActivityGroup_000004",
+          "activity_group_name": "Laboratory Assessments",
+          "activity_subgroup_uid": "ActivitySubGroup_000016",
+          "activity_subgroup_name": "Biochemistry"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_000016"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_000004"
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SAFETY",
+      "sponsor_preferred_name_sentence_case": "safety",
+      "start_date": "2022-10-18T12:53:16.815888",
+      "status": "Final",
+      "term_uid": "CTTerm_000065",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 20,
+    "show_activity_group_in_protocol_flowchart": true,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:08:33.649755",
+    "study_activity_uid": "StudyActivity_000026",
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "Hemoglobin",
+      "name_sentence_case": "hemoglobin",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T12:59:09.079412",
+      "status": "Final",
+      "uid": "Activity_000661",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_uid": "ActivityGroup_000004",
+          "activity_group_name": "Laboratory Assessments",
+          "activity_subgroup_uid": "ActivitySubGroup_000059",
+          "activity_subgroup_name": "Haematology"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_000059"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_000004"
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SAFETY",
+      "sponsor_preferred_name_sentence_case": "safety",
+      "start_date": "2022-10-18T12:53:16.815888",
+      "status": "Final",
+      "term_uid": "CTTerm_000065",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 21,
+    "show_activity_group_in_protocol_flowchart": true,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:08:33.904539",
+    "study_activity_uid": "StudyActivity_000027",
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "Hematocrit",
+      "name_sentence_case": "hematocrit",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T12:59:08.601302",
+      "status": "Final",
+      "uid": "Activity_000659",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_uid": "ActivityGroup_000004",
+          "activity_group_name": "Laboratory Assessments",
+          "activity_subgroup_uid": "ActivitySubGroup_000059",
+          "activity_subgroup_name": "Haematology"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_000059"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_000004"
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SAFETY",
+      "sponsor_preferred_name_sentence_case": "safety",
+      "start_date": "2022-10-18T12:53:16.815888",
+      "status": "Final",
+      "term_uid": "CTTerm_000065",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 22,
+    "show_activity_group_in_protocol_flowchart": true,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:08:34.155182",
+    "study_activity_uid": "StudyActivity_000028",
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "Adverse Event",
+      "name_sentence_case": "adverse event",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T12:57:51.036234",
+      "status": "Final",
+      "uid": "Activity_000261",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_name": "Adverse Event",
+          "activity_subgroup_name": "Adverse Event",
+          "activity_group_uid": "ActivityGroup_35",
+          "activity_subgroup_uid": "ActivitySubGroup_35"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_35"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_35"
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SAFETY",
+      "sponsor_preferred_name_sentence_case": "safety",
+      "start_date": "2022-10-18T12:53:16.815888",
+      "status": "Final",
+      "term_uid": "CTTerm_000065",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 23,
+    "show_activity_group_in_protocol_flowchart": false,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:17:09.636377",
+    "study_activity_uid": "StudyActivity_000029",
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "Pulse Rate",
+      "name_sentence_case": "pulse rate",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T13:03:10.172213",
+      "status": "Final",
+      "uid": "Activity_001899",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_name": "Vital Signs",
+          "activity_subgroup_name": "Vital Signs",
+          "activity_group_uid": "ActivityGroup_191",
+          "activity_subgroup_uid": "ActivitySubGroup_191"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_191"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_191"
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SAFETY",
+      "sponsor_preferred_name_sentence_case": "safety",
+      "start_date": "2022-10-18T12:53:16.815888",
+      "status": "Final",
+      "term_uid": "CTTerm_000065",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 24,
+    "show_activity_group_in_protocol_flowchart": false,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:17:10.222073",
+    "study_activity_uid": "StudyActivity_000030",
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "Diastolic Blood Pressure",
+      "name_sentence_case": "diastolic blood pressure",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T12:58:01.374317",
+      "status": "Final",
+      "uid": "Activity_000316",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_name": "Vital Signs",
+          "activity_subgroup_name": "Vital Signs",
+          "activity_group_uid": "ActivityGroup_61",
+          "activity_subgroup_uid": "ActivitySubGroup_61"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_61"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_61"
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SAFETY",
+      "sponsor_preferred_name_sentence_case": "safety",
+      "start_date": "2022-10-18T12:53:16.815888",
+      "status": "Final",
+      "term_uid": "CTTerm_000065",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 25,
+    "show_activity_group_in_protocol_flowchart": false,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:17:10.356390",
+    "study_activity_uid": "StudyActivity_000031",
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "Systolic Blood Pressure",
+      "name_sentence_case": "systolic blood pressure",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T12:58:01.573310",
+      "status": "Final",
+      "uid": "Activity_000317",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_name": "Vital Signs",
+          "activity_subgroup_name": "Vital Signs",
+          "activity_group_uid": "ActivityGroup_62",
+          "activity_subgroup_uid": "ActivitySubGroup_62"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_62"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_62"
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SAFETY",
+      "sponsor_preferred_name_sentence_case": "safety",
+      "start_date": "2022-10-18T12:53:16.815888",
+      "status": "Final",
+      "term_uid": "CTTerm_000065",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 26,
+    "show_activity_group_in_protocol_flowchart": false,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:17:10.109226",
+    "study_activity_uid": "StudyActivity_000032",
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "Medical History/Concomitant Illness",
+      "name_sentence_case": "medical history/concomitant illness",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T13:01:03.704113",
+      "status": "Final",
+      "uid": "Activity_001239",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_name": "Medical History/Concomitant Illness",
+          "activity_subgroup_name": "Medical History/Concomitant Illness",
+          "activity_group_uid": "ActivityGroup_127",
+          "activity_subgroup_uid": "ActivitySubGroup_127"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_127"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_127"
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SAFETY",
+      "sponsor_preferred_name_sentence_case": "safety",
+      "start_date": "2022-10-18T12:53:16.815888",
+      "status": "Final",
+      "term_uid": "CTTerm_000065",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 27,
+    "show_activity_group_in_protocol_flowchart": false,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:17:09.740955",
+    "study_activity_uid": "StudyActivity_000033",
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "Date of Birth",
+      "name_sentence_case": "date of birth",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T12:58:31.201516",
+      "status": "Final",
+      "uid": "Activity_000470",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_name": "Informed Consent and Demography",
+          "activity_subgroup_name": "Informed Consent and Demography",
+          "activity_group_uid": "ActivityGroup_75",
+          "activity_subgroup_uid": "ActivitySubGroup_75"
+        },
+        {
+          "activity_group_name": "Demography",
+          "activity_subgroup_name": "Demography",
+          "activity_group_uid": "ActivityGroup_76",
+          "activity_subgroup_uid": "ActivitySubGroup_76"
+        }
+      ]
+    },
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_75"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_75"
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SUBJECT RELATED INFORMATION",
+      "sponsor_preferred_name_sentence_case": "subject related information",
+      "start_date": "2022-10-18T12:53:17.537289",
+      "status": "Final",
+      "term_uid": "CTTerm_000069",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 28,
+    "show_activity_group_in_protocol_flowchart": false,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:20:39.082467",
+    "study_activity_uid": "StudyActivity_000034",
+    "study_uid": "Study_000002",
+    "user_initials": "MT"
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "Ethnicity",
+      "name_sentence_case": "ethnicity",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T12:58:55.245837",
+      "status": "Final",
+      "uid": "Activity_000591",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_name": "Informed Consent and Demography",
+          "activity_subgroup_name": "Informed Consent and Demography",
+          "activity_group_uid": "ActivityGroup_87",
+          "activity_subgroup_uid": "ActivitySubGroup_87"
+        },
+        {
+          "activity_group_name": "Demography",
+          "activity_subgroup_name": "Demography",
+          "activity_group_uid": "ActivityGroup_88",
+          "activity_subgroup_uid": "ActivitySubGroup_88"
+        }
+      ]
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SUBJECT RELATED INFORMATION",
+      "sponsor_preferred_name_sentence_case": "subject related information",
+      "start_date": "2022-10-18T12:53:17.537289",
+      "status": "Final",
+      "term_uid": "CTTerm_000069",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 29,
+    "show_activity_group_in_protocol_flowchart": false,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:20:39.187031",
+    "study_activity_uid": "StudyActivity_000035",
+    "study_uid": "Study_000002",
+    "user_initials": "MT",
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_87"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_87"
+    }
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "Informed Consent Obtained",
+      "name_sentence_case": "informed consent obtained",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T13:00:34.778120",
+      "status": "Final",
+      "uid": "Activity_001092",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_name": "Informed Consent and Demography",
+          "activity_subgroup_name": "Informed Consent and Demography",
+          "activity_group_uid": "ActivityGroup_113",
+          "activity_subgroup_uid": "ActivitySubGroup_113"
+        },
+        {
+          "activity_group_name": "Informed Consent",
+          "activity_subgroup_name": "Informed Consent",
+          "activity_group_uid": "ActivityGroup_114",
+          "activity_subgroup_uid": "ActivitySubGroup_114"
+        },
+        {
+          "activity_group_name": "Informed Consent and Demography",
+          "activity_subgroup_name": "Informed Consent and Demography",
+          "activity_group_uid": "ActivityGroup_121",
+          "activity_subgroup_uid": "ActivitySubGroup_121"
+        },
+        {
+          "activity_group_name": "Informed Consent",
+          "activity_subgroup_name": "Informed Consent",
+          "activity_group_uid": "ActivityGroup_122",
+          "activity_subgroup_uid": "ActivitySubGroup_122"
+        },
+        {
+          "activity_group_name": "Future Research Biosample Consent",
+          "activity_subgroup_name": "Future Research Biosample Consent",
+          "activity_group_uid": "ActivityGroup_123",
+          "activity_subgroup_uid": "ActivitySubGroup_123"
+        }
+      ]
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SUBJECT RELATED INFORMATION",
+      "sponsor_preferred_name_sentence_case": "subject related information",
+      "start_date": "2022-10-18T12:53:17.537289",
+      "status": "Final",
+      "term_uid": "CTTerm_000069",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 30,
+    "show_activity_group_in_protocol_flowchart": false,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:20:39.521559",
+    "study_activity_uid": "StudyActivity_000036",
+    "study_uid": "Study_000002",
+    "user_initials": "MT",
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_113"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_113"
+    }
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "Race",
+      "name_sentence_case": "race",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T13:03:11.865952",
+      "status": "Final",
+      "uid": "Activity_001908",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_name": "Informed Consent and Demography",
+          "activity_subgroup_name": "Informed Consent and Demography",
+          "activity_group_uid": "ActivityGroup_192",
+          "activity_subgroup_uid": "ActivitySubGroup_192"
+        },
+        {
+          "activity_group_name": "Demography",
+          "activity_subgroup_name": "Demography",
+          "activity_group_uid": "ActivityGroup_193",
+          "activity_subgroup_uid": "ActivitySubGroup_193"
+        }
+      ]
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SUBJECT RELATED INFORMATION",
+      "sponsor_preferred_name_sentence_case": "subject related information",
+      "start_date": "2022-10-18T12:53:17.537289",
+      "status": "Final",
+      "term_uid": "CTTerm_000069",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 31,
+    "show_activity_group_in_protocol_flowchart": false,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:20:39.732596",
+    "study_activity_uid": "StudyActivity_000037",
+    "study_uid": "Study_000002",
+    "user_initials": "MT",
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_192"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_192"
+    }
+  },
+  {
+    "accepted_version": false,
+    "activity": {
+      "abbreviation": null,
+      "change_description": "Approved version",
+      "definition": null,
+      "end_date": null,
+      "library_name": "Sponsor",
+      "name": "Sex",
+      "name_sentence_case": "sex",
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "start_date": "2022-10-18T13:03:16.999023",
+      "status": "Final",
+      "uid": "Activity_001925",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0",
+      "activity_groupings": [
+        {
+          "activity_group_name": "Informed Consent and Demography",
+          "activity_subgroup_name": "Informed Consent and Demography",
+          "activity_group_uid": "ActivityGroup_206",
+          "activity_subgroup_uid": "ActivitySubGroup_206"
+        },
+        {
+          "activity_group_name": "Demography",
+          "activity_subgroup_name": "Demography",
+          "activity_group_uid": "ActivityGroup_207",
+          "activity_subgroup_uid": "ActivitySubGroup_207"
+        }
+      ]
+    },
+    "flowchart_group": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000020",
+      "end_date": null,
+      "library_name": "Sponsor",
+      "order": null,
+      "possible_actions": [
+        "inactivate",
+        "newVersion"
+      ],
+      "sponsor_preferred_name": "SUBJECT RELATED INFORMATION",
+      "sponsor_preferred_name_sentence_case": "subject related information",
+      "start_date": "2022-10-18T12:53:17.537289",
+      "status": "Final",
+      "term_uid": "CTTerm_000069",
+      "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+      "version": "1.0"
+    },
+    "latest_activity": null,
+    "note": null,
+    "order": 32,
+    "show_activity_group_in_protocol_flowchart": false,
+    "show_activity_in_protocol_flowchart": false,
+    "show_activity_subgroup_in_protocol_flowchart": true,
+    "start_date": "2022-10-20T12:20:39.943393",
+    "study_activity_uid": "StudyActivity_000038",
+    "study_uid": "Study_000002",
+    "user_initials": "MT",
+    "study_activity_subgroup": {
+      "study_activity_subgroup_uid": "not used by import",
+      "activity_subgroup_uid": "ActivitySubGroup_206"
+    },
+    "study_activity_group": {
+      "study_activity_group_uid": "not used by import",
+      "activity_group_uid": "ActivityGroup_206"
+    }
+  }
+]

@@ -1,0 +1,121 @@
+[
+    {
+        "study_uid": "Study_000008",
+        "order": 1,
+        "project_number": "CDISC DEV",
+        "project_name": "CDISC Dev",
+        "study_compound_uid": "StudyCompound_000012",
+        "compound": {
+            "start_date": "2023-08-29T12:05:45.947423+00:00",
+            "end_date": null,
+            "status": "Final",
+            "version": "1.0",
+            "change_description": "Approved version",
+            "user_initials": "unknown-user",
+            "uid": "Compound_000002",
+            "name": "NPH Insulin",
+            "name_sentence_case": "nph insulin",
+            "definition": null,
+            "abbreviation": null,
+            "library_name": "Sponsor",
+            "possible_actions": [
+                "inactivate",
+                "new_version"
+            ],
+            "analyte_number": "anTBD005",
+            "nnc_short_number": null,
+            "nnc_long_number": null,
+            "is_sponsor_compound": true,
+            "is_name_inn": true,
+            "substances": [
+                {
+                    "substance_term_uid": "DictionaryTerm_001020",
+                    "substance_name": "INSULIN HUMAN",
+                    "substance_unii": "1Y17CTI5SR",
+                    "pclass_term_uid": "DictionaryTerm_000052",
+                    "pclass_name": "Insulin",
+                    "pclass_id": "N0000175944"
+                }
+            ],
+            "dose_values": [],
+            "strength_values": [
+                {
+                    "uid": "NumericValueWithUnit_000006",
+                    "value": 100,
+                    "unit_definition_uid": "UnitDefinition_000252",
+                    "unit_label": "IU/mL"
+                }
+            ],
+            "lag_times": [
+                {
+                    "value": 7,
+                    "unit_definition_uid": "UnitDefinition_000364",
+                    "unit_label": "days",
+                    "sdtm_domain_uid": "C49562_AE",
+                    "sdtm_domain_label": "Adverse Event Domain"
+                }
+            ],
+            "delivery_devices": [],
+            "dispensers": [],
+            "projects": [],
+            "brands": [],
+            "half_life": {
+                "uid": "NumericValueWithUnit_000005",
+                "value": 6.6,
+                "unit_definition_uid": "UnitDefinition_000352",
+                "unit_label": "hour"
+            },
+            "dose_frequencies": [],
+            "dosage_forms": [
+                {
+                    "term_uid": "C42946_INJECTION",
+                    "name": "Injectable"
+                }
+            ],
+            "routes_of_administration": [
+                {
+                    "term_uid": "C38299_SUBCUTANEOUS",
+                    "name": "Subcutaneous"
+                }
+            ]
+        },
+        "compound_alias": {
+            "start_date": "2023-08-29T12:05:46.506240+00:00",
+            "end_date": null,
+            "status": "Final",
+            "version": "1.0",
+            "change_description": "Approved version",
+            "user_initials": "unknown-user",
+            "uid": "CompoundAlias_000002",
+            "name": "NPH Insulin",
+            "name_sentence_case": "nph insulin",
+            "definition": null,
+            "abbreviation": null,
+            "library_name": "Sponsor",
+            "possible_actions": [
+                "inactivate",
+                "new_version"
+            ],
+            "compound": {
+                "uid": "Compound_000002",
+                "name": "NPH Insulin"
+            },
+            "is_preferred_synonym": true
+        },
+        "type_of_treatment": {
+            "term_uid": "CTTerm_000125",
+            "name": "Investigational Product"
+        },
+        "route_of_administration": null,
+        "strength_value": null,
+        "dosage_form": null,
+        "dispensed_in": null,
+        "device": null,
+        "formulation": null,
+        "other_info": null,
+        "reason_for_missing_null_value": null,
+        "study_compound_dosing_count": 0,
+        "start_date": "2023-10-03T12:06:48.947172+00:00",
+        "user_initials": "unknown-user"
+    }
+]

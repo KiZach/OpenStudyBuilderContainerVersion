@@ -1,0 +1,181 @@
+[
+  {
+    "name": "No Date Specified, sorting by ct_scope, ct_ver, pkg_nm, ct_cd_list_submval, ct_cd",
+    "request": {
+        "headers": {},
+        "method": "GET",
+        "request": {},
+        "url": "/listings/libraries/all/gcmd/cdisc-ct-val?sort_by=%7B%22ct_scope%22%3Atrue%2C%20%22ct_ver%22%3Atrue%2C%20%22pkg_nm%22%3Atrue%2C%20%22ct_cd_list_submval%22%3Atrue%2C%20%22ct_cd%22%3Atrue%7D"
+    },
+    "response": {
+        "code": 200,
+        "headers": {
+            "content-length": "2",
+            "content-type": "application/json"
+        },
+        "result": {
+          "items": [
+              {
+                "ct_cd": "concept_id1",
+                "ct_cd_list_submval": "old_submission_value1",
+                "ct_scope": "catalogue",
+                "ct_submval": "code_submission_value1",
+                "ct_ver": "2020-03-27",
+                "definition": "definition1",
+                "nci_pref_term": "pref_term1",
+                "pkg_nm": "old_package",
+                "synonyms": "syn1;syn2"
+              },
+              {
+                "ct_cd": "concept_id2",
+                "ct_cd_list_submval": "old_submission_value2",
+                "ct_scope": "catalogue",
+                "ct_submval": "code_submission_value2",
+                "ct_ver": "2020-03-27",
+                "definition": "definition2",
+                "nci_pref_term": "pref_term2",
+                "pkg_nm": "old_package",
+                "synonyms": "syn"
+              },
+              {
+                "ct_cd": "concept_id3",
+                "ct_cd_list_submval": "new_submission_value",
+                "ct_scope": "catalogue",
+                "ct_submval": "code_submission_value3",
+                "ct_ver": "2020-06-26",
+                "definition": "definition3",
+                "nci_pref_term": "pref_term3",
+                "pkg_nm": "new_package",
+                "synonyms": null
+              },
+              {
+                "ct_cd": "concept_id4",
+                "ct_cd_list_submval": "new_submission_value",
+                "ct_scope": "catalogue",
+                "ct_submval": "code_submission_value4",
+                "ct_ver": "2020-06-26",
+                "definition": "definition4",
+                "nci_pref_term": "pref_term4",
+                "pkg_nm": "new_package",
+                "synonyms": "syn1;syn2;syn3"
+              },
+              {
+                "ct_cd": "concept_id",
+                "ct_cd_list_submval": "submission_value1",
+                "ct_scope": "catalogue2",
+                "ct_submval": "code_submission_value",
+                "ct_ver": "2020-06-26",
+                "definition": "definition",
+                "nci_pref_term": "pref_term",
+                "pkg_nm": "package1",
+                "synonyms": "syn1;syn2"
+              },
+              {
+                "ct_cd": "concept_id2",
+                "ct_cd_list_submval": "submission_value2",
+                "ct_scope": "catalogue3",
+                "ct_submval": "code_submission_value2",
+                "ct_ver": "2020-06-26",
+                "definition": "definition2",
+                "nci_pref_term": "pref_term2",
+                "pkg_nm": "package2",
+                "synonyms": "syn1;syn2"
+              }
+          ],
+          "total": 0,
+          "page": 1,
+          "size": 10
+        }
+    }
+  },
+  {
+    "name": "Date Specified, filtering on catalogue",
+    "request": {
+        "headers": {},
+        "method": "GET",
+        "request": {},
+        "url": "/listings/libraries/all/gcmd/cdisc-ct-val?catalogue_name=catalogue2,catalogue3&sort_by=%7B%22ct_scope%22%3Atrue%2C%20%22ct_ver%22%3Atrue%2C%20%22pkg_nm%22%3Atrue%2C%20%22ct_cd_list_submval%22%3Atrue%2C%20%22ct_cd%22%3Atrue%7D"
+    },
+    "response": {
+        "code": 200,
+        "headers": {
+            "content-length": "2",
+            "content-type": "application/json"
+        },
+        "result": {
+          "items": [
+             {
+                "ct_cd": "concept_id",
+                "ct_cd_list_submval": "submission_value1",
+                "ct_scope": "catalogue2",
+                "ct_submval": "code_submission_value",
+                "ct_ver": "2020-06-26",
+                "definition": "definition",
+                "nci_pref_term": "pref_term",
+                "pkg_nm": "package1",
+                "synonyms": "syn1;syn2"
+              },
+              {
+                "ct_cd": "concept_id2",
+                "ct_cd_list_submval": "submission_value2",
+                "ct_scope": "catalogue3",
+                "ct_submval": "code_submission_value2",
+                "ct_ver": "2020-06-26",
+                "definition": "definition2",
+                "nci_pref_term": "pref_term2",
+                "pkg_nm": "package2",
+                "synonyms": "syn1;syn2"
+              }
+          ],
+          "total": 0,
+          "page": 1,
+          "size": 10
+        }
+    }
+  },
+  {
+    "name": "filtering on pkg_nm",
+    "request": {
+        "headers": {},
+        "method": "GET",
+        "request": {},
+        "url": "/listings/libraries/all/gcmd/cdisc-ct-val?package=new_package&sort_by=%7B%22ct_scope%22%3Atrue%2C%20%22ct_ver%22%3Atrue%2C%20%22pkg_nm%22%3Atrue%2C%20%22ct_cd_list_submval%22%3Atrue%2C%20%22ct_cd%22%3Atrue%7D"
+    },
+    "response": {
+        "code": 200,
+        "headers": {
+            "content-length": "2",
+            "content-type": "application/json"
+        },
+        "result": {
+          "items": [
+             {
+                "ct_cd": "concept_id3",
+                "ct_cd_list_submval": "new_submission_value",
+                "ct_scope": "catalogue",
+                "ct_submval": "code_submission_value3",
+                "ct_ver": "2020-06-26",
+                "definition": "definition3",
+                "nci_pref_term": "pref_term3",
+                "pkg_nm": "new_package",
+                "synonyms": null
+              },
+              {
+                "ct_cd": "concept_id4",
+                "ct_cd_list_submval": "new_submission_value",
+                "ct_scope": "catalogue",
+                "ct_submval": "code_submission_value4",
+                "ct_ver": "2020-06-26",
+                "definition": "definition4",
+                "nci_pref_term": "pref_term4",
+                "pkg_nm": "new_package",
+                "synonyms": "syn1;syn2;syn3"
+              }
+          ],
+          "total": 0,
+          "page": 1,
+          "size": 10
+        }
+    }
+  }
+]

@@ -1,0 +1,33 @@
+{
+    "API_BASE_URL": "/api",
+    "DOC_BASE_URL": "/doc",
+    "NEODASH_BASE_URL": "/neodash",
+
+    "APPINSIGHTS_CONNSTRING": "InstrumentationKey=XYZ;IngestionEndpoint=XYZ",
+    "APPINSIGHTS_DISABLE": "true",
+
+    "OAUTH_API_APP_ID": "",
+    "OAUTH_ENABLED": "false",
+    "OAUTH_METADATA_URL": "",
+    "OAUTH_UI_APP_ID": "",
+
+    "BUILD_NUMBER": "",
+    "BUILD_BRANCH": "",
+    "BUILD_COMMIT": "",
+
+    "AUTH_APP_ID": "",
+    "AUTH_AUTHORITY": "",
+    "AUTH_CLIENT_ID": "",
+    "AUTH_ENABLED": "",
+
+    "API_BUILD_NUMBER" : "OSB v0.9.1",
+    "DATA_IMPORT_BUILD_NUMBER": "N/A",
+    "DOCUMENTATION_PORTAL_BUILD_NUMBER" : "OSB v0.9.1",
+    "FRONTEND_BUILD_NUMBER" : "OSB v0.9.1",
+    "NEO4J_MDR_BUILD_NUMBER": "N/A",
+    "NEODASH_BUILD_NUMBER": "N/A",
+    "RELEASE_VERSION_NUMBER" : "OSB v0.9.1",
+    "STANDARDS_IMPORT_BUILD_NUMBER": "N/A",
+    "STUDYBUILDER_EXPORT_BUILD_NUMBER": "N/A",
+    "STUDYBUILDER_VERSION" : "OSB v0.9.1",
+}

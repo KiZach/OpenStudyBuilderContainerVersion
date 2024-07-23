@@ -1,0 +1,178 @@
+[
+   {
+      "name": "Test POST time point which is a TP",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name_sentence_case": "time_point_name_sentence_case1",
+            "definition": "time_point_definition1",
+            "abbreviation": "abbv",
+            "template_parameter": true,
+            "library_name": "Sponsor",
+            "numeric_value_uid": "NumericValue_000001",
+            "unit_definition_uid": "UnitDefinition_000001",
+            "time_reference_uid": "term_root_final"
+         },
+         "url": "/concepts/time-points"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "TimePoint_000001",
+            "name": "1.23 name_1 after term_value_name1",
+            "name_sentence_case": "time_point_name_sentence_case1",
+            "definition": "time_point_definition1",
+            "abbreviation": "abbv",
+            "template_parameter": true,
+            "library_name": "Sponsor",
+            "status": null,
+            "version": null,
+            "change_description": null,
+            "user_initials": null,
+            "start_date": null,
+            "end_date": null,
+            "numeric_value_uid": "NumericValue_000001",
+            "unit_definition_uid": "UnitDefinition_000001",
+            "time_reference_uid": "term_root_final"
+         }
+      }
+   },
+   {
+      "name": "Test POST time point which is a TP existing time point is returned",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name_sentence_case": "time_point_name_sentence_case1",
+            "definition": "time_point_definition1",
+            "abbreviation": "abbv",
+            "template_parameter": true,
+            "library_name": "Sponsor",
+            "numeric_value_uid": "NumericValue_000001",
+            "unit_definition_uid": "UnitDefinition_000001",
+            "time_reference_uid": "term_root_final"
+         },
+         "url": "/concepts/time-points"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "TimePoint_000001",
+            "name": "1.23 name_1 after term_value_name1",
+            "name_sentence_case": "time_point_name_sentence_case1",
+            "definition": "time_point_definition1",
+            "abbreviation": "abbv",
+            "template_parameter": true,
+            "library_name": "Sponsor",
+            "status": null,
+            "version": null,
+            "change_description": null,
+            "user_initials": null,
+            "start_date": null,
+            "end_date": null,
+            "numeric_value_uid": "NumericValue_000001",
+            "unit_definition_uid": "UnitDefinition_000001",
+            "time_reference_uid": "term_root_final"
+         }
+      }
+   },
+   {
+      "name": "Test POST time point which is not TP",
+      "request": {
+         "headers": {},
+         "method": "POST",
+         "request": {
+            "name_sentence_case": "time_point_name_sentence_case2",
+            "definition": "time_point_definition2",
+            "abbreviation": "abbv",
+            "template_parameter": false,
+            "library_name": "Sponsor",
+            "numeric_value_uid": "NumericValue_000002",
+            "unit_definition_uid": "UnitDefinition_000001",
+            "time_reference_uid": "term_root_final"
+         },
+         "url": "/concepts/time-points"
+      },
+      "response": {
+         "code": 201,
+         "headers": {},
+         "result": {
+            "uid": "TimePoint_000002",
+            "name": "3.21 name_1 after term_value_name1",
+            "name_sentence_case": "time_point_name_sentence_case2",
+            "definition": "time_point_definition2",
+            "abbreviation": "abbv",
+            "template_parameter": false,
+            "library_name": "Sponsor",
+            "status": null,
+            "version": null,
+            "change_description": null,
+            "user_initials": null,
+            "start_date": null,
+            "end_date": null,
+            "numeric_value_uid": "NumericValue_000002",
+            "unit_definition_uid": "UnitDefinition_000001",
+            "time_reference_uid": "term_root_final"
+         }
+      }
+   },
+   {
+      "name": "Test GET all time points",
+      "request": {
+         "headers": {},
+         "method": "GET",
+         "request": {},
+         "url": "/concepts/time-points?total_count=true"
+      },
+      "response": {
+         "code": 200,
+         "headers": {},
+         "result": {
+            "items": [
+               {
+                  "uid": "TimePoint_000001",
+                  "name": "1.23 name_1 after term_value_name1",
+                  "name_sentence_case": "time_point_name_sentence_case1",
+                  "definition": "time_point_definition1",
+                  "abbreviation": "abbv",
+                  "template_parameter": true,
+                  "library_name": "Sponsor",
+                  "status": null,
+                  "version": null,
+                  "change_description": null,
+                  "user_initials": null,
+                  "start_date": null,
+                  "end_date": null,
+                  "numeric_value_uid": "NumericValue_000001",
+                  "unit_definition_uid": "UnitDefinition_000001",
+                  "time_reference_uid": "term_root_final"
+               },
+               {
+                  "uid": "TimePoint_000002",
+                  "name": "3.21 name_1 after term_value_name1",
+                  "name_sentence_case": "time_point_name_sentence_case2",
+                  "definition": "time_point_definition2",
+                  "abbreviation": "abbv",
+                  "template_parameter": false,
+                  "library_name": "Sponsor",
+                  "status": null,
+                  "version": null,
+                  "change_description": null,
+                  "user_initials": null,
+                  "start_date": null,
+                  "end_date": null,
+                  "numeric_value_uid": "NumericValue_000002",
+                  "unit_definition_uid": "UnitDefinition_000001",
+                  "time_reference_uid": "term_root_final"
+               }
+            ],
+            "total": 2,
+            "page": 1,
+            "size": 10
+         }
+      }
+   }
+]

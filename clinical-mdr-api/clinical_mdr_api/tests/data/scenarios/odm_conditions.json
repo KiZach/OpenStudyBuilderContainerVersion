@@ -1,0 +1,985 @@
+[
+    {
+        "name": "Test getting empty list of ODM Conditions",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/conditions"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "2",
+                "content-type": "application/json"
+            },
+            "result": {
+                "items": [],
+                "total": 0,
+                "page": 1,
+                "size": 10
+            }
+        }
+    },
+    {
+        "name": "Test creating a new ODM Condition",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "oid1",
+                "formal_expressions": [
+                    "odm_formal_expression1"
+                ],
+                "descriptions": [
+                    "odm_description2",
+                    "odm_description3"
+                ],
+                "alias_uids": [
+                    "odm_alias1"
+                ]
+            },
+            "url": "concepts/odms/conditions"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmCondition_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "formal_expressions": [
+                    {
+                        "uid": "odm_formal_expression1",
+                        "context": "context1",
+                        "expression": "expression1",
+                        "version": "0.1"
+                    }
+                ],
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test getting non empty list of ODM Conditions",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/conditions"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": {
+                "items": [
+                    {
+                        "uid": "OdmCondition_000001",
+                        "name": "name1",
+                        "library_name": "Sponsor",
+                        "oid": "oid1",
+                        "start_date": "2022-03-03T11:17:56.799074",
+                        "end_date": null,
+                        "status": "Draft",
+                        "version": "0.1",
+                        "change_description": "Initial version",
+                        "user_initials": "TODO user initials",
+                        "formal_expressions": [
+                            {
+                                "uid": "odm_formal_expression1",
+                                "context": "context1",
+                                "expression": "expression1",
+                                "version": "0.1"
+                            }
+                        ],
+                        "descriptions": [
+                            {
+                                "uid": "odm_description2",
+                                "name": "name2",
+                                "language": "language2",
+                                "description": "description2",
+                                "instruction": "instruction2",
+                                "sponsor_instruction": "sponsor_instruction2",
+                                "version": "0.1"
+                            },
+                            {
+                                "uid": "odm_description3",
+                                "name": "name3",
+                                "language": "ENG",
+                                "description": "description3",
+                                "instruction": "instruction3",
+                                "sponsor_instruction": "sponsor_instruction3",
+                                "version": "0.1"
+                            }
+                        ],
+                        "aliases": [
+                            {
+                                "uid": "odm_alias1",
+                                "context": "context1",
+                                "name": "name1",
+                                "version": "0.1"
+                            }
+                        ],
+                        "possible_actions": [
+                            "approve",
+                            "delete",
+                            "edit"
+                        ]
+                    }
+                ],
+                "total": 0,
+                "page": 1,
+                "size": 10
+            }
+        }
+    },
+    {
+        "name": "Test getting possible header values of ODM Conditions",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/conditions/headers?field_name=name"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": [
+                "name1"
+            ]
+        }
+    },
+    {
+        "name": "Test getting a specific ODM Condition",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/conditions/OdmCondition_000001"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmCondition_000001",
+                "name": "name1",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO initials",
+                "formal_expressions": [
+                    {
+                        "uid": "odm_formal_expression1",
+                        "context": "context1",
+                        "expression": "expression1",
+                        "version": "0.1"
+                    }
+                ],
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test getting versions of a specific ODM Condition",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/conditions/OdmCondition_000001/versions"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": [
+                {
+                    "uid": "OdmCondition_000001",
+                    "name": "name1",
+                    "library_name": "Sponsor",
+                    "oid": "oid1",
+                    "start_date": "2022-03-03T13:18:03.230000",
+                    "end_date": null,
+                    "status": "Draft",
+                    "version": "0.1",
+                    "change_description": "Initial version",
+                    "user_initials": "TODO initials",
+                    "formal_expressions": [
+                        {
+                            "uid": "odm_formal_expression1",
+                            "context": "context1",
+                            "expression": "expression1",
+                            "version": "0.1"
+                        }
+                    ],
+                    "descriptions": [
+                        {
+                            "uid": "odm_description2",
+                            "name": "name2",
+                            "language": "language2",
+                            "description": "description2",
+                            "instruction": "instruction2",
+                            "sponsor_instruction": "sponsor_instruction2",
+                            "version": "0.1"
+                        },
+                        {
+                            "uid": "odm_description3",
+                            "name": "name3",
+                            "language": "ENG",
+                            "description": "description3",
+                            "instruction": "instruction3",
+                            "sponsor_instruction": "sponsor_instruction3",
+                            "version": "0.1"
+                        }
+                    ],
+                    "aliases": [
+                        {
+                            "uid": "odm_alias1",
+                            "context": "context1",
+                            "name": "name1",
+                            "version": "0.1"
+                        }
+                    ],
+                    "possible_actions": [
+                        "approve",
+                        "delete",
+                        "edit"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "name": "Test updating an existing ODM Condition",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "name10",
+                "oid": "oid1",
+                "formal_expressions": [
+                    "odm_formal_expression1"
+                ],
+                "change_description": "name changed",
+                "descriptions": [
+                    "odm_description2",
+                    "odm_description3"
+                ],
+                "alias_uids": [
+                    "odm_alias1"
+                ]
+            },
+            "url": "concepts/odms/conditions/OdmCondition_000001"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmCondition_000001",
+                "name": "name10",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.2",
+                "change_description": "name changed",
+                "user_initials": "TODO initials",
+                "formal_expressions": [
+                    {
+                        "uid": "odm_formal_expression1",
+                        "context": "context1",
+                        "expression": "expression1",
+                        "version": "0.1"
+                    }
+                ],
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test approving an ODM Condition",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/conditions/OdmCondition_000001/approvals"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmCondition_000001",
+                "name": "name10",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Approved version",
+                "user_initials": "TODO initials",
+                "formal_expressions": [
+                    {
+                        "uid": "odm_formal_expression1",
+                        "context": "context1",
+                        "expression": "expression1",
+                        "version": "0.1"
+                    }
+                ],
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test inactivating a specific ODM Condition",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "concepts/odms/conditions/OdmCondition_000001/activations"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmCondition_000001",
+                "name": "name10",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Retired",
+                "version": "1.0",
+                "change_description": "Inactivated version",
+                "user_initials": "TODO initials",
+                "formal_expressions": [
+                    {
+                        "uid": "odm_formal_expression1",
+                        "context": "context1",
+                        "expression": "expression1",
+                        "version": "0.1"
+                    }
+                ],
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "possible_actions": [
+                    "delete",
+                    "reactivate"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test reactivating a specific ODM Condition",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/conditions/OdmCondition_000001/activations"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmCondition_000001",
+                "name": "name10",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Reactivated version",
+                "user_initials": "TODO initials",
+                "formal_expressions": [
+                    {
+                        "uid": "odm_formal_expression1",
+                        "context": "context1",
+                        "expression": "expression1",
+                        "version": "0.1"
+                    }
+                ],
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test creating a new ODM Condition version",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/conditions/OdmCondition_000001/versions"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmCondition_000001",
+                "name": "name10",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "1.1",
+                "change_description": "New draft created",
+                "user_initials": "TODO user initials",
+                "formal_expressions": [
+                    {
+                        "uid": "odm_formal_expression1",
+                        "context": "context1",
+                        "expression": "expression1",
+                        "version": "0.1"
+                    }
+                ],
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "possible_actions": [
+                    "approve",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Create a new ODM Condition for deleting it",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "name - delete",
+                "oid": "oid2",
+                "formal_expressions": [],
+                "descriptions": [
+                    "odm_description3"
+                ],
+                "alias_uids": []
+            },
+            "url": "concepts/odms/conditions"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmCondition_000002",
+                "name": "name - delete",
+                "library_name": "Sponsor",
+                "oid": "oid2",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "formal_expressions": [],
+                "descriptions": [
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test deleting a specific ODM Condition",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "concepts/odms/conditions/OdmCondition_000002"
+        },
+        "response": {
+            "code": 204,
+            "headers": {
+                "content-length": "2",
+                "content-type": "application/json"
+            },
+            "result": null
+        }
+    },
+    {
+        "name": "Test creating a new ODM Condition with relations",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "string",
+                "oid": "string",
+                "formal_expressions": [
+                    {
+                        "context": "string",
+                        "expression": "string"
+                    }
+                ],
+                "descriptions": [
+                    "odm_description3",
+                    {
+                        "name": "string2",
+                        "library_name": "Sponsor",
+                        "language": "DAN",
+                        "description": "string2",
+                        "instruction": "string2",
+                        "sponsor_instruction": "string2"
+                    }
+                ],
+                "alias_uids": []
+            },
+            "url": "concepts/odms/conditions"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmCondition_000003",
+                "name": "string",
+                "library_name": "Sponsor",
+                "oid": "string",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "formal_expressions": [
+                    {
+                        "uid": "OdmFormalExpression_000001",
+                        "context": "string",
+                        "expression": "string",
+                        "version": "0.1"
+                    }
+                ],
+                "descriptions": [
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "OdmDescription_000001",
+                        "name": "string2",
+                        "language": "DAN",
+                        "description": "string2",
+                        "instruction": "string2",
+                        "sponsor_instruction": "string2",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test updating an existing ODM Condition with relations",
+        "request": {
+            "headers": {},
+            "method": "PATCH",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "name10",
+                "oid": "oid1",
+                "change_description": "name changed",
+                "formal_expressions": [
+                    {
+                        "uid": "odm_formal_expression1",
+                        "context": "context1",
+                        "expression": "expression1",
+                        "change_description": "nothing changed"
+                    },
+                    {
+                        "library_name": "Sponsor",
+                        "context": "context2",
+                        "expression": "expression2"
+                    }
+                ],
+                "descriptions": [
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "change_description": "nothing changed"
+                    },
+                    {
+                        "name": "string3",
+                        "library_name": "Sponsor",
+                        "language": "ARA",
+                        "description": "string3",
+                        "instruction": "string3",
+                        "sponsor_instruction": "string3"
+                    }
+                ],
+                "alias_uids": [
+                    "odm_alias1"
+                ]
+            },
+            "url": "concepts/odms/conditions/OdmCondition_000001"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmCondition_000001",
+                "name": "name10",
+                "library_name": "Sponsor",
+                "oid": "oid1",
+                "start_date": "2022-03-03T13:18:03.230000",
+                "end_date": null,
+                "status": "Draft",
+                "version": "1.2",
+                "change_description": "name changed",
+                "user_initials": "TODO initials",
+                "formal_expressions": [
+                    {
+                        "uid": "odm_formal_expression1",
+                        "context": "context1",
+                        "expression": "expression1",
+                        "version": "0.2"
+                    },
+                    {
+                        "uid": "OdmFormalExpression_000002",
+                        "context": "context2",
+                        "expression": "expression2",
+                        "version": "0.1"
+                    }
+                ],
+                "descriptions": [
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "OdmDescription_000002",
+                        "name": "string3",
+                        "language": "ARA",
+                        "description": "string3",
+                        "instruction": "string3",
+                        "sponsor_instruction": "string3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "possible_actions": [
+                    "approve",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test getting UIDs of a specific ODM Condition's active relationships",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/conditions/OdmCondition_000001/relationships"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": {}
+        }
+    }
+]

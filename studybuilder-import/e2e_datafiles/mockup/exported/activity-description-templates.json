@@ -1,0 +1,107 @@
+[
+  {
+    "activity_groups": [
+      {
+        "abbreviation": null,
+        "change_description": "Approved version",
+        "definition": "Definition not provided",
+        "end_date": null,
+        "library_name": "Sponsor",
+        "name": "Examinations",
+        "name_sentence_case": "Examinations",
+        "possible_actions": [
+          "inactivate",
+          "newVersion"
+        ],
+        "start_date": "2022-05-23T11:57:41.059396",
+        "status": "Final",
+        "uid": "ActivityGroup_000004",
+        "user_initials": "unknown-user",
+        "version": "1.0"
+      }
+    ],
+    "activity_subgroups": [
+      {
+        "abbreviation": null,
+        "activity_groups": [
+          {
+            "name": "Examinations",
+            "uid": "ActivityGroup_000004"
+          }
+        ],
+        "change_description": "Approved version",
+        "definition": null,
+        "end_date": null,
+        "library_name": "Sponsor",
+        "name": "Physical Examination",
+        "name_sentence_case": "Physical Examination",
+        "possible_actions": [
+          "inactivate",
+          "newVersion"
+        ],
+        "start_date": "2022-05-23T11:57:44.151961",
+        "status": "Final",
+        "uid": "ActivitySubGroup_000040",
+        "user_initials": "unknown-user",
+        "version": "1.0"
+      }
+    ],
+    "activities": null,
+    "change_description": "Initial version",
+    "default_parameter_values": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": []
+        }
+      ]
+    },
+    "editable_instance": false,
+    "end_date": null,
+    "indications": [
+      {
+        "abbreviation": "HFpEF",
+        "change_description": "Approved version",
+        "definition": "Heart failure with normal ejection fraction (disorder)",
+        "dictionary_id": "446221000",
+        "end_date": null,
+        "library_name": "SNOMED",
+        "name": "Heart failure with normal ejection fraction",
+        "name_sentence_case": "heart failure with normal ejection fraction",
+        "possible_actions": [
+          "inactivate",
+          "newVersion"
+        ],
+        "start_date": "2022-05-23T11:41:26.428194",
+        "status": "Final",
+        "term_uid": "DictionaryTerm_000038",
+        "user_initials": "unknown-user",
+        "version": "1.0"
+      }
+    ],
+    "library": {
+      "is_editable": true,
+      "name": "Sponsor"
+    },
+    "name": "<p>some [Compound]</p>",
+    "name_plain": "some [Compound]",
+    "parameters": [
+      {
+        "name": "Compound",
+        "values": null
+      }
+    ],
+    "possible_actions": [
+      "approve",
+      "delete",
+      "edit"
+    ],
+    "start_date": "2022-05-24T09:55:27.092153",
+    "status": "Draft",
+    "study_count": 0,
+    "uid": "ActivityDescriptionTemplate_000001",
+    "user_initials": "unknown-user",
+    "version": "0.1"
+  }
+]

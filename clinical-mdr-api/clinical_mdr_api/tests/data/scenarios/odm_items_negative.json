@@ -1,0 +1,1196 @@
+[
+    {
+        "name": "Create a new ODM Item",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "oid1",
+                "prompt": "prompt1",
+                "datatype": "datatype1",
+                "length": 11,
+                "significant_digits": 11,
+                "sas_field_name": "sas_field_name1",
+                "sds_var_name": "sds_var_name1",
+                "origin": "origin1",
+                "comment": "comment1",
+                "descriptions": [
+                    "odm_description2",
+                    "odm_description3"
+                ],
+                "alias_uids": [
+                    "odm_alias1"
+                ],
+                "unit_definitions": [
+                    {
+                        "uid": "unit_definition_root1",
+                        "mandatory": false,
+                        "order": 1
+                    }
+                ],
+                "codelist_uid": "editable_cr",
+                "terms": [
+                    {
+                        "uid": "term_root_final",
+                        "mandatory": true,
+                        "order": 1,
+                        "display_text": null,
+                        "version": "1.0"
+                    }
+                ]
+            },
+            "url": "concepts/odms/items"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmItem_000001",
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "oid1",
+                "prompt": "prompt1",
+                "datatype": "datatype1",
+                "length": 11,
+                "significant_digits": 11,
+                "sas_field_name": "sas_field_name1",
+                "sds_var_name": "sds_var_name1",
+                "origin": "origin1",
+                "comment": "comment1",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "unit_definitions": [
+                    {
+                        "uid": "unit_definition_root1",
+                        "name": "name1",
+                        "mandatory": false,
+                        "order": 1,
+                        "ucum": {
+                            "term_uid": "term_root1_uid",
+                            "name": "name1"
+                        },
+                        "ct_units": [
+                            {
+                                "term_uid": "C25532_name1",
+                                "name": "name1"
+                            }
+                        ]
+                    }
+                ],
+                "codelist": {
+                    "uid": "editable_cr",
+                    "name": "codelist attributes value1",
+                    "submission_value": "codelist submission value1",
+                    "preferred_term": "codelist preferred term"
+                },
+                "terms": [
+                    {
+                        "term_uid": "term_root_final",
+                        "name": "term_value_name1",
+                        "mandatory": true,
+                        "order": 1,
+                        "display_text": null,
+                        "version": "1.0"
+                    }
+                ],
+                "activity": null,
+                "vendor_elements": [],
+                "vendor_attributes": [],
+                "vendor_element_attributes": [],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test cannot add ODM Vendor Attribute with an invalid value to an ODM Item",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": [
+                {
+                    "uid": "odm_vendor_attribute3",
+                    "value": "3423"
+                }
+            ],
+            "url": "concepts/odms/items/OdmItem_000001/vendor-attributes"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "type": "BusinessLogicException",
+                "message": "Provided values for following attributes don't match their regex pattern:\n\n{'odm_vendor_attribute3': '^[a-zA-Z]+$'}",
+                "time": "2022-12-07T07: 23: 26.057208",
+                "path": "http://testserver/concepts/odms/items/OdmItem_000001/vendor-attributes",
+                "method": "POST"
+            }
+        }
+    },
+    {
+        "name": "Test cannot add anon-compatible ODM Vendor Attribute to an ODM Item",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": [
+                {
+                    "uid": "odm_vendor_attribute5",
+                    "value": "value"
+                }
+            ],
+            "url": "concepts/odms/items/OdmItem_000001/vendor-attributes"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "Trying to add non-compatible ODM Vendor:\n\n{'odm_vendor_attribute5': ['NonCompatibleVendor']}",
+                "time": "2022-03-07T12:30:50.195156",
+                "path": "http://testserver/concepts/odms/items/OdmItem_000001/vendor-attributes",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot add ODM Vendor Element Attribute with an invalid value to an ODM Item",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": [
+                {
+                    "uid": "odm_vendor_attribute1",
+                    "value": "3423"
+                }
+            ],
+            "url": "concepts/odms/items/OdmItem_000001/vendor-element-attributes"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "type": "BusinessLogicException",
+                "message": "Provided values for following attributes don't match their regex pattern:\n\n{'odm_vendor_attribute1': '^[a-zA-Z]+$'}",
+                "time": "2022-12-07T07: 23: 26.057208",
+                "path": "http://testserver/concepts/odms/items/OdmItem_000001/vendor-element-attributes",
+                "method": "POST"
+            }
+        }
+    },
+    {
+        "name": "Add ODM Vendor Element to an ODM Item",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": [
+                {
+                    "uid": "odm_vendor_element1",
+                    "value": "value1"
+                }
+            ],
+            "url": "concepts/odms/items/OdmItem_000001/vendor-elements"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmItem_000001",
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "oid1",
+                "prompt": "prompt1",
+                "datatype": "datatype1",
+                "length": 11,
+                "significant_digits": 11,
+                "sas_field_name": "sas_field_name1",
+                "sds_var_name": "sds_var_name1",
+                "origin": "origin1",
+                "comment": "comment1",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "unit_definitions": [
+                    {
+                        "uid": "unit_definition_root1",
+                        "name": "name1",
+                        "mandatory": false,
+                        "order": 1,
+                        "ucum": {
+                            "term_uid": "term_root1_uid",
+                            "name": "name1"
+                        },
+                        "ct_units": [
+                            {
+                                "term_uid": "C25532_name1",
+                                "name": "name1"
+                            }
+                        ]
+                    }
+                ],
+                "codelist": {
+                    "uid": "editable_cr",
+                    "name": "codelist attributes value1",
+                    "submission_value": "codelist submission value1",
+                    "preferred_term": "codelist preferred term"
+                },
+                "terms": [
+                    {
+                        "term_uid": "term_root_final",
+                        "name": "term_value_name1",
+                        "mandatory": true,
+                        "order": 1,
+                        "display_text": null,
+                        "version": "1.0"
+                    }
+                ],
+                "activity": null,
+                "vendor_elements": [
+                    {
+                        "uid": "odm_vendor_element1",
+                        "name": "nameOne",
+                        "value": "value1"
+                    }
+                ],
+                "vendor_attributes": [],
+                "vendor_element_attributes": [],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Add ODM Vendor Element Attribute to an ODM Item",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": [
+                {
+                    "uid": "odm_vendor_attribute1",
+                    "value": "valueOne"
+                }
+            ],
+            "url": "concepts/odms/items/OdmItem_000001/vendor-element-attributes"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmItem_000001",
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "oid1",
+                "prompt": "prompt1",
+                "datatype": "datatype1",
+                "length": 11,
+                "significant_digits": 11,
+                "sas_field_name": "sas_field_name1",
+                "sds_var_name": "sds_var_name1",
+                "origin": "origin1",
+                "comment": "comment1",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Draft",
+                "version": "0.1",
+                "change_description": "Initial version",
+                "user_initials": "TODO user initials",
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "unit_definitions": [
+                    {
+                        "uid": "unit_definition_root1",
+                        "name": "name1",
+                        "mandatory": false,
+                        "order": 1,
+                        "ucum": {
+                            "term_uid": "term_root1_uid",
+                            "name": "name1"
+                        },
+                        "ct_units": [
+                            {
+                                "term_uid": "C25532_name1",
+                                "name": "name1"
+                            }
+                        ]
+                    }
+                ],
+                "codelist": {
+                    "uid": "editable_cr",
+                    "name": "codelist attributes value1",
+                    "submission_value": "codelist submission value1",
+                    "preferred_term": "codelist preferred term"
+                },
+                "terms": [
+                    {
+                        "term_uid": "term_root_final",
+                        "name": "term_value_name1",
+                        "mandatory": true,
+                        "order": 1,
+                        "display_text": null,
+                        "version": "1.0"
+                    }
+                ],
+                "activity": null,
+                "vendor_elements": [
+                    {
+                        "uid": "odm_vendor_element1",
+                        "name": "nameOne",
+                        "value": "value1"
+                    }
+                ],
+                "vendor_attributes": [],
+                "vendor_element_attributes": [
+                    {
+                        "uid": "odm_vendor_attribute1",
+                        "name": "nameOne",
+                        "data_type": "string",
+                        "value_regex": "^[a-zA-Z]+$",
+                        "value": "valueOne",
+                        "vendor_element_uid": "odm_vendor_element1"
+                    }
+                ],
+                "possible_actions": [
+                    "approve",
+                    "delete",
+                    "edit"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test cannot create a new ODM Item with existing name",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "oid1",
+                "prompt": "prompt1",
+                "datatype": "datatype1",
+                "length": 11,
+                "significant_digits": 11,
+                "sas_field_name": "sas_field_name1",
+                "sds_var_name": "sds_var_name1",
+                "origin": "origin1",
+                "comment": "comment1",
+                "descriptions": [
+                    "odm_description3"
+                ],
+                "alias_uids": [],
+                "unit_definitions": [],
+                "codelist_uid": null,
+                "terms": []
+            },
+            "url": "concepts/odms/items"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "ODM Item with ['name: name1', 'OID: oid1'] already exists.",
+                "time": "2022-03-07T12: 14: 18.116363",
+                "path": "http://testserver/concepts/odms/items",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot create an ODM Item connected to non-existent concepts",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "new name",
+                "oid": "new oid",
+                "prompt": "prompt1",
+                "datatype": "datatype1",
+                "length": 11,
+                "significant_digits": 11,
+                "sas_field_name": "sas_field_name1",
+                "sds_var_name": "sds_var_name1",
+                "origin": "origin1",
+                "comment": "comment1",
+                "descriptions": [
+                    "wrong_uid"
+                ],
+                "alias_uids": [
+                    "wrong_uid"
+                ],
+                "unit_definitions": [
+                    {
+                        "uid": "wrong_uid"
+                    }
+                ],
+                "codelist_uid": null,
+                "terms": []
+            },
+            "url": "concepts/odms/items"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "ODM Item tried to connect to non-existent concepts [('Concept Name: ODM Description', \"uids: {'wrong_uid'}\"), ('Concept Name: ODM Alias', \"uids: {'wrong_uid'}\"), ('Concept Name: Unit Definition', \"uids: {'wrong_uid'}\")].",
+                "time": "2022-03-07T12: 14: 18.116363",
+                "path": "http://testserver/concepts/odms/items",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot create an ODM Item connected to non-existent Codelist",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "new name",
+                "oid": "new oid",
+                "prompt": "prompt1",
+                "datatype": "datatype1",
+                "length": 11,
+                "significant_digits": 11,
+                "sas_field_name": "sas_field_name1",
+                "sds_var_name": "sds_var_name1",
+                "origin": "origin1",
+                "comment": "comment1",
+                "descriptions": [],
+                "alias_uids": [],
+                "unit_definitions": [],
+                "codelist_uid": "wrong_uid",
+                "terms": []
+            },
+            "url": "concepts/odms/items"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "ODM Item tried to connect to non-existent Codelist identified by uid (wrong_uid).",
+                "time": "2022-03-07T12: 14: 18.116363",
+                "path": "http://testserver/concepts/odms/items",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot create an ODM Item connected to CT Terms without providing a Codelist",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "new name",
+                "oid": "new oid",
+                "prompt": "prompt1",
+                "datatype": "datatype1",
+                "length": 11,
+                "significant_digits": 11,
+                "sas_field_name": "sas_field_name1",
+                "sds_var_name": "sds_var_name1",
+                "origin": "origin1",
+                "comment": "comment1",
+                "descriptions": [],
+                "alias_uids": [],
+                "unit_definitions": [],
+                "codelist_uid": null,
+                "terms": [
+                    {
+                        "uid": "term_root_final"
+                    }
+                ]
+            },
+            "url": "concepts/odms/items"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "To add terms you need to specify a codelist.",
+                "time": "2022-03-07T12: 14: 18.116363",
+                "path": "http://testserver/concepts/odms/items",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot create an ODM Item connected to CT Terms belonging to a Codelist not provided",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Sponsor",
+                "name": "new name",
+                "oid": "new oid",
+                "prompt": "prompt1",
+                "datatype": "datatype1",
+                "length": 11,
+                "significant_digits": 11,
+                "sas_field_name": "sas_field_name1",
+                "sds_var_name": "sds_var_name1",
+                "origin": "origin1",
+                "comment": "comment1",
+                "descriptions": [],
+                "alias_uids": [],
+                "unit_definitions": [],
+                "codelist_uid": "editable_cr",
+                "terms": [
+                    {
+                        "uid": "wrong_uid"
+                    }
+                ]
+            },
+            "url": "concepts/odms/items"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "The term identified by uid (wrong_uid) doesn't belong to the specified codelist identified by uid (editable_cr).",
+                "time": "2022-03-07T12: 14: 18.116363",
+                "path": "http://testserver/concepts/odms/items",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test getting error for retrieving non-existent ODM Item",
+        "request": {
+            "headers": {},
+            "method": "GET",
+            "request": {},
+            "url": "concepts/odms/items/OdmItem_000002"
+        },
+        "response": {
+            "code": 404,
+            "headers": {
+                "content-length": "340",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "OdmItemAR with uid OdmItem_000002 does not exist or there's no version with requested status or version number.",
+                "time": "2022-03-07T12:20:39.613764",
+                "path": "http://testserver/concepts/odms/items/OdmItem_000002",
+                "method": "GET",
+                "type": "NotFoundException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot inactivate an ODM Item that is in Draft status",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "concepts/odms/items/OdmItem_000001/activations"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "Cannot retire draft version.",
+                "time": "2022-03-07T12:24:39.980123",
+                "path": "http://testserver/concepts/odms/items/OdmItem_000001/activations",
+                "method": "DELETE",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot reactivate an ODM Item that is not retired",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/items/OdmItem_000001/activations"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "Only RETIRED version can be reactivated.",
+                "time": "2022-03-07T12:27:17.572613",
+                "path": "http://testserver/concepts/odms/items/OdmItem_000001/activations",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot override ODM Vendor Element that has attributes connected this ODM Item",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": [
+                {
+                    "uid": "odm_vendor_element2",
+                    "value": "value"
+                }
+            ],
+            "url": "concepts/odms/items/OdmItem_000001/vendor-elements?override=true"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "Cannot remove an ODM Vendor Element whose attributes are connected to this ODM element.",
+                "time": "2022-03-07T12:30:50.195156",
+                "path": "http://testserver/concepts/odms/items/OdmItem_000001/vendor-elements?override=true",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot add ODM Vendor Element Attribute to an ODM Item as an ODM Vendor Attribute",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": [
+                {
+                    "uid": "odm_vendor_attribute1",
+                    "value": "value"
+                }
+            ],
+            "url": "concepts/odms/items/OdmItem_000001/vendor-attributes"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "ODM Vendor Attribute identified by (odm_vendor_attribute1) cannot not be added as an Vendor Attribute.",
+                "time": "2022-03-07T12:30:50.195156",
+                "path": "http://testserver/concepts/odms/items/OdmItem_000001/vendor-attributes",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot add ODM Vendor Attribute to an ODM Item as an ODM Vendor Element Attribute",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": [
+                {
+                    "uid": "odm_vendor_attribute3",
+                    "value": "value"
+                }
+            ],
+            "url": "concepts/odms/items/OdmItem_000001/vendor-element-attributes"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "ODM Vendor Attribute identified by (odm_vendor_attribute3) cannot not be added as an Vendor Element Attribute.",
+                "time": "2022-03-07T12:30:50.195156",
+                "path": "http://testserver/concepts/odms/items/OdmItem_000001/vendor-element-attributes",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Approve ODM Item",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {},
+            "url": "concepts/odms/items/OdmItem_000001/approvals"
+        },
+        "response": {
+            "code": 201,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmItem_000001",
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "oid1",
+                "prompt": "prompt1",
+                "datatype": "datatype1",
+                "length": 11,
+                "significant_digits": 11,
+                "sas_field_name": "sas_field_name1",
+                "sds_var_name": "sds_var_name1",
+                "origin": "origin1",
+                "comment": "comment1",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Approved version",
+                "user_initials": "TODO user initials",
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "unit_definitions": [
+                    {
+                        "uid": "unit_definition_root1",
+                        "name": "name1",
+                        "mandatory": false,
+                        "order": 1,
+                        "ucum": {
+                            "term_uid": "term_root1_uid",
+                            "name": "name1"
+                        },
+                        "ct_units": [
+                            {
+                                "term_uid": "C25532_name1",
+                                "name": "name1"
+                            }
+                        ]
+                    }
+                ],
+                "codelist": {
+                    "uid": "editable_cr",
+                    "name": "codelist attributes value1",
+                    "submission_value": "codelist submission value1",
+                    "preferred_term": "codelist preferred term"
+                },
+                "terms": [
+                    {
+                        "term_uid": "term_root_final",
+                        "name": "term_value_name1",
+                        "mandatory": true,
+                        "order": 1,
+                        "display_text": null,
+                        "version": "1.0"
+                    }
+                ],
+                "activity": null,
+                "vendor_elements": [
+                    {
+                        "uid": "odm_vendor_element1",
+                        "name": "nameOne",
+                        "value": "value1"
+                    }
+                ],
+                "vendor_attributes": [],
+                "vendor_element_attributes": [
+                    {
+                        "uid": "odm_vendor_attribute1",
+                        "name": "nameOne",
+                        "data_type": "string",
+                        "value_regex": "^[a-zA-Z]+$",
+                        "value": "valueOne",
+                        "vendor_element_uid": "odm_vendor_element1"
+                    }
+                ],
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Inactivate ODM Item",
+        "request": {
+            "headers": {},
+            "method": "DELETE",
+            "request": {},
+            "url": "concepts/odms/items/OdmItem_000001/activations"
+        },
+        "response": {
+            "code": 200,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "uid": "OdmItem_000001",
+                "library_name": "Sponsor",
+                "name": "name1",
+                "oid": "oid1",
+                "prompt": "prompt1",
+                "datatype": "datatype1",
+                "length": 11,
+                "significant_digits": 11,
+                "sas_field_name": "sas_field_name1",
+                "sds_var_name": "sds_var_name1",
+                "origin": "origin1",
+                "comment": "comment1",
+                "start_date": "2022-03-03T11:17:56.799074",
+                "end_date": null,
+                "status": "Retired",
+                "version": "1.0",
+                "change_description": "Inactivated version",
+                "user_initials": "TODO user initials",
+                "descriptions": [
+                    {
+                        "uid": "odm_description2",
+                        "name": "name2",
+                        "language": "language2",
+                        "description": "description2",
+                        "instruction": "instruction2",
+                        "sponsor_instruction": "sponsor_instruction2",
+                        "version": "0.1"
+                    },
+                    {
+                        "uid": "odm_description3",
+                        "name": "name3",
+                        "language": "ENG",
+                        "description": "description3",
+                        "instruction": "instruction3",
+                        "sponsor_instruction": "sponsor_instruction3",
+                        "version": "0.1"
+                    }
+                ],
+                "aliases": [
+                    {
+                        "uid": "odm_alias1",
+                        "context": "context1",
+                        "name": "name1",
+                        "version": "0.1"
+                    }
+                ],
+                "unit_definitions": [
+                    {
+                        "uid": "unit_definition_root1",
+                        "name": "name1",
+                        "mandatory": false,
+                        "order": 1,
+                        "ucum": {
+                            "term_uid": "term_root1_uid",
+                            "name": "name1"
+                        },
+                        "ct_units": [
+                            {
+                                "term_uid": "C25532_name1",
+                                "name": "name1"
+                            }
+                        ]
+                    }
+                ],
+                "codelist": {
+                    "uid": "editable_cr",
+                    "name": "codelist attributes value1",
+                    "submission_value": "codelist submission value1",
+                    "preferred_term": "codelist preferred term"
+                },
+                "terms": [
+                    {
+                        "term_uid": "term_root_final",
+                        "name": "term_value_name1",
+                        "mandatory": true,
+                        "order": 1,
+                        "display_text": null,
+                        "version": "1.0"
+                    }
+                ],
+                "activity": null,
+                "vendor_elements": [
+                    {
+                        "uid": "odm_vendor_element1",
+                        "name": "nameOne",
+                        "value": "value1"
+                    }
+                ],
+                "vendor_attributes": [],
+                "vendor_element_attributes": [
+                    {
+                        "uid": "odm_vendor_attribute1",
+                        "name": "nameOne",
+                        "data_type": "string",
+                        "value_regex": "^[a-zA-Z]+$",
+                        "value": "valueOne",
+                        "vendor_element_uid": "odm_vendor_element1"
+                    }
+                ],
+                "possible_actions": [
+                    "delete",
+                    "reactivate"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Test cannot add ODM Activities to an ODM Item that is in Retired status",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "uid": "activity_root1"
+            },
+            "url": "concepts/odms/items/OdmItem_000001/activities"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "The object is inactive",
+                "time": "2022-03-07T12:30:50.195156",
+                "path": "http://testserver/concepts/odms/items/OdmItem_000001/activities",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot add ODM Vendor Element to an ODM Item that is in Retired status",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": [
+                {
+                    "uid": "odm_vendor_element1",
+                    "value": "value"
+                }
+            ],
+            "url": "concepts/odms/items/OdmItem_000001/vendor-elements"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "The object is inactive",
+                "time": "2022-03-07T12:30:50.195156",
+                "path": "http://testserver/concepts/odms/items/OdmItem_000001/vendor-elements",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot add ODM Vendor Attribute to an ODM Item that is in Retired status",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": [
+                {
+                    "uid": "odm_vendor_attribute1",
+                    "value": "value"
+                }
+            ],
+            "url": "concepts/odms/items/OdmItem_000001/vendor-attributes"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "The object is inactive",
+                "time": "2022-03-07T12:30:50.195156",
+                "path": "http://testserver/concepts/odms/items/OdmItem_000001/vendor-attributes",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    },
+    {
+        "name": "Test cannot add ODM Vendor Element Attribute to an ODM Item that is in Retired status",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": [
+                {
+                    "uid": "odm_vendor_attribute1",
+                    "value": "value"
+                }
+            ],
+            "url": "concepts/odms/items/OdmItem_000001/vendor-element-attributes"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "459",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "The object is inactive",
+                "time": "2022-03-07T12:30:50.195156",
+                "path": "http://testserver/concepts/odms/items/OdmItem_000001/vendor-element-attributes",
+                "method": "POST",
+                "type": "BusinessLogicException"
+            }
+        }
+    }
+]

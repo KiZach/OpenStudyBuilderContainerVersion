@@ -1,0 +1,25 @@
+repos:
+  - repo: https://github.com/psf/black
+    rev: 23.3.0
+    hooks:
+      - id: black
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.11.5
+    hooks:
+      - id: isort
+  - repo: local
+    hooks:
+    - id: absolute-import-paths
+      name: absolute-import-paths
+      entry: ./.git-hooks/absolute-import-paths.sh
+      language: system
+      require_serial: true
+  - repo: local
+    hooks:
+    - id: no-unnecessary-importing-from-typing
+      name: no-unnecessary-importing-from-typing
+      entry: ./.git-hooks/no-unnecessary-importing-from-typing.sh
+      language: system
+      require_serial: true
+default_language_version:
+  python: python3.11

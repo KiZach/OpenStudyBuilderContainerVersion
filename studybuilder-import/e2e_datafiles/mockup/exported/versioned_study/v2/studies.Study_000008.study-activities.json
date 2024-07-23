@@ -1,0 +1,60 @@
+[
+    {
+        "study_uid": "Study_000008",
+        "order": 1,
+        "show_activity_in_protocol_flowchart": false,
+        "show_activity_subgroup_in_protocol_flowchart": true,
+        "show_activity_group_in_protocol_flowchart": true,
+        "show_soa_group_in_protocol_flowchart": false,
+        "study_activity_uid": "StudyActivity_000048",
+        "study_activity_subgroup": {
+            "study_activity_subgroup_uid": "StudyActivitySubGroup_000048",
+            "activity_subgroup_uid": "ActivitySubGroup_000005",
+            "activity_subgroup_name": "Adverse Event"
+        },
+        "study_activity_group": {
+            "study_activity_group_uid": "StudyActivityGroup_000048",
+            "activity_group_uid": "ActivityGroup_000004",
+            "activity_group_name": "Adverse Event"
+        },
+        "study_soa_group": {
+            "study_soa_group_uid": "StudySoAGroup_000001",
+            "soa_group_term_uid": "CTTerm_000067",
+            "soa_group_name": "SAFETY"
+        },
+        "activity": {
+            "start_date": "2023-10-03T08:07:00.399253+00:00",
+            "end_date": null,
+            "status": "Final",
+            "version": "1.0",
+            "change_description": "Approved version",
+            "user_initials": "unknown-user",
+            "uid": "Activity_000131",
+            "name": "Activity Placeholder for v1.1",
+            "name_sentence_case": "Activity Placeholder for v1.1",
+            "definition": null,
+            "abbreviation": null,
+            "library_name": "Requested",
+            "possible_actions": [
+                "inactivate",
+                "new_version"
+            ],
+            "nci_concept_id": null,
+            "activity_groupings": [
+                {
+                    "activity_group_uid": "ActivityGroup_000004",
+                    "activity_group_name": "Adverse Event",
+                    "activity_subgroup_uid": "ActivitySubGroup_000005",
+                    "activity_subgroup_name": "Adverse Event"
+                }
+            ],
+            "request_rationale": "rationale for v1.1",
+            "replaced_by_activity": null,
+            "is_data_collected": false
+        },
+        "start_date": "2023-10-03T08:07:01.973030+00:00",
+        "user_initials": "unknown-user",
+        "latest_activity": null,
+        "accepted_version": false
+    }
+]

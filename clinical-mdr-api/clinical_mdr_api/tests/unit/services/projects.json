@@ -1,0 +1,38 @@
+[
+  {
+    "name": "PROJECT NAME 1",
+    "project_number": "PR-00001",
+    "product_family_name": "PRODUCT FAMILY 1",
+    "description": "Project description 1"
+  },
+  {
+    "name": "PROJECT NAME 2",
+    "project_number": "PR-00002",
+    "product_family_name": "PRODUCT FAMILY 3",
+    "description": "Project description 2 (something fancy for testing purposes)"
+  },
+  {
+    "name": "PROJECT NAME 3",
+    "project_number": "PR-00003",
+    "product_family_name": "PRODUCT FAMILY 2",
+    "description": "Project description 3"
+  },
+  {
+    "name": "PROJECT NAME 4",
+    "project_number": "PR-00004",
+    "product_family_name": "PRODUCT FAMILY 2",
+    "description": "Project description 4"
+  },
+  {
+    "name": "PROJECT NAME 5",
+    "project_number": "PR-00005",
+    "product_family_name": "PRODUCT FAMILY 3",
+    "description": "Project description 5"
+  },
+  {
+    "name": "PROJECT NAME 6",
+    "project_number": "PR-00006",
+    "product_family_name": "PRODUCT FAMILY 3",
+    "description": "Project description 6"
+  }
+]

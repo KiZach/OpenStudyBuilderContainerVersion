@@ -1,0 +1,5 @@
+"CD_LIST_ID","CD_VAL","CD_VAL_LB","CD_VAL_SORT_SEQ","CT_CD","DEFINITION"
+"GEN_EPOCH_TYPE","PRE TREATMENT EPOCH TYPE","Pre Treatment","1",,A period in a clinical study before subjects receive investigational product.
+"GEN_EPOCH_TYPE","TREATMENT","Treatment","2",C101526,
+"GEN_EPOCH_TYPE","NO TREATMENT EPOCH TYPE","No Treatment","3",,A period in a clinical study where subjects do not receive investigational product.
+"GEN_EPOCH_TYPE","POST TREATMENT EPOCH TYPE","Post Treatment","4",,A period in a clinical study after subjects receive investigational product.

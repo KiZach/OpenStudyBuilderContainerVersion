@@ -1,0 +1,48 @@
+MERGE (:Library{name:'CDISC', is_editable: false})
+MERGE (:Library{name:'Sponsor', is_editable: true})
+
+MERGE (intervention:TemplateParameter {name: 'Intervention'})
+MERGE (pr1:TemplateParameterTermRoot {uid: 'Intervention-99991'})-[:LATEST_FINAL]->(:TemplateParameterTermValue {name: 'human insulin'})
+MERGE (intervention)-[:HAS_PARAMETER_TERM]->(pr1)
+MERGE (pr2:TemplateParameterTermRoot {uid: 'Intervention-99992'})-[:LATEST_FINAL]->(:TemplateParameterTermValue {name: 'Metformin'})
+MERGE (intervention)-[:HAS_PARAMETER_TERM]->(pr2)
+
+MERGE (indication:TemplateParameter {name: 'Indication'})
+MERGE (pr3:TemplateParameterTermRoot {uid: 'Indication-99991'})-[:LATEST_FINAL]->(:TemplateParameterTermValue {name: 'type 2 diabetes'})
+MERGE (indication)-[:HAS_PARAMETER_TERM]->(pr3)
+MERGE (pr4:TemplateParameterTermRoot {uid: 'Indication-99992'})-[:LATEST_FINAL]->(:TemplateParameterTermValue {name: 'coronary heart disease'})
+MERGE (indication)-[:HAS_PARAMETER_TERM]->(pr4)
+
+MERGE (activity:TemplateParameter {name: 'Activity'})
+MERGE (pr5:TemplateParameterTermRoot {uid: 'Activity-99991'})-[:LATEST_FINAL]->(:TemplateParameterTermValue {name: 'vital signs'})
+MERGE (activity)-[:HAS_PARAMETER_TERM]->(pr5)
+MERGE (pr6:TemplateParameterTermRoot {uid: 'Activity-99992'})-[:LATEST_FINAL]->(:TemplateParameterTermValue {name: 'glucose metabolism'})
+MERGE (activity)-[:HAS_PARAMETER_TERM]->(pr6)
+MERGE (pr7:TemplateParameterTermRoot {uid: 'Activity-99993'})-[:LATEST_FINAL]->(:TemplateParameterTermValue {name: 'biochemistry'})
+MERGE (activity)-[:HAS_PARAMETER_TERM]->(pr7)
+
+MERGE (activity:TemplateParameter {name: 'Activity'})
+MERGE (pr8:TemplateParameterTermRoot {uid: 'Activity-99991'})-[:LATEST_FINAL]->(:TemplateParameterTermValue {name: 'HbA1c'})
+MERGE (activity)-[:HAS_PARAMETER_TERM]->(pr8)
+MERGE (pr9:TemplateParameterTermRoot {uid: 'Activity-99992'})-[:LATEST_FINAL]->(:TemplateParameterTermValue {name: 'body weight'})
+MERGE (activity)-[:HAS_PARAMETER_TERM]->(pr9)
+MERGE (pr10:TemplateParameterTermRoot {uid: 'Activity-99993'})-[:LATEST_FINAL]->(:TemplateParameterTermValue {name: 'HDL Cholesterol'})
+MERGE (activity)-[:HAS_PARAMETER_TERM]->(pr10)
+
+MERGE (clinicalEvent:TemplateParameter {name: 'ClinicalEvent'})
+MERGE (pr11:TemplateParameterTermRoot {uid: 'ClinicalEvent-99991'})-[:LATEST_FINAL]->(:TemplateParameterTermValue {name: 'MACE'})
+MERGE (clinicalEvent)-[:HAS_PARAMETER_TERM]->(pr11)
+MERGE (pr12:TemplateParameterTermRoot {uid: 'ClinicalEvent-99992'})-[:LATEST_FINAL]->(:TemplateParameterTermValue {name: 'MACE+'})
+MERGE (clinicalEvent)-[:HAS_PARAMETER_TERM]->(pr12)
+MERGE (pr13:TemplateParameterTermRoot {uid: 'ClinicalEvent-99993'})-[:LATEST_FINAL]->(:TemplateParameterTermValue {name: 'all cause death'})
+MERGE (clinicalEvent)-[:HAS_PARAMETER_TERM]->(pr13)
+
+MERGE (timeframe:TemplateParameter {name: 'Timeframe'})
+MERGE (pr14:TemplateParameterTermRoot {uid: 'Timeframe-99993'})-[:LATEST_FINAL]->(:TemplateParameterTermValue {name: 'week 14'})
+MERGE (timeframe)-[:HAS_PARAMETER_TERM]->(pr14)
+MERGE (pr15:TemplateParameterTermRoot {uid: 'Timeframe-99994'})-[:LATEST_FINAL]->(:TemplateParameterTermValue {name: 'week 26'})
+MERGE (timeframe)-[:HAS_PARAMETER_TERM]->(pr15)
+MERGE (pr16:TemplateParameterTermRoot {uid: 'Timeframe-99995'})-[:LATEST_FINAL]->(:TemplateParameterTermValue {name: 'time to event'})
+MERGE (timeframe)-[:HAS_PARAMETER_TERM]->(pr16)
+
+;

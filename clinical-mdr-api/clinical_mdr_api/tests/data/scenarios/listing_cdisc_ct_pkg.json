@@ -1,0 +1,73 @@
+[
+  {
+    "name": "No Date Specified, sorting by pkg_scope and pkg_nm",
+    "request": {
+        "headers": {},
+        "method": "GET",
+        "request": {},
+        "url": "/listings/libraries/all/gcmd/cdisc-ct-pkg?sort_by=%7B%22pkg_scope%22%3Atrue%2C%22pkg_nm%22%3Atrue%7D"
+    },
+    "response": {
+        "code": 200,
+        "headers": {
+            "content-length": "2",
+            "content-type": "application/json"
+        },
+        "result": {
+          "items": [
+
+            {
+              "pkg_scope": "catalogue",
+              "pkg_nm": "new_package"
+            },
+            {
+              "pkg_scope": "catalogue",
+              "pkg_nm": "old_package"
+            },
+            {
+              "pkg_scope": "catalogue2",
+              "pkg_nm": "package1"
+            },
+            {
+              "pkg_scope": "catalogue3",
+              "pkg_nm": "package2"
+            }
+          ],
+          "total": 0,
+          "page": 1,
+          "size": 10
+        }
+    }
+  },
+  {
+    "name": "Date Specified, filtering on catalogue",
+    "request": {
+        "headers": {},
+        "method": "GET",
+        "request": {},
+        "url": "/listings/libraries/all/gcmd/cdisc-ct-pkg?catalogue_name=catalogue,catalogue2&sort_by=%7B%22pkg_scope%22%3Atrue%7D&after_specified_date=2020-06-20"
+    },
+    "response": {
+        "code": 200,
+        "headers": {
+            "content-length": "2",
+            "content-type": "application/json"
+        },
+        "result": {
+          "items": [
+             {
+              "pkg_scope": "catalogue",
+              "pkg_nm": "new_package"
+            },
+              {
+              "pkg_scope": "catalogue2",
+              "pkg_nm": "package1"
+            }
+          ],
+          "total": 0,
+          "page": 1,
+          "size": 10
+        }
+    }
+  }
+]

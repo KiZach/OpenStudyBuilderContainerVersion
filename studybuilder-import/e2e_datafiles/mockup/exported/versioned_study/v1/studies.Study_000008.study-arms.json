@@ -1,0 +1,40 @@
+[
+    {
+        "study_uid": "Study_000008",
+        "order": 1,
+        "arm_uid": "StudyArm_000029",
+        "name": "Arm v1",
+        "short_name": "Arm v1",
+        "code": null,
+        "description": null,
+        "arm_colour": "#FF0000FF",
+        "randomization_group": null,
+        "number_of_subjects": null,
+        "arm_type": {
+            "term_uid": "CTTerm_000081",
+            "catalogue_name": "SDTM CT",
+            "codelist_uid": "CTCodelist_000022",
+            "sponsor_preferred_name": "Investigational Arm",
+            "sponsor_preferred_name_sentence_case": "investigational arm",
+            "order": 1,
+            "library_name": "Sponsor",
+            "start_date": "2023-08-29T11:56:10.947994+00:00",
+            "end_date": null,
+            "status": "Final",
+            "version": "1.0",
+            "change_description": "Approved version",
+            "user_initials": "unknown-user",
+            "possible_actions": [
+                "inactivate",
+                "new_version"
+            ]
+        },
+        "start_date": "2023-10-03T08:03:21.396718+00:00",
+        "user_initials": "unknown-user",
+        "end_date": null,
+        "status": null,
+        "change_type": null,
+        "accepted_version": false,
+        "arm_connected_branch_arms": null
+    }
+]

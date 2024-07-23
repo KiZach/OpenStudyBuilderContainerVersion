@@ -1,0 +1,743 @@
+[
+  {
+    "abbreviation": "",
+    "change_description": "Approved version",
+    "definition": "Pre-existing type 1 diabetes mellitus in pregnancy (disorder)\n",
+    "dictionary_id": "609564002",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Pre-existing type 1 diabetes mellitus in pregnancy",
+    "name_sentence_case": "pre-existing type 1 diabetes mellitus in pregnancy",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:53.520747",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000039",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "HFpEF",
+    "change_description": "Approved version",
+    "definition": "Heart failure with normal ejection fraction (disorder)",
+    "dictionary_id": "446221000",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Heart failure with normal ejection fraction",
+    "name_sentence_case": "heart failure with normal ejection fraction",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:53.232769",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000038",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "NASH",
+    "change_description": "Approved version",
+    "definition": "Nonalcoholic steatohepatitis (disorder)",
+    "dictionary_id": "442685003",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Nonalcoholic steatohepatitis",
+    "name_sentence_case": "nonalcoholic steatohepatitis",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:52.954208",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000037",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "",
+    "change_description": "Approved version",
+    "definition": "Severe hereditary factor IX deficiency disease without inhibitor (disorder)",
+    "dictionary_id": "441190003",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Severe hereditary factor IX deficiency disease without inhibitor",
+    "name_sentence_case": "severe hereditary factor IX deficiency disease without inhibitor",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:52.658609",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000036",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "",
+    "change_description": "Approved version",
+    "definition": "Severe hereditary factor VIII deficiency disease without inhibitor (disorder)",
+    "dictionary_id": "440993008",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Severe hereditary factor VIII deficiency disease without inhibitor",
+    "name_sentence_case": "severe hereditary factor VIII deficiency disease without inhibitor",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:52.383350",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000035",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "",
+    "change_description": "Approved version",
+    "definition": "Hereditary factor IX deficiency disease without inhibitor (disorder)",
+    "dictionary_id": "438792009",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Hereditary factor IX deficiency disease without inhibitor",
+    "name_sentence_case": "hereditary factor IX deficiency disease without inhibitor",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:52.101295",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000034",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "",
+    "change_description": "Approved version",
+    "definition": "Severe hereditary factor VIII deficiency disease with inhibitor (disorder)",
+    "dictionary_id": "438373005",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Severe hereditary factor VIII deficiency disease with inhibitor",
+    "name_sentence_case": "severe hereditary factor VIII deficiency disease with inhibitor",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:51.679977",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000033",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "",
+    "change_description": "Approved version",
+    "definition": "Hereditary factor IX deficiency disease with inhibitor (disorder)",
+    "dictionary_id": "438372000",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Hereditary factor IX deficiency disease with inhibitor",
+    "name_sentence_case": "hereditary factor IX deficiency disease with inhibitor",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:51.410531",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000032",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "",
+    "change_description": "Approved version",
+    "definition": "Hereditary factor VIII deficiency disease without inhibitor (disorder)",
+    "dictionary_id": "438360006",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Hereditary factor VIII deficiency disease without inhibitor",
+    "name_sentence_case": "hereditary factor VIII deficiency disease without inhibitor",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:51.131784",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000031",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "",
+    "change_description": "Approved version",
+    "definition": "Adult growth hormone deficiency (disorder)\n",
+    "dictionary_id": "421684006",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Adult growth hormone deficiency",
+    "name_sentence_case": "adult growth hormone deficiency",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:50.609339",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000030",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "",
+    "change_description": "Approved version",
+    "definition": "Sickling disorder due to hemoglobin S (disorder)",
+    "dictionary_id": "417357006",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Sickling disorder due to hemoglobin S",
+    "name_sentence_case": "sickling disorder due to hemoglobin S",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:50.332864",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000029",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "",
+    "change_description": "Approved version",
+    "definition": "Hereditary hemoglobin S (disorder)",
+    "dictionary_id": "416417002",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Hereditary hemoglobin S",
+    "name_sentence_case": "hereditary hemoglobin S",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:50.048606",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000028",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "",
+    "change_description": "Approved version",
+    "definition": "Obesity (disorder)",
+    "dictionary_id": "414916001",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Obesity",
+    "name_sentence_case": "obesity",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:49.772073",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000027",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "GHD",
+    "change_description": "Approved version",
+    "definition": "Growth hormone deficiency (disorder)\n",
+    "dictionary_id": "397827003",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Growth hormone deficiency",
+    "name_sentence_case": "growth hormone deficiency",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:49.477350",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000026",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "",
+    "change_description": "Approved version",
+    "definition": "Disorder of body system (disorder)",
+    "dictionary_id": "362965005",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Disorder of body system",
+    "name_sentence_case": "disorder of body system",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:49.152039",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000025",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "",
+    "change_description": "Approved version",
+    "definition": "Cerebral degeneration presenting primarily with dementia (disorder)",
+    "dictionary_id": "279982005",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Cerebral degeneration presenting primarily with dementia",
+    "name_sentence_case": "cerebral degeneration presenting primarily with dementia",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:48.871156",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000024",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "",
+    "change_description": "Approved version",
+    "definition": "Fetal growth abnormality (disorder)",
+    "dictionary_id": "276604007",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Fetal growth abnormality",
+    "name_sentence_case": "fetal growth abnormality",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:48.546483",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000023",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "SGA",
+    "change_description": "Approved version",
+    "definition": "Small for gestational age fetus (disorder)",
+    "dictionary_id": "267258002",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Small for gestational age fetus",
+    "name_sentence_case": "small for gestational age fetus",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:48.214870",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000022",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "",
+    "change_description": "Approved version",
+    "definition": "Renal impairment (disorder)",
+    "dictionary_id": "236423003",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Renal impairment",
+    "name_sentence_case": "renal impairment",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:47.922136",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000021",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "",
+    "change_description": "Approved version",
+    "definition": "Hereditary factor VIII deficiency disease with inhibitor (disorder)",
+    "dictionary_id": "234442002",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Hereditary factor VIII deficiency disease with inhibitor",
+    "name_sentence_case": "hereditary factor VIII deficiency disease with inhibitor",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:47.631008",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000020",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "",
+    "change_description": "Approved version",
+    "definition": "Factor VIII deficiency (disorder)",
+    "dictionary_id": "234440005",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Factor VIII deficiency",
+    "name_sentence_case": "factor VIII deficiency",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:47.276600",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000019",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "NAFLD",
+    "change_description": "Approved version",
+    "definition": "Non-alcoholic fatty liver (disorder)",
+    "dictionary_id": "197315008",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Non-alcoholic fatty liver",
+    "name_sentence_case": "non-alcoholic fatty liver",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:47.007876",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000018",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "",
+    "change_description": "Approved version",
+    "definition": "Kidney disease (disorder)",
+    "dictionary_id": "90708001",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Kidney disease",
+    "name_sentence_case": "kidney disease",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:46.697835",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000017",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "",
+    "change_description": "Approved version",
+    "definition": "Autoimmune disease (disorder)",
+    "dictionary_id": "85828009",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Autoimmune disease",
+    "name_sentence_case": "autoimmune disease",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:46.371476",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000016",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "HF",
+    "change_description": "Approved version",
+    "definition": "Heart failure (disorder)",
+    "dictionary_id": "84114007",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Heart failure",
+    "name_sentence_case": "heart failure",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:45.780737",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000015",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "",
+    "change_description": "Approved version",
+    "definition": "Hypopituitarism (disorder)",
+    "dictionary_id": "74728003",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Hypopituitarism",
+    "name_sentence_case": "hypopituitarism",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:45.461897",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000014",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "DM",
+    "change_description": "Approved version",
+    "definition": "Diabetes mellitus (disorder)",
+    "dictionary_id": "73211009",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Diabetes mellitus",
+    "name_sentence_case": "diabetes mellitus",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:45.038012",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000013",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "RA",
+    "change_description": "Approved version",
+    "definition": "Rheumatoid arthritis (disorder)",
+    "dictionary_id": "69896004",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Rheumatoid arthritis",
+    "name_sentence_case": "rheumatoid arthritis",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:44.643117",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000012",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "",
+    "change_description": "Approved version",
+    "definition": "Disease (disorder)",
+    "dictionary_id": "64572001",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Disease",
+    "name_sentence_case": "disease",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:44.321518",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000011",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "",
+    "change_description": "Approved version",
+    "definition": "Hyperlipidemia (disorder)",
+    "dictionary_id": "55822004",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Hyperlipidemia",
+    "name_sentence_case": "hyperlipidemia",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:43.906897",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000010",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "CVD",
+    "change_description": "Approved version",
+    "definition": "Disorder of cardiovascular system (disorder)",
+    "dictionary_id": "49601007",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Disorder of cardiovascular system",
+    "name_sentence_case": "disorder of cardiovascular system",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:43.583319",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000009",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "T1DM",
+    "change_description": "Approved version",
+    "definition": "Diabetes mellitus type 1 (disorder)",
+    "dictionary_id": "46635009",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Type 1 Diabetes mellitus",
+    "name_sentence_case": "type 1 diabetes mellitus",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:43.312733",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000008",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "T2DM",
+    "change_description": "Approved version",
+    "definition": "Diabetes mellitus type 2 (disorder)",
+    "dictionary_id": "44054006",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Type 2 diabetes mellitus",
+    "name_sentence_case": "type 2 diabetes mellitus",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:42.976026",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000007",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "",
+    "change_description": "Approved version",
+    "definition": "Hereditary factor IX deficiency disease (disorder)",
+    "dictionary_id": "41788008",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Hereditary factor IX deficiency disease",
+    "name_sentence_case": "hereditary factor IX deficiency disease",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:42.670569",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000006",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "",
+    "change_description": "Approved version",
+    "definition": "Hereditary factor VIII deficiency disease (disorder)",
+    "dictionary_id": "28293008",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Hereditary factor VIII deficiency disease",
+    "name_sentence_case": "hereditary factor VIII deficiency disease",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:42.338977",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000005",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "AD",
+    "change_description": "Approved version",
+    "definition": "Alzheimer's disease (disorder)",
+    "dictionary_id": "26929004",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Alzheimer's disease",
+    "name_sentence_case": "alzheimer's disease",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:41.852772",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000004",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "",
+    "change_description": "Approved version",
+    "definition": "Hereditary coagulation factor deficiency (disorder)",
+    "dictionary_id": "16922007",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Hereditary coagulation factor deficiency",
+    "name_sentence_case": "hereditary coagulation factor deficiency",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:41.585720",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000003",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "",
+    "change_description": "Approved version",
+    "definition": "Severe hereditary factor VIII deficiency disease (disorder)",
+    "dictionary_id": "16872008",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Severe hereditary factor VIII deficiency disease",
+    "name_sentence_case": "severe hereditary factor VIII deficiency disease",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:41.251524",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000002",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "abbreviation": "",
+    "change_description": "Approved version",
+    "definition": "Hypercholesterolemia (disorder)",
+    "dictionary_id": "13644009",
+    "end_date": null,
+    "library_name": "SNOMED",
+    "name": "Hypercholesterolemia",
+    "name_sentence_case": "hypercholesterolemia",
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T12:43:40.704698",
+    "status": "Final",
+    "term_uid": "DictionaryTerm_000001",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  }
+]

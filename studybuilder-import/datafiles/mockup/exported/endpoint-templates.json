@@ -1,0 +1,377 @@
+[
+  {
+    "categories": null,
+    "change_description": "Approved version",
+    "default_parameter_terms": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "terms": []
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "terms": []
+        }
+      ]
+    },
+    "end_date": null,
+    "guidance_text": null,
+    "indications": null,
+    "library": {
+      "is_editable": true,
+      "name": "Sponsor"
+    },
+    "name": "<p>Safety and tolerability of [Compound] + [Compound] cohort measured by number and grade of toxicity events</p>",
+    "name_plain": "Safety and tolerability of [Compound] + [Compound] cohort measured by number and grade of toxicity events",
+    "parameters": [
+      {
+        "name": "Compound",
+        "terms": null
+      },
+      {
+        "name": "Compound",
+        "terms": null
+      }
+    ],
+    "possible_actions": [
+      "inactivate",
+      "new_version"
+    ],
+    "start_date": "2023-04-18T06:50:02.420035+00:00",
+    "status": "Final",
+    "study_count": 1,
+    "sub_categories": null,
+    "uid": "EndpointTemplate_000008",
+    "user_initials": "unknown-user",
+    "version": "1.0"
+  },
+  {
+    "categories": null,
+    "change_description": "Approved version",
+    "default_parameter_terms": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "terms": []
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "terms": []
+        }
+      ]
+    },
+    "end_date": null,
+    "guidance_text": null,
+    "indications": null,
+    "library": {
+      "is_editable": true,
+      "name": "Sponsor"
+    },
+    "name": "<p>Overall response rate of [Compound] + [Compound] cohort</p>",
+    "name_plain": "Overall response rate of [Compound] + [Compound] cohort",
+    "parameters": [
+      {
+        "name": "Compound",
+        "terms": null
+      },
+      {
+        "name": "Compound",
+        "terms": null
+      }
+    ],
+    "possible_actions": [
+      "inactivate",
+      "new_version"
+    ],
+    "start_date": "2023-04-18T06:44:27.412550+00:00",
+    "status": "Final",
+    "study_count": 0,
+    "sub_categories": null,
+    "uid": "EndpointTemplate_000007",
+    "user_initials": "unknown-user",
+    "version": "1.0"
+  },
+  {
+    "categories": null,
+    "change_description": "Approved version",
+    "default_parameter_terms": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "terms": []
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "terms": []
+        }
+      ]
+    },
+    "end_date": null,
+    "guidance_text": null,
+    "indications": null,
+    "library": {
+      "is_editable": true,
+      "name": "Sponsor"
+    },
+    "name": "<p>Disease control rate of [Compound] + [Compound] cohort</p>",
+    "name_plain": "Disease control rate of [Compound] + [Compound] cohort",
+    "parameters": [
+      {
+        "name": "Compound",
+        "terms": null
+      },
+      {
+        "name": "Compound",
+        "terms": null
+      }
+    ],
+    "possible_actions": [
+      "inactivate",
+      "new_version"
+    ],
+    "start_date": "2023-04-18T06:43:03.598035+00:00",
+    "status": "Final",
+    "study_count": 1,
+    "sub_categories": null,
+    "uid": "EndpointTemplate_000006",
+    "user_initials": "unknown-user",
+    "version": "1.0"
+  },
+  {
+    "categories": null,
+    "change_description": "Approved version",
+    "default_parameter_values": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": []
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "values": []
+        },
+        {
+          "conjunction": "",
+          "position": 3,
+          "values": []
+        },
+        {
+          "conjunction": "",
+          "position": 4,
+          "values": []
+        }
+      ]
+    },
+    "editable_instance": false,
+    "end_date": null,
+    "indications": null,
+    "library": {
+      "is_editable": true,
+      "name": "Sponsor"
+    },
+    "name": "<p>Proportion of subjects with [ActivityInstance] [Operator] [NumericValue] [Unit]</p>",
+    "name_plain": "Proportion of subjects with [ActivityInstance] [Operator] [NumericValue] [Unit]",
+    "parameters": [
+      {
+        "name": "ActivityInstance",
+        "values": null
+      },
+      {
+        "name": "Operator",
+        "values": null
+      },
+      {
+        "name": "NumericValue",
+        "values": null
+      },
+      {
+        "name": "Unit",
+        "values": null
+      }
+    ],
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-20T12:25:32.484980",
+    "status": "Final",
+    "study_count": 1,
+    "sub_categories": null,
+    "uid": "EndpointTemplate_000005",
+    "user_initials": "MT",
+    "version": "1.0"
+  },
+  {
+    "categories": null,
+    "change_description": "Approved version",
+    "default_parameter_values": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": []
+        }
+      ]
+    },
+    "editable_instance": false,
+    "end_date": null,
+    "indications": null,
+    "library": {
+      "is_editable": true,
+      "name": "Sponsor"
+    },
+    "name": "<p>Mean change from baseline in [ActivityInstance]</p>",
+    "name_plain": "Mean change from baseline in [ActivityInstance]",
+    "parameters": [
+      {
+        "name": "ActivityInstance",
+        "values": null
+      }
+    ],
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-20T12:22:55.711905",
+    "status": "Final",
+    "study_count": 1,
+    "sub_categories": null,
+    "uid": "EndpointTemplate_000004",
+    "user_initials": "MT",
+    "version": "1.0"
+  },
+  {
+    "categories": null,
+    "change_description": "Approved version",
+    "default_parameter_values": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": []
+        }
+      ]
+    },
+    "editable_instance": false,
+    "end_date": null,
+    "indications": null,
+    "library": {
+      "is_editable": true,
+      "name": "User Defined"
+    },
+    "name": "test user defined [ActivityInstance]",
+    "name_plain": "test user defined [ActivityInstance]",
+    "parameters": [
+      {
+        "name": "ActivityInstance",
+        "values": null
+      }
+    ],
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T13:22:07.229016",
+    "status": "Final",
+    "study_count": 0,
+    "sub_categories": null,
+    "uid": "EndpointTemplate_000003",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "categories": null,
+    "change_description": "Approved version",
+    "default_parameter_values": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": []
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "values": []
+        }
+      ]
+    },
+    "editable_instance": false,
+    "end_date": null,
+    "indications": null,
+    "library": {
+      "is_editable": true,
+      "name": "Sponsor"
+    },
+    "name": "test [ActivityInstance] and [DiseaseDisorder]",
+    "name_plain": "test [ActivityInstance] and [DiseaseDisorder]",
+    "parameters": [
+      {
+        "name": "ActivityInstance",
+        "values": null
+      },
+      {
+        "name": "DiseaseDisorder",
+        "values": null
+      }
+    ],
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T13:22:06.812005",
+    "status": "Final",
+    "study_count": 1,
+    "sub_categories": null,
+    "uid": "EndpointTemplate_000002",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  },
+  {
+    "categories": null,
+    "change_description": "Approved version",
+    "default_parameter_values": {
+      "0": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "values": []
+        }
+      ]
+    },
+    "editable_instance": false,
+    "end_date": null,
+    "indications": null,
+    "library": {
+      "is_editable": true,
+      "name": "Sponsor"
+    },
+    "name": "test [ActivityInstance]",
+    "name_plain": "test [ActivityInstance]",
+    "parameters": [
+      {
+        "name": "ActivityInstance",
+        "values": null
+      }
+    ],
+    "possible_actions": [
+      "inactivate",
+      "newVersion"
+    ],
+    "start_date": "2022-10-18T13:22:06.180308",
+    "status": "Final",
+    "study_count": 0,
+    "sub_categories": null,
+    "uid": "EndpointTemplate_000001",
+    "user_initials": "84fafb9e-ee1c-4c73-b791-9e9d2d95402f",
+    "version": "1.0"
+  }
+]

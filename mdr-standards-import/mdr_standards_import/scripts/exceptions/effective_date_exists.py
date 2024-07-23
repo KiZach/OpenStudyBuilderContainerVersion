@@ -1,0 +1,2 @@
+class EffectiveDateExists(Exception):
+    pass

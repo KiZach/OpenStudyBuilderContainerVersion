@@ -1,0 +1,11 @@
+CT_CD_LIST_SUBMVAL,CT_NAME,NAME_SENTENSE_CASE,CT_SUBMVAL,DEFINITION,ORDER,CT_CD,NCI_PREFERRED_NAME
+THERAREA,Cardiovascular Disease,cardiovascular disease,CARDIOVASCULAR DISEASE,Cardiovascular Disease. A type of disease that affects the heart or blood vessels. The risk of certain cardiovascular diseases may be increased by smoking; high blood pressure; high cholesterol; unhealthy diet; lack of exercise; and obesity. The most common cardiovascular disease is coronary artery disease (narrow or blocked coronary arteries) which can lead to chest pain; heart attacks or stroke. Other cardiovascular diseases include congestive heart failure; heart rhythm problems; congenital heart disease (heart disease at birth) and endocarditis (inflamed inner layer of the heart). Also called heart disease. (NCI),1,,Cardiovascular disease
+THERAREA,Cognitive Impairment,cognitive impairment,COGNITIVE IMPAIRMENT,Cognitive Impairment,2,,Cognitive impairment
+THERAREA,Diabetes Mellitus,diabetes mellitus,DIABETES MELLITUS,Diabetes Mellitus,3,,Diabetes mellitus
+THERAREA,Growth Deficiencies,growth deficiencies,GROWTH DEFICIENCIES,Growth deficiencies,4,,Growth deficiencies
+THERAREA,Haemophilia,haemophilia,HAEMOPHILIA,Sponsor defined: Haemophilia. Bleeding disorders.,5,,Haemophilia
+THERAREA,Inflammation,inflammation,INFLAMMATION,Inflammation,6,,Inflammation
+THERAREA,Chronic Kidney Disease,chronic kidney disease,CHRONIC KIDNEY DISEASE,Chronic Kidney Disease is an impairment of the renal function secondary to chronic kidney damage persisting for three or more months. (NCI),6,,Chronic kidney disease
+THERAREA,Non-Alcoholic Steatohepatitis,non-alcoholic steatohepatitis,NASH,Non-Alcoholic Steatohepatitis,7,,Non-alcoholic steatohepatitis
+THERAREA,Obesity,obesity,OBESITY,Obesity,8,,Obesity
+THERAREA,Sickle Cell Disease,sickle cell disease,SICKLE CELL DISEASE,Sickle Cell Disease,8,,Sickle cell disease

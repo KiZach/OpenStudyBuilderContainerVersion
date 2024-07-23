@@ -1,0 +1,5 @@
+library,uid,context,name
+Sponsor,A.SDTMDomain,SDTM,Domain
+Sponsor,A.SDTMVariable,SDTM,Variable
+Sponsor,A.CDASHDomain,CDASH,Domain
+Sponsor,A.CDASHVariable,CDASH,Variable

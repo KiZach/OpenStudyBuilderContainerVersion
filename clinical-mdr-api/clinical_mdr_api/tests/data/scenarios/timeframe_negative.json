@@ -1,0 +1,141 @@
+[
+    {
+        "name": "Non-existent library",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "non-existent library",
+                "name": "Test timeframe",
+                "parameter_terms": [
+                    {
+                        "conjunction": ",",
+                        "name": "Indication",
+                        "terms": [
+                            {
+                                "index": 1,
+                                "name": "Indication",
+                                "type": "Indication",
+                                "uid": "Indication-99991",
+                                "value": "type 2 diabetes"
+                            }
+                        ]
+                    }
+                ],
+                "timeframe_template_uid": "{ttuid}"
+            },
+            "url": "/timeframes"
+        },
+        "response": {
+            "code": 404,
+            "headers": {
+                "content-length": "173",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "The library with the name='non-existent library' could not be found.",
+                "method": "POST",
+                "path": "http://testserver/timeframes",
+                "time": "2020-11-10T01:51:17.884429",
+                "type": "NotFoundException"
+            }
+        }
+    },
+    {
+        "name": "Wrong template uid",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Test library",
+                "name": "Test timeframe",
+                "parameter_terms": [],
+                "timeframe_template_uid": "wrong-uid"
+            },
+            "url": "/timeframes"
+        },
+        "response": {
+            "code": 404,
+            "headers": {
+                "content-length": "192",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "No TimeframeTemplateRoot with UID (wrong-uid) found in given status, date and version.",
+                "method": "POST",
+                "path": "http://testserver/timeframes",
+                "time": "2020-11-10T01:52:30.985556",
+                "type": "NotFoundException"
+            }
+        }
+    },
+    {
+        "name": "Non wront TT",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Test library",
+                "name": "Test timeframe",
+                "parameter_terms": [],
+                "timeframe_template_uid": "{ttuidna}"
+            },
+            "url": "/timeframes"
+        },
+        "response": {
+            "code": 404,
+            "headers": {
+                "content-length": "192",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "No TimeframeTemplateRoot with UID ({ttuidna}) found in given status, date and version.",
+                "method": "POST",
+                "path": "http://testserver/timeframes",
+                "time": "2020-11-10T01:52:30.985556",
+                "type": "NotFoundException"
+            }
+        }
+    },
+    {
+        "name": "Wrong parameters",
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Test library",
+                "parameter_terms": [
+                    {
+                        "conjunction": ",",
+                        "name": "Indication",
+                        "terms": [
+                            {
+                                "index": 1,
+                                "name": "Indication",
+                                "type": "Indication",
+                                "uid": "TemplateParameter_000001",
+                                "value": "type 2 diabetes"
+                            }
+                        ]
+                    }
+                ],
+                "timeframe_template_uid": "{ttuid}"
+            },
+            "url": "/timeframes"
+        },
+        "response": {
+            "code": 400,
+            "headers": {
+                "content-length": "192",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "One or more of the specified template parameters can not be found.",
+                "method": "POST",
+                "path": "http://testserver/timeframes",
+                "time": "2020-11-10T01:52:30.985556",
+                "type": "ValidationException"
+            }
+        }
+    }
+]

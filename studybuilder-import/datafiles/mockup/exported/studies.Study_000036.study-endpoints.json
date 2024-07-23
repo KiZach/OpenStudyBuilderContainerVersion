@@ -1,0 +1,966 @@
+[
+  {
+    "accepted_version": false,
+    "endpoint": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "endpoint_template": {
+        "name": "<p>Disease control rate of [Compound] + [Compound] cohort</p>",
+        "name_plain": "Disease control rate of [Compound] + [Compound] cohort",
+        "uid": "EndpointTemplate_000006"
+      },
+      "library": {
+        "is_editable": true,
+        "name": "Sponsor"
+      },
+      "name": "<p>Disease control rate of [azd6738] + [durvalumab] cohort</p>",
+      "name_plain": "Disease control rate of azd6738 + durvalumab cohort",
+      "parameter_terms": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "terms": [
+            {
+              "index": 1,
+              "name": "azd6738",
+              "type": "Compound",
+              "uid": "Compound_000013"
+            }
+          ]
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "terms": [
+            {
+              "index": 1,
+              "name": "durvalumab",
+              "type": "Comparator",
+              "uid": "Compound_000012"
+            }
+          ]
+        }
+      ],
+      "possible_actions": [
+        "inactivate"
+      ],
+      "start_date": "2023-04-18T06:47:45.990448+00:00",
+      "status": "Final",
+      "study_count": null,
+      "uid": "Endpoint_000001",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "endpoint_level": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000006",
+      "end_date": null,
+      "library_name": "CDISC",
+      "order": 1,
+      "possible_actions": [
+        "inactivate",
+        "new_version"
+      ],
+      "sponsor_preferred_name": "Primary Endpoint",
+      "sponsor_preferred_name_sentence_case": "primary endpoint",
+      "start_date": "2023-04-17T12:55:48.434422+00:00",
+      "status": "Final",
+      "term_uid": "C98772_OUTMSPRI",
+      "user_initials": "unknown-user",
+      "version": "3.0"
+    },
+    "endpoint_sublevel": null,
+    "endpoint_units": {
+      "separator": null,
+      "units": []
+    },
+    "latest_endpoint": null,
+    "latest_timeframe": null,
+    "order": 1,
+    "project_name": "CDISC Dev",
+    "project_number": "CDISC DEV",
+    "start_date": "2023-04-18T06:47:46.341604+00:00",
+    "study_endpoint_uid": "StudyEndpoint_000001",
+    "study_objective": {
+      "accepted_version": false,
+      "endpoint_count": 2,
+      "latest_objective": null,
+      "objective": {
+        "change_description": "Approved version",
+        "end_date": null,
+        "library": {
+          "is_editable": true,
+          "name": "Sponsor"
+        },
+        "name": "<p>To assess the effect of [azd6738] and [durvalumab] or [azd6738] and [olaparib] combination in biliary tract cancer patients who have failed to 1st-line chemotherapy</p>",
+        "name_plain": "To assess the effect of azd6738 and durvalumab or azd6738 and olaparib combination in biliary tract cancer patients who have failed to 1st-line chemotherapy",
+        "objective_template": {
+          "name": "<p>To assess the effect of [Compound] and [Compound] or [Compound] and [Compound] combination in biliary tract cancer patients who have failed to 1st-line chemotherapy</p>",
+          "name_plain": "To assess the effect of [Compound] and [Compound] or [Compound] and [Compound] combination in biliary tract cancer patients who have failed to 1st-line chemotherapy",
+          "uid": "ObjectiveTemplate_000009"
+        },
+        "parameter_terms": [
+          {
+            "conjunction": "",
+            "position": 1,
+            "terms": [
+              {
+                "index": 1,
+                "name": "azd6738",
+                "type": "Compound",
+                "uid": "Compound_000013"
+              }
+            ]
+          },
+          {
+            "conjunction": "",
+            "position": 2,
+            "terms": [
+              {
+                "index": 1,
+                "name": "durvalumab",
+                "type": "Comparator",
+                "uid": "Compound_000012"
+              }
+            ]
+          },
+          {
+            "conjunction": "",
+            "position": 3,
+            "terms": [
+              {
+                "index": 1,
+                "name": "azd6738",
+                "type": "Compound",
+                "uid": "Compound_000013"
+              }
+            ]
+          },
+          {
+            "conjunction": "",
+            "position": 4,
+            "terms": [
+              {
+                "index": 1,
+                "name": "olaparib",
+                "type": "Compound",
+                "uid": "Compound_000011"
+              }
+            ]
+          }
+        ],
+        "possible_actions": [
+          "inactivate"
+        ],
+        "start_date": "2023-04-18T06:33:44.707176+00:00",
+        "status": "Final",
+        "study_count": null,
+        "uid": "Objective_000003",
+        "user_initials": "unknown-user",
+        "version": "1.0"
+      },
+      "objective_level": {
+        "catalogue_name": "SDTM CT",
+        "change_description": "Approved version",
+        "codelist_uid": "CTCodelist_000004",
+        "end_date": null,
+        "library_name": "CDISC",
+        "order": 1,
+        "possible_actions": [
+          "inactivate",
+          "new_version"
+        ],
+        "sponsor_preferred_name": "Primary Objective",
+        "sponsor_preferred_name_sentence_case": "primary objective",
+        "start_date": "2023-04-17T12:55:52.279938+00:00",
+        "status": "Final",
+        "term_uid": "C85826_OBJPRIM",
+        "user_initials": "unknown-user",
+        "version": "3.0"
+      },
+      "order": 1,
+      "project_name": "CDISC Dev",
+      "project_number": "CDISC DEV",
+      "start_date": "2023-04-18T06:33:44.904028+00:00",
+      "study_objective_uid": "StudyObjective_000003",
+      "study_uid": "Study_000036",
+      "user_initials": "unknown-user"
+    },
+    "study_uid": "Study_000036",
+    "timeframe": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "library": {
+        "is_editable": true,
+        "name": "Sponsor"
+      },
+      "name": "<p>through study completion, an average of [1] [year]</p>",
+      "name_plain": "through study completion, an average of 1 year",
+      "parameter_terms": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "terms": [
+            {
+              "index": 1,
+              "name": "1",
+              "type": "NumericValue",
+              "uid": "NumericValue_000001"
+            }
+          ]
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "terms": [
+            {
+              "index": 1,
+              "name": "year",
+              "type": "Unit",
+              "uid": "UnitDefinition_000100"
+            }
+          ]
+        }
+      ],
+      "possible_actions": [
+        "inactivate"
+      ],
+      "start_date": "2023-04-18T06:47:44.881329+00:00",
+      "status": "Final",
+      "study_count": null,
+      "timeframe_template": {
+        "name": "<p>through study completion, an average of [NumericValue] [Time Unit]</p>",
+        "name_plain": "through study completion, an average of [NumericValue] [Time Unit]",
+        "uid": "TimeframeTemplate_000005"
+      },
+      "uid": "Timeframe_000001",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "user_initials": "unknown-user"
+  },
+  {
+    "accepted_version": false,
+    "endpoint": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "endpoint_template": {
+        "name": "<p>Disease control rate of [Compound] + [Compound] cohort</p>",
+        "name_plain": "Disease control rate of [Compound] + [Compound] cohort",
+        "uid": "EndpointTemplate_000006"
+      },
+      "library": {
+        "is_editable": true,
+        "name": "Sponsor"
+      },
+      "name": "<p>Disease control rate of [azd6738] + [olaparib] cohort</p>",
+      "name_plain": "Disease control rate of azd6738 + olaparib cohort",
+      "parameter_terms": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "terms": [
+            {
+              "index": 1,
+              "name": "azd6738",
+              "type": "Compound",
+              "uid": "Compound_000013"
+            }
+          ]
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "terms": [
+            {
+              "index": 1,
+              "name": "olaparib",
+              "type": "Compound",
+              "uid": "Compound_000011"
+            }
+          ]
+        }
+      ],
+      "possible_actions": [
+        "inactivate"
+      ],
+      "start_date": "2023-04-18T06:48:43.027375+00:00",
+      "status": "Final",
+      "study_count": null,
+      "uid": "Endpoint_000002",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "endpoint_level": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000006",
+      "end_date": null,
+      "library_name": "CDISC",
+      "order": 1,
+      "possible_actions": [
+        "inactivate",
+        "new_version"
+      ],
+      "sponsor_preferred_name": "Primary Endpoint",
+      "sponsor_preferred_name_sentence_case": "primary endpoint",
+      "start_date": "2023-04-17T12:55:48.434422+00:00",
+      "status": "Final",
+      "term_uid": "C98772_OUTMSPRI",
+      "user_initials": "unknown-user",
+      "version": "3.0"
+    },
+    "endpoint_sublevel": null,
+    "endpoint_units": {
+      "separator": null,
+      "units": []
+    },
+    "latest_endpoint": null,
+    "latest_timeframe": null,
+    "order": 2,
+    "project_name": "CDISC Dev",
+    "project_number": "CDISC DEV",
+    "start_date": "2023-04-18T06:48:43.273796+00:00",
+    "study_endpoint_uid": "StudyEndpoint_000003",
+    "study_objective": {
+      "accepted_version": false,
+      "endpoint_count": 2,
+      "latest_objective": null,
+      "objective": {
+        "change_description": "Approved version",
+        "end_date": null,
+        "library": {
+          "is_editable": true,
+          "name": "Sponsor"
+        },
+        "name": "<p>To assess the effect of [azd6738] and [durvalumab] or [azd6738] and [olaparib] combination in biliary tract cancer patients who have failed to 1st-line chemotherapy</p>",
+        "name_plain": "To assess the effect of azd6738 and durvalumab or azd6738 and olaparib combination in biliary tract cancer patients who have failed to 1st-line chemotherapy",
+        "objective_template": {
+          "name": "<p>To assess the effect of [Compound] and [Compound] or [Compound] and [Compound] combination in biliary tract cancer patients who have failed to 1st-line chemotherapy</p>",
+          "name_plain": "To assess the effect of [Compound] and [Compound] or [Compound] and [Compound] combination in biliary tract cancer patients who have failed to 1st-line chemotherapy",
+          "uid": "ObjectiveTemplate_000009"
+        },
+        "parameter_terms": [
+          {
+            "conjunction": "",
+            "position": 1,
+            "terms": [
+              {
+                "index": 1,
+                "name": "azd6738",
+                "type": "Compound",
+                "uid": "Compound_000013"
+              }
+            ]
+          },
+          {
+            "conjunction": "",
+            "position": 2,
+            "terms": [
+              {
+                "index": 1,
+                "name": "durvalumab",
+                "type": "Comparator",
+                "uid": "Compound_000012"
+              }
+            ]
+          },
+          {
+            "conjunction": "",
+            "position": 3,
+            "terms": [
+              {
+                "index": 1,
+                "name": "azd6738",
+                "type": "Compound",
+                "uid": "Compound_000013"
+              }
+            ]
+          },
+          {
+            "conjunction": "",
+            "position": 4,
+            "terms": [
+              {
+                "index": 1,
+                "name": "olaparib",
+                "type": "Compound",
+                "uid": "Compound_000011"
+              }
+            ]
+          }
+        ],
+        "possible_actions": [
+          "inactivate"
+        ],
+        "start_date": "2023-04-18T06:33:44.707176+00:00",
+        "status": "Final",
+        "study_count": null,
+        "uid": "Objective_000003",
+        "user_initials": "unknown-user",
+        "version": "1.0"
+      },
+      "objective_level": {
+        "catalogue_name": "SDTM CT",
+        "change_description": "Approved version",
+        "codelist_uid": "CTCodelist_000004",
+        "end_date": null,
+        "library_name": "CDISC",
+        "order": 1,
+        "possible_actions": [
+          "inactivate",
+          "new_version"
+        ],
+        "sponsor_preferred_name": "Primary Objective",
+        "sponsor_preferred_name_sentence_case": "primary objective",
+        "start_date": "2023-04-17T12:55:52.279938+00:00",
+        "status": "Final",
+        "term_uid": "C85826_OBJPRIM",
+        "user_initials": "unknown-user",
+        "version": "3.0"
+      },
+      "order": 1,
+      "project_name": "CDISC Dev",
+      "project_number": "CDISC DEV",
+      "start_date": "2023-04-18T06:33:44.904028+00:00",
+      "study_objective_uid": "StudyObjective_000003",
+      "study_uid": "Study_000036",
+      "user_initials": "unknown-user"
+    },
+    "study_uid": "Study_000036",
+    "timeframe": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "library": {
+        "is_editable": true,
+        "name": "Sponsor"
+      },
+      "name": "<p>through study completion, an average of [1] [year]</p>",
+      "name_plain": "through study completion, an average of 1 year",
+      "parameter_terms": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "terms": [
+            {
+              "index": 1,
+              "name": "1",
+              "type": "NumericValue",
+              "uid": "NumericValue_000001"
+            }
+          ]
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "terms": [
+            {
+              "index": 1,
+              "name": "year",
+              "type": "Unit",
+              "uid": "UnitDefinition_000100"
+            }
+          ]
+        }
+      ],
+      "possible_actions": [
+        "inactivate"
+      ],
+      "start_date": "2023-04-18T06:47:44.881329+00:00",
+      "status": "Final",
+      "study_count": null,
+      "timeframe_template": {
+        "name": "<p>through study completion, an average of [NumericValue] [Time Unit]</p>",
+        "name_plain": "through study completion, an average of [NumericValue] [Time Unit]",
+        "uid": "TimeframeTemplate_000005"
+      },
+      "uid": "Timeframe_000001",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "user_initials": "unknown-user"
+  },
+  {
+    "accepted_version": false,
+    "endpoint": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "endpoint_template": {
+        "name": "<p>Safety and tolerability of [Compound] + [Compound] cohort measured by number and grade of toxicity events</p>",
+        "name_plain": "Safety and tolerability of [Compound] + [Compound] cohort measured by number and grade of toxicity events",
+        "uid": "EndpointTemplate_000008"
+      },
+      "library": {
+        "is_editable": true,
+        "name": "Sponsor"
+      },
+      "name": "<p>Safety and tolerability of [azd6738] + [durvalumab] cohort measured by number and grade of toxicity events</p>",
+      "name_plain": "Safety and tolerability of azd6738 + durvalumab cohort measured by number and grade of toxicity events",
+      "parameter_terms": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "terms": [
+            {
+              "index": 1,
+              "name": "azd6738",
+              "type": "Compound",
+              "uid": "Compound_000013"
+            }
+          ]
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "terms": [
+            {
+              "index": 1,
+              "name": "durvalumab",
+              "type": "Comparator",
+              "uid": "Compound_000012"
+            }
+          ]
+        }
+      ],
+      "possible_actions": [
+        "inactivate"
+      ],
+      "start_date": "2023-04-18T06:52:10.530748+00:00",
+      "status": "Final",
+      "study_count": null,
+      "uid": "Endpoint_000003",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "endpoint_level": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000006",
+      "end_date": null,
+      "library_name": "CDISC",
+      "order": 2,
+      "possible_actions": [
+        "inactivate",
+        "new_version"
+      ],
+      "sponsor_preferred_name": "Secondary Endpoint",
+      "sponsor_preferred_name_sentence_case": "secondary endpoint",
+      "start_date": "2023-04-17T12:55:49.050157+00:00",
+      "status": "Final",
+      "term_uid": "C98781_OUTMSSEC",
+      "user_initials": "unknown-user",
+      "version": "3.0"
+    },
+    "endpoint_sublevel": null,
+    "endpoint_units": {
+      "separator": null,
+      "units": []
+    },
+    "latest_endpoint": null,
+    "latest_timeframe": null,
+    "order": 3,
+    "project_name": "CDISC Dev",
+    "project_number": "CDISC DEV",
+    "start_date": "2023-04-18T06:52:10.661823+00:00",
+    "study_endpoint_uid": "StudyEndpoint_000005",
+    "study_objective": {
+      "accepted_version": false,
+      "endpoint_count": 2,
+      "latest_objective": null,
+      "objective": {
+        "change_description": "Approved version",
+        "end_date": null,
+        "library": {
+          "is_editable": true,
+          "name": "Sponsor"
+        },
+        "name": "<p>To assess the safety of [azd6738] and [durvalumab] combination or [azd6738] and [olaparib] combination in biliary tract cancer patients</p>",
+        "name_plain": "To assess the safety of azd6738 and durvalumab combination or azd6738 and olaparib combination in biliary tract cancer patients",
+        "objective_template": {
+          "name": "<p>To assess the safety of [Compound] and [Compound] combination or [Compound] and [Compound] combination in biliary tract cancer patients</p>",
+          "name_plain": "To assess the safety of [Compound] and [Compound] combination or [Compound] and [Compound] combination in biliary tract cancer patients",
+          "uid": "ObjectiveTemplate_000010"
+        },
+        "parameter_terms": [
+          {
+            "conjunction": "",
+            "position": 1,
+            "terms": [
+              {
+                "index": 1,
+                "name": "azd6738",
+                "type": "Compound",
+                "uid": "Compound_000013"
+              }
+            ]
+          },
+          {
+            "conjunction": "",
+            "position": 2,
+            "terms": [
+              {
+                "index": 1,
+                "name": "durvalumab",
+                "type": "Comparator",
+                "uid": "Compound_000012"
+              }
+            ]
+          },
+          {
+            "conjunction": "",
+            "position": 3,
+            "terms": [
+              {
+                "index": 1,
+                "name": "azd6738",
+                "type": "Compound",
+                "uid": "Compound_000013"
+              }
+            ]
+          },
+          {
+            "conjunction": "",
+            "position": 4,
+            "terms": [
+              {
+                "index": 1,
+                "name": "olaparib",
+                "type": "Compound",
+                "uid": "Compound_000011"
+              }
+            ]
+          }
+        ],
+        "possible_actions": [
+          "inactivate"
+        ],
+        "start_date": "2023-04-18T06:35:58.594005+00:00",
+        "status": "Final",
+        "study_count": null,
+        "uid": "Objective_000004",
+        "user_initials": "unknown-user",
+        "version": "1.0"
+      },
+      "objective_level": {
+        "catalogue_name": "SDTM CT",
+        "change_description": "Approved version",
+        "codelist_uid": "CTCodelist_000004",
+        "end_date": null,
+        "library_name": "CDISC",
+        "order": 2,
+        "possible_actions": [
+          "inactivate",
+          "new_version"
+        ],
+        "sponsor_preferred_name": "Secondary Objective",
+        "sponsor_preferred_name_sentence_case": "secondary objective",
+        "start_date": "2023-04-17T12:55:52.917151+00:00",
+        "status": "Final",
+        "term_uid": "C85827_OBJSEC",
+        "user_initials": "unknown-user",
+        "version": "3.0"
+      },
+      "order": 2,
+      "project_name": "CDISC Dev",
+      "project_number": "CDISC DEV",
+      "start_date": "2023-04-18T06:35:58.671959+00:00",
+      "study_objective_uid": "StudyObjective_000004",
+      "study_uid": "Study_000036",
+      "user_initials": "unknown-user"
+    },
+    "study_uid": "Study_000036",
+    "timeframe": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "library": {
+        "is_editable": true,
+        "name": "Sponsor"
+      },
+      "name": "<p>through study completion, an average of [1] [year]</p>",
+      "name_plain": "through study completion, an average of 1 year",
+      "parameter_terms": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "terms": [
+            {
+              "index": 1,
+              "name": "1",
+              "type": "NumericValue",
+              "uid": "NumericValue_000001"
+            }
+          ]
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "terms": [
+            {
+              "index": 1,
+              "name": "year",
+              "type": "Unit",
+              "uid": "UnitDefinition_000100"
+            }
+          ]
+        }
+      ],
+      "possible_actions": [
+        "inactivate"
+      ],
+      "start_date": "2023-04-18T06:47:44.881329+00:00",
+      "status": "Final",
+      "study_count": null,
+      "timeframe_template": {
+        "name": "<p>through study completion, an average of [NumericValue] [Time Unit]</p>",
+        "name_plain": "through study completion, an average of [NumericValue] [Time Unit]",
+        "uid": "TimeframeTemplate_000005"
+      },
+      "uid": "Timeframe_000001",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "user_initials": "unknown-user"
+  },
+  {
+    "accepted_version": false,
+    "endpoint": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "endpoint_template": {
+        "name": "<p>Safety and tolerability of [Compound] + [Compound] cohort measured by number and grade of toxicity events</p>",
+        "name_plain": "Safety and tolerability of [Compound] + [Compound] cohort measured by number and grade of toxicity events",
+        "uid": "EndpointTemplate_000008"
+      },
+      "library": {
+        "is_editable": true,
+        "name": "Sponsor"
+      },
+      "name": "<p>Safety and tolerability of [azd6738] + [olaparib] cohort measured by number and grade of toxicity events</p>",
+      "name_plain": "Safety and tolerability of azd6738 + olaparib cohort measured by number and grade of toxicity events",
+      "parameter_terms": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "terms": [
+            {
+              "index": 1,
+              "name": "azd6738",
+              "type": "Compound",
+              "uid": "Compound_000013"
+            }
+          ]
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "terms": [
+            {
+              "index": 1,
+              "name": "olaparib",
+              "type": "Compound",
+              "uid": "Compound_000011"
+            }
+          ]
+        }
+      ],
+      "possible_actions": [
+        "inactivate"
+      ],
+      "start_date": "2023-04-18T06:53:13.822146+00:00",
+      "status": "Final",
+      "study_count": null,
+      "uid": "Endpoint_000004",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "endpoint_level": {
+      "catalogue_name": "SDTM CT",
+      "change_description": "Approved version",
+      "codelist_uid": "CTCodelist_000006",
+      "end_date": null,
+      "library_name": "CDISC",
+      "order": 2,
+      "possible_actions": [
+        "inactivate",
+        "new_version"
+      ],
+      "sponsor_preferred_name": "Secondary Endpoint",
+      "sponsor_preferred_name_sentence_case": "secondary endpoint",
+      "start_date": "2023-04-17T12:55:49.050157+00:00",
+      "status": "Final",
+      "term_uid": "C98781_OUTMSSEC",
+      "user_initials": "unknown-user",
+      "version": "3.0"
+    },
+    "endpoint_sublevel": null,
+    "endpoint_units": {
+      "separator": null,
+      "units": []
+    },
+    "latest_endpoint": null,
+    "latest_timeframe": null,
+    "order": 4,
+    "project_name": "CDISC Dev",
+    "project_number": "CDISC DEV",
+    "start_date": "2023-04-18T06:53:13.970237+00:00",
+    "study_endpoint_uid": "StudyEndpoint_000007",
+    "study_objective": {
+      "accepted_version": false,
+      "endpoint_count": 2,
+      "latest_objective": null,
+      "objective": {
+        "change_description": "Approved version",
+        "end_date": null,
+        "library": {
+          "is_editable": true,
+          "name": "Sponsor"
+        },
+        "name": "<p>To assess the safety of [azd6738] and [durvalumab] combination or [azd6738] and [olaparib] combination in biliary tract cancer patients</p>",
+        "name_plain": "To assess the safety of azd6738 and durvalumab combination or azd6738 and olaparib combination in biliary tract cancer patients",
+        "objective_template": {
+          "name": "<p>To assess the safety of [Compound] and [Compound] combination or [Compound] and [Compound] combination in biliary tract cancer patients</p>",
+          "name_plain": "To assess the safety of [Compound] and [Compound] combination or [Compound] and [Compound] combination in biliary tract cancer patients",
+          "uid": "ObjectiveTemplate_000010"
+        },
+        "parameter_terms": [
+          {
+            "conjunction": "",
+            "position": 1,
+            "terms": [
+              {
+                "index": 1,
+                "name": "azd6738",
+                "type": "Compound",
+                "uid": "Compound_000013"
+              }
+            ]
+          },
+          {
+            "conjunction": "",
+            "position": 2,
+            "terms": [
+              {
+                "index": 1,
+                "name": "durvalumab",
+                "type": "Comparator",
+                "uid": "Compound_000012"
+              }
+            ]
+          },
+          {
+            "conjunction": "",
+            "position": 3,
+            "terms": [
+              {
+                "index": 1,
+                "name": "azd6738",
+                "type": "Compound",
+                "uid": "Compound_000013"
+              }
+            ]
+          },
+          {
+            "conjunction": "",
+            "position": 4,
+            "terms": [
+              {
+                "index": 1,
+                "name": "olaparib",
+                "type": "Compound",
+                "uid": "Compound_000011"
+              }
+            ]
+          }
+        ],
+        "possible_actions": [
+          "inactivate"
+        ],
+        "start_date": "2023-04-18T06:35:58.594005+00:00",
+        "status": "Final",
+        "study_count": null,
+        "uid": "Objective_000004",
+        "user_initials": "unknown-user",
+        "version": "1.0"
+      },
+      "objective_level": {
+        "catalogue_name": "SDTM CT",
+        "change_description": "Approved version",
+        "codelist_uid": "CTCodelist_000004",
+        "end_date": null,
+        "library_name": "CDISC",
+        "order": 2,
+        "possible_actions": [
+          "inactivate",
+          "new_version"
+        ],
+        "sponsor_preferred_name": "Secondary Objective",
+        "sponsor_preferred_name_sentence_case": "secondary objective",
+        "start_date": "2023-04-17T12:55:52.917151+00:00",
+        "status": "Final",
+        "term_uid": "C85827_OBJSEC",
+        "user_initials": "unknown-user",
+        "version": "3.0"
+      },
+      "order": 2,
+      "project_name": "CDISC Dev",
+      "project_number": "CDISC DEV",
+      "start_date": "2023-04-18T06:35:58.671959+00:00",
+      "study_objective_uid": "StudyObjective_000004",
+      "study_uid": "Study_000036",
+      "user_initials": "unknown-user"
+    },
+    "study_uid": "Study_000036",
+    "timeframe": {
+      "change_description": "Approved version",
+      "end_date": null,
+      "library": {
+        "is_editable": true,
+        "name": "Sponsor"
+      },
+      "name": "<p>through study completion, an average of [1] [year]</p>",
+      "name_plain": "through study completion, an average of 1 year",
+      "parameter_terms": [
+        {
+          "conjunction": "",
+          "position": 1,
+          "terms": [
+            {
+              "index": 1,
+              "name": "1",
+              "type": "NumericValue",
+              "uid": "NumericValue_000001"
+            }
+          ]
+        },
+        {
+          "conjunction": "",
+          "position": 2,
+          "terms": [
+            {
+              "index": 1,
+              "name": "year",
+              "type": "Unit",
+              "uid": "UnitDefinition_000100"
+            }
+          ]
+        }
+      ],
+      "possible_actions": [
+        "inactivate"
+      ],
+      "start_date": "2023-04-18T06:47:44.881329+00:00",
+      "status": "Final",
+      "study_count": null,
+      "timeframe_template": {
+        "name": "<p>through study completion, an average of [NumericValue] [Time Unit]</p>",
+        "name_plain": "through study completion, an average of [NumericValue] [Time Unit]",
+        "uid": "TimeframeTemplate_000005"
+      },
+      "uid": "Timeframe_000001",
+      "user_initials": "unknown-user",
+      "version": "1.0"
+    },
+    "user_initials": "unknown-user"
+  }
+]

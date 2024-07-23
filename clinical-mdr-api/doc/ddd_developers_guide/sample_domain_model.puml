@@ -1,0 +1,196 @@
+@startuml sample_domain_model
+
+left to right direction
+
+!procedure $simple_dictionary($dictionary_name) 
+
+    class $dictionary_name {
+        + {ID} code: str
+        + {R} name: str
+        + {R} definition: str
+    }
+
+!endprocedure
+
+$simple_dictionary("TherapeuticAreaAR")
+$simple_dictionary("DiagnosisGroupAR")
+$simple_dictionary("DiseaseConditionOrIndicationAR")
+$simple_dictionary("StudyTypeAR")
+$simple_dictionary("TrialIntentTypeAR")
+$simple_dictionary("TrialTypeAR")
+$simple_dictionary("TrialPhaseAR")
+$simple_dictionary("NullValueAR")
+$simple_dictionary("AgeUnitAR")
+
+
+class ClinicalProgrammeAR {
+    + {ID} uid: str
+    + {R} name: str
+    + {static} from_input_values()
+}
+
+class ProjectAR {
+    + {ID} uid: str
+    + {R} project_number: str
+    name: str
+    + {R} clinical_programme_uid: str
+    + description: Optional[str] = None
+    + {static} from_input_values()
+}
+ProjectAR::clinical_programme_uid --> "1" ClinicalProgrammeAR::uid
+
+
+
+package StudyDefinition <<Aggregate>> {
+
+    enum StudyStatus {
+        DRAFT
+        RELEASED
+        LOCKED
+    }
+
+    class StudyDefinitionAR {
+        + {ID} uid: str
+        + {R} current_metadata: StudyMetadataVO
+        + {R} latest_locked_metadata: Optional[StudyMetadataVO]
+        + {R} latest_released_or_locked_metadata: Optional[StudyMetadataVO]
+        + {R} all_locked_versions: Sequence[StudyMetadataVO]
+        + edit_metadata()
+        + lock()
+        + unlock()
+        + release()
+        + mark_deleted()
+        + get_specific_locked_metadata_version(int): StudyMetadataVO
+        + {static} from_initial_values(): StudyDefinitionAR
+    }
+    StudyDefinitionAR::current_metadata --> "1" StudyMetadataVO
+    StudyDefinitionAR::latest_locked_metadata --> "0..1" StudyMetadataVO
+    StudyDefinitionAR::latest_released_or_locked_metadata --> "0..1" StudyMetadataVO
+    StudyDefinitionAR::all_locked_versions --> "*" StudyMetadataVO
+    StudyDefinitionAR::get_specific_locked_metadata_version ..> StudyMetadataVO
+
+    class StudyMetadataVO {
+        + ver_metadata: StudyVersionMetadataVO
+        + high_level_study_design: HighLevelStudyDesignVO
+        + study_population: StudyPopulationVO
+        + id_metadata: StudyIdentificationMetadataVO
+        + validate()
+    }
+    StudyMetadataVO::ver_metadata --> "1" StudyVersionMetadataVO
+    StudyMetadataVO::id_metadata --> "1" StudyIdentificationMetadataVO
+    StudyMetadataVO::study_population --> "1" StudyPopulationVO 
+    StudyMetadataVO::high_level_study_design --> "1" HighLevelStudyDesignVO
+
+    class StudyVersionMetadataVO {
+        + study_status: StudyStatus
+        + version_timestamp: datetime
+        + version_number: Optional[int]
+        + version_description: Optional[str]
+        + version_author: Optional[str]
+        + validate()
+    }
+    StudyVersionMetadataVO::study_status -[norank]-> "1" StudyStatus
+    'StudyStatus "1" <-- VersionMetadataVO::study_status
+
+    class StudyIdentificationMetadataVO  {
+        +   project_number: Optional[str]
+        +   study_number: Optional[str]
+        +   study_acronym: Optional[str]
+        +   study_id_prefix: Optional[str]
+        +   study_id: Optional[str]
+        +   registry_identifiers: RegistryIdentifiersVO
+        +   validate()
+        +   {static} from_input_values(): StudyIdentificationMetadataVO
+    }
+    StudyIdentificationMetadataVO::project_number --> "0..1" ProjectAR::project_number
+    StudyIdentificationMetadataVO::registry_identifiers -[norank]-> "1" RegistryIdentifiersVO
+
+    class RegistryIdentifiersVO {
+        + ct_gov_id: Optional[str]
+        + eudract_id: Optional[str]
+        + universal_trial_number_utn: Optional[str]
+        + japanese_trial_registry_id_japic: Optional[str]
+        + investigational_new_drug_application_number_ind: Optional[str]
+        + ct_gov_id_null_value_code= Optional[str]
+        + eudract_id_null_value_code= Optional[str]
+        + universal_trial_number_utn_null_value_code= Optional[str]
+        + japanese_trial_registry_id_japic_null_value_code= Optional[str]
+        + investigational_new_drug_application_number_ind_null_value_code= Optional[str]
+        + validate()
+        + {static} from_input_values(): RegistryIdentifiersVO
+
+    }
+
+
+    class HighLevelStudyDesignVO {
+            + study_type_code: Optional[str]
+            + study_type_null_value_code: Optional[str]
+            + trial_intent_type_codes: Sequence[str]
+            + trial_intent_type_null_value_code: Optional[str]
+            + trial_phase_code: Optional[str]
+            + trial_phase_null_value_code: Optional[str]
+            + is_extension_trial: Optional[bool]
+            + is_extension_trial_null_value_code: Optional[str]
+            + is_adaptive_design: Optional[bool]
+            + is_adaptive_design_null_value_code: Optional[str]
+            + study_stop_rules: Optional[str]
+            + study_stop_rules_null_value_code: Optional[str]
+            + validate()
+            + {static} from_input_values(): HighLevelStudyDesignVO
+    }
+    HighLevelStudyDesignVO::study_stop_rules_null_value_code -[norank]-> "0..1" NullValueAR::code
+    HighLevelStudyDesignVO::study_type_code --> "0..1" StudyTypeAR::code
+    HighLevelStudyDesignVO::study_type_null_value_code --> "0..1" NullValueAR::code
+    HighLevelStudyDesignVO::trial_phase_code --> "0..1" TrialPhaseAR::code
+    HighLevelStudyDesignVO::trial_phase_null_value_code --> "0..1" NullValueAR::code
+    HighLevelStudyDesignVO::trial_type_codes --> "*" TrialTypeAR::code
+    HighLevelStudyDesignVO::trial_type_null_value_code --> "0..1" NullValueAR::code
+    HighLevelStudyDesignVO::trial_intent_type_codes --> "*" TrialIntentTypeAR::code
+    HighLevelStudyDesignVO::trial_intent_type_null_value_code --> "0..1" NullValueAR::code
+    HighLevelStudyDesignVO::is_adaptive_design_null_value_code --> "0..1" NullValueAR::code
+    HighLevelStudyDesignVO::is_extension_trial_null_value_code --> "0..1" NullValueAR::code
+
+
+    class StudyPopulationVO {
+        + therapeutic_area_codes: Sequence[str]
+        + therapeutic_area_null_value_code: Optional[str]
+        + disease_condition_or_indication_codes: Sequence[str]
+        + disease_condition_or_indication_null_value_code: Optional[str]
+        + diagnosis_group_codes: Sequence[str]
+        + diagnosis_group_null_value_code: Optional[str]
+        + rare_disease_indicator: Optional[bool]
+        + rare_disease_indicator_null_value_code: Optional[str]
+        + healthy_subject_indicator: Optional[bool]
+        + healthy_subject_indicator_null_value_code: Optional[str]
+        + planned_minimum_age_of_subjects: Optional[SubjectAgeVO]
+        + planned_minimum_age_of_subjects_null_value_code: Optional[str]
+        + planned_maximum_age_of_subjects: Optional[SubjectAgeVO]
+        + planned_maximum_age_of_subjects_null_value_code: Optional[str]
+        + validate()
+        + {static} from_input_values(): StudyPopulationVO
+    }
+    StudyPopulationVO::therapeutic_area_null_value_code --> "0..1" NullValueAR::code
+    StudyPopulationVO::therapeutic_area_codes --> "*" TherapeuticAreaAR::code
+    StudyPopulationVO::diagnosis_group_null_value_code --> "0..1" NullValueAR::code
+    StudyPopulationVO::diagnosis_group_codes --> "*" DiagnosisGroupAR::code
+    StudyPopulationVO::disease_condition_or_indication_null_value_code --> "0..1" NullValueAR::code
+    StudyPopulationVO::disease_condition_or_indication_codes --> "*" DiseaseConditionOrIndicationAR::code
+    StudyPopulationVO::rare_disease_indicator_null_value_code --> "0..1" NullValueAR::code
+    StudyPopulationVO::healthy_subject_indicator_null_value_code --> "0..1" NullValueAR::code
+    StudyPopulationVO::planned_maximum_age_of_subjects_null_value_code --> "0..1" NullValueAR::code
+    StudyPopulationVO::planned_minimum_age_of_subjects_null_value_code --> "0..1" NullValueAR::code
+    StudyPopulationVO::planned_maximum_age_of_subjects -[norank]-> "0..1" SubjectAgeVO
+    StudyPopulationVO::planned_minimum_age_of_subjects -[norank]-> "0..1" SubjectAgeVO
+
+
+    class SubjectAgeVO {
+        + age_value: float
+        + age_unit_code: str
+        + validate()
+        + {static} from_input_values(): SubjectAgeVO
+    }
+    SubjectAgeVO::age_unit_code --> "1" AgeUnitAR::code
+
+}
+
+@enduml

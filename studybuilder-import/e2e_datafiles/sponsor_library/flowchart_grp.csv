@@ -1,0 +1,16 @@
+CT_CD_LIST_SUBMVAL,CT_NAME,NAME_SENTENSE_CASE,CT_SUBMVAL,DEFINITION,ORDER,CT_CD,NCI_PREFERRED_NAME
+FLWCRTGRP,INFORMED CONSENT,informed consent,INFORMED CONSENT FLWCRTGRP,Informed consent flowchart group,1,,Informed consent flowchart group
+FLWCRTGRP,ELIGIBILITY AND OTHER CRITERIA,eligibility and other criteria,ELIGIBILITY AND OTHER CRITERIA FLWCRTGRP,Eligibility and other criteria flowchart group,2,,Eligibility and other criteria flowchart group
+FLWCRTGRP,SUBJECT RELATED INFORMATION,subject related information,SUBJECT RELATED INFORMATION FLWCRTGRP,Subject related information flowchart group,3,,Subject related information flowchart group
+FLWCRTGRP,EFFICACY,efficacy,EFFICACY FLWCRTGRP,Efficacy flowchart group,4,,Efficacy flowchart group
+FLWCRTGRP,SAFETY,safety,SAFETY FLWCRTGRP,Safety flowchart group,5,,Safety flowchart group
+FLWCRTGRP,IMMUNOGENICITY,immunogenicity,IMMUNOGENICITY FLWCRTGRP,Immunogenicity flowchart group,6,,Immunogenicity flowchart group
+FLWCRTGRP,PHARMACOKINETICS,pharmacokinetics,PHARMACOKINETICS FLWCRTGRP,Pharmacokinetics flowchart group,7,,Pharmacokinetics flowchart group
+FLWCRTGRP,PHARMACODYNAMICS,pharmacodynamics,PHARMACODYNAMICS FLWCRTGRP,Pharmacodynamics flowchart group,8,,Pharmacodynamics flowchart group
+FLWCRTGRP,GENETICS,genetics,GENETICS FLWCRTGRP,Genetics flowchart group,9,,Genetics flowchart group
+FLWCRTGRP,BIOMARKERS,biomarkers,BIOMARKERS FLWCRTGRP,Biomarkers flowchart group,10,,Biomarkers flowchart group
+FLWCRTGRP,HUMAN BIOSAMPLES,human biosamples,HUMAN BIOSAMPLES FLWCRTGRP,Human biosamples flowchart group,11,,Human biosamples flowchart group
+FLWCRTGRP,HEALTH ECONOMICS,health economics,HEALTH ECONOMICS FLWCRTGRP,Health economics flowchart group,12,,Health economics flowchart group
+FLWCRTGRP,TRIAL MATERIAL,trial material,TRIAL MATERIAL FLWCRTGRP,Trial material flowchart group,13,,Trial material flowchart group
+FLWCRTGRP,REMINDERS,reminders,REMINDERS FLWCRTGRP,Reminders flowchart group,13,,Reminders flowchart group
+FLWCRTGRP,HIDDEN,hidden,HIDDEN FLWCRTGRP,Hidden flowchart group,14,,Hidden flowchart group

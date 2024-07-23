@@ -1,0 +1,227 @@
+[
+    {
+        "study_uid": "Study_000002",
+        "order": 1,
+        "project_number": "CDISC DEV",
+        "project_name": "CDISC Dev",
+        "study_endpoint_uid": "StudyEndpoint_000009",
+        "study_objective": {
+            "study_uid": "Study_000002",
+            "order": 1,
+            "project_number": "CDISC DEV",
+            "project_name": "CDISC Dev",
+            "study_objective_uid": "StudyObjective_000005",
+            "objective_level": {
+                "term_uid": "C85826_OBJPRIM",
+                "catalogue_name": "SDTM CT",
+                "codelist_uid": "CTCodelist_000001",
+                "sponsor_preferred_name": "Primary Objective",
+                "sponsor_preferred_name_sentence_case": "primary objective",
+                "order": 1,
+                "library_name": "CDISC",
+                "start_date": "2022-11-09T08:52:13.742186",
+                "end_date": null,
+                "status": "Final",
+                "version": "2.0",
+                "change_description": "Approved version",
+                "user_initials": "unknown-user",
+                "possible_actions": [
+                    "inactivate",
+                    "new_version"
+                ]
+            },
+            "objective": {
+                "uid": "Objective_000006",
+                "name": "To compare the effect of [metformin] relative to [nph insulin] on [body weight]",
+                "name_plain": "To compare the effect of metformin relative to nph insulin on body weight",
+                "start_date": "2022-11-21T09:23:28.424019",
+                "end_date": null,
+                "status": "Final",
+                "version": "1.0",
+                "change_description": "Approved version",
+                "user_initials": "unknown-user",
+                "possible_actions": [
+                    "inactivate"
+                ],
+                "objective_template": {
+                    "name": "To compare the effect of [Compound] relative to [Comparator] on [ActivityInstance]",
+                    "name_plain": "To compare the effect of [Compound] relative to [Comparator] on [ActivityInstance]",
+                    "uid": "ObjectiveTemplate_000004"
+                },
+                
+                "parameter_terms": [
+                    {
+                        "position": 1,
+                        "conjunction": "",
+                        "terms": [
+                            {
+                                "uid": "Compound_000001",
+                                "name": "metformin",
+                                "type": "Compound",
+                                "index": 1
+                            }
+                        ]
+                    },
+                    {
+                        "position": 2,
+                        "conjunction": "",
+                        "terms": [
+                            {
+                                "uid": "Compound_000002",
+                                "name": "nph insulin",
+                                "type": "Comparator",
+                                "index": 1
+                            }
+                        ]
+                    },
+                    {
+                        "position": 3,
+                        "conjunction": "",
+                        "terms": [
+                            {
+                                "uid": "NumericFinding_000020",
+                                "name": "body weight",
+                                "type": "ActivityInstance",
+                                "index": 1
+                            }
+                        ]
+                    }
+                ],
+                "library": {
+                    "name": "Sponsor",
+                    "is_editable": true
+                },
+                "study_count": null
+            },
+            "start_date": "2022-11-21T10:24:13.338474",
+            "user_initials": "unknown-user",
+            "endpoint_count": 1,
+            "latest_objective": null,
+            "accepted_version": false
+        },
+        "endpoint_level": {
+            "term_uid": "C98772_OUTMSPRI",
+            "catalogue_name": "SDTM CT",
+            "codelist_uid": "CTCodelist_000003",
+            "sponsor_preferred_name": "Primary Endpoint",
+            "sponsor_preferred_name_sentence_case": "primary endpoint",
+            "order": 1,
+            "library_name": "CDISC",
+            "start_date": "2022-11-09T08:52:12.504700",
+            "end_date": null,
+            "status": "Final",
+            "version": "2.0",
+            "change_description": "Approved version",
+            "user_initials": "unknown-user",
+            "possible_actions": [
+                "inactivate",
+                "new_version"
+            ]
+        },
+        "endpoint_sublevel": {
+            "term_uid": "CTTerm_000056",
+            "catalogue_name": "SDTM CT",
+            "codelist_uid": "CTCodelist_000029",
+            "sponsor_preferred_name": "Primary",
+            "sponsor_preferred_name_sentence_case": "primary",
+            "order": 1,
+            "library_name": "Sponsor",
+            "start_date": "2022-11-09T08:52:24.036751",
+            "end_date": null,
+            "status": "Final",
+            "version": "1.0",
+            "change_description": "Approved version",
+            "user_initials": "unknown-user",
+            "possible_actions": [
+                "inactivate",
+                "new_version"
+            ]
+        },
+        "endpoint_units": {
+            "units": [
+                "UnitDefinition_000323"
+            ],
+            "separator": null
+        },
+        "endpoint": {
+            "uid": "Endpoint_000006",
+            "name": "<p>Mean change from baseline in [body weight]</p>",
+            "name_plain": "Mean change from baseline in body weight",
+            "start_date": "2022-11-21T10:25:45.403361",
+            "end_date": null,
+            "status": "Final",
+            "version": "1.0",
+            "change_description": "Approved version",
+            "user_initials": "unknown-user",
+            "possible_actions": [
+                "inactivate"
+            ],
+            "endpoint_template": {
+                "name": "<p>Mean change from baseline in [ActivityInstance]</p>",
+                "name_plain": "Mean change from baseline in [ActivityInstance]",
+                "uid": "EndpointTemplate_000005"
+            },
+            "parameter_terms": [
+                {
+                    "position": 1,
+                    "conjunction": "",
+                    "terms": [
+                        {
+                            "uid": "NumericFinding_000020",
+                            "name": "body weight",
+                            "type": "ActivityInstance",
+                            "index": 1
+                        }
+                    ]
+                }
+            ],
+            "library": {
+                "name": "Sponsor",
+                "is_editable": true
+            },
+            "study_count": null
+        },
+        "timeframe": {
+            "uid": "Timeframe_000005",
+            "name": "<p>after [4 weeks]</p>",
+            "name_plain": "after 4 weeks",
+            "start_date": "2022-11-21T10:25:44.826999",
+            "end_date": null,
+            "status": "Final",
+            "version": "1.0",
+            "change_description": "Approved version",
+            "user_initials": "unknown-user",
+            "possible_actions": [
+                "inactivate"
+            ],
+            "timeframe_template": {
+                "name": "<p>after [StudyDurationWeeks]</p>",
+                "name_plain": "after [StudyDurationWeeks]",
+                "uid": "TimeframeTemplate_000004"
+            },
+            "parameter_terms": [
+                {
+                    "position": 1,
+                    "conjunction": "",
+                    "terms": [
+                        {
+                            "uid": "NumericValue_000033",
+                            "name": "4 weeks",
+                            "type": "StudyDurationWeeks",
+                            "index": 1
+                        }
+                    ]
+                }
+            ],
+            "library": {
+                "name": "Sponsor",
+                "is_editable": true
+            }
+        },
+        "latest_endpoint": null,
+        "latest_timeframe": null,
+        "start_date": "2022-11-21T10:25:45.633371",
+        "user_initials": "unknown-user",
+        "accepted_version": false
+    }
+]

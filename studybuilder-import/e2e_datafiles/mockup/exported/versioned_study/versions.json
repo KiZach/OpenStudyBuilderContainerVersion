@@ -1,0 +1,50 @@
+[
+    {
+        "action": "Import",
+        "dir": "v1"
+    },
+    {
+        "action": "Lock",
+        "desc": "Lock v1",
+        "study_id": "CDISC DEV-1111"
+    },
+    {
+        "action": "Unlock",
+        "study_id": "CDISC DEV-1111"
+    },
+    {
+        "action": "Clear",
+        "sections": [
+            "activity",
+            "arm",
+            "compound",
+            "criteria",
+            "objective"
+        ],
+        "study_id": "CDISC DEV-1111"
+    },
+    {
+        "action": "Import",
+        "dir": "v2"
+    },
+    {
+        "action": "Release",
+        "desc": "Release v2",
+        "study_id": "CDISC DEV-1111"
+    },
+    {
+        "action": "Clear",
+        "sections": [
+            "activity",
+            "arm",
+            "compound",
+            "criteria",
+            "objective"
+        ],
+        "study_id": "CDISC DEV-1111"
+    },
+    {
+        "action": "Import",
+        "dir": "v3"
+    }
+]

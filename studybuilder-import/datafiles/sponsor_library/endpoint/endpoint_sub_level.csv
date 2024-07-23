@@ -1,0 +1,6 @@
+"CT_CD_LIST_SUBMVAL","CT_SUBMVAL","CT_NAME","NAME_SENTENSE_CASE","ORDER","DEFINITION"
+"ENDPSBLV","PRIMARY ENDPOINT SUB LEVEL","Primary","primary","1","Primary endpoint for the study, used one only one primary endpoint is defined."
+"ENDPSBLV","CO-PRIMARY ENDPOINT SUB LEVEL","Co-primary","co-primary","2","Co-primary endpoint is when multiple primary endpoints are defined for the study and it is required to win on all to be a success."
+"ENDPSBLV","MULTIPLE ENDPOINT SUB LEVEL","Multiple","multiple","3","Multiple endpoint is when multiple primary endpoints are defined for the study and it is sufficient to win on one of them and in this case multiplicity control is required."
+"ENDPSBLV","CONFIRMATORY SECONDARY ENDPOINT SUB LEVEL","Confirmatory secondary","confirmatory secondary","4","Confirmatory secondary endpoint"
+"ENDPSBLV","SUPORTIVE SECONDARY ENDPOINT SUB LEVEL","Supportive secondary","supportive secondary","5","Supportive secondary endpoint"

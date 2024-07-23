@@ -1,0 +1,136 @@
+#############################################################################
+####      Build validation, required to pass before merging a PR        #####
+#############################################################################
+
+# Node.js with Vue
+# Specify an automatic trigger for executing this pipeline
+trigger:
+  batch: true # Whether to batch changes per branch.  (false,n,no,off,on,true,y,yes)
+  branches:
+    include:
+      - main
+      - release/*
+
+pool:
+  name: 'clinical-mdr-dev-vmss'
+
+jobs:
+  - job: Install_and_build
+    displayName: 'Install modules and build app'
+    steps:
+      - checkout: self
+        persistCredentials: true
+
+        # Checkout source repos
+      - script: |
+          set -ex
+
+          git fetch -a
+
+          if [[ "$(Build.Reason)" == "PullRequest" ]]; then
+            gitbranch=`echo $(System.PullRequest.SourceBranch) | sed 's/^refs\/heads\///'`
+          else
+            gitbranch=`echo $(Build.SourceBranch) | sed 's/^refs\/heads\///'`
+          fi
+
+          echo "##vso[task.setvariable variable=gitbranch;isOutput=true;]$gitbranch"
+
+          git checkout $gitbranch
+          git pull
+        displayName: 'Checkout git branch'
+        name: gitref
+
+      # Install Nodejs
+      - task: NodeTool@0
+        inputs:
+          versionSpec: '20.x'
+        displayName: 'Install Node.js'
+
+      # Install Yarn
+      - task: YarnInstaller@3
+        inputs:
+          versionSpec: '1.x'
+        displayName: 'Install Yarn'
+
+      # Install packages
+      - script: >-
+          yarn install
+        displayName: 'Install node packages'
+
+      # Run unit tests
+      - script: >-
+          yarn test:unit
+        displayName: 'Run unit tests'
+        enabled: false
+
+      # Build sbom
+      - script: |
+          set -ex
+
+          npx license-checker --excludePrivatePackages --production | grep "licenseFile" | rev | cut -d " " -f1 | rev | grep -i "license" | grep -iv "readme" > files.txt
+          echo "## Third party library licenses descriptions" > sbom.md
+          while read line; do echo $line | rev | cut -d '/' -f2 | rev | awk '{ print "### License for 3rd party library " $1 }' >> sbom.md; echo '```' >> sbom.md && cat $line >> sbom.md && echo ' ' >> sbom.md && echo '```' >> sbom.md; done < files.txt
+          #tail -n +4 sbom.md > tmp && mv tmp sbom.md # include after nnsbom fix
+          tail -n +2 sbom-additional.md > tmp && mv tmp sbom-additional.md
+          cat sbom-additional.md >> sbom.md
+          cat sbom.md
+
+          if [[ "$(Build.SourceBranchName)" != "main" && "$(Build.Reason)" == "PullRequest" && `git diff --exit-code sbom.md` ]]; then
+            git config --global user.email pipeline@studybuilder.com
+            git config --global user.name "Pipeline $(Build.BuildNumber)"
+            git add sbom.md
+            pwsh -NoLogo -NonInteractive -File CheckSbom.ps1 -token $(System.AccessToken) -pullRequestId $(System.PullRequest.PullRequestId) -projectName $(System.TeamProject) -repositoryName $(Build.Repository.Name)
+            git commit sbom.md -m "Pipeline $(Build.BuildNumber) committed changes to SBOM"
+            git push https://$SYSTEM_ACCESSTOKEN@dev.azure.com/novonordiskit/Clinical-MDR/_git/studybuilder $(gitref.gitbranch)
+          fi
+        env:
+          SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+        displayName: Generate full sbom for Studybuilder
+
+      # Run yarn steps
+      - script: |
+          yarn build
+        displayName: 'Build files'
+
+      - script: |
+          yarn audit > yarn_report.txt || true
+        continueOnError: true
+        displayName: 'Check package security vulnerabilities'
+
+      # Whitesource bolt scanning
+      - task: WhiteSource@21
+        inputs:
+          cwd: '$(System.DefaultWorkingDirectory)'
+
+      # Sonarqube scanning
+      - task: SonarQubePrepare@5
+        displayName: SonarQube Prepare
+        inputs:
+          SonarQube: 'Sonarqube-ClinicalMDR-DEV'
+          scannerMode: 'CLI'
+          configMode: 'manual'
+          cliProjectKey: 'studybuilder'
+          cliProjectName: 'studybuilder'
+          cliSources: './src'
+          extraProperties: |
+            sonar.verbose=true
+            sonar.tests=./tests
+            sonar.test.exclusions=./tests/setup.js
+            sonar.javascript.lcov.reportPaths=./coverage/lcov.info
+      # Uncomment when enabling unit tests
+      #      sonar.testExecutionReportPaths=./results/sonar-report.xml
+
+      - task: SonarQubeAnalyze@5
+        displayName: SonarQube Analyze
+
+      - task: SonarQubePublish@5
+        displayName: SonarQube Publish
+        inputs:
+          pollingTimeoutSec: '300'
+
+      # Publish security report
+      - task: PublishBuildArtifacts@1
+        inputs:
+          pathToPublish: 'yarn_report.txt'
+          artifactName: 'yarn-vulnerabilities'
+        displayName: 'Publish security vulnerability report'

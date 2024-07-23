@@ -1,0 +1,27 @@
+[
+    {
+        "uid": "Study_000008",
+        "possible_actions": [
+            "delete",
+            "lock",
+            "release"
+        ],
+        "current_metadata": {
+            "identification_metadata": {
+                "study_number": "1111",
+                "study_acronym": "versioning",
+                "project_number": "CDISC DEV",
+                "project_name": "CDISC Dev",
+                "clinical_programme_name": "CDISC Development programme",
+                "study_id": "CDISC DEV-1111"
+            },
+            "version_metadata": {
+                "study_status": "DRAFT",
+                "version_number": null,
+                "version_timestamp": "2023-10-03T08:03:41.467655+00:00",
+                "version_author": null,
+                "version_description": null
+            }
+        }
+    }
+]

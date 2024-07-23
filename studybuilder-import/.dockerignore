@@ -1,0 +1,5 @@
+**/.git
+.env
+datafiles
+e2e_datafiles
+sample_scripts

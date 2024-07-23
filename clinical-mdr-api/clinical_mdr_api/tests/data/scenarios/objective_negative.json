@@ -1,0 +1,83 @@
+[
+    {
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "non-existent library",
+                "name": "Test objective",
+                "objective_template_uid": "{otuid}",
+                "parameter_terms": []
+            },
+            "url": "/objectives"
+        },
+        "response": {
+            "code": 404,
+            "headers": {
+                "content-length": "173",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "The library with the name='non-existent library' could not be found.",
+                "time": "2020-11-10T01:51:17.884429",
+                "path": "http://testserver/objectives",
+                "method": "POST",
+                "type": "NotFoundException"
+            }
+        }
+    },
+    {
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Test library",
+                "name": "Test objective",
+                "objective_template_uid": "wrong-uid",
+                "parameter_terms": []
+            },
+            "url": "/objectives"
+        },
+        "response": {
+            "code": 404,
+            "headers": {
+                "content-length": "192",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "No ObjectiveTemplateRoot with UID (wrong-uid) found in given status, date and version.",
+                "time": "2020-11-10T01:52:30.985556",
+                "path": "http://testserver/objectives",
+                "method": "POST",
+                "type": "NotFoundException"
+            }
+        }
+    },
+    {
+        "request": {
+            "headers": {},
+            "method": "POST",
+            "request": {
+                "library_name": "Test library",
+                "name": "Test objective",
+                "objective_template_uid": "{otuidna}",
+                "parameter_terms": []
+            },
+            "url": "/objectives"
+        },
+        "response": {
+            "code": 404,
+            "headers": {
+                "content-length": "192",
+                "content-type": "application/json"
+            },
+            "result": {
+                "message": "No ObjectiveTemplateRoot with UID ({otuidna}) found in given status, date and version.",
+                "time": "2020-11-10T01:52:30.985556",
+                "path": "http://testserver/objectives",
+                "method": "POST",
+                "type": "NotFoundException"
+            }
+        }
+    }
+]
