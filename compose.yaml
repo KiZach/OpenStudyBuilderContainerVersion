@@ -8,10 +8,10 @@ services:
       args:
         NEO4J_IMAGE: ${NEO4J_IMAGE:-neo4j:5.19.0-enterprise}
         PYTHON_IMAGE: ${PYTHON_IMAGE:-python:3.11.9-slim}
-        NEO4J_server_memory_heap_initial__size: "3G"
-        NEO4J_server_memory_heap_max__size: "3G"
-        NEO4J_server_memory_pagecache_size: "2G"
-        CDISC_DATA_DIR: ${CDISC_DATA_DIR:-cdisc_data/}
+        NEO4J_server_memory_heap_initial__size: "2G"
+        NEO4J_server_memory_heap_max__size: "2G"
+        NEO4J_server_memory_pagecache_size: "1G"
+        CDISC_DATA_DIR: ${CDISC_DATA_DIR:-mdr_standards_import/container_booting/}
         NEO4J_MDR_AUTH_PASSWORD: "${NEO4J_PASSWORD:-changeme1234}"
         UID: ${UID:-1000}
       context: ./
