@@ -1,15 +1,11 @@
-ARG NEO4J_IMAGE=neo4j:5.19.0-enterprise
+ARG NEO4J_IMAGE=neo4j:5.18.1-enterprise
 ARG PYTHON_IMAGE=python:3.11.9-slim
 
 # --- Build stage ----
 FROM $PYTHON_IMAGE as build-stage
 
-# --- 5.18.1 source ----
-#ARG NEO4J_DOWNLOAD_URL=https://dist.neo4j.org/neo4j-enterprise-5.18.1-unix.tar.gz
-#ARG NEO4J_CHECKSUM=a2ab866be05d2decef558b3e711c4b4403f3a35be6b87f7b94c618bb83b8f7c3
-# --- 5.19.0 source ----
-ARG NEO4J_DOWNLOAD_URL=https://dist.neo4j.org/neo4j-enterprise-5.19.0-unix.tar.gz
-ARG NEO4J_CHECKSUM=6dc5af32f8e01f1cb8f8618d1314d91713172db14f53c695b77ca733ff504356
+ARG NEO4J_DOWNLOAD_URL=https://dist.neo4j.org/neo4j-enterprise-5.18.1-unix.tar.gz
+ARG NEO4J_CHECKSUM=a2ab866be05d2decef558b3e711c4b4403f3a35be6b87f7b94c618bb83b8f7c3
 
 ## Install required system packages, for clinical-mdr-api as well
 RUN apt-get update \
@@ -160,12 +156,8 @@ RUN [ "x$UID" = "x1000" ] || { \
     ;}
 
 # Install APOC plugin
-# --- 5.18.1 source ----
-#RUN wget --quiet --timeout 60 --tries 2 --output-document /var/lib/neo4j/plugins/apoc.jar \
-#    https://github.com/neo4j/apoc/releases/download/5.18.0/apoc-5.18.0-core.jar
-# --- 5.19.0 source ----
 RUN wget --quiet --timeout 60 --tries 2 --output-document /var/lib/neo4j/plugins/apoc.jar \
-    https://github.com/neo4j/apoc/releases/download/5.19.0/apoc-5.19.0-core.jar
+    https://github.com/neo4j/apoc/releases/download/5.18.0/apoc-5.18.0-core.jar
 
 # Copy database files from build stage
 COPY --from=build-stage --chown=$USER:$GROUP /neo4j/data /data
